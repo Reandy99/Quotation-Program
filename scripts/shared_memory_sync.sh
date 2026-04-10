@@ -5,10 +5,16 @@ set -euo pipefail
 # Syncs only one subdirectory inside a GitHub repo.
 # Commands: pull | push | full | sync
 
+# Load GitHub env if available (keeps token di luar code & cron)
+if [[ -f /root/.openclaw/credentials/github.env ]]; then
+  # shellcheck disable=SC1091
+  source /root/.openclaw/credentials/github.env
+fi
+
 CMD="${1:-pull}"
 SHARED_DIR="${SHARED_DIR:-/root/.openclaw/workspace/shared-memory}"
-REPO_URL="${REPO_URL:-}"
-REPO_SUBDIR="${REPO_SUBDIR:-shared-memory}"
+REPO_URL="${REPO_URL:-${REPO_URL_OPENCLAW_WHITEPAPER:-}}"
+REPO_SUBDIR="${REPO_SUBDIR:-${REPO_SUBDIR_SHARED_MEMORY:-shared-memory}}"
 CLONE_DIR="${CLONE_DIR:-/root/.openclaw/workspace/.shared-memory-sync-repo}"
 BRANCH="${BRANCH:-main}"
 AGENT_NAME="${AGENT_NAME:-exel}"

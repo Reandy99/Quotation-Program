@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-10T10:44:11.343Z",
+  "entries": {
+    "memory:memory/2026-04-09.md:1:13": {
+      "key": "memory:memory/2026-04-09.md:1:13",
+      "path": "memory/2026-04-09.md",
+      "startLine": 1,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "# 2026-04-09 - User identity updated: - Name: Reandy - Timezone: Asia/Jakarta (WIB) - Assistant identity updated: - Name: Exel - Multi-agent request: - Quanxi = Expert Coding - DONI = Socialmedia Specialist - Implementation status: - Added OpenClaw agents `quanxi` and `doni` with separate workspaces.",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.000002971029428281129,
+      "maxScore": 0.0000016504506972775798,
+      "firstRecalledAt": "2026-04-10T05:04:39.658Z",
+      "lastRecalledAt": "2026-04-10T10:44:11.343Z",
+      "queryHashes": [
+        "212656318f04",
+        "db11ec275f83"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "asia/jakarta",
+        "multi-agent",
+        "user",
+        "identity",
+        "updated",
+        "name",
+        "reandy",
+        "timezone"
+      ]
+    },
+    "memory:memory/2026-04-10.md:1:12": {
+      "key": "memory:memory/2026-04-10.md:1:12",
+      "path": "memory/2026-04-10.md",
+      "startLine": 1,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "# 2026-04-10 - Reandy requested daily GitHub backup for all files at 23:00 WIB. - Reandy wants Telegram to have admin-capable operations (cron/config), not just read-only behavior. - Agent structure clarified: Exel (main orchestrator), Quanxi (coding), DONI (social media). - Reandy requested dedicated per-agent workspaces and complete core files for `workspace-quanxi` and `workspace-doni` (AGENTS/IDENTITY/USER/TOOLS/HEARTBEAT/MEMORY). - Reandy wants Exel to delegate social-media tasks to DONI and technical monitoring tasks to Quanxi. - Reandy wants DONI to be research-first before producing content. - Reandy wants Quanxi to continuously monitor VPS/logs and attempt safe auto-recovery when i",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.000002438144703355906,
+      "maxScore": 0.0000016334829714157077,
+      "firstRecalledAt": "2026-04-10T05:04:39.658Z",
+      "lastRecalledAt": "2026-04-10T10:44:11.343Z",
+      "queryHashes": [
+        "212656318f04",
+        "db11ec275f83"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "admin-capable",
+        "cron/config",
+        "read-only",
+        "per-agent",
+        "workspace-quanxi",
+        "workspace-doni",
+        "social-media"
+      ]
+    }
+  }
+}
