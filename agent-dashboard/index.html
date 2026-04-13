@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Agent Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div>
+        <h1>Agent Dashboard</h1>
+        <p class="subtitle">OpenClaw Multi-Agent System Status</p>
+      </div>
+    </header>
+
+    <section class="agents" id="agents"></section>
+
+    <section class="assign">
+      <h2>Assign Task Baru</h2>
+      <form id="task-form">
+        <select id="agent-select"></select>
+        <input id="task-input" type="text" placeholder="Ketik tugas yang mau dijalankan..." />
+        <button type="submit">Kirim Tugas</button>
+      </form>
+    </section>
+
+    <section class="board">
+      <div class="column" data-status="todo">
+        <div class="column-header">
+          <span>To Do</span>
+          <span class="count" id="count-todo">0</span>
+        </div>
+        <div class="column-body" id="tasks-todo"></div>
+      </div>
+      <div class="column" data-status="in-progress">
+        <div class="column-header">
+          <span>⚡ In Progress</span>
+          <span class="count" id="count-in-progress">0</span>
+        </div>
+        <div class="column-body" id="tasks-in-progress"></div>
+      </div>
+      <div class="column" data-status="done">
+        <div class="column-header">
+          <span>✅ Done</span>
+          <span class="count" id="count-done">0</span>
+        </div>
+        <div class="column-body" id="tasks-done"></div>
+      </div>
+    </section>
+
+    <section class="activity">
+      <h2>Activity Log</h2>
+      <ul id="activity-list"></ul>
+    </section>
+
+    <section class="workflow">
+      <h2>Daily Workflow</h2>
+      <div class="workflow-grid">
+        <div class="workflow-card" data-slot="morning" data-start="07:00" data-end="09:00">
+          <div class="workflow-card-header">
+            <h3>Pagi (07:00 - 09:00 WIB)</h3>
+            <span class="workflow-status" id="workflow-status-morning"></span>
+          </div>
+          <ul>
+            <li>Exel: cek singkat status VPS, OpenClaw, dan cron penting.</li>
+            <li>DONI: generate & schedule konten Whitepaper pagi (LinkedIn/Threads) via Repliz.</li>
+            <li>Exel: review task baru dari kamu untuk hari itu dan assign ke agent.</li>
+          </ul>
+        </div>
+        <div class="workflow-card" data-slot="day" data-start="09:00" data-end="21:00">
+          <div class="workflow-card-header">
+            <h3>Siang - Sore (Jam kerja)</h3>
+            <span class="workflow-status" id="workflow-status-day"></span>
+          </div>
+          <ul>
+            <li>Exel: routing semua task baru dari chat/dashboard ke Exel/Quanxi/DONI.</li>
+            <li>Quanxi: handle coding, debugging, dan perbaikan infra sesuai task.</li>
+            <li>DONI: konten tambahan (jika ada campaign/brief baru).</li>
+          </ul>
+        </div>
+        <div class="workflow-card" data-slot="night" data-start="21:00" data-end="23:00">
+          <div class="workflow-card-header">
+            <h3>Malam (21:00 - 23:00 WIB)</h3>
+            <span class="workflow-status" id="workflow-status-night"></span>
+          </div>
+          <ul>
+            <li>DONI: nightly quality review konten Whitepaper 24 jam terakhir.</li>
+            <li>Exel: cek hasil kerjaan hari ini, update status task, dan ringkasan di Activity Log.</li>
+            <li>Quanxi: tugas malam (jika ada) seperti backup atau maintenance terjadwal.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="pipeline">
+      <h2>Daily Pipeline</h2>
+      <div class="pipeline-track">
+        <div class="pipeline-fill" id="pipeline-fill">
+          <div class="pipeline-dot"></div>
+        </div>
+      </div>
+      <div class="pipeline-marks">
+        <span>07:00</span>
+        <span>09:00</span>
+        <span>21:00</span>
+        <span>23:00</span>
+      </div>
+    </section>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
