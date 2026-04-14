@@ -21,9 +21,10 @@
 - Public access is intended to go through the `ocindonesia.my.id` domain using nginx/Cloudflare (DNS setup was in progress as of 2026-04-10).
 
 ## Automation & Integrations
+- Configuration backups are stored in `/root/.openclaw/workspace/backup-config/` as `config-backup-YYYY-MM-DD.tar.gz` archives containing `openclaw.json`, AGENTS/SOUL/USER/MEMORY, and related core config files; a weekly cron job (`config-backup-weekly`) creates these archives and a guardrail job (`guardrail-config-backup-freshness`) alerts if no recent backup exists.
 - Whitepaper social workflow is automated via OpenClaw cron: a morning job at 07:15 WIB generates and schedules LinkedIn (and optional Threads) posts via the Repliz skill using the DONI+Exel SOP, and a nightly job at 22:00 WIB reviews recent Whitepaper posts and prepares a quality report for Reandy.
 - The ClawHub `repliz` skill is installed and should be the default for Repliz scheduling and management instead of ad-hoc curl or manual HTTP calls.
-- For now, media handling for Whitepaper posts is text-first: Exel schedules only text via Repliz and Reandy manually attaches images; if a shared image storage service is enabled later, Exel should integrate it explicitly instead of changing the workflow silently.
+- Media handling for Whitepaper (dan akun terkait) sekarang pakai foto yang Reandy upload via Telegram ke VPS; Exel memilih foto yang belum dipakai dalam ±1 bulan (kecuali diminta ulang) dan menjadwalkan post text + image via Repliz, jadi Reandy tidak perlu upload manual di Repliz.
 - n8n 2.15.1 is installed on the VPS and runs as a systemd service, exposing a local HTTP interface on port 5678 protected by basic auth.
 - The n8n workflow "Youtube Video to Thread & X Content" (ID `AksEaOHOMxGrNdCj`) is imported but kept inactive until OpenRouter, Apify, and Blotato credentials are provided.
 
