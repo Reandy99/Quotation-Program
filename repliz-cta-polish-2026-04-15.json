@@ -1,0 +1,101 @@
+{
+  "backup": [
+    {
+      "_id": "69dde5a184ebdfba15ef73b4",
+      "title": "",
+      "description": "Banyak founder punya problem yang sama:\nmateri pitch-nya lengkap, tapi terlalu berat buat dibaca.\n\nSlide 1\nBefore: deck penuh bullet point kecil dan grafik yang susah dicerna.\n\nSlide 2\nAfter: struktur whitepaper yang jelas\n- 1 halaman ringkasan\n- 3 halaman problem & insight\n- 4 halaman solusi + use case\n- 2 halaman hasil & next step\n\nSlide 3\nKita pilah dulu mana data yang benar-benar penting buat keputusan.\n\nSlide 4\nKita sederhanakan bahasa, tapi tetap jaga kredibilitas dan detail teknis.\n\nSlide 5\nKita pikirkan flow baca: orang sibuk harus bisa paham inti dalam 5 menit.\n\nSlide 6\nAkhirnya, dokumen yang tadinya \"nanti aja deh bacanya\" berubah jadi sesuatu yang bikin klien mau lanjut ngobrol.\n\nKalau materi kamu sekarang masih terasa berat, mungkin bukan produknya yang sulit, tapi ceritanya yang perlu diatur ulang.",
+      "type": "text",
+      "medias": [],
+      "status": "pending",
+      "scheduleAt": "2026-04-15T05:30:00.000Z",
+      "replies": [],
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "userId": "69708888f8a15510f95967ec",
+      "createdAt": "2026-04-14T06:58:41.476Z",
+      "updatedAt": "2026-04-14T06:58:41.476Z",
+      "__v": 0,
+      "id": "69dde5a184ebdfba15ef73b4"
+    },
+    {
+      "_id": "69df141c84ebdfba1500213d",
+      "title": "",
+      "description": "Kalau semua aset event berhenti di Google Drive, value terbesarnya belum kepakai.\n\nEvent corporate yang bagus itu bukan \"hari H selesai\", tapi \"hari H mulai aset\".\n\nSaat trust makin mahal, dokumentasi event bisa jadi long-term asset:\n- proof of execution\n- konten LinkedIn berbulan-bulan\n- materi sales + employer branding\n\nMakanya saya selalu treat event sebagai investment day, bukan biaya produksi.",
+      "type": "text",
+      "medias": [],
+      "status": "pending",
+      "scheduleAt": "2026-04-15T07:20:00.000Z",
+      "replies": [],
+      "accountId": "69db171284ebdfba15c9ab58",
+      "userId": "69708888f8a15510f95967ec",
+      "createdAt": "2026-04-15T04:29:16.893Z",
+      "updatedAt": "2026-04-15T04:29:16.893Z",
+      "__v": 0,
+      "id": "69df141c84ebdfba1500213d"
+    },
+    {
+      "_id": "69ddebea84ebdfba15efec03",
+      "title": "",
+      "description": "3 tanda whitepaper kamu diam-diam bikin calon klien kabur\n\n1. Opening langsung jualan\nBuka dokumen dengan \"kami adalah perusahaan yang...\" bikin orang scroll atau close. Orang lebih peduli ke problem mereka dulu, baru profil kamu.\n\n2. Terlalu banyak fitur, terlalu sedikit konteks\nList fitur tanpa cerita real use case bikin semuanya terasa sama saja. B2B butuh contoh: \"gimana ini dipakai tim gue sehari-hari?\".\n\n3. Tidak ada next step yang jelas\nSudah baca 20 halaman, tapi tidak tahu harus ngapain. Book demo kah? Hubungi siapa? Kapan?\n\nDi Whitepaper, saya selalu mulai dari 3 pertanyaan:\n- siapa yang baca\n- keputusan apa yang mau mereka ambil\n- langkah apa yang ideal setelah selesai baca\n\nDari situ baru struktur, copy, dan desain kita susun. Bukan kebalik.",
+      "type": "image",
+      "medias": [
+        {
+          "type": "image",
+          "thumbnail": "http://43.156.181.204:8081/whitepaper/REN04480---31eaaf9a-8728-4309-a7c4-55c694b0195b.jpg",
+          "url": "http://43.156.181.204:8081/whitepaper/REN04480---31eaaf9a-8728-4309-a7c4-55c694b0195b.jpg",
+          "alt": "Panel diskusi di panggung acara Crypstocks dengan tema Security Over Jackpot."
+        }
+      ],
+      "status": "pending",
+      "scheduleAt": "2026-04-16T02:30:00.000Z",
+      "replies": [],
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "userId": "69708888f8a15510f95967ec",
+      "createdAt": "2026-04-14T07:25:30.614Z",
+      "updatedAt": "2026-04-14T07:25:30.614Z",
+      "__v": 0,
+      "id": "69ddebea84ebdfba15efec03"
+    },
+    {
+      "_id": "69dde5a184ebdfba15ef73c0",
+      "title": "",
+      "description": "Kalau kamu jual produk B2B yang kompleks, ini 3 hal yang wajib ada di whitepaper kamu:\n\n1. 1 halaman ringkasan super jelas\n2. 1 contoh kasus real, bukan teori\n3. 1 ajakan next step yang spesifik\n\nTanpa 3 ini, dokumen kamu cuma terasa \"pintar\", tapi tidak bantu closing.",
+      "type": "text",
+      "medias": [],
+      "status": "pending",
+      "scheduleAt": "2026-04-16T13:00:00.000Z",
+      "replies": [],
+      "accountId": "69db171284ebdfba15c9ab58",
+      "userId": "69708888f8a15510f95967ec",
+      "createdAt": "2026-04-14T06:58:41.666Z",
+      "updatedAt": "2026-04-14T06:58:41.666Z",
+      "__v": 0,
+      "id": "69dde5a184ebdfba15ef73c0"
+    }
+  ],
+  "result": [
+    {
+      "oldId": "69dde5a184ebdfba15ef73b4",
+      "newId": "69df164b84ebdfba150050c9",
+      "scheduleAt": "2026-04-15T05:30:00.000Z",
+      "description": "Banyak founder punya problem yang sama:\nmateri pitch-nya lengkap, tapi terlalu berat buat dibaca.\n\nSlide 1\nBefore: deck penuh bullet point kecil dan grafik yang susah dicerna.\n\nSlide 2\nAfter: struktur whitepaper yang jelas\n- 1 halaman ringkasan\n- 3 halaman problem & insight\n- 4 halaman solusi + use case\n- 2 halaman hasil & next step\n\nSlide 3\nKita pilah dulu mana data yang benar-benar penting buat keputusan.\n\nSlide 4\nKita sederhanakan bahasa, tapi tetap jaga kredibilitas dan detail teknis.\n\nSlide 5\nKita pikirkan flow baca: orang sibuk harus bisa paham inti dalam 5 menit.\n\nSlide 6\nAkhirnya, dokumen yang tadinya \"nanti aja deh bacanya\" berubah jadi sesuatu yang bikin klien mau lanjut ngobrol.\n\nKalau materi kamu sekarang masih terasa berat, bagian paling sering bikin orang berhenti baca ada di mana?"
+    },
+    {
+      "oldId": "69df141c84ebdfba1500213d",
+      "newId": "69df164b84ebdfba150050d8",
+      "scheduleAt": "2026-04-15T07:20:00.000Z",
+      "description": "Kalau semua aset event berhenti di Google Drive, value terbesarnya belum kepakai.\n\nEvent corporate yang bagus itu bukan \"hari H selesai\", tapi \"hari H mulai aset\".\n\nSaat trust makin mahal, dokumentasi event bisa jadi long-term asset:\n- proof of execution\n- konten LinkedIn berbulan-bulan\n- materi sales + employer branding\n\nMakanya saya selalu treat event sebagai investment day, bukan biaya produksi.\n\nDi tim kamu, aset event paling sering mentok di folder, atau benar-benar dipakai ulang?"
+    },
+    {
+      "oldId": "69ddebea84ebdfba15efec03",
+      "newId": "69df164b84ebdfba150050e7",
+      "scheduleAt": "2026-04-16T02:30:00.000Z",
+      "description": "3 tanda whitepaper kamu diam-diam bikin calon klien kabur\n\n1. Opening langsung jualan\nBuka dokumen dengan \"kami adalah perusahaan yang...\" bikin orang scroll atau close. Orang lebih peduli ke problem mereka dulu, baru profil kamu.\n\n2. Terlalu banyak fitur, terlalu sedikit konteks\nList fitur tanpa cerita real use case bikin semuanya terasa sama saja. B2B butuh contoh: \"gimana ini dipakai tim gue sehari-hari?\".\n\n3. Tidak ada next step yang jelas\nSudah baca 20 halaman, tapi tidak tahu harus ngapain. Book demo kah? Hubungi siapa? Kapan?\n\nDi Whitepaper, saya selalu mulai dari 3 pertanyaan:\n- siapa yang baca\n- keputusan apa yang mau mereka ambil\n- langkah apa yang ideal setelah selesai baca\n\nDari situ baru struktur, copy, dan desain kita susun. Bukan kebalik.\n\nKalau kamu lagi review whitepaper sekarang, 3 tanda di atas mana yang paling sering kamu temui?"
+    },
+    {
+      "oldId": "69dde5a184ebdfba15ef73c0",
+      "newId": "69df164c84ebdfba150050f4",
+      "scheduleAt": "2026-04-16T13:00:00.000Z",
+      "description": "Kalau kamu jual produk B2B yang kompleks, ini 3 hal yang wajib ada di whitepaper kamu:\n\n1. 1 halaman ringkasan super jelas\n2. 1 contoh kasus real, bukan teori\n3. 1 ajakan next step yang spesifik\n\nTanpa 3 ini, dokumen kamu cuma terasa \"pintar\", tapi tidak bantu closing.\n\nKalau harus pilih satu, mana yang paling sering hilang dari whitepaper yang pernah kamu lihat?"
+    }
+  ]
+}
