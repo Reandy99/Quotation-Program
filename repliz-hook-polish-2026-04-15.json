@@ -1,0 +1,72 @@
+{
+  "backup": [
+    {
+      "_id": "69df112184ebdfba150004fd",
+      "title": "",
+      "description": "Insight cepat dari minggu ini:\nevent corporate yang bagus itu bukan \"hari H selesai\", tapi \"hari H mulai aset\".\n\nSaat trust makin mahal, dokumentasi event jadi long-term asset:\n- proof of execution\n- konten LinkedIn berbulan-bulan\n- materi sales + employer branding\n\nMakanya saya selalu treat event sebagai investment day, bukan biaya produksi.",
+      "type": "text",
+      "medias": [],
+      "status": "pending",
+      "scheduleAt": "2026-04-15T07:20:00.000Z",
+      "replies": [],
+      "accountId": "69db171284ebdfba15c9ab58",
+      "userId": "69708888f8a15510f95967ec",
+      "createdAt": "2026-04-15T04:16:33.962Z",
+      "updatedAt": "2026-04-15T04:16:33.962Z",
+      "__v": 0,
+      "id": "69df112184ebdfba150004fd"
+    },
+    {
+      "_id": "69df112184ebdfba150004f3",
+      "title": "",
+      "description": "Satu pattern yang makin jelas di project corporate event: value terbesar sering muncul setelah hari H selesai.\n\nBanyak tim masih treat dokumentasi sebagai deliverable 1 kali pakai.\nPadahal kalau dirancang dari awal, 1 event bisa jadi long-term asset untuk:\n- update company profile\n- konten employer branding di LinkedIn Career Page\n- materi follow up sales dan proposal\n\nKenapa ini penting?\nLinkedIn x Edelman 2025 nunjukkin lebih dari 40% deal B2B bisa macet karena buying group tidak selaras.\nArtinya, konten visual dari event bukan cuma buat \"terlihat ramai\", tapi buat bantu semua stakeholder lihat bukti eksekusi yang sama.\n\nDi Whitepaper, ini kenapa saya selalu dorong event sebagai investment day.\nBukan biaya dokumentasi, tapi aset komunikasi yang bisa dipakai berbulan-bulan.\n\nKalau di tim kamu, aset event paling sering dipakai ulang untuk apa?",
+      "type": "text",
+      "medias": [],
+      "status": "pending",
+      "scheduleAt": "2026-04-15T09:10:00.000Z",
+      "replies": [],
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "userId": "69708888f8a15510f95967ec",
+      "createdAt": "2026-04-15T04:16:33.810Z",
+      "updatedAt": "2026-04-15T04:16:33.810Z",
+      "__v": 0,
+      "id": "69df112184ebdfba150004f3"
+    },
+    {
+      "_id": "69df112284ebdfba1500051b",
+      "title": "",
+      "description": "Belakangan saya makin yakin, corporate event yang bagus itu bukan biaya dokumentasi satu hari. Event itu investment day.\n\nYang kami lihat di lapangan:\n- Hari H adalah titik kumpul momen paling jujur dari brand: cara tim bekerja, energi audiens, dan detail eksekusi.\n- Kalau di-capture dengan narasi yang tepat, materi event bisa jadi aset konten untuk company profile, employer branding, dan sales enablement berbulan-bulan.\n- Value terbesar datang dari direct service: tim yang paham objective bisnis dulu, baru ambil angle visual dan storytelling yang relevan.\n\nDi Whitepaper, kami selalu dorong mindset ini: jangan kejar upload cepat saja, bangun aset jangka panjang dari setiap event.\n\nKalau di tim kamu, event masih dianggap biaya, atau sudah diperlakukan sebagai aset?",
+      "type": "text",
+      "medias": [],
+      "status": "pending",
+      "scheduleAt": "2026-04-15T10:20:00.000Z",
+      "replies": [],
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "userId": "69708888f8a15510f95967ec",
+      "createdAt": "2026-04-15T04:16:34.467Z",
+      "updatedAt": "2026-04-15T04:16:34.467Z",
+      "__v": 0,
+      "id": "69df112284ebdfba1500051b"
+    }
+  ],
+  "result": [
+    {
+      "oldId": "69df112184ebdfba150004fd",
+      "newId": "69df141c84ebdfba1500213d",
+      "scheduleAt": "2026-04-15T07:20:00.000Z",
+      "description": "Kalau semua aset event berhenti di Google Drive, value terbesarnya belum kepakai.\n\nEvent corporate yang bagus itu bukan \"hari H selesai\", tapi \"hari H mulai aset\".\n\nSaat trust makin mahal, dokumentasi event bisa jadi long-term asset:\n- proof of execution\n- konten LinkedIn berbulan-bulan\n- materi sales + employer branding\n\nMakanya saya selalu treat event sebagai investment day, bukan biaya produksi."
+    },
+    {
+      "oldId": "69df112184ebdfba150004f3",
+      "newId": "69df141d84ebdfba15002147",
+      "scheduleAt": "2026-04-15T09:10:00.000Z",
+      "description": "Value terbesar dari corporate event sering justru muncul setelah ruangan sepi.\n\nBanyak tim masih treat dokumentasi sebagai deliverable 1 kali pakai.\nPadahal kalau dirancang dari awal, 1 event bisa jadi long-term asset untuk:\n- update company profile\n- konten employer branding di LinkedIn Career Page\n- materi follow up sales dan proposal\n\nKenapa ini penting?\nLinkedIn x Edelman 2025 nunjukkin lebih dari 40% deal B2B bisa macet karena buying group tidak selaras.\nArtinya, konten visual dari event bukan cuma buat \"terlihat ramai\", tapi buat bantu semua stakeholder lihat bukti eksekusi yang sama.\n\nDi Whitepaper, ini kenapa saya selalu dorong event sebagai investment day.\nBukan biaya dokumentasi, tapi aset komunikasi yang bisa dipakai berbulan-bulan.\n\nKalau di tim kamu, aset event paling sering dipakai ulang untuk apa?"
+    },
+    {
+      "oldId": "69df112284ebdfba1500051b",
+      "newId": "69df141d84ebdfba15002154",
+      "scheduleAt": "2026-04-15T10:20:00.000Z",
+      "description": "Corporate event yang mahal tapi cuma berakhir jadi folder dokumentasi itu sebenarnya rugi dua kali.\n\nYang kami lihat di lapangan:\n- Hari H adalah titik kumpul momen paling jujur dari brand: cara tim bekerja, energi audiens, dan detail eksekusi.\n- Kalau di-capture dengan narasi yang tepat, materi event bisa jadi aset konten untuk company profile, employer branding, dan sales enablement berbulan-bulan.\n- Value terbesar datang dari direct service: tim yang paham objective bisnis dulu, baru ambil angle visual dan storytelling yang relevan.\n\nDi Whitepaper, kami selalu dorong mindset ini: jangan kejar upload cepat saja, bangun aset jangka panjang dari setiap event.\n\nKalau di tim kamu, event masih dianggap biaya, atau sudah diperlakukan sebagai aset?"
+    }
+  ]
+}
