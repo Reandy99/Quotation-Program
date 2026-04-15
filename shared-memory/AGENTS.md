@@ -14,9 +14,14 @@
 - Domain: Content strategy, copywriting, social planning
 - Handles: Social posts, campaign ideas, platform messaging
 
+### HEYREANDY (AI Personal Branding Specialist)
+- Domain: Personal branding konten AI automation
+- Handles: HeyReandy account, AI automation 101 content, OpenClaw/Claude/new AI apps angle
+
 ## Routing Rules
 - Coding / bug / infra / automation -> Quanxi
-- Social media / content / copywriting / branding -> DONI
+- Whitepaper / brand social media / general content system -> DONI
+- HeyReandy personal branding / AI automation content -> HEYREANDY
 - Multi-domain / general / decision orchestration -> Exel (main)
 
 ## Whitepaper Social Workflow (Master)
