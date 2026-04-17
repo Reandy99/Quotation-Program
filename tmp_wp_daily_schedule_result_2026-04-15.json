@@ -1,0 +1,56 @@
+[
+  {
+    "status_code": 201,
+    "request": {
+      "title": "",
+      "description": "Saya Reandy.\n\nSatu pattern yang makin jelas di project corporate event:\nvalue terbesar sering muncul setelah hari H selesai.\n\nBanyak tim masih treat dokumentasi sebagai deliverable 1 kali pakai.\nPadahal kalau dirancang dari awal, 1 event bisa jadi long-term asset untuk:\n- update company profile\n- konten employer branding di LinkedIn Career Page\n- materi follow up sales dan proposal\n\nKenapa ini penting?\nLinkedIn x Edelman 2025 nunjukkin lebih dari 40% deal B2B bisa macet karena buying group tidak selaras.\nArtinya, konten visual dari event bukan cuma buat \"terlihat ramai\", tapi buat bantu semua stakeholder lihat bukti eksekusi yang sama.\n\nDi Whitepaper, ini kenapa saya selalu dorong event sebagai investment day.\nBukan biaya dokumentasi, tapi aset komunikasi yang bisa dipakai berbulan-bulan.\n\nKalau di tim kamu, aset event paling sering dipakai ulang untuk apa?",
+      "type": "text",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "scheduleAt": "2026-04-15T09:10:00.000Z",
+      "medias": []
+    },
+    "response": {
+      "title": "",
+      "description": "Saya Reandy.\n\nSatu pattern yang makin jelas di project corporate event:\nvalue terbesar sering muncul setelah hari H selesai.\n\nBanyak tim masih treat dokumentasi sebagai deliverable 1 kali pakai.\nPadahal kalau dirancang dari awal, 1 event bisa jadi long-term asset untuk:\n- update company profile\n- konten employer branding di LinkedIn Career Page\n- materi follow up sales dan proposal\n\nKenapa ini penting?\nLinkedIn x Edelman 2025 nunjukkin lebih dari 40% deal B2B bisa macet karena buying group tidak selaras.\nArtinya, konten visual dari event bukan cuma buat \"terlihat ramai\", tapi buat bantu semua stakeholder lihat bukti eksekusi yang sama.\n\nDi Whitepaper, ini kenapa saya selalu dorong event sebagai investment day.\nBukan biaya dokumentasi, tapi aset komunikasi yang bisa dipakai berbulan-bulan.\n\nKalau di tim kamu, aset event paling sering dipakai ulang untuk apa?",
+      "type": "text",
+      "medias": [],
+      "status": "pending",
+      "scheduleAt": "2026-04-15T09:10:00.000Z",
+      "replies": [],
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "userId": "69708888f8a15510f95967ec",
+      "createdAt": "2026-04-15T03:41:43.031Z",
+      "updatedAt": "2026-04-15T03:41:43.031Z",
+      "_id": "69df08f784ebdfba15ff719b",
+      "__v": 0,
+      "id": "69df08f784ebdfba15ff719b"
+    }
+  },
+  {
+    "status_code": 201,
+    "request": {
+      "title": "",
+      "description": "Saya Reandy.\n\nCorporate event itu bukan selesai di hari H.\nKalau dirancang benar, 1 event bisa jadi aset berbulan-bulan:\n- update company profile\n- employer branding di LinkedIn\n- materi follow up sales\n\nMakanya saya lihat event sebagai investment day, bukan biaya dokumentasi.\n\nDi tim kamu, aset event paling sering dipakai buat apa?",
+      "type": "text",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "scheduleAt": "2026-04-15T11:35:00.000Z",
+      "medias": []
+    },
+    "response": {
+      "title": "",
+      "description": "Saya Reandy.\n\nCorporate event itu bukan selesai di hari H.\nKalau dirancang benar, 1 event bisa jadi aset berbulan-bulan:\n- update company profile\n- employer branding di LinkedIn\n- materi follow up sales\n\nMakanya saya lihat event sebagai investment day, bukan biaya dokumentasi.\n\nDi tim kamu, aset event paling sering dipakai buat apa?",
+      "type": "text",
+      "medias": [],
+      "status": "pending",
+      "scheduleAt": "2026-04-15T11:35:00.000Z",
+      "replies": [],
+      "accountId": "69db171284ebdfba15c9ab58",
+      "userId": "69708888f8a15510f95967ec",
+      "createdAt": "2026-04-15T03:41:43.062Z",
+      "updatedAt": "2026-04-15T03:41:43.062Z",
+      "_id": "69df08f784ebdfba15ff719f",
+      "__v": 0,
+      "id": "69df08f784ebdfba15ff719f"
+    }
+  }
+]

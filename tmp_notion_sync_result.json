@@ -1,0 +1,140 @@
+{
+  "created": [
+    {
+      "scheduleId": "69dd759b84ebdfba15e8d87f",
+      "pageId": "3432ee0e-3c20-81f5-b064-c0f9b741f3b1",
+      "platform": "Threads",
+      "date": "2026-04-14",
+      "status": "Posted"
+    },
+    {
+      "scheduleId": "69dd75a484ebdfba15e8d9f7",
+      "pageId": "3432ee0e-3c20-8138-b4de-fa8dbda54c76",
+      "platform": "LinkedIn",
+      "date": "2026-04-14",
+      "status": "Posted"
+    },
+    {
+      "scheduleId": "69dda0fa84ebdfba15eb5d79",
+      "pageId": "3432ee0e-3c20-81c9-a056-e5488244e4cf",
+      "platform": "LinkedIn",
+      "date": "2026-04-14",
+      "status": "Posted"
+    },
+    {
+      "scheduleId": "69dd759b84ebdfba15e8d884",
+      "pageId": "3432ee0e-3c20-81f7-a89d-e480d4c121e3",
+      "platform": "Threads",
+      "date": "2026-04-14",
+      "status": "Posted"
+    },
+    {
+      "scheduleId": "69dd75a484ebdfba15e8d9fb",
+      "pageId": "3432ee0e-3c20-812f-aecb-e289f194fd6d",
+      "platform": "LinkedIn",
+      "date": "2026-04-14",
+      "status": "Posted"
+    },
+    {
+      "scheduleId": "69dd759b84ebdfba15e8d88b",
+      "pageId": "3432ee0e-3c20-81eb-8210-f422e41f1f7c",
+      "platform": "Threads",
+      "date": "2026-04-14",
+      "status": "Posted"
+    },
+    {
+      "scheduleId": "69dda0fa84ebdfba15eb5d7e",
+      "pageId": "3432ee0e-3c20-8109-9d9d-ffe1f26588f4",
+      "platform": "LinkedIn",
+      "date": "2026-04-14",
+      "status": "Posted"
+    },
+    {
+      "scheduleId": "69df04e884ebdfba15ff26bb",
+      "pageId": "3432ee0e-3c20-8128-8185-d61ee5327cbd",
+      "platform": "LinkedIn",
+      "date": "2026-04-15",
+      "status": "Scheduled"
+    },
+    {
+      "scheduleId": "69df04e884ebdfba15ff26ca",
+      "pageId": "3432ee0e-3c20-81a7-968a-d50219f825fa",
+      "platform": "Threads",
+      "date": "2026-04-15",
+      "status": "Scheduled"
+    },
+    {
+      "scheduleId": "69dde5a184ebdfba15ef73b4",
+      "pageId": "3432ee0e-3c20-81b2-9456-e70600ba5e0b",
+      "platform": "Instagram",
+      "date": "2026-04-15",
+      "status": "Scheduled"
+    },
+    {
+      "scheduleId": "69df04e884ebdfba15ff26bf",
+      "pageId": "3432ee0e-3c20-8124-b41a-e79d6d1de9c6",
+      "platform": "LinkedIn",
+      "date": "2026-04-15",
+      "status": "Scheduled"
+    },
+    {
+      "scheduleId": "69df04e884ebdfba15ff26ce",
+      "pageId": "3432ee0e-3c20-817f-ace4-fba167214d34",
+      "platform": "Threads",
+      "date": "2026-04-15",
+      "status": "Scheduled"
+    },
+    {
+      "scheduleId": "69df04e884ebdfba15ff26c5",
+      "pageId": "3432ee0e-3c20-810a-bca2-faa550ac7b7a",
+      "platform": "LinkedIn",
+      "date": "2026-04-15",
+      "status": "Scheduled"
+    },
+    {
+      "scheduleId": "69df04e884ebdfba15ff26d2",
+      "pageId": "3432ee0e-3c20-8118-813b-d3bdb8fd1aa2",
+      "platform": "Threads",
+      "date": "2026-04-15",
+      "status": "Scheduled"
+    },
+    {
+      "scheduleId": "69dde5a184ebdfba15ef73bc",
+      "pageId": "3432ee0e-3c20-81f9-8ee2-d3dfb229e32b",
+      "platform": "Threads",
+      "date": "2026-04-15",
+      "status": "Scheduled"
+    },
+    {
+      "scheduleId": "69ddebea84ebdfba15efec03",
+      "pageId": "3432ee0e-3c20-81e9-8036-dfe261a989e2",
+      "platform": "LinkedIn",
+      "date": "2026-04-16",
+      "status": "Scheduled"
+    },
+    {
+      "scheduleId": "69dde5a184ebdfba15ef73b8",
+      "pageId": "3432ee0e-3c20-81b0-93a7-efaf6a8f6ef1",
+      "platform": "Instagram",
+      "date": "2026-04-16",
+      "status": "Scheduled"
+    },
+    {
+      "scheduleId": "69dde5a184ebdfba15ef73c0",
+      "pageId": "3432ee0e-3c20-8184-8c29-f378fedfe547",
+      "platform": "Threads",
+      "date": "2026-04-16",
+      "status": "Scheduled"
+    }
+  ],
+  "skipped": [
+    [
+      "69df05a784ebdfba15ff303c",
+      "already exists"
+    ],
+    [
+      "69df05a784ebdfba15ff3033",
+      "already exists"
+    ]
+  ]
+}
