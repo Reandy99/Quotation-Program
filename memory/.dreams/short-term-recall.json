@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-17T11:00:40.986Z",
+  "updatedAt": "2026-04-17T11:34:25.546Z",
   "entries": {
     "memory:memory/2026-04-09.md:1:13": {
       "key": "memory:memory/2026-04-09.md:1:13",
@@ -91858,23 +91858,25 @@
       "endLine": 654,
       "source": "memory",
       "snippet": "- Whitepaper social scope is now explicitly: LinkedIn, Threads, and Instagram. Content should be tailored per platform (more visual and concise for Instagram, conversational for Threads, more structured and educational for LinkedIn). - Repliz integration was exercised with a Python script that fetches and summarizes per-account daily posting counts for Whitepaper LinkedIn/Threads/Instagram and HeyReandy Threads based on a \"today\" window defined in WIB and converted to UTC. - User asked to review and possibly restructure the social-media workflow across agents (Exel, DONI, Quanxi) and wondered if a new dedicated agent is needed to handle current social accounts (Whitepaper + HeyReandy).",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.848841761039369,
+      "totalScore": 5.848841761039369,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T06:51:03.525Z",
-      "lastRecalledAt": "2026-04-15T04:42:48.769Z",
+      "lastRecalledAt": "2026-04-17T11:34:25.546Z",
       "queryHashes": [
         "ffad0036aab3",
         "f84d66e38938",
         "ce003b5f349c",
         "5717fc184cd7",
-        "913350446238"
+        "913350446238",
+        "698646e587b7"
       ],
       "recallDays": [
         "2026-04-14",
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-17"
       ],
       "conceptTags": [
         "per-account",
@@ -111806,15 +111808,16 @@
       "endLine": 17,
       "source": "memory",
       "snippet": "- Two HeyReandy cron jobs were set up for a daily loop: morning research -> draft -> self-review -> schedule, and nightly review -> insight capture -> next-idea seeding, with Threads content expected to include a visual brief and post-publication reply sprint guidance. - Gateway was restarted on 2026-04-15 to stabilize the new HeyReandy agent model and reload updated HeyReandy daily automation prompts. - `openclaw doctor --non-interactive` reported the HeyReandy agent as active and the restart as successful, with non-blocking follow-up warnings about missing embeddings API key for semantic memory search, two orphan transcript files in the main session store, and gateway runtime depending on",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-17T11:00:40.986Z",
-      "lastRecalledAt": "2026-04-17T11:00:40.986Z",
+      "lastRecalledAt": "2026-04-17T11:34:25.546Z",
       "queryHashes": [
-        "b8a59621f4fe"
+        "b8a59621f4fe",
+        "698646e587b7"
       ],
       "recallDays": [
         "2026-04-17"
@@ -111828,6 +111831,37 @@
         "post-publication",
         "non-interactive",
         "non-blocking"
+      ]
+    },
+    "memory:memory/2026-04-15.md:10:15": {
+      "key": "memory:memory/2026-04-15.md:10:15",
+      "path": "memory/2026-04-15.md",
+      "startLine": 10,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "- Telegram slash command menu for the default bot was restored by refreshing native command registration and disabling Telegram native skill commands to reduce menu size; core native commands remain enabled. - Whitepaper content workflow now has a guardrail forbidding generic opening hooks like `Saya Reandy` at the start of generated posts; generation prompts were updated and gateway restarted to apply the change. - Pending Whitepaper Repliz schedules for 2026-04-15 were manually cleaned up: posts starting with `Saya Reandy` were replaced, and several weak hooks were strengthened while preserving scheduled publish times. - A dedicated `heyreandy` agent was created with its own workspace at `",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T11:34:25.546Z",
+      "lastRecalledAt": "2026-04-17T11:34:25.546Z",
+      "queryHashes": [
+        "698646e587b7"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "gateway",
+        "telegram",
+        "slash",
+        "command",
+        "menu",
+        "the",
+        "bot",
+        "was"
       ]
     }
   }
