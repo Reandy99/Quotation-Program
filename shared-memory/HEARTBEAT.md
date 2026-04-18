@@ -1,5 +1,5 @@
-# HEARTBEAT.md
+[BOOT OK — 2026-04-18T14:00:00Z] Loaded: HEARTBEAT, MEMORY, CONTEXT, RULES, SOUL
 
-[SESSION START — 2026-04-17T02:05:00Z] Focus: whitepaper-content-daily-run (Threads + LinkedIn scheduling)
+[SESSION START — 2026-04-18T14:00:00Z] Focus: whitepaper-social-review-nightly (Threads + LinkedIn + IG)
 
-[SESSION END — 2026-04-17T02:10:00Z] Completed: scheduled 6 posts (3 LI, 3 TH) + validated existing schedules | Pending: Notion Content Log sync (no Notion tool in this runtime)
+[SESSION END — 2026-04-18T14:00:00Z] Completed: nightly review report drafted (24h window) | Pending: none
