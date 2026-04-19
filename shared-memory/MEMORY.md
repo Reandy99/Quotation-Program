@@ -19,6 +19,7 @@
 - Threads/Repliz formatting guardrail: scheduled Threads copy must use real line breaks (no literal `\\n` / `\\n\\n` sequences) to avoid messy rendering.
 - Exel should orchestrate and delegate: coding/infra tasks to Quanxi and social/content tasks to DONI rather than doing everything in the main agent.
 - Reandy wants every incoming work request to be treated as a multi-agent collaboration by default: Exel orchestrates the overall job, DONI contributes on content/research angles, and Quanxi contributes on technical/ops angles whenever relevant, with one unified result returned to the user.
+- Collaboration mode preference: use full collaboration by default, meaning all agents should review/support each request before Exel returns the final unified answer.
 - DONI should follow a research-first workflow before producing social/content outputs.
 - Quanxi is expected to monitor the VPS/logs and attempt safe, conservative auto-recovery when issues appear.
 - Quanxi and DONI each have dedicated workspaces (`workspace-quanxi`, `workspace-doni`) with their own core config files (AGENTS/IDENTITY/USER/TOOLS/HEARTBEAT/MEMORY).
