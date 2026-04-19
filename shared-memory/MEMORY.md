@@ -30,6 +30,7 @@
 - Notion Content Log sync is currently manual: this runtime does not have a Notion integration/tool available, so any Notion logging should be prepared as copy-paste entries until Notion is connected.
 - The ClawHub `repliz` skill is installed and should be the default for Repliz scheduling and management instead of ad-hoc curl or manual HTTP calls.
 - Media handling for Whitepaper (dan akun terkait) sekarang pakai foto yang Reandy upload via Telegram ke VPS; Exel memilih foto yang belum dipakai dalam ±1 bulan (kecuali diminta ulang) dan menjadwalkan post text + image via Repliz, jadi Reandy tidak perlu upload manual di Repliz.
+- Whitepaper image hosting for Repliz now uses `https://ocindonesia.my.id/media/whitepaper/` (nginx alias to `/var/www/ocindonesia/media/whitepaper/`), which is suitable for scheduled Instagram album posts sourced from VPS images.
 - n8n 2.15.1 is installed on the VPS and runs as a systemd service, exposing a local HTTP interface on port 5678 protected by basic auth.
 - The n8n workflow "Youtube Video to Thread & X Content" (ID `AksEaOHOMxGrNdCj`) is imported but kept inactive until OpenRouter, Apify, and Blotato credentials are provided.
 
@@ -72,3 +73,4 @@
 [2026-04-18T14:00:00Z] whitepaper-social-review-nightly | Reviewed last 24h schedules (success+pending) via Repliz for Threads/LinkedIn/IG | Found Threads posts rendered with literal \\n sequences; LinkedIn had 31 pending future posts updated in-window; IG none | agent_used=main
 
 [2026-04-19T14:08:00Z] whatsapp-integration | Enabled WhatsApp channel/plugin + main routing on default account; generated pairing QR in Telegram | pending scan/link completion | agent_used=main
+[2026-04-19T15:20:17Z] whitepaper-instagram-30day | Scheduled 9 Instagram album posts for next 30 days via Repliz using VPS-hosted Whitepaper images on ocindonesia media | cadence ~every 3-4 days, 2 photos per post, all pending | agent_used=main
