@@ -17,6 +17,12 @@ PORT = 9090
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 
+def request_base_url(handler: BaseHTTPRequestHandler) -> str:
+    host = handler.headers.get("X-Forwarded-Host") or handler.headers.get("Host") or "ocindonesia.my.id"
+    proto = handler.headers.get("X-Forwarded-Proto") or "https"
+    return f"{proto}://{host}"
+
+
 class UploadHandler(BaseHTTPRequestHandler):
     def do_POST(self):
         if self.path != "/upload":
@@ -60,11 +66,12 @@ class UploadHandler(BaseHTTPRequestHandler):
             saved.append(filename)
 
         body_lines = []
+        base_url = request_base_url(self)
         if saved:
             body_lines.append("<p>Uploaded:</p><ul>")
             for name in saved:
                 esc = html.escape(name)
-                url = f"https://ocindonesia.my.id/media/whitepaper/{esc}"
+                url = f"{base_url}/media/whitepaper/{esc}"
                 body_lines.append(f"<li><a href='{url}' target='_blank'>{esc}</a></li>")
             body_lines.append("</ul>")
         else:
