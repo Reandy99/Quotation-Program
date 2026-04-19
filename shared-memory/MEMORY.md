@@ -21,6 +21,7 @@
 - Reandy wants every incoming work request to be treated as a multi-agent collaboration by default: Exel orchestrates the overall job, DONI contributes on content/research angles, and Quanxi contributes on technical/ops angles whenever relevant, with one unified result returned to the user.
 - Collaboration mode preference: use full collaboration by default, meaning all agents should review/support each request before Exel returns the final unified answer.
 - DONI should follow a research-first workflow before producing social/content outputs.
+- Default Whitepaper event workflow: when Reandy has a new event/project, he sends the event brief plus raw assets, then Exel turns them into a reusable content bank and platform-specific content for LinkedIn, Instagram, and Threads.
 - Quanxi is expected to monitor the VPS/logs and attempt safe, conservative auto-recovery when issues appear.
 - Quanxi and DONI each have dedicated workspaces (`workspace-quanxi`, `workspace-doni`) with their own core config files (AGENTS/IDENTITY/USER/TOOLS/HEARTBEAT/MEMORY).
 - Additional Telegram bots for DONI and Quanxi are paired and associated with user Telegram ID 514720705.
