@@ -16,6 +16,7 @@
 - Telegram is used as an admin-capable surface (cron/config control), not just read-only chat.
 - Codex/cron jobs should not reference `openai-codex/gpt-5.1` (unsupported in this setup); use a supported Codex model (e.g. `openai-codex/gpt-5.3-codex`).
 - Content guardrail: avoid generic openers like "Saya Reandy" at the start of generated posts; lead with a real hook.
+- Threads/Repliz formatting guardrail: scheduled Threads copy must use real line breaks (no literal `\\n` / `\\n\\n` sequences) to avoid messy rendering.
 - Exel should orchestrate and delegate: coding/infra tasks to Quanxi and social/content tasks to DONI rather than doing everything in the main agent.
 - DONI should follow a research-first workflow before producing social/content outputs.
 - Quanxi is expected to monitor the VPS/logs and attempt safe, conservative auto-recovery when issues appear.
@@ -69,3 +70,5 @@
 
 [2026-04-17T23:00:00Z] whitepaper-threads-daily | Scheduled 4 Threads posts (text-only) | WIB: 10:15, 13:05, 16:40, 19:20 | agent_used=main
 [2026-04-18T14:00:00Z] whitepaper-social-review-nightly | Reviewed last 24h schedules (success+pending) via Repliz for Threads/LinkedIn/IG | Found Threads posts rendered with literal \\n sequences; LinkedIn had 31 pending future posts updated in-window; IG none | agent_used=main
+
+[2026-04-19T14:08:00Z] whatsapp-integration | Enabled WhatsApp channel/plugin + main routing on default account; generated pairing QR in Telegram | pending scan/link completion | agent_used=main
