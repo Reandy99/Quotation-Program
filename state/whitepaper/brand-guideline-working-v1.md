@@ -63,21 +63,49 @@ Supporting text feel:
 - use heavy decorative icons or emoji-driven layouts
 - use heavy Instagram filter looks on client work
 
+## Photo selection rule
+Avoid posting photos that look visually neat but do not carry enough meaning.
+
+Reject as primary post assets unless they clearly support a strategic story:
+- generic food close-ups
+- random decor detail shots
+- isolated object shots with no people, no branding, and no event context
+- pretty photos that do not strengthen trust, scale, atmosphere, or business value
+
+Prefer photos that show:
+- people
+- interaction
+- audience scale
+- stage moments
+- brand presence
+- venue context
+- proof that the event was real, active, and professionally handled
+
+Food or detail shots may be used only when they add clear meaning, such as:
+- hospitality experience as part of the event story
+- premium guest experience
+- sponsor/product relevance
+- atmosphere support inside a stronger carousel narrative
+
 ## Social design implication for agents
 ### Research Agent
 - angles should support direct and credible B2B positioning
+- do not build the main angle from low-meaning detail photos
 
 ### DONI / Content Agent
 - hooks and captions must stay direct, confident, warm, and clear
 - avoid fluffy language and over-selling
+- do not force meaning onto weak photos; choose stronger narrative assets instead
 
 ### Design Agent
 - design should feel premium, minimal, structured, and business-ready
 - photo remains the credibility anchor
 - overlays should be short and strategic
+- do not elevate weak detail shots into hero assets unless they support a clear strategic narrative
 
 ### Publishing Agent
 - prefer carousel structures that preserve whitespace and readability
+- do not publish low-meaning detail shots as the lead asset
 
 ### Analytics Agent
 - review not only engagement but also whether the design/copy combination improves inquiry intent and sales trust

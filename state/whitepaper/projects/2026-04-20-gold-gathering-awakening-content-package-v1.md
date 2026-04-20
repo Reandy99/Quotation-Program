@@ -66,5 +66,7 @@ Di event seperti GOLD GATHERING AWAKENING di Grand Mercure Kemayoran, value foto
 - See companion brief: `state/whitepaper/projects/2026-04-20-gold-gathering-awakening-design-brief-v1.md`
 
 ## Notes for next pass
-- If more close-up networking or interaction shots are selected, build a second angle focused on community and engagement
-- If there are sponsor, team, or brand-detail shots, build a third angle for event value and activation
+- Do not use generic food/detail shots as primary posting assets unless they carry clear event meaning.
+- Prioritize stage, audience, interaction, branding, and atmosphere shots first.
+- If more close-up networking or interaction shots are selected, build a second angle focused on community and engagement.
+- If there are sponsor, team, or brand-detail shots, build a third angle for event value and activation.
