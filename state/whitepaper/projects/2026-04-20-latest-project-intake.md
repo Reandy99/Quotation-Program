@@ -17,6 +17,7 @@ Project label: GOLD GATHERING AWAKENING "corporate documentation"
 - Objective: branding + social proof
 - Event name confirmed: GOLD GATHERING AWAKENING "corporate documentation"
 - Event date confirmed: 18 April 2026
+- Location confirmed: Grand Mercure Kemayoran
 - Likely strongest visual lane from currently visible hero frame: stage moment, speaker presence, audience scale, event atmosphere
 
 ## Internal routing
@@ -48,8 +49,7 @@ Project label: GOLD GATHERING AWAKENING "corporate documentation"
 - keep file list and workflow state tidy for the next packaging step
 
 ## Missing metadata that would improve accuracy
-- location
 - any no-mention / CTA / deadline notes
 
 ## Next action
-Proceed with content packaging using the confirmed event name and date.
+Proceed with content packaging using the confirmed event name, date, and location.

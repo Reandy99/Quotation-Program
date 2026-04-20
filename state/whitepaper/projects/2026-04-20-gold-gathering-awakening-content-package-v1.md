@@ -1,6 +1,7 @@
 # GOLD GATHERING AWAKENING - Content Package v1
 
 Event date: 18 April 2026
+Location: Grand Mercure Kemayoran
 Project type: corporate documentation
 Objective: branding + social proof
 Status: first draft ready
@@ -20,7 +21,7 @@ Strongest visible angle from the current hero frame:
 5. The value of documentation is not only aesthetic. It is operational and commercial after the event ends.
 
 ## LinkedIn draft
-At a corporate event like GOLD GATHERING AWAKENING, strong documentation does more than record what happened.
+At GOLD GATHERING AWAKENING at Grand Mercure Kemayoran, strong documentation does more than record what happened.
 
 It captures scale, energy, audience presence, and the kind of atmosphere that makes an event feel worth remembering.
 
@@ -37,7 +38,7 @@ It is about turning live moments into long-term brand assets.
 #CorporateDocumentation #EventPhotography #BrandPresence #WhitepaperProduction
 
 ## Instagram draft
-GOLD GATHERING AWAKENING bukan cuma soal apa yang terjadi di panggung, tapi juga bagaimana atmosfer acaranya terasa kuat saat dilihat kembali.
+GOLD GATHERING AWAKENING di Grand Mercure Kemayoran bukan cuma soal apa yang terjadi di panggung, tapi juga bagaimana atmosfer acaranya terasa kuat saat dilihat kembali.
 
 Buat kami, corporate documentation yang baik harus bisa menangkap energi event, kehadiran audiens, dan branding yang benar-benar hidup dalam frame.
 
@@ -50,7 +51,7 @@ Corporate documentation yang kuat bukan cuma menyimpan momen acara.
 
 Ia juga menangkap energi ruangan, kehadiran audiens, dan branding yang membuat event terasa hidup bahkan setelah selesai.
 
-Di event seperti GOLD GATHERING AWAKENING, value foto bukan cuma arsip. Tapi aset untuk recap, social proof, dan materi brand berikutnya.
+Di event seperti GOLD GATHERING AWAKENING di Grand Mercure Kemayoran, value foto bukan cuma arsip. Tapi aset untuk recap, social proof, dan materi brand berikutnya.
 
 #WhitepaperProduction #CorporateDocumentation
 
@@ -59,6 +60,5 @@ Di event seperti GOLD GATHERING AWAKENING, value foto bukan cuma arsip. Tapi ase
 - Support image: crowd / audience / atmosphere shot
 
 ## Notes for next pass
-- Add location once confirmed
 - If more close-up networking or interaction shots are selected, build a second angle focused on community and engagement
 - If there are sponsor, team, or brand-detail shots, build a third angle for event value and activation
