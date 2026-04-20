@@ -3,7 +3,7 @@
 Status: active
 Owner: Reandy
 Channel: Telegram
-Project label: pending final event/client name from Reandy
+Project label: GOLD GATHERING AWAKENING "corporate documentation"
 
 ## Source assets received
 - `/root/.openclaw/media/inbound/file_171---47959928-94c2-40cf-b3f6-0c43b2cd55ae.jpg`
@@ -14,7 +14,9 @@ Project label: pending final event/client name from Reandy
 
 ## Working assumptions
 - Project type: corporate event / seminar / gathering
-- Default objective until corrected: branding + social proof
+- Objective: branding + social proof
+- Event name confirmed: GOLD GATHERING AWAKENING "corporate documentation"
+- Event date confirmed: 18 April 2026
 - Likely strongest visual lane from currently visible hero frame: stage moment, speaker presence, audience scale, event atmosphere
 
 ## Internal routing
@@ -46,9 +48,8 @@ Project label: pending final event/client name from Reandy
 - keep file list and workflow state tidy for the next packaging step
 
 ## Missing metadata that would improve accuracy
-- event / client / project name
-- date and location
+- location
 - any no-mention / CTA / deadline notes
 
 ## Next action
-Proceed with content packaging using the default assumptions if Reandy does not add metadata immediately.
+Proceed with content packaging using the confirmed event name and date.
