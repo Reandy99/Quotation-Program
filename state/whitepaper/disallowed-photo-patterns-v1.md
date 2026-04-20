@@ -15,6 +15,14 @@ Do not use these as hero assets or supporting assets unless Reandy explicitly ov
 - https://whitepaper.site/images/1774309761354-REN09760.jpg
 - https://whitepaper.site/images/1774309761357-REN09766.jpg
 
+# User-requested disallow (2026-04-20)
+- https://whitepaper.site/images/1774309761333-REN00195.jpg
+- https://whitepaper.site/images/1774309761335-REN00199.jpg
+- https://whitepaper.site/images/1774309761336-REN00207.jpg
+- https://whitepaper.site/images/1774309034846-DSC09568.jpg
+- https://whitepaper.site/images/1774309034847-DSC09583.jpg
+- https://whitepaper.site/images/1774309034848-DSC09588.jpg
+
 ## Routing rule
 - Sora must reject these in asset selection.
 - Relay must block these from scheduled publish sets.
