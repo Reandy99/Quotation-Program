@@ -4,7 +4,7 @@ Event date: 18 April 2026
 Location: Grand Mercure Kemayoran
 Project type: corporate documentation
 Objective: branding + social proof
-Status: first draft ready
+Status: first draft ready, design lane added
 
 ## Fast visual read
 Strongest visible angle from the current hero frame:
@@ -58,6 +58,12 @@ Di event seperti GOLD GATHERING AWAKENING di Grand Mercure Kemayoran, value foto
 ## Pairing suggestion
 - Hero image: speaker on stage with AWAKENING backdrop
 - Support image: crowd / audience / atmosphere shot
+
+## Design lane
+- This project should not stop at raw photos only.
+- Design Agent is active for this batch.
+- Preferred treatment: premium editorial carousel, combining event photos with clean headline slides and short business callouts.
+- See companion brief: `state/whitepaper/projects/2026-04-20-gold-gathering-awakening-design-brief-v1.md`
 
 ## Notes for next pass
 - If more close-up networking or interaction shots are selected, build a second angle focused on community and engagement

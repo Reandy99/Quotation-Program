@@ -14,6 +14,10 @@
 - Domain: Content strategy, copywriting, social planning
 - Handles: Caption, hook, carousel copy, Threads, LinkedIn, per-platform copy adaptation
 
+### Design Agent
+- Domain: Visual design system, carousel direction, social creative packaging
+- Handles: Turning photos into designed assets, layout direction, cover slide ideas, typography hierarchy, visual overlays, carousel structure, design briefs for execution
+
 ### Publishing Agent
 - Domain: Distribution, scheduling, publishing hygiene
 - Handles: Schedule posting, asset pairing, formatting check, publish status, failure handling
@@ -33,6 +37,7 @@
 ## Routing Rules
 - Industry/client angle, buyer pain point, trend scan, research brief -> Research Agent
 - Caption/hook/copy/carousel/Threads/LinkedIn draft -> DONI (Content Agent)
+- Photo-to-design asset direction, carousel layout, visual brief, cover slide structure -> Design Agent
 - Schedule/distribution/post status/publish error -> Publishing Agent
 - Performance review/report/what worked-next step insight -> Analytics Agent
 - Workflow/file/reminder/follow-up/automation/debugging/infra -> Quanxi (Operations Agent)
@@ -48,6 +53,7 @@
   - **Exel**: intake, routing, review, final approval, final output ke Reandy.
   - **Research Agent**: riset industri klien, angle, pain point, audience insight, CTA direction.
   - **DONI (Content Agent)**: ubah research jadi caption, hook, carousel copy, Threads, LinkedIn, dan copy per platform.
+  - **Design Agent**: ubah foto dan copy jadi asset visual yang lebih presentable, termasuk arahan layout, overlay text, cover slide, carousel design, dan visual brief.
   - **Publishing Agent**: schedule posting, pairing asset, cek format platform, jaga status pending/success/error.
   - **Analytics Agent**: baca performa, cari pola, susun insight dan rekomendasi batch berikutnya.
   - **Quanxi (Operations Agent)**: rapikan workflow, file/folder/content bank, reminder, follow-up, automation, dan debugging sistem.
@@ -58,6 +64,7 @@
 - Cron pagi (**07:15 WIB**): generate & schedule konten baru
   - Research Agent siapkan angle singkat.
   - DONI siapkan copy per platform yang dibutuhkan.
+  - Design Agent siapkan visual direction bila konten butuh design treatment.
   - Publishing Agent schedule via **Repliz**.
   - Exel review final bila diperlukan.
 - Cron malam (**22:00 WIB**): review kualitas
@@ -107,6 +114,14 @@ Tugas utama:
 - sesuaikan tone per platform
 - siapkan CTA dan copy final draft
 
+#### Design Agent = Visual Packaging Specialist
+Tugas utama:
+- ubah foto event menjadi asset yang terasa lebih designed, bukan dokumentasi mentah saja
+- siapkan cover slide, text overlay, visual hierarchy, dan layout carousel
+- tentukan kombinasi foto + quote + data + callout untuk post carousel
+- jaga style consistency antar post
+- siapkan design brief yang bisa dieksekusi ke tool desain
+
 #### Publishing Agent = Distribution Specialist
 Tugas utama:
 - schedule posting
@@ -142,18 +157,20 @@ Tugas utama:
    - siapkan angle, audience insight, message direction
 4. **DONI (Content Agent)**
    - ubah research jadi content bank dan draft per platform
-5. **Publishing Agent**
+5. **Design Agent**
+   - ubah selected photo + copy menjadi direction untuk asset visual/carousel
+6. **Publishing Agent**
    - schedule/publish dan jaga format + status posting
-6. **Analytics Agent**
+7. **Analytics Agent**
    - baca hasil performa dan kasih rekomendasi
-7. **Quanxi (Operations Agent)**
+8. **Quanxi (Operations Agent)**
    - jaga workflow, file, reminder, follow-up, dan stabilitas sistem
-8. **Exel final review**
+9. **Exel final review**
    - terjemahkan hasil jadi keputusan dan update ke Reandy
 
 ### Trigger cepat per jenis request
-- **"Ada event baru"** -> Exel -> Research Agent -> DONI -> Publishing Agent -> Analytics Agent -> Quanxi bila perlu
-- **"Bikinin konten dari asset ini"** -> Exel -> Research Agent bila perlu -> DONI
+- **"Ada event baru"** -> Exel -> Research Agent -> DONI -> Design Agent bila perlu -> Publishing Agent -> Analytics Agent -> Quanxi bila perlu
+- **"Bikinin konten dari asset ini"** -> Exel -> Research Agent bila perlu -> DONI -> Design Agent bila perlu
 - **"Schedule ke platform"** -> Exel -> Publishing Agent
 - **"Cek performa konten"** -> Exel -> Analytics Agent
 - **"Workflow/upload/error"** -> Exel -> Quanxi

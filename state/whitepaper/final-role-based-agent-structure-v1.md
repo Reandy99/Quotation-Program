@@ -7,6 +7,7 @@ Owner decision: Reandy chose the strict role-based structure.
 - Exel = Master Orchestrator
 - Research Agent = industry research, audience insight, angle finding
 - DONI = Content Agent
+- Design Agent = visual packaging, carousel direction, photo-to-design treatment
 - Publishing Agent = scheduling and distribution
 - Analytics Agent = performance reading and insight
 - Quanxi = Operations Agent
@@ -22,14 +23,15 @@ All backstage routing happens internally.
 1. Exel receives brief
 2. Research Agent prepares angle and message direction
 3. DONI turns research into platform-specific content
-4. Publishing Agent schedules/distributes
-5. Analytics Agent reads performance
-6. Quanxi keeps workflow, files, reminders, automation, and debugging clean
-7. Exel reviews and gives the final decision/update to Reandy
+4. Design Agent turns selected photos and copy into designed asset directions
+5. Publishing Agent schedules/distributes
+6. Analytics Agent reads performance
+7. Quanxi keeps workflow, files, reminders, automation, and debugging clean
+8. Exel reviews and gives the final decision/update to Reandy
 
 ## Intent behind this structure
 - keep each lane sharp
-- avoid overlap between research, writing, publishing, analytics, and operations
+- avoid overlap between research, writing, design, publishing, analytics, and operations
 - make each agent easier to improve independently
 - keep the user experience simple with one front door
 
