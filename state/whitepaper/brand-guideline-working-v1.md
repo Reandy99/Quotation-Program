@@ -70,6 +70,7 @@ Reject as primary post assets unless they clearly support a strategic story:
 - generic food close-ups
 - random decor detail shots
 - isolated object shots with no people, no branding, and no event context
+- sterile machinery or facility shots with no human story
 - pretty photos that do not strengthen trust, scale, atmosphere, or business value
 
 Prefer photos that show:
@@ -102,6 +103,7 @@ Food or detail shots may be used only when they add clear meaning, such as:
 - photo remains the credibility anchor
 - overlays should be short and strategic
 - do not elevate weak detail shots into hero assets unless they support a clear strategic narrative
+- reject sterile machinery/facility photos when they feel cold, generic, or disconnected from people and business meaning
 
 ### Publishing Agent
 - prefer carousel structures that preserve whitespace and readability
