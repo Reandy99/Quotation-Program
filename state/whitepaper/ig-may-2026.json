@@ -1,0 +1,72 @@
+{
+  "accountId": "69c5142b5f0c5e58b4b4a26e",
+  "month": "2026-05",
+  "count": 5,
+  "items": [
+    {
+      "id": "69e580d684ebdfba155a01ea",
+      "wib": "2026-05-03 10:45",
+      "type": "album",
+      "mediaCount": 2,
+      "hero": {
+        "type": "image",
+        "url": "https://whitepaper.site/images/1774309761324-REN00106.jpg",
+        "thumbnail": "https://whitepaper.site/images/1774309761324-REN00106.jpg",
+        "alt": "Corporate portrait session Jakarta — White Paper Production"
+      },
+      "textPreview": "Portrait yang kuat biasanya tidak butuh banyak elemen. Komposisi yang tepat, eks"
+    },
+    {
+      "id": "69e5b4d084ebdfba155ced06",
+      "wib": "2026-05-07 10:20",
+      "type": "album",
+      "mediaCount": 2,
+      "hero": {
+        "type": "image",
+        "url": "https://whitepaper.site/images/1774309761342-REN09968.jpg",
+        "thumbnail": "https://whitepaper.site/images/1774309761342-REN09968.jpg",
+        "alt": "Professional portrait photography Jakarta — White Paper Production"
+      },
+      "textPreview": "Employer branding sering dibangun dari hal yang terlihat sederhana, termasuk bag"
+    },
+    {
+      "id": "69e5b76384ebdfba155d0bcb",
+      "wib": "2026-05-10 10:50",
+      "type": "album",
+      "mediaCount": 2,
+      "hero": {
+        "type": "image",
+        "url": "https://whitepaper.site/images/1774309531153-REN00804.jpg",
+        "thumbnail": "https://whitepaper.site/images/1774309531153-REN00804.jpg",
+        "alt": ""
+      },
+      "textPreview": "Dokumentasi event yang rapi hampir selalu lahir dari perencanaan yang rapi juga."
+    },
+    {
+      "id": "69e5b4d384ebdfba155ced99",
+      "wib": "2026-05-14 11:10",
+      "type": "album",
+      "mediaCount": 2,
+      "hero": {
+        "type": "image",
+        "url": "https://whitepaper.site/images/1774309034865-DSC09695.jpg",
+        "thumbnail": "https://whitepaper.site/images/1774309034865-DSC09695.jpg",
+        "alt": "Corporate photography by White Paper Production"
+      },
+      "textPreview": "Seminar dan forum bisnis sering menghasilkan banyak insight, tapi nilai visualny"
+    },
+    {
+      "id": "69e5b4d384ebdfba155cedc3",
+      "wib": "2026-05-18 10:40",
+      "type": "album",
+      "mediaCount": 2,
+      "hero": {
+        "type": "image",
+        "url": "https://whitepaper.site/images/1774486968571-REN04593.jpg",
+        "thumbnail": "https://whitepaper.site/images/1774486968571-REN04593.jpg",
+        "alt": "Corporate photography by White Paper Production"
+      },
+      "textPreview": "Kecepatan delivery dan kualitas visual sering jadi dua hal yang paling diingat k"
+    }
+  ]
+}

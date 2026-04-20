@@ -1,0 +1,231 @@
+{
+  "generatedAt": "2026-04-20T07:02:57.043661Z",
+  "timezone": "Asia/Jakarta",
+  "month": "2026-05",
+  "notes": "Fill missing IG days in May 2026 using unique images not already used on IG May schedule (may overlap with LinkedIn).",
+  "missingDates": [
+    "2026-05-05",
+    "2026-05-08",
+    "2026-05-12",
+    "2026-05-15",
+    "2026-05-17",
+    "2026-05-19",
+    "2026-05-21",
+    "2026-05-22",
+    "2026-05-24",
+    "2026-05-26",
+    "2026-05-28",
+    "2026-05-29",
+    "2026-05-31"
+  ],
+  "items": [
+    {
+      "platform": "instagram",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "scheduleAt": "2026-05-05T10:30:00+07:00",
+      "type": "image",
+      "description": "Konten event yang premium itu bukan kebetulan. Dia hasil dari briefing yang jelas dan eksekusi yang rapi.",
+      "medias": [
+        {
+          "type": "image",
+          "url": "https://whitepaper.site/images/1774309531155-REN00915.jpg",
+          "thumbnail": "https://whitepaper.site/images/1774309531155-REN00915.jpg",
+          "alt": "Whitepaper Production"
+        }
+      ],
+      "replies": []
+    },
+    {
+      "platform": "instagram",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "scheduleAt": "2026-05-08T10:30:00+07:00",
+      "type": "image",
+      "description": "Kalau dokumentasi event kamu bikin orang langsung paham skala acaranya, trust naik tanpa banyak kata.",
+      "medias": [
+        {
+          "type": "image",
+          "url": "https://whitepaper.site/images/1774309531157-REN06789.jpg",
+          "thumbnail": "https://whitepaper.site/images/1774309531157-REN06789.jpg",
+          "alt": "Whitepaper Production"
+        }
+      ],
+      "replies": []
+    },
+    {
+      "platform": "instagram",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "scheduleAt": "2026-05-12T10:30:00+07:00",
+      "type": "image",
+      "description": "Momen terbaik seringnya cuma lewat sekali. Makanya kita selalu siapin shotlist dan backup angle.",
+      "medias": [
+        {
+          "type": "image",
+          "url": "https://whitepaper.site/images/1774309531159-REN06810.jpg",
+          "thumbnail": "https://whitepaper.site/images/1774309531159-REN06810.jpg",
+          "alt": "Whitepaper Production"
+        }
+      ],
+      "replies": []
+    },
+    {
+      "platform": "instagram",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "scheduleAt": "2026-05-15T10:30:00+07:00",
+      "type": "image",
+      "description": "Bukan soal banyak foto, tapi urutan cerita yang kebaca. Itu yang bikin konten terasa hidup.",
+      "medias": [
+        {
+          "type": "image",
+          "url": "https://whitepaper.site/images/1774309057050-REN00583.jpg",
+          "thumbnail": "https://whitepaper.site/images/1774309057050-REN00583.jpg",
+          "alt": "Whitepaper Production"
+        }
+      ],
+      "replies": []
+    },
+    {
+      "platform": "instagram",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "scheduleAt": "2026-05-17T10:30:00+07:00",
+      "type": "image",
+      "description": "Wide shot buat skala, close-up buat emosi, detail buat kredibilitas. Baru lengkap.",
+      "medias": [
+        {
+          "type": "image",
+          "url": "https://whitepaper.site/images/1774309057055-REN00592.jpg",
+          "thumbnail": "https://whitepaper.site/images/1774309057055-REN00592.jpg",
+          "alt": "Whitepaper Production"
+        }
+      ],
+      "replies": []
+    },
+    {
+      "platform": "instagram",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "scheduleAt": "2026-05-19T10:30:00+07:00",
+      "type": "image",
+      "description": "Brand yang terlihat premium biasanya konsisten di detail kecil, termasuk dokumentasi.",
+      "medias": [
+        {
+          "type": "image",
+          "url": "https://whitepaper.site/images/1774309057057-REN00623.jpg",
+          "thumbnail": "https://whitepaper.site/images/1774309057057-REN00623.jpg",
+          "alt": "Whitepaper Production"
+        }
+      ],
+      "replies": []
+    },
+    {
+      "platform": "instagram",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "scheduleAt": "2026-05-21T10:30:00+07:00",
+      "type": "image",
+      "description": "Kalau output akhirnya mau dipakai buat marketing, workflow-nya harus dirancang dari awal.",
+      "medias": [
+        {
+          "type": "image",
+          "url": "http://43.156.181.204/media/whitepaper/20260420T064800Z-DSC09601.jpg",
+          "thumbnail": "http://43.156.181.204/media/whitepaper/20260420T064800Z-DSC09601.jpg",
+          "alt": "Whitepaper Production"
+        }
+      ],
+      "replies": []
+    },
+    {
+      "platform": "instagram",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "scheduleAt": "2026-05-22T10:30:00+07:00",
+      "type": "image",
+      "description": "Dokumentasi bukan arsip. Ini aset kepercayaan yang bisa dipakai 30 hari setelah event.",
+      "medias": [
+        {
+          "type": "image",
+          "url": "https://whitepaper.site/images/1774309034837-DSC09391.jpg",
+          "thumbnail": "https://whitepaper.site/images/1774309034837-DSC09391.jpg",
+          "alt": "Whitepaper Production"
+        }
+      ],
+      "replies": []
+    },
+    {
+      "platform": "instagram",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "scheduleAt": "2026-05-24T10:30:00+07:00",
+      "type": "image",
+      "description": "Yang bikin visual terasa ‘mahal’ itu rapi. Clean, jelas, dan punya konteks.",
+      "medias": [
+        {
+          "type": "image",
+          "url": "https://whitepaper.site/images/1774309034838-DSC09441.jpg",
+          "thumbnail": "https://whitepaper.site/images/1774309034838-DSC09441.jpg",
+          "alt": "Whitepaper Production"
+        }
+      ],
+      "replies": []
+    },
+    {
+      "platform": "instagram",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "scheduleAt": "2026-05-26T10:30:00+07:00",
+      "type": "image",
+      "description": "Kalau kamu mau event kamu terlihat besar, jangan cuma foto dekor. Tunjukin momentum dan interaksi.",
+      "medias": [
+        {
+          "type": "image",
+          "url": "https://whitepaper.site/images/1774309034839-DSC09463.jpg",
+          "thumbnail": "https://whitepaper.site/images/1774309034839-DSC09463.jpg",
+          "alt": "Whitepaper Production"
+        }
+      ],
+      "replies": []
+    },
+    {
+      "platform": "instagram",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "scheduleAt": "2026-05-28T10:30:00+07:00",
+      "type": "image",
+      "description": "Konten yang bantu closing biasanya menonjolkan hasil dan dampak, bukan sekadar proses.",
+      "medias": [
+        {
+          "type": "image",
+          "url": "https://whitepaper.site/images/1774309057058-REN00768.jpg",
+          "thumbnail": "https://whitepaper.site/images/1774309057058-REN00768.jpg",
+          "alt": "Whitepaper Production"
+        }
+      ],
+      "replies": []
+    },
+    {
+      "platform": "instagram",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "scheduleAt": "2026-05-29T10:30:00+07:00",
+      "type": "image",
+      "description": "BTS yang tepat bukan cuma seru, tapi bukti kalau kamu serius dan profesional.",
+      "medias": [
+        {
+          "type": "image",
+          "url": "https://whitepaper.site/images/1774309057060-REN00841.jpg",
+          "thumbnail": "https://whitepaper.site/images/1774309057060-REN00841.jpg",
+          "alt": "Whitepaper Production"
+        }
+      ],
+      "replies": []
+    },
+    {
+      "platform": "instagram",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "scheduleAt": "2026-05-31T10:30:00+07:00",
+      "type": "image",
+      "description": "Kalau kamu punya event dalam waktu dekat dan mau hasilnya siap jadi konten, DM gue.",
+      "medias": [
+        {
+          "type": "image",
+          "url": "https://whitepaper.site/images/1774309057062-REN01028.jpg",
+          "thumbnail": "https://whitepaper.site/images/1774309057062-REN01028.jpg",
+          "alt": "Whitepaper Production"
+        }
+      ],
+      "replies": []
+    }
+  ]
+}

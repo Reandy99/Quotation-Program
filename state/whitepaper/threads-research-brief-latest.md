@@ -1,50 +1,48 @@
 # Threads Research Brief - Whitepaper Production
-Tanggal: 19 April 2026 (WIB)
+Tanggal (WIB): 20 April 2026
 
-## Signal yang lagi naik (dari tren B2B video dan employer branding global)
-- Platform makin dorong video, khususnya vertical 9:16 (full-screen feed) dan format yang terasa "native".
-- Trust jadi tema besar di B2B, apalagi di tengah kejenuhan konten generik dan "AI slop".
-- Employer branding bergeser ke employee-generated content (day in the life, behind the scenes) yang lebih dipercaya.
-- Event tidak lagi selesai di aftermovie, tapi jadi content engine: 1 event bisa dipecah jadi banyak asset untuk marketing, sales, dan internal.
+## 1) "24 jam pertama" aftermovie: event recap yang paling sering dibagikan
+Hook: Kalau event kamu selesai jam 5 sore, konten yang bikin orang ingat justru lahir sebelum besok siang.
+- Format yang lagi kuat: short recap 20-40 detik, highlight momen, wajah, energi ruangan, lalu 1 kalimat konteks.
+- Kecepatan rilis = leverage: internal team bisa repost saat hype masih hangat.
+- Fokus ke 3 hal: siapa yang hadir, apa yang terjadi, dan apa dampaknya buat bisnis.
+Soft CTA: Mau aku bikinin struktur shotlist biar tim kamu bisa dapat versi recap yang siap dipakai untuk internal dan eksternal?
+Ide visual: Video vertikal 9:16, 8-12 cut cepat (registrasi, panggung, networking, close-up sponsor/branding, applause), tutup dengan 1 frame teks "Recap in 24h".
+
+## 2) BTS yang rapi: "How we made it" untuk company profile dan corporate visuals
+Hook: Audience B2B makin percaya bukan dari hasil paling kinclong, tapi dari proses yang kelihatan jelas dan terukur.
+- BTS memperlihatkan sistem: pre-production, koordinasi, lighting, blocking, sampai review.
+- Konten BTS biasanya memancing komentar karena orang suka lihat decision making di balik layar.
+- Ini juga jadi trust builder untuk stakeholder internal yang biasanya takut hasil tidak sesuai ekspektasi.
+Soft CTA: Kalau kamu mau, kita bisa bikin 1 paket BTS yang sekaligus jadi materi approval internal (lebih gampang disetujui).
+Ide visual: Carousel video pendek 3 klip: "Brief", "On set", "Final" (masing-masing 5-7 detik) dengan overlay checklist.
+
+## 3) "1 event jadi 10 aset": repurposing kit untuk sales, marketing, dan internal comms
+Hook: Dokumentasi event itu bukan biaya, itu bahan baku konten dan sales enablement untuk 3 bulan.
+- Angle edukasi yang sering viral: breakdown aset dari 1 sesi dokumentasi (hero video, reels, foto speaker, highlight sponsor, testimoni, recap internal).
+- Buat B2B, aset terbaik biasanya yang menjawab: "kenapa ini penting untuk buyer" bukan sekadar "rame".
+- Dorong sistem folder dan penamaan file yang siap dipakai tim sales (biar tidak hilang di drive).
+Soft CTA: Kalau kamu pengin, aku bisa bantu mapping "asset list" yang paling kepake untuk funnel kamu.
+Ide visual: Grafik sederhana (atau shot top-down di meja) yang nunjukin 10 output: thumbnails, cover, reels, banner, quote card.
+
+## 4) Employer branding "Day in the life" versi korporat: autentik tapi tetap profesional
+Hook: Kandidat tidak lagi cari kantor paling keren, mereka cari tim yang keliatan nyata dan sehat.
+- Format day-in-the-life dan POV kerja masih kuat di Reels, terutama kalau ada micro story (problem -> solusi -> selesai).
+- Menonjolkan ritme kerja, cara kolaborasi, dan budaya meeting, ini sering jadi bahan share internal.
+- Visual yang konsisten bikin employer branding terasa "serius", bukan konten iseng.
+Soft CTA: Mau dicoba 1 episode pilot 30 detik untuk 1 role (misalnya sales, HR, ops) biar bisa dites dulu?
+Ide visual: Reels vertikal 30 detik, 6 scene: masuk kantor, standup, kerja fokus, kolaborasi, hasil, closing quote 1 kalimat.
+
+## 5) "Proof over polish": dokumentasi sebagai bukti (bukan pajangan)
+Hook: Konten korporat yang paling meyakinkan itu bukan yang paling sinematik, tapi yang bisa jadi bukti kerja.
+- Ubah dokumentasi jadi proof: milestones proyek, behind-the-scenes delivery, quote stakeholder, before-after.
+- Kombinasi yang perform: 1 klaim sederhana + 3 bukti visual (foto, potongan video, data ringan).
+- Cocok untuk buyer B2B yang butuh justifikasi ke atasan.
+Soft CTA: Kalau kamu punya satu proyek unggulan, kita bisa susun paket visual proof yang siap dipakai sales deck.
+Ide visual: Carousel 4 slide: "Masalah", "Proses", "Hasil", "Bukti" (isi foto nyata + caption super pendek).
 
 ---
-
-## Angle 1 - "1 Event = 30+ Asset" (content engine, bukan aftermovie)
-Hook: Kalau event kamu cuma jadi 1 aftermovie, kamu buang 90% value kontennya.
-- Rekam mindset-nya "capture untuk repurpose": keynote, panel, reaction audiens, networking, sponsor moment.
-- Pecah jadi 3 layer: fast (H+0 sampai H+3), evergreen (ringkasan topik, FAQ), conversion (sales follow-up, sponsor recap).
-- Buat list deliverables sebelum hari-H, jadi tim onsite tahu momen apa yang wajib diambil.
-Soft CTA: Kalau mau, Whitepaper bisa bantu bikin shotlist dan workflow capture supaya output event kamu jadi rapi dan repeatable.
-Ide visual: Video vertical 30-45 detik berisi 5 highlight, plus carousel foto "moment + quote" dari speaker.
-
-## Angle 2 - "Anti AI Slop" (visual proof untuk bangun trust)
-Hook: Di era AI slop, dokumentasi asli adalah bukti yang paling susah dipalsukan.
-- Prioritaskan footage yang "human": reaksi real, interaksi tim, proses kerja, detail yang terasa nyata.
-- Tambahkan context caption: apa problem-nya, apa yang terjadi di momen itu, impact ke tim atau klien.
-- Konsisten pakai format proof: before-after, timeline singkat, dan 1 angka yang relevan (tanpa overclaim).
-Soft CTA: Kalau kamu ingin konten yang terasa real tapi tetap clean, Whitepaper bisa bantu capture gaya "authentic but branded".
-Ide visual: Behind-the-scenes 20-30 detik (handheld) + potongan final output di akhir (split screen).
-
-## Angle 3 - Employer Branding yang dipercaya: employee story, bukan corporate script
-Hook: Kandidat lebih percaya cerita karyawan daripada video company culture yang terlalu rapi.
-- Format yang lagi menang: day in the life, "yang bikin kaget di minggu pertama", "kenapa stay".
-- Arahkan ke nilai growth: learning, exposure, ownership, cara kerja tim (bukan sekadar fasilitas).
-- Siapkan guardrail biar aman: area sensitif, data di layar, SOP izin wajah, dan review cepat.
-Soft CTA: Whitepaper bisa bantu bikin paket employer branding yang fokus ke employee story, tanpa bikin karyawan terlihat "dipaksa ngonten".
-Ide visual: Reels vertical POV "pagi sampai sore" dengan 6-8 cut cepat, plus 1 shot interview 10 detik.
-
-## Angle 4 - Sales Enablement: bikin "visual library" untuk ngegas pipeline
-Hook: Sales deck tanpa foto real project itu seperti pitching tanpa bukti.
-- Buat library konten per use case: onboarding klien baru, proposal, follow-up meeting, tender.
-- Ambil asset yang kepake sales: foto detail setup, crowd shot, team at work, close-up produk, testimonial singkat.
-- Standarisasi template: 10 foto wajib per project + 5 clip wajib (vertical) supaya konsisten tiap bulan.
-Soft CTA: Kalau mau cepat punya library sales-ready, Whitepaper bisa bantu set standar shotlist dan produksi rutin.
-Ide visual: Paket "10 foto proof + 3 clip vertical" untuk 1 project, siap masuk proposal dan LinkedIn.
-
-## Angle 5 - Company Profile versi 2026: modular, bukan sekali jadi
-Hook: Company profile bukan video sekali jadi, tapi sistem konten yang bisa dipakai 12 bulan.
-- Bangun 3 tingkat: hero film (60-90 detik), service explainers (15-30 detik), proof clips (10-15 detik).
-- Optimalkan untuk platform: vertical untuk LinkedIn video feed dan Reels, plus versi landscape untuk website.
-- Update quarterly: tambah 1 case terbaru, 1 quote klien, dan 1 perubahan offering supaya selalu relevan.
-Soft CTA: Whitepaper bisa bantu mapping struktur modular ini, jadi sekali produksi bisa dipakai lintas channel.
-Ide visual: 1 hero film sinematik + 6 micro-clips vertical dengan headline overlay (subtitles besar).
+Trend signals yang jadi rujukan format (ringkas):
+- LinkedIn: dorongan short-form video + recap cepat dan konten yang menonjolkan proses.
+- Threads: pola hook kuat, bullet points, struktur jelas (hook-value-action) sering dipakai creator.
+- IG Reels: employer branding yang autentik (POV/day-in-the-life) masih konsisten jadi format yang disukai.

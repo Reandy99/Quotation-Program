@@ -6,7 +6,7 @@
 - Domain: Routing, coordination, QA, prioritization, final decision
 - Handles: Intake, agent orchestration, review, user-facing final output
 
-### Research Agent
+### Axis (Research Agent)
 - Domain: Industry research, audience insight, trend scanning, angle finding
 - Handles: Client/industry research brief, angle recommendation, pain points, messaging direction
 
@@ -14,17 +14,17 @@
 - Domain: Content strategy, copywriting, social planning
 - Handles: Caption, hook, carousel copy, Threads, LinkedIn, per-platform copy adaptation
 
-### Design Agent
+### Sora (Design Agent)
 - Domain: Visual design system, carousel direction, social creative packaging
 - Handles: Turning photos into designed assets, layout direction, cover slide ideas, typography hierarchy, visual overlays, carousel structure, design briefs for execution
 
-### Publishing Agent
+### Relay (Publishing Agent)
 - Domain: Distribution, scheduling, publishing hygiene
 - Handles: Schedule posting, asset pairing, formatting check, publish status, failure handling
 
-### Analytics Agent
+### Pulse (Analytics Agent)
 - Domain: Performance reading, content insight, reporting
-- Handles: Performance summary, pattern finding, recommendation for next content batch
+- Handles: Performance summary, pattern finding, recommendation for next content batch, trust/inquiry/sales review
 
 ### Quanxi (Operations Agent)
 - Domain: Workflow, automation, technical operations, file/system hygiene
@@ -35,14 +35,19 @@
 - Handles: HeyReandy account, AI automation 101 content, OpenClaw/Claude/new AI apps angle
 
 ## Routing Rules
-- Industry/client angle, buyer pain point, trend scan, research brief -> Research Agent
+- Industry/client angle, buyer pain point, trend scan, research brief -> Axis (Research Agent)
 - Caption/hook/copy/carousel/Threads/LinkedIn draft -> DONI (Content Agent)
-- Photo-to-design asset direction, carousel layout, visual brief, cover slide structure -> Design Agent
-- Schedule/distribution/post status/publish error -> Publishing Agent
-- Performance review/report/what worked-next step insight -> Analytics Agent
+- Photo-to-design asset direction, carousel layout, visual brief, cover slide structure -> Sora (Design Agent)
+- Schedule/distribution/post status/publish error -> Relay (Publishing Agent)
+- Performance review/report/what worked-next step insight -> Pulse (Analytics Agent)
 - Workflow/file/reminder/follow-up/automation/debugging/infra -> Quanxi (Operations Agent)
 - HeyReandy personal branding / AI automation content -> HEYREANDY
 - Multi-domain, new briefs, priority decisions, final QA, final delivery -> Exel (main)
+
+## Delegation Enforcement
+- Exel must delegate suitable work to the specialist agent that owns the lane.
+- Exel is the router and final reviewer, not the default doer for specialist tasks.
+- Exel may execute directly only for trivial tasks, cross-agent orchestration, final synthesis, or when runtime limitations temporarily block clean delegation.
 
 ## Whitepaper Social Workflow (Master)
 
@@ -51,11 +56,11 @@
 - Struktur resmi yang dipilih: **1 agent = 1 role/jobdesk**.
 - Peran:
   - **Exel**: intake, routing, review, final approval, final output ke Reandy.
-  - **Research Agent**: riset industri klien, angle, pain point, audience insight, CTA direction.
+  - **Axis (Research Agent)**: riset industri klien, angle, pain point, audience insight, CTA direction.
   - **DONI (Content Agent)**: ubah research jadi caption, hook, carousel copy, Threads, LinkedIn, dan copy per platform.
-  - **Design Agent**: ubah foto dan copy jadi asset visual yang lebih presentable, termasuk arahan layout, overlay text, cover slide, carousel design, dan visual brief.
-  - **Publishing Agent**: schedule posting, pairing asset, cek format platform, jaga status pending/success/error.
-  - **Analytics Agent**: baca performa, cari pola, susun insight dan rekomendasi batch berikutnya.
+  - **Sora (Design Agent)**: ubah foto dan copy jadi asset visual yang lebih presentable, termasuk arahan layout, overlay text, cover slide, carousel design, dan visual brief.
+  - **Relay (Publishing Agent)**: schedule posting, pairing asset, cek format platform, jaga status pending/success/error.
+  - **Pulse (Analytics Agent)**: baca performa, cari pola, susun insight dan rekomendasi batch berikutnya.
   - **Quanxi (Operations Agent)**: rapikan workflow, file/folder/content bank, reminder, follow-up, automation, dan debugging sistem.
 
 ### Cadence & Automation
