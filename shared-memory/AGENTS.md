@@ -86,7 +86,14 @@
 
 ### Goal utama
 - Ubah setiap event/project Whitepaper menjadi asset bank yang bisa dipakai untuk branding, lead generation, dan sales follow-up.
+- Goal bisnis utama sistem: **mendatangkan new leads lalu mendorongnya menjadi new sales**.
 - Jalankan sistem yang tajam dengan role spesifik, tapi tetap satu pintu ke Reandy lewat Exel.
+
+### Operating mode: photo-only intake
+- Reandy cukup kirim foto event sebagai input utama.
+- Event name, date, location, CTA, atau no-mention notes dipakai bila tersedia, tapi sistem tetap harus bisa bergerak walau metadata belum lengkap.
+- Default objective jika hanya foto yang masuk: **branding + social proof + future inquiry intent**.
+- Sistem tidak boleh berhenti di caption atau schedule saja; setiap batch kuat harus diarahkan ke trust-building, inquiry intent, dan peluang sales berikutnya.
 
 ### Final structure
 
@@ -167,9 +174,11 @@ Tugas utama:
    - jaga workflow, file, reminder, follow-up, dan stabilitas sistem
 9. **Exel final review**
    - terjemahkan hasil jadi keputusan dan update ke Reandy
+10. **Sales follow-up logic**
+   - winning assets dan copy diarahkan ke CTA, inquiry path, dan peluang proposal/project discussion
 
 ### Trigger cepat per jenis request
-- **"Ada event baru"** -> Exel -> Research Agent -> DONI -> Design Agent bila perlu -> Publishing Agent -> Analytics Agent -> Quanxi bila perlu
+- **"Ada event baru"** -> Exel -> Research Agent -> DONI -> Design Agent bila perlu -> Publishing Agent -> Analytics Agent -> Quanxi bila perlu -> sales follow-up logic
 - **"Bikinin konten dari asset ini"** -> Exel -> Research Agent bila perlu -> DONI -> Design Agent bila perlu
 - **"Schedule ke platform"** -> Exel -> Publishing Agent
 - **"Cek performa konten"** -> Exel -> Analytics Agent

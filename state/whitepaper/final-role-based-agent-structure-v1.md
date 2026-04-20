@@ -34,6 +34,13 @@ All backstage routing happens internally.
 - avoid overlap between research, writing, design, publishing, analytics, and operations
 - make each agent easier to improve independently
 - keep the user experience simple with one front door
+- turn event-photo input into a lead-first operating system, not only content production
+
+## Operating mode
+- Reandy may send only event photos as input.
+- The system should still move forward using sane defaults.
+- Default objective from photo-only intake: branding + social proof + inquiry intent.
+- The commercial target stays fixed: new leads -> new sales.
 
 ## Transition note
 If the runtime is not yet fully split into dedicated agents, Exel may temporarily bridge missing lanes.
