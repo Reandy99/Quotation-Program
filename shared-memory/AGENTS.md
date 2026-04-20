@@ -142,6 +142,7 @@ Tugas utama:
 - baca performa konten
 - lihat pattern performa
 - cari apa yang worked / tidak worked
+- review apakah konten benar-benar optimal untuk trust, inquiry intent, dan peluang sales baru
 - kasih insight untuk batch berikutnya
 
 #### Quanxi = Operations Agent

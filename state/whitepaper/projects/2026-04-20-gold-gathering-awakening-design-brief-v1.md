@@ -20,6 +20,18 @@ Desired direction based on the reference image:
 - limited color palette
 - business/strategy aesthetic, not noisy event poster style
 
+## Whitepaper brand-guideline alignment
+Use `state/whitepaper/brand-guideline-working-v1.md` as the governing design rule for this project.
+Priority rules for this batch:
+- direct, confident, professional, warm, transparent tone
+- white / off-white / charcoal base system
+- muted gold accent only when needed
+- strong display headline feel + clean supporting sans serif
+- no gradients
+- no drop shadows
+- generous negative space
+- short overlay copy only
+
 ## Recommended visual direction for Whitepaper
 - Keep the event photos as the credibility anchor
 - Add minimal text overlays instead of heavy poster treatment
@@ -28,15 +40,15 @@ Desired direction based on the reference image:
 - Use 1 closing slide with a business takeaway or brand statement
 
 ## Suggested palette direction
-Base direction inspired by the reference while staying flexible:
-- off-white / warm white
-- black / charcoal
-- muted accent color, optional orange or terracotta
-- clean neutral background blocks
+Whitepaper guideline-aligned direction:
+- pure white / off-white
+- charcoal / near-black
+- warm neutral tones such as warm ash or bone
+- muted gold accent, maximum one accent emphasis per design
 
 ## Suggested typography direction
-- strong headline font with high contrast and confidence
-- supporting sans serif for smaller explanations
+- strong condensed display headline feel for key statements
+- clean sans serif for supporting text and metadata
 - short punchy text, not paragraph-heavy overlays
 
 ## Carousel structure options
@@ -67,6 +79,8 @@ Base direction inspired by the reference while staying flexible:
 - keep event credibility and premium feel
 - preserve Whitepaper's professional B2B tone
 - favor clean structure over trendy clutter
+- make the asset feel like Whitepaper, not a generic template
+- optimize for buyer trust and inquiry intent, not just likes
 
 ## Handoff to Content + Publishing
 - DONI provides short headline/callout copy blocks for slides

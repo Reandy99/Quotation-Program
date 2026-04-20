@@ -43,11 +43,22 @@ The system should push every strong project toward:
 - design direction / carousel structure
 - CTA direction
 - sales follow-up suggestion
+- review note on whether the batch looks likely to generate inquiry and sales trust
 
 ## Default assumptions when user only sends photos
 - objective: branding + social proof
 - likely buyer: corporate marketing, marcom, HR, founder, event lead, decision maker
 - commercial aim: future corporate documentation inquiries
+
+## Review loop after publishing
+After content is live, the system must review not only reach or engagement, but also:
+- whether the content is aligned with Whitepaper brand guidelines
+- whether the asset increases trust and buyer confidence
+- whether the CTA and framing are producing inquiry intent
+- whether the content appears to contribute toward new leads and new sales
+
+## Brand guideline rule
+Design and copy must follow `state/whitepaper/brand-guideline-working-v1.md` as the working rule unless the user provides a newer guideline.
 
 ## Curation rule for skills/tools
 - Prefer first-party local skills when they are safer and more aligned.
