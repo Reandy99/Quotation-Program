@@ -29,13 +29,13 @@ Recommended execution default:
 - openai-codex/gpt-5.4 when deeper reasoning is needed
 
 ## Role-to-skill map
-- DONI -> doni-research-first, social-media-content-calendar, lead-engine, brand-guardian
-- Quanxi -> quanxi-vps-guardian, publishing-qc-system when technical QA overlaps
-- Axis -> research-angle-engine, lead-engine
+- Axis -> product-marketing-context, customer-research, research-angle-engine, lead-engine
+- DONI -> content-strategy, social-content, copywriting, copy-editing, marketing-psychology, doni-research-first, social-media-content-calendar, lead-engine, brand-guardian
 - Sora -> design-agent-system, brand-guardian
 - Relay -> publishing-qc-system, repliz
-- Pulse -> analytics-sales-review, brand-guardian
-- Exel -> event-to-sales-system, sales-followup-system, delegation protocol
+- Pulse -> analytics-tracking, analytics-sales-review, brand-guardian
+- Quanxi -> quanxi-vps-guardian (plus publishing-qc-system when technical QA overlaps)
+- Exel -> lead-magnets, sales-enablement, page-cro, seo-audit, marketing-psychology, event-to-sales-system, sales-followup-system, delegation protocol
 
 ## Enforcement
 Exel should delegate by default when the job desk is clear.
