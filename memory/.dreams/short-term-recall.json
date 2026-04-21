@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-20T19:00:01.161Z",
+  "updatedAt": "2026-04-21T10:08:22.702Z",
   "entries": {
     "memory:memory/2026-04-09.md:1:13": {
       "key": "memory:memory/2026-04-09.md:1:13",
@@ -91771,13 +91771,13 @@
       "endLine": 654,
       "source": "memory",
       "snippet": "- Whitepaper social scope is now explicitly: LinkedIn, Threads, and Instagram. Content should be tailored per platform (more visual and concise for Instagram, conversational for Threads, more structured and educational for LinkedIn). - Repliz integration was exercised with a Python script that fetches and summarizes per-account daily posting counts for Whitepaper LinkedIn/Threads/Instagram and HeyReandy Threads based on a \"today\" window defined in WIB and converted to UTC. - User asked to review and possibly restructure the social-media workflow across agents (Exel, DONI, Quanxi) and wondered if a new dedicated agent is needed to handle current social accounts (Whitepaper + HeyReandy).",
-      "recallCount": 12,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11.848841761039369,
+      "totalScore": 13.848841761039369,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T06:51:03.525Z",
-      "lastRecalledAt": "2026-04-19T22:55:24.958Z",
+      "lastRecalledAt": "2026-04-21T10:08:22.702Z",
       "queryHashes": [
         "ffad0036aab3",
         "f84d66e38938",
@@ -91790,14 +91790,17 @@
         "ef5bdb819915",
         "0edfd3ab93d2",
         "647b5e01f22d",
-        "4e56b58a6889"
+        "4e56b58a6889",
+        "008f66275e48",
+        "dc3d2fb7a22a"
       ],
       "recallDays": [
         "2026-04-14",
         "2026-04-15",
         "2026-04-17",
         "2026-04-19",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "per-account",
@@ -91818,20 +91821,22 @@
       "endLine": 653,
       "source": "memory",
       "snippet": "- - status: staged - Candidate: Assistant: Dari sisi aku (Exel + DONI + Quanxi), ini hal‑hal yang bisa kita kerjakan sendiri dengan goal: **nambahin leads B2B/corporate**, terutama yang datang dari Instagram, tanpa banyak minta input kamu lagi. ### 1) Website → Lead Machine Tanpa kamu: - Audit & rapihin **copy - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-12.txt:32-32 - recalls: 0 - status: staged - Candidate: User: Conversation info (untrusted metadata): ```json { \"message_id\": \"11009\", \"sender_id\": \"514720705\", \"sender\": \"Reandy\", \"timestamp\": \"Sun 2026-04-12 00:45 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Reandy (514720705)\", \"id\": \"51472 [confid",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.7990139832652616,
+      "totalScore": 2.7990139832652616,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T06:51:03.525Z",
-      "lastRecalledAt": "2026-04-15T04:42:48.769Z",
+      "lastRecalledAt": "2026-04-21T10:08:22.702Z",
       "queryHashes": [
         "ffad0036aab3",
-        "913350446238"
+        "913350446238",
+        "dc3d2fb7a22a"
       ],
       "recallDays": [
         "2026-04-14",
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-21"
       ],
       "conceptTags": [
         "b2b/corporate",
@@ -131486,14 +131491,14 @@
       "startLine": 152,
       "endLine": 169,
       "source": "memory",
-      "snippet": "- status: staged - Candidate: Assistant: Sip, sudah aku beresin: - **OFF** `guardrail-openclaw-usage` - **OFF** `doni-content-learning-loop` - `whitepaper-social-review-nightly` tetap **ON**, tapi **bagian Notion sync sudah aku hapus** dari instruksinya (sementara fokus review via Repliz + laporan saja). - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:255-255 - recalls: 0 - status: staged - Candidate: Assistant: Siap. Sudah aku set **scheduler Whitepaper tinggal jam 06:00 WIB saja**: - ✅ `whitepaper-daily-content-06wib` (06:00 WIB) aku **aktifkan lagi** - 🗑️ `whitepaper-social-daily` (07:15 WIB) **sudah aku hapus** - 🗑️ `whitepaper-content-daily-run` (09:05 WIB) **sudah aku - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:257-257 - recalls: 0 - status: staged - Candidate: User: Conversation info (untrusted metadata): ```json { \"message_id\": \"12158\", \"sender_id\": \"514720705\", \"sender\": \"Reandy\", \"timestamp\": \"Fri 2026-04-17 16:39 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Reandy (514720705)\", \"id\": \"514720705\", \"name\": \"Reandy\", - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:258-258 - recalls: 0 - status: staged - Candidate: Assistant: Aktif sekarang ada **12 cron job**: 1) **guardrail-config-backup-freshness** (every 6 jam) 2) **memory-maintenance-daily** (01:30 WIB) 3) **Memory Dreaming Promotion** (03:00 UTC) 4) **whitepaper-daily-content-06wib** (06:00 WIB) ✅ (scheduler Whitepaper satu-satunya) 5 - confidence: 0.58",
-      "recallCount": 9,
+      "snippet": "- status: staged - Candidate: Assistant: Sip, sudah aku beresin: - **OFF** `guardrail-openclaw-usage` - **OFF** `doni-content-learning-loop` - `whitepaper-social-review-nightly` tetap **ON**, tapi **bagian Notion sync sudah aku hapus** dari instruksinya (sementara fokus review via Repliz + laporan saja). - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:255-255 - recalls: 0 - status: staged - Candidate: Assistant: Siap. Sudah aku set **scheduler Whitepaper tinggal jam 06:00 WIB saja**: - ✅ `whitepaper-daily-content-06wib` (06:00 WIB) aku **aktifkan lagi** - 🗑️ `whitepaper-social-daily` (07:15 WIB) **sudah aku hapus** - 🗑️ `whitepaper-content-daily-run` (",
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9,
+      "totalScore": 10,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-19T15:06:43.440Z",
-      "lastRecalledAt": "2026-04-19T22:55:24.958Z",
+      "lastRecalledAt": "2026-04-21T08:27:48.518Z",
       "queryHashes": [
         "e2280721056f",
         "4c9e7f0a6154",
@@ -131503,11 +131508,13 @@
         "0edfd3ab93d2",
         "da41a8f33524",
         "647b5e01f22d",
-        "4e56b58a6889"
+        "4e56b58a6889",
+        "008f66275e48"
       ],
       "recallDays": [
         "2026-04-19",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "guardrail-openclaw-usage",
@@ -138891,23 +138898,25 @@
       "startLine": 463,
       "endLine": 480,
       "source": "memory",
-      "snippet": "- status: staged - Candidate: Assistant: Sip, sudah aku beresin: - **OFF** `guardrail-openclaw-usage` - **OFF** `doni-content-learning-loop` - `whitepaper-social-review-nightly` tetap **ON**, tapi **bagian Notion sync sudah aku hapus** dari instruksinya (sementara fokus review via Repliz + laporan saja). - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:255-255 - recalls: 0 - status: staged - Candidate: Assistant: Siap. Sudah aku set **scheduler Whitepaper tinggal jam 06:00 WIB saja**: - ✅ `whitepaper-daily-content-06wib` (06:00 WIB) aku **aktifkan lagi** - 🗑️ `whitepaper-social-daily` (07:15 WIB) **sudah aku hapus** - 🗑️ `whitepaper-content-daily-run` (09:05 WIB) **sudah aku - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:257-257 - recalls: 0 - status: staged - Candidate: User: Conversation info (untrusted metadata): ```json { \"message_id\": \"12158\", \"sender_id\": \"514720705\", \"sender\": \"Reandy\", \"timestamp\": \"Fri 2026-04-17 16:39 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Reandy (514720705)\", \"id\": \"514720705\", \"name\": \"Reandy\", - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:258-258 - recalls: 0 - status: staged - Candidate: Assistant: Aktif sekarang ada **12 cron job**: 1) **guardrail-config-backup-freshness** (every 6 jam) 2) **memory-maintenance-daily** (01:30 WIB) 3) **Memory Dreaming Promotion** (03:00 UTC) 4) **whitepaper-daily-content-06wib** (06:00 WIB) ✅ (scheduler Whitepaper satu-satunya) 5 - confidence: 0.58",
-      "recallCount": 4,
+      "snippet": "- status: staged - Candidate: Assistant: Sip, sudah aku beresin: - **OFF** `guardrail-openclaw-usage` - **OFF** `doni-content-learning-loop` - `whitepaper-social-review-nightly` tetap **ON**, tapi **bagian Notion sync sudah aku hapus** dari instruksinya (sementara fokus review via Repliz + laporan saja). - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-17.txt:255-255 - recalls: 0 - status: staged - Candidate: Assistant: Siap. Sudah aku set **scheduler Whitepaper tinggal jam 06:00 WIB saja**: - ✅ `whitepaper-daily-content-06wib` (06:00 WIB) aku **aktifkan lagi** - 🗑️ `whitepaper-social-daily` (07:15 WIB) **sudah aku hapus** - 🗑️ `whitepaper-content-daily-run` (",
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-19T22:25:15.705Z",
-      "lastRecalledAt": "2026-04-19T22:55:24.958Z",
+      "lastRecalledAt": "2026-04-21T08:27:48.518Z",
       "queryHashes": [
         "5afdea27e69a",
         "0edfd3ab93d2",
         "647b5e01f22d",
-        "4e56b58a6889"
+        "4e56b58a6889",
+        "008f66275e48"
       ],
       "recallDays": [
         "2026-04-20",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-21"
       ],
       "conceptTags": [
         "guardrail-openclaw-usage",
@@ -138961,20 +138970,22 @@
       "endLine": 622,
       "source": "memory",
       "snippet": "[2026-04-19T22:22:00Z] whitepaper-instagram-scheduling | User approved fallback to whitepaper.site when VPS photos are insufficient; for Repliz IG/media scheduling, use publicly resolvable image URLs and do not assume ocindonesia.my.id media links are reachable | Initial 30-day IG batch using ocindonesia.my.id media produced blank Repliz placeholders, then 9 IG schedules for 2026-04-20 through 2026-05-18 were recreated to use whitepaper.site/images URLs | agent_used=main [2026-04-19T22:54:00Z] whitepaper-event-intake-workflow | Reandy wants an event-driven content workflow: when he has a new event/project, Exel should tell him exactly what inputs are needed, he will send the materials, and",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-19T22:55:24.958Z",
-      "lastRecalledAt": "2026-04-20T01:29:10.896Z",
+      "lastRecalledAt": "2026-04-21T08:27:48.518Z",
       "queryHashes": [
         "4e56b58a6889",
         "d5f3a8990772",
-        "92fed879ab41"
+        "92fed879ab41",
+        "008f66275e48"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "2026-04-19t22",
@@ -154686,6 +154697,37 @@
         "beberapa",
         "preferensi",
         "yang"
+      ]
+    },
+    "memory:memory/2026-04-16.md:230:238": {
+      "key": "memory:memory/2026-04-16.md:230:238",
+      "path": "memory/2026-04-16.md",
+      "startLine": 230,
+      "endLine": 238,
+      "source": "memory",
+      "snippet": "- evidence: memory/2026-04-09.md:1-13, memory/2026-04-09.md:3-6, memory/.dreams/session-corpus/2026-04-09.txt:1-1 - note: reflection - Theme: `assistant` kept surfacing across 1582 memories. - confidence: 0.93 - evidence: memory/.dreams/session-corpus/2026-04-09.txt:2-2, memory/.dreams/session-corpus/2026-04-09.txt:4-4, memory/.dreams/session-corpus/2026-04-09.txt:6-6 - note: reflection ### Possible Lasting Truths - - Whitepaper social scope is now explicitly: LinkedIn, Threads, and Instagram. Content should be tailored per platform (more visual and concise for Instagram, conversational for Threads, more structured and educational for LinkedIn). - Repliz integration was exercised",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-21T10:08:22.702Z",
+      "lastRecalledAt": "2026-04-21T10:08:22.702Z",
+      "queryHashes": [
+        "dc3d2fb7a22a"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "memory/2026-04-09.md",
+        "1-13",
+        "3-6",
+        "1-1",
+        "0.93",
+        "2-2",
+        "4-4",
+        "6-6"
       ]
     }
   }

@@ -1,0 +1,480 @@
+{
+  "accountId": "69c5142b5f0c5e58b4b4a26e",
+  "rangeUTC": {
+    "start": "2026-04-21T17:00:00Z",
+    "end": "2026-05-31T16:59:59.999000Z"
+  },
+  "count": 31,
+  "items": [
+    {
+      "scheduleId": "69e5b4cb84ebdfba155cec28",
+      "scheduleAt": "2026-04-23T03:45:00.000Z",
+      "dateWIB": "2026-04-23",
+      "status": "pending",
+      "type": "album",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034817-DSC00002.jpg",
+        "https://whitepaper.site/images/1774309034823-DSC00012.jpg"
+      ],
+      "caption": "Setiap event punya banyak momen kecil yang menentukan apakah dokumentasinya terasa biasa atau benar-benar bernilai. Bukan cuma panggung, tapi juga transisi, interaksi, dan atmosfer ruang.\n\nKalau visual seperti ini tertangkap dengan rapi, hasilnya jauh lebih mudah dipakai untuk laporan internal sampai materi promosi berikutnya.\n\nKalau kamu lagi siapin event, DM \"EVENT\". Gue kirim shot list yang paling kepake + standar delivery Whitepaper.\n\n#WhitepaperProduction #EventPhotography #CorporateEvent #BrandDocumentation",
+      "captionLen": 518,
+      "hashtags": 4,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5b4cc84ebdfba155cec4d",
+      "scheduleAt": "2026-04-26T04:00:00.000Z",
+      "dateWIB": "2026-04-26",
+      "status": "pending",
+      "type": "album",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034826-DSC00031.jpg",
+        "https://whitepaper.site/images/1774309034829-DSC00071.jpg"
+      ],
+      "caption": "Company profile yang baik tidak terasa kaku. Justru yang paling kuat biasanya adalah foto yang tetap profesional tapi masih terasa natural dan dekat.\n\nItu sebabnya sesi company profile selalu lebih dari sekadar memotret orang. Kita sedang membantu brand terlihat meyakinkan dari kesan pertama.\n\nKalau tim kamu butuh foto company profile atau portrait yang rapi, DM \"PROFILE\". Gue kirim contoh set + alur kerja Whitepaper.\n\n#WhitepaperProduction #CompanyProfile #CorporatePhotography #VisualBranding",
+      "captionLen": 498,
+      "hashtags": 4,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5b4cd84ebdfba155cec79",
+      "scheduleAt": "2026-04-30T03:30:00.000Z",
+      "dateWIB": "2026-04-30",
+      "status": "pending",
+      "type": "album",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309761348-REN09995.jpg",
+        "https://whitepaper.site/images/1774309761349-REN09737.jpg"
+      ],
+      "caption": "Visual company profile yang rapi membantu bisnis terlihat lebih siap, lebih jelas, dan lebih mudah dipercaya. Kadang bukan karena desainnya rumit, tapi karena fotonya memang terasa matang sejak awal.\n\nDua frame ini mewakili hal yang sering dicari klien: profesional, bersih, dan tetap punya karakter.\n\nKalau tim kamu butuh foto company profile atau portrait yang rapi, DM \"PROFILE\". Gue kirim contoh set + alur kerja Whitepaper.\n\n#WhitepaperProduction #CompanyProfile #CorporatePortrait #BrandVisual",
+      "captionLen": 499,
+      "hashtags": 4,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e61bcb84ebdfba15630398",
+      "scheduleAt": "2026-05-01T03:30:00.000Z",
+      "dateWIB": "2026-05-01",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/20260420T064800Z-DSC09664.jpg"
+      ],
+      "caption": "Kalau mau konten event terasa premium, mulai dari 1 frame yang jelas konteksnya.\n\nStage, lighting, crowd, branding. Semua kebaca.\n\nBuat gue, dokumentasi bukan arsip. Ini aset trust.\n\nKalau kamu punya event dan pengen hasilnya bisa dipakai buat marketing 30 hari, DM gue.",
+      "captionLen": 270,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6e4d984ebdfba156d2908",
+      "scheduleAt": "2026-05-02T03:30:00.000Z",
+      "dateWIB": "2026-05-02",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/photo_2026-04-20_19-48-49.jpg"
+      ],
+      "caption": "Foto event yang kuat itu bikin orang paham skala tanpa dijelasin panjang.\n\nKuncinya: momen, komposisi, dan cerita.\n\nKalau kamu mau dokumentasi yang rapi dan siap jadi konten, kita bisa bantu. DM.",
+      "captionLen": 195,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e61bcc84ebdfba156303bc",
+      "scheduleAt": "2026-05-04T03:30:00.000Z",
+      "dateWIB": "2026-05-04",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/event-REN02053.jpg"
+      ],
+      "caption": "Bukan soal banyak foto. Soal foto yang ‘ngena’.\n\nWide shot buat skala, close-up buat emosi, detail buat kredibilitas.\n\nKalau dokumentasi kamu masih terasa datar, kemungkinan urutan ceritanya belum kebangun.",
+      "captionLen": 206,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5cfa584ebdfba155e8430",
+      "scheduleAt": "2026-05-05T03:30:00.000Z",
+      "dateWIB": "2026-05-05",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531155-REN00915.jpg"
+      ],
+      "caption": "Konten event yang premium itu bukan kebetulan. Dia hasil dari briefing yang jelas dan eksekusi yang rapi.",
+      "captionLen": 105,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6e4d984ebdfba156d291e",
+      "scheduleAt": "2026-05-06T03:30:00.000Z",
+      "dateWIB": "2026-05-06",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09281.jpg"
+      ],
+      "caption": "Satu hal yang sering dilupain: reaction audience.\n\nKalau reaksi kebaca, acara kamu terasa hidup.\n\nDan itu yang bikin orang pengen hadir di event berikutnya.",
+      "captionLen": 156,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5cfa584ebdfba155e843a",
+      "scheduleAt": "2026-05-08T03:30:00.000Z",
+      "dateWIB": "2026-05-08",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531157-REN06789.jpg"
+      ],
+      "caption": "Kalau dokumentasi event kamu bikin orang langsung paham skala acaranya, trust naik tanpa banyak kata.",
+      "captionLen": 101,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6e4d984ebdfba156d2929",
+      "scheduleAt": "2026-05-09T03:30:00.000Z",
+      "dateWIB": "2026-05-09",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09288.jpg"
+      ],
+      "caption": "Premium itu bukan filter. Premium itu rapi.\n\nTone warna bersih, angle jelas, momen kuat.\n\nKalau kamu pengen dokumentasi yang terlihat ‘mahal’ tanpa heboh, kita satu frekuensi.",
+      "captionLen": 175,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6e4da84ebdfba156d2937",
+      "scheduleAt": "2026-05-11T03:30:00.000Z",
+      "dateWIB": "2026-05-11",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09096.jpg"
+      ],
+      "caption": "Dokumentasi yang bagus bikin tim sales lebih gampang kerja.\n\nKarena trust sudah kebangun duluan dari visualnya.\n\nKalau kamu mau hasil yang bisa dipakai untuk materi presentasi dan website, DM gue.",
+      "captionLen": 196,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5cfa684ebdfba155e8446",
+      "scheduleAt": "2026-05-12T03:30:00.000Z",
+      "dateWIB": "2026-05-12",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531159-REN06810.jpg"
+      ],
+      "caption": "Momen terbaik seringnya cuma lewat sekali. Makanya kita selalu siapin shotlist dan backup angle.",
+      "captionLen": 96,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6b90384ebdfba156ab940",
+      "scheduleAt": "2026-05-13T03:30:00.000Z",
+      "dateWIB": "2026-05-13",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/apca-event-1.jpg"
+      ],
+      "caption": "Di balik panggung, ada disiplin.\n\nYang bikin output konsisten biasanya bukan karena kamera mahal, tapi karena workflow-nya rapi.\n\nBriefing jelas, shotlist jelas, eksekusi tenang.",
+      "captionLen": 178,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6bced84ebdfba156ae669",
+      "scheduleAt": "2026-05-14T04:10:00.000Z",
+      "dateWIB": "2026-05-14",
+      "status": "pending",
+      "type": "album",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/REN03378.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/REN03394.jpg"
+      ],
+      "caption": "Seminar dan forum bisnis sering menghasilkan banyak insight, tapi nilai visualnya baru terasa maksimal kalau momennya ditangkap dengan cukup rapi.\n\nDari panggung sampai portrait pembicara, dokumentasi seperti ini bisa hidup lebih lama daripada hari acaranya sendiri.\n\nKalau tim kamu butuh foto company profile atau portrait yang rapi, DM \"PROFILE\". Gue kirim contoh set + alur kerja Whitepaper.\n\n#WhitepaperProduction #SeminarDocumentation #CorporateEvent #CorporatePhotography",
+      "captionLen": 477,
+      "hashtags": 4,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5cfa684ebdfba155e8450",
+      "scheduleAt": "2026-05-15T03:30:00.000Z",
+      "dateWIB": "2026-05-15",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057050-REN00583.jpg"
+      ],
+      "caption": "Bukan soal banyak foto, tapi urutan cerita yang kebaca. Itu yang bikin konten terasa hidup.",
+      "captionLen": 91,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6bce984ebdfba156ae541",
+      "scheduleAt": "2026-05-16T03:30:00.000Z",
+      "dateWIB": "2026-05-16",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/apca-event-2.jpg"
+      ],
+      "caption": "Kalau event kamu penting, dokumentasinya harus setara pentingnya.\n\nKarena ini yang akan dilihat orang yang tidak hadir.\n\nVisualnya harus bisa ‘ngomong’ sendiri.",
+      "captionLen": 160,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5cfa684ebdfba155e8459",
+      "scheduleAt": "2026-05-17T03:30:00.000Z",
+      "dateWIB": "2026-05-17",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057055-REN00592.jpg"
+      ],
+      "caption": "Wide shot buat skala, close-up buat emosi, detail buat kredibilitas. Baru lengkap.",
+      "captionLen": 82,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6e4da84ebdfba156d294a",
+      "scheduleAt": "2026-05-18T03:40:00.000Z",
+      "dateWIB": "2026-05-18",
+      "status": "pending",
+      "type": "album",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09090.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC08986.jpg"
+      ],
+      "caption": "Kecepatan delivery dan kualitas visual sering jadi dua hal yang paling diingat klien setelah project selesai. Saat dua-duanya beres, dokumentasi tidak berhenti jadi arsip. Ia berubah jadi aset kerja yang terus dipakai.\n\nItu yang selalu kami kejar dari setiap set visual yang dibuat untuk brand.\n\nKalau kamu lagi siapin event, DM \"EVENT\". Gue kirim shot list yang paling kepake + standar delivery Whitepaper.\n\n#WhitepaperProduction #CorporatePhotography #BrandAssets #VisualBranding",
+      "captionLen": 481,
+      "hashtags": 4,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5cfa684ebdfba155e8463",
+      "scheduleAt": "2026-05-19T03:30:00.000Z",
+      "dateWIB": "2026-05-19",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057057-REN00623.jpg"
+      ],
+      "caption": "Brand yang terlihat premium biasanya konsisten di detail kecil, termasuk dokumentasi.",
+      "captionLen": 85,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6bcea84ebdfba156ae553",
+      "scheduleAt": "2026-05-20T03:30:00.000Z",
+      "dateWIB": "2026-05-20",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/apca-event-3.jpg"
+      ],
+      "caption": "Momen yang bagus itu seringnya cuma lewat sekali.\n\nMakanya kita selalu siapin: momen wajib, angle backup, dan rencana kalau lighting berubah.",
+      "captionLen": 141,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6bcee84ebdfba156ae6ae",
+      "scheduleAt": "2026-05-21T03:30:00.000Z",
+      "dateWIB": "2026-05-21",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/20260420T064800Z-DSC09601.jpg"
+      ],
+      "caption": "Kalau output akhirnya mau dipakai buat marketing, workflow-nya harus dirancang dari awal.",
+      "captionLen": 89,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5cfa784ebdfba155e8477",
+      "scheduleAt": "2026-05-22T03:30:00.000Z",
+      "dateWIB": "2026-05-22",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034837-DSC09391.jpg"
+      ],
+      "caption": "Dokumentasi bukan arsip. Ini aset kepercayaan yang bisa dipakai 30 hari setelah event.",
+      "captionLen": 86,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6bcea84ebdfba156ae566",
+      "scheduleAt": "2026-05-23T03:30:00.000Z",
+      "dateWIB": "2026-05-23",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/apca-event-4.jpg"
+      ],
+      "caption": "Kalau kamu mau bikin event kamu terasa besar, jangan cuma foto dekor.\n\nTunjukin crowd, stage, interaksi, dan pacing acara.\n\nItu yang bikin orang percaya.",
+      "captionLen": 153,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5cfa784ebdfba155e8481",
+      "scheduleAt": "2026-05-24T03:30:00.000Z",
+      "dateWIB": "2026-05-24",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034838-DSC09441.jpg"
+      ],
+      "caption": "Yang bikin visual terasa ‘mahal’ itu rapi. Clean, jelas, dan punya konteks.",
+      "captionLen": 75,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6e4da84ebdfba156d295d",
+      "scheduleAt": "2026-05-25T03:30:00.000Z",
+      "dateWIB": "2026-05-25",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09073.jpg"
+      ],
+      "caption": "Konten event paling gampang tembus itu yang jelas: siapa, di mana, dan kenapa penting.\n\nKalau salah satu hilang, hasilnya jadi generic.",
+      "captionLen": 135,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5cfa884ebdfba155e848a",
+      "scheduleAt": "2026-05-26T03:30:00.000Z",
+      "dateWIB": "2026-05-26",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034839-DSC09463.jpg"
+      ],
+      "caption": "Kalau kamu mau event kamu terlihat besar, jangan cuma foto dekor. Tunjukin momentum dan interaksi.",
+      "captionLen": 98,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6e4db84ebdfba156d296a",
+      "scheduleAt": "2026-05-27T03:30:00.000Z",
+      "dateWIB": "2026-05-27",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC08819.jpg"
+      ],
+      "caption": "BTS yang tepat bikin brand terlihat serius, bukan sekadar ramai.\n\nKalau kamu pengen dokumentasi yang rapi dan konsisten, kita bisa ngobrol.",
+      "captionLen": 139,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5cfa884ebdfba155e8494",
+      "scheduleAt": "2026-05-28T03:30:00.000Z",
+      "dateWIB": "2026-05-28",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057058-REN00768.jpg"
+      ],
+      "caption": "Konten yang bantu closing biasanya menonjolkan hasil dan dampak, bukan sekadar proses.",
+      "captionLen": 86,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5cfa884ebdfba155e849b",
+      "scheduleAt": "2026-05-29T03:30:00.000Z",
+      "dateWIB": "2026-05-29",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057060-REN00841.jpg"
+      ],
+      "caption": "BTS yang tepat bukan cuma seru, tapi bukti kalau kamu serius dan profesional.",
+      "captionLen": 77,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e6e4db84ebdfba156d2976",
+      "scheduleAt": "2026-05-30T03:30:00.000Z",
+      "dateWIB": "2026-05-30",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC08673.jpg"
+      ],
+      "caption": "Tujuan kita simple: bikin dokumentasi yang bisa kamu pakai ulang, bukan cuma kamu simpen.\n\nEvent selesai, konten jalan terus.\n\nKalau mau, gue bantu susun plan kontennya juga.",
+      "captionLen": 174,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e5cfa884ebdfba155e84a2",
+      "scheduleAt": "2026-05-31T03:30:00.000Z",
+      "dateWIB": "2026-05-31",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057062-REN01028.jpg"
+      ],
+      "caption": "Kalau kamu punya event dalam waktu dekat dan mau hasilnya siap jadi konten, DM gue.",
+      "captionLen": 83,
+      "hashtags": 0,
+      "repliesCount": 0
+    }
+  ]
+}

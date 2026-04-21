@@ -52,8 +52,17 @@
 
 ## Dream Diary Entry (2026-04-20)
 
+[2026-04-21T11:22:00Z] content-rewrite-mapping | Finalized IG (31) + LinkedIn (33) caption rewrite mappings for Repliz schedules (2026-04-22 to 2026-05-31) | Saved to /root/.openclaw/workspace/ig_rewrite_all.json and /root/.openclaw/workspace/li_rewrite_all.json; ready to apply replacements pending owner approval | agent_used=main
+
+[2026-04-21T10:05:07Z] repliz-schedule-count | Counted Repliz scheduled posts per platform for 2026-04-22..2026-05-31 (WIB) | IG 31 (whitepaper.prod), LinkedIn 33 (whitepaper-production), Threads 31 (whitepaper.prod) + 13 (heyreandy) | agent_used=main
+[2026-04-21T10:29:14Z] threads-copy-rewrite | Rewrote Threads scheduled copy for @whitepaper.prod (May 1-31) to be more engaging (micro-scenarios, checklists, sharper hooks) | Draft mapping saved (whitepaper_threads_rewrite_backup.json), pending approval to replace schedules in Repliz | agent_used=main
+[2026-04-21T10:44:00Z] subagent-error | Threads compact rewrite attempt failed (missing input placeholder) | Logged to HEARTBEAT.md; skipped compact variant | agent_used=main
+
 [2026-04-20] Dream Diary | Wrote dream diary entry from memory fragments (themes: 5da4fd6b, heyreandy-ai-content-daily) | Entry saved to /root/.openclaw/workspace/dream-diary/2026-04-20.md | Exel
 [2026-04-20] Heartbeat | Updated HEARTBEAT.md with session completion | Session completed: 2 tasks | Exel
+
+[2026-04-21T08:29:00Z] subagent-failure | DONI lead-engine playbook run failed due to model access errors (stepfun endpoint not found; mimo invalid API key) | Logged error to HEARTBEAT.md; awaiting owner decision on retry/fix | agent_used=main
+[2026-04-21T08:29:10Z] subagent-failure | QUANXI lead-ops automation run failed due to model access errors (stepfun endpoint not found; mimo auth profile unavailable) | Logged error to HEARTBEAT.md; awaiting owner decision on retry/fix | agent_used=main
 
 ## Promoted From Short-Term Memory (2026-04-13)
 
@@ -107,3 +116,10 @@
 [2026-04-21T01:01:30Z] system-healthcheck-daily | Ran openclaw status --deep | Gateway reachable (systemd running); Telegram ON/OK; Security audit: 0 critical, 2 warn (trusted proxies headers, potential multi-user heuristic) | agent_used=main
 [2026-04-21T02:46:17Z] repliz-grey-preview-replace | Replaced remaining Repliz schedules that likely showed grey previews by swapping in newly uploaded smaller photos | Recreated 8 Instagram schedules, replaced 1-2 media each; verified 0 remaining ocindonesia media URLs >5MB in future schedules | agent_used=main
 [2026-04-21T03:49:02Z] whitepaper-media-dashboard-delete | Added select+bulk delete to Whitepaper Media Dashboard (token-protected) | Dashboard now supports checkbox select + Delete selected; backend exposes POST /media/whitepaper/delete (requires X-Delete-Token) and regenerates dashboard after deletion | agent_used=main
+[2026-04-21T04:19:00Z] vps-dashboard-links | Shared all VPS dashboard links (public + local) | Provided URLs for OC Indonesia Agent Dashboard, Whitepaper Media Dashboard + upload UI, n8n, OpenClaw local control UI; noted legacy node dashboard on :4173 currently errors | agent_used=main
+[2026-04-21T05:37:30Z] threads-autocomment-setup | Set up VPS browser access for Whitepaper Threads login (VNC + noVNC) + started Chromium with remote debugging | vncserver@:1 (fluxbox) + public noVNC :6080 + Chromium CDP on 127.0.0.1:18800 | agent_used=main
+[2026-04-21T06:08:30Z] warp-proxy-fix | Installed Cloudflare WARP and switched to proxy mode to bypass IG/Threads HTTP 429 on VPS IP | warp-cli mode=proxy, SOCKS5 127.0.0.1:40000, Chromium restarted with proxy + CDP 18800 | agent_used=main
+
+[2026-04-21T08:48:32Z] lead-engine-playbook | Generated Whitepaper inbound lead-to-sales playbook (3 lead magnets, 10 LinkedIn hooks, 5 soft CTAs, 3-step DM follow-up) | Delivered draft to Reandy | agent_used=doni
+[2026-04-21T08:48:32Z] ops-config | Switched main + default primary model to openai-codex/gpt-5.2 to restore subagent reliability | Gateway restarted and status ok | agent_used=main
+[2026-04-21T08:49:11Z] lead-ops-automation-plan | Drafted OpenClaw lead gen + sales follow-up automation architecture (UTM, webhook intake, lead store, Telegram inbox, reminders, cron schedule) | Delivered plan to Reandy | agent_used=quanxi
