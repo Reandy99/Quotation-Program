@@ -1,48 +1,42 @@
-# Threads Research Brief - Whitepaper Production
-Tanggal (WIB): 20 April 2026
+# Threads Research Brief (White Paper Production)
+Tanggal: Selasa, 21 April 2026 (WIB)
 
-## 1) "24 jam pertama" aftermovie: event recap yang paling sering dibagikan
-Hook: Kalau event kamu selesai jam 5 sore, konten yang bikin orang ingat justru lahir sebelum besok siang.
-- Format yang lagi kuat: short recap 20-40 detik, highlight momen, wajah, energi ruangan, lalu 1 kalimat konteks.
-- Kecepatan rilis = leverage: internal team bisa repost saat hype masih hangat.
-- Fokus ke 3 hal: siapa yang hadir, apa yang terjadi, dan apa dampaknya buat bisnis.
-Soft CTA: Mau aku bikinin struktur shotlist biar tim kamu bisa dapat versi recap yang siap dipakai untuk internal dan eksternal?
-Ide visual: Video vertikal 9:16, 8-12 cut cepat (registrasi, panggung, networking, close-up sponsor/branding, applause), tutup dengan 1 frame teks "Recap in 24h".
+## Angle 1 - 'Event highlight' yang kepake buat sales follow-up (bukan sekadar recap)
+Hook: Dokumentasi event itu baru berguna kalau bisa dipakai sales untuk follow-up besok paginya.
+- Format tren: 1 video hero 45-60 detik + 3 cutdown 10-15 detik (vertical, subtitle, hook di 2 detik pertama).
+- Fokus bukan venue dan rundown, tapi 'momen bukti' - audience ramai, handshake, demo, testimonial 1 kalimat.
+- Output wajib: versi untuk internal (townhall recap), eksternal (social proof), dan sales (after-event email/DM asset).
+Soft CTA: Kalau kamu mau setiap event langsung jadi paket asset follow-up (bukan cuma folder foto), Whitepaper bisa bantu rapihin konsep dan eksekusinya.
+Ide visual: Video vertical 60 detik - opening text overlay 'Dalam 1 event, kita dapet 4 asset sales' lalu montage: crowd, stage, demo booth, 1 vox pop 5 detik.
 
-## 2) BTS yang rapi: "How we made it" untuk company profile dan corporate visuals
-Hook: Audience B2B makin percaya bukan dari hasil paling kinclong, tapi dari proses yang kelihatan jelas dan terukur.
-- BTS memperlihatkan sistem: pre-production, koordinasi, lighting, blocking, sampai review.
-- Konten BTS biasanya memancing komentar karena orang suka lihat decision making di balik layar.
-- Ini juga jadi trust builder untuk stakeholder internal yang biasanya takut hasil tidak sesuai ekspektasi.
-Soft CTA: Kalau kamu mau, kita bisa bikin 1 paket BTS yang sekaligus jadi materi approval internal (lebih gampang disetujui).
-Ide visual: Carousel video pendek 3 klip: "Brief", "On set", "Final" (masing-masing 5-7 detik) dengan overlay checklist.
+## Angle 2 - Carousel PDF 'slide-deck' yang bikin orang berhenti scroll (LinkedIn-friendly, bisa di-thread)
+Hook: Kalau post kamu cuma foto, orang like lalu lewat, tapi kalau jadi slide deck, orang baca sampai habis.
+- Pattern yang lagi kuat di LinkedIn: document post (PDF carousel) karena bikin dwell time naik (orang swipe, pause, save).
+- Ubah dokumentasi jadi 'framework' - contoh: 8-10 slide 'Checklist dokumentasi event yang menghasilkan leads'.
+- Di Threads, pecah jadi 6-8 post pendek: 1 hook + 1 insight per post + 1 pertanyaan di akhir.
+Soft CTA: Kalau butuh bantuan ngubah materi event jadi deck yang rapi, enak dibaca, dan tetap on-brand, tim Whitepaper bisa bantu bikin versi finalnya.
+Ide visual: Carousel 10 slide - cover bold, slide 2-9 isi checklist + contoh shot list, slide terakhir 'asset map' (IG/LinkedIn/Sales/Internal).
 
-## 3) "1 event jadi 10 aset": repurposing kit untuk sales, marketing, dan internal comms
-Hook: Dokumentasi event itu bukan biaya, itu bahan baku konten dan sales enablement untuk 3 bulan.
-- Angle edukasi yang sering viral: breakdown aset dari 1 sesi dokumentasi (hero video, reels, foto speaker, highlight sponsor, testimoni, recap internal).
-- Buat B2B, aset terbaik biasanya yang menjawab: "kenapa ini penting untuk buyer" bukan sekadar "rame".
-- Dorong sistem folder dan penamaan file yang siap dipakai tim sales (biar tidak hilang di drive).
-Soft CTA: Kalau kamu pengin, aku bisa bantu mapping "asset list" yang paling kepake untuk funnel kamu.
-Ide visual: Grafik sederhana (atau shot top-down di meja) yang nunjukin 10 output: thumbnails, cover, reels, banner, quote card.
+## Angle 3 - Behind-the-scenes yang terlihat 'real' tapi tetap premium
+Hook: Konten corporate yang terlalu rapi sering tidak dipercaya, BTS justru bikin orang yakin ini beneran kejadian.
+- Tren konten 2025-2026 cenderung ngasih panggung ke authenticity - proses, tim, momen kecil, bukan cuma hasil akhir.
+- BTS yang relevan untuk B2B: rig setup, lighting check, rundown cue, koordinasi dengan EO, dan 'problem solving moment'.
+- Kunci: tetap premium lewat audio bersih, subtitle rapi, dan cut cepat (lo-fi feel, hi-fi execution).
+Soft CTA: Kalau mau BTS yang aman untuk brand dan tetap kelihatan premium, Whitepaper bisa bantu dari shot list sampai edit final.
+Ide visual: Video 30-45 detik - 'POV tim dokumentasi 2 jam sebelum CEO naik panggung' (timelapse + 3 caption moment).
 
-## 4) Employer branding "Day in the life" versi korporat: autentik tapi tetap profesional
-Hook: Kandidat tidak lagi cari kantor paling keren, mereka cari tim yang keliatan nyata dan sehat.
-- Format day-in-the-life dan POV kerja masih kuat di Reels, terutama kalau ada micro story (problem -> solusi -> selesai).
-- Menonjolkan ritme kerja, cara kolaborasi, dan budaya meeting, ini sering jadi bahan share internal.
-- Visual yang konsisten bikin employer branding terasa "serius", bukan konten iseng.
-Soft CTA: Mau dicoba 1 episode pilot 30 detik untuk 1 role (misalnya sales, HR, ops) biar bisa dites dulu?
-Ide visual: Reels vertikal 30 detik, 6 scene: masuk kantor, standup, kerja fokus, kolaborasi, hasil, closing quote 1 kalimat.
+## Angle 4 - Employee-generated mini story untuk employer branding dan internal comms
+Hook: Employer branding paling kuat bukan dari slogan, tapi dari 3 kalimat karyawan di kamera.
+- Format yang lagi naik: employee-generated content (EGC) - day-in-the-life, mini interview, dan quick quote.
+- Ambil momentum event: 5 pertanyaan cepat (10-15 detik jawaban) dari panitia, sales, leadership, atau peserta.
+- Output bisa dipakai ganda: rekrutmen, internal comms, dan trust-building di LinkedIn.
+Soft CTA: Kalau pengin bikin seri EGC yang konsisten dan tidak mengganggu jalannya event, Whitepaper bisa bantu set workflow + ambil footage-nya.
+Ide visual: 6 klip vertical, masing-masing 12 detik - 1 orang 1 pertanyaan, opening title 'What I learned today'.
 
-## 5) "Proof over polish": dokumentasi sebagai bukti (bukan pajangan)
-Hook: Konten korporat yang paling meyakinkan itu bukan yang paling sinematik, tapi yang bisa jadi bukti kerja.
-- Ubah dokumentasi jadi proof: milestones proyek, behind-the-scenes delivery, quote stakeholder, before-after.
-- Kombinasi yang perform: 1 klaim sederhana + 3 bukti visual (foto, potongan video, data ringan).
-- Cocok untuk buyer B2B yang butuh justifikasi ke atasan.
-Soft CTA: Kalau kamu punya satu proyek unggulan, kita bisa susun paket visual proof yang siap dipakai sales deck.
-Ide visual: Carousel 4 slide: "Masalah", "Proses", "Hasil", "Bukti" (isi foto nyata + caption super pendek).
-
----
-Trend signals yang jadi rujukan format (ringkas):
-- LinkedIn: dorongan short-form video + recap cepat dan konten yang menonjolkan proses.
-- Threads: pola hook kuat, bullet points, struktur jelas (hook-value-action) sering dipakai creator.
-- IG Reels: employer branding yang autentik (POV/day-in-the-life) masih konsisten jadi format yang disukai.
+## Angle 5 - 'One event, many assets' - strategi repurpose biar ROI dokumentasi kerasa
+Hook: Masalah bukan kurang konten, tapi konten tidak dipecah jadi asset yang tepat untuk tiap channel.
+- Repurpose map yang simpel: hero recap, testimonial cut, quote card, BTS, 1 carousel framework, 1 album foto 'photo dump' yang terkurasi.
+- Jadikan dokumentasi sebagai asset library - bukan postingan sekali lewat.
+- Bikin naming dan folder rule dari awal supaya mudah dipakai tim marketing dan sales (bukan cuma editor).
+Soft CTA: Kalau kamu pengin dokumentasi event jadi sistem asset yang bisa dipakai 30-90 hari ke depan, Whitepaper bisa bantu susun paket output dan struktur library-nya.
+Ide visual: 1 gambar 'Asset Map' (diagram) + video 15 detik yang nunjukin perbedaan output per channel (IG/LinkedIn/Sales/Internal).
