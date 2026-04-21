@@ -11,6 +11,7 @@ import os
 import html
 import time
 from pathlib import Path
+import json
 
 UPLOAD_DIR = "/var/www/ocindonesia/media/whitepaper"
 HOST = "127.0.0.1"
@@ -18,6 +19,7 @@ PORT = 9090
 
 INDEX_FILENAME = "index.html"
 ALLOWED_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
+DELETE_TOKEN_FILE = "/root/.openclaw/workspace/state/whitepaper/media_delete_token.txt"
 
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
@@ -82,6 +84,10 @@ def generate_media_dashboard(base_url: str) -> None:
         "    .url { color: #336699; }",
         "    .upload-box { margin-bottom: 14px; padding: 12px; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }",
         "    .upload-box form { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }",
+        "    button { border: 1px solid #e5e7eb; background: #fff; border-radius: 8px; padding: 8px 10px; cursor: pointer; }",
+        "    button:hover { background: #f9fafb; }",
+        "    .btn-danger { background: #b91c1c; color: #fff; border-color: #b91c1c; }",
+        "    .btn-danger:hover { background: #991b1b; }",
         "  </style>",
         "</head>",
         "<body>",
@@ -97,6 +103,17 @@ def generate_media_dashboard(base_url: str) -> None:
         "    <div class='small'>Max upload: <b>50MB</b> per request. Kalau tidak muncul di list, coba refresh halaman (hard refresh).</div>",
         "  </div>",
         "",
+        "  <div class='upload-box'>",
+        "    <div style='display:flex; gap:8px; align-items:center; flex-wrap:wrap;'>",
+        "      <button id='btnSelectAll' type='button'>Select all</button>",
+        "      <button id='btnClear' type='button'>Clear</button>",
+        "      <button id='btnDelete' class='btn-danger' type='button'>Delete selected</button>",
+        "      <button id='btnSetToken' type='button'>Set delete token</button>",
+        "      <span id='selCount' class='small'>Selected: 0</span>",
+        "    </div>",
+        "    <div class='small'>Delete pakai token (disimpan di browser). Kalau token salah, delete ditolak.</div>",
+        "  </div>",
+        "",
         "  <div class='grid'>",
     ]
 
@@ -104,7 +121,10 @@ def generate_media_dashboard(base_url: str) -> None:
         name = it["name"]
         url = f"{base_url}/media/whitepaper/{name}"
         html_parts.append("    <div class='item'>")
-        html_parts.append("      <div class='thumb'><img src='" + esc(name) + "' alt='" + esc(name) + "'></div>")
+        html_parts.append("      <div style='display:flex; flex-direction:column; gap:6px; align-items:center;'>")
+        html_parts.append("        <input class='sel' type='checkbox' data-name='" + esc(name) + "'>")
+        html_parts.append("        <div class='thumb'><img src='" + esc(name) + "' alt='" + esc(name) + "'></div>")
+        html_parts.append("      </div>")
         html_parts.append("      <div class='meta'>")
         html_parts.append("        <div class='name'>" + esc(name) + "</div>")
         html_parts.append("        <div class='info'>Size: " + esc(_fmt_bytes(int(it["size"]))) + "</div>")
@@ -113,7 +133,53 @@ def generate_media_dashboard(base_url: str) -> None:
         html_parts.append("      </div>")
         html_parts.append("    </div>")
 
-    html_parts.extend(["  </div>", "</body>", "</html>"])
+    html_parts.extend(
+        [
+            "  </div>",
+            "",
+            "  <script>",
+            "    const tokenKey = 'wp_media_delete_token';",
+            "    const selCount = document.getElementById('selCount');",
+            "    const boxes = Array.from(document.querySelectorAll('input.sel'));",
+            "    function selected(){ return boxes.filter(b => b.checked).map(b => b.dataset.name).filter(Boolean); }",
+            "    function render(){ selCount.textContent = 'Selected: ' + selected().length; }",
+            "    boxes.forEach(b => b.addEventListener('change', render));",
+            "    document.getElementById('btnSelectAll').addEventListener('click', () => { boxes.forEach(b => b.checked = true); render(); });",
+            "    document.getElementById('btnClear').addEventListener('click', () => { boxes.forEach(b => b.checked = false); render(); });",
+            "    document.getElementById('btnSetToken').addEventListener('click', () => {",
+            "      const cur = localStorage.getItem(tokenKey) || '';",
+            "      const t = prompt('Paste delete token (32 hex). Leave empty to clear.', cur);",
+            "      if (t === null) return;",
+            "      const v = (t || '').trim();",
+            "      if (!v) localStorage.removeItem(tokenKey); else localStorage.setItem(tokenKey, v);",
+            "      alert(v ? 'Token saved.' : 'Token cleared.');",
+            "    });",
+            "    document.getElementById('btnDelete').addEventListener('click', async () => {",
+            "      const files = selected();",
+            "      if (!files.length) return alert('Belum ada yang dipilih.');",
+            "      if (!confirm('Delete ' + files.length + ' file(s)? Ini tidak bisa di-undo.')) return;",
+            "      const token = (localStorage.getItem(tokenKey) || '').trim();",
+            "      if (!token) return alert('Token belum diset. Klik Set delete token dulu.');",
+            "      try {",
+            "        const res = await fetch('/media/whitepaper/delete', {",
+            "          method: 'POST',",
+            "          headers: { 'Content-Type': 'application/json', 'X-Delete-Token': token },",
+            "          body: JSON.stringify({ files }),",
+            "        });",
+            "        const data = await res.json().catch(() => ({}));",
+            "        if (!res.ok) throw new Error((data && data.error) ? data.error : ('HTTP ' + res.status));",
+            "        alert('Deleted: ' + (data.deleted || []).length + '\\nErrors: ' + (data.errors || []).length);",
+            "        location.reload();",
+            "      } catch (e) {",
+            "        alert('Delete failed: ' + (e && e.message ? e.message : e));",
+            "      }",
+            "    });",
+            "    render();",
+            "  </script>",
+            "</body>",
+            "</html>",
+        ]
+    )
 
     out = ("\n".join(html_parts)).encode("utf-8")
     tmp_path = os.path.join(UPLOAD_DIR, f".{INDEX_FILENAME}.tmp")
@@ -129,8 +195,87 @@ def request_base_url(handler: BaseHTTPRequestHandler) -> str:
     return f"{proto}://{host}"
 
 
+def expected_delete_token() -> str:
+    try:
+        if os.path.exists(DELETE_TOKEN_FILE):
+            with open(DELETE_TOKEN_FILE, "r", encoding="utf-8") as f:
+                return f.read().strip()
+    except Exception:
+        return ""
+    return ""
+
+
+def send_json(handler: BaseHTTPRequestHandler, status: int, payload: dict) -> None:
+    data = json.dumps(payload).encode("utf-8")
+    handler.send_response(status)
+    handler.send_header("Content-Type", "application/json; charset=utf-8")
+    handler.send_header("Content-Length", str(len(data)))
+    handler.end_headers()
+    handler.wfile.write(data)
+
+
 class UploadHandler(BaseHTTPRequestHandler):
     def do_POST(self):
+        # Delete endpoint
+        if self.path == "/delete":
+            expected = expected_delete_token()
+            if not expected:
+                send_json(self, 503, {"error": "Delete not configured"})
+                return
+
+            got = (self.headers.get("X-Delete-Token") or "").strip()
+            if got != expected:
+                send_json(self, 403, {"error": "Invalid delete token"})
+                return
+
+            try:
+                length = int(self.headers.get("Content-Length", "0"))
+            except ValueError:
+                length = 0
+
+            raw = self.rfile.read(length) if length > 0 else b"{}"
+            try:
+                payload = json.loads(raw.decode("utf-8")) if raw else {}
+            except Exception:
+                send_json(self, 400, {"error": "Invalid JSON"})
+                return
+
+            files = payload.get("files") or []
+            if not isinstance(files, list):
+                send_json(self, 400, {"error": "files must be a list"})
+                return
+
+            deleted = []
+            errors = []
+            for name in files:
+                try:
+                    if not isinstance(name, str):
+                        continue
+                    base = os.path.basename(name)
+                    if not base or base.startswith("."):
+                        continue
+                    if base == INDEX_FILENAME:
+                        continue
+                    ext = os.path.splitext(base)[1].lower()
+                    if ext not in ALLOWED_EXTS:
+                        continue
+                    target = os.path.join(UPLOAD_DIR, base)
+                    if os.path.exists(target):
+                        os.remove(target)
+                        deleted.append(base)
+                except Exception as e:
+                    errors.append({"file": str(name), "error": str(e)})
+
+            # Refresh dashboard after deletes
+            try:
+                generate_media_dashboard(request_base_url(self))
+            except Exception as e:
+                errors.append({"file": "(dashboard)", "error": str(e)})
+
+            send_json(self, 200, {"deleted": deleted, "errors": errors})
+            return
+
+        # Upload endpoint
         if self.path != "/upload":
             self.send_error(404, "Not found")
             return
