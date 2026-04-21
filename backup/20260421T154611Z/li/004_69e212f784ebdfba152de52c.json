@@ -1,0 +1,35 @@
+{
+  "_id": "69e212f784ebdfba152de52c",
+  "title": "",
+  "description": "Most corporate event photos never get used. Not because they are bad. Because no one planned where they would go.\n\n300 to 500 images arrive in a shared folder. The events team is already running the next project. No one has been assigned to distribute the content. Two weeks later, the press window has closed and the images are sitting unlabeled.\n\nThe fix is not a better photographer. It is a distribution plan built before the shoot brief is written.\n\nIf you are planning an upcoming event and want documentation your team will actually use, visit whitepaper.site.\n\nWhat is the biggest bottleneck in your post-event content workflow?",
+  "type": "image",
+  "medias": [
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774331451360-REN01668.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774331451360-REN01668.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    },
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774309531134-REN00050.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774309531134-REN00050.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    },
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774309531136-REN00103.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774309531136-REN00103.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    }
+  ],
+  "status": "pending",
+  "scheduleAt": "2026-04-25T01:00:00.000Z",
+  "replies": [],
+  "accountId": "69ba44a7bcf47d3964974d41",
+  "userId": "69708888f8a15510f95967ec",
+  "createdAt": "2026-04-17T11:01:11.990Z",
+  "updatedAt": "2026-04-17T11:01:11.990Z",
+  "__v": 0,
+  "id": "69e212f784ebdfba152de52c"
+}

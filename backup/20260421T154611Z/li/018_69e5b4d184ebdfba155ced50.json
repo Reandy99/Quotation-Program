@@ -1,0 +1,35 @@
+{
+  "_id": "69e5b4d184ebdfba155ced50",
+  "title": "",
+  "description": "Corporate visual content compounds. But only if the system behind it is built to accumulate.\n\nTen documented events per year produces 3,000 to 5,000 curated images. Year two, that library serves every new communication without a new shoot. Year three, the compounding accelerates.\n\nCompanies without a documentation system start from zero every time. Stock photography fills the gap. The difference is visible to every client, candidate, and investor who sees the output.\n\nHow many events does your organization document per year, and does a searchable library of those images exist anywhere your team can access it?\n\nPlanning a corporate event? If you need photo/video with clear delivery standards and fast turnaround, message us. We'll share a sample shot list and a clear turnaround timeline.",
+  "type": "image",
+  "medias": [
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774309531161-REN06828.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774309531161-REN06828.jpg",
+      "alt": "Corporate event photography by White Paper Production"
+    },
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774309531162-REN07133.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774309531162-REN07133.jpg",
+      "alt": "Corporate event photography by White Paper Production"
+    },
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774309531164-REN07544.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774309531164-REN07544.jpg",
+      "alt": "Corporate event photography by White Paper Production"
+    }
+  ],
+  "status": "pending",
+  "scheduleAt": "2026-05-12T01:00:00.000Z",
+  "replies": [],
+  "accountId": "69ba44a7bcf47d3964974d41",
+  "userId": "69708888f8a15510f95967ec",
+  "createdAt": "2026-04-20T05:08:33.839Z",
+  "updatedAt": "2026-04-20T05:08:33.839Z",
+  "__v": 0,
+  "id": "69e5b4d184ebdfba155ced50"
+}

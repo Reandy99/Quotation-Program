@@ -1,2 +1,2 @@
-[SESSION START — 2026-04-21 11:22 UTC] Focus: finalize IG + LinkedIn rewrite mappings and prep Repliz replace
-[SESSION END — 2026-04-21 11:22 UTC] Completed: generated IG rewrites (31) + LinkedIn rewrites (33) into ig_rewrite_all.json + li_rewrite_all.json | Pending: owner approval to apply replacements in Repliz
+[SESSION START — 2026-04-21 15:43 UTC] Focus: apply IG+LinkedIn rewrite captions to Repliz (backup + dry-run + batch apply + verify)
+[SESSION END — 2026-04-21 15:57 UTC] Completed: backup before-state (IG 31, LI 33) + dry-run diff reports + applied IG rewrites (31/31) + applied LinkedIn rewrites (33/33 replaced+verified) | Pending: none

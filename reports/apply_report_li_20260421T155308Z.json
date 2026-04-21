@@ -1,0 +1,349 @@
+{
+  "generatedAt": "2026-04-21T15:53:08.876Z",
+  "mode": "APPLY",
+  "mappingPath": "tmp_apply_li.json",
+  "batchSize": 10,
+  "delayMs": 2500,
+  "batches": [
+    {
+      "index": 1,
+      "start": 0,
+      "size": 10,
+      "success": 10,
+      "failed": 0,
+      "items": [
+        {
+          "scheduleId": "69e212f684ebdfba152de4ce",
+          "ok": true,
+          "oldScheduleAt": "2026-04-22T02:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e212f684ebdfba152de4ce",
+          "newId": "69e79d6584ebdfba1577fc39"
+        },
+        {
+          "scheduleId": "69e5b4cb84ebdfba155cec16",
+          "ok": true,
+          "oldScheduleAt": "2026-04-23T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4cb84ebdfba155cec16",
+          "newId": "69e79d6784ebdfba1577fc4f"
+        },
+        {
+          "scheduleId": "69e5b4cc84ebdfba155cec38",
+          "ok": true,
+          "oldScheduleAt": "2026-04-24T05:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4cc84ebdfba155cec38",
+          "newId": "69e79d6a84ebdfba1577fc61"
+        },
+        {
+          "scheduleId": "69e212f784ebdfba152de52c",
+          "ok": true,
+          "oldScheduleAt": "2026-04-25T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e212f784ebdfba152de52c",
+          "newId": "69e79d6d84ebdfba1577fc75"
+        },
+        {
+          "scheduleId": "69e5b4cd84ebdfba155cec63",
+          "ok": true,
+          "oldScheduleAt": "2026-04-28T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4cd84ebdfba155cec63",
+          "newId": "69e79d6f84ebdfba1577fc93"
+        },
+        {
+          "scheduleId": "69e212f984ebdfba152de56b",
+          "ok": true,
+          "oldScheduleAt": "2026-04-29T02:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e212f984ebdfba152de56b",
+          "newId": "69e79d7284ebdfba1577fca5"
+        },
+        {
+          "scheduleId": "69e212f984ebdfba152de594",
+          "ok": true,
+          "oldScheduleAt": "2026-04-30T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e212f984ebdfba152de594",
+          "newId": "69e79d7484ebdfba1577fcc8"
+        },
+        {
+          "scheduleId": "69e5b4ce84ebdfba155cec8d",
+          "ok": true,
+          "oldScheduleAt": "2026-05-01T05:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4ce84ebdfba155cec8d",
+          "newId": "69e79d7784ebdfba1577fce7"
+        },
+        {
+          "scheduleId": "69e5b4ce84ebdfba155ceca1",
+          "ok": true,
+          "oldScheduleAt": "2026-05-02T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4ce84ebdfba155ceca1",
+          "newId": "69e79d7a84ebdfba1577fcff"
+        },
+        {
+          "scheduleId": "69e6bceb84ebdfba156ae5b7",
+          "ok": true,
+          "oldScheduleAt": "2026-05-03T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e6bceb84ebdfba156ae5b7",
+          "newId": "69e79d7c84ebdfba1577fd13"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "start": 10,
+      "size": 10,
+      "success": 10,
+      "failed": 0,
+      "items": [
+        {
+          "scheduleId": "69e5b4cf84ebdfba155cecc6",
+          "ok": true,
+          "oldScheduleAt": "2026-05-04T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4cf84ebdfba155cecc6",
+          "newId": "69e79d7f84ebdfba1577fd47"
+        },
+        {
+          "scheduleId": "69e5b4cf84ebdfba155cecd9",
+          "ok": true,
+          "oldScheduleAt": "2026-05-05T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4cf84ebdfba155cecd9",
+          "newId": "69e79d8184ebdfba1577fd66"
+        },
+        {
+          "scheduleId": "69e212fc84ebdfba152de63b",
+          "ok": true,
+          "oldScheduleAt": "2026-05-06T02:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e212fc84ebdfba152de63b",
+          "newId": "69e79d8484ebdfba1577fd86"
+        },
+        {
+          "scheduleId": "69e5b4d084ebdfba155cecf1",
+          "ok": true,
+          "oldScheduleAt": "2026-05-07T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4d084ebdfba155cecf1",
+          "newId": "69e79d8784ebdfba1577fdad"
+        },
+        {
+          "scheduleId": "69e212fd84ebdfba152de679",
+          "ok": true,
+          "oldScheduleAt": "2026-05-08T05:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e212fd84ebdfba152de679",
+          "newId": "69e79d8984ebdfba1577fdcc"
+        },
+        {
+          "scheduleId": "69e5be1f84ebdfba155d685f",
+          "ok": true,
+          "oldScheduleAt": "2026-05-10T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5be1f84ebdfba155d685f",
+          "newId": "69e79d8c84ebdfba1577fdf4"
+        },
+        {
+          "scheduleId": "69e5b4d184ebdfba155ced2f",
+          "ok": true,
+          "oldScheduleAt": "2026-05-11T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4d184ebdfba155ced2f",
+          "newId": "69e79d8e84ebdfba1577fe0c"
+        },
+        {
+          "scheduleId": "69e5b4d184ebdfba155ced50",
+          "ok": true,
+          "oldScheduleAt": "2026-05-12T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4d184ebdfba155ced50",
+          "newId": "69e79d9184ebdfba1577fe27"
+        },
+        {
+          "scheduleId": "69e5b4d284ebdfba155ced66",
+          "ok": true,
+          "oldScheduleAt": "2026-05-13T02:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4d284ebdfba155ced66",
+          "newId": "69e79d9484ebdfba1577fe44"
+        },
+        {
+          "scheduleId": "69e5b4d284ebdfba155ced80",
+          "ok": true,
+          "oldScheduleAt": "2026-05-14T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4d284ebdfba155ced80",
+          "newId": "69e79d9684ebdfba1577fe57"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "start": 20,
+      "size": 10,
+      "success": 10,
+      "failed": 0,
+      "items": [
+        {
+          "scheduleId": "69e5b4d384ebdfba155cedaf",
+          "ok": true,
+          "oldScheduleAt": "2026-05-18T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4d384ebdfba155cedaf",
+          "newId": "69e79d9984ebdfba1577fe6e"
+        },
+        {
+          "scheduleId": "69e5b4d484ebdfba155cedd8",
+          "ok": true,
+          "oldScheduleAt": "2026-05-19T02:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4d484ebdfba155cedd8",
+          "newId": "69e79d9b84ebdfba1577fe93"
+        },
+        {
+          "scheduleId": "69e5b4d484ebdfba155cede6",
+          "ok": true,
+          "oldScheduleAt": "2026-05-20T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4d484ebdfba155cede6",
+          "newId": "69e79d9e84ebdfba1577feb5"
+        },
+        {
+          "scheduleId": "69e5b4d584ebdfba155cedfb",
+          "ok": true,
+          "oldScheduleAt": "2026-05-21T05:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4d584ebdfba155cedfb",
+          "newId": "69e79da184ebdfba1577fecb"
+        },
+        {
+          "scheduleId": "69e430a884ebdfba154831d6",
+          "ok": true,
+          "oldScheduleAt": "2026-05-22T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e430a884ebdfba154831d6",
+          "newId": "69e79da384ebdfba1577feea"
+        },
+        {
+          "scheduleId": "69e5be2084ebdfba155d686f",
+          "ok": true,
+          "oldScheduleAt": "2026-05-24T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5be2084ebdfba155d686f",
+          "newId": "69e79da684ebdfba1577ff01"
+        },
+        {
+          "scheduleId": "69e2205d84ebdfba152e9444",
+          "ok": true,
+          "oldScheduleAt": "2026-05-25T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e2205d84ebdfba152e9444",
+          "newId": "69e79da884ebdfba1577ff0f"
+        },
+        {
+          "scheduleId": "69e5b4d584ebdfba155cee13",
+          "ok": true,
+          "oldScheduleAt": "2026-05-26T02:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4d584ebdfba155cee13",
+          "newId": "69e79dab84ebdfba1577ff2a"
+        },
+        {
+          "scheduleId": "69e5b4d684ebdfba155cee24",
+          "ok": true,
+          "oldScheduleAt": "2026-05-27T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4d684ebdfba155cee24",
+          "newId": "69e79dae84ebdfba1577ff49"
+        },
+        {
+          "scheduleId": "69e5b4d684ebdfba155cee39",
+          "ok": true,
+          "oldScheduleAt": "2026-05-28T05:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5b4d684ebdfba155cee39",
+          "newId": "69e79db084ebdfba1577ff5f"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "start": 30,
+      "size": 3,
+      "success": 3,
+      "failed": 0,
+      "items": [
+        {
+          "scheduleId": "69e6bced84ebdfba156ae652",
+          "ok": true,
+          "oldScheduleAt": "2026-05-29T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "album",
+          "oldId": "69e6bced84ebdfba156ae652",
+          "newId": "69e79db384ebdfba1577ff75"
+        },
+        {
+          "scheduleId": "69e5be2084ebdfba155d6873",
+          "ok": true,
+          "oldScheduleAt": "2026-05-30T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e5be2084ebdfba155d6873",
+          "newId": "69e79db584ebdfba1577ff92"
+        },
+        {
+          "scheduleId": "69e6bceb84ebdfba156ae5c9",
+          "ok": true,
+          "oldScheduleAt": "2026-05-31T01:00:00.000Z",
+          "accountId": "69ba44a7bcf47d3964974d41",
+          "type": "image",
+          "oldId": "69e6bceb84ebdfba156ae5c9",
+          "newId": "69e79db884ebdfba1577ffa5"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total": 33,
+    "success": 33,
+    "failed": 0,
+    "created": 33,
+    "deleted": 33
+  }
+}

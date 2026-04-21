@@ -1,0 +1,35 @@
+{
+  "_id": "69e5b4cb84ebdfba155cec16",
+  "title": "",
+  "description": "480 curated images across four rooms in one night. Here is exactly how we did it.\n\nThe client: a hospitality group. Annual dinner for 1,000 guests across four simultaneous rooms, six hours of program.\n\nThe problem: one photographer produces 300 usable images from one angle. The client needed full coverage across a VIP reception, main stage, networking floor, and live performance, all running at the same time.\n\nThe solution: two photographers with pre-assigned zones, a shared shot list, and zone transitions timed to the run of show.\n\nResult: 480 edited images organized by room and segment. The client used 61 in their press release the following morning.\n\nHow do you usually handle multi-room events?\n\nPlanning a corporate event? If you need photo/video with clear delivery standards and fast turnaround, message us. We'll share a sample shot list and a clear turnaround timeline.",
+  "type": "image",
+  "medias": [
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774486968628-REN05091.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774486968628-REN05091.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    },
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774486968645-REN05116.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774486968645-REN05116.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    },
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774331451269-REN04462.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774331451269-REN04462.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    }
+  ],
+  "status": "pending",
+  "scheduleAt": "2026-04-23T01:00:00.000Z",
+  "replies": [],
+  "accountId": "69ba44a7bcf47d3964974d41",
+  "userId": "69708888f8a15510f95967ec",
+  "createdAt": "2026-04-20T05:08:27.424Z",
+  "updatedAt": "2026-04-20T05:08:27.424Z",
+  "__v": 0,
+  "id": "69e5b4cb84ebdfba155cec16"
+}

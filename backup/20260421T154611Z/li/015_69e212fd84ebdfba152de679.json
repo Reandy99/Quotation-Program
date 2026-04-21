@@ -1,0 +1,35 @@
+{
+  "_id": "69e212fd84ebdfba152de679",
+  "title": "",
+  "description": "8 hours. 12 departments. One company profile shoot. The HR team used the content for 18 months.\n\nEvery department received portraits, team shots, and workspace documentation in a single day. Three recruitment campaigns over the following six months drew from the same library.\n\nOne production day replaced 18 months of ad hoc photography requests.\n\nHow long does your company's visual content library typically last before it needs to be refreshed?",
+  "type": "image",
+  "medias": [
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774309034826-DSC00031.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774309034826-DSC00031.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    },
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774309034829-DSC00071.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774309034829-DSC00071.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    },
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774309034831-DSC00166.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774309034831-DSC00166.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    }
+  ],
+  "status": "pending",
+  "scheduleAt": "2026-05-08T05:00:00.000Z",
+  "replies": [],
+  "accountId": "69ba44a7bcf47d3964974d41",
+  "userId": "69708888f8a15510f95967ec",
+  "createdAt": "2026-04-17T11:01:17.420Z",
+  "updatedAt": "2026-04-17T11:01:17.420Z",
+  "__v": 0,
+  "id": "69e212fd84ebdfba152de679"
+}

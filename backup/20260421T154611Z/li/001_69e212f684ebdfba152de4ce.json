@@ -1,0 +1,35 @@
+{
+  "_id": "69e212f684ebdfba152de4ce",
+  "title": "",
+  "description": "5 things that separate a well-prepared event brief from one that wastes everyone's time.\n\n1. Named VIP list. Not just \"senior management.\" Full names, titles, and descriptions.\n2. Segment shot list tied to the run of show. Not a generic checklist written the night before.\n3. One internal contact on site, reachable by phone the entire day.\n4. Delivery format stated upfront. Web resolution, print resolution, or both.\n5. Usage context. Where each set of images will actually appear. This changes how the photographer composes every shot.\n\nThe brief is not admin. It is the difference between a delivery your team uses and one they archive.\n\nWhich of these five do you find hardest to get right before your event?",
+  "type": "image",
+  "medias": [
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774486968571-REN04593.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774486968571-REN04593.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    },
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774486968587-REN04905.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774486968587-REN04905.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    },
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774486968603-REN04935.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774486968603-REN04935.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    }
+  ],
+  "status": "pending",
+  "scheduleAt": "2026-04-22T02:00:00.000Z",
+  "replies": [],
+  "accountId": "69ba44a7bcf47d3964974d41",
+  "userId": "69708888f8a15510f95967ec",
+  "createdAt": "2026-04-17T11:01:10.296Z",
+  "updatedAt": "2026-04-17T11:01:10.296Z",
+  "__v": 0,
+  "id": "69e212f684ebdfba152de4ce"
+}

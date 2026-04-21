@@ -1,0 +1,35 @@
+{
+  "_id": "69e5b4cf84ebdfba155cecd9",
+  "title": "",
+  "description": "Poor event documentation has a cost that almost no company tracks. And it compounds every quarter.\n\nWhen images arrive late, the press release window closes. The internal newsletter publishes without photos. The recruitment team uses stock imagery instead of real people from the event.\n\nEach substitution reduces the credibility of the communication it appears in. Audiences notice the difference between documentation and stock photography. They do not always say so.\n\nThe cost of poor documentation is not the photography fee. It is every communication that looked less credible because the real content never arrived on time.\n\nHave you ever had to substitute stock photography because event images arrived too late?\n\nPlanning a corporate event? If you need photo/video with clear delivery standards and fast turnaround, message us. We'll share a sample shot list and a clear turnaround timeline.",
+  "type": "image",
+  "medias": [
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774309057058-REN00768.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774309057058-REN00768.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    },
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774309057060-REN00841.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774309057060-REN00841.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    },
+    {
+      "type": "image",
+      "url": "https://whitepaper.site/images/1774309057062-REN01028.jpg",
+      "thumbnail": "https://whitepaper.site/images/1774309057062-REN01028.jpg",
+      "alt": "Corporate photography by White Paper Production"
+    }
+  ],
+  "status": "pending",
+  "scheduleAt": "2026-05-05T01:00:00.000Z",
+  "replies": [],
+  "accountId": "69ba44a7bcf47d3964974d41",
+  "userId": "69708888f8a15510f95967ec",
+  "createdAt": "2026-04-20T05:08:31.681Z",
+  "updatedAt": "2026-04-20T05:08:31.681Z",
+  "__v": 0,
+  "id": "69e5b4cf84ebdfba155cecd9"
+}

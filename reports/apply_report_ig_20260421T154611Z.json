@@ -1,0 +1,340 @@
+{
+  "generatedAt": "2026-04-21T15:48:36.139Z",
+  "mode": "APPLY",
+  "mappingPath": "tmp_apply_ig.json",
+  "batchSize": 7,
+  "delayMs": 2500,
+  "batches": [
+    {
+      "index": 1,
+      "start": 0,
+      "size": 7,
+      "success": 7,
+      "failed": 0,
+      "items": [
+        {
+          "scheduleId": "69e5b4cb84ebdfba155cec28",
+          "ok": true,
+          "oldScheduleAt": "2026-04-23T03:45:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "album",
+          "oldId": "69e5b4cb84ebdfba155cec28",
+          "newId": "69e79c5484ebdfba1577f04c"
+        },
+        {
+          "scheduleId": "69e5b4cc84ebdfba155cec4d",
+          "ok": true,
+          "oldScheduleAt": "2026-04-26T04:00:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "album",
+          "oldId": "69e5b4cc84ebdfba155cec4d",
+          "newId": "69e79c5684ebdfba1577f06c"
+        },
+        {
+          "scheduleId": "69e5b4cd84ebdfba155cec79",
+          "ok": true,
+          "oldScheduleAt": "2026-04-30T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "album",
+          "oldId": "69e5b4cd84ebdfba155cec79",
+          "newId": "69e79c5984ebdfba1577f08e"
+        },
+        {
+          "scheduleId": "69e61bcb84ebdfba15630398",
+          "ok": true,
+          "oldScheduleAt": "2026-05-01T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e61bcb84ebdfba15630398",
+          "newId": "69e79c5c84ebdfba1577f09e"
+        },
+        {
+          "scheduleId": "69e6e4d984ebdfba156d2908",
+          "ok": true,
+          "oldScheduleAt": "2026-05-02T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e6e4d984ebdfba156d2908",
+          "newId": "69e79c5e84ebdfba1577f0ae"
+        },
+        {
+          "scheduleId": "69e61bcc84ebdfba156303bc",
+          "ok": true,
+          "oldScheduleAt": "2026-05-04T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e61bcc84ebdfba156303bc",
+          "newId": "69e79c6184ebdfba1577f0bc"
+        },
+        {
+          "scheduleId": "69e5cfa584ebdfba155e8430",
+          "ok": true,
+          "oldScheduleAt": "2026-05-05T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e5cfa584ebdfba155e8430",
+          "newId": "69e79c6384ebdfba1577f0d2"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "start": 7,
+      "size": 7,
+      "success": 7,
+      "failed": 0,
+      "items": [
+        {
+          "scheduleId": "69e6e4d984ebdfba156d291e",
+          "ok": true,
+          "oldScheduleAt": "2026-05-06T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e6e4d984ebdfba156d291e",
+          "newId": "69e79c6684ebdfba1577f0e9"
+        },
+        {
+          "scheduleId": "69e5cfa584ebdfba155e843a",
+          "ok": true,
+          "oldScheduleAt": "2026-05-08T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e5cfa584ebdfba155e843a",
+          "newId": "69e79c6984ebdfba1577f0fd"
+        },
+        {
+          "scheduleId": "69e6e4d984ebdfba156d2929",
+          "ok": true,
+          "oldScheduleAt": "2026-05-09T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e6e4d984ebdfba156d2929",
+          "newId": "69e79c6b84ebdfba1577f10f"
+        },
+        {
+          "scheduleId": "69e6e4da84ebdfba156d2937",
+          "ok": true,
+          "oldScheduleAt": "2026-05-11T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e6e4da84ebdfba156d2937",
+          "newId": "69e79c6e84ebdfba1577f12b"
+        },
+        {
+          "scheduleId": "69e5cfa684ebdfba155e8446",
+          "ok": true,
+          "oldScheduleAt": "2026-05-12T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e5cfa684ebdfba155e8446",
+          "newId": "69e79c7084ebdfba1577f13d"
+        },
+        {
+          "scheduleId": "69e6b90384ebdfba156ab940",
+          "ok": true,
+          "oldScheduleAt": "2026-05-13T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e6b90384ebdfba156ab940",
+          "newId": "69e79c7384ebdfba1577f170"
+        },
+        {
+          "scheduleId": "69e6bced84ebdfba156ae669",
+          "ok": true,
+          "oldScheduleAt": "2026-05-14T04:10:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "album",
+          "oldId": "69e6bced84ebdfba156ae669",
+          "newId": "69e79c7684ebdfba1577f192"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "start": 14,
+      "size": 7,
+      "success": 7,
+      "failed": 0,
+      "items": [
+        {
+          "scheduleId": "69e5cfa684ebdfba155e8450",
+          "ok": true,
+          "oldScheduleAt": "2026-05-15T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e5cfa684ebdfba155e8450",
+          "newId": "69e79c7884ebdfba1577f1ca"
+        },
+        {
+          "scheduleId": "69e6bce984ebdfba156ae541",
+          "ok": true,
+          "oldScheduleAt": "2026-05-16T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e6bce984ebdfba156ae541",
+          "newId": "69e79c7b84ebdfba1577f1f5"
+        },
+        {
+          "scheduleId": "69e5cfa684ebdfba155e8459",
+          "ok": true,
+          "oldScheduleAt": "2026-05-17T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e5cfa684ebdfba155e8459",
+          "newId": "69e79c7e84ebdfba1577f220"
+        },
+        {
+          "scheduleId": "69e6e4da84ebdfba156d294a",
+          "ok": true,
+          "oldScheduleAt": "2026-05-18T03:40:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "album",
+          "oldId": "69e6e4da84ebdfba156d294a",
+          "newId": "69e79c8084ebdfba1577f22f"
+        },
+        {
+          "scheduleId": "69e5cfa684ebdfba155e8463",
+          "ok": true,
+          "oldScheduleAt": "2026-05-19T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e5cfa684ebdfba155e8463",
+          "newId": "69e79c8384ebdfba1577f247"
+        },
+        {
+          "scheduleId": "69e6bcea84ebdfba156ae553",
+          "ok": true,
+          "oldScheduleAt": "2026-05-20T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e6bcea84ebdfba156ae553",
+          "newId": "69e79c8584ebdfba1577f25a"
+        },
+        {
+          "scheduleId": "69e6bcee84ebdfba156ae6ae",
+          "ok": true,
+          "oldScheduleAt": "2026-05-21T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e6bcee84ebdfba156ae6ae",
+          "newId": "69e79c8884ebdfba1577f26f"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "start": 21,
+      "size": 7,
+      "success": 7,
+      "failed": 0,
+      "items": [
+        {
+          "scheduleId": "69e5cfa784ebdfba155e8477",
+          "ok": true,
+          "oldScheduleAt": "2026-05-22T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e5cfa784ebdfba155e8477",
+          "newId": "69e79c8b84ebdfba1577f280"
+        },
+        {
+          "scheduleId": "69e6bcea84ebdfba156ae566",
+          "ok": true,
+          "oldScheduleAt": "2026-05-23T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e6bcea84ebdfba156ae566",
+          "newId": "69e79c8d84ebdfba1577f298"
+        },
+        {
+          "scheduleId": "69e5cfa784ebdfba155e8481",
+          "ok": true,
+          "oldScheduleAt": "2026-05-24T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e5cfa784ebdfba155e8481",
+          "newId": "69e79c9084ebdfba1577f2b2"
+        },
+        {
+          "scheduleId": "69e6e4da84ebdfba156d295d",
+          "ok": true,
+          "oldScheduleAt": "2026-05-25T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e6e4da84ebdfba156d295d",
+          "newId": "69e79c9284ebdfba1577f2ca"
+        },
+        {
+          "scheduleId": "69e5cfa884ebdfba155e848a",
+          "ok": true,
+          "oldScheduleAt": "2026-05-26T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e5cfa884ebdfba155e848a",
+          "newId": "69e79c9584ebdfba1577f2da"
+        },
+        {
+          "scheduleId": "69e6e4db84ebdfba156d296a",
+          "ok": true,
+          "oldScheduleAt": "2026-05-27T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e6e4db84ebdfba156d296a",
+          "newId": "69e79c9784ebdfba1577f2f6"
+        },
+        {
+          "scheduleId": "69e5cfa884ebdfba155e8494",
+          "ok": true,
+          "oldScheduleAt": "2026-05-28T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e5cfa884ebdfba155e8494",
+          "newId": "69e79c9a84ebdfba1577f30a"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "start": 28,
+      "size": 3,
+      "success": 3,
+      "failed": 0,
+      "items": [
+        {
+          "scheduleId": "69e5cfa884ebdfba155e849b",
+          "ok": true,
+          "oldScheduleAt": "2026-05-29T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e5cfa884ebdfba155e849b",
+          "newId": "69e79c9d84ebdfba1577f31f"
+        },
+        {
+          "scheduleId": "69e6e4db84ebdfba156d2976",
+          "ok": true,
+          "oldScheduleAt": "2026-05-30T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e6e4db84ebdfba156d2976",
+          "newId": "69e79c9f84ebdfba1577f334"
+        },
+        {
+          "scheduleId": "69e5cfa884ebdfba155e84a2",
+          "ok": true,
+          "oldScheduleAt": "2026-05-31T03:30:00.000Z",
+          "accountId": "69c5142b5f0c5e58b4b4a26e",
+          "type": "image",
+          "oldId": "69e5cfa884ebdfba155e84a2",
+          "newId": "69e79ca284ebdfba1577f35e"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total": 31,
+    "success": 31,
+    "failed": 0,
+    "created": 31,
+    "deleted": 31
+  }
+}
