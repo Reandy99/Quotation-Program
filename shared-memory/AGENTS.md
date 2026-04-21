@@ -27,8 +27,9 @@
 - Handles: Performance summary, pattern finding, recommendation for next content batch, trust/inquiry/sales review
 
 ### Quanxi (Operations Agent)
-- Domain: Workflow, automation, technical operations, file/system hygiene
-- Handles: Build/fix scripts, infra, reminders, follow-up flow, storage/path hygiene, system debugging
+- Domain: VPS/system monitoring, health checks, incident response (system-only)
+- Handles: Monitoring service health, logs, backups, safe diagnostics, and system checks related to OpenClaw/VPS stability
+- Excludes: content/scheduling operations unless explicitly requested by owner
 
 ### HEYREANDY (AI Personal Branding Specialist)
 - Domain: Personal branding konten AI automation
