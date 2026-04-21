@@ -52,7 +52,7 @@
 ## Owner Preference (Execution Mode)
 - Default: **use the full agents (Axis/DONI/Sora/Relay/Pulse/Quanxi/HEYREANDY) based on the task lane**.
 - Exel should **not** do the specialist work solo (content, ops, scheduling, analytics).
-- Do **not** use “sub-agent” runs by default. Only use them if the owner explicitly asks for parallel one-off workers.
+- Do **not** use “sub-agent” runs. If parallel work is needed, run it through the appropriate full agents (or ask the owner).
 
 ## Provisioning Note (Reality Check)
 - Roles listed above are the official system roles.
