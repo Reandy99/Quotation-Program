@@ -1,2 +1,2 @@
-[SESSION START — 2026-04-21 15:43 UTC] Focus: apply IG+LinkedIn rewrite captions to Repliz (backup + dry-run + batch apply + verify)
-[SESSION END — 2026-04-21 15:57 UTC] Completed: backup before-state (IG 31, LI 33) + dry-run diff reports + applied IG rewrites (31/31) + applied LinkedIn rewrites (33/33 replaced+verified) | Pending: none
+[SESSION START — 2026-04-22 01:31 UTC] Focus: fix security audit CRITICAL (small model fallback)
+[SESSION END — 2026-04-22 01:47 UTC] Completed: 1 tasks | Pending: -
