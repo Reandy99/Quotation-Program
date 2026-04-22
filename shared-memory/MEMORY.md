@@ -5,3 +5,4 @@
 [2026-04-22 14:09 UTC] context-tiering | Added chat router rules + tightened startup context budgets | Added Context Tiering section to AGENTS.md; set agents.defaults.startupContext dailyMemoryDays=1 and tighter contextLimits (memory/tool excerpts) | Exel
 [2026-04-22 15:06 UTC] system-packages | Installed pip3 + jq | dnf install python3-pip (pip 23.3.1) and jq 1.7.1 | Exel
 [2026-04-22 15:15 UTC] ops | Moved daily VPS/OpenClaw healthcheck cron to Quanxi | cron job system-healthcheck-daily now runs with agentId=quanxi (model xiaomi/mimo-v2-pro) | Exel
+[2026-04-22 15:22 UTC] models | Set main chat default to GPT-5.2 and pinned existing cron jobs to Xiaomi Omni | agents.defaults.model.primary=openai-codex/gpt-5.2; updated cron payload.model to xiaomi/mimo-v2-omni | Exel
