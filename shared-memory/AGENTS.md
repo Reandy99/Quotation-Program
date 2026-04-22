@@ -48,6 +48,17 @@ Goal: keep this file short so it can be loaded every turn (token-efficient). For
 - LinkedIn: always require review (professional stakes).
 - If approval is not received before scheduled time, hold the post (do not publish).
 
+## Context Tiering (Chat Router)
+Goal: answer with the minimum context/tools needed.
+
+- Tier 0 (zero context): default. Do not read files or memory. Ask 1 clarification question if needed.
+  Examples: simple how-to, quick decision, status question that only needs a single tool call.
+- Tier 1 (memory lookup): ONLY if the user references past actions/decisions ("tadi", "kemarin", "sebelumnya", "yang kita bahas"). Use memory_search, then memory_get for the exact snippet.
+- Tier 2 (targeted file lookup): ONLY if the user references a specific file/config/code. Read only the smallest relevant file excerpt.
+- Tier 3 (heavy): audits/multi-file design reviews. Confirm scope before loading lots of files.
+
+Escalation rule: start at the lightest tier, then escalate only if the answer would be incorrect without more context.
+
 ## Memory and Logging Protocol
 - Every completed task: append to `MEMORY.md` as:
   "[timestamp] task_type | brief summary | result | agent_used"
