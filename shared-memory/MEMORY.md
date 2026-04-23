@@ -21,3 +21,4 @@
 [2026-04-23 10:41 UTC] scheduling | Scheduled Whitepaper Threads posts (Apr 23–30, 2026) in Repliz using new “hook + tips/checklist/opini + CTA” format, with VPS-hosted images attached | 8 schedules created (pending) for whitepaper.prod | Exel
 [2026-04-23 11:49 UTC] preference | Exel should act as orchestrator/QC only (delegate execution to specialist agents; Exel does routing, review, and final checks) | Reandy | Exel
 [2026-04-23 12:07 UTC] scheduling | Replaced all Whitepaper Threads schedules for May 1–31, 2026 in Repliz: deleted prior 31 schedules then created 31 new image schedules, each with 2 images (VPS-hosted) and consistent hook+value+CTA format | whitepaper.prod | Exel
+[2026-04-23 12:40 UTC] preference | Reandy does not want to specify which agent to use; Exel should choose the appropriate specialist agent automatically for each task | delegation default | Exel
