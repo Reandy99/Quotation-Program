@@ -6,3 +6,10 @@
 [2026-04-22 15:06 UTC] system-packages | Installed pip3 + jq | dnf install python3-pip (pip 23.3.1) and jq 1.7.1 | Exel
 [2026-04-22 15:15 UTC] ops | Moved daily VPS/OpenClaw healthcheck cron to Quanxi | cron job system-healthcheck-daily now runs with agentId=quanxi (model xiaomi/mimo-v2-pro) | Exel
 [2026-04-22 15:22 UTC] models | Set main chat default to GPT-5.2 and pinned existing cron jobs to Xiaomi Omni | agents.defaults.model.primary=openai-codex/gpt-5.2; updated cron payload.model to xiaomi/mimo-v2-omni | Exel
+[2026-04-22 11:27 UTC] ops | Canva access approach (anti-bot) | To edit Canva reliably, use an OpenClaw **node host on the user’s laptop** (real browser) and access gateway privately via **Tailscale Serve** (`*.ts.net`); Tailscale Exit Node is optional and not required for this workflow | Exel
+
+## Promoted From Short-Term Memory (2026-04-23)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-17.md:313:315 -->
+- - status: staged [score=0.817 recalls=0 avg=0.620 source=memory/2026-04-17.md:297-297]
+[2026-04-23 04:57 UTC] ops | Reconfigured OpenClaw for direct VPS access without Tailscale | Set gateway bind to lan, disabled Tailscale mode, allowed direct control UI origin, opened/persisted TCP 18789, verified external HTTP 200 on 43.156.181.204:18789 | Exel
