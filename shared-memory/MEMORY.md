@@ -13,3 +13,4 @@
 <!-- openclaw-memory-promotion:memory:memory/2026-04-17.md:313:315 -->
 - - status: staged [score=0.817 recalls=0 avg=0.620 source=memory/2026-04-17.md:297-297]
 [2026-04-23 04:57 UTC] ops | Reconfigured OpenClaw for direct VPS access without Tailscale | Set gateway bind to lan, disabled Tailscale mode, allowed direct control UI origin, opened/persisted TCP 18789, verified external HTTP 200 on 43.156.181.204:18789 | Exel
+[2026-04-23 05:37 UTC] ops | Moved OpenClaw Control behind HTTPS reverse proxy on VPS | Served Control UI at https://ocindonesia.my.id/openclaw/, set gateway.bind=loopback, basePath=/openclaw, disabled dangerous device-auth bypass, added auth rate limit, removed public firewall access to 18789, verified WhatsApp/Telegram OK | Exel

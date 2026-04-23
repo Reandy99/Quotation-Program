@@ -1,2 +1,1 @@
-[SESSION START - 2026-04-23 04:46 UTC] Focus: reconfigure OpenClaw to run on VPS public IP without Tailscale dependency
-[SESSION END - 2026-04-23 04:57 UTC] Completed: 1 task | Pending: optional hardening (auth rate limit, service cleanup)
+[SESSION END - 2026-04-23 05:37 UTC] Completed: 1 task | Pending: optional cleanup for nginx server_name warning + status label still shows local loopback for on-box CLI
