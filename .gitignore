@@ -2,3 +2,13 @@
 # vendor clones (do not track)
 vendor/marketingskills/
 state/whitepaper/media_delete_token.txt
+
+# generated deps
+node_modules/
+
+# temp exports
+tmp_*.json
+tmp_*.png
+tmp_*.jpg
+tmp_*.jpeg
+tmp_*.webp

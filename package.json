@@ -1,0 +1,27 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tmp_extract_whitepaper_threads.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reandy99/Openclaw-whitepaper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Reandy99/Openclaw-whitepaper/issues"
+  },
+  "homepage": "https://github.com/Reandy99/Openclaw-whitepaper#readme",
+  "dependencies": {
+    "puppeteer-core": "^24.9.0"
+  }
+}
