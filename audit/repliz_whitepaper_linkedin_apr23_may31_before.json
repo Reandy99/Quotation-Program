@@ -1,0 +1,544 @@
+{
+  "accountId": "69ba44a7bcf47d3964974d41",
+  "rangeUTC": {
+    "start": "2026-04-23T00:00:00Z",
+    "end": "2026-06-01T00:00:00Z"
+  },
+  "count": 32,
+  "items": [
+    {
+      "scheduleId": "69e79d6784ebdfba1577fc4f",
+      "scheduleAt": "2026-04-23T01:00:00.000Z",
+      "dateWIB": "2026-04-23",
+      "status": "success",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774486968628-REN05091.jpg",
+        "https://whitepaper.site/images/1774486968645-REN05116.jpg",
+        "https://whitepaper.site/images/1774331451269-REN04462.jpg"
+      ],
+      "caption": "480 curated images across four rooms, in one night.\n\nClient context:\n- Annual dinner\n- 1,000 guests\n- Four rooms running in parallel\n- Six hours of program\n\nThe core problem:\nOne photographer can produce a lot, but usually from one angle. This event needed coverage across multiple zones at the same time.\n\nWhat worked:\n- Two photographers\n- Pre-assigned zones\n- One shared shot list\n- Planned transitions timed to the run of show\n\nResult:\n480 edited images, organized by room and segment. 61 were used in a press release the next morning.\n\nHow do you usually plan coverage for multi-room events?",
+      "captionLen": 596,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d6a84ebdfba1577fc61",
+      "scheduleAt": "2026-04-24T05:00:00.000Z",
+      "dateWIB": "2026-04-24",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774331451314-REN04423.jpg",
+        "https://whitepaper.site/images/1774331451329-REN04243.jpg",
+        "https://whitepaper.site/images/1774331451346-REN03856.jpg"
+      ],
+      "caption": "280 curated images. Delivered in 48 hours.\n\nIn the first 7 days, the client used 43.\n\nWhere they went:\n- Press kit\n- Social posts\n- Internal announcement deck\n- Investor update\n\nOne day of coverage can turn into months of usable content, if the delivery is curated and fast.\n\nWhat is the fastest turnaround you have received after an event?",
+      "captionLen": 340,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d6d84ebdfba1577fc75",
+      "scheduleAt": "2026-04-25T01:00:00.000Z",
+      "dateWIB": "2026-04-25",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774331451360-REN01668.jpg",
+        "https://whitepaper.site/images/1774309531134-REN00050.jpg",
+        "https://whitepaper.site/images/1774309531136-REN00103.jpg"
+      ],
+      "caption": "Most corporate event photos never get used.\nNot because they are bad, but because no one planned where they would go.\n\nA common pattern:\n- 300 to 500 images land in a shared folder\n- the events team moves to the next project\n- no one owns distribution\n- two weeks later, the press window is gone\n\nIn my experience, the fix is rarely \"a better photographer\".\nIt is a distribution plan built before the brief is finalized.\n\nWhat is the biggest bottleneck in your post-event content workflow?",
+      "captionLen": 489,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d6f84ebdfba1577fc93",
+      "scheduleAt": "2026-04-28T01:00:00.000Z",
+      "dateWIB": "2026-04-28",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531138-REN00114.jpg",
+        "https://whitepaper.site/images/1774309531140-REN00357.jpg",
+        "https://whitepaper.site/images/1774309531142-REN00372.jpg"
+      ],
+      "caption": "Enterprise visual content programs rarely fail because the photography is bad.\nThey fail because no system receives the work.\n\nEvery event produces a folder.\nIf the folder has no owner, distribution never happens.\n\nThe teams that make event content work treat it like a production system:\n- A shared library\n- Naming conventions\n- Access rules\n- One accountable owner who routes images to the right teams\n\nWithout that, even great photography becomes an archive no one opens.\n\nHow does your organization manage event photos after delivery?",
+      "captionLen": 539,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d7284ebdfba1577fca5",
+      "scheduleAt": "2026-04-29T02:00:00.000Z",
+      "dateWIB": "2026-04-29",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531145-REN00383.jpg",
+        "https://whitepaper.site/images/1774309531146-REN00387.jpg",
+        "https://whitepaper.site/images/1774309531147-REN00437.jpg"
+      ],
+      "caption": "A photographer brief that actually works has 6 components.\nMost briefs cover 2.\n\n1) Event overview (what, where, how long)\n2) Priority subjects (named people, branded elements)\n3) Shot list tied to the run of show\n4) Constraints (restricted zones, lighting, timing)\n5) Delivery specs (format, resolution, turnaround, recipients)\n6) Usage context (where each image set will be used)\n\nWhen all six are clear, the first delivery usually needs no revision call.\n\nWhich part is most often missing in your briefs?",
+      "captionLen": 507,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d7484ebdfba1577fcc8",
+      "scheduleAt": "2026-04-30T01:00:00.000Z",
+      "dateWIB": "2026-04-30",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531149-REN00627.jpg",
+        "https://whitepaper.site/images/1774309531152-REN00796.jpg",
+        "https://whitepaper.site/images/1774309531153-REN00804.jpg"
+      ],
+      "caption": "My pre-event briefings typically take around 45 minutes.\nClients sometimes ask why it cannot be 15.\n\nBecause 15 minutes usually produces a generic shot list.\n45 minutes surfaces details that never show up in a form:\n- VIPs someone forgot to mention\n- a mandatory sponsor shot\n- a timing window that closes early (for example, when an executive leaves)\n\nWhen we shorten the briefing too much, it often creates revision work afterward.\nThat extra time upfront removes hours at the end.\n\nHow much time do you typically spend briefing a photographer before an event?",
+      "captionLen": 562,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d7784ebdfba1577fce7",
+      "scheduleAt": "2026-05-01T05:00:00.000Z",
+      "dateWIB": "2026-05-01",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531155-REN00915.jpg",
+        "https://whitepaper.site/images/1774309531157-REN06789.jpg",
+        "https://whitepaper.site/images/1774309531159-REN06810.jpg"
+      ],
+      "caption": "600 guests. Three rooms. One photographer.\nAnd we still delivered complete coverage.\n\nThe constraint forced a decision most teams avoid:\nWhat are the non-negotiable moments?\n\nWe mapped the program, ranked segments by distribution value, then built a movement schedule around the top priorities.\nThe rest was captured in the gaps.\n\nCounterintuitive lesson: forced prioritization often produces a more useful delivery than unlimited access.\n\nWhen coverage is limited at a multi-room event, how do you decide what to prioritize?",
+      "captionLen": 525,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d7a84ebdfba1577fcff",
+      "scheduleAt": "2026-05-02T01:00:00.000Z",
+      "dateWIB": "2026-05-02",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057050-REN00583.jpg",
+        "https://whitepaper.site/images/1774309057055-REN00592.jpg",
+        "https://whitepaper.site/images/1774309057057-REN00623.jpg"
+      ],
+      "caption": "The photographers who consistently deliver at the highest level are not the ones with the best equipment.\nThey are the ones who solved the problems before the event starts.\n\nThey arrive having:\n- Read the brief multiple times\n- Learned the VIP list\n- Planned for lighting based on the venue\n- Built contingencies for schedule overruns\n\nOn the day, they execute a plan.\nThey do not build one in real time.\n\nWhat is one thing you wish photographers prepared better before arriving on site?",
+      "captionLen": 487,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d7c84ebdfba1577fd13",
+      "scheduleAt": "2026-05-03T01:00:00.000Z",
+      "dateWIB": "2026-05-03",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/20260420T064800Z-DSC09601.jpg"
+      ],
+      "caption": "A clean opening keynote is rarely an accident.\n\nA bold LED title only lands when execution is precise:\n- framing\n- exposure\n- timing (when the audience is most engaged)\n\nOn stage, small details decide whether the content feels premium:\n- mic level\n- LED spill on the speaker\n- pacing for the highlight cut\n\nThe goal is simple: visuals that are ready for internal comms, investors, and employer branding.",
+      "captionLen": 403,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d7f84ebdfba1577fd47",
+      "scheduleAt": "2026-05-04T01:00:00.000Z",
+      "dateWIB": "2026-05-04",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034837-DSC09391.jpg",
+        "https://whitepaper.site/images/1774309034838-DSC09441.jpg",
+        "https://whitepaper.site/images/1774309034839-DSC09463.jpg"
+      ],
+      "caption": "Two corporate photographers can use the same equipment.\n\nThe gap is rarely the camera.\nIt is the system they bring.\n\nThe best ones show up with:\n- a shot list built from the brief (not habit)\n- VIP names before doors open\n- technical risks mapped from the venue plan\n\nOthers show up with a good camera and build the plan in real time.\n\nYou can usually see the difference in the first 30 images.\n\nWhat is the biggest difference you have noticed between the best photographer you hired and one who fell short?",
+      "captionLen": 507,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d8184ebdfba1577fd66",
+      "scheduleAt": "2026-05-05T01:00:00.000Z",
+      "dateWIB": "2026-05-05",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057058-REN00768.jpg",
+        "https://whitepaper.site/images/1774309057060-REN00841.jpg",
+        "https://whitepaper.site/images/1774309057062-REN01028.jpg"
+      ],
+      "caption": "Poor event documentation has a cost most companies never track.\nAnd it compounds every quarter.\n\nWhen images arrive late:\n- the press release window closes\n- internal newsletters ship without photos\n- recruitment uses stock instead of real moments\n\nEach substitution reduces credibility.\nPeople notice the difference between documentation and stock, even if they never say it.\n\nHave you ever had to replace event photos with stock because the images arrived too late?",
+      "captionLen": 467,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d8484ebdfba1577fd86",
+      "scheduleAt": "2026-05-06T02:00:00.000Z",
+      "dateWIB": "2026-05-06",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057065-REN01103.jpg",
+        "https://whitepaper.site/images/1774309057066-REN00035.jpg",
+        "https://whitepaper.site/images/1774309057067-REN00097.jpg"
+      ],
+      "caption": "5 shot list items event teams often forget (and regret when the report is due):\n\n1) Arrival sequence (registration, lobby signage, first impressions)\n2) Room setup before doors open\n3) Audience reactions\n4) Candid networking\n5) Branded environment details\n\nA shot list that covers these basics creates an archive your communications team can reuse for months.\n\nWhich one does your team most often miss?",
+      "captionLen": 402,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d8784ebdfba1577fdad",
+      "scheduleAt": "2026-05-07T01:00:00.000Z",
+      "dateWIB": "2026-05-07",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057068-REN00297.jpg",
+        "https://whitepaper.site/images/1774309034817-DSC00002.jpg",
+        "https://whitepaper.site/images/1774309034823-DSC00012.jpg"
+      ],
+      "caption": "340 clean images from a ballroom with cycling stage lights. No flash permitted.\n\nThe challenge:\n- ambient ceiling at 3200K\n- stage lights cycling through multiple colors\n\nStandard settings would expose either the room or the stage, not both.\n\nWhat worked:\n- two exposure profiles set before doors opened\n- a stage profile tuned for program peak\n- a room profile adjusted by distance\n- transitions timed to the run of show\n\nDelivery completed in 36 hours.\n\nWhat is the most technically challenging lighting you have dealt with at a corporate event?",
+      "captionLen": 547,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d8984ebdfba1577fdcc",
+      "scheduleAt": "2026-05-08T05:00:00.000Z",
+      "dateWIB": "2026-05-08",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034826-DSC00031.jpg",
+        "https://whitepaper.site/images/1774309034829-DSC00071.jpg",
+        "https://whitepaper.site/images/1774309034831-DSC00166.jpg"
+      ],
+      "caption": "8 hours. 12 departments. One company profile shoot.\n\nIn a single day, every department received:\n- portraits\n- team shots\n- workspace documentation\n\nThat library supported HR for 18 months and replaced a long chain of ad hoc requests.\n\nHow long does your company's visual library usually last before it needs a refresh?",
+      "captionLen": 319,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d8c84ebdfba1577fdf4",
+      "scheduleAt": "2026-05-10T01:00:00.000Z",
+      "dateWIB": "2026-05-10",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531134-REN00050.jpg"
+      ],
+      "caption": "A big crowd does not automatically create strong content.\n\nStage moments and audience moments need to be covered as a flow:\n- establishing\n- reactions\n- speaker\n- brand details captured naturally\n\nIf the approach is simply \"record everything\", the result often feels flat and hard to use for B2B communication.\n\nTreat coverage like a production pipeline: clear content goals, must-capture moments, and outputs that are ready to publish with minimal patchwork.",
+      "captionLen": 459,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d8e84ebdfba1577fe0c",
+      "scheduleAt": "2026-05-11T01:00:00.000Z",
+      "dateWIB": "2026-05-11",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309761340-REN09930.jpg",
+        "https://whitepaper.site/images/1774309761341-REN09966.jpg",
+        "https://whitepaper.site/images/1774309761339-REN00221.jpg"
+      ],
+      "caption": "Most companies shoot more than they need, and use far less than they have.\n\nA common pattern:\n- 400 images delivered\n- less than 10% used in any communication\n- the rest sits untouched after 30 days\n\nThe problem is not photo quality.\nIt is the missing bridge between what gets produced and what the communications team actually needs.\n\nWhat percentage of your event photos are typically used after an event?",
+      "captionLen": 407,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d9184ebdfba1577fe27",
+      "scheduleAt": "2026-05-12T01:00:00.000Z",
+      "dateWIB": "2026-05-12",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531161-REN06828.jpg",
+        "https://whitepaper.site/images/1774309531162-REN07133.jpg",
+        "https://whitepaper.site/images/1774309531164-REN07544.jpg"
+      ],
+      "caption": "Corporate visual content compounds, but only if the system is built to accumulate.\n\nDocument 10 events a year and you can create a library of thousands of curated images.\nYear two, that library supports new communications without a new shoot.\nYear three, the compounding accelerates.\n\nWithout a documentation system, teams start from zero each time. Stock fills the gaps, and the difference is visible.\n\nHow many events does your organization document per year, and does a searchable library exist that your team can access?",
+      "captionLen": 524,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d9484ebdfba1577fe44",
+      "scheduleAt": "2026-05-13T02:00:00.000Z",
+      "dateWIB": "2026-05-13",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531165-REN09200.jpg",
+        "https://whitepaper.site/images/1774309531168-REN09435.jpg",
+        "https://whitepaper.site/images/1774309034853-DSC09625.jpg"
+      ],
+      "caption": "A full-day corporate event photography package is only complete if it includes all six.\n\n1) Pre-event consultation (a structured brief, not a 10-minute call)\n2) Full-day coverage (arrival through post-program networking)\n3) Multi-zone coverage (stage, audience, networking, breakout)\n4) Curated delivery (edited, organized by segment, not raw dumps)\n5) 48-hour turnaround (distribution windows stay open)\n6) Dual-resolution output (web and print, separated and labeled)\n\nA package with all six is a documentation system.\nMissing any one turns it into partial coverage.\n\nWhich of these six does your current provider consistently deliver?",
+      "captionLen": 637,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d9684ebdfba1577fe57",
+      "scheduleAt": "2026-05-14T01:00:00.000Z",
+      "dateWIB": "2026-05-14",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774486968571-REN04593.jpg",
+        "https://whitepaper.site/images/1774486968645-REN05116.jpg",
+        "https://whitepaper.site/images/1774331451360-REN01668.jpg"
+      ],
+      "caption": "412 edited images. A 400-person event. Delivered at hour 44.\n\nThe hard part was not speed.\nIt was selection.\n\nA full-day event can generate 1,400 to 1,800 captures. A 48-hour window does not allow slow curation.\n\nA practical selection system:\n- Pass 1 (in-field): remove technical failures\n- Pass 2 (post-event): cut to candidates by segment\n- Pass 3 (final): one definitive image per moment, no near-misses, no duplicates\n\nThe outcome is a gallery the client can use immediately, with no extra editing.\n\nWhat is the longest you have waited for post-event images, and what did it cost you in distribution?",
+      "captionLen": 605,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d9984ebdfba1577fe6e",
+      "scheduleAt": "2026-05-18T01:00:00.000Z",
+      "dateWIB": "2026-05-18",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309761342-REN09968.jpg",
+        "https://whitepaper.site/images/1774309761343-REN09970.jpg",
+        "https://whitepaper.site/images/1774309761346-REN09988.jpg"
+      ],
+      "caption": "There is a direct link between event documentation quality and employer brand strength.\n\nTop candidates research before they apply.\nThey do not only read job descriptions.\nThey look for signals of real culture and real people.\n\nCompanies that document annual dinners, town halls, and onboarding well build an employer branding library that works all year.\n\nCompanies that do not document leave candidates to fill in the gaps themselves.\n\nDoes your HR team use event photos in recruitment, and which moments tend to be most useful?",
+      "captionLen": 530,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d9b84ebdfba1577fe93",
+      "scheduleAt": "2026-05-19T02:00:00.000Z",
+      "dateWIB": "2026-05-19",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034855-DSC09642.jpg",
+        "https://whitepaper.site/images/1774309034856-DSC09646.jpg",
+        "https://whitepaper.site/images/1774309034859-DSC09652.jpg"
+      ],
+      "caption": "5 questions to ask before signing a contract with a corporate photographer:\n\n1) How many similar events have they covered (with specific references)?\n2) Who will actually be on site (the presenter or a junior staff member)?\n3) What is their selection process (curation vs raw dumps)?\n4) What is their turnaround time (48 hours is a defensible standard)?\n5) What formats will be delivered (web and print, separated and labeled)?\n\nThese questions separate photographers who have a system from those who only have a camera.\n\nWhich question do you most often skip?",
+      "captionLen": 560,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79d9e84ebdfba1577feb5",
+      "scheduleAt": "2026-05-20T01:00:00.000Z",
+      "dateWIB": "2026-05-20",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034860-DSC09664.jpg",
+        "https://whitepaper.site/images/1774309034861-DSC09670.jpg",
+        "https://whitepaper.site/images/1774309034863-DSC09680.jpg"
+      ],
+      "caption": "Two photographers. Four rooms. One night.\n\nParallel sessions create the same constraint every time: every room has priority moments, and no one can be in four places at once.\n\nWhat worked here was planning, not heroics:\n- a priority matrix built before the event\n- sessions scored by distribution value (not only internal importance)\n- movement based on the matrix, not instinct\n\nResult: 520 curated images across four rooms, with every session represented.\n\nHow do you decide coverage priorities when multiple sessions run at the same time?",
+      "captionLen": 541,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79da184ebdfba1577fecb",
+      "scheduleAt": "2026-05-21T05:00:00.000Z",
+      "dateWIB": "2026-05-21",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034865-DSC09695.jpg",
+        "https://whitepaper.site/images/1774309034866-DSC09715.jpg",
+        "https://whitepaper.site/images/1774309034867-DSC09723.jpg"
+      ],
+      "caption": "Seminar documentation. 40 speakers. Two days.\n\nEvery speaker received a portrait set within 24 hours of their session.\n\nWhat happened next mattered:\n14 of the 40 speakers used those photos on their own social channels within 48 hours.\n\nOne event created dozens of distribution points that were never on the client's calendar.\n\nHow long do speakers at your events usually wait to receive their photos after the event ends?",
+      "captionLen": 421,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79da384ebdfba1577feea",
+      "scheduleAt": "2026-05-22T01:00:00.000Z",
+      "dateWIB": "2026-05-22",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309761348-REN09995.jpg",
+        "https://whitepaper.site/images/1774309761349-REN09737.jpg",
+        "https://whitepaper.site/images/1774309761351-REN09748.jpg"
+      ],
+      "caption": "Most event photos are taken. Very few are actually used.\n\nThe difference is planning, not image quality.\n\nTeams that get real value from event documentation start with two questions:\n- Where will this content appear?\n- Who will use it?\n\nFrom those answers: the brief becomes specific, the shot list becomes purposeful, and priorities become clear.\n\nWhat is the biggest barrier that prevents your event photos from being used after delivery?",
+      "captionLen": 440,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79da684ebdfba1577ff01",
+      "scheduleAt": "2026-05-24T01:00:00.000Z",
+      "dateWIB": "2026-05-24",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531152-REN00796.jpg"
+      ],
+      "caption": "On-stage celebration moments have to be safe and still look elegant.\n\nLaunch energy, confetti or pyro, and group moments happen fast and only once.\nWithout blocking and a camera plan, the peak moment is often missed or overexposed.\n\nA practical approach:\n- define safe zones\n- set cue timing\n- cover multiple angles\n\nThe goal is a climax that feels grand, without looking chaotic.\n\nHow do you plan capture for those one-time peak moments at your events?",
+      "captionLen": 453,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79da884ebdfba1577ff0f",
+      "scheduleAt": "2026-05-25T01:00:00.000Z",
+      "dateWIB": "2026-05-25",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034876-DSC09819.jpg",
+        "https://whitepaper.site/images/1774309034876-DSC09878.jpg",
+        "https://whitepaper.site/images/1774309034877-DSC09885.jpg"
+      ],
+      "caption": "Internal communications teams are often the largest consumers of event visuals.\nAnd they are rarely included in the photographer briefing.\n\nMost briefings are handled by events or marketing.\nBut internal comms are the ones who need the photos for:\n- newsletters\n- town hall decks\n- leadership updates\n\nWhen they are not in the room, the gallery often misses what they need (format, composition, priority moments).\n\nSometimes, one extra chair in the briefing changes the entire utility of the delivery.\n\nIs internal communications involved in your event photography briefings?",
+      "captionLen": 575,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79dab84ebdfba1577ff2a",
+      "scheduleAt": "2026-05-26T02:00:00.000Z",
+      "dateWIB": "2026-05-26",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034878-DSC09903.jpg",
+        "https://whitepaper.site/images/1774309034878-DSC09914.jpg",
+        "https://whitepaper.site/images/1774309034880-DSC09982.jpg"
+      ],
+      "caption": "Event coverage and event documentation can look identical in a proposal.\nThe outcomes are not.\n\nCoverage:\nPhotographer shows up, shoots, sends files.\nNo structured brief. No shot list. No curation tied to distribution goals.\n\nDocumentation:\nIt starts before the event.\nThe brief is built around where the photos will be used.\nThe shot list follows the users and the channels.\nCuration happens to a clear standard.\n\n4 signs you are getting documentation (not just coverage):\n1) A structured briefing session (at least 30 minutes)\n2) A shot list sent and confirmed before the day\n3) A gallery labeled by session, not one big folder\n4) Web and print resolutions separated without you asking\n\nCoverage fills a folder. Documentation fills a communication need.\n\nOf those four signs, how many do you typically receive?",
+      "captionLen": 812,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79dae84ebdfba1577ff49",
+      "scheduleAt": "2026-05-27T01:00:00.000Z",
+      "dateWIB": "2026-05-27",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034881-DSC09998.jpg",
+        "https://whitepaper.site/images/1774309761318-REN00002.jpg",
+        "https://whitepaper.site/images/1774309761320-REN00008.jpg"
+      ],
+      "caption": "8 hours. 11 departments. One company profile shoot.\n\nThe content was used for 2 years.\n\nThe brief started simple: team photos and office spaces for a new website.\nThe complexity was coordination across 11 schedules and decision makers.\n\nWhat worked:\n- a per-department schedule\n- 40-minute slots\n- clear coverage per slot (portraits, team shots, workspace documentation)\n- one internal contact per department\n\nResult: 680 curated images used across recruitment, onboarding decks, and an annual report.\n\nHow often does your company refresh company profile photography, and what usually triggers the decision?",
+      "captionLen": 607,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79db084ebdfba1577ff5f",
+      "scheduleAt": "2026-05-28T05:00:00.000Z",
+      "dateWIB": "2026-05-28",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309761322-REN00077.jpg",
+        "https://whitepaper.site/images/1774309761324-REN00106.jpg",
+        "https://whitepaper.site/images/1774309761326-REN00125.jpg"
+      ],
+      "caption": "80 employees. One day. One professional headshot set for everyone.\n\nNo one waited more than 12 minutes.\nNo reshoots.\nDelivered within 24 hours.\n\nThe difference is not luck.\nIt is rotation.\n\nA clean rotation system can turn a headshot project that usually takes weeks into one efficient working day.\n\nHow long does your company typically wait before updating employee headshots in bulk?",
+      "captionLen": 385,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79db384ebdfba1577ff75",
+      "scheduleAt": "2026-05-29T01:00:00.000Z",
+      "dateWIB": "2026-05-29",
+      "status": "pending",
+      "type": "album",
+      "mediaCount": 3,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/REN03364.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/REN03349.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/REN03341.jpg"
+      ],
+      "caption": "Fast delivery is not just convenience. It is a strategic advantage.\n\nMany distribution windows are short:\n- press releases: 24 to 48 hours after an event\n- internal newsletters: best while the atmosphere is fresh\n- investor decks: visuals needed before the next meeting\n\nA photographer who delivers within 48 hours keeps those windows open.\nA photographer who delivers in a week closes most of them.\n\nHow much does turnaround time influence your decision when selecting an event photographer?",
+      "captionLen": 492,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79db584ebdfba1577ff92",
+      "scheduleAt": "2026-05-30T01:00:00.000Z",
+      "dateWIB": "2026-05-30",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531138-REN00114.jpg"
+      ],
+      "caption": "An awards night that feels premium is built on technical details.\n\nThe ceremony vibe comes from a mix of:\n- stage lighting\n- depth\n- wardrobe\n- precise framing at the moment of announcement\n\nEdit pacing matters too.\nIf it is rushed, the recognition feels like a montage.\nIf it is controlled, it feels authoritative.\n\nFor corporate brands, award content often becomes proof of positioning and reputation.",
+      "captionLen": 403,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e79db884ebdfba1577ffa5",
+      "scheduleAt": "2026-05-31T01:00:00.000Z",
+      "dateWIB": "2026-05-31",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/20260420T064800Z-DSC09982.jpg"
+      ],
+      "caption": "A formal three-person photo is not a formality. It is a business asset.\n\nTeam portraits, hosts, or client leadership should look equally strong: posture, eye line, and consistent lighting.\n\nThese images tend to live a long time.\nSpeaker profiles, press releases, proposals, About pages, and LinkedIn updates.\n\nDone well, it looks professional without feeling stiff.",
+      "captionLen": 365,
+      "hashtags": 0,
+      "repliesCount": 0
+    }
+  ]
+}

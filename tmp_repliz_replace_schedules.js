@@ -1,11 +1,19 @@
-/* Replace Repliz schedules by creating a new schedule with updated text and deleting the old one.
+/* Replace Repliz schedules by creating a new schedule (optionally with updated text and/or medias)
+   and deleting the old one.
 
 Usage:
   node tmp_repliz_replace_schedules.js mapping.json --dry-run
   node tmp_repliz_replace_schedules.js mapping.json --apply
 
 mapping.json format:
-  [ { "scheduleId": "...", "newText": "..." }, ... ]
+  [
+    {
+      "scheduleId": "...",
+      "newText": "...",
+      "newMedias": [ {"type":"image","url":"...","thumbnail":"...","alt":"..."}, ... ]
+    },
+    ...
+  ]
 */
 
 const fs=require('fs');
@@ -53,12 +61,25 @@ function normalizeNewText(t){
   return String(t||'').replace(/\r\n/g,'\n').trim();
 }
 
+function normalizeNewMedias(m){
+  if(m===undefined || m===null) return null;
+  if(!Array.isArray(m)) throw new Error('newMedias must be an array when provided');
+  // keep only known-ish fields; API ignores unknowns but we keep payload tidy
+  return m.map(x=>({
+    type: x.type || 'image',
+    url: x.url,
+    thumbnail: x.thumbnail || x.url,
+    alt: x.alt || '',
+  }));
+}
+
 (async()=>{
   console.log(`mode: ${dryRun?'DRY_RUN':'APPLY'} | items: ${mapping.length}`);
 
   for(const [idx,item] of mapping.entries()){
     const scheduleId=item.scheduleId;
     const newText=normalizeNewText(item.newText);
+    const newMedias=normalizeNewMedias(item.newMedias);
     if(!scheduleId || !newText){
       throw new Error(`Invalid mapping at index ${idx}`);
     }
@@ -70,7 +91,7 @@ function normalizeNewText(t){
       title: old.title || '',
       description: newText,
       type: old.type,
-      medias: Array.isArray(old.medias)?old.medias:[],
+      medias: newMedias || (Array.isArray(old.medias)?old.medias:[]),
       scheduleAt: old.scheduleAt,
       accountId: old.accountId,
     };

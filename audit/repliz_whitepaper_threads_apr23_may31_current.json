@@ -1,0 +1,626 @@
+{
+  "accountId": "69db171284ebdfba15c9ab58",
+  "rangeUTC": {
+    "start": "2026-04-23T00:00:00Z",
+    "end": "2026-06-01T00:00:00Z"
+  },
+  "count": 39,
+  "items": [
+    {
+      "scheduleId": "69e9f9980f184f8f73bc83ed",
+      "scheduleAt": "2026-04-23T12:05:00.000Z",
+      "dateWIB": "2026-04-23",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/photo_2026-04-20_19-48-49.jpg"
+      ],
+      "caption": "Kalau foto event kamu cuma ruangan kosong, trust yang kebangun juga kosong.\n\nYang bikin percaya: (1) ekspresi audience, (2) interaksi, (3) skala.\n\nMau aku kirim *angle list* biar dokumentasimu nggak hambar? Komen: ANGLE",
+      "captionLen": 219,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9f9980f184f8f73bc83f1",
+      "scheduleAt": "2026-04-24T06:05:00.000Z",
+      "dateWIB": "2026-04-24",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09096.jpg"
+      ],
+      "caption": "Checklist foto corporate event biar kelihatan premium:\n- wide shot (skala)\n- speaker + audience\n- close-up ekspresi\n- detail brand (logo/signage)\n- networking\n- BTS tim\n\nMau versi 1 halaman? Komen: CHECKLIST",
+      "captionLen": 207,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9f9980f184f8f73bc83f5",
+      "scheduleAt": "2026-04-25T06:05:00.000Z",
+      "dateWIB": "2026-04-25",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/event-REN02053.jpg"
+      ],
+      "caption": "Sebelum hire vendor dokumentasi event, tanya 3 hal ini:\n1) Output dipakai buat apa? (sales/HR/PR)\n2) Momen wajib yang harus kebaca apa?\n3) Siapa yang mau diyakinin?\n\nKalau mau, aku kirim template brief 1 halaman. Komen: BRIEF",
+      "captionLen": 225,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9f9980f184f8f73bc83f9",
+      "scheduleAt": "2026-04-26T06:05:00.000Z",
+      "dateWIB": "2026-04-26",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09281.jpg"
+      ],
+      "caption": "Tips biar dokumentasi event kamu kebaca sebagai cerita (bukan album):\nAmbil 3 momen ini.\n1) pembuka\n2) puncak\n3) penutup\n\nMau contoh shotlist-nya? Komen: SHOTLIST",
+      "captionLen": 162,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9f9980f184f8f73bc83fd",
+      "scheduleAt": "2026-04-27T06:05:00.000Z",
+      "dateWIB": "2026-04-27",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09288.jpg"
+      ],
+      "caption": "Opini: banyak orang over-edit biar keliatan “wah”.\nPadahal premium itu seringnya justru clean.\n\nKalau lighting beres + angle bersih + momen dapet, hasilnya auto naik kelas.\n\nSetuju nggak?",
+      "captionLen": 187,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9f9980f184f8f73bc8401",
+      "scheduleAt": "2026-04-28T06:05:00.000Z",
+      "dateWIB": "2026-04-28",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/event-REN02053.jpg"
+      ],
+      "caption": "Event selesai, tapi konten belum harus selesai.\nDari 1 event kamu bisa punya:\n- 5 recap\n- 10 potongan insight\n- 10 BTS/people moment\n- 5 quote/testimoni\n\nMau template “30 hari dari 1 event”? Komen: 30HARI",
+      "captionLen": 204,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9f9980f184f8f73bc8406",
+      "scheduleAt": "2026-04-29T06:05:00.000Z",
+      "dateWIB": "2026-04-29",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09281.jpg"
+      ],
+      "caption": "Kalau mau konten event premium, mulainya dari brief yang jelas (bukan edit yang heboh).\n\nBrief 1 halaman minimal:\n- tujuan konten\n- audience\n- 5 momen wajib\n- style referensi\n- deadline + format output\n\nMau templatenya? Komen: BRIEF",
+      "captionLen": 232,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9f9980f184f8f73bc840c",
+      "scheduleAt": "2026-04-30T06:05:00.000Z",
+      "dateWIB": "2026-04-30",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 1,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09096.jpg"
+      ],
+      "caption": "HR/GA: lagi cari venue / konsep buat corporate event 200–500 pax area Jakarta/Tangerang?\n\nDrop di komen:\n- pax\n- area\n- tipe event (townhall/annual dinner/training)\n\nAku bantu kasih shortlist + poin yang wajib dicek pas site visit.",
+      "captionLen": 231,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccf67",
+      "scheduleAt": "2026-05-01T06:05:00.000Z",
+      "dateWIB": "2026-05-01",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/20260420T064800Z-DSC09664.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09096.jpg"
+      ],
+      "caption": "Banyak orang pikir dokumentasi event itu cuma buat arsip. Padahal, itu aset marketing.\n\nBiar hasilnya bisa kepakai buat sales deck, LinkedIn, dan laporan internal.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 228,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccf6c",
+      "scheduleAt": "2026-05-02T06:05:00.000Z",
+      "dateWIB": "2026-05-02",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/photo_2026-04-20_19-48-49.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/event-REN02053.jpg"
+      ],
+      "caption": "Kalau foto event kamu cuma ruangan kosong, trust yang kebangun juga kosong.\n\nYang bikin percaya itu: orangnya, energinya, dan skala acaranya kebaca.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 213,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccf71",
+      "scheduleAt": "2026-05-03T06:05:00.000Z",
+      "dateWIB": "2026-05-03",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/photo_2026-04-20_19-48-49.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09281.jpg"
+      ],
+      "caption": "Dokumentasi yang bagus itu bukan ‘banyak foto’. Tapi cerita yang kebaca.\n\nAmbil momen pembuka, puncak, penutup. Baru dokumentasi jadi cerita.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 206,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccf75",
+      "scheduleAt": "2026-05-04T06:05:00.000Z",
+      "dateWIB": "2026-05-04",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/event-REN02053.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09281.jpg"
+      ],
+      "caption": "Tips kecil: ambil 1 momen pembuka, 1 momen puncak, 1 momen penutup. Baru lengkap.\n\nAmbil momen pembuka, puncak, penutup. Baru dokumentasi jadi cerita.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 215,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccf79",
+      "scheduleAt": "2026-05-05T06:05:00.000Z",
+      "dateWIB": "2026-05-05",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531155-REN00915.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09288.jpg"
+      ],
+      "caption": "Event selesai, tapi konten belum harus selesai. Materinya bisa dipakai 30 hari.\n\nJangan berhenti di 1 recap. Pecah jadi insight, BTS, dan highlight hasil.\n\nMau template “30 hari dari 1 event”? Komen: 30HARI",
+      "captionLen": 206,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccf7d",
+      "scheduleAt": "2026-05-06T06:05:00.000Z",
+      "dateWIB": "2026-05-06",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09281.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09096.jpg"
+      ],
+      "caption": "Behind the scenes yang rapi bikin brand keliatan profesional tanpa perlu banyak kata.\n\nBTS yang rapi itu bukti proses. Brand jadi kelihatan serius dan profesional.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 228,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccf81",
+      "scheduleAt": "2026-05-07T06:05:00.000Z",
+      "dateWIB": "2026-05-07",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09281.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/event-REN02053.jpg"
+      ],
+      "caption": "Audio, lighting, stage, crowd. Elemen ini yang bikin konten event terasa hidup.\n\nKalau basic-nya beres (lighting, audio, stage), konten langsung naik kelas.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 221,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccf87",
+      "scheduleAt": "2026-05-08T06:05:00.000Z",
+      "dateWIB": "2026-05-08",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531157-REN06789.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/photo_2026-04-20_19-48-49.jpg"
+      ],
+      "caption": "Kalau mau konten premium, mulainya dari briefing yang jelas, bukan dari edit yang heboh.\n\nPremium itu seringnya clean: angle bersih, momen dapet, edit secukupnya.\n\nMau template brief 1 halaman? Komen: BRIEF",
+      "captionLen": 206,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccf8e",
+      "scheduleAt": "2026-05-09T06:05:00.000Z",
+      "dateWIB": "2026-05-09",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09288.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09281.jpg"
+      ],
+      "caption": "Satu frame yang kuat bisa mengalahkan 20 foto yang biasa.\n\nCari 1 “hero shot” yang kuat. Itu yang biasanya paling jualan.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 186,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccf92",
+      "scheduleAt": "2026-05-10T06:05:00.000Z",
+      "dateWIB": "2026-05-10",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09288.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09096.jpg"
+      ],
+      "caption": "Yang bikin corporate event mahal bukan dekor. Tapi dampak dan persepsinya.\n\nPremium itu seringnya clean: angle bersih, momen dapet, edit secukupnya.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 213,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccf97",
+      "scheduleAt": "2026-05-11T06:05:00.000Z",
+      "dateWIB": "2026-05-11",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09096.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/event-REN02053.jpg"
+      ],
+      "caption": "Kamu mau audience inget acara kamu? Tangkap ekspresi mereka, bukan cuma backdrop.\n\nBiar hasilnya bisa kepakai buat sales deck, LinkedIn, dan laporan internal.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 223,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccf9b",
+      "scheduleAt": "2026-05-12T06:05:00.000Z",
+      "dateWIB": "2026-05-12",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531159-REN06810.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/event-REN02053.jpg"
+      ],
+      "caption": "Bikin konten event itu harus mikir: ‘apa yang orang rasain waktu hadir?’\n\nJangan berhenti di 1 recap. Pecah jadi insight, BTS, dan highlight hasil.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 212,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccf9f",
+      "scheduleAt": "2026-05-13T06:05:00.000Z",
+      "dateWIB": "2026-05-13",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/apca-event-1.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/photo_2026-04-20_19-48-49.jpg"
+      ],
+      "caption": "Dokumentasi itu bukti sosial. Kalau bukti sosialnya lemah, selling jadi berat.\n\nYang bikin percaya itu: orangnya, energinya, dan skala acaranya kebaca.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 216,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccfa4",
+      "scheduleAt": "2026-05-14T06:05:00.000Z",
+      "dateWIB": "2026-05-14",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/REN03378.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09281.jpg"
+      ],
+      "caption": "Cek cepat: foto kamu nunjukin ‘siapa’, ‘di mana’, dan ‘kenapa penting’ belum?\n\nBiar hasilnya bisa kepakai buat sales deck, LinkedIn, dan laporan internal.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 219,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccfad",
+      "scheduleAt": "2026-05-15T06:05:00.000Z",
+      "dateWIB": "2026-05-15",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057050-REN00583.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09288.jpg"
+      ],
+      "caption": "Brand kuat itu konsisten, termasuk di dokumentasi event.\n\nBiar hasilnya bisa kepakai buat sales deck, LinkedIn, dan laporan internal.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 198,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccfb1",
+      "scheduleAt": "2026-05-16T06:05:00.000Z",
+      "dateWIB": "2026-05-16",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/apca-event-2.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09096.jpg"
+      ],
+      "caption": "Kalau kamu mau tampil premium, jangan ragu pilih angle yang bersih dan minimal.\n\nPremium itu seringnya clean: angle bersih, momen dapet, edit secukupnya.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 218,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccfb5",
+      "scheduleAt": "2026-05-17T06:05:00.000Z",
+      "dateWIB": "2026-05-17",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057055-REN00592.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/event-REN02053.jpg"
+      ],
+      "caption": "Momen paling mahal kadang bukan di panggung, tapi di interaksi kecil setelahnya.\n\nPremium itu seringnya clean: angle bersih, momen dapet, edit secukupnya.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 219,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccfb9",
+      "scheduleAt": "2026-05-18T06:05:00.000Z",
+      "dateWIB": "2026-05-18",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09090.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/photo_2026-04-20_19-48-49.jpg"
+      ],
+      "caption": "Konten event yang bagus biasanya punya 3 layer: crowd, speaker, detail yang relevan.\n\nJangan berhenti di 1 recap. Pecah jadi insight, BTS, dan highlight hasil.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 224,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccfbd",
+      "scheduleAt": "2026-05-19T06:05:00.000Z",
+      "dateWIB": "2026-05-19",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057057-REN00623.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09281.jpg"
+      ],
+      "caption": "Kalau kamu hiring vendor dokumentasi, tanya: output akhirnya buat apa?\n\nBiar hasilnya bisa kepakai buat sales deck, LinkedIn, dan laporan internal.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 212,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccfc2",
+      "scheduleAt": "2026-05-20T06:05:00.000Z",
+      "dateWIB": "2026-05-20",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/apca-event-3.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09288.jpg"
+      ],
+      "caption": "Konten yang bikin closing lebih gampang: highlight hasil, bukan sekadar proses.\n\nJangan berhenti di 1 recap. Pecah jadi insight, BTS, dan highlight hasil.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 219,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccfc6",
+      "scheduleAt": "2026-05-21T06:05:00.000Z",
+      "dateWIB": "2026-05-21",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/20260420T064800Z-DSC09601.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09096.jpg"
+      ],
+      "caption": "Kita sering bantu brand bikin dokumentasi yang siap jadi materi sales.\n\nBiar hasilnya bisa kepakai buat sales deck, LinkedIn, dan laporan internal.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 212,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccfca",
+      "scheduleAt": "2026-05-22T06:05:00.000Z",
+      "dateWIB": "2026-05-22",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034837-DSC09391.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/event-REN02053.jpg"
+      ],
+      "caption": "Kalau kamu butuh tim yang ngerti event dan ngerti marketing, itu beda level.\n\nBiar hasilnya bisa kepakai buat sales deck, LinkedIn, dan laporan internal.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 218,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd540f184f8f73bccfce",
+      "scheduleAt": "2026-05-23T06:05:00.000Z",
+      "dateWIB": "2026-05-23",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/apca-event-4.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/photo_2026-04-20_19-48-49.jpg"
+      ],
+      "caption": "Mau konten yang bisa dipakai ulang? Ambil footage yang evergreen.\n\nJangan berhenti di 1 recap. Pecah jadi insight, BTS, dan highlight hasil.\n\nMau template “30 hari dari 1 event”? Komen: 30HARI",
+      "captionLen": 192,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd550f184f8f73bccfd2",
+      "scheduleAt": "2026-05-24T06:05:00.000Z",
+      "dateWIB": "2026-05-24",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034838-DSC09441.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09281.jpg"
+      ],
+      "caption": "Banyak yang over-edit. Padahal premium itu seringnya justru clean.\n\nPremium itu seringnya clean: angle bersih, momen dapet, edit secukupnya.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 205,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd550f184f8f73bccfd7",
+      "scheduleAt": "2026-05-25T06:05:00.000Z",
+      "dateWIB": "2026-05-25",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09073.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09288.jpg"
+      ],
+      "caption": "Satu cara naikin trust: tunjukin skala acara lewat wide shot + reaction.\n\nYang bikin percaya itu: orangnya, energinya, dan skala acaranya kebaca.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 210,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd550f184f8f73bccfdc",
+      "scheduleAt": "2026-05-26T06:05:00.000Z",
+      "dateWIB": "2026-05-26",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034839-DSC09463.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09096.jpg"
+      ],
+      "caption": "Kalau dokumentasi kamu bisa bikin orang pengen hadir next event, berarti berhasil.\n\nBiar hasilnya bisa kepakai buat sales deck, LinkedIn, dan laporan internal.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 224,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd550f184f8f73bccfe0",
+      "scheduleAt": "2026-05-27T06:05:00.000Z",
+      "dateWIB": "2026-05-27",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC08819.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/event-REN02053.jpg"
+      ],
+      "caption": "BTS bukan cuma lucu-lucuan. BTS adalah bukti kamu serius.\n\nBTS yang rapi itu bukti proses. Brand jadi kelihatan serius dan profesional.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 200,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd550f184f8f73bccfeb",
+      "scheduleAt": "2026-05-28T06:05:00.000Z",
+      "dateWIB": "2026-05-28",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057058-REN00768.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/photo_2026-04-20_19-48-49.jpg"
+      ],
+      "caption": "Checklist sebelum event: rundown, lighting, spot crowd, dan momen wajib.\n\nKalau basic-nya beres (lighting, audio, stage), konten langsung naik kelas.\n\nMau checklist lengkapnya? Komen: CHECKLIST",
+      "captionLen": 193,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd550f184f8f73bccfef",
+      "scheduleAt": "2026-05-29T06:05:00.000Z",
+      "dateWIB": "2026-05-29",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057060-REN00841.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09281.jpg"
+      ],
+      "caption": "Sesudah event: jangan simpen file doang. Pecah jadi konten per segmen.\n\nJangan berhenti di 1 recap. Pecah jadi insight, BTS, dan highlight hasil.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 210,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd550f184f8f73bccff3",
+      "scheduleAt": "2026-05-30T06:05:00.000Z",
+      "dateWIB": "2026-05-30",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC08673.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09288.jpg"
+      ],
+      "caption": "Kalau kamu mau hasil yang konsisten, prosesnya juga harus konsisten.\n\nBiar hasilnya bisa kepakai buat sales deck, LinkedIn, dan laporan internal.\n\nMau aku kirim angle list yang aman buat corporate? Komen: ANGLE",
+      "captionLen": 210,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69e9fd550f184f8f73bccff9",
+      "scheduleAt": "2026-05-31T06:05:00.000Z",
+      "dateWIB": "2026-05-31",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057062-REN01028.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09096.jpg"
+      ],
+      "caption": "Kalau mau, gue bisa bantu audit dokumentasi event kamu: mana yang kuat, mana yang lemah.\n\nBiar hasilnya bisa kepakai buat sales deck, LinkedIn, dan laporan internal.\n\nKalau mau, aku bisa bantu audit (gratis) 5 foto terbaik kamu. Komen: AUDIT",
+      "captionLen": 241,
+      "hashtags": 0,
+      "repliesCount": 0
+    }
+  ]
+}
