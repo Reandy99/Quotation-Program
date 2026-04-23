@@ -1,0 +1,634 @@
+{
+  "accountId": "69db171284ebdfba15c9ab58",
+  "rangeUTC": {
+    "start": "2026-04-23T00:00:00Z",
+    "end": "2026-06-01T00:00:00Z"
+  },
+  "count": 39,
+  "items": [
+    {
+      "scheduleId": "69ea05630f184f8f73bd4b5d",
+      "scheduleAt": "2026-04-23T12:05:00.000Z",
+      "dateWIB": "2026-04-23",
+      "status": "error",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/20260420T064800Z-DSC09601.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/20260420T064800Z-DSC09664.jpg"
+      ],
+      "caption": "Kalau foto event kamu cuma ruangan kosong, trust yang kebangun juga kosong.\n\nYang bikin percaya: (1) ekspresi audience, (2) interaksi, (3) skala.\n\nMau aku kirim *angle list* biar dokumentasimu nggak hambar? Komen: ANGLE",
+      "captionLen": 219,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39112695558af494338f",
+      "scheduleAt": "2026-04-24T06:05:00.000Z",
+      "dateWIB": "2026-04-24",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/20260420T064800Z-DSC09982.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC0001.jpg"
+      ],
+      "caption": "6 foto yang paling kepake habis event (bukan yang paling aesthetic):\n- skala (wide)\n- momen utama\n- reaksi\n- branding\n- networking\n- BTS\n\nYang paling sering bikin konten event kamu ‘flat’ bagian mana?\n\nhttps://whitepaper.site",
+      "captionLen": 225,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39112695558af494339a",
+      "scheduleAt": "2026-04-25T06:05:00.000Z",
+      "dateWIB": "2026-04-25",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC08673.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC08819.jpg"
+      ],
+      "caption": "Sebelum hire vendor dokumentasi, jangan tanya gear dulu.\n\nTanya: output dipakai buat apa, momen wajib apa, target audience siapa.\n\nYang paling sering bikin konten event kamu ‘flat’ bagian mana?\n\nhttps://whitepaper.site",
+      "captionLen": 218,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39112695558af49433a5",
+      "scheduleAt": "2026-04-26T06:05:00.000Z",
+      "dateWIB": "2026-04-26",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC08986.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09073.jpg"
+      ],
+      "caption": "Album itu random. Dokumentasi itu bikin orang yang nggak hadir paham.\n\nPakai 3 beat: pembuka, puncak, penutup.\n\nYang paling sering miss di event kamu apa?\n\nhttps://whitepaper.site",
+      "captionLen": 179,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39112695558af49433b0",
+      "scheduleAt": "2026-04-27T06:05:00.000Z",
+      "dateWIB": "2026-04-27",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09090.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09096.jpg"
+      ],
+      "caption": "Hot take: over-edit itu seringnya buat nutupin momen lemah.\n\nKalau basic-nya beres, edit clean aja udah keliatan premium.\n\nYang paling sering bikin konten event kamu ‘flat’ bagian mana?\n\nhttps://whitepaper.site",
+      "captionLen": 210,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39112695558af49433bb",
+      "scheduleAt": "2026-04-28T06:05:00.000Z",
+      "dateWIB": "2026-04-28",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/DSC09281.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/DSC09288.jpg"
+      ],
+      "caption": "1 event bisa jadi 30 hari konten. Tapi cuma kalau kamu pecahnya bener.\n\nRecap itu cuma awal.\n\nYang paling sering bikin konten event kamu ‘flat’ bagian mana?\n\nhttps://whitepaper.site",
+      "captionLen": 181,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39112695558af49433c6",
+      "scheduleAt": "2026-04-29T06:05:00.000Z",
+      "dateWIB": "2026-04-29",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/REN03341.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/REN03349.jpg"
+      ],
+      "caption": "Kalau brief-nya ngambang, hasilnya juga ngambang.\n\nMulai dari brief, bukan dari edit.\n\nSetuju?\n\nhttps://whitepaper.site",
+      "captionLen": 119,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39112695558af49433d1",
+      "scheduleAt": "2026-04-30T06:05:00.000Z",
+      "dateWIB": "2026-04-30",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/REN03364.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/REN03378.jpg"
+      ],
+      "caption": "Real talk: HR/GA: lagi cari venue / konsep buat corporate event 200–500 pax area Jakarta/Tangerang?\n\nKalau kamu mau hasil yang kepakai (bukan sekadar bagus), planning-nya harus ikut marketing-nya.\n\nSetuju?\n\nhttps://whitepaper.site",
+      "captionLen": 230,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39112695558af49433dc",
+      "scheduleAt": "2026-05-01T06:05:00.000Z",
+      "dateWIB": "2026-05-01",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/REN03394.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/apca-event-1.jpg"
+      ],
+      "caption": "Banyak orang treat dokumentasi kayak folder: simpan, selesai.\n\nPadahal ini ‘amunisi’ paling gampang dipakai ulang.\n\nPernah kejadian?\n\nhttps://whitepaper.site",
+      "captionLen": 157,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39112695558af49433e7",
+      "scheduleAt": "2026-05-02T06:05:00.000Z",
+      "dateWIB": "2026-05-02",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/apca-event-2.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/apca-event-3.jpg"
+      ],
+      "caption": "Kalau foto event kamu cuma ruangan kosong, orang cuma dapet 1 pesan: nggak rame.\n\nCari momen yang ada manusianya.\n\nYang paling sering bikin konten event kamu ‘flat’ bagian mana?\n\nhttps://whitepaper.site",
+      "captionLen": 202,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39112695558af49433f2",
+      "scheduleAt": "2026-05-03T06:05:00.000Z",
+      "dateWIB": "2026-05-03",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/apca-event-4.jpg",
+        "https://ocindonesia.my.id/media/whitepaper/event-REN02053.jpg"
+      ],
+      "caption": "Orang nggak butuh 50 foto. Mereka butuh ‘cerita’ yang kebaca.\n\nMulai dari pembuka, naik ke puncak, tutup dengan penutup.\n\nYang paling sering miss di event kamu apa?\n\nhttps://whitepaper.site",
+      "captionLen": 189,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39112695558af49433fd",
+      "scheduleAt": "2026-05-04T06:05:00.000Z",
+      "dateWIB": "2026-05-04",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://ocindonesia.my.id/media/whitepaper/photo_2026-04-20_19-48-49.jpg",
+        "https://whitepaper.site/images/1774309034817-DSC00002.jpg"
+      ],
+      "caption": "Kalau dokumentasi kamu terasa kayak album, ini yang kurang: alur.\n\n3 beat cukup: pembuka, puncak, penutup.\n\nYang paling sering bikin konten event kamu ‘flat’ bagian mana?\n\nhttps://whitepaper.site",
+      "captionLen": 195,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af4943408",
+      "scheduleAt": "2026-05-05T06:05:00.000Z",
+      "dateWIB": "2026-05-05",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034823-DSC00012.jpg",
+        "https://whitepaper.site/images/1774309034826-DSC00031.jpg"
+      ],
+      "caption": "Event selesai itu bukan akhir konten.\n\nYang menang itu yang bisa repurpose: insight, BTS, highlight hasil.\n\nKalau kamu HR/GA atau marketing, ini relatable nggak?\n\nhttps://whitepaper.site",
+      "captionLen": 186,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af4943413",
+      "scheduleAt": "2026-05-06T06:05:00.000Z",
+      "dateWIB": "2026-05-06",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034829-DSC00071.jpg",
+        "https://whitepaper.site/images/1774309034831-DSC00166.jpg"
+      ],
+      "caption": "BTS yang rapi itu sinyal profesionalisme.\n\nOrang jadi percaya proses kamu bener, bukan cuma hasilnya bagus.\n\nYang paling sering bikin konten event kamu ‘flat’ bagian mana?\n\nhttps://whitepaper.site",
+      "captionLen": 196,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af494341e",
+      "scheduleAt": "2026-05-07T06:05:00.000Z",
+      "dateWIB": "2026-05-07",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034837-DSC09391.jpg",
+        "https://whitepaper.site/images/1774309034838-DSC09441.jpg"
+      ],
+      "caption": "Sebelum mikirin preset, pastiin ini beres: lighting, audio, stage.\nKalau beres, konten auto naik kelas.\n\nYang paling sering bikin konten event kamu ‘flat’ bagian mana?\n\nhttps://whitepaper.site",
+      "captionLen": 192,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af4943429",
+      "scheduleAt": "2026-05-08T06:05:00.000Z",
+      "dateWIB": "2026-05-08",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034839-DSC09463.jpg",
+        "https://whitepaper.site/images/1774309034846-DSC09568.jpg"
+      ],
+      "caption": "Kalau brief-nya ngambang, hasilnya juga ngambang.\n\nMulai dari brief, bukan dari edit.\n\nKalau kamu HR/GA atau marketing, ini relatable nggak?\n\nhttps://whitepaper.site",
+      "captionLen": 165,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af4943434",
+      "scheduleAt": "2026-05-09T06:05:00.000Z",
+      "dateWIB": "2026-05-09",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034847-DSC09583.jpg",
+        "https://whitepaper.site/images/1774309034848-DSC09588.jpg"
+      ],
+      "caption": "1 hero shot yang kuat bisa ngalahin 20 foto biasa.\n\nCari frame yang jawab: siapa, di mana, kenapa penting.\n\nYang paling sering bikin konten event kamu ‘flat’ bagian mana?\n\nhttps://whitepaper.site",
+      "captionLen": 195,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af494343f",
+      "scheduleAt": "2026-05-10T06:05:00.000Z",
+      "dateWIB": "2026-05-10",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034853-DSC09625.jpg",
+        "https://whitepaper.site/images/1774309034855-DSC09642.jpg"
+      ],
+      "caption": "Kalau event-nya premium, dokumentasinya nggak boleh ‘biasa’.\nPersepsinya harus kebaca.\n\nKalau kamu HR/GA atau marketing, ini relatable nggak?\n\nhttps://whitepaper.site",
+      "captionLen": 166,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af494344a",
+      "scheduleAt": "2026-05-11T06:05:00.000Z",
+      "dateWIB": "2026-05-11",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034856-DSC09646.jpg",
+        "https://whitepaper.site/images/1774309034859-DSC09652.jpg"
+      ],
+      "caption": "Kalau mau orang inget event kamu, tangkap reaksi audience.\n\nBackdrop itu konteks. Ekspresi itu trust.\n\nKalau kamu HR/GA atau marketing, ini relatable nggak?\n\nhttps://whitepaper.site",
+      "captionLen": 181,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af4943455",
+      "scheduleAt": "2026-05-12T06:05:00.000Z",
+      "dateWIB": "2026-05-12",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034860-DSC09664.jpg",
+        "https://whitepaper.site/images/1774309034861-DSC09670.jpg"
+      ],
+      "caption": "Satu foto persiapan yang jelas kadang lebih kuat daripada 10 foto dekor.\n\nItu BTS yang bener.\n\nKalau kamu HR/GA atau marketing, ini relatable nggak?\n\nhttps://whitepaper.site",
+      "captionLen": 173,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af4943460",
+      "scheduleAt": "2026-05-13T06:05:00.000Z",
+      "dateWIB": "2026-05-13",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034863-DSC09680.jpg",
+        "https://whitepaper.site/images/1774309034865-DSC09695.jpg"
+      ],
+      "caption": "Kalau kontenmu nggak bikin orang percaya, closing jadi berat.\n\nDokumentasi itu bukti sosial.\n\nPernah kejadian?\n\nhttps://whitepaper.site",
+      "captionLen": 135,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af494346b",
+      "scheduleAt": "2026-05-14T06:05:00.000Z",
+      "dateWIB": "2026-05-14",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034866-DSC09715.jpg",
+        "https://whitepaper.site/images/1774309034867-DSC09723.jpg"
+      ],
+      "caption": "Quick check sebelum bilang fotonya ‘bagus’:\n- kebaca siapa?\n- kebaca di mana?\n- kebaca kenapa penting?\n\nYang paling sering miss di event kamu apa?\n\nhttps://whitepaper.site",
+      "captionLen": 171,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af4943476",
+      "scheduleAt": "2026-05-15T06:05:00.000Z",
+      "dateWIB": "2026-05-15",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034876-DSC09819.jpg",
+        "https://whitepaper.site/images/1774309034876-DSC09878.jpg"
+      ],
+      "caption": "Brand yang keliatan kuat itu konsisten.\n\nTermasuk di dokumentasi event. Kalau naik-turun, trust ikut naik-turun.\n\nSetuju?\n\nhttps://whitepaper.site",
+      "captionLen": 146,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af4943481",
+      "scheduleAt": "2026-05-16T06:05:00.000Z",
+      "dateWIB": "2026-05-16",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034877-DSC09885.jpg",
+        "https://whitepaper.site/images/1774309034878-DSC09903.jpg"
+      ],
+      "caption": "Real talk: Kalau kamu mau tampil premium, jangan ragu pilih angle yang bersih dan minimal.\n\nKalau kamu mau hasil yang kepakai (bukan sekadar bagus), planning-nya harus ikut marketing-nya.\n\nYang paling sering miss di event kamu apa?\n\nhttps://whitepaper.site",
+      "captionLen": 256,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af494348c",
+      "scheduleAt": "2026-05-17T06:05:00.000Z",
+      "dateWIB": "2026-05-17",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034878-DSC09914.jpg",
+        "https://whitepaper.site/images/1774309034880-DSC09982.jpg"
+      ],
+      "caption": "Kalau event-nya premium, dokumentasinya nggak boleh ‘biasa’.\nPersepsinya harus kebaca.\n\nSetuju?\n\nhttps://whitepaper.site",
+      "captionLen": 120,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af4943497",
+      "scheduleAt": "2026-05-18T06:05:00.000Z",
+      "dateWIB": "2026-05-18",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309034881-DSC09998.jpg",
+        "https://whitepaper.site/images/1774309057050-REN00583.jpg"
+      ],
+      "caption": "BTS itu bukan ‘lucu-lucuan’.\n\nKalau diambil rapi, BTS jadi bukti: kamu serius.\n\nKalau kamu HR/GA atau marketing, ini relatable nggak?\n\nhttps://whitepaper.site",
+      "captionLen": 158,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39122695558af49434a2",
+      "scheduleAt": "2026-05-19T06:05:00.000Z",
+      "dateWIB": "2026-05-19",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057055-REN00592.jpg",
+        "https://whitepaper.site/images/1774309057057-REN00623.jpg"
+      ],
+      "caption": "Kalau kamu hiring vendor dokumentasi, tanya: output akhirnya buat apa?\n\nKonten yang kuat itu bukan soal banyak. Tapi soal konteks yang kebaca.\n\nYang paling sering bikin konten event kamu ‘flat’ bagian mana?\n\nhttps://whitepaper.site",
+      "captionLen": 231,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39132695558af49434ad",
+      "scheduleAt": "2026-05-20T06:05:00.000Z",
+      "dateWIB": "2026-05-20",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057058-REN00768.jpg",
+        "https://whitepaper.site/images/1774309057060-REN00841.jpg"
+      ],
+      "caption": "Satu foto persiapan yang jelas kadang lebih kuat daripada 10 foto dekor.\n\nItu BTS yang bener.\n\nSetuju?\n\nhttps://whitepaper.site",
+      "captionLen": 127,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39132695558af49434b8",
+      "scheduleAt": "2026-05-21T06:05:00.000Z",
+      "dateWIB": "2026-05-21",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057062-REN01028.jpg",
+        "https://whitepaper.site/images/1774309057065-REN01103.jpg"
+      ],
+      "caption": "Kita sering bantu brand bikin dokumentasi yang siap jadi materi sales.\n\nKonten yang kuat itu bukan soal banyak. Tapi soal konteks yang kebaca.\n\nPernah kejadian?\n\nhttps://whitepaper.site",
+      "captionLen": 185,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39132695558af49434c3",
+      "scheduleAt": "2026-05-22T06:05:00.000Z",
+      "dateWIB": "2026-05-22",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057066-REN00035.jpg",
+        "https://whitepaper.site/images/1774309057067-REN00097.jpg"
+      ],
+      "caption": "Motret bagus itu satu level.\nMotret yang ngerti marketing itu level lain.\n\nKalau kamu HR/GA atau marketing, ini relatable nggak?\n\nhttps://whitepaper.site",
+      "captionLen": 153,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39132695558af49434d0",
+      "scheduleAt": "2026-05-23T06:05:00.000Z",
+      "dateWIB": "2026-05-23",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309057068-REN00297.jpg",
+        "https://whitepaper.site/images/1774309531134-REN00050.jpg"
+      ],
+      "caption": "Satu foto persiapan yang jelas kadang lebih kuat daripada 10 foto dekor.\n\nItu BTS yang bener.\n\nPernah kejadian?\n\nhttps://whitepaper.site",
+      "captionLen": 136,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39132695558af49434db",
+      "scheduleAt": "2026-05-24T06:05:00.000Z",
+      "dateWIB": "2026-05-24",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531136-REN00103.jpg",
+        "https://whitepaper.site/images/1774309531138-REN00114.jpg"
+      ],
+      "caption": "Banyak konten event kelihatan ‘murah’ karena kebanyakan efek.\n\nPremium itu biasanya clean: angle jelas, momen kuat.\n\nYang paling sering bikin konten event kamu ‘flat’ bagian mana?\n\nhttps://whitepaper.site",
+      "captionLen": 204,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39132695558af49434e6",
+      "scheduleAt": "2026-05-25T06:05:00.000Z",
+      "dateWIB": "2026-05-25",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531140-REN00357.jpg",
+        "https://whitepaper.site/images/1774309531142-REN00372.jpg"
+      ],
+      "caption": "2 shot yang paling cepat naikin trust:\nwide (skala) + reaction (emosi).\n\nKalau kamu HR/GA atau marketing, ini relatable nggak?\n\nhttps://whitepaper.site",
+      "captionLen": 151,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39132695558af49434f1",
+      "scheduleAt": "2026-05-26T06:05:00.000Z",
+      "dateWIB": "2026-05-26",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531145-REN00383.jpg",
+        "https://whitepaper.site/images/1774309531146-REN00387.jpg"
+      ],
+      "caption": "Tes paling jujur: lihat kontenmu, orang kepikiran \"gue pengen hadir next event\" nggak?\n\nSetuju?\n\nhttps://whitepaper.site",
+      "captionLen": 120,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39132695558af49434fc",
+      "scheduleAt": "2026-05-27T06:05:00.000Z",
+      "dateWIB": "2026-05-27",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531147-REN00437.jpg",
+        "https://whitepaper.site/images/1774309531149-REN00627.jpg"
+      ],
+      "caption": "BTS itu bukan ‘lucu-lucuan’.\n\nKalau diambil rapi, BTS jadi bukti: kamu serius.\n\nSetuju?\n\nhttps://whitepaper.site",
+      "captionLen": 112,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39132695558af4943507",
+      "scheduleAt": "2026-05-28T06:05:00.000Z",
+      "dateWIB": "2026-05-28",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531152-REN00796.jpg",
+        "https://whitepaper.site/images/1774309531153-REN00804.jpg"
+      ],
+      "caption": "Kalau kamu cuma boleh bawa pulang 6 jenis foto dari event, ambil ini dulu:\nwide, speaker+audiens, ekspresi, branding, networking, BTS.\n\nSetuju?\n\nhttps://whitepaper.site",
+      "captionLen": 168,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39132695558af4943512",
+      "scheduleAt": "2026-05-29T06:05:00.000Z",
+      "dateWIB": "2026-05-29",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531155-REN00915.jpg",
+        "https://whitepaper.site/images/1774309531157-REN06789.jpg"
+      ],
+      "caption": "BTS yang rapi itu sinyal profesionalisme.\n\nOrang jadi percaya proses kamu bener, bukan cuma hasilnya bagus.\n\nYang paling sering bikin konten event kamu ‘flat’ bagian mana?\n\nhttps://whitepaper.site",
+      "captionLen": 196,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39132695558af494351d",
+      "scheduleAt": "2026-05-30T06:05:00.000Z",
+      "dateWIB": "2026-05-30",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531159-REN06810.jpg",
+        "https://whitepaper.site/images/1774309531161-REN06828.jpg"
+      ],
+      "caption": "Brand yang keliatan kuat itu konsisten.\n\nTermasuk di dokumentasi event. Kalau naik-turun, trust ikut naik-turun.\n\nKalau kamu HR/GA atau marketing, ini relatable nggak?\n\nhttps://whitepaper.site",
+      "captionLen": 192,
+      "hashtags": 0,
+      "repliesCount": 0
+    },
+    {
+      "scheduleId": "69ea39132695558af4943528",
+      "scheduleAt": "2026-05-31T06:05:00.000Z",
+      "dateWIB": "2026-05-31",
+      "status": "pending",
+      "type": "image",
+      "mediaCount": 2,
+      "mediaUrls": [
+        "https://whitepaper.site/images/1774309531162-REN07133.jpg",
+        "https://whitepaper.site/images/1774309531164-REN07544.jpg"
+      ],
+      "caption": "Kalau kamu mau audit cepat, jangan lihat jumlah foto.\nLihat: konteks kebaca nggak?\n\nYang paling sering bikin konten event kamu ‘flat’ bagian mana?\n\nhttps://whitepaper.site",
+      "captionLen": 171,
+      "hashtags": 0,
+      "repliesCount": 0
+    }
+  ]
+}
