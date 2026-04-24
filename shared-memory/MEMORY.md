@@ -22,3 +22,10 @@
 [2026-04-23 11:49 UTC] preference | Exel should act as orchestrator/QC only (delegate execution to specialist agents; Exel does routing, review, and final checks) | Reandy | Exel
 [2026-04-23 12:07 UTC] scheduling | Replaced all Whitepaper Threads schedules for May 1–31, 2026 in Repliz: deleted prior 31 schedules then created 31 new image schedules, each with 2 images (VPS-hosted) and consistent hook+value+CTA format | whitepaper.prod | Exel
 [2026-04-23 12:40 UTC] preference | Reandy does not want to specify which agent to use; Exel should choose the appropriate specialist agent automatically for each task | delegation default | Exel
+[2026-04-23 18:30 UTC] whitepaper-context | whitepaper.site marketing baseline | B2B corporate event focus (Jakarta/Tangerang); leads from Instagram + word of mouth; closing via WhatsApp; goal is more autonomous lead/content systems (IG content engine, funnel, marketing automation); monthly batch content cron: Axis = research brief, Doni = content plan/copy, Relay = schedule to Repliz, Exel/Main = QC/oversight | Exel
+[2026-04-23 18:30 UTC] content-preferences | Whitepaper Threads/LinkedIn constraints | Threads: hook + tips/authority/checklist/opinion + clear CTA; images must be unique across scheduled posts (no repeats even if cropped); schedule 2–3 images per post; LinkedIn posts should include website link https://whitepaper.site | Exel
+
+## Promoted From Short-Term Memory (2026-04-24)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:318:320 -->
+- - status: staged [score=0.823 recalls=0 avg=0.620 source=memory/2026-04-19.md:328-328]
