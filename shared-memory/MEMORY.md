@@ -29,3 +29,16 @@
 
 <!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:318:320 -->
 - - status: staged [score=0.823 recalls=0 avg=0.620 source=memory/2026-04-19.md:328-328]
+[2026-04-24 18:30 UTC] content-preferences | Threads copy should feel native (not “classic/template”) | For Whitepaper Threads, avoid rigid “Tips 1) 2) 3)” templates; write more conversational, punchy, and context-aware | Exel
+[2026-04-24 18:30 UTC] content-preferences | CTA rule for Threads + Instagram | Prefer CTA directing to website (https://whitepaper.site); avoid CTA asking people to comment/DM/drop keywords | Exel
+[2026-04-24 18:30 UTC] workflow | Vision-first captioning | When drafting captions for any social platform, inspect the actual photo/media first so the caption is tightly aligned to the image context | Exel
+[2026-04-24 18:30 UTC] qc | Media link hygiene before scheduling | Validate scheduled media URLs are reachable (not 404) to prevent “grey/mismatch” asset errors | Exel
+[2026-04-25 03:23 UTC] ops | Checked OpenClaw status after WhatsApp 499 flaps | WhatsApp channel OK; security audit reports 1 CRITICAL: small free Nemotron model in fallbacks while sandbox=off/web tools enabled | Exel
+[2026-04-25 03:28 UTC] preference | Primary chat channel is Telegram | Treat Telegram as the main coordination channel; do not treat WhatsApp as primary unless explicitly requested | Exel
+[2026-04-25 03:35 UTC] user-profile | Reandy role + interests + persona | Reandy = Founder & Marketing Whitepaper.site; suka automation (AI agents, n8n); persona konten: casual creator; panggilan: Reandy | Exel
+[2026-04-25 03:40 UTC] whitepaper-context | Target market + offer + current bottleneck | Target: B2B business owners, HRD, marketing planning; offer: corporate event + documentation; goal: beresin sistem otomasi dulu; funnel sekarang dominan word-of-mouth; bottleneck: marketing awal/positioning belum jelas | Exel
+[2026-04-25 03:42 UTC] offer-positioning | Service area + hero offer + price floor | Area utama Jakarta/Tangerang (bisa luar kota); hero offer: corporate event (hindari positioning "EO" karena price-cut); starting price: ~Rp3 juta per event | Exel
+[2026-04-25 11:39 UTC] healthcheck | Investigated WhatsApp 499 disconnect/reconnect alert | openclaw status --deep: WhatsApp channel ON/OK and LINKED (auth age 3m); security audit 0 critical | Exel
+[2026-04-25 11:43 UTC] config | Disabled WhatsApp channel (not used) | openclaw channels remove --channel whatsapp (disable, keeps config); status now shows WhatsApp OFF/OFF | Exel
+[2026-04-25 11:46 UTC] config | Logged out WhatsApp Web + kept channel disabled | openclaw channels logout --channel whatsapp cleared credentials; re-disabled account; status: WhatsApp OFF/OFF, health UNLINKED | Exel
+[2026-04-25 11:39 UTC] security-fix | Removed small OpenRouter Nemotron/free models from default fallbacks (again) | Updated agents.defaults.model.fallbacks; verified `openclaw status` security audit now 0 critical | Exel

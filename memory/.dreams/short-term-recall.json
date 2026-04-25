@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-24T00:59:08.193Z",
+  "updatedAt": "2026-04-24T19:00:53.165Z",
   "entries": {
     "memory:memory/2026-04-09.md:1:13": {
       "key": "memory:memory/2026-04-09.md:1:13",
@@ -111767,12 +111767,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 1885 memories.; confidence: 1.00; evidence: memory/2026-04-09.md:1-13, memory/2026-04-09.md:3-6, memory/.dreams/session-corpus/2026-04-09.txt:1-1; note: reflection",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T19:00:00.119Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "500c0eda9949"
       ],
@@ -111782,7 +111782,8 @@
         "2026-04-20",
         "2026-04-22",
         "2026-04-23",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "1.00",
@@ -111803,12 +111804,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 1659 memories.; confidence: 0.92; evidence: memory/.dreams/session-corpus/2026-04-09.txt:2-2, memory/.dreams/session-corpus/2026-04-09.txt:4-4, memory/.dreams/session-corpus/2026-04-09.txt:6-6; note: reflection",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T19:00:00.119Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "500c0eda9949"
       ],
@@ -111818,7 +111819,8 @@
         "2026-04-20",
         "2026-04-22",
         "2026-04-23",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "0.92",
@@ -111839,12 +111841,12 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: - - status: staged - Candidate: Assistant: Dari sisi aku (Exel + DONI + Quanxi), ini hal‑hal yang bisa kita kerjakan sendiri dengan goal: **nambahin leads B2B/corporate**, terutama yang datang dari Instagram, tanpa banyak minta input kamu lagi. ### 1) Web",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T19:00:00.119Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "500c0eda9949"
       ],
@@ -111854,7 +111856,8 @@
         "2026-04-20",
         "2026-04-22",
         "2026-04-23",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "b2b/corporate",
@@ -111876,12 +111879,12 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: [2026-04-17] Config: set per-agent default models: doni=openai-codex/gpt-5.4-mini, quanxi=openai-codex/gpt-5.3-codex-spark.",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T19:00:00.119Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "500c0eda9949"
       ],
@@ -111891,7 +111894,8 @@
         "2026-04-20",
         "2026-04-22",
         "2026-04-23",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "gpt",
@@ -124470,12 +124474,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 2132 memories.; confidence: 1.00; evidence: memory/2026-04-09.md:1-13, memory/2026-04-09.md:3-6, memory/.dreams/session-corpus/2026-04-09.txt:1-1; note: reflection",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T19:00:25.906Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
@@ -124484,7 +124488,8 @@
         "2026-04-22",
         "2026-04-21",
         "2026-04-23",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "1.00",
@@ -124505,12 +124510,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 1817 memories.; confidence: 0.90; evidence: memory/.dreams/session-corpus/2026-04-09.txt:2-2, memory/.dreams/session-corpus/2026-04-09.txt:4-4, memory/.dreams/session-corpus/2026-04-09.txt:6-6; note: reflection",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T19:00:25.906Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
@@ -124519,7 +124524,8 @@
         "2026-04-22",
         "2026-04-21",
         "2026-04-23",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "0.90",
@@ -124540,12 +124546,12 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: # 2026-04-14 - Lanjutan debugging integrasi Repliz: `.env` sudah diisi `REPLIZ_ACCESS_KEY` dan `REPLIZ_SECRET_KEY`, tapi env di proses gateway masih kosong. Perlu investigasi lanjut soal mapping `env.vars` OpenClaw ke skill Repliz sebelum bisa dipakai pen",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T19:00:25.906Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
@@ -124554,7 +124560,8 @@
         "2026-04-22",
         "2026-04-21",
         "2026-04-23",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "gateway",
@@ -131626,12 +131633,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 1745 memories.; confidence: 1.00; evidence: memory/2026-04-09.md:1-13, memory/2026-04-09.md:3-6, memory/.dreams/session-corpus/2026-04-11.txt:1-1; note: reflection",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T19:00:00.904Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "21faa0df9302"
       ],
@@ -131641,7 +131648,8 @@
         "2026-04-21",
         "2026-04-23",
         "2026-04-22",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "1.00",
@@ -131662,12 +131670,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 1487 memories.; confidence: 0.90; evidence: memory/.dreams/session-corpus/2026-04-11.txt:2-2, memory/.dreams/session-corpus/2026-04-11.txt:4-4, memory/.dreams/session-corpus/2026-04-11.txt:6-6; note: reflection",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T19:00:00.904Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "21faa0df9302"
       ],
@@ -131677,7 +131685,8 @@
         "2026-04-21",
         "2026-04-23",
         "2026-04-22",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "0.90",
@@ -131693,17 +131702,17 @@
     "memory:memory/2026-04-19.md:318:320": {
       "key": "memory:memory/2026-04-19.md:318:320",
       "path": "memory/2026-04-19.md",
-      "startLine": 328,
-      "endLine": 328,
+      "startLine": 318,
+      "endLine": 320,
       "source": "memory",
-      "snippet": "- status: staged",
+      "snippet": "Possible Lasting Truths: - status: staged - Candidate: Assistant: Haloo 👋 Aku lihat barusan ada alert: **belum ada file backup konfigurasi** di `/root/.openclaw/workspace/backup-config/` Saran aku: - Kita **bikin 1 backup penuh sekarang** (openclaw.json + AGENTS/SOUL/USER/MEMORY",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T19:00:00.904Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "21faa0df9302"
       ],
@@ -131713,7 +131722,8 @@
         "2026-04-21",
         "2026-04-23",
         "2026-04-22",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "backup",
@@ -139271,12 +139281,12 @@
       "source": "memory",
       "snippet": "Reandy set a durable operating preference: Exel must review content not only for aesthetics or engagement, but for whether it is optimal for generating new leads and new sales.; Whitepaper brand guideline was clarified from a user-provided reference board: tone should be direct,",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-20T19:00:01.161Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "511fd8111b88"
       ],
@@ -139284,7 +139294,8 @@
         "2026-04-21",
         "2026-04-20",
         "2026-04-24",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-25"
       ],
       "conceptTags": [
         "user-provided",
@@ -139305,12 +139316,12 @@
       "source": "memory",
       "snippet": "Reandy set a durable operating preference: Exel must review content not only for aesthetics or engagement, but for whether it is optimal for generating new leads and new sales.; Whitepaper brand guideline was clarified from a user-provided reference board: tone should be direct,",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-20T19:00:01.161Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "511fd8111b88"
       ],
@@ -139318,7 +139329,8 @@
         "2026-04-21",
         "2026-04-20",
         "2026-04-24",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-25"
       ],
       "conceptTags": [
         "user-provided",
@@ -139339,12 +139351,12 @@
       "source": "memory",
       "snippet": "Agent lanes confirmed active for delegated work: Axis (research), DONI (content), Sora (design), Relay (publishing), Pulse (analytics, smoke-test passed), HEYREANDY (personal branding, smoke-test passed), Quanxi (ops/technical), Exel (orchestrator + final QA).; Security hardening",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-20T19:00:01.161Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "511fd8111b88"
       ],
@@ -139352,7 +139364,8 @@
         "2026-04-21",
         "2026-04-20",
         "2026-04-24",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-25"
       ],
       "conceptTags": [
         "smoke-test",
@@ -139373,12 +139386,12 @@
       "source": "memory",
       "snippet": "Reandy set a durable operating preference: Exel must review content not only for aesthetics or engagement, but for whether it is optimal for generating new leads and new sales.; Whitepaper brand guideline was clarified from a user-provided reference board: tone should be direct,",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-20T19:00:01.161Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "511fd8111b88"
       ],
@@ -139386,7 +139399,8 @@
         "2026-04-21",
         "2026-04-20",
         "2026-04-24",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-25"
       ],
       "conceptTags": [
         "user-provided",
@@ -139407,12 +139421,12 @@
       "source": "memory",
       "snippet": "Reandy set a durable operating preference: Exel must review content not only for aesthetics or engagement, but for whether it is optimal for generating new leads and new sales.; Whitepaper brand guideline was clarified from a user-provided reference board: tone should be direct,",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-20T19:00:01.161Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "511fd8111b88"
       ],
@@ -139420,7 +139434,8 @@
         "2026-04-21",
         "2026-04-20",
         "2026-04-24",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-25"
       ],
       "conceptTags": [
         "user-provided",
@@ -139441,12 +139456,12 @@
       "source": "memory",
       "snippet": "Agent lanes confirmed active for delegated work: Axis (research), DONI (content), Sora (design), Relay (publishing), Pulse (analytics, smoke-test passed), HEYREANDY (personal branding, smoke-test passed), Quanxi (ops/technical), Exel (orchestrator + final QA).; Security hardening",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-20T19:00:01.161Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "511fd8111b88"
       ],
@@ -139454,7 +139469,8 @@
         "2026-04-21",
         "2026-04-20",
         "2026-04-24",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-25"
       ],
       "conceptTags": [
         "smoke-test",
@@ -139795,12 +139811,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 1745 memories.; confidence: 1.00; evidence: memory/2026-04-09.md:1-13, memory/2026-04-09.md:3-6, memory/.dreams/session-corpus/2026-04-11.txt:1-1; note: reflection",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-20T19:00:01.161Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "21faa0df9302"
       ],
@@ -139809,7 +139825,8 @@
         "2026-04-20",
         "2026-04-23",
         "2026-04-22",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "1.00",
@@ -139830,12 +139847,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 1487 memories.; confidence: 0.90; evidence: memory/.dreams/session-corpus/2026-04-11.txt:2-2, memory/.dreams/session-corpus/2026-04-11.txt:4-4, memory/.dreams/session-corpus/2026-04-11.txt:6-6; note: reflection",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-20T19:00:01.161Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "21faa0df9302"
       ],
@@ -139844,7 +139861,8 @@
         "2026-04-20",
         "2026-04-23",
         "2026-04-22",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "0.90",
@@ -139865,12 +139883,12 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: - status: staged - Candidate: Assistant: Haloo 👋 Aku lihat barusan ada alert: **belum ada file backup konfigurasi** di `/root/.openclaw/workspace/backup-config/` Saran aku: - Kita **bikin 1 backup penuh sekarang** (openclaw.json + AGENTS/SOUL/USER/MEMORY",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-20T19:00:01.161Z",
-      "lastRecalledAt": "2026-04-23T19:00:00.914Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "21faa0df9302"
       ],
@@ -139879,7 +139897,8 @@
         "2026-04-20",
         "2026-04-23",
         "2026-04-22",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "backup",
@@ -154864,18 +154883,20 @@
       "source": "memory",
       "snippet": "[2026-04-21T11:22Z] Generated rewrite packages: Instagram (31) and LinkedIn (33) saved as `ig_rewrite_all.json` and `li_rewrite_all.json`. Pending: owner approval to apply replacements in Repliz.; [2026-04-21T14:23Z] WhatsApp gateway briefly disconnected (status 499) and reconnec",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-21T19:00:00.912Z",
-      "lastRecalledAt": "2026-04-21T19:00:00.912Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "f52400c81d76"
       ],
       "recallDays": [
         "2026-04-22",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-25",
+        "2026-04-24"
       ],
       "conceptTags": [
         "gateway",
@@ -154896,18 +154917,20 @@
       "source": "memory",
       "snippet": "[2026-04-21 15:50 UTC] ops | Repliz caption rewrite apply (IG+LI) | Backed up before-state (IG 31, LI 33) + generated dry-run diff reports; applied IG rewrites successfully (31/31) via create+verify+delete replacement; LinkedIn apply pending QC overrides for 3 scheduleIds | quanx",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-21T19:00:00.912Z",
-      "lastRecalledAt": "2026-04-21T19:00:00.912Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "f52400c81d76"
       ],
       "recallDays": [
         "2026-04-22",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-25",
+        "2026-04-24"
       ],
       "conceptTags": [
         "before-state",
@@ -154928,18 +154951,20 @@
       "source": "memory",
       "snippet": "[2026-04-21T11:22Z] Generated rewrite packages: Instagram (31) and LinkedIn (33) saved as `ig_rewrite_all.json` and `li_rewrite_all.json`. Pending: owner approval to apply replacements in Repliz.; [2026-04-21T14:23Z] WhatsApp gateway briefly disconnected (status 499) and reconnec",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-21T19:00:00.912Z",
-      "lastRecalledAt": "2026-04-21T19:00:00.912Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "f52400c81d76"
       ],
       "recallDays": [
         "2026-04-22",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-25",
+        "2026-04-24"
       ],
       "conceptTags": [
         "gateway",
@@ -154960,18 +154985,20 @@
       "source": "memory",
       "snippet": "[2026-04-21 15:50 UTC] ops | Repliz caption rewrite apply (IG+LI) | Backed up before-state (IG 31, LI 33) + generated dry-run diff reports; applied IG rewrites successfully (31/31) via create+verify+delete replacement; LinkedIn apply pending QC overrides for 3 scheduleIds | quanx",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-21T19:00:00.912Z",
-      "lastRecalledAt": "2026-04-21T19:00:00.912Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "f52400c81d76"
       ],
       "recallDays": [
         "2026-04-22",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-25",
+        "2026-04-24"
       ],
       "conceptTags": [
         "before-state",
@@ -154992,18 +155019,20 @@
       "source": "memory",
       "snippet": "[2026-04-21T16:28Z] Reandy request: wants to audit scheduled content by reviewing 1 draft per platform (IG/Threads/LinkedIn) and asks for concise rationale/basis behind caption choices.; [2026-04-21T16:51Z] Ops: Split Whitepaper Threads daily automation into 2 crons: 06:00 WIB DO",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-21T19:00:00.912Z",
-      "lastRecalledAt": "2026-04-21T19:00:00.912Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
       "queryHashes": [
         "f52400c81d76"
       ],
       "recallDays": [
         "2026-04-22",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-25",
+        "2026-04-24"
       ],
       "conceptTags": [
         "2026-04-21t16",
@@ -195400,6 +195429,5229 @@
         "crash-looped",
         "backup/admin",
         "openai-cod"
+      ]
+    },
+    "memory:memory/2026-04-24.md:3:6": {
+      "key": "memory:memory/2026-04-24.md:3:6",
+      "path": "memory/2026-04-24.md",
+      "startLine": 3,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Durable notes (2026-04-24): Feedback konten: untuk **Threads**, user merasa copy sebelumnya terlalu “classic/template” (mis. format “Tips… 1) 2) 3) …”). Diminta gaya yang lebih **native Threads**: lebih conversational, punchy, dan kontekstual.; CTA rule: CTA untuk **Threads & Ins",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "409c33906af9"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "classic/template",
+        "durable",
+        "feedback",
+        "konten",
+        "untuk",
+        "threads",
+        "user",
+        "merasa"
+      ]
+    },
+    "memory:memory/2026-04-24.md:7:7": {
+      "key": "memory:memory/2026-04-24.md:7:7",
+      "path": "memory/2026-04-24.md",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Durable notes (2026-04-24): Workspace artifacts: dibuat beberapa draft/mapping untuk rewrite/vision-based captions (mis. `scripts/rewrite_whitepaper_threads_threadsstyle_v2.py`, `scripts/rewrite_whitepaper_threads_threadsstyle_v3.py`, dan batch JSON `scripts/_threads_vision_batch",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "409c33906af9"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "draft/mapping",
+        "rewrite/vision-based",
+        "threads-vision-batch",
+        "durable",
+        "artifacts",
+        "dibuat",
+        "beberapa",
+        "draft"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:110:110": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:110:110",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 110,
+      "endLine": 110,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:111:111": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:111:111",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 111,
+      "endLine": 111,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-22 22:47:59 GMT+8] WhatsApp gateway disconnected (status 499) System: [2026-04-22 22:48:05 GMT+8] WhatsApp gateway connected as +6285124739718. Oke update aja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status",
+        "connected"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:112:112": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:112:112",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 112,
+      "endLine": 112,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-22 22:47:59 GMT+8] WhatsApp gateway disconnected (status 499) System: [2026-04-22 22:48:05 GMT+8] WhatsApp gateway connected as +6285124739718. Oke update aja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status",
+        "connected"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:113:113": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:113:113",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 113,
+      "endLine": 113,
+      "source": "memory",
+      "snippet": "Assistant: Sudah, npm berhasil di-update. - Sebelumnya: **10.9.4** - Sekarang: **11.12.1**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "di-update",
+        "10.9.4",
+        "11.12.1",
+        "assistant",
+        "sudah",
+        "npm",
+        "berhasil",
+        "update"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:114:114": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:114:114",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 114,
+      "endLine": 114,
+      "source": "memory",
+      "snippet": "User: Base environment di sistem kamu ada apa aja ?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "base",
+        "environment",
+        "sistem",
+        "kamu",
+        "ada",
+        "apa",
+        "aja"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:115:115": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:115:115",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 115,
+      "endLine": 115,
+      "source": "memory",
+      "snippet": "User: Base environment di sistem kamu ada apa aja ?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "base",
+        "environment",
+        "sistem",
+        "kamu",
+        "ada",
+        "apa",
+        "aja"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:116:116": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:116:116",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 116,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "Assistant: Base environment di server OpenClaw kita saat ini: **OS / system** - OS: OpenCloudOS 9.4 - Kernel: Linux 6.6.117-45.1.oc9.x86_64 - Tailscale: 1.96.4 **Runtime utama** - OpenClaw: 2026.4.15 (041266a) - Node.js: v22.22.1 - npm: 11.12.1 - Python: 3.11.6 (pip3: belum terpa",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "9.4",
+        "6.6.117-45.1.oc9.x86-64",
+        "1.96.4",
+        "2026.4.15",
+        "node.js",
+        "v22.22.1",
+        "11.12.1",
+        "3.11.6"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:117:117": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:117:117",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 117,
+      "endLine": 117,
+      "source": "memory",
+      "snippet": "User: Oke kalau ini sudah ada belum ya ?? 1. pip3 2. python venv 3. utilitas dasar (curl, wget, unzip, jq)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "oke",
+        "kalau",
+        "ini",
+        "sudah",
+        "ada",
+        "belum",
+        "pip3"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:118:118": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:118:118",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 118,
+      "endLine": 118,
+      "source": "memory",
+      "snippet": "User: Oke kalau ini sudah ada belum ya ?? 1. pip3 2. python venv 3. utilitas dasar (curl, wget, unzip, jq)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "oke",
+        "kalau",
+        "ini",
+        "sudah",
+        "ada",
+        "belum",
+        "pip3"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:119:119": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:119:119",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 119,
+      "endLine": 119,
+      "source": "memory",
+      "snippet": "Assistant: Status di server sekarang: 1) **pip3** - `pip3`: **belum ada** - `python3 -m pip`: **belum ada** - Tapi `ensurepip`: **ada** (jadi pip bisa dipasang lewat Python) 2) **python venv** - `python3 -m venv`: **sudah ada** 3) **utilitas dasar** - `curl`: **ada** - `wget`: **",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "status",
+        "server",
+        "sekarang",
+        "pip3",
+        "belum",
+        "ada",
+        "python3"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:120:120": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:120:120",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 120,
+      "endLine": 120,
+      "source": "memory",
+      "snippet": "User: ya oke",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "oke"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:121:121": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:121:121",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 121,
+      "endLine": 121,
+      "source": "memory",
+      "snippet": "User: ya oke",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "oke"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:122:122": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:122:122",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 122,
+      "endLine": 122,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-22 00:01:03 GMT+8] Backup harian workspace ke GitHub: SUKSES System: System: - Repo: valid (git) + remote `origin` tersedia System: - Origin: https://github.com/Reandy99/Openclaw-whitepaper.git System: - Branch aktif: `master` System: - Commit dibuat: `136c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "backup",
+        "user",
+        "system",
+        "gmt",
+        "harian",
+        "github",
+        "sukses",
+        "repo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:123:123": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:123:123",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 123,
+      "endLine": 123,
+      "source": "memory",
+      "snippet": "Assistant: Sip, kita jalanin **opsi 2 (tanpa bot baru)** dulu. Artinya: - Axis/Sora/Relay/Pulse **tidak muncul sebagai bot Telegram terpisah**, tapi mereka tetap bisa “kerja” di belakang layar dan hasilnya balik ke gue untuk gue eksekusi/QA (kamu cek langsung di Repliz seperti bi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "axis/sora/relay/pulse",
+        "eksekusi/qa",
+        "assistant",
+        "sip",
+        "kita",
+        "jalanin",
+        "opsi",
+        "tanpa"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:124:124": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:124:124",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 124,
+      "endLine": 124,
+      "source": "memory",
+      "snippet": "User: Ya mau",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "mau"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:125:125": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:125:125",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 125,
+      "endLine": 125,
+      "source": "memory",
+      "snippet": "Assistant: Sip, sudah gue konfigurasi. - **Axis, Sora, Relay, Pulse sekarang sudah kepasang sebagai agent terpisah** (punya workspace masing-masing), tapi **tetap pakai bot utama** (tanpa bot baru). - Mulai sekarang, tiap task akan gue route ke agent sesuai role: - Riset/angle ->",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "masing-masing",
+        "riset/angle",
+        "assistant",
+        "sip",
+        "sudah",
+        "gue",
+        "konfigurasi",
+        "axis"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:126:126": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:126:126",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 126,
+      "endLine": 126,
+      "source": "memory",
+      "snippet": "User: System (untrusted): [2026-04-22 00:14:10 GMT+8] Exec completed (briny-da, code 0) :: it trust boundaries (separate gateways + credentials, ideally separate OS users/hosts). If you intentionally run shared-user access, set agents.defaults.sandbox.mode=\"all\", keep t… An async",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "briny-da",
+        "users/hosts",
+        "shared-user",
+        "agents.defaults.sandbox.mode",
+        "user",
+        "system",
+        "untrusted"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:127:127": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:127:127",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 127,
+      "endLine": 127,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:128:128": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:128:128",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 128,
+      "endLine": 128,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-22 00:15:58 GMT+8] Gateway restart restart ok (gateway.restart) System: Configured agents axis/sora/relay/pulse (no new bots) and restarted OpenClaw. System: Reason: Provision Axis/Sora/Relay/Pulse as agents (no new Telegram bots) System: Run: openclaw doct",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway.restart",
+        "axis/sora/relay/pulse",
+        "user",
+        "system",
+        "gmt",
+        "restart",
+        "configured"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:129:129": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:129:129",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 129,
+      "endLine": 129,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:130:130": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:130:130",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 130,
+      "endLine": 130,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-22 00:16:04 GMT+8] WhatsApp gateway connected as +6285124739718. Oke, coba sekarang lo check schduling di repliz untuk bulan depan whitepaper instagram, Linkedin dan threads total masing-masing ada berapa ?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "masing-masing",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "connected",
+        "oke"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:131:131": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:131:131",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 131,
+      "endLine": 131,
+      "source": "memory",
+      "snippet": "Assistant: Untuk **bulan depan (Mei 2026, WIB)** di Repliz (Whitepaper): - **Instagram:** 28 scheduled (pending) - **LinkedIn:** 26 scheduled (pending) - **Threads:** 31 scheduled (pending)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "untuk",
+        "bulan",
+        "depan",
+        "mei",
+        "wib",
+        "repliz",
+        "whitepaper"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:132:132": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:132:132",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 132,
+      "endLine": 132,
+      "source": "memory",
+      "snippet": "User: cek kasih aku 1 yang instagram",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "cek",
+        "kasih",
+        "aku",
+        "yang",
+        "instagram"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:133:133": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:133:133",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 133,
+      "endLine": 133,
+      "source": "memory",
+      "snippet": "Assistant: Ini 1 contoh scheduled **Instagram Whitepaper** (Mei 2026, WIB): - **Schedule ID:** 69e79c5c84ebdfba1577f09e - **Jadwal:** 2026-05-01 10:30 WIB - **Media:** 1 image - **Preview caption:** “Kalau mau konten event terasa premium, mulai dari 1 frame yang konteksnya kebaca",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "ini",
+        "contoh",
+        "scheduled",
+        "instagram",
+        "whitepaper",
+        "mei",
+        "wib"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:127:127": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:127:127",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 127,
+      "endLine": 127,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:128:128": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:128:128",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 128,
+      "endLine": 128,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 18:34:36 GMT+8] WhatsApp gateway disconnected (status 408) System: [2026-04-23 18:34:40 GMT+8] WhatsApp gateway connected as +6285124739718. Oke mantap menarik, kamu schdulein ke repliz ya untuk selanjutnya formatnya yang seperti ini aja dulu untuk hari",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status",
+        "connected"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:129:129": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:129:129",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 129,
+      "endLine": 129,
+      "source": "memory",
+      "snippet": "Assistant: Sudah aku schedule di Repliz untuk **Threads whitepaper.prod** dari **hari ini (23 Apr) sampai 30 Apr 2026** dengan format **tips + authority + checklist + opini + CTA**, dan **pakai gambar dari VPS**. - **23 Apr 2026**: posting **19:05 WIB** - **24–30 Apr 2026**: post",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "whitepaper.prod",
+        "assistant",
+        "sudah",
+        "aku",
+        "schedule",
+        "repliz",
+        "untuk",
+        "threads"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:130:130": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:130:130",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 130,
+      "endLine": 130,
+      "source": "memory",
+      "snippet": "User: Exel aku mau kamu jadi orchestrator saja ya, jadi kamu bisa kasih ke agent yang lain untuk tugas yang aku berikan, kamu lebih ke QC dan cek atau fungsinya memang orchestrator saja.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "exel",
+        "aku",
+        "mau",
+        "kamu",
+        "jadi",
+        "orchestrator",
+        "saja"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:131:131": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:131:131",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 131,
+      "endLine": 131,
+      "source": "memory",
+      "snippet": "Assistant: Siap Reandy. Mulai sekarang aku **orchestrator + QC** aja: aku pecah task kamu, delegasi ke agent yang sesuai (mis. **Doni/Axis/Sora/Relay/Pulse/Quanxi/HeyReandy**), lalu aku **review hasilnya** sebelum dipublish/di-apply. Kalau kamu kasih task, cukup tulis: **tujuan +",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "dipublish/di-apply",
+        "assistant",
+        "siap",
+        "reandy",
+        "mulai",
+        "sekarang",
+        "aku",
+        "orchestrator"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:132:132": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:132:132",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 132,
+      "endLine": 132,
+      "source": "memory",
+      "snippet": "User: ya boleh, postingan yang lama di threads tanggal 1-31 mei 2026 di hapus dulu baru kamu ganti dengan format yang konsisten ya. posting dengan gambarnya jangan lupa. gunakan 2-3 gambar oke.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "1-31",
+        "2-3",
+        "user",
+        "boleh",
+        "postingan",
+        "yang",
+        "lama",
+        "threads"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:133:133": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:133:133",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 133,
+      "endLine": 133,
+      "source": "memory",
+      "snippet": "Assistant: Sudah beres ✅ - **Semua schedule lama Threads tanggal 1–31 Mei 2026 (31 post) sudah aku hapus** dulu. - Lalu **aku buat ulang 31 schedule baru** dengan format yang konsisten (tips + authority + checklist + opini + CTA). - **Setiap post pakai 2 gambar** (sesuai request",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "sudah",
+        "beres",
+        "semua",
+        "schedule",
+        "lama",
+        "threads",
+        "tanggal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:134:134": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:134:134",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 134,
+      "endLine": 134,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 19:04:40 GMT+8] WhatsApp gateway disconnected (status 499) System: [2026-04-23 19:04:44 GMT+8] WhatsApp gateway connected as +6285124739718. Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from pri",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "heartbeat.md",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:135:135": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:135:135",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 135,
+      "endLine": 135,
+      "source": "memory",
+      "snippet": "Assistant: Pending (optional): - nginx `server_name` warning cleanup - memory provider setup",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "server-name",
+        "assistant",
+        "pending",
+        "optional",
+        "nginx",
+        "warning",
+        "cleanup",
+        "provider"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:136:136": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:136:136",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 136,
+      "endLine": 136,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) ya, \"untuk agent mana yang kamu prefer\" kamu aja yang delegasikan tugasnya ke agent yang mana yang cocok ya. jadi aku gak perlu mention agentnya. --- Queued #2 (from Reandy) [media attached: /root/.openclaw/",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy",
+        "reandy",
+        "untuk"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:137:137": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:137:137",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 137,
+      "endLine": 137,
+      "source": "memory",
+      "snippet": "Assistant: Siap, kamu nggak perlu mention agent lagi. Nanti setiap kamu kasih task, **aku yang pilih agent paling cocok**, lalu aku **QC + final check** sebelum publish/apply. Soal foto duplikat: sudah aku **audit semua schedule Threads Whitepaper yang sudah kebentuk** (23–30 Apr",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "publish/apply",
+        "assistant",
+        "siap",
+        "kamu",
+        "nggak",
+        "perlu",
+        "mention",
+        "lagi"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:138:138": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:138:138",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 138,
+      "endLine": 138,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) [media attached: /root/.openclaw/media/inbound/file_194---f6be0ebc-9233-4e35-b153-5e943b3e9688.jpg (image/jpeg) | /root/.openclaw/media/inbound/file_194---f6be0ebc-9233-4e35-b153-5e943b3e9688.jpg] To send an",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "openclaw/media/inbound/file-194",
+        "image/jpeg",
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:139:139": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:139:139",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 139,
+      "endLine": 139,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:140:140": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:140:140",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 140,
+      "endLine": 140,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 18:34:36 GMT+8] WhatsApp gateway disconnected (status 408) System: [2026-04-23 18:34:40 GMT+8] WhatsApp gateway connected as +6285124739718. Oke mantap menarik, kamu schdulein ke repliz ya untuk selanjutnya formatnya yang seperti ini aja dulu untuk hari",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status",
+        "connected"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:141:141": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:141:141",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 141,
+      "endLine": 141,
+      "source": "memory",
+      "snippet": "Assistant: Sudah aku schedule di Repliz untuk **Threads whitepaper.prod** dari **hari ini (23 Apr) sampai 30 Apr 2026** dengan format **tips + authority + checklist + opini + CTA**, dan **pakai gambar dari VPS**. - **23 Apr 2026**: posting **19:05 WIB** - **24–30 Apr 2026**: post",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "whitepaper.prod",
+        "assistant",
+        "sudah",
+        "aku",
+        "schedule",
+        "repliz",
+        "untuk",
+        "threads"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:142:142": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:142:142",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 142,
+      "endLine": 142,
+      "source": "memory",
+      "snippet": "User: Exel aku mau kamu jadi orchestrator saja ya, jadi kamu bisa kasih ke agent yang lain untuk tugas yang aku berikan, kamu lebih ke QC dan cek atau fungsinya memang orchestrator saja.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "exel",
+        "aku",
+        "mau",
+        "kamu",
+        "jadi",
+        "orchestrator",
+        "saja"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:143:143": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:143:143",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 143,
+      "endLine": 143,
+      "source": "memory",
+      "snippet": "Assistant: Siap Reandy. Mulai sekarang aku **orchestrator + QC** aja: aku pecah task kamu, delegasi ke agent yang sesuai (mis. **Doni/Axis/Sora/Relay/Pulse/Quanxi/HeyReandy**), lalu aku **review hasilnya** sebelum dipublish/di-apply. Kalau kamu kasih task, cukup tulis: **tujuan +",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "dipublish/di-apply",
+        "assistant",
+        "siap",
+        "reandy",
+        "mulai",
+        "sekarang",
+        "aku",
+        "orchestrator"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:144:144": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:144:144",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 144,
+      "endLine": 144,
+      "source": "memory",
+      "snippet": "User: ya boleh, postingan yang lama di threads tanggal 1-31 mei 2026 di hapus dulu baru kamu ganti dengan format yang konsisten ya. posting dengan gambarnya jangan lupa. gunakan 2-3 gambar oke.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "1-31",
+        "2-3",
+        "user",
+        "boleh",
+        "postingan",
+        "yang",
+        "lama",
+        "threads"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:145:145": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:145:145",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 145,
+      "endLine": 145,
+      "source": "memory",
+      "snippet": "Assistant: Sudah beres ✅ - **Semua schedule lama Threads tanggal 1–31 Mei 2026 (31 post) sudah aku hapus** dulu. - Lalu **aku buat ulang 31 schedule baru** dengan format yang konsisten (tips + authority + checklist + opini + CTA). - **Setiap post pakai 2 gambar** (sesuai request",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "sudah",
+        "beres",
+        "semua",
+        "schedule",
+        "lama",
+        "threads",
+        "tanggal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:146:146": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:146:146",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 146,
+      "endLine": 146,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 19:04:40 GMT+8] WhatsApp gateway disconnected (status 499) System: [2026-04-23 19:04:44 GMT+8] WhatsApp gateway connected as +6285124739718. Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from pri",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "heartbeat.md",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:147:147": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:147:147",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 147,
+      "endLine": 147,
+      "source": "memory",
+      "snippet": "Assistant: Pending (optional): - nginx `server_name` warning cleanup - memory provider setup",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "server-name",
+        "assistant",
+        "pending",
+        "optional",
+        "nginx",
+        "warning",
+        "cleanup",
+        "provider"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:148:148": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:148:148",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 148,
+      "endLine": 148,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) ya, \"untuk agent mana yang kamu prefer\" kamu aja yang delegasikan tugasnya ke agent yang mana yang cocok ya. jadi aku gak perlu mention agentnya. --- Queued #2 (from Reandy) [media attached: /root/.openclaw/",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy",
+        "reandy",
+        "untuk"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:149:149": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:149:149",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 149,
+      "endLine": 149,
+      "source": "memory",
+      "snippet": "Assistant: Siap, kamu nggak perlu mention agent lagi. Nanti setiap kamu kasih task, **aku yang pilih agent paling cocok**, lalu aku **QC + final check** sebelum publish/apply. Soal foto duplikat: sudah aku **audit semua schedule Threads Whitepaper yang sudah kebentuk** (23–30 Apr",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "publish/apply",
+        "assistant",
+        "siap",
+        "kamu",
+        "nggak",
+        "perlu",
+        "mention",
+        "lagi"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:150:150": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:150:150",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 150,
+      "endLine": 150,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) [media attached: /root/.openclaw/media/inbound/file_194---f6be0ebc-9233-4e35-b153-5e943b3e9688.jpg (image/jpeg) | /root/.openclaw/media/inbound/file_194---f6be0ebc-9233-4e35-b153-5e943b3e9688.jpg] To send an",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "openclaw/media/inbound/file-194",
+        "image/jpeg",
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:151:151": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:151:151",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 151,
+      "endLine": 151,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 12:54:58 GMT+8] Gateway restart restart ok (gateway.restart) System: Gateway direstart supaya bind baru aktif di VPS dan Tailscale tidak lagi dipakai buat akses. System: Reason: Apply public VPS bind and disable Tailscale dependency System: Run: openclaw",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway.restart",
+        "user",
+        "system",
+        "gmt",
+        "restart",
+        "direstart",
+        "supaya"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:152:152": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:152:152",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 152,
+      "endLine": 152,
+      "source": "memory",
+      "snippet": "Assistant: Gue udah bikin akses publiknya hidup dari IP VPS, tapi gue nemu satu hal lagi: proses gateway yang ngelayanin sekarang sudah jalan dan bisa diakses publik, sementara unit systemd resminya masih crash-loop. Gue lagi beresin biar stabil juga, bukan cuma “bisa kebuka”.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "crash-loop",
+        "assistant",
+        "gue",
+        "udah",
+        "bikin",
+        "akses",
+        "publiknya"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:153:153": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:153:153",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 153,
+      "endLine": 153,
+      "source": "memory",
+      "snippet": "Assistant: Gue ketemu akar masalahnya. Yang sehat itu justru **user systemd service** `openclaw-gateway.service`, sedangkan yang crash-loop itu **system service lama** `openclaw.service`. Jadi gue rapihin yang dobel ini biar gak tabrakan.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "openclaw-gateway.service",
+        "crash-loop",
+        "openclaw.service",
+        "assistant",
+        "gue",
+        "ketemu",
+        "akar"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:154:154": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:154:154",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 154,
+      "endLine": 154,
+      "source": "memory",
+      "snippet": "Assistant: Beres. Sekarang OpenClaw lo sudah: - **jalan langsung dari VPS**, bukan bergantung ke Tailscale - **bisa diakses publik** di **`http://43.156.181.204:18789`** - **port 18789 udah gue buka dan persist** di firewall host - **Tailscale mode udah dimatiin** - service lama",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "43.156.181.204",
+        "assistant",
+        "beres",
+        "sekarang",
+        "openclaw",
+        "sudah",
+        "jalan",
+        "langsung"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:155:155": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:155:155",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 155,
+      "endLine": 155,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) System: [2026-04-23 12:55:11 GMT+8] WhatsApp gateway connected as +6285124739718. Oke sudah ? --- Queued #2 (from Reandy) kabarin ya bro kalau udah",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy",
+        "reandy"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:156:156": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:156:156",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 156,
+      "endLine": 156,
+      "source": "memory",
+      "snippet": "Assistant: Udah bro, **beres**. Sekarang: - OpenClaw **jalan dari VPS langsung** - **gak tergantung Tailscale** - akses publiknya udah hidup di **http://43.156.181.204:18789** - service yang crash-loop tadi juga udah gue rapihin Kalau mau, next gue bisa lanjut **hardening biar le",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "43.156.181.204",
+        "crash-loop",
+        "assistant",
+        "udah",
+        "bro",
+        "beres",
+        "sekarang",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:157:157": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:157:157",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 157,
+      "endLine": 157,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) System (untrusted): [2026-04-23 12:56:54 GMT+8] Exec completed (keen-mis, code 0) :: ─────────────────────────────────┴────────┴─────────┴──────────────┴────────────────────────────────┘ FAQ: https://docs.op",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "keen-mis",
+        "docs.op",
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:158:158": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:158:158",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 158,
+      "endLine": 158,
+      "source": "memory",
+      "snippet": "Assistant: Iya, **udah kelar**. Coba akses aja sekarang ke: **http://43.156.181.204:18789** Kalau mau, kirim screenshot kalau ada yang masih aneh, nanti gue cek lagi cepat.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "43.156.181.204",
+        "assistant",
+        "iya",
+        "udah",
+        "kelar",
+        "coba",
+        "akses",
+        "aja"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:159:159": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:159:159",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 159,
+      "endLine": 159,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 13:02:37 GMT+8] WhatsApp gateway disconnected (status 408) System: [2026-04-23 13:02:51 GMT+8] WhatsApp gateway connected as +6285124739718. Oke coba test dulu ya lo masih bisa bales ga",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status",
+        "connected"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:160:160": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:160:160",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 160,
+      "endLine": 160,
+      "source": "memory",
+      "snippet": "Assistant: Bisa bro, gue masih bisa bales. WhatsApp tadi sempet disconnect bentar, tapi **udah connect lagi jam 13:02:51 WIB**.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "bisa",
+        "bro",
+        "gue",
+        "masih",
+        "bales",
+        "whatsapp",
+        "tadi"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:161:161": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:161:161",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 161,
+      "endLine": 161,
+      "source": "memory",
+      "snippet": "User: masih tergantung tailscale bro",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "masih",
+        "tergantung",
+        "tailscale",
+        "bro"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:162:162": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:162:162",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 162,
+      "endLine": 162,
+      "source": "memory",
+      "snippet": "Assistant: Bukan bro, **sekarang udah gak tergantung Tailscale**. Barusan gue cek: - **Tailscale: off** - gateway listen di **`0.0.0.0:18789`** - service aktif: **`openclaw-gateway.service`** - akses publik tetap lewat **`43.156.181.204:18789`** Kalau yang bikin keliatan “masih t",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "0.0.0.0",
+        "openclaw-gateway.service",
+        "43.156.181.204",
+        "assistant",
+        "bukan",
+        "bro",
+        "sekarang"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:163:163": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:163:163",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 163,
+      "endLine": 163,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 12:54:58 GMT+8] Gateway restart restart ok (gateway.restart) System: Gateway direstart supaya bind baru aktif di VPS dan Tailscale tidak lagi dipakai buat akses. System: Reason: Apply public VPS bind and disable Tailscale dependency System: Run: openclaw",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway.restart",
+        "user",
+        "system",
+        "gmt",
+        "restart",
+        "direstart",
+        "supaya"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:164:164": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:164:164",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 164,
+      "endLine": 164,
+      "source": "memory",
+      "snippet": "Assistant: Gue udah bikin akses publiknya hidup dari IP VPS, tapi gue nemu satu hal lagi: proses gateway yang ngelayanin sekarang sudah jalan dan bisa diakses publik, sementara unit systemd resminya masih crash-loop. Gue lagi beresin biar stabil juga, bukan cuma “bisa kebuka”.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "crash-loop",
+        "assistant",
+        "gue",
+        "udah",
+        "bikin",
+        "akses",
+        "publiknya"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:165:165": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:165:165",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 165,
+      "endLine": 165,
+      "source": "memory",
+      "snippet": "Assistant: Gue ketemu akar masalahnya. Yang sehat itu justru **user systemd service** `openclaw-gateway.service`, sedangkan yang crash-loop itu **system service lama** `openclaw.service`. Jadi gue rapihin yang dobel ini biar gak tabrakan.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "openclaw-gateway.service",
+        "crash-loop",
+        "openclaw.service",
+        "assistant",
+        "gue",
+        "ketemu",
+        "akar"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:166:166": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:166:166",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 166,
+      "endLine": 166,
+      "source": "memory",
+      "snippet": "Assistant: Beres. Sekarang OpenClaw lo sudah: - **jalan langsung dari VPS**, bukan bergantung ke Tailscale - **bisa diakses publik** di **`http://43.156.181.204:18789`** - **port 18789 udah gue buka dan persist** di firewall host - **Tailscale mode udah dimatiin** - service lama",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "43.156.181.204",
+        "assistant",
+        "beres",
+        "sekarang",
+        "openclaw",
+        "sudah",
+        "jalan",
+        "langsung"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:167:167": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:167:167",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 167,
+      "endLine": 167,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) System: [2026-04-23 12:55:11 GMT+8] WhatsApp gateway connected as +6285124739718. Oke sudah ? --- Queued #2 (from Reandy) kabarin ya bro kalau udah",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy",
+        "reandy"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:168:168": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:168:168",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 168,
+      "endLine": 168,
+      "source": "memory",
+      "snippet": "Assistant: Udah bro, **beres**. Sekarang: - OpenClaw **jalan dari VPS langsung** - **gak tergantung Tailscale** - akses publiknya udah hidup di **http://43.156.181.204:18789** - service yang crash-loop tadi juga udah gue rapihin Kalau mau, next gue bisa lanjut **hardening biar le",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "43.156.181.204",
+        "crash-loop",
+        "assistant",
+        "udah",
+        "bro",
+        "beres",
+        "sekarang",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:169:169": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:169:169",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 169,
+      "endLine": 169,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) System (untrusted): [2026-04-23 12:56:54 GMT+8] Exec completed (keen-mis, code 0) :: ─────────────────────────────────┴────────┴─────────┴──────────────┴────────────────────────────────┘ FAQ: https://docs.op",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "keen-mis",
+        "docs.op",
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:170:170": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:170:170",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 170,
+      "endLine": 170,
+      "source": "memory",
+      "snippet": "Assistant: Iya, **udah kelar**. Coba akses aja sekarang ke: **http://43.156.181.204:18789** Kalau mau, kirim screenshot kalau ada yang masih aneh, nanti gue cek lagi cepat.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "43.156.181.204",
+        "assistant",
+        "iya",
+        "udah",
+        "kelar",
+        "coba",
+        "akses",
+        "aja"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:171:171": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:171:171",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 171,
+      "endLine": 171,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 13:02:37 GMT+8] WhatsApp gateway disconnected (status 408) System: [2026-04-23 13:02:51 GMT+8] WhatsApp gateway connected as +6285124739718. Oke coba test dulu ya lo masih bisa bales ga",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status",
+        "connected"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:172:172": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:172:172",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 172,
+      "endLine": 172,
+      "source": "memory",
+      "snippet": "Assistant: Bisa bro, gue masih bisa bales. WhatsApp tadi sempet disconnect bentar, tapi **udah connect lagi jam 13:02:51 WIB**.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "bisa",
+        "bro",
+        "gue",
+        "masih",
+        "bales",
+        "whatsapp",
+        "tadi"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:173:173": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:173:173",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 173,
+      "endLine": 173,
+      "source": "memory",
+      "snippet": "User: masih tergantung tailscale bro",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "masih",
+        "tergantung",
+        "tailscale",
+        "bro"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:174:174": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:174:174",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 174,
+      "endLine": 174,
+      "source": "memory",
+      "snippet": "Assistant: Bukan bro, **sekarang udah gak tergantung Tailscale**. Barusan gue cek: - **Tailscale: off** - gateway listen di **`0.0.0.0:18789`** - service aktif: **`openclaw-gateway.service`** - akses publik tetap lewat **`43.156.181.204:18789`** Kalau yang bikin keliatan “masih t",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "0.0.0.0",
+        "openclaw-gateway.service",
+        "43.156.181.204",
+        "assistant",
+        "bukan",
+        "bro",
+        "sekarang"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:175:175": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:175:175",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 175,
+      "endLine": 175,
+      "source": "memory",
+      "snippet": "Assistant: Oke bro, ini **3 opsi rewrite** (tanpa “Saya Reandy”), lebih “narik” buat Threads: **Opsi A (lebih nyentil + relevan ke B2B)** Dokumentasi event itu bukan “biar ada foto”. Itu bukti yang bikin orang percaya. Yang sering kejadian: - event kelar - foto numpuk di Drive -",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "oke",
+        "bro",
+        "ini",
+        "opsi",
+        "rewrite",
+        "tanpa",
+        "saya"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:176:176": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:176:176",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 176,
+      "endLine": 176,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 16:13:30 GMT+8] WhatsApp gateway disconnected (status 499) System: [2026-04-23 16:13:33 GMT+8] WhatsApp gateway connected as +6285124739718. Opsi C boleh tapi buat lebih ke storytelling dong. Tapi jangan lebay ya",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status",
+        "connected"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:177:177": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:177:177",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 177,
+      "endLine": 177,
+      "source": "memory",
+      "snippet": "Assistant: Opsi C (lebih storytelling, tetap kalem): Hari itu acaranya rame. Lampu rapi, panggung beres, orang-orang ketawa, networking jalan. Besoknya? Sunyi. Bukan karena eventnya gagal, tapi karena semua “momen penting” berhenti di folder. Yang sering bikin sayang itu bukan ju",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "network",
+        "orang-orang",
+        "assistant",
+        "opsi",
+        "lebih",
+        "storytelling",
+        "tetap",
+        "kalem"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:178:178": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:178:178",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 178,
+      "endLine": 178,
+      "source": "memory",
+      "snippet": "User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /root/.openclaw/workspace/HEARTBEAT.md (exact case). Do n",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "heartbeat-ok",
+        "openclaw/workspace/heartbeat.md",
+        "user",
+        "read",
+        "exists",
+        "context",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:179:179": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:179:179",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 179,
+      "endLine": 179,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:180:180": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:180:180",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 180,
+      "endLine": 180,
+      "source": "memory",
+      "snippet": "User: terlalu lebay sih bahasanya. atau kamu bisa research dulu nggak untuk copywrittingnya yang membuat enggmentny jauh lebih tinggi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "terlalu",
+        "lebay",
+        "sih",
+        "bahasanya",
+        "atau",
+        "kamu",
+        "bisa"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:181:181": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:181:181",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 181,
+      "endLine": 181,
+      "source": "memory",
+      "snippet": "Assistant: Ini hasil riset yang paling “ngaruh” buat naikin engagement (tanpa bahasa lebay), khususnya di **Threads**: 1) **Threads nge-reward percakapan, bukan likes.** Data Buffer nunjukin: kalau lo **balesin komentar**, engagement post naik sekitar **+42%** di Threads (terting",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "nge-reward",
+        "assistant",
+        "ini",
+        "hasil",
+        "riset",
+        "yang",
+        "paling",
+        "ngaruh"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:182:182": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:182:182",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 182,
+      "endLine": 182,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 16:43:33 GMT+8] WhatsApp gateway disconnected (status 499) System: [2026-04-23 16:43:37 GMT+8] WhatsApp gateway connected as +6285124739718. Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from pri",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "heartbeat.md",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:183:183": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:183:183",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 183,
+      "endLine": 183,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:184:184": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:184:184",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 184,
+      "endLine": 184,
+      "source": "memory",
+      "snippet": "User: Kamu research dari content yang ada di threads aja coba",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "kamu",
+        "research",
+        "dari",
+        "content",
+        "yang",
+        "ada",
+        "threads"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:185:185": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:185:185",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 185,
+      "endLine": 185,
+      "source": "memory",
+      "snippet": "Assistant: Gue coba riset yang beneran “Threads-native” (format yang nongol dan berulang di postingan Threads yang sering di-embed orang), tapi dari sini gue **nggak bisa buka langsung halaman post Threads** (threads.net/threads.com keblok), jadi gue pakai **teks/cuplikannya yang",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "threads-native",
+        "di-embed",
+        "threads.net/threads.com",
+        "teks/cuplikannya",
+        "assistant",
+        "gue",
+        "coba",
+        "riset"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:186:186": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:186:186",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 186,
+      "endLine": 186,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 17:13:37 GMT+8] WhatsApp gateway disconnected (status 499) System: [2026-04-23 17:13:41 GMT+8] WhatsApp gateway connected as +6285124739718. Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from pri",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "heartbeat.md",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-25.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-25.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-25.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [cron:2d75e2b2-6825-491d-b748-2a2516328530 memory-maintenance-daily] Maintenance harian memory. Langkah: 1) Buka 1–2 file terakhir di /root/.openclaw/workspace/memory/YYYY-MM-DD.md. 2) Kalau ada keputusan penting / preferensi baru / setup yang stabil, ringkas dan tambahkan",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "0ebfd40e58af"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "memory-maintenance-daily",
+        "user",
+        "cron",
+        "2d75e2b2",
+        "491d",
+        "b748",
+        "2a2516328530",
+        "maintenance"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-25.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-25.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-25.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "User: [cron:2d75e2b2-6825-491d-b748-2a2516328530 memory-maintenance-daily] Maintenance harian memory. Langkah: 1) Buka 1–2 file terakhir di /root/.openclaw/workspace/memory/YYYY-MM-DD.md. 2) Kalau ada keputusan penting / preferensi baru / setup yang stabil, ringkas dan tambahkan",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "0ebfd40e58af"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "memory-maintenance-daily",
+        "user",
+        "cron",
+        "2d75e2b2",
+        "491d",
+        "b748",
+        "2a2516328530",
+        "maintenance"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-25.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-25.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-25.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: Saya menambahkan 4 catatan durable ke `MEMORY.md` (promosi 2026-04-24): preferensi gaya copy Threads yang lebih “native” (hindari template kaku), aturan CTA untuk Threads+Instagram yang mengarah ke website `https://whitepaper.site` (bukan komen/DM/drop), requirement “v",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "0ebfd40e58af"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "whitepaper.site",
+        "komen/dm/drop",
+        "assistant",
+        "saya",
+        "menambahkan",
+        "catatan",
+        "durable"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-25.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-25.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-25.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: [cron:50c916dc-2d33-4972-bbc6-faeb2c3ff00f daily-github-backup-all-files] Lakukan backup harian workspace ke GitHub. Langkah: 1) Masuk ke /root/.openclaw/workspace. 2) Validasi ini repo git dan remote origin tersedia. Jika tidak, hentikan dan laporkan error yang jelas. 3) A",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "0ebfd40e58af"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "backup",
+        "daily-github-backup-all-files",
+        "openclaw/workspace",
+        "user",
+        "cron",
+        "50c916dc",
+        "2d33",
+        "bbc6"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-25.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-25.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-25.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "User: [cron:50c916dc-2d33-4972-bbc6-faeb2c3ff00f daily-github-backup-all-files] Lakukan backup harian workspace ke GitHub. Langkah: 1) Masuk ke /root/.openclaw/workspace. 2) Validasi ini repo git dan remote origin tersedia. Jika tidak, hentikan dan laporkan error yang jelas. 3) A",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "0ebfd40e58af"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "backup",
+        "daily-github-backup-all-files",
+        "openclaw/workspace",
+        "user",
+        "cron",
+        "50c916dc",
+        "2d33",
+        "bbc6"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-25.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-25.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-25.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: OK: backup berhasil. Branch: master Commit: e530537 Origin: https://github.com/Reandy99/Openclaw-whitepaper.git Push: sukses",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "0ebfd40e58af"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "backup",
+        "assistant",
+        "berhasil",
+        "branch",
+        "master",
+        "commit",
+        "e530537",
+        "origin"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:134:134": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:134:134",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 134,
+      "endLine": 134,
+      "source": "memory",
+      "snippet": "Assistant: Sip, sudah aku pasang. 1) **pip3**: sudah ada (pip **23.3.1**) - cek: `pip3 --version` atau `python3 -m pip --version` 2) **python venv**: sudah ada (sebelumnya juga sudah OK) - cek: `python3 -m venv --help` 3) **utilitas dasar** - `curl`: sudah ada - `wget`: sudah ada",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "23.3.1",
+        "assistant",
+        "sip",
+        "sudah",
+        "aku",
+        "pasang",
+        "pip3",
+        "ada"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:135:135": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:135:135",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 135,
+      "endLine": 135,
+      "source": "memory",
+      "snippet": "User: Oke mantap, apa bedanya aku chat di telegram ini dengan di whatsapp ya ??",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "oke",
+        "mantap",
+        "apa",
+        "bedanya",
+        "aku",
+        "chat",
+        "telegram"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:136:136": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:136:136",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 136,
+      "endLine": 136,
+      "source": "memory",
+      "snippet": "User: Oke mantap, apa bedanya aku chat di telegram ini dengan di whatsapp ya ??",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "oke",
+        "mantap",
+        "apa",
+        "bedanya",
+        "aku",
+        "chat",
+        "telegram"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:137:137": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:137:137",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 137,
+      "endLine": 137,
+      "source": "memory",
+      "snippet": "Assistant: Secara “otak” sama, dua-duanya masuk ke agent yang sama (OpenClaw main) dengan tool dan akses server yang sama. Bedanya ada di layer channel: - **Fitur chat**: Telegram lebih lengkap (bisa edit/delete message, topic di grup, inline interaction lebih enak). WhatsApp leb",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "dua-duanya",
+        "edit/delete",
+        "assistant",
+        "secara",
+        "otak",
+        "sama",
+        "dua",
+        "duanya"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:138:138": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:138:138",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 138,
+      "endLine": 138,
+      "source": "memory",
+      "snippet": "User: cek Vps hari ini bagimana kondisinya ?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "cek",
+        "vps",
+        "hari",
+        "ini",
+        "bagimana",
+        "kondisinya"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:139:139": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:139:139",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 139,
+      "endLine": 139,
+      "source": "memory",
+      "snippet": "User: cek Vps hari ini bagimana kondisinya ?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "cek",
+        "vps",
+        "hari",
+        "ini",
+        "bagimana",
+        "kondisinya"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:140:140": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:140:140",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 140,
+      "endLine": 140,
+      "source": "memory",
+      "snippet": "Assistant: Aku cek barusan (2026-04-22 15:09 UTC / 22:09 WIB), kondisinya: - Uptime 13 hari, load average 3.23 (normal untuk VPS, tapi lagi ada aktivitas). - RAM 7.4 GiB, terpakai 3.6 GiB, available 3.8 GiB, swap tidak ada. - Disk / 80G, terpakai 26G (32%), aman. Service yang err",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "3.23",
+        "7.4",
+        "3.6",
+        "3.8",
+        "assistant",
+        "aku",
+        "cek",
+        "barusan"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:141:141": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:141:141",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 141,
+      "endLine": 141,
+      "source": "memory",
+      "snippet": "User: System (untrusted): [2026-04-22 23:11:38 GMT+8] Exec completed (dawn-sea, code 0) :: (default) │ │ Update │ available · pnpm · npm update 2026.4.21 │ └──────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────… An async",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "dawn-sea",
+        "2026.4.21",
+        "user",
+        "system",
+        "untrusted",
+        "gmt",
+        "exec",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:142:142": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:142:142",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 142,
+      "endLine": 142,
+      "source": "memory",
+      "snippet": "User: System (untrusted): [2026-04-22 23:11:38 GMT+8] Exec completed (dawn-sea, code 0) :: (default) │ │ Update │ available · pnpm · npm update 2026.4.21 │ └──────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────… An async",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "dawn-sea",
+        "2026.4.21",
+        "user",
+        "system",
+        "untrusted",
+        "gmt",
+        "exec",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:143:143": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:143:143",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 143,
+      "endLine": 143,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:144:144": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:144:144",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 144,
+      "endLine": 144,
+      "source": "memory",
+      "snippet": "User: kamu minta quanxi yang check VPS ?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "kamu",
+        "minta",
+        "quanxi",
+        "yang",
+        "check",
+        "vps"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:145:145": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:145:145",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 145,
+      "endLine": 145,
+      "source": "memory",
+      "snippet": "User: kamu minta quanxi yang check VPS ?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "kamu",
+        "minta",
+        "quanxi",
+        "yang",
+        "check",
+        "vps"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:146:146": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:146:146",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 146,
+      "endLine": 146,
+      "source": "memory",
+      "snippet": "User: kasih aku masing-masing draf content postingan dari instagram, threads dan linkedin. aku mau audit",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "masing-masing",
+        "user",
+        "kasih",
+        "aku",
+        "masing",
+        "draf",
+        "content",
+        "postingan"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:147:147": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:147:147",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 147,
+      "endLine": 147,
+      "source": "memory",
+      "snippet": "User: Note: The previous agent run was aborted by the user. Resume carefully or ask for clarification. 1 saja ya",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "the",
+        "previous",
+        "run",
+        "was",
+        "aborted",
+        "resume",
+        "carefully"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:148:148": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:148:148",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 148,
+      "endLine": 148,
+      "source": "memory",
+      "snippet": "Assistant: Ini **1 draft masing-masing** (diambil dari schedule Repliz Whitepaper **Mei 2026 (WIB)**): ## Instagram - Schedule ID: `69e79c5c84ebdfba1577f09e` - Jadwal: **2026-05-01 10:30 WIB** (pending) - Media: - https://ocindonesia.my.id/media/whitepaper/20260420T064800Z-DSC096",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "masing-masing",
+        "assistant",
+        "ini",
+        "draft",
+        "masing",
+        "diambil",
+        "dari",
+        "schedule"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:149:149": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:149:149",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 149,
+      "endLine": 149,
+      "source": "memory",
+      "snippet": "User: kasih aku masing-masing 1 saja draf content postingan dari instagram, threads dan linkedin. aku mau audit",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "masing-masing",
+        "user",
+        "kasih",
+        "aku",
+        "masing",
+        "saja",
+        "draf",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:150:150": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:150:150",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 150,
+      "endLine": 150,
+      "source": "memory",
+      "snippet": "Assistant: Berikut **masing-masing 1 draft** (Whitepaper, **Mei 2026 WIB**) buat kamu audit: ## Instagram - Schedule ID: `69e79c5c84ebdfba1577f09e` - Jadwal: **2026-05-01 10:30 WIB** - Media: `https://ocindonesia.my.id/media/whitepaper/20260420T064800Z-DSC09664.jpg` - Caption: ``",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "masing-masing",
+        "assistant",
+        "berikut",
+        "masing",
+        "draft",
+        "whitepaper",
+        "mei",
+        "wib"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:151:151": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:151:151",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 151,
+      "endLine": 151,
+      "source": "memory",
+      "snippet": "User: Oke aku mau bahas dari instagram content yang kamu buat. kenapa kamu membuat caption seperti itu ?? bedasarkan apa kamu buat ?? jawab singkat aja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "oke",
+        "aku",
+        "mau",
+        "bahas",
+        "dari",
+        "instagram",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:152:152": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:152:152",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 152,
+      "endLine": 152,
+      "source": "memory",
+      "snippet": "User: Oke aku mau bahas dari instagram content yang kamu buat. kenapa kamu membuat caption seperti itu ?? bedasarkan apa kamu buat ?? jawab singkat aja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "oke",
+        "aku",
+        "mau",
+        "bahas",
+        "dari",
+        "instagram",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:153:153": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:153:153",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 153,
+      "endLine": 153,
+      "source": "memory",
+      "snippet": "User: Write any lasting notes to memory/2026-04-21.md; reply with NO_REPLY if nothing to store. Store durable memories only in memory/2026-04-21.md (create memory/ if needed). If memory/2026-04-21.md already exists, APPEND new content only and do not overwrite existing entries. T",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "memory/2026-04-21.md",
+        "no-reply",
+        "user",
+        "write",
+        "any",
+        "lasting",
+        "reply",
+        "nothing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:154:154": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:154:154",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 154,
+      "endLine": 154,
+      "source": "memory",
+      "snippet": "Assistant: Karena objective-nya buat **trust + positioning Whitepaper** lewat konten event. Basis gue: - **Hook + framing**: “premium” dan “1 frame yang konteksnya kebaca” biar kebaca value-nya cepat. - **Kriteria visual yang konkret** (stage, lighting, crowd, branding) biar keli",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "objective-nya",
+        "value-nya",
+        "assistant",
+        "karena",
+        "objective",
+        "nya",
+        "buat",
+        "trust"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:155:155": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:155:155",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 155,
+      "endLine": 155,
+      "source": "memory",
+      "snippet": "User: Oke aku mau bahas dari instagram content yang kamu buat. kenapa kamu membuat caption seperti itu ?? bedasarkan apa kamu buat ?? jawab singkat aja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "oke",
+        "aku",
+        "mau",
+        "bahas",
+        "dari",
+        "instagram",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:156:156": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:156:156",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 156,
+      "endLine": 156,
+      "source": "memory",
+      "snippet": "Assistant: Gue bikin caption itu buat nge-**positioning Whitepaper** sebagai vendor yang ngerti standar “event content yang jualan”, bukan sekadar foto dokumentasi. Basisnya: - **Value utama**: 1 foto harus “konteks kebaca” (stage, lighting, crowd, branding). - **Trust-building**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "trust-building",
+        "assistant",
+        "gue",
+        "bikin",
+        "caption",
+        "itu",
+        "buat",
+        "nge"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-22.txt:157:157": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:157:157",
+      "path": "memory/.dreams/session-corpus/2026-04-22.txt",
+      "startLine": 157,
+      "endLine": 157,
+      "source": "memory",
+      "snippet": "User: coba deh lo research dulu dalam mempromosikan branding brand services photo & video itu captionnya harus seperti apa di instagram ? lalu lo sesuaikan dengan context photo yang gua punya baru lo buat",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "a1f7c25a87a0"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "coba",
+        "deh",
+        "research",
+        "dulu",
+        "dalam",
+        "mempromosikan",
+        "branding"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:187:187": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:187:187",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 187,
+      "endLine": 187,
+      "source": "memory",
+      "snippet": "Assistant: Siap, noted. Ke depan kamu nggak perlu sebut agent, aku yang **pilihin agent paling cocok** otomatis, lalu aku **QC**. Untuk screenshot yang kamu kirim: itu memang **foto yang sama, cuma beda crop**. Aku sudah **audit ulang schedule di Repliz**, dan **reschedule ulang*",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "siap",
+        "noted",
+        "depan",
+        "kamu",
+        "nggak",
+        "perlu",
+        "sebut"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:188:188": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:188:188",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 188,
+      "endLine": 188,
+      "source": "memory",
+      "snippet": "User: System (untrusted): [2026-04-23 19:17:34 GMT+8] Exec completed (kind-har, code 0) :: media/whitepaper/REN03378.jpg ERR HTTPSConnectionPool(host='ocindonesia.my.id', port=443): Max retries exceeded with url: /media/whitepaper/apca-event-1.jpg (Caused by NewConnecti… System (",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "kind-har",
+        "media/whitepaper/ren03378.jpg",
+        "ocindonesia.my.id",
+        "user",
+        "system",
+        "untrusted",
+        "gmt",
+        "exec"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:189:189": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:189:189",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 189,
+      "endLine": 189,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:190:190": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:190:190",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 190,
+      "endLine": 190,
+      "source": "memory",
+      "snippet": "User: Write any lasting notes to memory/2026-04-23.md; reply with NO_REPLY if nothing to store. Store durable memories only in memory/2026-04-23.md (create memory/ if needed). If memory/2026-04-23.md already exists, APPEND new content only and do not overwrite existing entries. T",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "memory/2026-04-23.md",
+        "no-reply",
+        "user",
+        "write",
+        "any",
+        "lasting",
+        "reply",
+        "nothing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:191:191": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:191:191",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 191,
+      "endLine": 191,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:192:192": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:192:192",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 192,
+      "endLine": 192,
+      "source": "memory",
+      "snippet": "User: tambahin ke semua post LinkedIn yang sudah terjadwa",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "tambahin",
+        "semua",
+        "post",
+        "linkedin",
+        "yang",
+        "sudah",
+        "terjadwa"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:193:193": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:193:193",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 193,
+      "endLine": 193,
+      "source": "memory",
+      "snippet": "Assistant: Sudah ✅ Aku sudah tambahin link **`https://whitepaper.site`** ke **semua post LinkedIn Whitepaper yang statusnya masih scheduled/pending** (total **31 post**, range **24 Apr–31 Mei 2026**). Catatan: ada **1 post yang sudah “success” (sudah tayang)**, itu tidak aku ubah",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "whitepaper.site",
+        "scheduled/pending",
+        "assistant",
+        "sudah",
+        "aku",
+        "tambahin",
+        "link",
+        "https"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:194:194": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:194:194",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 194,
+      "endLine": 194,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 20:11:57 GMT+8] WhatsApp gateway disconnected (status 499) System: [2026-04-23 20:12:02 GMT+8] WhatsApp gateway connected as +6285124739718. Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from pri",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "heartbeat.md",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:195:195": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:195:195",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 195,
+      "endLine": 195,
+      "source": "memory",
+      "snippet": "Assistant: Pending (optional): - nginx `server_name` warning cleanup - memory provider setup",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "server-name",
+        "assistant",
+        "pending",
+        "optional",
+        "nginx",
+        "warning",
+        "cleanup",
+        "provider"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:196:196": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:196:196",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 196,
+      "endLine": 196,
+      "source": "memory",
+      "snippet": "User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /root/.openclaw/workspace/HEARTBEAT.md (exact case). Do n",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "heartbeat-ok",
+        "openclaw/workspace/heartbeat.md",
+        "user",
+        "read",
+        "exists",
+        "context",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:197:197": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:197:197",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 197,
+      "endLine": 197,
+      "source": "memory",
+      "snippet": "Assistant: Pending (optional): - nginx `server_name` warning cleanup - memory provider setup",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "server-name",
+        "assistant",
+        "pending",
+        "optional",
+        "nginx",
+        "warning",
+        "cleanup",
+        "provider"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:198:198": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:198:198",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 198,
+      "endLine": 198,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 20:42:02 GMT+8] WhatsApp gateway disconnected (status 499) System: [2026-04-23 20:42:06 GMT+8] WhatsApp gateway connected as +6285124739718. Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from pri",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "heartbeat.md",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:199:199": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:199:199",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 199,
+      "endLine": 199,
+      "source": "memory",
+      "snippet": "Assistant: Siap, noted. Ke depan kamu nggak perlu sebut agent, aku yang **pilihin agent paling cocok** otomatis, lalu aku **QC**. Untuk screenshot yang kamu kirim: itu memang **foto yang sama, cuma beda crop**. Aku sudah **audit ulang schedule di Repliz**, dan **reschedule ulang*",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "siap",
+        "noted",
+        "depan",
+        "kamu",
+        "nggak",
+        "perlu",
+        "sebut"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:200:200": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:200:200",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 200,
+      "endLine": 200,
+      "source": "memory",
+      "snippet": "User: System (untrusted): [2026-04-23 19:17:34 GMT+8] Exec completed (kind-har, code 0) :: media/whitepaper/REN03378.jpg ERR HTTPSConnectionPool(host='ocindonesia.my.id', port=443): Max retries exceeded with url: /media/whitepaper/apca-event-1.jpg (Caused by NewConnecti… System (",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "kind-har",
+        "media/whitepaper/ren03378.jpg",
+        "ocindonesia.my.id",
+        "user",
+        "system",
+        "untrusted",
+        "gmt",
+        "exec"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:201:201": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:201:201",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 201,
+      "endLine": 201,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:202:202": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:202:202",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 202,
+      "endLine": 202,
+      "source": "memory",
+      "snippet": "User: Write any lasting notes to memory/2026-04-23.md; reply with NO_REPLY if nothing to store. Store durable memories only in memory/2026-04-23.md (create memory/ if needed). If memory/2026-04-23.md already exists, APPEND new content only and do not overwrite existing entries. T",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "memory/2026-04-23.md",
+        "no-reply",
+        "user",
+        "write",
+        "any",
+        "lasting",
+        "reply",
+        "nothing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:203:203": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:203:203",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 203,
+      "endLine": 203,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:204:204": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:204:204",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 204,
+      "endLine": 204,
+      "source": "memory",
+      "snippet": "User: tambahin ke semua post LinkedIn yang sudah terjadwa",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "tambahin",
+        "semua",
+        "post",
+        "linkedin",
+        "yang",
+        "sudah",
+        "terjadwa"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:205:205": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:205:205",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 205,
+      "endLine": 205,
+      "source": "memory",
+      "snippet": "Assistant: Sudah ✅ Aku sudah tambahin link **`https://whitepaper.site`** ke **semua post LinkedIn Whitepaper yang statusnya masih scheduled/pending** (total **31 post**, range **24 Apr–31 Mei 2026**). Catatan: ada **1 post yang sudah “success” (sudah tayang)**, itu tidak aku ubah",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "whitepaper.site",
+        "scheduled/pending",
+        "assistant",
+        "sudah",
+        "aku",
+        "tambahin",
+        "link",
+        "https"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:206:206": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:206:206",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 206,
+      "endLine": 206,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 20:11:57 GMT+8] WhatsApp gateway disconnected (status 499) System: [2026-04-23 20:12:02 GMT+8] WhatsApp gateway connected as +6285124739718. Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from pri",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "heartbeat.md",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:207:207": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:207:207",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 207,
+      "endLine": 207,
+      "source": "memory",
+      "snippet": "Assistant: Pending (optional): - nginx `server_name` warning cleanup - memory provider setup",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "server-name",
+        "assistant",
+        "pending",
+        "optional",
+        "nginx",
+        "warning",
+        "cleanup",
+        "provider"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:208:208": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:208:208",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 208,
+      "endLine": 208,
+      "source": "memory",
+      "snippet": "User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /root/.openclaw/workspace/HEARTBEAT.md (exact case). Do n",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "heartbeat-ok",
+        "openclaw/workspace/heartbeat.md",
+        "user",
+        "read",
+        "exists",
+        "context",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:209:209": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:209:209",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 209,
+      "endLine": 209,
+      "source": "memory",
+      "snippet": "Assistant: Pending (optional): - nginx `server_name` warning cleanup - memory provider setup",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "server-name",
+        "assistant",
+        "pending",
+        "optional",
+        "nginx",
+        "warning",
+        "cleanup",
+        "provider"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:210:210": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:210:210",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 210,
+      "endLine": 210,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 20:42:02 GMT+8] WhatsApp gateway disconnected (status 499) System: [2026-04-23 20:42:06 GMT+8] WhatsApp gateway connected as +6285124739718. Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from pri",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "heartbeat.md",
+        "user",
+        "system",
+        "gmt",
+        "whatsapp",
+        "disconnected",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:211:211": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:211:211",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 211,
+      "endLine": 211,
+      "source": "memory",
+      "snippet": "User: System (untrusted): [2026-04-23 13:04:09 GMT+8] Exec completed (tidy-cru, code 0) :: ll Need to debug live? openclaw logs --follow Need to test channels? openclaw status --deep --- active --- tcp LISTEN 0 511 0.0.0.0:18789 0.0.0.0:* users:((\"openclaw-gatewa\",pid=4… An async",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "tidy-cru",
+        "0.0.0.0",
+        "openclaw-gatewa",
+        "user",
+        "system",
+        "untrusted",
+        "gmt",
+        "exec"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:212:212": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:212:212",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 212,
+      "endLine": 212,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:213:213": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:213:213",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 213,
+      "endLine": 213,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) gua matiin itu tadi lo masih gak bisa jawab. coba cek lagi bro",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy",
+        "reandy",
+        "gua"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:214:214": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:214:214",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 214,
+      "endLine": 214,
+      "source": "memory",
+      "snippet": "Assistant: Gue cek live sekarang, termasuk service gateway, tailscaled, dan log 20 menit terakhir buat lihat kenapa tadi sempat gak ngebales.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "assistant",
+        "gue",
+        "cek",
+        "live",
+        "sekarang",
+        "termasuk",
+        "service"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:215:215": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:215:215",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 215,
+      "endLine": 215,
+      "source": "memory",
+      "snippet": "Assistant: Iya, gue udah ketemu penyebabnya. **Bukan karena masih tergantung Tailscale.** Yang kejadian itu: - **Tailscale memang off** - gateway **tetap up** di `0.0.0.0:18789` - tapi pas browser lo nyoba buka **`http://43.156.181.204:18789`** di **13:01:50 WIB** dan **13:02:34",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "0.0.0.0",
+        "43.156.181.204",
+        "assistant",
+        "iya",
+        "gue",
+        "udah",
+        "ketemu"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:216:216": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:216:216",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 216,
+      "endLine": 216,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) System: [2026-04-23 13:05:20 GMT+8] WhatsApp gateway disconnected (status 408) oke udah gua maitin nih --- Queued #2 (from Reandy) kok lo masih blom bisa jawab ?? --- Queued #3 (from Reandy) System: [2026-04",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "2026-04",
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:217:217": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:217:217",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 217,
+      "endLine": 217,
+      "source": "memory",
+      "snippet": "Assistant: Gue cek kenapa pas Tailscale lo matiin masih kerasa putus. Kemungkinan besar bukan bind-nya, tapi **Control UI nolak koneksi HTTP publik** karena minta secure context. Gue mau longgarin UI auth-nya buat akses langsung via IP VPS dulu, terus gue test lagi.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "bind-nya",
+        "auth-nya",
+        "assistant",
+        "gue",
+        "cek",
+        "kenapa",
+        "pas",
+        "tailscale"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:218:218": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:218:218",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 218,
+      "endLine": 218,
+      "source": "memory",
+      "snippet": "Assistant: Gue udah dapet akar masalahnya, bukan Tailscale. Yang bikin UI publik masih macet itu **device identity check** buat Control UI di HTTP biasa. Gue aktifin bypass yang memang khusus buat kasus ini, terus gue restart dan test langsung.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "gue",
+        "udah",
+        "dapet",
+        "akar",
+        "masalahnya",
+        "bukan",
+        "tailscale"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:219:219": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:219:219",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 219,
+      "endLine": 219,
+      "source": "memory",
+      "snippet": "Assistant: Patch normal ditolak karena ini flag “dangerous”, jadi gue pakai jalur manual sesuai yang lo minta. Habis itu gue restart dan tes lagi koneksi UI publiknya.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "patch",
+        "normal",
+        "ditolak",
+        "karena",
+        "ini",
+        "flag",
+        "dangerous"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:220:220": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:220:220",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 220,
+      "endLine": 220,
+      "source": "memory",
+      "snippet": "Assistant: Nah, gue udah patch lagi bro. Yang gue lakuin barusan: - **tetap non-Tailscale** - **UI publik gue longgarin** supaya bisa dipakai langsung lewat **IP VPS + HTTP** - gateway udah load config itu, jadi sekarang harusnya gak ke-block lagi gara-gara secure context/device",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "non-tailscale",
+        "ke-block",
+        "gara-gara",
+        "context/device",
+        "assistant",
+        "nah",
+        "gue"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:221:221": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:221:221",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 221,
+      "endLine": 221,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) ya sesuai rekomendasi lo aja bro",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy",
+        "reandy",
+        "sesuai"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:222:222": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:222:222",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 222,
+      "endLine": 222,
+      "source": "memory",
+      "snippet": "Assistant: Gue ikutin rekomendasi yang aman, gue cek dulu apa server ini udah punya domain/reverse proxy/cert yang bisa langsung gue pakai buat HTTPS.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "domain/reverse",
+        "proxy/cert",
+        "assistant",
+        "gue",
+        "ikutin",
+        "rekomendasi",
+        "yang",
+        "aman"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:223:223": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:223:223",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 223,
+      "endLine": 223,
+      "source": "memory",
+      "snippet": "User: System (untrusted): [2026-04-23 13:04:09 GMT+8] Exec completed (tidy-cru, code 0) :: ll Need to debug live? openclaw logs --follow Need to test channels? openclaw status --deep --- active --- tcp LISTEN 0 511 0.0.0.0:18789 0.0.0.0:* users:((\"openclaw-gatewa\",pid=4… An async",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "tidy-cru",
+        "0.0.0.0",
+        "openclaw-gatewa",
+        "user",
+        "system",
+        "untrusted",
+        "gmt",
+        "exec"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:224:224": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:224:224",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 224,
+      "endLine": 224,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:225:225": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:225:225",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 225,
+      "endLine": 225,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) gua matiin itu tadi lo masih gak bisa jawab. coba cek lagi bro",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy",
+        "reandy",
+        "gua"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:226:226": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:226:226",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 226,
+      "endLine": 226,
+      "source": "memory",
+      "snippet": "Assistant: Gue cek live sekarang, termasuk service gateway, tailscaled, dan log 20 menit terakhir buat lihat kenapa tadi sempat gak ngebales.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "assistant",
+        "gue",
+        "cek",
+        "live",
+        "sekarang",
+        "termasuk",
+        "service"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:227:227": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:227:227",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 227,
+      "endLine": 227,
+      "source": "memory",
+      "snippet": "Assistant: Iya, gue udah ketemu penyebabnya. **Bukan karena masih tergantung Tailscale.** Yang kejadian itu: - **Tailscale memang off** - gateway **tetap up** di `0.0.0.0:18789` - tapi pas browser lo nyoba buka **`http://43.156.181.204:18789`** di **13:01:50 WIB** dan **13:02:34",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "0.0.0.0",
+        "43.156.181.204",
+        "assistant",
+        "iya",
+        "gue",
+        "udah",
+        "ketemu"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:228:228": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:228:228",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 228,
+      "endLine": 228,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) System: [2026-04-23 13:05:20 GMT+8] WhatsApp gateway disconnected (status 408) oke udah gua maitin nih --- Queued #2 (from Reandy) kok lo masih blom bisa jawab ?? --- Queued #3 (from Reandy) System: [2026-04",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "2026-04",
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:229:229": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:229:229",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 229,
+      "endLine": 229,
+      "source": "memory",
+      "snippet": "Assistant: Gue cek kenapa pas Tailscale lo matiin masih kerasa putus. Kemungkinan besar bukan bind-nya, tapi **Control UI nolak koneksi HTTP publik** karena minta secure context. Gue mau longgarin UI auth-nya buat akses langsung via IP VPS dulu, terus gue test lagi.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "bind-nya",
+        "auth-nya",
+        "assistant",
+        "gue",
+        "cek",
+        "kenapa",
+        "pas",
+        "tailscale"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:230:230": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:230:230",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 230,
+      "endLine": 230,
+      "source": "memory",
+      "snippet": "Assistant: Gue udah dapet akar masalahnya, bukan Tailscale. Yang bikin UI publik masih macet itu **device identity check** buat Control UI di HTTP biasa. Gue aktifin bypass yang memang khusus buat kasus ini, terus gue restart dan test langsung.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "gue",
+        "udah",
+        "dapet",
+        "akar",
+        "masalahnya",
+        "bukan",
+        "tailscale"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:231:231": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:231:231",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 231,
+      "endLine": 231,
+      "source": "memory",
+      "snippet": "Assistant: Patch normal ditolak karena ini flag “dangerous”, jadi gue pakai jalur manual sesuai yang lo minta. Habis itu gue restart dan tes lagi koneksi UI publiknya.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "patch",
+        "normal",
+        "ditolak",
+        "karena",
+        "ini",
+        "flag",
+        "dangerous"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:232:232": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:232:232",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 232,
+      "endLine": 232,
+      "source": "memory",
+      "snippet": "Assistant: Nah, gue udah patch lagi bro. Yang gue lakuin barusan: - **tetap non-Tailscale** - **UI publik gue longgarin** supaya bisa dipakai langsung lewat **IP VPS + HTTP** - gateway udah load config itu, jadi sekarang harusnya gak ke-block lagi gara-gara secure context/device",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "non-tailscale",
+        "ke-block",
+        "gara-gara",
+        "context/device",
+        "assistant",
+        "nah",
+        "gue"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:233:233": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:233:233",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 233,
+      "endLine": 233,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from Reandy) ya sesuai rekomendasi lo aja bro",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy",
+        "reandy",
+        "sesuai"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:234:234": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:234:234",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 234,
+      "endLine": 234,
+      "source": "memory",
+      "snippet": "Assistant: Gue ikutin rekomendasi yang aman, gue cek dulu apa server ini udah punya domain/reverse proxy/cert yang bisa langsung gue pakai buat HTTPS.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "domain/reverse",
+        "proxy/cert",
+        "assistant",
+        "gue",
+        "ikutin",
+        "rekomendasi",
+        "yang",
+        "aman"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:235:235": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:235:235",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 235,
+      "endLine": 235,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:236:236": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:236:236",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 236,
+      "endLine": 236,
+      "source": "memory",
+      "snippet": "User: kenapa lo sering ke blok ya kalau mau research",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "kenapa",
+        "sering",
+        "blok",
+        "kalau",
+        "mau",
+        "research"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:237:237": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:237:237",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 237,
+      "endLine": 237,
+      "source": "memory",
+      "snippet": "Assistant: Karena banyak platform (terutama **Threads/Meta**) punya **anti-bot + login wall + rate limit** yang agresif. Jadi kalau gue coba akses buat riset secara otomatis, sering kena salah satu ini: - **Wajib login/cookies** (tanpa itu konten dibatesin). - **Deteksi scraping*",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T19:00:00.404Z",
+      "lastRecalledAt": "2026-04-24T19:00:00.404Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-25",
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "threads/meta",
+        "anti-bot",
+        "login/cookies",
+        "assistant",
+        "karena",
+        "banyak",
+        "platform",
+        "terutama"
       ]
     }
   }
