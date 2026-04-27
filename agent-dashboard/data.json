@@ -1,0 +1,139 @@
+{
+  "agents": [
+    {
+      "id": "exel",
+      "name": "Exel",
+      "role": "Main Orchestrator",
+      "statusText": "Active, routing semua task & koordinasi",
+      "emoji": "⚙️",
+      "color": "#fee2e2"
+    },
+    {
+      "id": "quanxi",
+      "name": "Quanxi",
+      "role": "Technical Specialist",
+      "statusText": "Online, handle coding, debugging & infra",
+      "emoji": "🐱",
+      "color": "#dbeafe"
+    },
+    {
+      "id": "doni",
+      "name": "DONI",
+      "role": "Design & Content",
+      "statusText": "Ready, handle konten & social media",
+      "emoji": "🦊",
+      "color": "#fef3c7"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1776078038801",
+      "title": "cek keamanan vps kita dong",
+      "agentId": "quanxi",
+      "status": "done",
+      "createdAt": "2026-04-13T11:00:38.801Z",
+      "updatedAt": "2026-04-13T11:20:39.433Z"
+    },
+    {
+      "id": "1776078755605",
+      "title": "cek schdule di repliz hari ini ada apa aja ya",
+      "agentId": "doni",
+      "status": "done",
+      "createdAt": "2026-04-13T11:12:35.605Z",
+      "updatedAt": "2026-04-13T11:51:04.883Z"
+    },
+    {
+      "id": "1776094726703",
+      "title": "cek jadwal repliz hari ini ada apa aja",
+      "agentId": "quanxi",
+      "status": "in-progress",
+      "createdAt": "2026-04-13T15:38:46.703Z",
+      "updatedAt": "2026-04-13T15:47:09.974Z"
+    }
+  ],
+  "activities": [
+    {
+      "time": "2026-04-13T15:47:09.974Z",
+      "type": "info",
+      "text": "Task 1776094726703 pindah ke IN-PROGRESS"
+    },
+    {
+      "time": "2026-04-13T15:47:08.869Z",
+      "type": "info",
+      "text": "Task 1776094726703 pindah ke TODO"
+    },
+    {
+      "time": "2026-04-13T15:47:06.242Z",
+      "type": "info",
+      "text": "Task 1776094726703 pindah ke IN-PROGRESS"
+    },
+    {
+      "time": "2026-04-13T15:38:46.703Z",
+      "type": "info",
+      "text": "Task baru untuk quanxi: cek jadwal repliz hari ini ada apa aja"
+    },
+    {
+      "time": "2026-04-13T11:51:04.883Z",
+      "type": "info",
+      "text": "Task 1776078755605 pindah ke DONE"
+    },
+    {
+      "time": "2026-04-13T11:51:04.793Z",
+      "type": "info",
+      "agentId": "doni",
+      "text": "DONI gagal cek Repliz: REPLIZ_ACCESS_KEY / REPLIZ_SECRET_KEY belum diset di server, perlu konfigurasi dulu"
+    },
+    {
+      "time": "2026-04-13T11:40:22.733Z",
+      "type": "info",
+      "text": "Task 1776078755605 pindah ke IN-PROGRESS"
+    },
+    {
+      "time": "2026-04-13T11:40:19.723Z",
+      "type": "info",
+      "text": "Task 1776078755605 pindah ke TODO"
+    },
+    {
+      "time": "2026-04-13T11:20:39.446Z",
+      "type": "info",
+      "agentId": "quanxi",
+      "text": "Quanxi selesai cek awal keamanan VPS dan kirim ringkasan ke chat"
+    },
+    {
+      "time": "2026-04-13T11:20:39.433Z",
+      "type": "info",
+      "text": "Task 1776078038801 pindah ke DONE"
+    },
+    {
+      "time": "2026-04-13T11:19:37.557Z",
+      "type": "info",
+      "agentId": "quanxi",
+      "text": "Quanxi mulai cek keamanan VPS sesuai task dashboard"
+    },
+    {
+      "time": "2026-04-13T11:14:57.483Z",
+      "type": "info",
+      "text": "Task 1776078755605 pindah ke IN-PROGRESS"
+    },
+    {
+      "time": "2026-04-13T11:12:35.605Z",
+      "type": "info",
+      "text": "Task baru untuk doni: cek schdule di repliz hari ini ada apa aja ya"
+    },
+    {
+      "time": "2026-04-13T11:11:23.523Z",
+      "type": "info",
+      "text": "Task 1776078038801 pindah ke IN-PROGRESS"
+    },
+    {
+      "time": "2026-04-13T11:00:38.801Z",
+      "type": "info",
+      "text": "Task baru untuk quanxi: cek keamanan vps kita dong"
+    },
+    {
+      "time": "2026-04-13T10:55:00.000Z",
+      "type": "info",
+      "text": "Dashboard di-start untuk monitoring multi-agent OpenClaw"
+    }
+  ]
+}
