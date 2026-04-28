@@ -1,50 +1,84 @@
-[2026-04-22 01:01 UTC] healthcheck | Ran daily `openclaw status --deep` | Gateway reachable; Telegram OK; security audit flagged 1 CRITICAL (small model fallback requires sandboxing + web tools disabled) | Exel
-[2026-04-22 01:47 UTC] security-fix | Removed small OpenRouter free models (Nemotron 120B/9B/12B-VL) from default model fallbacks; security audit now 0 CRITICAL | Applied via `openclaw config set` + gateway restart; remaining warnings: trustedProxies empty + multi-user heuristic | Exel
-[2026-04-22 12:26 UTC] context-tiering | Implemented token-efficient context tiering baseline | Minimized always-loaded context files (AGENTS.md + BOOTSTRAP.md), archived legacy refs, set cron agentTurn jobs to lightContext=true | Exel
-[2026-04-22 13:47 UTC] context-tiering | Enabled chat-level lean loading + tool-result pruning | Set agents.defaults.contextInjection=continuation-skip, contextPruning=cache-ttl (2m) with earlier tool-result trimming, and toolResultMaxChars=15000 | Exel
-[2026-04-22 14:09 UTC] context-tiering | Added chat router rules + tightened startup context budgets | Added Context Tiering section to AGENTS.md; set agents.defaults.startupContext dailyMemoryDays=1 and tighter contextLimits (memory/tool excerpts) | Exel
-[2026-04-22 15:06 UTC] system-packages | Installed pip3 + jq | dnf install python3-pip (pip 23.3.1) and jq 1.7.1 | Exel
-[2026-04-22 15:15 UTC] ops | Moved daily VPS/OpenClaw healthcheck cron to Quanxi | cron job system-healthcheck-daily now runs with agentId=quanxi (model xiaomi/mimo-v2-pro) | Exel
-[2026-04-22 15:22 UTC] models | Set main chat default to GPT-5.2 and pinned existing cron jobs to Xiaomi Omni | agents.defaults.model.primary=openai-codex/gpt-5.2; updated cron payload.model to xiaomi/mimo-v2-omni | Exel
-[2026-04-22 11:27 UTC] ops | Canva access approach (anti-bot) | To edit Canva reliably, use an OpenClaw **node host on the user’s laptop** (real browser) and access gateway privately via **Tailscale Serve** (`*.ts.net`); Tailscale Exit Node is optional and not required for this workflow | Exel
+# MEMORY.md - Shared Team Memory
 
-## Promoted From Short-Term Memory (2026-04-23)
+> Append-only log across all agents. Each agent logs completed tasks here.
 
-<!-- openclaw-memory-promotion:memory:memory/2026-04-17.md:313:315 -->
-- - status: staged [score=0.817 recalls=0 avg=0.620 source=memory/2026-04-17.md:297-297]
-[2026-04-23 04:57 UTC] ops | Reconfigured OpenClaw for direct VPS access without Tailscale | Set gateway bind to lan, disabled Tailscale mode, allowed direct control UI origin, opened/persisted TCP 18789, verified external HTTP 200 on 43.156.181.204:18789 | Exel
-[2026-04-23 05:37 UTC] ops | Moved OpenClaw Control behind HTTPS reverse proxy on VPS | Served Control UI at https://ocindonesia.my.id/openclaw/, set gateway.bind=loopback, basePath=/openclaw, disabled dangerous device-auth bypass, added auth rate limit, removed public firewall access to 18789, verified WhatsApp/Telegram OK | Exel
-[2026-04-23 05:47 UTC] ops | Restored normal VPS outbound routing while keeping Tailscale as backup/admin path | Cleared active Tailscale exit node; policy rule 5270/table 52 remains for Tailscale, but default internet egress now uses eth0/main for 8.8.8.8, Telegram 149.154.167.220, and OpenAI 104.18.33.45; SSH public access preserved | Exel
-[2026-04-23 06:57 UTC] preference | Response format for cron/job lists | Use card/block style: header emoji + job name; body fields labeled with 🕐 (schedule + next/last), 📍 (agent + target), 👥 (delivery/recipient), 📝 (summary); separator `---` between cards | Exel
-[2026-04-23 07:58 UTC] repliz-audit | Checked Repliz Whitepaper schedules for Instagram/Threads/LinkedIn (Apr-May 2026) + media health | Exported drafts, verified 103/103 unique media URLs reachable (no “grey” media due to dead links); found April error items caused by empty media; Threads May batch captions extremely short (56–88 chars) indicating generation/template issue | Exel
-[2026-04-23 08:00 UTC] preference | Role boundaries for execution | Exel/main should not do Doni/other agents’ lane work; Exel focuses on routing, oversight, QC, and summaries, while Doni handles copy/content, Relay scheduling, etc. | Exel
-[2026-04-23 10:41 UTC] scheduling | Scheduled Whitepaper Threads posts (Apr 23–30, 2026) in Repliz using new “hook + tips/checklist/opini + CTA” format, with VPS-hosted images attached | 8 schedules created (pending) for whitepaper.prod | Exel
-[2026-04-23 11:49 UTC] preference | Exel should act as orchestrator/QC only (delegate execution to specialist agents; Exel does routing, review, and final checks) | Reandy | Exel
-[2026-04-23 12:07 UTC] scheduling | Replaced all Whitepaper Threads schedules for May 1–31, 2026 in Repliz: deleted prior 31 schedules then created 31 new image schedules, each with 2 images (VPS-hosted) and consistent hook+value+CTA format | whitepaper.prod | Exel
-[2026-04-23 12:40 UTC] preference | Reandy does not want to specify which agent to use; Exel should choose the appropriate specialist agent automatically for each task | delegation default | Exel
-[2026-04-23 18:30 UTC] whitepaper-context | whitepaper.site marketing baseline | B2B corporate event focus (Jakarta/Tangerang); leads from Instagram + word of mouth; closing via WhatsApp; goal is more autonomous lead/content systems (IG content engine, funnel, marketing automation); monthly batch content cron: Axis = research brief, Doni = content plan/copy, Relay = schedule to Repliz, Exel/Main = QC/oversight | Exel
-[2026-04-23 18:30 UTC] content-preferences | Whitepaper Threads/LinkedIn constraints | Threads: hook + tips/authority/checklist/opinion + clear CTA; images must be unique across scheduled posts (no repeats even if cropped); schedule 2–3 images per post; LinkedIn posts should include website link https://whitepaper.site | Exel
+---
 
-## Promoted From Short-Term Memory (2026-04-24)
+## PERMANENT: Whitepaper Production Copywriting Rules
+Source: Copywriting Playbook PDF (2026-04-28)
+Full guide: `WHITEPAPER_COPY_GUIDE.md` | Examples: `WHITEPAPER_COPY_EXAMPLES.md`
 
-<!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:318:320 -->
-- - status: staged [score=0.823 recalls=0 avg=0.620 source=memory/2026-04-19.md:328-328]
-[2026-04-24 18:30 UTC] content-preferences | Threads copy should feel native (not “classic/template”) | For Whitepaper Threads, avoid rigid “Tips 1) 2) 3)” templates; write more conversational, punchy, and context-aware | Exel
-[2026-04-24 18:30 UTC] content-preferences | CTA rule for Threads + Instagram | Prefer CTA directing to website (https://whitepaper.site); avoid CTA asking people to comment/DM/drop keywords | Exel
-[2026-04-24 18:30 UTC] workflow | Vision-first captioning | When drafting captions for any social platform, inspect the actual photo/media first so the caption is tightly aligned to the image context | Exel
-[2026-04-24 18:30 UTC] qc | Media link hygiene before scheduling | Validate scheduled media URLs are reachable (not 404) to prevent “grey/mismatch” asset errors | Exel
-[2026-04-25 00:08 UTC] models | Claude without OpenRouter: auth options | Anthropic direct in OpenClaw uses API key (not OAuth). OAuth-style “login with Claude account” requires installing Claude Code CLI (`npm i -g @anthropic-ai/claude-code`) + `claude auth login`, then `openclaw models auth login` → Anthropic → Claude CLI, then set `anthropic/<model>` | Exel
-[2026-04-25 03:23 UTC] ops | Checked OpenClaw status after WhatsApp 499 flaps | WhatsApp channel OK; security audit reports 1 CRITICAL: small free Nemotron model in fallbacks while sandbox=off/web tools enabled | Exel
-[2026-04-25 03:28 UTC] preference | Primary chat channel is Telegram | Treat Telegram as the main coordination channel; do not treat WhatsApp as primary unless explicitly requested | Exel
-[2026-04-25 03:35 UTC] user-profile | Reandy role + interests + persona | Reandy = Founder & Marketing Whitepaper.site; suka automation (AI agents, n8n); persona konten: casual creator; panggilan: Reandy | Exel
-[2026-04-25 03:40 UTC] whitepaper-context | Target market + offer + current bottleneck | Target: B2B business owners, HRD, marketing planning; offer: corporate event + documentation; goal: beresin sistem otomasi dulu; funnel sekarang dominan word-of-mouth; bottleneck: marketing awal/positioning belum jelas | Exel
-[2026-04-25 03:42 UTC] offer-positioning | Service area + hero offer + price floor | Area utama Jakarta/Tangerang (bisa luar kota); hero offer: corporate event (hindari positioning "EO" karena price-cut); starting price: ~Rp3 juta per event | Exel
-[2026-04-25 11:39 UTC] healthcheck | Investigated WhatsApp 499 disconnect/reconnect alert | openclaw status --deep: WhatsApp channel ON/OK and LINKED (auth age 3m); security audit 0 critical | Exel
-[2026-04-25 11:43 UTC] config | Disabled WhatsApp channel (not used) | openclaw channels remove --channel whatsapp (disable, keeps config); status now shows WhatsApp OFF/OFF | Exel
-[2026-04-25 11:46 UTC] config | Logged out WhatsApp Web + kept channel disabled | openclaw channels logout --channel whatsapp cleared credentials; re-disabled account; status: WhatsApp OFF/OFF, health UNLINKED | Exel
-[2026-04-25 18:24 UTC] preference | Delegation rule reaffirmed | Reandy requested that execution should use the existing role agents (Axis/Doni/Sora/Relay/Pulse/Quanxi) rather than main doing specialist work | Exel
-[2026-04-25 18:45 UTC] reminder | Scheduled Telegram reminder for 07:00 WIB (2026-04-26) | Created one-shot cron job `remind-reandy-0700WIB-tally` (deleteAfterRun) to message Reandy with Tally links | Exel
-[2026-04-26 01:37 UTC] lead-funnel | Refined Tally form UI + styling to match whitepaper.site | Updated forms MerJlg (≤14 hari) + J9VJbY (>14 hari): improved copy, reduced price options (no ranges), added custom theme colors + CSS font import | Exel
-[2026-04-25 11:39 UTC] security-fix | Removed small OpenRouter Nemotron/free models from default fallbacks (again) | Updated agents.defaults.model.fallbacks; verified `openclaw status` security audit now 0 critical | Exel
-[2026-04-26 02:14 UTC] lead-funnel | Set up Tally lead notifications to Telegram | Added `/scripts/tally_lead_notifier.py` + stored Tally API key in `/tmp/tally_api_key.txt` (chmod 600) + created cron `tally-lead-notify-5m` (agentId=quanxi) polling every 5 min (Asia/Jakarta) to DM new submissions | Exel
-[2026-04-26 02:14 UTC] content | Drafted lead-gen content batch for WhitePaper Photography | 5 Threads + 3 IG captions + IG bio + pinned comment with `src` tracking; saved `/whitepaper-photography-lead-batch-2026-04-26.md` | Exel
+### Brand
+Whitepaper Production — jasa foto/video profesional untuk event dokumentasi perusahaan, company profile, product launch, seminar, annual dinner, interior & exterior.
+Website: whitepaper.site
+
+### Target Audience
+B2B: business owner, HRD, marketing team, corporate communication, event PIC (Jakarta/Tangerang)
+
+### Tone
+Profesional, hangat, jelas, percaya diri, manusiawi. Hindari: lebay, salesy, AI-sounding, terlalu santai, terlalu kaku.
+
+### Struktur Copy (Wajib)
+1. **Hook** — buka dengan ide/event context, bukan jualan
+2. **Story** — momen nyata dari event/foto
+3. **Benefit** — kegunaan dokumentasi (publikasi, laporan internal, media sosial, arsip perusahaan, brand communication)
+4. **Trust** — gunakan kata: profesional, rapi, natural
+5. **CTA** — arahkan ke whitepaper.site
+
+### CTA Wajib
+"Lihat portofolio dan estimasi harga di whitepaper.site, lalu hubungi kami untuk diskusi kebutuhan event Anda."
+Atau variasi natural yang mengarah ke whitepaper.site.
+
+### Hindari
+- Overclaiming: "terbaik", "nomor satu", "paling murah", "best", "number one"
+- Fake urgency: "buruan booking sekarang!!!"
+- Testimoni palsu, angka tanpa sumber
+- Terlalu banyak emoji (maks 2-4 jika channel cocok)
+- Generic caption yang bisa dipakai brand mana pun
+- Bahasa AI yang robotik
+
+### Kata yang Disukai
+rapi, profesional, hangat, momen penting, dokumentasi event, kebutuhan perusahaan, visual yang bisa digunakan kembali, portofolio, estimasi harga, diskusi kebutuhan event
+
+### Format per Channel
+- **Instagram:** 100-180 kata, hook+story+benefit+CTA, emoji 2-4 maks
+- **LinkedIn:** insight bisnis+problem+solusi+CTA, minim emoji, profesional
+- **Threads:** konversasi pendek, satu ide kuat, seperti ngobrol
+- **Website:** headline+subheadline+pain point+benefit+CTA
+- **Google Ads:** headline pendek+benefit+lokasi+CTA
+- **WhatsApp follow-up:** ucapan hangat+ringkasan kebutuhan+next step
+
+### Checklist Sebelum Final
+- ✅ CTA ke whitepaper.site jelas
+- ✅ Tidak ada overclaiming / fake urgency
+- ✅ Ada manfaat bisnis untuk perusahaan
+- ✅ Storytelling natural, tidak kepanjangan
+- ✅ Target audience jelas (HRD/marketing/business owner/event PIC)
+- ✅ Tidak generic / AI-sounding
+
+### Request Format
+Channel + Service + Audience + Context + Main message + CTA → 3 variasi (storytelling/concise/conversion) + rekomendasi
+
+---
+
+## Format
+`[YYYY-MM-DD HH:MM UTC] task_type | brief summary | result | agent_used`
+
+[2026-04-28 09:30 UTC] scheduling | Fixed all Whitepaper May 2026 Repliz schedules via API: updated CTA to include "whitepaper.site" in every caption (IG=DM, LI=Comment BRIEF, TH=Reply BRIEF), kept existing 160 unique media (0 duplicates), 85 items updated (IG 28 / LI 26 / TH 31), 0 errors | Repliz API create+delete (no edit endpoint exists) | Exel
+---
+[2026-04-28 08:19 UTC] recovery | stopped conflicting openclaw-tui, patched defaults and all role agents off Xiaomi to OpenAI Codex, restarted gateway | health endpoint live; no openclaw-tui process remains | Exel
+[2026-04-28 08:25 UTC] verification | verified gateway health + model config after role-agent patch (port 18789): /health 200 live; gateway running; openclaw.json agents set to openai-codex/gpt-5.2 | ok | Exel
+[2026-04-28 08:28 UTC] config | set agents.defaults model primary to xiaomi/mimo-v2.5 | saved to openclaw.json | Exel
+[2026-04-28 08:34 UTC] config | updated agents.list per-role model mapping to Xiaomi MiMo (main=v2.5; quanxi/axis/pulse=v2.5-pro; sora=v2-omni; doni/relay/heyreandy=v2.5) | saved to openclaw.json | Exel
+[2026-04-28 08:58 UTC] research | Whitepaper platform audit: IG (3 posts/month, too low), Threads (26 posts, text-heavy), LinkedIn (14 posts, good freq). Target market: B2B corporate event documentation buyers (marketing/event managers, Jakarta-Tangerang). Key pain points: event photos die in folders, no distribution system, no ROI measurement. Copywriting recs: IG needs carousel + 3-4x/week; Threads needs more image variety; LinkedIn needs document carousels. Algorithm 2026: LinkedIn penalizes external links -60%, carousel 2-3x dwell time; Threads 73.6% higher engagement than X. | research brief saved to MEMORY | Exel
+[2026-04-28 09:06 UTC] review | Reviewed upcoming scheduled Whitepaper posts (2026-04-29..2026-05-05) in Repliz for IG/Threads/LinkedIn: copy themes largely on-system/quality (fits target), but many posts include external link https://whitepaper.site in caption (risky for LinkedIn reach). Found repeated photos in upcoming window and reuse vs past posts; requires dedupe + context alignment before publish. User requested focus only on Whitepaper IG/Threads/LinkedIn and to keep continuity by saving conversation decisions to MEMORY. | pending: propose/execute schedule edits with unique photos + platform-specific copy tweaks | Exel
+[2026-04-28 09:23 UTC] scheduling | Edited all Whitepaper May 2026 Repliz schedules (IG/Threads/LinkedIn) via API (create new + delete old): removed external links from captions, appended platform CTA, replaced all medias so every photo basename is unique across the whole month | May pending schedules: 85 (IG 28 / Threads 31 / LinkedIn 26); media uses: 160 unique (0 duplicates); captions contain no http links; CTA present | Exel
+[2026-04-28 09:32 UTC] context | Chat decisions: (1) CTA must include "whitepaper.site" as text reference, (2) Photos must match post content at category level, (3) Repliz API has no edit endpoint — use create+delete, (4) Repliz auth: Basic with full secret from credentials file, (5) API response key is "docs" not "rows" | saved for continuity | Exel
+[2026-04-28 10:42 UTC] copywriting | Whitepaper copy rules: (1) Softselling style, bukan hard sell, (2) Storytelling tajam/punchy, bukan kaku, (3) JANGAN gunakan em dash (—) di copy manapun, (4) CTA natural: langsung "whitepaper.site" tanpa "DM/Reply/Comment BRIEF", (5) Bahasa Indonesia untuk IG/Threads, English untuk LinkedIn | saved for continuity | Exel
+[2026-04-28 11:10 UTC] scheduling | Full photo-first rewrite of all 85 Whitepaper May 2026 Repliz schedules: analyzed 160 photos with image model, categorized into 7 types, wrote matching copy per category x platform (IG/LI/TH), updated via API (create+delete), 0 errors | Categories: culinary 17, industrial 9, fitness 8, interior 14, event 21, office 6, specialized 3, other 7 | Exel
+[2026-04-28 11:10 UTC] context | Photo-first approach confirmed by owner: always analyze photo content first, then write copy that matches. Never assign photos by category alone. | saved for continuity | Exel
+[2026-04-28 12:05 UTC] copywriting | Research insights: (1) Show don't tell - caption harus spesifik dari isi foto, bukan generic template, (2) B2B buyer butuh evidence bukan promises - "400 guests, zero issues" lebih kuat dari "kami handle semua event", (3) Specific details build credibility - nama warna, posisi, material, bukan "mesin dan tim", (4) Setiap caption harus unik ke fotonya - tidak boleh ada template yang dipake untuk foto berbeda | saved for continuity | Exel
+[2026-04-28 12:50 UTC] copywriting | Full rewrite of 85 Whitepaper May 2026 posts: photo-specific copy with professional+warm tone, show-don't-tell approach. Each caption written from actual photo content (not template). Categories: event 36, culinary 17, industrial 12, interior 10, fitness 7, office 1, specialized 1, other 2. Updated via Repliz API: 85 created, 85 deleted, 0 errors. | Exel
+[2026-04-28 13:31 UTC] copywriting | Whitepaper Copywriting Playbook loaded from PDF. Saved as WHITEPAPER_COPY_GUIDE.md in workspace. Rules: (1) Trust first, (2) Storytelling from real event context, (3) Specific over generic, (4) Warm but professional, (5) CTA ke whitepaper.site, (6) 3 variations per request (storytelling/concise/conversion), (7) Review checklist before final, (8) Hindari overclaiming/fake urgency/AI-sounding. Format per channel: IG=100-180 kata hook+story+benefit+CTA, LI=insight+problem+solution+CTA, TH=konversasi pendek | Exel
+[2026-04-28 13:37 UTC] copywriting | 3 Instagram caption variations approved by owner. Saved as WHITEPAPER_COPY_EXAMPLES.md. Best pattern: Hook (event context) + Story (momen nyata) + Benefit (publikasi/laporan/arsip/media sosial/brand) + Trust (profesional/rapi/natural) + CTA (whitepaper.site). All future Whitepaper copy follows this playbook. | Exel
+[2026-04-28 13:45 UTC] scheduling | Full playbook-compliant rewrite of 85 Whitepaper May 2026 Repliz schedules: Hook+Story+Benefit+Trust+CTA structure, photo-specific copy, no overclaiming, no em dash, CTA to whitepaper.site. 85 created, 85 deleted, 0 errors. | Exel

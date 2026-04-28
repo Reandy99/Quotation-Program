@@ -1,0 +1,611 @@
+{
+  "month": "2026-05",
+  "generatedAt": "2026-04-28T09:22:52Z",
+  "countPlanned": 86,
+  "countCreated": 86,
+  "errors": [],
+  "map": [
+    {
+      "oldId": "69ea45842695558af494ec74",
+      "newId": "69f07c60f16e80485f277f30",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-01T03:30:00.000Z"
+    },
+    {
+      "oldId": "69f07c40f16e80485f277e85",
+      "newId": "69f07c60f16e80485f277f38",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-01T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea091f0f184f8f73bd7cfd",
+      "newId": "69f07c60f16e80485f277f40",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-01T05:00:00.000Z"
+    },
+    {
+      "oldId": "69eb43ba4265157705968229",
+      "newId": "69f07c60f16e80485f277f4a",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-01T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea091f0f184f8f73bd7d08",
+      "newId": "69f07c60f16e80485f277f52",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-02T01:00:00.000Z"
+    },
+    {
+      "oldId": "69eb43c04265157705968264",
+      "newId": "69f07c60f16e80485f277f5f",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-02T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b32695558af494b0fc",
+      "newId": "69f07c61f16e80485f277f69",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-02T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea091f0f184f8f73bd7d14",
+      "newId": "69f07c61f16e80485f277f71",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-03T01:00:00.000Z"
+    },
+    {
+      "oldId": "69eb43ba4265157705968234",
+      "newId": "69f07c61f16e80485f277f79",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-03T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea091f0f184f8f73bd7d1f",
+      "newId": "69f07c61f16e80485f277f81",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-04T01:00:00.000Z"
+    },
+    {
+      "oldId": "69eb43c0426515770596826f",
+      "newId": "69f07c61f16e80485f277f8a",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-04T03:30:00.000Z"
+    },
+    {
+      "oldId": "69eb43ba426515770596823f",
+      "newId": "69f07c62f16e80485f277f92",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-04T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea091f0f184f8f73bd7d2a",
+      "newId": "69f07c62f16e80485f277f9a",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-05T01:00:00.000Z"
+    },
+    {
+      "oldId": "69ea45842695558af494ec9c",
+      "newId": "69f07c62f16e80485f277fa3",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-05T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b32695558af494b11d",
+      "newId": "69f07c62f16e80485f277fab",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-05T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea091f0f184f8f73bd7d39",
+      "newId": "69f07c62f16e80485f277fb4",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-06T02:00:00.000Z"
+    },
+    {
+      "oldId": "69eb43c0426515770596827a",
+      "newId": "69f07c62f16e80485f277fbd",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-06T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b32695558af494b128",
+      "newId": "69f07c62f16e80485f277fc5",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-06T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09200f184f8f73bd7d44",
+      "newId": "69f07c62f16e80485f277fcd",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-07T01:00:00.000Z"
+    },
+    {
+      "oldId": "69ea41b32695558af494b133",
+      "newId": "69f07c62f16e80485f277fd5",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-07T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea45852695558af494ecb5",
+      "newId": "69f07c63f16e80485f277fdd",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-08T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea09200f184f8f73bd7d4f",
+      "newId": "69f07c63f16e80485f277fe5",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-08T05:00:00.000Z"
+    },
+    {
+      "oldId": "69ea41b32695558af494b13e",
+      "newId": "69f07c63f16e80485f277fed",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-08T06:05:00.000Z"
+    },
+    {
+      "oldId": "69eb43c04265157705968285",
+      "newId": "69f07c63f16e80485f277ff8",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-09T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b32695558af494b149",
+      "newId": "69f07c63f16e80485f278000",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-09T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09200f184f8f73bd7d5c",
+      "newId": "69f07c63f16e80485f27800a",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-10T01:00:00.000Z"
+    },
+    {
+      "oldId": "69ea41b32695558af494b154",
+      "newId": "69f07c64f16e80485f278014",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-10T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09200f184f8f73bd7d67",
+      "newId": "69f07c64f16e80485f27801c",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-11T01:00:00.000Z"
+    },
+    {
+      "oldId": "69eb43c04265157705968290",
+      "newId": "69f07c64f16e80485f278024",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-11T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b32695558af494b15f",
+      "newId": "69f07c64f16e80485f27802c",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-11T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09200f184f8f73bd7d72",
+      "newId": "69f07c64f16e80485f278037",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-12T01:00:00.000Z"
+    },
+    {
+      "oldId": "69ea45852695558af494ecdd",
+      "newId": "69f07c65f16e80485f27803f",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-12T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b32695558af494b16a",
+      "newId": "69f07c65f16e80485f278047",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-12T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09200f184f8f73bd7d7d",
+      "newId": "69f07c65f16e80485f27804f",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-13T02:00:00.000Z"
+    },
+    {
+      "oldId": "69ea45852695558af494ecea",
+      "newId": "69f07c65f16e80485f278057",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-13T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b32695558af494b175",
+      "newId": "69f07c65f16e80485f278061",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-13T06:05:00.000Z"
+    },
+    {
+      "oldId": "69eb43c94265157705968330",
+      "newId": "69f07c65f16e80485f27806d",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-14T01:00:00.000Z"
+    },
+    {
+      "oldId": "69eb43c0426515770596829b",
+      "newId": "69f07c65f16e80485f278075",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-14T04:10:00.000Z"
+    },
+    {
+      "oldId": "69ea41b32695558af494b180",
+      "newId": "69f07c65f16e80485f27807d",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-14T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea45852695558af494ed04",
+      "newId": "69f07c65f16e80485f278085",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-15T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b32695558af494b18b",
+      "newId": "69f07c66f16e80485f27808f",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-15T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea45862695558af494ed12",
+      "newId": "69f07c66f16e80485f278097",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-16T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b196",
+      "newId": "69f07c66f16e80485f27809f",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-16T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea45862695558af494ed1f",
+      "newId": "69f07c66f16e80485f2780a7",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-17T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b1a1",
+      "newId": "69f07c66f16e80485f2780af",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-17T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09200f184f8f73bd7d9a",
+      "newId": "69f07c66f16e80485f2780b7",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-18T01:00:00.000Z"
+    },
+    {
+      "oldId": "69eb43c142651577059682a6",
+      "newId": "69f07c67f16e80485f2780bf",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-18T03:40:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b1ac",
+      "newId": "69f07c67f16e80485f2780c8",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-18T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09200f184f8f73bd7daf",
+      "newId": "69f07c67f16e80485f2780d0",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-19T02:00:00.000Z"
+    },
+    {
+      "oldId": "69ea45862695558af494ed3b",
+      "newId": "69f07c67f16e80485f2780d8",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-19T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b1b7",
+      "newId": "69f07c67f16e80485f2780e0",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-19T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09200f184f8f73bd7dba",
+      "newId": "69f07c67f16e80485f2780ea",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-20T01:00:00.000Z"
+    },
+    {
+      "oldId": "69ea45862695558af494ed48",
+      "newId": "69f07c68f16e80485f2780f2",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-20T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b1c2",
+      "newId": "69f07c68f16e80485f278103",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-20T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea45862695558af494ed54",
+      "newId": "69f07c68f16e80485f27810b",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-21T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea09200f184f8f73bd7dca",
+      "newId": "69f07c68f16e80485f278113",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-21T05:00:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b1cd",
+      "newId": "69f07c68f16e80485f27811b",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-21T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09200f184f8f73bd7dd7",
+      "newId": "69f07c68f16e80485f278123",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-22T01:00:00.000Z"
+    },
+    {
+      "oldId": "69ea45862695558af494ed61",
+      "newId": "69f07c68f16e80485f27812c",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-22T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b1da",
+      "newId": "69f07c68f16e80485f278134",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-22T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea45862695558af494ed6e",
+      "newId": "69f07c69f16e80485f27813f",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-23T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b1e5",
+      "newId": "69f07c69f16e80485f278147",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-23T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09210f184f8f73bd7de2",
+      "newId": "69f07c69f16e80485f278152",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-24T01:00:00.000Z"
+    },
+    {
+      "oldId": "69ea45862695558af494ed7b",
+      "newId": "69f07c69f16e80485f27815a",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-24T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b1f0",
+      "newId": "69f07c69f16e80485f278162",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-24T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09210f184f8f73bd7ded",
+      "newId": "69f07c69f16e80485f27816a",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-25T01:00:00.000Z"
+    },
+    {
+      "oldId": "69eb43c142651577059682b1",
+      "newId": "69f07c69f16e80485f278172",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-25T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b1fb",
+      "newId": "69f07c69f16e80485f27817a",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-25T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09210f184f8f73bd7df8",
+      "newId": "69f07c6af16e80485f278182",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-26T02:00:00.000Z"
+    },
+    {
+      "oldId": "69ea45872695558af494ed97",
+      "newId": "69f07c6af16e80485f27818a",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-26T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b206",
+      "newId": "69f07c6af16e80485f278194",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-26T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09210f184f8f73bd7e05",
+      "newId": "69f07c6af16e80485f27819c",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-27T01:00:00.000Z"
+    },
+    {
+      "oldId": "69eb43c142651577059682bc",
+      "newId": "69f07c6af16e80485f2781a6",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-27T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b211",
+      "newId": "69f07c6bf16e80485f2781ae",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-27T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea45872695558af494edb1",
+      "newId": "69f07c6bf16e80485f2781b6",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-28T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea09210f184f8f73bd7e15",
+      "newId": "69f07c6bf16e80485f2781be",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-28T05:00:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b21c",
+      "newId": "69f07c6bf16e80485f2781c6",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-28T06:05:00.000Z"
+    },
+    {
+      "oldId": "69eb43c94265157705968340",
+      "newId": "69f07c6bf16e80485f2781ce",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-29T01:00:00.000Z"
+    },
+    {
+      "oldId": "69ea45872695558af494edbf",
+      "newId": "69f07c6bf16e80485f2781d6",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-29T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b22c",
+      "newId": "69f07c6bf16e80485f2781de",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-29T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09210f184f8f73bd7e2b",
+      "newId": "69f07c6cf16e80485f2781e7",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-30T01:00:00.000Z"
+    },
+    {
+      "oldId": "69eb43c142651577059682c7",
+      "newId": "69f07c6cf16e80485f2781ef",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-30T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b42695558af494b237",
+      "newId": "69f07c6cf16e80485f2781f7",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-30T06:05:00.000Z"
+    },
+    {
+      "oldId": "69ea09210f184f8f73bd7e36",
+      "newId": "69f07c6cf16e80485f2781ff",
+      "accountId": "69ba44a7bcf47d3964974d41",
+      "platform": "LinkedIn",
+      "scheduleAt": "2026-05-31T01:00:00.000Z"
+    },
+    {
+      "oldId": "69ea45872695558af494edd9",
+      "newId": "69f07c6cf16e80485f278207",
+      "accountId": "69c5142b5f0c5e58b4b4a26e",
+      "platform": "IG",
+      "scheduleAt": "2026-05-31T03:30:00.000Z"
+    },
+    {
+      "oldId": "69ea41b52695558af494b242",
+      "newId": "69f07c6cf16e80485f27820f",
+      "accountId": "69db171284ebdfba15c9ab58",
+      "platform": "Threads",
+      "scheduleAt": "2026-05-31T06:05:00.000Z"
+    }
+  ]
+}

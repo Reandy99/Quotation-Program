@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-04-28T11:25:26Z",
+  "total": 85,
+  "created": 85,
+  "deleted": 85,
+  "errors": 0,
+  "del_errors": 0,
+  "approach": "photo-first: analyzed each photo, wrote matching copy per category"
+}

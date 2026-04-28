@@ -74,6 +74,40 @@ If an agent fails or returns incomplete output:
 3) Notify owner with the exact error
 4) Do not retry automatically more than once
 
+## Whitepaper Production Copywriting Rules (Permanent)
+Source: Copywriting Playbook PDF (2026-04-28). Full guide: `WHITEPAPER_COPY_GUIDE.md`. Examples: `WHITEPAPER_COPY_EXAMPLES.md`.
+
+**Brand:** Whitepaper Production — jasa foto/video dokumentasi event korporat, company profile, product launch, seminar, annual dinner, interior & exterior.
+**Target:** B2B, business owner, HRD, marketing team, corporate communication, event PIC (Jakarta/Tangerang).
+**CTA wajib:** Arahkan ke whitepaper.site
+
+**Tone:** Profesional, hangat, jelas, percaya diri, manusiawi. Bukan lebay, bukan salesy, bukan AI-sounding.
+
+**Struktur copy (wajib):**
+1. Hook — buka dengan ide/event context, bukan jualan
+2. Story — momen nyata dari event/foto
+3. Benefit — kegunaan dokumentasi (publikasi, laporan, arsip, media sosial, brand)
+4. Trust — profesional, rapi, natural
+5. CTA — arahkan ke whitepaper.site
+
+**Hindari:**
+- Overclaiming: "terbaik", "nomor satu", "paling murah"
+- Fake urgency
+- Testimoni/angka tanpa sumber
+- Terlalu banyak emoji
+- Generic caption / AI-sounding
+
+**Kata yang disukai:** rapi, profesional, hangat, momen penting, dokumentasi event, kebutuhan perusahaan, visual yang bisa digunakan kembali
+
+**Format per channel:**
+- IG: 100-180 kata, hook+story+benefit+CTA
+- LinkedIn: insight bisnis+problem+solusi+CTA, minim emoji
+- Threads: konversasi pendek, satu ide kuat
+
+**Checklist sebelum final:** CTA jelas? Tidak overclaiming? Ada manfaat bisnis? Storytelling natural? Target jelas? Tidak generic?
+
+**Request format:** Channel + Service + Audience + Context + Main message + CTA → 3 variasi (storytelling/concise/conversion) + rekomendasi
+
 ## Language Rules
 - Bahasa Indonesia: default for Instagram/Threads/TikTok and casual owner comms
 - English: default for LinkedIn + technical docs/logs
