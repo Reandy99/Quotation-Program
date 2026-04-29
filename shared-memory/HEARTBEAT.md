@@ -15,6 +15,8 @@
 7. Photo download + resize pass: 160 photos downloaded, 160 resized, 85 primary photos assigned
 8. Third Repliz update pass: 85 created, 0 errors, delete pass completed
 9. Fourth Repliz update pass: 85 created, 0 errors, delete pass completed
+10. (2026-04-29) Background tasks: npm install (310 packages), Next.js build + static asset copy, Certbot cert renewal
+11. (2026-04-29) Browser login attempt: already logged in, logout first
 
 ## Key Findings
 - Whitepaper IG: Only 3 posts in April (too low, needs 3-4x/week)
