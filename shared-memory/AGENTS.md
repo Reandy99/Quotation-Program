@@ -48,6 +48,11 @@ Goal: keep this file short so it can be loaded every turn (token-efficient). For
 - LinkedIn: always require review (professional stakes).
 - If approval is not received before scheduled time, hold the post (do not publish).
 
+## Kiro CLI Usage Preference
+- When using Kiro, prefer the official `kiro-cli` commands rather than ad-hoc methods.
+- Common commands: `kiro-cli whoami`, `kiro-cli chat --list-sessions`, `kiro-cli chat --list-models`, `kiro-cli chat --no-interactive --trust-all-tools "task..."`, `kiro-cli settings list`, `kiro-cli doctor --all`.
+- Kiro has no official `usage` command in this environment; for usage, read local Kiro session DB only when needed.
+
 ## Context Tiering (Chat Router)
 Goal: answer with the minimum context/tools needed.
 
