@@ -12,3 +12,5 @@ tmp_*.png
 tmp_*.jpg
 tmp_*.jpeg
 tmp_*.webp
+.shared-memory-sync-repo
+.gitmodules
