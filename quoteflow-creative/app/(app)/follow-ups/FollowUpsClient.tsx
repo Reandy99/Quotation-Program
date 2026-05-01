@@ -266,12 +266,12 @@ export default function FollowUpsClient({ leads: initialLeads, followUps }: Prop
         <EmptyState
           icon={Bell}
           title="No follow-ups scheduled"
-          description="Set follow-up dates on your leads to stay organized and never miss an opportunity to connect with potential clients."
+          description="Set follow-up dates from your Leads page to track when to reconnect with potential clients."
           action={
             <Link href="/leads">
               <Button size="lg" className="gap-2">
                 <Sparkles className="w-4 h-4" />
-                View Your Leads
+                Go to Leads
               </Button>
             </Link>
           }

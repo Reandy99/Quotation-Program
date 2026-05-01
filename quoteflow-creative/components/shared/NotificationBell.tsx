@@ -1,6 +1,7 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import { Bell } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { formatDate } from "@/lib/utils/format"
@@ -12,25 +13,48 @@ interface Notification {
   date: string
   read: boolean
   type: "follow-up" | "quote-expiring" | "invoice-overdue"
+  link?: string
 }
 
-const demoNotifications: Notification[] = [
-  { id: "1", title: "Follow-up Due Today", message: "Rina Kusuma - Prewedding", date: "2026-04-29T09:00:00Z", read: false, type: "follow-up" },
-  { id: "2", title: "Quotation Expiring Soon", message: "QF-2026-001 expires in 2 days", date: "2026-04-28T10:00:00Z", read: false, type: "quote-expiring" },
-  { id: "3", title: "Invoice Overdue", message: "INV-2026-003 is overdue", date: "2026-04-27T14:00:00Z", read: true, type: "invoice-overdue" },
-]
-
 export default function NotificationBell() {
+  const router = useRouter()
   const [open, setOpen] = useState(false)
-  const [notifications, setNotifications] = useState(demoNotifications)
+  const [notifications, setNotifications] = useState<Notification[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    async function loadNotifications() {
+      try {
+        const res = await fetch("/api/notifications")
+        if (res.ok) {
+          const data = await res.json()
+          setNotifications(data)
+        }
+      } catch (err) {
+        console.error("Failed to load notifications:", err)
+      } finally {
+        setLoading(false)
+      }
+    }
+    loadNotifications()
+  }, [])
+
   const unreadCount = notifications.filter(n => !n.read).length
 
   function markAllRead() {
     setNotifications(notifications.map(n => ({ ...n, read: true })))
   }
 
+  function handleNotificationClick(notif: Notification) {
+    markRead(notif.id)
+    setOpen(false)
+    if (notif.link) {
+      router.push(notif.link)
+    }
+  }
+
   function markRead(id: string) {
-    setNotifications(notifications.map(n => n.id === id ? { ...n, read: true } : n))
+    setNotifications(prev => prev.map(n => n.id === id ? { ...n, read: true } : n))
   }
 
   return (
@@ -66,14 +90,16 @@ export default function NotificationBell() {
               </div>
             </CardHeader>
             <CardContent className="p-0 max-h-96 overflow-y-auto">
-              {!notifications.length ? (
+              {loading ? (
+                <p className="text-sm text-gray-400 dark:text-slate-500 p-4">Loading...</p>
+              ) : !notifications.length ? (
                 <p className="text-sm text-gray-400 dark:text-slate-500 p-4">No notifications</p>
               ) : (
                 <div className="divide-y dark:divide-slate-800">
                   {notifications.map(notif => (
                     <button
                       key={notif.id}
-                      onClick={() => markRead(notif.id)}
+                      onClick={() => handleNotificationClick(notif)}
                       className={`w-full p-3 hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors text-left ${!notif.read ? "bg-indigo-50/50 dark:bg-indigo-950/20" : ""}`}
                     >
                       <div className="flex items-start gap-2">

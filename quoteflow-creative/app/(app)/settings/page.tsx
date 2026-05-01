@@ -57,7 +57,7 @@ export default function SettingsPage() {
           </Card>
         </Link>
 
-        <Card className="opacity-50 dark:bg-slate-800 dark:border-slate-700">
+        <Card className="opacity-50 cursor-not-allowed dark:bg-slate-800 dark:border-slate-700">
           <CardContent className="p-6">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-10 h-10 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
