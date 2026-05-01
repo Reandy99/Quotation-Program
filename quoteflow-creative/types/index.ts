@@ -3,6 +3,7 @@ export type QuotationStatus = "Draft" | "Sent" | "Accepted" | "Rejected"
 export type DiscountType = "flat" | "percent"
 export type InvoiceStatus = "Draft" | "Sent" | "Partial" | "Paid" | "Overdue"
 export type PaymentMethod = "Transfer" | "Cash" | "QRIS"
+export type FollowUpType = "call" | "email" | "meeting" | "whatsapp" | "other"
 
 export interface Profile {
   id: string
@@ -25,6 +26,10 @@ export interface CompanySettings {
   default_payment_terms: string | null
   created_at: string
   updated_at: string
+  signer_name?: string | null
+  signer_title?: string | null
+  signature_url?: string | null
+  google_review_url?: string | null
 }
 
 export interface Lead {
@@ -126,4 +131,18 @@ export interface Payment {
   date: string
   notes: string | null
   created_at: string
+}
+
+export interface FollowUp {
+  id: string
+  user_id: string
+  lead_id: string | null
+  type: FollowUpType
+  scheduled_date: string
+  notes: string | null
+  completed: boolean
+  completed_at: string | null
+  created_at: string
+  updated_at: string
+  lead?: Lead
 }
