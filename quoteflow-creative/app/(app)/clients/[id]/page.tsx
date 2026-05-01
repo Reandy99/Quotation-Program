@@ -1,7 +1,11 @@
-import { findClientById } from "@/lib/demo/data"
+import { notFound } from "next/navigation"
 import ClientDetailClient from "./ClientDetailClient"
+import { getClient } from "../actions"
 
-export default function ClientDetailPage({ params }: { params: { id: string } }) {
-  const client = findClientById(params.id)
+export const dynamic = "force-dynamic"
+
+export default async function ClientDetailPage({ params }: { params: { id: string } }) {
+  const client = await getClient(params.id)
+  if (!client) notFound()
   return <ClientDetailClient initial={client} />
 }

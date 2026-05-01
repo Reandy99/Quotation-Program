@@ -1,12 +1,14 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useTransition } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { LeadStatusBadge } from "@/components/leads/StatusBadge"
 import { formatCurrency, formatDateShort } from "@/lib/utils/format"
 import { Search, CheckSquare, Square, ChevronDown, LayoutList, LayoutGrid } from "lucide-react"
+import { toast } from "@/hooks/use-toast"
+import { updateLeadStatus } from "@/app/(app)/leads/actions"
 import type { Lead, LeadStatus } from "@/types"
 
 interface Props {
@@ -25,6 +27,7 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
   const [bulkMenuOpen, setBulkMenuOpen] = useState(false)
   const [confirmAction, setConfirmAction] = useState<{ status: LeadStatus; ids: string[] } | null>(null)
   const [viewMode, setViewMode] = useState<"list" | "kanban">("list")
+  const [isPending, startTransition] = useTransition()
 
   const filtered = leads.filter(lead => {
     const q = search.toLowerCase()
@@ -55,15 +58,47 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
     setConfirmAction({ status, ids: [...selected] })
   }
 
-  function confirmBulkUpdate() {
+  async function confirmBulkUpdate() {
     if (!confirmAction) return
-    setLeads(prev => prev.map(l => confirmAction.ids.includes(l.id) ? { ...l, status: confirmAction.status } : l))
-    setSelected(new Set())
-    setConfirmAction(null)
+    
+    startTransition(async () => {
+      try {
+        await Promise.all(confirmAction.ids.map(id => updateLeadStatus(id, confirmAction.status)))
+        setLeads(prev => prev.map(l => confirmAction.ids.includes(l.id) ? { ...l, status: confirmAction.status } : l))
+        setSelected(new Set())
+        setConfirmAction(null)
+        toast({
+          variant: "success",
+          title: "Status updated",
+          description: `${confirmAction.ids.length} lead(s) updated to ${confirmAction.status}`,
+        })
+      } catch (error: any) {
+        toast({
+          variant: "destructive",
+          title: "Update failed",
+          description: error.message,
+        })
+      }
+    })
   }
 
-  function updateLeadStatus(leadId: string, newStatus: LeadStatus) {
-    setLeads(prev => prev.map(l => l.id === leadId ? { ...l, status: newStatus } : l))
+  async function handleStatusChange(leadId: string, newStatus: LeadStatus) {
+    startTransition(async () => {
+      try {
+        await updateLeadStatus(leadId, newStatus)
+        setLeads(prev => prev.map(l => l.id === leadId ? { ...l, status: newStatus } : l))
+        toast({
+          variant: "success",
+          title: "Status updated",
+        })
+      } catch (error: any) {
+        toast({
+          variant: "destructive",
+          title: "Update failed",
+          description: error.message,
+        })
+      }
+    })
   }
 
   const kanbanGroups = KANBAN_COLUMNS.reduce((acc, status) => {
@@ -265,9 +300,10 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
                       <div className="mt-2 pt-2 border-t border-gray-100 dark:border-gray-800">
                         <select
                           value={lead.status}
-                          onChange={e => updateLeadStatus(lead.id, e.target.value as LeadStatus)}
+                          onChange={e => handleStatusChange(lead.id, e.target.value as LeadStatus)}
                           onClick={e => e.stopPropagation()}
-                          className="w-full text-xs px-2 py-1 rounded border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                          disabled={isPending}
+                          className="w-full text-xs px-2 py-1 rounded border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:opacity-50"
                         >
                           {KANBAN_COLUMNS.map(s => (
                             <option key={s} value={s}>{s}</option>

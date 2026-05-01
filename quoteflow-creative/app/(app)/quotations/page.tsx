@@ -3,11 +3,13 @@ import { Button } from "@/components/ui/button"
 import { PageHeader } from "@/components/shared/PageHeader"
 import { EmptyState } from "@/components/shared/EmptyState"
 import { Plus, FileText } from "lucide-react"
-import { demoQuotations } from "@/lib/demo/data"
 import QuotationsListClient from "@/components/quotations/QuotationsListClient"
+import { getQuotations } from "./actions"
+
+export const dynamic = "force-dynamic"
 
 export default async function QuotationsPage() {
-  const quotations = demoQuotations
+  const quotations = await getQuotations()
 
   return (
     <div>
@@ -28,15 +30,12 @@ export default async function QuotationsPage() {
           description="Create professional quotations with detailed line items and export to PDF."
           action={
             <Link href="/quotations/templates">
-              <Button size="lg">
-                <Plus className="w-4 h-4 mr-2" />
-                Create Your First Quote
-              </Button>
+              <Button><Plus className="w-4 h-4 mr-1.5" />Create Quotation</Button>
             </Link>
           }
         />
       ) : (
-        <QuotationsListClient quotations={quotations} />
+        <QuotationsListClient quotations={quotations as any} />
       )}
     </div>
   )

@@ -2,15 +2,18 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { LayoutDashboard, Users, FileText, Bell, Settings, LogOut, Zap, Menu, X, UserCircle, Receipt, Calendar, BarChart3, Radar } from "lucide-react"
+import { LayoutDashboard, Users, FileText, Bell, Settings, Zap, Menu, X, UserCircle, Receipt, Calendar, BarChart3 } from "lucide-react"
 import { cn } from "@/lib/utils/cn"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import Image from "next/image"
 import ThemeToggle from "./ThemeToggle"
+import { loadGeneralSettings, loadCompanySettings, SETTINGS_UPDATED_EVENT } from "@/lib/settings/storage"
+import { UserSection } from "./UserSection"
+import { createClient } from "@/lib/supabase/client"
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/leads", label: "Leads", icon: Users },
-  { href: "/lead-discovery", label: "Lead Discovery", icon: Radar },
   { href: "/quotations", label: "Quotations", icon: FileText },
   { href: "/follow-ups", label: "Follow-ups", icon: Bell },
   { href: "/clients", label: "Clients", icon: UserCircle },
@@ -22,31 +25,66 @@ const navItems = [
 export default function Sidebar() {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
+  const [workspaceName, setWorkspaceName] = useState("QuoteFlow")
+  const [businessName, setBusinessName] = useState("Creative Studio")
+  const [logoUrl, setLogoUrl] = useState("")
+  const [userEmail, setUserEmail] = useState("")
+
+  useEffect(() => {
+    function reload() {
+      const g = loadGeneralSettings()
+      const c = loadCompanySettings()
+      setWorkspaceName(g.workspace_name || "QuoteFlow")
+      setBusinessName(c.business_name || "Creative Studio")
+      setLogoUrl(c.logo_url || "")
+    }
+    reload()
+    window.addEventListener("storage", reload)
+    window.addEventListener(SETTINGS_UPDATED_EVENT, reload)
+    return () => {
+      window.removeEventListener("storage", reload)
+      window.removeEventListener(SETTINGS_UPDATED_EVENT, reload)
+    }
+  }, [])
+
+  useEffect(() => {
+    async function getUser() {
+      const supabase = createClient()
+      const { data: { user } } = await supabase.auth.getUser()
+      if (user?.email) setUserEmail(user.email)
+    }
+    getUser()
+  }, [])
 
   const nav = (
     <div className="flex flex-col h-full">
       {/* Logo */}
-      <div className="h-16 px-5 flex items-center justify-between border-b dark:border-slate-800 flex-shrink-0">
+      <div className="h-16 px-5 flex items-center justify-between flex-shrink-0" style={{ borderBottom: "1px solid var(--border-color)" }}>
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
-            <Zap className="w-4 h-4 text-white" />
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden flex-shrink-0" style={logoUrl ? { border: "1px solid var(--border-color)" } : { backgroundColor: "var(--btn-dark)" }}>
+            {logoUrl ? (
+              <Image src={logoUrl} alt="Logo" width={40} height={40} unoptimized className="w-full h-full object-contain p-1" />
+            ) : (
+              <Zap className="w-4 h-4 text-white dark:text-black" />
+            )}
           </div>
           <div>
-            <span className="font-bold text-gray-900 dark:text-slate-100 text-sm">QuoteFlow</span>
-            <span className="text-[10px] text-gray-500 dark:text-slate-400 block">Creative Studio</span>
+            <span className="font-semibold text-sm" style={{ color: "var(--text-primary)" }}>{workspaceName}</span>
+            <span className="text-[10px] block" style={{ color: "var(--text-secondary)" }}>{businessName}</span>
           </div>
         </div>
         <button
           onClick={() => setOpen(false)}
-          className="md:hidden p-1.5 rounded-md text-gray-400 hover:text-gray-700 hover:bg-gray-50 dark:text-slate-400 dark:hover:text-slate-100 dark:hover:bg-slate-800"
+          className="md:hidden p-1.5 rounded-lg transition-colors hover:opacity-70"
           aria-label="Close menu"
+          style={{ color: "var(--text-secondary)" }}
         >
           <X className="w-4 h-4" />
         </button>
       </div>
 
       {/* Nav */}
-      <nav className="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
+      <nav className="flex-1 px-3 py-4 space-y-0.5 overflow-y-auto">
         {navItems.map(({ href, label, icon: Icon }) => {
           const active = pathname === href || pathname.startsWith(href + "/")
           return (
@@ -55,49 +93,53 @@ export default function Sidebar() {
               href={href}
               onClick={() => setOpen(false)}
               className={cn(
-                "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
+                "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all",
                 active
-                  ? "bg-indigo-50 text-indigo-700 dark:bg-indigo-950/50 dark:text-indigo-400"
-                  : "text-gray-600 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-100"
+                  ? "bg-[#111827] text-white dark:bg-[#1F2937] dark:text-[#F9FAFB]"
+                  : "hover:bg-black/5 dark:hover:bg-white/5"
               )}
+              style={active ? {} : { color: "var(--text-secondary)" }}
             >
-              <Icon className="w-4 h-4" />
+              <Icon className="w-4 h-4 flex-shrink-0" />
               {label}
             </Link>
           )
         })}
 
-        <div className="pt-4 mt-4 border-t dark:border-slate-800">
+        <div className="pt-3 mt-3" style={{ borderTop: "1px solid var(--border-color)" }}>
           <Link
             href="/settings"
             onClick={() => setOpen(false)}
             className={cn(
-              "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
+              "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all",
               pathname.startsWith("/settings")
-                ? "bg-indigo-50 text-indigo-700 dark:bg-indigo-950/50 dark:text-indigo-400"
-                : "text-gray-600 hover:bg-gray-50 hover:text-gray-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-100"
+                ? "bg-[#111827] text-white dark:bg-[#1F2937] dark:text-[#F9FAFB]"
+                : "hover:bg-black/5 dark:hover:bg-white/5"
             )}
+            style={pathname.startsWith("/settings") ? {} : { color: "var(--text-secondary)" }}
           >
-            <Settings className="w-4 h-4" />
+            <Settings className="w-4 h-4 flex-shrink-0" />
             Settings
           </Link>
         </div>
       </nav>
 
       {/* User footer */}
-      <div className="px-3 py-3 border-t dark:border-slate-800 flex-shrink-0">
-        <div className="flex items-center gap-3 px-3 py-2">
-          <div className="w-8 h-8 rounded-full bg-indigo-100 dark:bg-indigo-950 flex items-center justify-center">
-            <span className="text-xs font-semibold text-indigo-700 dark:text-indigo-400">D</span>
+      <div className="px-3 py-3 flex-shrink-0" style={{ borderTop: "1px solid var(--border-color)" }}>
+        {userEmail ? (
+          <UserSection
+            email={userEmail}
+            initials={userEmail.charAt(0).toUpperCase()}
+          />
+        ) : (
+          <div className="flex items-center gap-3 px-3 py-2">
+            <div className="w-8 h-8 rounded-full animate-pulse" style={{ backgroundColor: "var(--border-color)" }} />
+            <div className="flex-1 space-y-1">
+              <div className="h-3 w-20 rounded animate-pulse" style={{ backgroundColor: "var(--border-color)" }} />
+              <div className="h-2 w-32 rounded animate-pulse" style={{ backgroundColor: "var(--border-color)" }} />
+            </div>
           </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-xs font-medium text-gray-900 dark:text-slate-100 truncate">Demo User</p>
-            <p className="text-[10px] text-gray-500 dark:text-slate-400 truncate">demo@quoteflow.test</p>
-          </div>
-          <Link href="/login" title="Sign out">
-            <LogOut className="w-4 h-4 text-gray-400 hover:text-gray-700 dark:text-slate-400 dark:hover:text-slate-100 transition-colors" />
-          </Link>
-        </div>
+        )}
       </div>
     </div>
   )
@@ -105,19 +147,24 @@ export default function Sidebar() {
   return (
     <>
       {/* Mobile top bar */}
-      <div className="md:hidden fixed top-0 left-0 right-0 z-20 h-16 bg-white dark:bg-slate-900 border-b dark:border-slate-800 flex items-center justify-between px-4">
+      <div className="md:hidden fixed top-0 left-0 right-0 z-20 h-16 flex items-center justify-between px-4 bg-white dark:bg-[#111827]" style={{ borderBottom: "1px solid var(--border-color)" }}>
         <button
           onClick={() => setOpen(true)}
-          className="p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-50 dark:text-slate-400 dark:hover:text-slate-100 dark:hover:bg-slate-800"
+          className="p-2 rounded-xl transition-colors hover:opacity-70"
           aria-label="Open menu"
+          style={{ color: "var(--text-secondary)" }}
         >
           <Menu className="w-5 h-5" />
         </button>
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center">
-            <Zap className="w-3.5 h-3.5 text-white" />
+          <div className="w-9 h-9 rounded-lg flex items-center justify-center overflow-hidden flex-shrink-0" style={logoUrl ? { border: "1px solid var(--border-color)" } : { backgroundColor: "var(--btn-dark)" }}>
+            {logoUrl ? (
+              <Image src={logoUrl} alt="Logo" width={36} height={36} unoptimized className="w-full h-full object-contain p-1" />
+            ) : (
+              <Zap className="w-3.5 h-3.5 text-white dark:text-black" />
+            )}
           </div>
-          <span className="font-bold text-gray-900 dark:text-slate-100 text-sm">QuoteFlow</span>
+          <span className="font-semibold text-sm" style={{ color: "var(--text-primary)" }}>{workspaceName}</span>
         </div>
         <ThemeToggle />
       </div>
@@ -133,10 +180,11 @@ export default function Sidebar() {
       {/* Sidebar */}
       <aside
         className={cn(
-          "fixed inset-y-0 left-0 w-60 bg-white dark:bg-slate-900 border-r dark:border-slate-800 z-40 transition-transform duration-200",
+          "fixed inset-y-0 left-0 w-60 z-40 transition-transform duration-200 bg-white dark:bg-[#111827]",
           "md:translate-x-0",
           open ? "translate-x-0" : "-translate-x-full"
         )}
+        style={{ borderRight: "1px solid var(--border-color)" }}
       >
         {nav}
       </aside>

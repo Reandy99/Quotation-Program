@@ -1,6 +1,7 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -11,6 +12,7 @@ import { PageHeader } from "@/components/shared/PageHeader"
 import { formatCurrency, formatDate } from "@/lib/utils/format"
 import { Printer, Plus, Send, X } from "lucide-react"
 import type { Invoice, Payment, PaymentMethod, InvoiceStatus, CompanySettings } from "@/types"
+import { loadCompanySettings, SETTINGS_UPDATED_EVENT } from "@/lib/settings/storage"
 
 const STATUS_CLASSES: Record<InvoiceStatus, string> = {
   Draft: "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300",
@@ -28,17 +30,29 @@ interface Props {
   company: CompanySettings
 }
 
-export default function InvoiceDetailClient({ invoice: initialInvoice, initialPayments, company }: Props) {
+export default function InvoiceDetailClient({ invoice: initialInvoice, initialPayments, company: serverCompany }: Props) {
   const [invoice, setInvoice] = useState(initialInvoice)
   const [payments, setPayments] = useState(initialPayments)
   const [showPaymentModal, setShowPaymentModal] = useState(false)
   const [showSendConfirm, setShowSendConfirm] = useState(false)
+  const [localSettings, setLocalSettings] = useState(loadCompanySettings)
+  const company = { ...serverCompany, ...localSettings }
   const [paymentForm, setPaymentForm] = useState({
     amount: "",
     method: "Transfer" as PaymentMethod,
     date: new Date().toISOString().split("T")[0],
     notes: "",
   })
+
+  useEffect(() => {
+    const refresh = () => setLocalSettings(loadCompanySettings())
+    window.addEventListener("storage", refresh)
+    window.addEventListener(SETTINGS_UPDATED_EVENT, refresh)
+    return () => {
+      window.removeEventListener("storage", refresh)
+      window.removeEventListener(SETTINGS_UPDATED_EVENT, refresh)
+    }
+  }, [])
 
   function handleRecordPayment() {
     const amount = parseFloat(paymentForm.amount)
@@ -99,9 +113,19 @@ export default function InvoiceDetailClient({ invoice: initialInvoice, initialPa
       {/* Invoice card */}
       <div className="max-w-4xl mx-auto mt-6 print:mt-0">
         <Card className="print:shadow-none print:border-0 dark:bg-gray-900 dark:border-gray-800">
-          <CardContent className="p-8">
+          <CardContent className="p-5 sm:p-8">
             <div className="flex justify-between items-start mb-8">
               <div>
+                {company.logo_url && (
+                  <Image
+                    src={company.logo_url}
+                    alt="Company logo"
+                    width={64}
+                    height={64}
+                    className="object-contain mb-2"
+                    unoptimized
+                  />
+                )}
                 <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">{company.business_name}</h1>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">{company.address}</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">{company.phone} · {company.email}</p>
@@ -125,40 +149,66 @@ export default function InvoiceDetailClient({ invoice: initialInvoice, initialPa
 
             <div className="mb-8">
               <div className="flex justify-end">
-                <div className="w-80 space-y-2">
+                <div className="w-full sm:w-80 space-y-2">
                   <div className="flex justify-between text-sm">
-                    <span className="text-gray-600 dark:text-gray-400">Subtotal</span>
-                    <span className="font-medium text-gray-900 dark:text-gray-100">{formatCurrency(invoice.subtotal)}</span>
+                    <span className="text-gray-600 dark:text-gray-400 mr-4">Subtotal</span>
+                    <span className="font-medium text-gray-900 dark:text-gray-100 tabular-nums whitespace-nowrap">{formatCurrency(invoice.subtotal)}</span>
                   </div>
                   {invoice.discount > 0 && (
                     <div className="flex justify-between text-sm">
-                      <span className="text-gray-600 dark:text-gray-400">Discount</span>
-                      <span className="font-medium text-red-600 dark:text-red-400">-{formatCurrency(invoice.discount)}</span>
+                      <span className="text-gray-600 dark:text-gray-400 mr-4">Discount</span>
+                      <span className="font-medium text-red-600 dark:text-red-400 tabular-nums whitespace-nowrap">-{formatCurrency(invoice.discount)}</span>
                     </div>
                   )}
                   {invoice.tax > 0 && (
                     <div className="flex justify-between text-sm">
-                      <span className="text-gray-600 dark:text-gray-400">Tax</span>
-                      <span className="font-medium text-gray-900 dark:text-gray-100">{formatCurrency(invoice.tax)}</span>
+                      <span className="text-gray-600 dark:text-gray-400 mr-4">Tax</span>
+                      <span className="font-medium text-gray-900 dark:text-gray-100 tabular-nums whitespace-nowrap">{formatCurrency(invoice.tax)}</span>
                     </div>
                   )}
                   <div className="flex justify-between text-lg font-bold pt-2 border-t-2 border-gray-300 dark:border-gray-700">
-                    <span className="text-gray-900 dark:text-gray-100">Grand Total</span>
-                    <span className="text-indigo-700 dark:text-indigo-400">{formatCurrency(invoice.grand_total)}</span>
+                    <span className="text-gray-900 dark:text-gray-100 mr-4">Grand Total</span>
+                    <span className="text-indigo-700 dark:text-indigo-400 tabular-nums whitespace-nowrap">{formatCurrency(invoice.grand_total)}</span>
                   </div>
                   <div className="flex justify-between text-sm pt-2 border-t border-gray-200 dark:border-gray-700">
-                    <span className="text-gray-600 dark:text-gray-400">Paid</span>
-                    <span className="font-medium text-green-600 dark:text-green-400">{formatCurrency(invoice.paid_amount)}</span>
+                    <span className="text-gray-600 dark:text-gray-400 mr-4">Paid</span>
+                    <span className="font-medium text-green-600 dark:text-green-400 tabular-nums whitespace-nowrap">{formatCurrency(invoice.paid_amount)}</span>
                   </div>
                   <div className="flex justify-between text-base font-semibold">
-                    <span className="text-gray-900 dark:text-gray-100">Outstanding</span>
-                    <span className={newOutstanding > 0 ? "text-red-600 dark:text-red-400" : "text-green-600 dark:text-green-400"}>
+                    <span className="text-gray-900 dark:text-gray-100 mr-4">Outstanding</span>
+                    <span className={`tabular-nums whitespace-nowrap ${newOutstanding > 0 ? "text-red-600 dark:text-red-400" : "text-green-600 dark:text-green-400"}`}>
                       {formatCurrency(newOutstanding)}
                     </span>
                   </div>
                 </div>
               </div>
             </div>
+
+            {/* Signature */}
+            {(company.signer_name || company.signer_title || company.signature_url) && (
+              <div className="flex justify-end pt-6 border-t dark:border-gray-700">
+                <div className="text-center w-48">
+                  {company.signature_url ? (
+                    <Image
+                      src={company.signature_url}
+                      alt="Signature"
+                      width={160}
+                      height={64}
+                      className="object-contain mx-auto mb-1"
+                      unoptimized
+                    />
+                  ) : (
+                    <div className="h-12 border-b border-gray-400 dark:border-gray-500 mb-1" />
+                  )}
+                  {company.signer_name && (
+                    <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">{company.signer_name}</p>
+                  )}
+                  {company.signer_title && (
+                    <p className="text-xs text-gray-500 dark:text-gray-400">{company.signer_title}</p>
+                  )}
+                </div>
+              </div>
+            )}
           </CardContent>
         </Card>
 

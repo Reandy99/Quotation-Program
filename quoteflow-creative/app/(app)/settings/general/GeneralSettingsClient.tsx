@@ -10,6 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent } from "@/components/ui/card"
 import { PageHeader } from "@/components/shared/PageHeader"
 import { Check } from "lucide-react"
+import { dispatchSettingsUpdated } from "@/lib/settings/storage"
 
 const LS_KEY = "quoteflow_general_settings"
 
@@ -63,6 +64,7 @@ export default function GeneralSettingsClient() {
 
   function onSubmit(data: GeneralSettingsFormData) {
     localStorage.setItem(LS_KEY, JSON.stringify(data))
+    dispatchSettingsUpdated()
     setSaved(true)
     setTimeout(() => setSaved(false), 2500)
   }

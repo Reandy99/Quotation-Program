@@ -28,6 +28,10 @@ const styles = StyleSheet.create({
   grandTotalRow: { flexDirection: "row", justifyContent: "flex-end", width: 200, borderTop: "1px solid #4f46e5", paddingTop: 6, marginTop: 4 },
   grandTotalLabel: { width: 100, fontSize: 10, fontFamily: "Helvetica-Bold", color: "#4f46e5", textAlign: "right", paddingRight: 12 },
   grandTotalValue: { width: 100, fontSize: 10, fontFamily: "Helvetica-Bold", color: "#4f46e5", textAlign: "right" },
+  signatureBlock: { marginTop: 32, alignItems: "flex-end" },
+  signatureLine: { borderBottom: "1px solid #9ca3af", width: 160, marginBottom: 4 },
+  signerName: { fontSize: 9, fontFamily: "Helvetica-Bold", color: "#1a1a2e", textAlign: "right" },
+  signerTitle: { fontSize: 8, color: "#6b7280", textAlign: "right" },
   footer: { marginTop: 32, padding: "16 20", backgroundColor: "#f8f7ff", borderRadius: 8, borderLeft: "3px solid #4f46e5" },
   footerTitle: { fontSize: 10, fontFamily: "Helvetica-Bold", color: "#4f46e5", marginBottom: 4 },
   footerText: { fontSize: 8, color: "#6b7280", lineHeight: 1.6 },
@@ -178,6 +182,19 @@ export function QuotationPDF({ quotation, company }: Props) {
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Terms & Conditions</Text>
             <Text style={{ fontSize: 8, color: "#374151", lineHeight: 1.6 }}>{quotation.terms}</Text>
+          </View>
+        )}
+
+        {/* Signature */}
+        {(company?.signer_name || company?.signer_title || company?.signature_url) && (
+          <View style={styles.signatureBlock}>
+            {company?.signature_url ? (
+              <Image src={company.signature_url} style={{ width: 160, height: 64, objectFit: "contain" }} />
+            ) : (
+              <View style={styles.signatureLine} />
+            )}
+            {company?.signer_name && <Text style={styles.signerName}>{company.signer_name}</Text>}
+            {company?.signer_title && <Text style={styles.signerTitle}>{company.signer_title}</Text>}
           </View>
         )}
 

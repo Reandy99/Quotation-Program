@@ -3,11 +3,13 @@ import { Button } from "@/components/ui/button"
 import { PageHeader } from "@/components/shared/PageHeader"
 import { EmptyState } from "@/components/shared/EmptyState"
 import { Plus, Users } from "lucide-react"
-import { demoLeads } from "@/lib/demo/data"
 import LeadsListClient from "@/components/leads/LeadsListClient"
+import { getLeads } from "./actions"
+
+export const dynamic = "force-dynamic"
 
 export default async function LeadsPage() {
-  const leads = demoLeads
+  const leads = await getLeads()
 
   return (
     <div>

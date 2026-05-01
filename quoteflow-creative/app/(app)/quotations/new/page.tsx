@@ -1,16 +1,18 @@
 import NewQuotationClient from "./NewQuotationClient"
-import { demoLeads, demoCompany } from "@/lib/demo/data"
+import { getLeads } from "../../leads/actions"
+
+export const dynamic = "force-dynamic"
 
 export default async function NewQuotationPage({
   searchParams,
 }: {
   searchParams: { lead_id?: string }
 }) {
+  const leads = await getLeads()
   return (
     <NewQuotationClient
-      leads={demoLeads}
+      leads={leads}
       defaultLeadId={searchParams.lead_id}
-      defaultTerms={demoCompany.default_terms ?? ""}
     />
   )
 }

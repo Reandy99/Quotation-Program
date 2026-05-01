@@ -1,6 +1,9 @@
 import CompanySettingsClient from "./CompanySettingsClient"
-import { demoCompany } from "@/lib/demo/data"
+import { getCompanySettings } from "../actions"
+
+export const dynamic = "force-dynamic"
 
 export default async function CompanySettingsPage() {
-  return <CompanySettingsClient company={demoCompany} userId="demo" />
+  const company = await getCompanySettings()
+  return <CompanySettingsClient company={company} />
 }

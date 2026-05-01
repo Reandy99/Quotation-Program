@@ -4,10 +4,11 @@ import ThemeToggle from "@/components/shared/ThemeToggle"
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-slate-950">
+    <div className="min-h-screen" style={{ backgroundColor: "var(--app-bg)" }}>
       <Sidebar />
       <main className="md:ml-60 min-h-screen">
-        <div className="hidden md:flex justify-end items-center gap-2 px-8 py-4 border-b dark:border-slate-800 bg-white dark:bg-slate-900">
+        {/* Top bar */}
+        <div className="hidden md:flex justify-end items-center gap-2 px-8 py-3 border-b bg-white dark:bg-[#111827]" style={{ borderColor: "var(--border-color)" }}>
           <ThemeToggle />
           <NotificationBell />
         </div>

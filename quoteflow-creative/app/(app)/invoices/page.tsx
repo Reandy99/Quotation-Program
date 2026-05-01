@@ -2,11 +2,13 @@ import { Button } from "@/components/ui/button"
 import { PageHeader } from "@/components/shared/PageHeader"
 import { EmptyState } from "@/components/shared/EmptyState"
 import { Plus, FileText } from "lucide-react"
-import { demoInvoices } from "@/lib/demo/data"
 import InvoicesListClient from "@/components/invoices/InvoicesListClient"
+import { getInvoices } from "./actions"
+
+export const dynamic = "force-dynamic"
 
 export default async function InvoicesPage() {
-  const invoices = demoInvoices
+  const invoices = await getInvoices()
 
   return (
     <div>

@@ -4,6 +4,8 @@ import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Copy, Check } from "lucide-react"
+import { useLiveCompanySettings } from "@/lib/settings/useLiveSettings"
+import { normalizeWhatsAppNumber, buildWhatsAppUrl } from "@/lib/utils/whatsapp"
 
 const templates = [
   {
@@ -45,6 +47,8 @@ Salam,
 
 export default function WhatsAppTemplates() {
   const [copied, setCopied] = useState<number | null>(null)
+  const company = useLiveCompanySettings()
+  const normalizedPhone = normalizeWhatsAppNumber(company.phone)
 
   function handleCopy(text: string, index: number) {
     navigator.clipboard.writeText(text)
@@ -53,14 +57,29 @@ export default function WhatsAppTemplates() {
   }
 
   function handleWhatsApp(text: string) {
-    window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, "_blank")
+    const url = buildWhatsAppUrl(undefined, text)
+    if (url) window.open(url, "_blank")
   }
 
   return (
     <Card className="dark:bg-gray-900 dark:border-gray-800">
       <CardHeader>
-        <CardTitle className="text-base text-gray-900 dark:text-gray-100">WhatsApp Follow-up Templates</CardTitle>
-        <p className="text-sm text-gray-500 dark:text-gray-400">Copy and customize these templates for your follow-up messages</p>
+        <div className="flex items-center justify-between gap-2">
+          <div>
+            <CardTitle className="text-base text-gray-900 dark:text-gray-100">WhatsApp Follow-up Templates</CardTitle>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Copy and customize these templates for your follow-up messages</p>
+          </div>
+          {normalizedPhone && (
+            <a
+              href={`https://wa.me/${normalizedPhone}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 text-xs text-green-600 dark:text-green-400 underline underline-offset-2 hover:text-green-700 dark:hover:text-green-300"
+            >
+              Open WA · {company.phone}
+            </a>
+          )}
+        </div>
       </CardHeader>
       <CardContent className="space-y-4">
         {templates.map((tpl, i) => (

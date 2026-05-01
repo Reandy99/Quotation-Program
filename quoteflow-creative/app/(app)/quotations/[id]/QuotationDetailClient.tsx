@@ -1,16 +1,19 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
+import Image from "next/image"
 import { PageHeader } from "@/components/shared/PageHeader"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { QuoteStatusBadge } from "@/components/leads/StatusBadge"
 import { formatCurrency, formatDate } from "@/lib/utils/format"
+import { buildWhatsAppUrl } from "@/lib/utils/whatsapp"
 import { Pencil, Copy, Printer, MessageCircle, FileText } from "lucide-react"
 import type { Quotation, QuotationItem } from "@/types"
-import { demoCompany, demoQuotations } from "@/lib/demo/data"
+import { loadCompanySettings, SETTINGS_UPDATED_EVENT } from "@/lib/settings/storage"
+import { useToast } from "@/hooks/use-toast"
 
 interface Props {
   quotation: Quotation & { items: QuotationItem[] }
@@ -18,18 +21,27 @@ interface Props {
 
 export default function QuotationDetailClient({ quotation: initial }: Props) {
   const router = useRouter()
+  const { toast } = useToast()
   const [status, setStatus] = useState(initial.status)
-  const company = demoCompany
+  const [localSettings, setLocalSettings] = useState(loadCompanySettings)
+  const company = localSettings
+
+  useEffect(() => {
+    const refresh = () => setLocalSettings(loadCompanySettings())
+    window.addEventListener("storage", refresh)
+    window.addEventListener(SETTINGS_UPDATED_EVENT, refresh)
+    return () => {
+      window.removeEventListener("storage", refresh)
+      window.removeEventListener(SETTINGS_UPDATED_EVENT, refresh)
+    }
+  }, [])
 
   function handleStatusChange(newStatus: typeof status) {
     setStatus(newStatus)
   }
 
   function handleDuplicate() {
-    // In demo mode, pick the next available demo quotation id as the "copy"
-    const ids = demoQuotations.map((q) => q.id)
-    const nextId = ids[(ids.indexOf(initial.id) + 1) % ids.length]
-    router.push(`/quotations/${nextId}`)
+    toast({ title: "Duplicate functionality coming soon", description: "This feature will be available in a future update." })
   }
 
   function handleConvertToInvoice() {
@@ -44,7 +56,6 @@ export default function QuotationDetailClient({ quotation: initial }: Props) {
 
   function handleWhatsApp() {
     const client = initial.lead?.client_name || "Bapak/Ibu"
-    const phone = initial.lead?.phone?.replace(/\D/g, "") || ""
     const itemLines = initial.items
       .map((i) => `• ${i.item_name} (${i.quantity}x) — ${formatCurrency(i.total_price)}`)
       .join("\n")
@@ -60,10 +71,12 @@ export default function QuotationDetailClient({ quotation: initial }: Props) {
       (initial.tax_percent > 0 ? `Pajak (${initial.tax_percent}%): ${formatCurrency(tax)}\n` : "") +
       `\n💰 *Total: ${formatCurrency(initial.grand_total)}*\n\n` +
       (initial.valid_until ? `Penawaran berlaku hingga: ${formatDate(initial.valid_until)}\n\n` : "") +
-      `Mohon konfirmasi ketersediaan Anda. Terima kasih! 🙏`
+      `Mohon konfirmasi ketersediaan Anda. Terima kasih! 🙏` +
+      `\n\nSalam,\n${company.business_name || ""}` +
+      (company.phone ? `\nWA: ${company.phone}` : "")
 
-    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
-    window.open(url, "_blank")
+    const url = buildWhatsAppUrl(initial.lead?.phone, message)
+    if (url) window.open(url, "_blank")
   }
 
   const discount =
@@ -106,10 +119,20 @@ export default function QuotationDetailClient({ quotation: initial }: Props) {
 
       <div className="max-w-4xl mx-auto">
         <Card className="print:shadow-none print:border-0 dark:bg-gray-900 dark:border-gray-700">
-          <CardContent className="p-8">
+          <CardContent className="p-5 sm:p-8">
             {/* Header */}
             <div className="flex justify-between items-start mb-8">
               <div>
+                {company.logo_url && (
+                  <Image
+                    src={company.logo_url}
+                    alt="Company logo"
+                    width={64}
+                    height={64}
+                    className="object-contain mb-2"
+                    unoptimized
+                  />
+                )}
                 <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">{company.business_name}</h1>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">{company.address}</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">{company.phone} · {company.email}</p>
@@ -143,55 +166,82 @@ export default function QuotationDetailClient({ quotation: initial }: Props) {
               </div>
             </div>
 
-            {/* Line Items */}
-            <table className="w-full mb-6">
-              <thead>
-                <tr className="border-b-2 border-gray-300 dark:border-gray-600">
-                  <th className="text-left py-2 text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase">Item</th>
-                  <th className="text-right py-2 text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase w-20">Qty</th>
-                  <th className="text-right py-2 text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase w-32">Harga Satuan</th>
-                  <th className="text-right py-2 text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase w-32">Total</th>
-                </tr>
-              </thead>
-              <tbody>
-                {initial.items.map((item) => (
-                  <tr key={item.id} className="border-b border-gray-100 dark:border-gray-700">
-                    <td className="py-3">
-                      <div className="font-medium text-gray-900 dark:text-gray-100">{item.item_name}</div>
-                      {item.description && <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{item.description}</div>}
-                    </td>
-                    <td className="text-right text-gray-700 dark:text-gray-300">{item.quantity}</td>
-                    <td className="text-right text-gray-700 dark:text-gray-300">{formatCurrency(item.unit_price)}</td>
-                    <td className="text-right font-medium text-gray-900 dark:text-gray-100">{formatCurrency(item.total_price)}</td>
+            {/* Line Items — table on md+, stacked cards on mobile */}
+            <div className="mb-6">
+              {/* Desktop/tablet table */}
+              <table className="hidden md:table w-full">
+                <thead>
+                  <tr className="border-b-2 border-gray-300 dark:border-gray-600">
+                    <th className="text-left py-2 text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase">Item</th>
+                    <th className="text-right py-2 text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase w-20">Qty</th>
+                    <th className="text-right py-2 text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase w-32">Harga Satuan</th>
+                    <th className="text-right py-2 text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase w-32">Total</th>
                   </tr>
+                </thead>
+                <tbody>
+                  {initial.items.map((item) => (
+                    <tr key={item.id} className="border-b border-gray-100 dark:border-gray-700">
+                      <td className="py-3">
+                        <div className="font-medium text-gray-900 dark:text-gray-100">{item.item_name}</div>
+                        {item.description && <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{item.description}</div>}
+                      </td>
+                      <td className="text-right text-gray-700 dark:text-gray-300">{item.quantity}</td>
+                      <td className="text-right text-gray-700 dark:text-gray-300 tabular-nums whitespace-nowrap">{formatCurrency(item.unit_price)}</td>
+                      <td className="text-right font-medium text-gray-900 dark:text-gray-100 tabular-nums whitespace-nowrap">{formatCurrency(item.total_price)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+
+              {/* Mobile stacked cards */}
+              <div className="md:hidden space-y-3">
+                {initial.items.map((item) => (
+                  <div key={item.id} className="border border-gray-100 dark:border-gray-700 rounded-lg p-3">
+                    <div className="font-semibold text-gray-900 dark:text-gray-100 mb-0.5">{item.item_name}</div>
+                    {item.description && <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">{item.description}</div>}
+                    <div className="grid grid-cols-3 gap-1 text-xs text-center">
+                      <div>
+                        <div className="text-gray-400 dark:text-gray-500 uppercase mb-0.5">Qty</div>
+                        <div className="font-medium text-gray-700 dark:text-gray-300">{item.quantity}</div>
+                      </div>
+                      <div>
+                        <div className="text-gray-400 dark:text-gray-500 uppercase mb-0.5">Harga Satuan</div>
+                        <div className="font-medium text-gray-700 dark:text-gray-300 tabular-nums whitespace-nowrap">{formatCurrency(item.unit_price)}</div>
+                      </div>
+                      <div>
+                        <div className="text-gray-400 dark:text-gray-500 uppercase mb-0.5">Total</div>
+                        <div className="font-semibold text-gray-900 dark:text-gray-100 tabular-nums whitespace-nowrap">{formatCurrency(item.total_price)}</div>
+                      </div>
+                    </div>
+                  </div>
                 ))}
-              </tbody>
-            </table>
+              </div>
+            </div>
 
             {/* Totals */}
             <div className="flex justify-end mb-8">
-              <div className="w-80 space-y-2">
+              <div className="w-full sm:w-80 space-y-2">
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-600 dark:text-gray-400">Subtotal</span>
-                  <span className="font-medium text-gray-900 dark:text-gray-100">{formatCurrency(initial.subtotal)}</span>
+                  <span className="text-gray-600 dark:text-gray-400 mr-4">Subtotal</span>
+                  <span className="font-medium text-gray-900 dark:text-gray-100 tabular-nums whitespace-nowrap">{formatCurrency(initial.subtotal)}</span>
                 </div>
                 {discount > 0 && (
                   <div className="flex justify-between text-sm">
-                    <span className="text-gray-600 dark:text-gray-400">
+                    <span className="text-gray-600 dark:text-gray-400 mr-4">
                       Diskon {initial.discount_type === "percent" ? `(${initial.discount_value}%)` : ""}
                     </span>
-                    <span className="font-medium text-red-600 dark:text-red-400">-{formatCurrency(discount)}</span>
+                    <span className="font-medium text-red-600 dark:text-red-400 tabular-nums whitespace-nowrap">-{formatCurrency(discount)}</span>
                   </div>
                 )}
                 {initial.tax_percent > 0 && (
                   <div className="flex justify-between text-sm">
-                    <span className="text-gray-600 dark:text-gray-400">Pajak ({initial.tax_percent}%)</span>
-                    <span className="font-medium text-gray-900 dark:text-gray-100">{formatCurrency(tax)}</span>
+                    <span className="text-gray-600 dark:text-gray-400 mr-4">Pajak ({initial.tax_percent}%)</span>
+                    <span className="font-medium text-gray-900 dark:text-gray-100 tabular-nums whitespace-nowrap">{formatCurrency(tax)}</span>
                   </div>
                 )}
                 <div className="flex justify-between text-lg font-bold pt-2 border-t-2 border-gray-300 dark:border-gray-600">
-                  <span className="text-gray-900 dark:text-gray-100">Grand Total</span>
-                  <span className="text-indigo-700 dark:text-indigo-400">{formatCurrency(initial.grand_total)}</span>
+                  <span className="text-gray-900 dark:text-gray-100 mr-4">Grand Total</span>
+                  <span className="text-indigo-700 dark:text-indigo-400 tabular-nums whitespace-nowrap">{formatCurrency(initial.grand_total)}</span>
                 </div>
               </div>
             </div>
@@ -211,6 +261,32 @@ export default function QuotationDetailClient({ quotation: initial }: Props) {
                     <p className="text-sm text-gray-700 dark:text-gray-300 whitespace-pre-wrap">{initial.notes}</p>
                   </div>
                 )}
+              </div>
+            )}
+
+            {/* Signature */}
+            {(company.signer_name || company.signer_title || company.signature_url) && (
+              <div className="flex justify-end pt-6 mt-6 border-t dark:border-gray-700">
+                <div className="text-center w-48">
+                  {company.signature_url ? (
+                    <Image
+                      src={company.signature_url}
+                      alt="Signature"
+                      width={160}
+                      height={64}
+                      className="object-contain mx-auto mb-1"
+                      unoptimized
+                    />
+                  ) : (
+                    <div className="h-12 border-b border-gray-400 dark:border-gray-500 mb-1" />
+                  )}
+                  {company.signer_name && (
+                    <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">{company.signer_name}</p>
+                  )}
+                  {company.signer_title && (
+                    <p className="text-xs text-gray-500 dark:text-gray-400">{company.signer_title}</p>
+                  )}
+                </div>
               </div>
             )}
           </CardContent>
