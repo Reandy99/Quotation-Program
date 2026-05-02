@@ -147,7 +147,7 @@ export function QuotationForm({ defaultValues, leads, onSubmit, loading }: Quota
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="md:col-span-2 space-y-1.5">
                   <Label>Project Title *</Label>
-                  <Input {...register("project_title")} placeholder="Annual Dinner Documentation 2026" />
+                  <Input {...register("project_title")} placeholder="e.g. Wedding Photography Package" />
                   {errors.project_title && <p className="text-xs text-red-500">{errors.project_title.message}</p>}
                 </div>
                 <div className="space-y-1.5">

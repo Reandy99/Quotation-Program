@@ -78,7 +78,7 @@ export default function TemplatePickerPage() {
             <div className="flex items-start gap-3 mb-3">
               <div className="text-3xl">{CATEGORY_ICONS[template.category]}</div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1 truncate" title={template.name}>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1" title={template.name}>
                   {template.name}
                 </h3>
                 <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">{template.category}</p>

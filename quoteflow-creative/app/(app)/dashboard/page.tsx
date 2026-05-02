@@ -95,7 +95,7 @@ export default async function DashboardPage() {
             <Plus className="w-4 h-4" />New Quotation
           </button>
         </Link>
-        <Link href="/invoices">
+        <Link href="/invoices/new">
           <button className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-opacity hover:opacity-80 bg-[#DDEFCB] text-[#2D5016] dark:bg-[#365314] dark:text-[#86EFAC]">
             <Plus className="w-4 h-4" />New Invoice
           </button>
