@@ -29,13 +29,10 @@ export default function TemplatePickerPage() {
     : BUILTIN_TEMPLATES
 
   function handleSelectTemplate(template: QuotationTemplate) {
-    // Store template in localStorage and redirect to new quotation form
-    localStorage.setItem("selectedTemplate", JSON.stringify(template))
-    router.push("/quotations/new")
+    router.push(`/quotations/new?template=${template.id}`)
   }
 
   function handleStartFromScratch() {
-    localStorage.removeItem("selectedTemplate")
     router.push("/quotations/new")
   }
 
@@ -51,7 +48,6 @@ export default function TemplatePickerPage() {
           variant={selectedCategory === null ? "default" : "outline"}
           size="sm"
           onClick={() => setSelectedCategory(null)}
-          className={selectedCategory === null ? "" : "dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"}
         >
           All Templates
         </Button>
@@ -61,7 +57,6 @@ export default function TemplatePickerPage() {
             variant={selectedCategory === cat ? "default" : "outline"}
             size="sm"
             onClick={() => setSelectedCategory(cat)}
-            className={selectedCategory === cat ? "" : "dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"}
           >
             {CATEGORY_ICONS[cat]} {cat}
           </Button>
@@ -72,23 +67,23 @@ export default function TemplatePickerPage() {
         {filteredTemplates.map(template => (
           <Card
             key={template.id}
-            className="p-5 hover:border-indigo-500 dark:hover:border-indigo-500 transition-colors cursor-pointer dark:bg-gray-900 dark:border-gray-700"
+            className="p-5 hover:shadow-md transition-all cursor-pointer"
             onClick={() => handleSelectTemplate(template)}
           >
             <div className="flex items-start gap-3 mb-3">
               <div className="text-3xl">{CATEGORY_ICONS[template.category]}</div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1" title={template.name}>
+                <h3 className="font-semibold mb-1" style={{ color: "var(--text-primary)" }} title={template.name}>
                   {template.name}
                 </h3>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">{template.category}</p>
+                <p className="text-xs mb-2" style={{ color: "var(--text-secondary)" }}>{template.category}</p>
               </div>
             </div>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
+            <p className="text-sm mb-4 line-clamp-2" style={{ color: "var(--text-secondary)" }}>
               {template.description}
             </p>
             <div className="flex items-center justify-between">
-              <span className="text-xs text-gray-500 dark:text-gray-500">
+              <span className="text-xs" style={{ color: "var(--text-secondary)" }}>
                 {template.items.length} items
               </span>
               <Button size="sm" onClick={() => handleSelectTemplate(template)}>
@@ -99,18 +94,18 @@ export default function TemplatePickerPage() {
         ))}
       </div>
 
-      <Card className="p-6 border-dashed dark:bg-gray-900 dark:border-gray-700">
+      <Card className="p-6 border-dashed">
         <div className="flex items-center justify-between">
           <div>
-            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1 flex items-center gap-2">
+            <h3 className="font-semibold mb-1 flex items-center gap-2" style={{ color: "var(--text-primary)" }}>
               <Sparkles className="w-4 h-4 text-indigo-500" />
               Start from Scratch
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
               Create a custom quotation without using a template
             </p>
           </div>
-          <Button variant="outline" onClick={handleStartFromScratch} className="dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800">
+          <Button variant="outline" onClick={handleStartFromScratch}>
             <FileText className="w-4 h-4 mr-2" />
             Blank Quotation
           </Button>

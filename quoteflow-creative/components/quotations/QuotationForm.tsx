@@ -66,7 +66,7 @@ function LiveSummaryPanel({ control, register }: { control: any; register: any }
               <option value="flat">Flat</option>
               <option value="percent">%</option>
             </Select>
-            <Input {...register("discount_value")} type="number" min="0" className="w-24 h-8 text-xs" />
+            <Input {...register("discount_value", { valueAsNumber: true })} type="number" min="0" className="w-24 h-8 text-xs" />
           </div>
           <div className="flex justify-between text-gray-500 dark:text-slate-500 text-xs">
             <span>Discount amount</span>
@@ -74,7 +74,7 @@ function LiveSummaryPanel({ control, register }: { control: any; register: any }
           </div>
           <div className="flex items-center gap-2 pt-2 border-t dark:border-slate-700">
             <span className="text-gray-600 dark:text-slate-400 text-xs flex-1">Tax (%)</span>
-            <Input {...register("tax_percent")} type="number" min="0" max="100" className="w-24 h-8 text-xs ml-auto" />
+            <Input {...register("tax_percent", { valueAsNumber: true })} type="number" min="0" max="100" className="w-24 h-8 text-xs ml-auto" />
           </div>
           <div className="flex justify-between text-gray-500 dark:text-slate-500 text-xs">
             <span>Tax amount</span>
@@ -104,10 +104,10 @@ function LineItemRow({ index, register, remove, control }: { index: number; regi
         <Input {...register(`items.${index}.description`)} placeholder="Description" className="h-9 text-sm" />
       </div>
       <div className="col-span-4 md:col-span-1">
-        <Input {...register(`items.${index}.quantity`)} type="number" min="1" placeholder="1" className="h-9 text-sm" />
+        <Input {...register(`items.${index}.quantity`, { valueAsNumber: true })} type="number" min="1" placeholder="1" className="h-9 text-sm w-full" />
       </div>
       <div className="col-span-4 md:col-span-2">
-        <Input {...register(`items.${index}.unit_price`)} type="number" min="0" placeholder="0" className="h-9 text-sm" />
+        <Input {...register(`items.${index}.unit_price`, { valueAsNumber: true })} type="number" min="0" placeholder="0" className="h-9 text-sm" />
       </div>
       <div className="col-span-3 md:col-span-1 flex items-center h-9 text-sm text-gray-700 dark:text-slate-300 font-medium">
         {formatCurrency(total)}

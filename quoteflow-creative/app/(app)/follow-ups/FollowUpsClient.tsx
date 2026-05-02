@@ -84,12 +84,12 @@ function LeadRow({
   const waUrl = buildWhatsAppUrl(lead.phone, waMessage)
 
   return (
-    <div className="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors gap-3">
+    <div className="flex items-center justify-between p-3 rounded-2xl hover:bg-black/5 dark:hover:bg-white/5 transition-colors gap-3">
       <Link href={`/leads/${lead.id}`} className="min-w-0 flex-1 group">
-        <p className="text-sm font-medium text-gray-900 dark:text-gray-100 group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors truncate">
+        <p className="text-sm font-medium group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors truncate" style={{ color: "var(--text-primary)" }}>
           {lead.client_name}
         </p>
-        <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
+        <p className="text-xs truncate" style={{ color: "var(--text-secondary)" }}>
           {lead.project_type || "—"} · Follow-up: {formatDate(lead.follow_up_date)}
         </p>
       </Link>
@@ -136,12 +136,12 @@ function ReviewRow({ lead, company }: { lead: Lead; company: CompanySettings }) 
   const waUrl = hasReviewUrl ? buildWhatsAppUrl(lead.phone, waMessage) : null
 
   return (
-    <div className="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors gap-3">
+    <div className="flex items-center justify-between p-3 rounded-2xl hover:bg-black/5 dark:hover:bg-white/5 transition-colors gap-3">
       <Link href={`/leads/${lead.id}`} className="min-w-0 flex-1 group">
-        <p className="text-sm font-medium text-gray-900 dark:text-gray-100 group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors truncate">
+        <p className="text-sm font-medium group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors truncate" style={{ color: "var(--text-primary)" }}>
           {lead.client_name}
         </p>
-        <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
+        <p className="text-xs truncate" style={{ color: "var(--text-secondary)" }}>
           {lead.project_type || "—"} · Event: {formatDate(lead.event_date)} · Review due: {formatDate(computeReviewDate(lead.event_date!))}
         </p>
       </Link>
@@ -154,7 +154,7 @@ function ReviewRow({ lead, company }: { lead: Lead; company: CompanySettings }) 
             </Button>
           </a>
         ) : (
-          <span className="text-xs text-gray-400 dark:text-gray-500 italic">Set Google Review Link di Settings &gt; Company</span>
+          <span className="text-xs italic" style={{ color: "var(--text-secondary)" }}>Set Google Review Link di Settings &gt; Company</span>
         )}
       </div>
     </div>
@@ -179,19 +179,19 @@ function Section({
   onReschedule: (id: string) => void
 }) {
   return (
-    <Card className="border-gray-100 dark:border-gray-800 dark:bg-gray-900">
+    <Card>
       <CardHeader>
-        <CardTitle className="text-base flex items-center gap-2 text-gray-900 dark:text-gray-100">
+        <CardTitle className="text-base flex items-center gap-2">
           <span className={`w-2 h-2 rounded-full ${accent}`} />
           {title}
-          <span className="text-xs font-normal text-gray-400 dark:text-gray-500 ml-1">({leads.length})</span>
+          <span className="text-xs font-normal ml-1" style={{ color: "var(--text-secondary)" }}>({leads.length})</span>
         </CardTitle>
       </CardHeader>
       <CardContent>
         {!leads.length ? (
-          <p className="text-sm text-gray-400 dark:text-gray-500 py-2">{emptyText}</p>
+          <p className="text-sm py-2" style={{ color: "var(--text-secondary)" }}>{emptyText}</p>
         ) : (
-          <div className="divide-y divide-gray-50 dark:divide-gray-800">
+          <div className="divide-y" style={{ borderColor: "var(--border-color)" }}>
             {leads.map(lead => (
               <LeadRow key={lead.id} lead={lead} company={company} onComplete={onComplete} onReschedule={onReschedule} />
             ))}
@@ -216,19 +216,19 @@ function ReviewSection({
   company: CompanySettings
 }) {
   return (
-    <Card className="border-gray-100 dark:border-gray-800 dark:bg-gray-900">
+    <Card>
       <CardHeader>
-        <CardTitle className="text-base flex items-center gap-2 text-gray-900 dark:text-gray-100">
+        <CardTitle className="text-base flex items-center gap-2">
           <span className={`w-2 h-2 rounded-full ${accent}`} />
           {title}
-          <span className="text-xs font-normal text-gray-400 dark:text-gray-500 ml-1">({leads.length})</span>
+          <span className="text-xs font-normal ml-1" style={{ color: "var(--text-secondary)" }}>({leads.length})</span>
         </CardTitle>
       </CardHeader>
       <CardContent>
         {!leads.length ? (
-          <p className="text-sm text-gray-400 dark:text-gray-500 py-2">{emptyText}</p>
+          <p className="text-sm py-2" style={{ color: "var(--text-secondary)" }}>{emptyText}</p>
         ) : (
-          <div className="divide-y divide-gray-50 dark:divide-gray-800">
+          <div className="divide-y" style={{ borderColor: "var(--border-color)" }}>
             {leads.map(lead => (
               <ReviewRow key={lead.id} lead={lead} company={company} />
             ))}
@@ -294,8 +294,8 @@ export default function FollowUpsClient({ leads: initialLeads, followUps }: Prop
         <div className="mb-6 md:mb-8">
           <div className="flex items-center gap-2 mb-3">
             <Star className="w-4 h-4 text-yellow-500" />
-            <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300">Google Review Requests</h2>
-            <span className="text-xs text-gray-400 dark:text-gray-500">({totalReviews}) — otomatis 3 hari setelah event</span>
+            <h2 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>Google Review Requests</h2>
+            <span className="text-xs" style={{ color: "var(--text-secondary)" }}>({totalReviews}) — otomatis 3 hari setelah event</span>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             <ReviewSection title="Overdue" leads={rOverdue} emptyText="Tidak ada" accent="bg-red-500" company={company} />

@@ -7,34 +7,41 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 }
 
 const variantClasses = {
-  default: "bg-indigo-600 text-white hover:bg-indigo-700 dark:bg-indigo-600 dark:hover:bg-indigo-700",
+  default: "text-white dark:text-black transition-opacity hover:opacity-80",
   destructive: "bg-red-500 text-white hover:bg-red-600 dark:bg-red-600 dark:hover:bg-red-700",
-  outline: "border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800",
-  secondary: "bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700",
-  ghost: "text-gray-700 hover:bg-gray-100 dark:text-slate-300 dark:hover:bg-slate-800",
+  outline: "bg-white dark:bg-slate-900 hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors",
+  secondary: "transition-opacity hover:opacity-80",
+  ghost: "hover:bg-black/5 dark:hover:bg-white/5 transition-colors",
   link: "text-indigo-600 underline-offset-4 hover:underline dark:text-indigo-400",
 }
 
 const sizeClasses = {
-  default: "h-10 px-4 py-2",
-  sm: "h-9 rounded-md px-3 text-sm",
-  lg: "h-11 rounded-md px-8",
-  icon: "h-10 w-10",
+  default: "h-10 px-4 py-2 rounded-full",
+  sm: "h-9 px-3 text-sm rounded-full",
+  lg: "h-11 px-8 rounded-full",
+  icon: "h-10 w-10 rounded-full",
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = "default", size = "default", ...props }, ref) => (
-    <button
-      ref={ref}
-      className={cn(
-        "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 disabled:pointer-events-none disabled:opacity-50",
-        variantClasses[variant],
-        sizeClasses[size],
-        className
-      )}
-      {...props}
-    />
-  )
+  ({ className, variant = "default", size = "default", style, ...props }, ref) => {
+    const defaultStyle = variant === "default" ? { backgroundColor: "var(--btn-dark)", ...style } : style
+    const outlineStyle = variant === "outline" ? { border: "1px solid var(--border-color)", color: "var(--text-primary)", ...style } : defaultStyle
+    const secondaryStyle = variant === "secondary" ? { backgroundColor: "#BFEAF3", color: "#0E4F63", ...style } : outlineStyle
+
+    return (
+      <button
+        ref={ref}
+        style={secondaryStyle}
+        className={cn(
+          "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+          variantClasses[variant],
+          sizeClasses[size],
+          className
+        )}
+        {...props}
+      />
+    )
+  }
 )
 Button.displayName = "Button"
 

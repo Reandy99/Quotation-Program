@@ -21,7 +21,7 @@ export default function ClientsListClient({ clients }: Props) {
   return (
     <div>
       <div className="relative mb-6">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4" style={{ color: "var(--text-secondary)" }} />
         <Input
           value={search}
           onChange={e => setSearch(e.target.value)}
@@ -35,24 +35,25 @@ export default function ClientsListClient({ clients }: Props) {
           <Link
             key={client.id}
             href={`/clients/${client.id}`}
-            className="block p-5 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all"
+            className="block p-5 rounded-[28px] hover:shadow-md transition-all"
+            style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}
           >
             <div className="flex items-start justify-between mb-3">
-              <div className="w-12 h-12 rounded-xl bg-indigo-100 dark:bg-indigo-900 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-2xl bg-indigo-100 dark:bg-indigo-900 flex items-center justify-center">
                 <Users className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
               </div>
               <div className="text-right">
-                <div className="text-xs text-gray-500 dark:text-gray-400">{client.total_projects} projects</div>
-                <div className="text-sm font-semibold text-gray-900 dark:text-gray-100">{formatCurrency(client.total_revenue)}</div>
+                <div className="text-xs" style={{ color: "var(--text-secondary)" }}>{client.total_projects} projects</div>
+                <div className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{formatCurrency(client.total_revenue)}</div>
               </div>
             </div>
-            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">{client.name}</h3>
+            <h3 className="font-semibold mb-1" style={{ color: "var(--text-primary)" }}>{client.name}</h3>
             {client.company && (
-              <div className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 mb-2">
+              <div className="flex items-center gap-1.5 text-xs mb-2" style={{ color: "var(--text-secondary)" }}>
                 <Building2 className="w-3 h-3" />{client.company}
               </div>
             )}
-            <div className="space-y-1 text-xs text-gray-500 dark:text-gray-400">
+            <div className="space-y-1 text-xs" style={{ color: "var(--text-secondary)" }}>
               {client.email && <div className="flex items-center gap-1.5 truncate"><Mail className="w-3 h-3 flex-shrink-0" />{client.email}</div>}
               {client.phone && <div className="flex items-center gap-1.5"><Phone className="w-3 h-3 flex-shrink-0" />{client.phone}</div>}
             </div>
@@ -61,7 +62,7 @@ export default function ClientsListClient({ clients }: Props) {
       </div>
 
       {filtered.length === 0 && (
-        <div className="text-center py-10 text-gray-500 dark:text-gray-400">
+        <div className="text-center py-10" style={{ color: "var(--text-secondary)" }}>
           No clients found
         </div>
       )}

@@ -1,10 +1,10 @@
 "use client"
 
 import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { LayoutDashboard, Users, FileText, Bell, Settings, Zap, Menu, X, UserCircle, Receipt, Calendar, BarChart3 } from "lucide-react"
+import { usePathname, useRouter } from "next/navigation"
+import { LayoutDashboard, Users, FileText, Bell, Settings, Zap, Menu, X, UserCircle, Receipt, Calendar, BarChart3, Loader2 } from "lucide-react"
 import { cn } from "@/lib/utils/cn"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useTransition, memo } from "react"
 import Image from "next/image"
 import ThemeToggle from "./ThemeToggle"
 import { loadGeneralSettings, loadCompanySettings, SETTINGS_UPDATED_EVENT } from "@/lib/settings/storage"
@@ -24,6 +24,8 @@ const navItems = [
 
 export default function Sidebar() {
   const pathname = usePathname()
+  const router = useRouter()
+  const [isPending, startTransition] = useTransition()
   const [open, setOpen] = useState(false)
   const [workspaceName, setWorkspaceName] = useState("QuoteFlow")
   const [businessName, setBusinessName] = useState("Creative Studio")
@@ -91,17 +93,26 @@ export default function Sidebar() {
             <Link
               key={href}
               href={href}
-              onClick={() => setOpen(false)}
+              prefetch={true}
+              onClick={(e) => {
+                e.preventDefault()
+                setOpen(false)
+                startTransition(() => {
+                  router.push(href)
+                })
+              }}
               className={cn(
                 "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all",
                 active
                   ? "bg-[#111827] text-white dark:bg-[#1F2937] dark:text-[#F9FAFB]"
-                  : "hover:bg-black/5 dark:hover:bg-white/5"
+                  : "hover:bg-black/5 dark:hover:bg-white/5",
+                isPending && "opacity-60"
               )}
               style={active ? {} : { color: "var(--text-secondary)" }}
             >
               <Icon className="w-4 h-4 flex-shrink-0" />
               {label}
+              {isPending && <Loader2 className="w-3 h-3 ml-auto animate-spin" />}
             </Link>
           )
         })}
@@ -109,17 +120,26 @@ export default function Sidebar() {
         <div className="pt-3 mt-3" style={{ borderTop: "1px solid var(--border-color)" }}>
           <Link
             href="/settings"
-            onClick={() => setOpen(false)}
+            prefetch={true}
+            onClick={(e) => {
+              e.preventDefault()
+              setOpen(false)
+              startTransition(() => {
+                router.push("/settings")
+              })
+            }}
             className={cn(
               "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all",
               pathname.startsWith("/settings")
                 ? "bg-[#111827] text-white dark:bg-[#1F2937] dark:text-[#F9FAFB]"
-                : "hover:bg-black/5 dark:hover:bg-white/5"
+                : "hover:bg-black/5 dark:hover:bg-white/5",
+              isPending && "opacity-60"
             )}
             style={pathname.startsWith("/settings") ? {} : { color: "var(--text-secondary)" }}
           >
             <Settings className="w-4 h-4 flex-shrink-0" />
             Settings
+            {isPending && <Loader2 className="w-3 h-3 ml-auto animate-spin" />}
           </Link>
         </div>
       </nav>

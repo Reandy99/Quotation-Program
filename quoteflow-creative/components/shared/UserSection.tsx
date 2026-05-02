@@ -4,14 +4,14 @@ import { useRouter } from "next/navigation"
 import { LogOut } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 import { toast } from "@/hooks/use-toast"
-import { useState } from "react"
+import { useState, memo } from "react"
 
 interface UserSectionProps {
   email: string
   initials: string
 }
 
-export function UserSection({ email, initials }: UserSectionProps) {
+export const UserSection = memo(function UserSection({ email, initials }: UserSectionProps) {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
 
@@ -63,4 +63,4 @@ export function UserSection({ email, initials }: UserSectionProps) {
       </button>
     </div>
   )
-}
+})

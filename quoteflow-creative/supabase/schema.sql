@@ -49,6 +49,10 @@ create table if not exists public.company_settings (
   address text,
   default_terms text,
   default_payment_terms text,
+  signer_name text,
+  signer_title text,
+  signature_url text,
+  google_review_url text,
   created_at timestamptz default now() not null,
   updated_at timestamptz default now() not null
 );

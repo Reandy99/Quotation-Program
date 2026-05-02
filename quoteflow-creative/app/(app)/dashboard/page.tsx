@@ -208,8 +208,9 @@ export default async function DashboardPage() {
           </div>
           <div className="space-y-4">
             {pipelineStages.map((stage, idx) => {
+              const totalCount = pipelineStages.reduce((sum, s) => sum + s.count, 0)
               const maxCount = Math.max(...pipelineStages.map(s => s.count), 1)
-              const widthPercent = (stage.count / maxCount) * 100
+              const widthPercent = totalCount === 0 ? 0 : (stage.count / maxCount) * 100
               const nextStage = pipelineStages[idx + 1]
               const conversionPercent = nextStage && stage.count > 0
                 ? Math.round((nextStage.count / stage.count) * 100)

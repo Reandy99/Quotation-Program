@@ -1,14 +1,14 @@
 "use client"
 
 import { useRouter } from "next/navigation"
-import { useEffect, useState } from "react"
+import { useMemo } from "react"
 import Link from "next/link"
 import { QuotationForm } from "@/components/quotations/QuotationForm"
 import { PageHeader } from "@/components/shared/PageHeader"
 import { Button } from "@/components/ui/button"
 import type { QuotationFormData } from "@/lib/validations/quotation"
 import type { Lead } from "@/types"
-import type { QuotationTemplate } from "@/lib/quotation-templates"
+import { getTemplateById } from "@/lib/quotation-templates"
 import { useLiveCompanySettings } from "@/lib/settings/useLiveSettings"
 import { useToast } from "@/hooks/use-toast"
 import { createQuotation, generateQuoteNumber } from "@/app/(app)/quotations/actions"
@@ -16,25 +16,17 @@ import { createQuotation, generateQuoteNumber } from "@/app/(app)/quotations/act
 interface Props {
   leads: Lead[]
   defaultLeadId?: string
+  templateId?: string
 }
 
-export default function NewQuotationClient({ leads, defaultLeadId }: Props) {
+export default function NewQuotationClient({ leads, defaultLeadId, templateId }: Props) {
   const router = useRouter()
   const { toast } = useToast()
-  const [template, setTemplate] = useState<QuotationTemplate | null>(null)
   const company = useLiveCompanySettings()
 
-  useEffect(() => {
-    const stored = localStorage.getItem("selectedTemplate")
-    if (stored) {
-      try {
-        setTemplate(JSON.parse(stored))
-        localStorage.removeItem("selectedTemplate")
-      } catch (e) {
-        console.error("Failed to parse template", e)
-      }
-    }
-  }, [])
+  const template = useMemo(() => {
+    return templateId ? getTemplateById(templateId) : null
+  }, [templateId])
 
   async function handleSubmit(data: QuotationFormData) {
     try {

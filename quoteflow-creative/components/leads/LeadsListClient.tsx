@@ -160,7 +160,7 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
 
       {/* Bulk action bar */}
       {selected.size > 0 && (
-        <div className="flex items-center gap-3 mb-4 px-4 py-2.5 bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 rounded-lg">
+        <div className="flex items-center gap-3 mb-4 px-4 py-2.5 rounded-2xl" style={{ backgroundColor: "#E0E7FF", border: "1px solid #C7D2FE" }}>
           <span className="text-sm font-medium text-indigo-700 dark:text-indigo-300">
             {selected.size} selected
           </span>
@@ -169,17 +169,17 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
               size="sm"
               variant="outline"
               onClick={() => setBulkMenuOpen(v => !v)}
-              className="dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
             >
               Update Status <ChevronDown className="w-3.5 h-3.5 ml-1.5" />
             </Button>
             {bulkMenuOpen && (
-              <div className="absolute right-0 top-full mt-1 z-20 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg py-1 min-w-[140px]">
+              <div className="absolute right-0 top-full mt-1 z-20 rounded-2xl shadow-lg py-1 min-w-[140px]" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
                 {BULK_STATUSES.map(s => (
                   <button
                     key={s}
                     onClick={() => requestBulkUpdate(s)}
-                    className="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
+                    className="w-full text-left px-4 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/5"
+                    style={{ color: "var(--text-primary)" }}
                   >
                     {s}
                   </button>
@@ -191,7 +191,6 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
             size="sm"
             variant="ghost"
             onClick={() => setSelected(new Set())}
-            className="text-gray-500 dark:text-gray-400 dark:hover:bg-gray-800"
           >
             Clear
           </Button>
@@ -199,9 +198,9 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
       )}
 
       {/* Table */}
-      <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm overflow-hidden">
-        <div className="grid grid-cols-[auto_1fr_auto_auto_auto] gap-4 px-5 py-3 bg-gray-50 dark:bg-gray-800/60 border-b border-gray-100 dark:border-gray-800 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-          <button onClick={toggleAll} className="flex items-center text-gray-400 dark:text-gray-500 hover:text-indigo-600 dark:hover:text-indigo-400">
+      <div className="rounded-[28px] shadow-sm overflow-hidden" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
+        <div className="grid grid-cols-[auto_1fr_auto_auto_auto] gap-4 px-5 py-3 border-b text-xs font-semibold uppercase tracking-wider" style={{ backgroundColor: "var(--app-bg)", borderColor: "var(--border-color)", color: "var(--text-secondary)" }}>
+          <button onClick={toggleAll} className="flex items-center transition-opacity hover:opacity-70" style={{ color: "var(--text-secondary)" }}>
             {allFilteredSelected
               ? <CheckSquare className="w-4 h-4" />
               : <Square className="w-4 h-4" />}
@@ -212,39 +211,40 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
           <span>Status</span>
         </div>
 
-        <div className="divide-y divide-gray-50 dark:divide-gray-800">
+        <div className="divide-y" style={{ borderColor: "var(--border-color)" }}>
           {filtered.length === 0 ? (
-            <div className="px-5 py-10 text-center text-sm text-gray-400 dark:text-gray-500">
+            <div className="px-5 py-10 text-center text-sm" style={{ color: "var(--text-secondary)" }}>
               No leads match your search.
             </div>
           ) : filtered.map(lead => (
             <div
               key={lead.id}
-              className="grid grid-cols-[auto_1fr_auto_auto_auto] gap-4 items-center px-5 py-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors group"
+              className="grid grid-cols-[auto_1fr_auto_auto_auto] gap-4 items-center px-5 py-4 hover:bg-black/5 dark:hover:bg-white/5 transition-colors group"
             >
               <button
                 onClick={e => { e.stopPropagation(); toggleOne(lead.id) }}
-                className="text-gray-400 dark:text-gray-500 hover:text-indigo-600 dark:hover:text-indigo-400"
+                className="transition-opacity hover:opacity-70"
+                style={{ color: "var(--text-secondary)" }}
               >
                 {selected.has(lead.id)
-                  ? <CheckSquare className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+                  ? <CheckSquare className="w-4 h-4" style={{ color: "#6366F1" }} />
                   : <Square className="w-4 h-4" />}
               </button>
               <Link href={`/leads/${lead.id}`} className="min-w-0">
-                <p className="text-sm font-medium text-gray-900 dark:text-gray-100 group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors truncate">
+                <p className="text-sm font-medium group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors truncate" style={{ color: "var(--text-primary)" }}>
                   {lead.client_name}
                   {lead.company_name && (
-                    <span className="text-gray-400 dark:text-gray-500 font-normal"> · {lead.company_name}</span>
+                    <span className="font-normal" style={{ color: "var(--text-secondary)" }}> · {lead.company_name}</span>
                   )}
                 </p>
-                <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5 truncate">
+                <p className="text-xs mt-0.5 truncate" style={{ color: "var(--text-secondary)" }}>
                   {[lead.project_type, lead.event_date && `Event: ${formatDateShort(lead.event_date)}`].filter(Boolean).join(" · ") || "—"}
                 </p>
               </Link>
-              <span className="hidden sm:block text-sm text-gray-600 dark:text-gray-400 tabular-nums">
+              <span className="hidden sm:block text-sm tabular-nums" style={{ color: "var(--text-secondary)" }}>
                 {lead.estimated_budget ? formatCurrency(lead.estimated_budget) : "—"}
               </span>
-              <span className="hidden md:block text-xs text-gray-400 dark:text-gray-500 whitespace-nowrap">
+              <span className="hidden md:block text-xs whitespace-nowrap" style={{ color: "var(--text-secondary)" }}>
                 {formatDateShort(lead.created_at)}
               </span>
               <LeadStatusBadge status={lead.status} />
@@ -252,7 +252,7 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
           ))}
         </div>
 
-        <div className="px-5 py-3 bg-gray-50 dark:bg-gray-800/60 border-t border-gray-100 dark:border-gray-800 text-xs text-gray-400 dark:text-gray-500">
+        <div className="px-5 py-3 border-t text-xs" style={{ backgroundColor: "var(--app-bg)", borderColor: "var(--border-color)", color: "var(--text-secondary)" }}>
           {filtered.length} lead{filtered.length !== 1 ? "s" : ""}
           {(search || statusFilter !== "All") ? ` (filtered from ${leads.length})` : ""}
         </div>
@@ -267,9 +267,9 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
             const columnLeads = kanbanGroups[status]
             return (
               <div key={status} className="flex flex-col min-h-[400px]">
-                <div className="flex items-center justify-between mb-3 px-3 py-2 bg-gray-50 dark:bg-gray-800/60 rounded-lg border border-gray-200 dark:border-gray-700">
-                  <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">{status}</h3>
-                  <span className="text-xs text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900 px-2 py-0.5 rounded-full">
+                <div className="flex items-center justify-between mb-3 px-3 py-2 rounded-2xl" style={{ backgroundColor: "var(--app-bg)", border: "1px solid var(--border-color)" }}>
+                  <h3 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{status}</h3>
+                  <span className="text-xs px-2 py-0.5 rounded-full" style={{ backgroundColor: "var(--card-bg)", color: "var(--text-secondary)" }}>
                     {columnLeads.length}
                   </span>
                 </div>
@@ -277,33 +277,35 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
                   {columnLeads.map(lead => (
                     <div
                       key={lead.id}
-                      className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-3 hover:shadow-md dark:hover:border-indigo-700 transition-all cursor-pointer group"
+                      className="rounded-2xl p-3 hover:shadow-md transition-all cursor-pointer group"
+                      style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}
                     >
                       <Link href={`/leads/${lead.id}`} className="block">
-                        <p className="text-sm font-medium text-gray-900 dark:text-gray-100 mb-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                        <p className="text-sm font-medium mb-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors" style={{ color: "var(--text-primary)" }}>
                           {lead.client_name}
                         </p>
                         {lead.project_type && (
-                          <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">{lead.project_type}</p>
+                          <p className="text-xs mb-2" style={{ color: "var(--text-secondary)" }}>{lead.project_type}</p>
                         )}
                         {lead.estimated_budget && (
-                          <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400 mb-2">
+                          <p className="text-xs font-semibold mb-2 text-indigo-600 dark:text-indigo-400">
                             {formatCurrency(lead.estimated_budget)}
                           </p>
                         )}
                         {lead.event_date && (
-                          <p className="text-xs text-gray-400 dark:text-gray-500">
+                          <p className="text-xs" style={{ color: "var(--text-secondary)" }}>
                             📅 {formatDateShort(lead.event_date)}
                           </p>
                         )}
                       </Link>
-                      <div className="mt-2 pt-2 border-t border-gray-100 dark:border-gray-800">
+                      <div className="mt-2 pt-2" style={{ borderTop: "1px solid var(--border-color)" }}>
                         <select
                           value={lead.status}
                           onChange={e => handleStatusChange(lead.id, e.target.value as LeadStatus)}
                           onClick={e => e.stopPropagation()}
                           disabled={isPending}
-                          className="w-full text-xs px-2 py-1 rounded border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:opacity-50"
+                          className="w-full text-xs px-2 py-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:opacity-50"
+                          style={{ border: "1px solid var(--border-color)", backgroundColor: "var(--card-bg)", color: "var(--text-primary)" }}
                         >
                           {KANBAN_COLUMNS.map(s => (
                             <option key={s} value={s}>{s}</option>
@@ -313,7 +315,7 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
                     </div>
                   ))}
                   {columnLeads.length === 0 && (
-                    <div className="text-center py-8 text-xs text-gray-400 dark:text-gray-500">
+                    <div className="text-center py-8 text-xs" style={{ color: "var(--text-secondary)" }}>
                       No leads
                     </div>
                   )}
@@ -327,15 +329,14 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
       {/* Confirmation modal */}
       {confirmAction && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 dark:bg-black/70">
-          <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 shadow-xl p-6 max-w-sm w-full mx-4">
-            <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2">Confirm Bulk Update</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-5">
-              Update <span className="font-medium text-gray-900 dark:text-gray-100">{confirmAction.ids.length} lead{confirmAction.ids.length !== 1 ? "s" : ""}</span> to status{" "}
+          <div className="rounded-[28px] shadow-xl p-6 max-w-sm w-full mx-4" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
+            <h3 className="text-base font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Confirm Bulk Update</h3>
+            <p className="text-sm mb-5" style={{ color: "var(--text-secondary)" }}>
+              Update <span className="font-medium" style={{ color: "var(--text-primary)" }}>{confirmAction.ids.length} lead{confirmAction.ids.length !== 1 ? "s" : ""}</span> to status{" "}
               <span className="font-medium text-indigo-600 dark:text-indigo-400">{confirmAction.status}</span>?
             </p>
             <div className="flex gap-3 justify-end">
-              <Button variant="outline" size="sm" onClick={() => setConfirmAction(null)}
-                className="dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800">
+              <Button variant="outline" size="sm" onClick={() => setConfirmAction(null)}>
                 Cancel
               </Button>
               <Button size="sm" onClick={confirmBulkUpdate}>

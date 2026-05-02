@@ -49,6 +49,10 @@ const companyDefaults: CompanySettings = {
   default_terms: "",
   default_payment_terms: "",
   logo_url: "",
+  signer_name: "",
+  signer_title: "",
+  signature_url: "",
+  google_review_url: "",
 }
 
 export function loadGeneralSettings(): GeneralSettings {

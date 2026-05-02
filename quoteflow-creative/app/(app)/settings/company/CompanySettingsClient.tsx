@@ -28,12 +28,17 @@ export default function CompanySettingsClient({ company }: Props) {
     resolver: zodResolver(companySchema),
     defaultValues: {
       business_name: company?.business_name ?? "",
+      logo_url: company?.logo_url ?? "",
       email: company?.email ?? "",
       phone: company?.phone ?? "",
       website: company?.website ?? "",
       address: company?.address ?? "",
       default_terms: company?.default_terms ?? "",
       default_payment_terms: company?.default_payment_terms ?? "",
+      signer_name: company?.signer_name ?? "",
+      signer_title: company?.signer_title ?? "",
+      signature_url: company?.signature_url ?? "",
+      google_review_url: company?.google_review_url ?? "",
     },
   })
 
@@ -86,6 +91,11 @@ export default function CompanySettingsClient({ company }: Props) {
                 <Input {...register("business_name")} placeholder="Whitepaper Production" className="dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-500" disabled={isPending} />
                 {errors.business_name && <p className="text-xs text-red-500">{errors.business_name.message}</p>}
               </div>
+              <div className="col-span-2 space-y-1">
+                <Label className="dark:text-gray-300">Logo URL</Label>
+                <Input {...register("logo_url")} placeholder="https://example.com/logo.png" className="dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-500" disabled={isPending} />
+                {errors.logo_url && <p className="text-xs text-red-500">{errors.logo_url.message}</p>}
+              </div>
               <div className="space-y-1">
                 <Label className="dark:text-gray-300">Email</Label>
                 <Input {...register("email")} type="email" placeholder="hello@yourbusiness.com" className="dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-500" disabled={isPending} />
@@ -102,6 +112,29 @@ export default function CompanySettingsClient({ company }: Props) {
               <div className="space-y-1">
                 <Label className="dark:text-gray-300">Address</Label>
                 <Input {...register("address")} placeholder="Jakarta Selatan, Indonesia" className="dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-500" disabled={isPending} />
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="dark:bg-gray-800 dark:border-gray-700">
+          <CardContent className="p-6 space-y-4">
+            <h3 className="font-medium text-gray-900 dark:text-gray-100">Invoice Branding</h3>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-1">
+                <Label className="dark:text-gray-300">Signer Name</Label>
+                <Input {...register("signer_name")} placeholder="John Doe" className="dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-500" disabled={isPending} />
+                {errors.signer_name && <p className="text-xs text-red-500">{errors.signer_name.message}</p>}
+              </div>
+              <div className="space-y-1">
+                <Label className="dark:text-gray-300">Signer Title / Position</Label>
+                <Input {...register("signer_title")} placeholder="Director" className="dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-500" disabled={isPending} />
+                {errors.signer_title && <p className="text-xs text-red-500">{errors.signer_title.message}</p>}
+              </div>
+              <div className="col-span-2 space-y-1">
+                <Label className="dark:text-gray-300">Signature Image URL <span className="text-gray-400 font-normal">(optional)</span></Label>
+                <Input {...register("signature_url")} placeholder="https://example.com/signature.png" className="dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-500" disabled={isPending} />
+                {errors.signature_url && <p className="text-xs text-red-500">{errors.signature_url.message}</p>}
               </div>
             </div>
           </CardContent>
