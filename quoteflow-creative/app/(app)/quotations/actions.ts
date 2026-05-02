@@ -83,9 +83,29 @@ export async function createQuotation(
       throw new Error("Authentication required. Please sign in.")
     }
 
+    // Convert empty strings to null for date/numeric fields
+    const cleanQuotation = {
+      lead_id: quotation.lead_id || null,
+      quote_number: quotation.quote_number,
+      project_title: quotation.project_title,
+      project_type: quotation.project_type || null,
+      event_date: quotation.event_date || null,
+      location: quotation.location || null,
+      valid_until: quotation.valid_until || null,
+      discount_type: quotation.discount_type,
+      discount_value: quotation.discount_value,
+      tax_percent: quotation.tax_percent,
+      subtotal: quotation.subtotal,
+      grand_total: quotation.grand_total,
+      notes: quotation.notes || null,
+      terms: quotation.terms || null,
+      status: quotation.status,
+      user_id: user.id,
+    }
+
     const { data: quotationData, error: quotationError } = await supabase
       .from("quotations")
-      .insert({ ...quotation, user_id: user.id })
+      .insert(cleanQuotation)
       .select()
       .single()
 
@@ -114,6 +134,79 @@ export async function createQuotation(
   } catch (error: any) {
     console.error("Error creating quotation:", error)
     throw new Error(error.message || "Failed to create quotation")
+  }
+}
+
+export async function updateQuotation(
+  id: string,
+  quotation: Omit<Quotation, "id" | "user_id" | "created_at" | "updated_at" | "items" | "quote_number">,
+  items: Omit<QuotationItem, "id" | "quotation_id" | "user_id" | "created_at" | "updated_at">[]
+) {
+  try {
+    const supabase = createClient()
+    const { data: { user }, error: authError } = await supabase.auth.getUser()
+
+    if (authError || !user) {
+      throw new Error("Authentication required")
+    }
+
+    // Convert empty strings to null for date/numeric fields
+    const cleanUpdate = {
+      lead_id: quotation.lead_id || null,
+      project_title: quotation.project_title,
+      project_type: quotation.project_type || null,
+      event_date: quotation.event_date || null,
+      location: quotation.location || null,
+      valid_until: quotation.valid_until || null,
+      discount_type: quotation.discount_type,
+      discount_value: quotation.discount_value,
+      tax_percent: quotation.tax_percent,
+      subtotal: quotation.subtotal,
+      grand_total: quotation.grand_total,
+      notes: quotation.notes || null,
+      terms: quotation.terms || null,
+      status: quotation.status,
+      updated_at: new Date().toISOString(),
+    }
+
+    const { error: quotationError } = await supabase
+      .from("quotations")
+      .update(cleanUpdate)
+      .eq("id", id)
+      .eq("user_id", user.id)
+
+    if (quotationError) throw new Error(quotationError.message)
+
+    const { error: deleteError } = await supabase
+      .from("quotation_items")
+      .delete()
+      .eq("quotation_id", id)
+
+    if (deleteError) throw new Error(deleteError.message)
+
+    if (items.length > 0) {
+      const itemsToInsert = items.map((item, index) => ({
+        ...item,
+        quotation_id: id,
+        user_id: user.id,
+        sort_order: index,
+      }))
+
+      const { error: itemsError } = await supabase
+        .from("quotation_items")
+        .insert(itemsToInsert)
+
+      if (itemsError) throw new Error(itemsError.message)
+    }
+
+    await logAudit("update", "quotation", id, {}).catch(err => {
+      console.error("Audit log failed:", err)
+    })
+    revalidatePath("/quotations")
+    revalidatePath(`/quotations/${id}`)
+  } catch (error: any) {
+    console.error("Error updating quotation:", error)
+    throw new Error(error.message || "Failed to update quotation")
   }
 }
 

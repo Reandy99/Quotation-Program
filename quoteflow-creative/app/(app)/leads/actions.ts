@@ -45,9 +45,25 @@ export async function createLead(lead: Partial<Omit<Lead, "id" | "user_id" | "cr
       throw new Error("Authentication required. Please sign in.")
     }
 
+    // Convert empty strings to null for date/numeric fields
+    const cleanInsert = {
+      client_name: lead.client_name,
+      company_name: lead.company_name || null,
+      email: lead.email || null,
+      phone: lead.phone || null,
+      project_type: lead.project_type || null,
+      event_date: lead.event_date || null,
+      location: lead.location || null,
+      estimated_budget: lead.estimated_budget || null,
+      notes: lead.notes || null,
+      status: lead.status,
+      follow_up_date: lead.follow_up_date || null,
+      user_id: user.id,
+    }
+
     const { data, error } = await supabase
       .from("leads")
-      .insert({ ...lead, user_id: user.id })
+      .insert(cleanInsert)
       .select()
       .single()
 
@@ -91,9 +107,24 @@ export async function updateLeadStatus(id: string, status: LeadStatus) {
 export async function updateLead(id: string, updates: Partial<Lead>) {
   try {
     const supabase = createClient()
+    
+    const cleanUpdates = {
+      ...updates,
+      company_name: updates.company_name || null,
+      email: updates.email || null,
+      phone: updates.phone || null,
+      project_type: updates.project_type || null,
+      event_date: updates.event_date || null,
+      location: updates.location || null,
+      estimated_budget: updates.estimated_budget || null,
+      notes: updates.notes || null,
+      follow_up_date: updates.follow_up_date || null,
+      updated_at: new Date().toISOString()
+    }
+    
     const { error } = await supabase
       .from("leads")
-      .update({ ...updates, updated_at: new Date().toISOString() })
+      .update(cleanUpdates)
       .eq("id", id)
 
     if (error) throw new Error(error.message)

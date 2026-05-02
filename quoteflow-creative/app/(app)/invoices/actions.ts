@@ -60,9 +60,27 @@ export async function createInvoice(invoice: Omit<Invoice, "id" | "user_id" | "c
       throw new Error("Authentication required. Please sign in.")
     }
 
+    // Convert empty strings to null for date/numeric fields
+    const cleanInvoice = {
+      quotation_id: invoice.quotation_id || null,
+      invoice_number: invoice.invoice_number,
+      client_name: invoice.client_name,
+      project_title: invoice.project_title,
+      issue_date: invoice.issue_date || null,
+      due_date: invoice.due_date || null,
+      subtotal: invoice.subtotal,
+      discount: invoice.discount,
+      tax: invoice.tax,
+      grand_total: invoice.grand_total,
+      paid_amount: invoice.paid_amount,
+      status: invoice.status,
+      notes: invoice.notes || null,
+      user_id: user.id,
+    }
+
     const { data, error } = await supabase
       .from("invoices")
-      .insert({ ...invoice, user_id: user.id })
+      .insert(cleanInvoice)
       .select()
       .single()
 
@@ -109,4 +127,34 @@ export async function getInvoice(id: string): Promise<Invoice | null> {
 
   if (error) return null
   return data
+}
+
+export async function updateInvoice(
+  id: string,
+  updates: Partial<Omit<Invoice, "id" | "user_id" | "created_at" | "updated_at">>
+) {
+  const supabase = createClient()
+  const { data: { user }, error: authError } = await supabase.auth.getUser()
+  if (authError || !user) throw new Error("Authentication required.")
+
+  const cleanUpdates = {
+    ...updates,
+    issue_date: updates.issue_date || null,
+    due_date: updates.due_date || null,
+    quotation_id: updates.quotation_id || null,
+    notes: updates.notes || null,
+    updated_at: new Date().toISOString()
+  }
+
+  const { error } = await supabase
+    .from("invoices")
+    .update(cleanUpdates)
+    .eq("id", id)
+    .eq("user_id", user.id)
+
+  if (error) throw new Error(error.message)
+
+  await logAudit("update", "invoice", id, {}).catch(() => {})
+  revalidatePath("/invoices")
+  revalidatePath(`/invoices/${id}`)
 }

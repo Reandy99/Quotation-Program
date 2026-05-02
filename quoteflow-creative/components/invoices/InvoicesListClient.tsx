@@ -1,12 +1,13 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { formatCurrency, formatDateShort } from "@/lib/utils/format"
-import { Search } from "lucide-react"
+import { Search, MoreHorizontal } from "lucide-react"
 import type { Invoice, InvoiceStatus } from "@/types"
 
 const STATUS_FILTERS: Array<InvoiceStatus | "All"> = ["All", "Paid", "Partial", "Overdue", "Sent", "Draft"]
@@ -22,6 +23,16 @@ const STATUS_CLASSES: Record<InvoiceStatus, string> = {
 export default function InvoicesListClient({ invoices }: { invoices: Invoice[] }) {
   const [search, setSearch] = useState("")
   const [statusFilter, setStatusFilter] = useState<InvoiceStatus | "All">("All")
+  const [openMenu, setOpenMenu] = useState<string | null>(null)
+  const menuRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) setOpenMenu(null)
+    }
+    document.addEventListener("mousedown", handleClick)
+    return () => document.removeEventListener("mousedown", handleClick)
+  }, [])
 
   const filtered = invoices.filter(inv => {
     const q = search.toLowerCase()
@@ -61,13 +72,14 @@ export default function InvoicesListClient({ invoices }: { invoices: Invoice[] }
       </div>
 
       <div className="rounded-[28px] shadow-sm overflow-hidden" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
-        <div className="grid grid-cols-[auto_1fr_auto_auto_auto_auto] gap-4 px-5 py-3 border-b text-xs font-semibold uppercase tracking-wider" style={{ backgroundColor: "var(--app-bg)", borderColor: "var(--border-color)", color: "var(--text-secondary)" }}>
+        <div className="grid grid-cols-[auto_1fr_auto_auto_auto_auto_auto] gap-4 px-5 py-3 border-b text-xs font-semibold uppercase tracking-wider" style={{ backgroundColor: "var(--app-bg)", borderColor: "var(--border-color)", color: "var(--text-secondary)" }}>
           <span>Invoice #</span>
           <span>Client</span>
           <span className="hidden sm:block">Amount</span>
           <span className="hidden md:block">Paid</span>
           <span className="hidden lg:block">Due Date</span>
           <span>Status</span>
+          <span></span>
         </div>
         <div className="divide-y" style={{ borderColor: "var(--border-color)" }}>
           {filtered.length === 0 ? (
@@ -75,16 +87,15 @@ export default function InvoicesListClient({ invoices }: { invoices: Invoice[] }
               No invoices match your search.
             </div>
           ) : filtered.map(inv => (
-            <Link
+            <div
               key={inv.id}
-              href={`/invoices/${inv.id}`}
-              className="grid grid-cols-[auto_1fr_auto_auto_auto_auto] gap-4 items-center px-5 py-4 hover:bg-black/5 dark:hover:bg-white/5 transition-colors group"
+              className="grid grid-cols-[auto_1fr_auto_auto_auto_auto_auto] gap-4 items-center px-5 py-4 hover:bg-black/5 dark:hover:bg-white/5 transition-colors group"
             >
               <span className="text-xs font-mono whitespace-nowrap" style={{ color: "var(--text-secondary)" }}>{inv.invoice_number}</span>
-              <div className="min-w-0">
+              <Link href={`/invoices/${inv.id}`} className="min-w-0">
                 <p className="text-sm font-medium group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors truncate" style={{ color: "var(--text-primary)" }}>{inv.project_title}</p>
                 <p className="text-xs mt-0.5 truncate" style={{ color: "var(--text-secondary)" }}>{inv.client_name}</p>
-              </div>
+              </Link>
               <span className="hidden sm:block text-sm font-medium tabular-nums whitespace-nowrap" style={{ color: "var(--text-primary)" }}>
                 {formatCurrency(inv.grand_total)}
               </span>
@@ -95,7 +106,28 @@ export default function InvoicesListClient({ invoices }: { invoices: Invoice[] }
                 {formatDateShort(inv.due_date)}
               </span>
               <Badge className={STATUS_CLASSES[inv.status]}>{inv.status}</Badge>
-            </Link>
+              <div className="relative" ref={openMenu === inv.id ? menuRef : undefined}>
+                <button
+                  onClick={e => { e.stopPropagation(); setOpenMenu(openMenu === inv.id ? null : inv.id) }}
+                  className="p-1 rounded hover:bg-black/10 dark:hover:bg-white/10 transition-colors"
+                  aria-label="More options"
+                >
+                  <MoreHorizontal className="w-4 h-4" style={{ color: "var(--text-secondary)" }} />
+                </button>
+                {openMenu === inv.id && (
+                  <div className="absolute right-0 top-full mt-1 z-20 rounded-xl shadow-lg py-1 min-w-[120px]" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
+                    <Link
+                      href={`/invoices/${inv.id}/edit`}
+                      className="flex items-center gap-2 px-3 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                      style={{ color: "var(--text-primary)" }}
+                      onClick={() => setOpenMenu(null)}
+                    >
+                      Edit
+                    </Link>
+                  </div>
+                )}
+              </div>
+            </div>
           ))}
         </div>
         <div className="px-5 py-3 border-t text-xs" style={{ backgroundColor: "var(--app-bg)", borderColor: "var(--border-color)", color: "var(--text-secondary)" }}>

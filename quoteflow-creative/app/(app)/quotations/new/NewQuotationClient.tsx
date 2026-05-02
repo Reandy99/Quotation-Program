@@ -43,7 +43,7 @@ export default function NewQuotationClient({ leads, defaultLeadId, templateId }:
       
       const mappedItems = items.map(item => ({
         item_name: item.item_name,
-        description: item.description ?? null,
+        description: item.description || null,
         quantity: item.quantity,
         unit_price: item.unit_price,
         total_price: item.total_price,
@@ -51,17 +51,17 @@ export default function NewQuotationClient({ leads, defaultLeadId, templateId }:
       }))
       
       await createQuotation({ 
-        lead_id: quotationData.lead_id && quotationData.lead_id !== "" ? quotationData.lead_id : null,
+        lead_id: quotationData.lead_id || null,
         project_title: quotationData.project_title,
-        project_type: quotationData.project_type ?? null,
-        event_date: quotationData.event_date ?? null,
-        location: quotationData.location ?? null,
-        valid_until: quotationData.valid_until ?? null,
+        project_type: quotationData.project_type || null,
+        event_date: quotationData.event_date || null,
+        location: quotationData.location || null,
+        valid_until: quotationData.valid_until || null,
         discount_type: quotationData.discount_type,
         discount_value: quotationData.discount_value,
         tax_percent: quotationData.tax_percent,
-        notes: quotationData.notes ?? null,
-        terms: quotationData.terms ?? null,
+        notes: quotationData.notes || null,
+        terms: quotationData.terms || null,
         quote_number: quoteNumber, 
         status: quotationData.status,
         subtotal,

@@ -1,12 +1,12 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { QuoteStatusBadge } from "@/components/leads/StatusBadge"
 import { formatCurrency, formatDateShort } from "@/lib/utils/format"
-import { Search, Copy, ChevronDown } from "lucide-react"
+import { Search, Copy, ChevronDown, MoreHorizontal } from "lucide-react"
 import type { Quotation, QuotationItem, QuotationStatus } from "@/types"
 
 type QuotationWithItems = Quotation & { items: QuotationItem[] }
@@ -27,6 +27,16 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
   const [statusFilter, setStatusFilter] = useState<QuotationStatus | "All">("All")
   const [selected, setSelected] = useState<Set<string>>(new Set())
   const [bulkStatusOpen, setBulkStatusOpen] = useState(false)
+  const [openMenu, setOpenMenu] = useState<string | null>(null)
+  const menuRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) setOpenMenu(null)
+    }
+    document.addEventListener("mousedown", handleClick)
+    return () => document.removeEventListener("mousedown", handleClick)
+  }, [])
 
   const filtered = quotations.filter(q => {
     const matchesSearch =
@@ -162,7 +172,7 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
 
       {/* Table */}
       <div className="rounded-[28px] shadow-sm overflow-hidden" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
-        <div className="grid grid-cols-[auto_auto_1fr_auto_auto_auto] gap-4 px-5 py-3 border-b text-xs font-semibold uppercase tracking-wider" style={{ backgroundColor: "var(--app-bg)", borderColor: "var(--border-color)", color: "var(--text-secondary)" }}>
+        <div className="grid grid-cols-[auto_auto_1fr_auto_auto_auto_auto] gap-4 px-5 py-3 border-b text-xs font-semibold uppercase tracking-wider" style={{ backgroundColor: "var(--app-bg)", borderColor: "var(--border-color)", color: "var(--text-secondary)" }}>
           <input
             type="checkbox"
             checked={allFilteredSelected}
@@ -175,6 +185,7 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
           <span className="hidden sm:block">Amount</span>
           <span className="hidden md:block">Valid Until</span>
           <span>Status</span>
+          <span></span>
         </div>
 
         <div className="divide-y" style={{ borderColor: "var(--border-color)" }}>
@@ -186,7 +197,7 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
             filtered.map(q => (
               <div
                 key={q.id}
-                className={`grid grid-cols-[auto_auto_1fr_auto_auto_auto] gap-4 items-center px-5 py-4 transition-colors group ${
+                className={`grid grid-cols-[auto_auto_1fr_auto_auto_auto_auto] gap-4 items-center px-5 py-4 transition-colors group ${
                   selected.has(q.id)
                     ? "bg-indigo-50/60 dark:bg-indigo-950/20"
                     : "hover:bg-black/5 dark:hover:bg-white/5"
@@ -220,6 +231,27 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
                   {q.valid_until ? formatDateShort(q.valid_until) : "—"}
                 </span>
                 <QuoteStatusBadge status={q.status} />
+                <div className="relative" ref={openMenu === q.id ? menuRef : undefined}>
+                  <button
+                    onClick={e => { e.stopPropagation(); setOpenMenu(openMenu === q.id ? null : q.id) }}
+                    className="p-1 rounded hover:bg-black/10 dark:hover:bg-white/10 transition-colors"
+                    aria-label="More options"
+                  >
+                    <MoreHorizontal className="w-4 h-4" style={{ color: "var(--text-secondary)" }} />
+                  </button>
+                  {openMenu === q.id && (
+                    <div className="absolute right-0 top-full mt-1 z-20 rounded-xl shadow-lg py-1 min-w-[120px]" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
+                      <Link
+                        href={`/quotations/${q.id}/edit`}
+                        className="flex items-center gap-2 px-3 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                        style={{ color: "var(--text-primary)" }}
+                        onClick={() => setOpenMenu(null)}
+                      >
+                        Edit
+                      </Link>
+                    </div>
+                  )}
+                </div>
               </div>
             ))
           )}
