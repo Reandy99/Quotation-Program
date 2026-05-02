@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { PageHeader } from "@/components/shared/PageHeader"
 import { Plus, Trash2, Edit2, Check, X } from "lucide-react"
+import { formatCurrency } from "@/lib/utils/format"
 
 interface PackageItem {
   id: string
@@ -181,7 +182,7 @@ export default function PackagesSettingsClient() {
                       <p className="text-xs text-gray-500 dark:text-slate-400">{item.description}</p>
                     </div>
                     <span className="text-sm font-semibold text-indigo-600 dark:text-indigo-400 whitespace-nowrap">
-                      Rp {item.price.toLocaleString("id-ID")}
+                      {formatCurrency(item.price)}
                     </span>
                     <Button
                       size="sm"
@@ -267,7 +268,7 @@ export default function PackagesSettingsClient() {
                       )}
                     </div>
                     <span className="text-sm font-semibold text-indigo-600 dark:text-indigo-400 ml-4 whitespace-nowrap">
-                      Rp {item.price.toLocaleString("id-ID")}
+                      {formatCurrency(item.price)}
                     </span>
                   </div>
                 ))}
@@ -278,7 +279,7 @@ export default function PackagesSettingsClient() {
                   <div className="flex justify-between items-center">
                     <span className="text-sm font-medium text-gray-700 dark:text-slate-300">Total Package Value</span>
                     <span className="text-base font-bold text-indigo-600 dark:text-indigo-400">
-                      Rp {pkg.items.reduce((sum, item) => sum + item.price, 0).toLocaleString("id-ID")}
+                      {formatCurrency(pkg.items.reduce((sum, item) => sum + item.price, 0))}
                     </span>
                   </div>
                 </div>

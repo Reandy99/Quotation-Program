@@ -12,6 +12,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { toast } from "@/hooks/use-toast"
 import { createInvoice, generateInvoiceNumber } from "../actions"
 import { Plus, Trash2 } from "lucide-react"
+import { formatCurrency } from "@/lib/utils/format"
 
 interface InvoiceItem {
   description: string
@@ -211,7 +212,7 @@ export default function NewInvoicePage() {
           <CardContent className="pt-6 space-y-4">
             <div className="flex justify-between text-sm">
               <span className="text-gray-500">Subtotal</span>
-              <span>{subtotal.toLocaleString("id-ID", { style: "currency", currency: "IDR" })}</span>
+              <span>{formatCurrency(subtotal)}</span>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-1">
@@ -237,7 +238,7 @@ export default function NewInvoicePage() {
             </div>
             <div className="flex justify-between font-semibold text-lg border-t pt-4">
               <span>Grand Total</span>
-              <span>{grandTotal.toLocaleString("id-ID", { style: "currency", currency: "IDR" })}</span>
+              <span>{formatCurrency(grandTotal)}</span>
             </div>
           </CardContent>
         </Card>

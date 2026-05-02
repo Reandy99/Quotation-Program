@@ -146,7 +146,7 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
             className={viewMode !== "kanban" ? "dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800" : ""}
           >
             <LayoutGrid className="w-4 h-4 mr-1.5" />
-            Kanban
+            Tabel
           </Button>
         </div>
       </div>

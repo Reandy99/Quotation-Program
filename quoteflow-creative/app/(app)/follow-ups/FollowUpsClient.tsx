@@ -30,7 +30,11 @@ function groupFollowUps(leads: Lead[]) {
   const upcoming: Lead[] = []
 
   for (const lead of leads) {
-    if (!lead.follow_up_date) continue
+    if (!lead.follow_up_date) {
+      // Leads with "Follow Up" status but no date go to "today"
+      todayList.push(lead)
+      continue
+    }
     if (lead.follow_up_date < todayStr) overdue.push(lead)
     else if (lead.follow_up_date === todayStr) todayList.push(lead)
     else upcoming.push(lead)
@@ -90,7 +94,7 @@ function LeadRow({
           {lead.client_name}
         </p>
         <p className="text-xs truncate" style={{ color: "var(--text-secondary)" }}>
-          {lead.project_type || "—"} · Follow-up: {formatDate(lead.follow_up_date)}
+          {lead.project_type || "—"} · Follow-up: {lead.follow_up_date ? formatDate(lead.follow_up_date) : "Not scheduled"}
         </p>
       </Link>
       <div className="flex items-center gap-1.5 shrink-0">
@@ -240,7 +244,9 @@ function ReviewSection({
 }
 
 export default function FollowUpsClient({ leads: initialLeads, followUps }: Props) {
-  const filteredLeads = initialLeads.filter(l => l.follow_up_date && l.status !== "Won" && l.status !== "Lost")
+  const filteredLeads = initialLeads.filter(l => 
+    (l.follow_up_date || l.status === "Follow Up") && l.status !== "Won" && l.status !== "Lost"
+  )
   const [leads, setLeads] = useState<Lead[]>(filteredLeads)
   const company = useLiveCompanySettings()
 

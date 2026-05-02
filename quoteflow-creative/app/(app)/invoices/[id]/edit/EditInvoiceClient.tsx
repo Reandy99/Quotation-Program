@@ -13,6 +13,7 @@ import { toast } from "@/hooks/use-toast"
 import { updateInvoice } from "../../actions"
 import { Plus, Trash2 } from "lucide-react"
 import type { Invoice, InvoiceStatus } from "@/types"
+import { formatCurrency } from "@/lib/utils/format"
 
 const STATUSES: InvoiceStatus[] = ["Draft", "Sent", "Partial", "Paid", "Overdue"]
 
@@ -144,7 +145,7 @@ export default function EditInvoiceClient({ invoice }: Props) {
             <div className="flex justify-between text-sm">
               <span className="text-gray-500 dark:text-gray-400">Subtotal</span>
               <span className="font-medium" style={{ color: "var(--text-primary)" }}>
-                {subtotal.toLocaleString("id-ID", { style: "currency", currency: "IDR" })}
+                {formatCurrency(subtotal)}
               </span>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -172,7 +173,7 @@ export default function EditInvoiceClient({ invoice }: Props) {
             <div className="flex justify-between font-semibold text-lg border-t pt-4" style={{ borderColor: "var(--border-color)" }}>
               <span style={{ color: "var(--text-primary)" }}>Grand Total</span>
               <span className="text-indigo-700 dark:text-indigo-400">
-                {grandTotal.toLocaleString("id-ID", { style: "currency", currency: "IDR" })}
+                {formatCurrency(grandTotal)}
               </span>
             </div>
           </CardContent>

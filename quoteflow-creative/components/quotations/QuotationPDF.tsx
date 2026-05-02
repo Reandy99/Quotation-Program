@@ -1,5 +1,6 @@
 import { Document, Page, Text, View, StyleSheet, Image } from "@react-pdf/renderer"
 import type { Quotation, CompanySettings, Lead } from "@/types"
+import { formatCurrency } from "@/lib/utils/format"
 
 const styles = StyleSheet.create({
   page: { fontFamily: "Helvetica", fontSize: 9, color: "#1a1a2e", padding: 40, backgroundColor: "#ffffff" },
@@ -37,10 +38,6 @@ const styles = StyleSheet.create({
   footerText: { fontSize: 8, color: "#6b7280", lineHeight: 1.6 },
   ctaText: { fontSize: 8, color: "#4f46e5", fontFamily: "Helvetica-Bold", marginTop: 6 },
 })
-
-function formatIDR(amount: number) {
-  return "Rp " + amount.toLocaleString("id-ID")
-}
 
 function formatDate(d: string | null) {
   if (!d) return "—"
@@ -137,8 +134,8 @@ export function QuotationPDF({ quotation, company }: Props) {
               <Text style={{ ...styles.tableCell, flex: 3, fontFamily: "Helvetica-Bold" }}>{item.item_name}</Text>
               <Text style={{ ...styles.tableCell, flex: 4, color: "#6b7280" }}>{item.description || ""}</Text>
               <Text style={{ ...styles.tableCell, flex: 1, textAlign: "right" }}>{item.quantity}</Text>
-              <Text style={{ ...styles.tableCell, flex: 2, textAlign: "right" }}>{formatIDR(item.unit_price)}</Text>
-              <Text style={{ ...styles.tableCell, flex: 2, textAlign: "right", fontFamily: "Helvetica-Bold" }}>{formatIDR(item.total_price)}</Text>
+              <Text style={{ ...styles.tableCell, flex: 2, textAlign: "right" }}>{formatCurrency(item.unit_price)}</Text>
+              <Text style={{ ...styles.tableCell, flex: 2, textAlign: "right", fontFamily: "Helvetica-Bold" }}>{formatCurrency(item.total_price)}</Text>
             </View>
           ))}
         </View>
@@ -147,25 +144,25 @@ export function QuotationPDF({ quotation, company }: Props) {
         <View style={styles.totalsSection}>
           <View style={styles.totalsRow}>
             <Text style={styles.totalsLabel}>Subtotal</Text>
-            <Text style={styles.totalsValue}>{formatIDR(subtotal)}</Text>
+            <Text style={styles.totalsValue}>{formatCurrency(subtotal)}</Text>
           </View>
           {discountAmount > 0 && (
             <View style={styles.totalsRow}>
               <Text style={styles.totalsLabel}>
                 Discount{quotation.discount_type === "percent" ? ` (${quotation.discount_value}%)` : ""}
               </Text>
-              <Text style={styles.totalsValue}>- {formatIDR(discountAmount)}</Text>
+              <Text style={styles.totalsValue}>- {formatCurrency(discountAmount)}</Text>
             </View>
           )}
           {taxAmount > 0 && (
             <View style={styles.totalsRow}>
               <Text style={styles.totalsLabel}>Tax ({quotation.tax_percent}%)</Text>
-              <Text style={styles.totalsValue}>+ {formatIDR(taxAmount)}</Text>
+              <Text style={styles.totalsValue}>+ {formatCurrency(taxAmount)}</Text>
             </View>
           )}
           <View style={styles.grandTotalRow}>
             <Text style={styles.grandTotalLabel}>Grand Total</Text>
-            <Text style={styles.grandTotalValue}>{formatIDR(quotation.grand_total)}</Text>
+            <Text style={styles.grandTotalValue}>{formatCurrency(quotation.grand_total)}</Text>
           </View>
         </View>
 

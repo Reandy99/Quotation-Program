@@ -102,43 +102,6 @@ export default async function DashboardPage() {
         </Link>
       </div>
 
-      {/* Hero stat cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5">
-        {heroStats.map(({ label, value, sub, icon: Icon, bg, iconColor }) => (
-          <div
-            key={label}
-            className="rounded-[28px] p-6 flex flex-col gap-4"
-            style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}
-          >
-            <div className="w-11 h-11 rounded-2xl flex items-center justify-center" style={{ backgroundColor: bg }}>
-              <Icon className="w-5 h-5" style={{ color: iconColor }} />
-            </div>
-            <div>
-              <div className="text-2xl font-semibold tracking-tight tabular-nums" style={{ color: "var(--text-primary)" }}>{value}</div>
-              <div className="text-sm font-medium mt-0.5" style={{ color: "var(--text-primary)" }}>{label}</div>
-              <div className="text-xs mt-1" style={{ color: "var(--text-secondary)" }}>{sub}</div>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Metric cards */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
-        {metricStats.map(({ label, value, icon: Icon }) => (
-          <div
-            key={label}
-            className="rounded-[20px] p-4 flex flex-col gap-3"
-            style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}
-          >
-            <Icon className="w-4 h-4" style={{ color: "var(--text-secondary)" }} />
-            <div>
-              <div className="text-xl font-semibold tabular-nums" style={{ color: "var(--text-primary)" }}>{value}</div>
-              <div className="text-xs mt-0.5" style={{ color: "var(--text-secondary)" }}>{label}</div>
-            </div>
-          </div>
-        ))}
-      </div>
-
       {/* Today's Agenda */}
       {(followUpsDueToday.length > 0 || shootsToday.length > 0 || invoicesDueToday.length > 0) && (
         <div
@@ -192,6 +155,43 @@ export default async function DashboardPage() {
           </div>
         </div>
       )}
+
+      {/* Hero stat cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5">
+        {heroStats.map(({ label, value, sub, icon: Icon, bg, iconColor }) => (
+          <div
+            key={label}
+            className="rounded-[28px] p-6 flex flex-col gap-4"
+            style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}
+          >
+            <div className="w-11 h-11 rounded-2xl flex items-center justify-center" style={{ backgroundColor: bg }}>
+              <Icon className="w-5 h-5" style={{ color: iconColor }} />
+            </div>
+            <div>
+              <div className="text-2xl font-semibold tracking-tight tabular-nums" style={{ color: "var(--text-primary)" }}>{value}</div>
+              <div className="text-sm font-medium mt-0.5" style={{ color: "var(--text-primary)" }}>{label}</div>
+              <div className="text-xs mt-1" style={{ color: "var(--text-secondary)" }}>{sub}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Metric cards */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+        {metricStats.map(({ label, value, icon: Icon }) => (
+          <div
+            key={label}
+            className="rounded-[20px] p-4 flex flex-col gap-3"
+            style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}
+          >
+            <Icon className="w-4 h-4" style={{ color: "var(--text-secondary)" }} />
+            <div>
+              <div className="text-xl font-semibold tabular-nums" style={{ color: "var(--text-primary)" }}>{value}</div>
+              <div className="text-xs mt-0.5" style={{ color: "var(--text-secondary)" }}>{label}</div>
+            </div>
+          </div>
+        ))}
+      </div>
 
       {/* Pipeline + Recent activity */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
