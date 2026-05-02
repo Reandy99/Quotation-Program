@@ -34,7 +34,6 @@ export async function updateCompanySettings(settings: Partial<CompanySettings>) 
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) return { error: "Unauthorized" }
 
-    // Convert empty strings to null for optional fields
     const cleanedSettings = Object.fromEntries(
       Object.entries(settings).map(([key, value]) => [
         key,
@@ -50,7 +49,33 @@ export async function updateCompanySettings(settings: Partial<CompanySettings>) 
         updated_at: new Date().toISOString(),
       })
 
-    if (error) return { error: error.message }
+    if (error) {
+      // If schema cache error for missing columns, retry with core fields only
+      if (error.message.includes("schema cache") || error.message.includes("column")) {
+        const coreFields = {
+          user_id: user.id,
+          business_name: cleanedSettings.business_name,
+          logo_url: cleanedSettings.logo_url,
+          email: cleanedSettings.email,
+          phone: cleanedSettings.phone,
+          website: cleanedSettings.website,
+          address: cleanedSettings.address,
+          default_terms: cleanedSettings.default_terms,
+          default_payment_terms: cleanedSettings.default_payment_terms,
+          updated_at: new Date().toISOString(),
+        }
+
+        const { error: retryError } = await supabase
+          .from("company_settings")
+          .upsert(coreFields)
+
+        if (retryError) return { error: retryError.message }
+
+        revalidatePath("/settings")
+        return { success: true, warning: "Saved core settings. Invoice branding fields require database migration." }
+      }
+      return { error: error.message }
+    }
 
     revalidatePath("/settings")
     return { success: true }

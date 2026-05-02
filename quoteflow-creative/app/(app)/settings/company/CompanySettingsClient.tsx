@@ -168,7 +168,6 @@ export default function CompanySettingsClient({ company }: Props) {
           return
         }
 
-        // Also update localStorage for live updates
         if (typeof window !== "undefined") {
           localStorage.setItem("quoteflow_company_settings", JSON.stringify(data))
           dispatchSettingsUpdated()
@@ -177,9 +176,9 @@ export default function CompanySettingsClient({ company }: Props) {
         setSaved(true)
         setTimeout(() => setSaved(false), 2500)
         toast({
-          variant: "success",
+          variant: result.warning ? "default" : "success",
           title: "Settings saved",
-          description: "Company settings updated successfully.",
+          description: result.warning || "Company settings updated successfully.",
         })
       } catch (error: any) {
         toast({
