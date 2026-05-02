@@ -17,7 +17,11 @@ export default function NewLeadPage() {
   async function handleSubmit(data: LeadFormData) {
     setLoading(true)
     try {
-      await createLead(data)
+      const cleanData = {
+        ...data,
+        estimated_budget: data.estimated_budget === "" ? undefined : data.estimated_budget,
+      }
+      await createLead(cleanData)
       toast({
         variant: "success",
         title: "Lead created",

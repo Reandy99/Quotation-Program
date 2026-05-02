@@ -3,7 +3,7 @@ import { z } from "zod"
 export const companySchema = z.object({
   business_name: z.string().optional(),
   logo_url: z.string().optional(),
-  email: z.string().email("Invalid email").optional().or(z.literal("")),
+  email: z.string().email("Invalid email").or(z.literal("")).optional(),
   phone: z.string().optional(),
   website: z.string().optional(),
   address: z.string().optional(),

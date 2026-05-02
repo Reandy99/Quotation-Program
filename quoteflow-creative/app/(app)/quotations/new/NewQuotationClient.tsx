@@ -51,7 +51,7 @@ export default function NewQuotationClient({ leads, defaultLeadId, templateId }:
       }))
       
       await createQuotation({ 
-        lead_id: quotationData.lead_id ?? null,
+        lead_id: quotationData.lead_id && quotationData.lead_id !== "" ? quotationData.lead_id : null,
         project_title: quotationData.project_title,
         project_type: quotationData.project_type ?? null,
         event_date: quotationData.event_date ?? null,
@@ -63,12 +63,13 @@ export default function NewQuotationClient({ leads, defaultLeadId, templateId }:
         notes: quotationData.notes ?? null,
         terms: quotationData.terms ?? null,
         quote_number: quoteNumber, 
-        status: "Draft",
+        status: quotationData.status,
         subtotal,
         grand_total
       }, mappedItems)
-      toast({ title: "Quotation created", description: `${quoteNumber} created successfully.` })
+      toast({ variant: "success", title: "Quotation created", description: `${quoteNumber} created successfully.` })
       router.push("/quotations")
+      router.refresh()
     } catch (error) {
       toast({ variant: "destructive", title: "Error", description: error instanceof Error ? error.message : "Failed to create quotation" })
     }

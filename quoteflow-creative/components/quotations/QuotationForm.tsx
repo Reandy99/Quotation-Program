@@ -136,8 +136,20 @@ export function QuotationForm({ defaultValues, leads, onSubmit, loading }: Quota
 
   const { fields, append, remove } = useFieldArray({ control, name: "items" })
 
+  async function onFormSubmit(data: QuotationFormData) {
+    const processedData = {
+      ...data,
+      items: data.items.map((item, idx) => ({
+        ...item,
+        total_price: (Number(item.quantity) || 0) * (Number(item.unit_price) || 0),
+        sort_order: idx,
+      })),
+    }
+    await onSubmit(processedData)
+  }
+
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+    <form onSubmit={handleSubmit(onFormSubmit)} className="space-y-6">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-6">
           {/* Project Details */}
@@ -218,6 +230,7 @@ export function QuotationForm({ defaultValues, leads, onSubmit, loading }: Quota
                 ))}
               </div>
               {errors.items && <p className="text-xs text-red-500">{errors.items.message}</p>}
+              {errors.items?.root && <p className="text-xs text-red-500">{errors.items.root.message}</p>}
             </CardContent>
           </Card>
 

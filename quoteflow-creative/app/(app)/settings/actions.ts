@@ -45,3 +45,51 @@ export async function updateCompanySettings(settings: Partial<CompanySettings>) 
 
   revalidatePath("/settings")
 }
+
+export async function uploadLogo(formData: FormData): Promise<string> {
+  const supabase = createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) throw new Error("Unauthorized")
+
+  const file = formData.get("logo") as File
+  if (!file) throw new Error("No file provided")
+
+  const ext = file.name.split(".").pop()
+  const fileName = `${user.id}/logo-${Date.now()}.${ext}`
+
+  const { error: uploadError } = await supabase.storage
+    .from("company-logos")
+    .upload(fileName, file, { upsert: true })
+
+  if (uploadError) throw new Error(uploadError.message)
+
+  const { data: { publicUrl } } = supabase.storage
+    .from("company-logos")
+    .getPublicUrl(fileName)
+
+  return publicUrl
+}
+
+export async function uploadSignature(formData: FormData): Promise<string> {
+  const supabase = createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) throw new Error("Unauthorized")
+
+  const file = formData.get("signature") as File
+  if (!file) throw new Error("No file provided")
+
+  const ext = file.name.split(".").pop()
+  const fileName = `${user.id}/signatures/signature-${Date.now()}.${ext}`
+
+  const { error: uploadError } = await supabase.storage
+    .from("company-logos")
+    .upload(fileName, file, { upsert: true })
+
+  if (uploadError) throw new Error(uploadError.message)
+
+  const { data: { publicUrl } } = supabase.storage
+    .from("company-logos")
+    .getPublicUrl(fileName)
+
+  return publicUrl
+}

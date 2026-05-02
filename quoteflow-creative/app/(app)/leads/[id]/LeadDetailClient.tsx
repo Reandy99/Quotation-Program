@@ -33,8 +33,12 @@ export default function LeadDetailClient({ lead, quotations }: Props) {
 
   async function handleUpdate(data: LeadFormData) {
     try {
-      await updateLead(lead.id, data)
-      toast({ title: "Lead updated", description: "Changes saved successfully." })
+      const cleanData = {
+        ...data,
+        estimated_budget: data.estimated_budget === "" ? undefined : data.estimated_budget,
+      }
+      await updateLead(lead.id, cleanData)
+      toast({ variant: "success", title: "Lead updated", description: "Changes saved successfully." })
       setEditing(false)
       router.refresh()
     } catch (error) {

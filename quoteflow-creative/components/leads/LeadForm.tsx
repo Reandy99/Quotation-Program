@@ -92,10 +92,6 @@ export function LeadForm({ defaultValues, onSubmit, loading }: LeadFormProps) {
               <Input {...register("estimated_budget")} type="number" placeholder="5000000" />
             </div>
             <div className="space-y-1">
-              <Label>Number of Guests</Label>
-              <Input {...register("guest_count")} type="number" placeholder="100" />
-            </div>
-            <div className="space-y-1">
               <Label>Event Date</Label>
               <Input {...register("event_date")} type="date" />
             </div>
@@ -103,22 +99,10 @@ export function LeadForm({ defaultValues, onSubmit, loading }: LeadFormProps) {
               <Label>Location / City</Label>
               <Input {...register("location")} placeholder="Jakarta Selatan" />
             </div>
-            <div className="space-y-1">
-              <Label>Venue Name</Label>
-              <Input {...register("venue_name")} placeholder="Grand Ballroom Hotel XYZ" />
-            </div>
-            <div className="space-y-1">
-              <Label>Style Reference Link</Label>
-              <Input {...register("style_reference")} type="url" placeholder="https://pinterest.com/..." />
-            </div>
           </div>
           <div className="space-y-1">
-            <Label>Client-Facing Notes</Label>
-            <Textarea {...register("notes")} placeholder="Notes visible to client..." rows={2} />
-          </div>
-          <div className="space-y-1">
-            <Label>Internal Notes (Private)</Label>
-            <Textarea {...register("internal_notes")} placeholder="Internal team notes..." rows={2} />
+            <Label>Notes</Label>
+            <Textarea {...register("notes")} placeholder="Project details, requirements..." rows={3} />
           </div>
         </CardContent>
       </Card>

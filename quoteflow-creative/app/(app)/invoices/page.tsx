@@ -4,6 +4,7 @@ import { EmptyState } from "@/components/shared/EmptyState"
 import { Plus, FileText } from "lucide-react"
 import InvoicesListClient from "@/components/invoices/InvoicesListClient"
 import { getInvoices } from "./actions"
+import Link from "next/link"
 
 export const dynamic = "force-dynamic"
 
@@ -16,7 +17,9 @@ export default async function InvoicesPage() {
         title="Invoices"
         description="Manage invoices and track payments"
         action={
-          <Button><Plus className="w-4 h-4 mr-1.5" />New Invoice</Button>
+          <Link href="/invoices/new">
+            <Button><Plus className="w-4 h-4 mr-1.5" />New Invoice</Button>
+          </Link>
         }
       />
 
@@ -25,7 +28,11 @@ export default async function InvoicesPage() {
           icon={FileText}
           title="No invoices yet"
           description="Create invoices from accepted quotations and track payments."
-          action={<Button size="lg"><Plus className="w-4 h-4 mr-2" />Create Your First Invoice</Button>}
+          action={
+            <Link href="/invoices/new">
+              <Button size="lg"><Plus className="w-4 h-4 mr-2" />Create Your First Invoice</Button>
+            </Link>
+          }
         />
       ) : (
         <InvoicesListClient invoices={invoices} />

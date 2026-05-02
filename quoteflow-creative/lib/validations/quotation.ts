@@ -11,7 +11,7 @@ export const quotationItemSchema = z.object({
 })
 
 export const quotationSchema = z.object({
-  lead_id: z.string().optional(),
+  lead_id: z.string().optional().or(z.literal("")),
   project_title: z.string().min(1, "Project title is required"),
   project_type: z.string().optional(),
   event_date: z.string().optional(),

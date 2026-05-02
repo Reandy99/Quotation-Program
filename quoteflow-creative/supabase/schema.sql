@@ -155,6 +155,9 @@ create index quotation_items_quotation_id_idx on public.quotation_items(quotatio
 -- ============================================================
 -- STORAGE BUCKET
 -- ============================================================
+-- Bucket for company logos and signatures
+-- Structure: {user_id}/logo-{timestamp}.{ext} for logos
+--            {user_id}/signatures/signature-{timestamp}.{ext} for signatures
 insert into storage.buckets (id, name, public)
 values ('company-logos', 'company-logos', true)
 on conflict (id) do nothing;

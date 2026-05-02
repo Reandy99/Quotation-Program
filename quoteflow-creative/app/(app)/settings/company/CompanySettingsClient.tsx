@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useTransition } from "react"
+import { useState, useTransition, useRef } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { companySchema, type CompanyFormData } from "@/lib/validations/company"
@@ -10,9 +10,9 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { PageHeader } from "@/components/shared/PageHeader"
-import { Check } from "lucide-react"
+import { Check, Upload, X } from "lucide-react"
 import { toast } from "@/hooks/use-toast"
-import { updateCompanySettings } from "../actions"
+import { updateCompanySettings, uploadLogo, uploadSignature } from "../actions"
 import { dispatchSettingsUpdated } from "@/lib/settings/storage"
 import type { CompanySettings } from "@/types"
 
@@ -23,8 +23,14 @@ interface Props {
 export default function CompanySettingsClient({ company }: Props) {
   const [saved, setSaved] = useState(false)
   const [isPending, startTransition] = useTransition()
+  const [logoPreview, setLogoPreview] = useState<string | null>(company?.logo_url ?? null)
+  const [isUploading, setIsUploading] = useState(false)
+  const fileInputRef = useRef<HTMLInputElement>(null)
+  const [signaturePreview, setSignaturePreview] = useState<string | null>(company?.signature_url ?? null)
+  const [isUploadingSignature, setIsUploadingSignature] = useState(false)
+  const signatureInputRef = useRef<HTMLInputElement>(null)
 
-  const { register, handleSubmit, formState: { errors } } = useForm<CompanyFormData>({
+  const { register, handleSubmit, formState: { errors }, setValue } = useForm<CompanyFormData>({
     resolver: zodResolver(companySchema),
     defaultValues: {
       business_name: company?.business_name ?? "",
@@ -42,17 +48,123 @@ export default function CompanySettingsClient({ company }: Props) {
     },
   })
 
+  async function handleLogoChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0]
+    if (!file) return
+
+    if (!file.type.startsWith("image/")) {
+      toast({
+        variant: "destructive",
+        title: "Invalid file",
+        description: "Please select an image file.",
+      })
+      return
+    }
+
+    if (file.size > 2 * 1024 * 1024) {
+      toast({
+        variant: "destructive",
+        title: "File too large",
+        description: "Logo must be under 2MB.",
+      })
+      return
+    }
+
+    setIsUploading(true)
+    try {
+      const formData = new FormData()
+      formData.append("logo", file)
+      const publicUrl = await uploadLogo(formData)
+
+      setValue("logo_url", publicUrl)
+      setLogoPreview(publicUrl)
+
+      toast({
+        variant: "success",
+        title: "Logo uploaded",
+        description: "Remember to save settings to apply changes.",
+      })
+    } catch (error: any) {
+      toast({
+        variant: "destructive",
+        title: "Upload failed",
+        description: error.message,
+      })
+    } finally {
+      setIsUploading(false)
+    }
+  }
+
+  function removeLogo() {
+    setValue("logo_url", "")
+    setLogoPreview(null)
+    if (fileInputRef.current) fileInputRef.current.value = ""
+  }
+
+  async function handleSignatureChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0]
+    if (!file) return
+
+    if (!file.type.startsWith("image/")) {
+      toast({
+        variant: "destructive",
+        title: "Invalid file",
+        description: "Please select an image file.",
+      })
+      return
+    }
+
+    if (file.size > 2 * 1024 * 1024) {
+      toast({
+        variant: "destructive",
+        title: "File too large",
+        description: "Signature must be under 2MB.",
+      })
+      return
+    }
+
+    setIsUploadingSignature(true)
+    try {
+      const formData = new FormData()
+      formData.append("signature", file)
+      const publicUrl = await uploadSignature(formData)
+
+      setValue("signature_url", publicUrl)
+      setSignaturePreview(publicUrl)
+
+      toast({
+        variant: "success",
+        title: "Signature uploaded",
+        description: "Remember to save settings to apply changes.",
+      })
+    } catch (error: any) {
+      toast({
+        variant: "destructive",
+        title: "Upload failed",
+        description: error.message,
+      })
+    } finally {
+      setIsUploadingSignature(false)
+    }
+  }
+
+  function removeSignature() {
+    setValue("signature_url", "")
+    setSignaturePreview(null)
+    if (signatureInputRef.current) signatureInputRef.current.value = ""
+  }
+
   function onSubmit(data: CompanyFormData) {
     startTransition(async () => {
       try {
         await updateCompanySettings(data)
-        
+
         // Also update localStorage for live updates
         if (typeof window !== "undefined") {
           localStorage.setItem("quoteflow_company_settings", JSON.stringify(data))
           dispatchSettingsUpdated()
         }
-        
+
         setSaved(true)
         setTimeout(() => setSaved(false), 2500)
         toast({
@@ -92,8 +204,45 @@ export default function CompanySettingsClient({ company }: Props) {
                 {errors.business_name && <p className="text-xs text-red-500">{errors.business_name.message}</p>}
               </div>
               <div className="col-span-2 space-y-1">
-                <Label className="dark:text-gray-300">Logo URL</Label>
-                <Input {...register("logo_url")} placeholder="https://example.com/logo.png" className="dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-500" disabled={isPending} />
+                <Label className="dark:text-gray-300">Company Logo</Label>
+                <div className="flex items-start gap-3">
+                  {logoPreview && (
+                    <div className="relative w-24 h-24 border border-gray-300 dark:border-gray-600 rounded-md overflow-hidden bg-white dark:bg-gray-700 flex items-center justify-center">
+                      <img src={logoPreview} alt="Logo" className="max-w-full max-h-full object-contain" />
+                      <button
+                        type="button"
+                        onClick={removeLogo}
+                        className="absolute -top-2 -right-2 w-6 h-6 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600"
+                      >
+                        <X className="w-4 h-4" />
+                      </button>
+                    </div>
+                  )}
+                  <div className="flex-1">
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept="image/*"
+                      onChange={handleLogoChange}
+                      disabled={isUploading || isPending}
+                      className="hidden"
+                      id="logo-upload"
+                    />
+                    <label htmlFor="logo-upload">
+                      <Button
+                        type="button"
+                        variant="outline"
+                        disabled={isUploading || isPending}
+                        className="cursor-pointer dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
+                        onClick={() => fileInputRef.current?.click()}
+                      >
+                        <Upload className="w-4 h-4 mr-2" />
+                        {isUploading ? "Uploading..." : "Upload Logo"}
+                      </Button>
+                    </label>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">PNG, JPG up to 2MB</p>
+                  </div>
+                </div>
                 {errors.logo_url && <p className="text-xs text-red-500">{errors.logo_url.message}</p>}
               </div>
               <div className="space-y-1">
@@ -132,8 +281,45 @@ export default function CompanySettingsClient({ company }: Props) {
                 {errors.signer_title && <p className="text-xs text-red-500">{errors.signer_title.message}</p>}
               </div>
               <div className="col-span-2 space-y-1">
-                <Label className="dark:text-gray-300">Signature Image URL <span className="text-gray-400 font-normal">(optional)</span></Label>
-                <Input {...register("signature_url")} placeholder="https://example.com/signature.png" className="dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-500" disabled={isPending} />
+                <Label className="dark:text-gray-300">Signature Image <span className="text-gray-400 font-normal">(optional)</span></Label>
+                <div className="flex items-start gap-3">
+                  {signaturePreview && (
+                    <div className="relative w-32 h-20 border border-gray-300 dark:border-gray-600 rounded-md overflow-hidden bg-white dark:bg-gray-700 flex items-center justify-center">
+                      <img src={signaturePreview} alt="Signature" className="max-w-full max-h-full object-contain" />
+                      <button
+                        type="button"
+                        onClick={removeSignature}
+                        className="absolute -top-2 -right-2 w-6 h-6 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600"
+                      >
+                        <X className="w-4 h-4" />
+                      </button>
+                    </div>
+                  )}
+                  <div className="flex-1">
+                    <input
+                      ref={signatureInputRef}
+                      type="file"
+                      accept="image/*"
+                      onChange={handleSignatureChange}
+                      disabled={isUploadingSignature || isPending}
+                      className="hidden"
+                      id="signature-upload"
+                    />
+                    <label htmlFor="signature-upload">
+                      <Button
+                        type="button"
+                        variant="outline"
+                        disabled={isUploadingSignature || isPending}
+                        className="cursor-pointer dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
+                        onClick={() => signatureInputRef.current?.click()}
+                      >
+                        <Upload className="w-4 h-4 mr-2" />
+                        {isUploadingSignature ? "Uploading..." : "Upload Signature"}
+                      </Button>
+                    </label>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">PNG, JPG up to 2MB</p>
+                  </div>
+                </div>
                 {errors.signature_url && <p className="text-xs text-red-500">{errors.signature_url.message}</p>}
               </div>
             </div>
