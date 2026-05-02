@@ -157,7 +157,16 @@ export default function CompanySettingsClient({ company }: Props) {
   function onSubmit(data: CompanyFormData) {
     startTransition(async () => {
       try {
-        await updateCompanySettings(data)
+        const result = await updateCompanySettings(data)
+
+        if (result?.error) {
+          toast({
+            variant: "destructive",
+            title: "Failed to save",
+            description: result.error,
+          })
+          return
+        }
 
         // Also update localStorage for live updates
         if (typeof window !== "undefined") {
@@ -176,7 +185,7 @@ export default function CompanySettingsClient({ company }: Props) {
         toast({
           variant: "destructive",
           title: "Failed to save",
-          description: error.message,
+          description: error?.message || "An unexpected error occurred",
         })
       }
     })

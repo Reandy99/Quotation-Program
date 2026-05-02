@@ -1,18 +1,20 @@
 import { z } from "zod"
 
+const emptyStringToUndefined = z.literal("").transform(() => undefined)
+
 export const companySchema = z.object({
-  business_name: z.string().optional(),
-  logo_url: z.string().optional(),
-  email: z.string().email("Invalid email").or(z.literal("")).optional(),
-  phone: z.string().optional(),
-  website: z.string().optional(),
-  address: z.string().optional(),
-  default_terms: z.string().optional(),
-  default_payment_terms: z.string().optional(),
-  signer_name: z.string().optional(),
-  signer_title: z.string().optional(),
-  signature_url: z.string().optional(),
-  google_review_url: z.string().optional(),
+  business_name: z.string().optional().or(emptyStringToUndefined),
+  logo_url: z.string().optional().or(emptyStringToUndefined),
+  email: z.string().email("Invalid email").optional().or(emptyStringToUndefined),
+  phone: z.string().optional().or(emptyStringToUndefined),
+  website: z.string().optional().or(emptyStringToUndefined),
+  address: z.string().optional().or(emptyStringToUndefined),
+  default_terms: z.string().optional().or(emptyStringToUndefined),
+  default_payment_terms: z.string().optional().or(emptyStringToUndefined),
+  signer_name: z.string().optional().or(emptyStringToUndefined),
+  signer_title: z.string().optional().or(emptyStringToUndefined),
+  signature_url: z.string().optional().or(emptyStringToUndefined),
+  google_review_url: z.string().optional().or(emptyStringToUndefined),
 })
 
 export type CompanyFormData = z.infer<typeof companySchema>

@@ -29,21 +29,34 @@ export async function getCompanySettings(): Promise<CompanySettings | null> {
 }
 
 export async function updateCompanySettings(settings: Partial<CompanySettings>) {
-  const supabase = createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-  if (!user) throw new Error("Unauthorized")
+  try {
+    const supabase = createClient()
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) return { error: "Unauthorized" }
 
-  const { error } = await supabase
-    .from("company_settings")
-    .upsert({
-      user_id: user.id,
-      ...settings,
-      updated_at: new Date().toISOString(),
-    })
+    // Convert empty strings to null for optional fields
+    const cleanedSettings = Object.fromEntries(
+      Object.entries(settings).map(([key, value]) => [
+        key,
+        value === "" ? null : value
+      ])
+    )
 
-  if (error) throw new Error(error.message)
+    const { error } = await supabase
+      .from("company_settings")
+      .upsert({
+        user_id: user.id,
+        ...cleanedSettings,
+        updated_at: new Date().toISOString(),
+      })
 
-  revalidatePath("/settings")
+    if (error) return { error: error.message }
+
+    revalidatePath("/settings")
+    return { success: true }
+  } catch (err) {
+    return { error: err instanceof Error ? err.message : "Failed to save settings" }
+  }
 }
 
 export async function uploadLogo(formData: FormData): Promise<string> {
