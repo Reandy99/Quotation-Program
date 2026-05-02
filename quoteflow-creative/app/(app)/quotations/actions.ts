@@ -78,7 +78,7 @@ export async function createQuotation(
   try {
     const supabase = createClient()
     const { data: { user }, error: authError } = await supabase.auth.getUser()
-    
+
     if (authError || !user) {
       throw new Error("Authentication required. Please sign in.")
     }
@@ -134,5 +134,73 @@ export async function updateQuotationStatus(id: string, status: QuotationStatus)
   } catch (error: any) {
     console.error("Error updating quotation status:", error)
     throw new Error(error.message || "Failed to update quotation status")
+  }
+}
+
+export async function createInvoiceFromQuotation(quotationId: string): Promise<string> {
+  try {
+    const supabase = createClient()
+    const { data: { user }, error: authError } = await supabase.auth.getUser()
+
+    if (authError || !user) {
+      throw new Error("Authentication required")
+    }
+
+    const quotation = await getQuotation(quotationId)
+    if (!quotation) {
+      throw new Error("Quotation not found")
+    }
+
+    const year = new Date().getFullYear()
+    const prefix = `INV-${year}-`
+    const { data: lastInvoice } = await supabase
+      .from("invoices")
+      .select("invoice_number")
+      .like("invoice_number", `${prefix}%`)
+      .order("invoice_number", { ascending: false })
+      .limit(1)
+
+    const invoiceNumber = !lastInvoice || lastInvoice.length === 0
+      ? `${prefix}001`
+      : `${prefix}${(parseInt(lastInvoice[0].invoice_number.split("-")[2]) + 1).toString().padStart(3, "0")}`
+
+    const discount = quotation.discount_type === "percent"
+      ? quotation.subtotal * (quotation.discount_value / 100)
+      : quotation.discount_value
+    const afterDiscount = quotation.subtotal - discount
+    const tax = afterDiscount * (quotation.tax_percent / 100)
+
+    const { data: invoice, error } = await supabase
+      .from("invoices")
+      .insert({
+        user_id: user.id,
+        quotation_id: quotationId,
+        invoice_number: invoiceNumber,
+        client_name: quotation.lead?.client_name || "Client",
+        project_title: quotation.project_title,
+        issue_date: new Date().toISOString().split("T")[0],
+        due_date: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split("T")[0],
+        subtotal: quotation.subtotal,
+        discount,
+        tax,
+        grand_total: quotation.grand_total,
+        paid_amount: 0,
+        status: "Draft",
+        notes: quotation.notes,
+      })
+      .select()
+      .single()
+
+    if (error) throw new Error(error.message)
+
+    await logAudit("create", "invoice", invoice.id, { invoice_number: invoiceNumber, from_quotation: quotationId }).catch(err => {
+      console.error("Audit log failed:", err)
+    })
+    revalidatePath("/invoices")
+    revalidatePath(`/quotations/${quotationId}`)
+    return invoice.id
+  } catch (error: any) {
+    console.error("Error creating invoice from quotation:", error)
+    throw new Error(error.message || "Failed to create invoice")
   }
 }

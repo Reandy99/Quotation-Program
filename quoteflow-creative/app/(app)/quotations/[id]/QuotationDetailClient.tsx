@@ -14,6 +14,7 @@ import { Pencil, Copy, Printer, MessageCircle, FileText } from "lucide-react"
 import type { Quotation, QuotationItem } from "@/types"
 import { loadCompanySettings, SETTINGS_UPDATED_EVENT } from "@/lib/settings/storage"
 import { useToast } from "@/hooks/use-toast"
+import { createInvoiceFromQuotation } from "../actions"
 
 interface Props {
   quotation: Quotation & { items: QuotationItem[] }
@@ -44,9 +45,19 @@ export default function QuotationDetailClient({ quotation: initial }: Props) {
     toast({ title: "Duplicate functionality coming soon", description: "This feature will be available in a future update." })
   }
 
-  function handleConvertToInvoice() {
-    if (confirm(`Konversi penawaran ${initial.quote_number} menjadi invoice?`)) {
-      router.push("/invoices")
+  async function handleConvertToInvoice() {
+    if (!confirm(`Konversi penawaran ${initial.quote_number} menjadi invoice?`)) return
+
+    try {
+      const invoiceId = await createInvoiceFromQuotation(initial.id)
+      toast({ title: "Invoice berhasil dibuat", description: `Invoice telah dibuat dari ${initial.quote_number}` })
+      router.push(`/invoices/${invoiceId}`)
+    } catch (error: any) {
+      toast({
+        title: "Gagal membuat invoice",
+        description: error.message || "Terjadi kesalahan saat membuat invoice.",
+        variant: "destructive"
+      })
     }
   }
 
