@@ -50,3 +50,20 @@ export async function getClient(id: string): Promise<Client | null> {
   if (error) return null
   return data
 }
+
+export async function deleteClients(ids: string[]) {
+  try {
+    const supabase = createSupabaseClient()
+    const { error } = await supabase.from("clients").delete().in("id", ids)
+
+    if (error) throw new Error(error.message)
+
+    await Promise.all(ids.map(id => logAudit("delete", "client", id))).catch(err => {
+      console.error("Audit log failed:", err)
+    })
+    revalidatePath("/clients")
+  } catch (error: any) {
+    console.error("Error deleting clients:", error)
+    throw new Error(error.message || "Failed to delete clients")
+  }
+}

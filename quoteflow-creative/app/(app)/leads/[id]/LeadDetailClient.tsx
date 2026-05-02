@@ -14,7 +14,6 @@ import type { Lead, Quotation, LeadStatus } from "@/types"
 import type { LeadFormData } from "@/lib/validations/lead"
 import { useToast } from "@/hooks/use-toast"
 import { updateLead } from "@/app/(app)/leads/actions"
-import { createFollowUp } from "@/app/(app)/follow-ups/actions"
 
 interface Props {
   lead: Lead
@@ -62,17 +61,17 @@ export default function LeadDetailClient({ lead, quotations }: Props) {
     }
   }
 
-  function handleAddFollowUp() {
+  async function handleAddFollowUp() {
     const date = prompt("Enter follow-up date (YYYY-MM-DD):", new Date().toISOString().slice(0, 10))
     if (date?.trim()) {
-      createFollowUp({ lead_id: lead.id, scheduled_date: date.trim(), type: "whatsapp", notes: null })
-        .then(() => {
-          setFollowUpDate(date.trim())
-          toast({ title: "Follow-up scheduled", description: `Scheduled for ${date.trim()}` })
-        })
-        .catch((error) => {
-          toast({ variant: "destructive", title: "Error", description: error instanceof Error ? error.message : "Failed to schedule follow-up" })
-        })
+      try {
+        await updateLead(lead.id, { follow_up_date: date.trim() })
+        setFollowUpDate(date.trim())
+        toast({ title: "Follow-up scheduled", description: `Scheduled for ${date.trim()}` })
+        router.refresh()
+      } catch (error) {
+        toast({ variant: "destructive", title: "Error", description: error instanceof Error ? error.message : "Failed to schedule follow-up" })
+      }
     }
   }
 

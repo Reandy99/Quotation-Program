@@ -1,12 +1,14 @@
 "use client"
 
-import { useState, useRef, useEffect } from "react"
+import { useState, useRef, useEffect, useTransition } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { QuoteStatusBadge } from "@/components/leads/StatusBadge"
 import { formatCurrency, formatDateShort } from "@/lib/utils/format"
-import { Search, Copy, ChevronDown, MoreHorizontal } from "lucide-react"
+import { Search, Copy, ChevronDown, MoreHorizontal, Trash2 } from "lucide-react"
+import { toast } from "@/hooks/use-toast"
+import { deleteQuotations } from "@/app/(app)/quotations/actions"
 import type { Quotation, QuotationItem, QuotationStatus } from "@/types"
 
 type QuotationWithItems = Quotation & { items: QuotationItem[] }
@@ -27,7 +29,9 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
   const [statusFilter, setStatusFilter] = useState<QuotationStatus | "All">("All")
   const [selected, setSelected] = useState<Set<string>>(new Set())
   const [bulkStatusOpen, setBulkStatusOpen] = useState(false)
+  const [confirmDelete, setConfirmDelete] = useState(false)
   const [openMenu, setOpenMenu] = useState<string | null>(null)
+  const [isPending, startTransition] = useTransition()
   const menuRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -97,6 +101,29 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
     setBulkStatusOpen(false)
   }
 
+  async function handleBulkDelete() {
+    const ids = [...selected]
+    startTransition(async () => {
+      try {
+        await deleteQuotations(ids)
+        setQuotations(prev => prev.filter(q => !ids.includes(q.id)))
+        setSelected(new Set())
+        setConfirmDelete(false)
+        toast({
+          variant: "success",
+          title: "Deleted",
+          description: `${ids.length} quotation(s) deleted`,
+        })
+      } catch (error: any) {
+        toast({
+          variant: "destructive",
+          title: "Delete failed",
+          description: error.message,
+        })
+      }
+    })
+  }
+
   const selectedCount = selected.size
 
   return (
@@ -163,6 +190,15 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
                 </div>
               )}
             </div>
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={() => setConfirmDelete(true)}
+              className="gap-1.5 text-red-600 border-red-200 hover:bg-red-50 dark:border-red-800 dark:hover:bg-red-900/30 dark:text-red-400"
+            >
+              <Trash2 className="w-3.5 h-3.5" />
+              Delete
+            </Button>
             <Button size="sm" variant="outline" onClick={() => setSelected(new Set())}>
               Clear
             </Button>
@@ -262,6 +298,26 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
           {(search || statusFilter !== "All") ? ` (filtered from ${quotations.length})` : ""}
         </div>
       </div>
+
+      {/* Delete confirmation modal */}
+      {confirmDelete && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 dark:bg-black/70">
+          <div className="rounded-[28px] shadow-xl p-6 max-w-sm w-full mx-4" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
+            <h3 className="text-base font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Confirm Delete</h3>
+            <p className="text-sm mb-5" style={{ color: "var(--text-secondary)" }}>
+              Are you sure you want to delete <span className="font-medium" style={{ color: "var(--text-primary)" }}>{selected.size} quotation{selected.size !== 1 ? "s" : ""}</span>? This action cannot be undone.
+            </p>
+            <div className="flex gap-3 justify-end">
+              <Button variant="outline" size="sm" onClick={() => setConfirmDelete(false)}>
+                Cancel
+              </Button>
+              <Button size="sm" onClick={handleBulkDelete} className="bg-red-600 hover:bg-red-700">
+                Delete
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

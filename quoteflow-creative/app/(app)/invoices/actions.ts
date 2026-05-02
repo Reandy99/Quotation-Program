@@ -158,3 +158,20 @@ export async function updateInvoice(
   revalidatePath("/invoices")
   revalidatePath(`/invoices/${id}`)
 }
+
+export async function deleteInvoices(ids: string[]) {
+  try {
+    const supabase = createClient()
+    const { error } = await supabase.from("invoices").delete().in("id", ids)
+
+    if (error) throw new Error(error.message)
+
+    await Promise.all(ids.map(id => logAudit("delete", "invoice", id))).catch(err => {
+      console.error("Audit log failed:", err)
+    })
+    revalidatePath("/invoices")
+  } catch (error: any) {
+    console.error("Error deleting invoices:", error)
+    throw new Error(error.message || "Failed to delete invoices")
+  }
+}

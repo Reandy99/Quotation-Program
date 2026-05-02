@@ -1,13 +1,15 @@
 "use client"
 
-import { useState, useRef, useEffect } from "react"
+import { useState, useRef, useEffect, useTransition } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { formatCurrency, formatDateShort } from "@/lib/utils/format"
-import { Search, MoreHorizontal } from "lucide-react"
+import { Search, MoreHorizontal, Trash2, Square, CheckSquare } from "lucide-react"
+import { toast } from "@/hooks/use-toast"
+import { deleteInvoices } from "@/app/(app)/invoices/actions"
 import type { Invoice, InvoiceStatus } from "@/types"
 
 const STATUS_FILTERS: Array<InvoiceStatus | "All"> = ["All", "Paid", "Partial", "Overdue", "Sent", "Draft"]
@@ -20,10 +22,14 @@ const STATUS_CLASSES: Record<InvoiceStatus, string> = {
   Overdue: "bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300",
 }
 
-export default function InvoicesListClient({ invoices }: { invoices: Invoice[] }) {
+export default function InvoicesListClient({ invoices: initial }: { invoices: Invoice[] }) {
+  const [invoices, setInvoices] = useState(initial)
   const [search, setSearch] = useState("")
   const [statusFilter, setStatusFilter] = useState<InvoiceStatus | "All">("All")
+  const [selected, setSelected] = useState<Set<string>>(new Set())
+  const [confirmDelete, setConfirmDelete] = useState(false)
   const [openMenu, setOpenMenu] = useState<string | null>(null)
+  const [isPending, startTransition] = useTransition()
   const menuRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -43,6 +49,43 @@ export default function InvoicesListClient({ invoices }: { invoices: Invoice[] }
     const matchesStatus = statusFilter === "All" || inv.status === statusFilter
     return matchesSearch && matchesStatus
   })
+
+  const allFilteredSelected = filtered.length > 0 && filtered.every(i => selected.has(i.id))
+
+  function toggleAll() {
+    if (allFilteredSelected) {
+      setSelected(prev => { const s = new Set(prev); filtered.forEach(i => s.delete(i.id)); return s })
+    } else {
+      setSelected(prev => { const s = new Set(prev); filtered.forEach(i => s.add(i.id)); return s })
+    }
+  }
+
+  function toggleOne(id: string) {
+    setSelected(prev => { const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id); return s })
+  }
+
+  async function handleBulkDelete() {
+    const ids = [...selected]
+    startTransition(async () => {
+      try {
+        await deleteInvoices(ids)
+        setInvoices(prev => prev.filter(i => !ids.includes(i.id)))
+        setSelected(new Set())
+        setConfirmDelete(false)
+        toast({
+          variant: "success",
+          title: "Deleted",
+          description: `${ids.length} invoice(s) deleted`,
+        })
+      } catch (error: any) {
+        toast({
+          variant: "destructive",
+          title: "Delete failed",
+          description: error.message,
+        })
+      }
+    })
+  }
 
   return (
     <div>
@@ -71,8 +114,34 @@ export default function InvoicesListClient({ invoices }: { invoices: Invoice[] }
         </div>
       </div>
 
+      {/* Bulk action bar */}
+      {selected.size > 0 && (
+        <div className="flex items-center gap-3 mb-4 px-4 py-2.5 rounded-2xl text-sm" style={{ backgroundColor: "#E0E7FF", border: "1px solid #C7D2FE" }}>
+          <span className="text-indigo-700 dark:text-indigo-300 font-medium">
+            {selected.size} selected
+          </span>
+          <div className="flex gap-2 ml-auto">
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={() => setConfirmDelete(true)}
+              className="gap-1.5 text-red-600 border-red-200 hover:bg-red-50 dark:border-red-800 dark:hover:bg-red-900/30 dark:text-red-400"
+            >
+              <Trash2 className="w-3.5 h-3.5" />
+              Delete
+            </Button>
+            <Button size="sm" variant="outline" onClick={() => setSelected(new Set())}>
+              Clear
+            </Button>
+          </div>
+        </div>
+      )}
+
       <div className="rounded-[28px] shadow-sm overflow-hidden" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
-        <div className="grid grid-cols-[auto_1fr_auto_auto_auto_auto_auto] gap-4 px-5 py-3 border-b text-xs font-semibold uppercase tracking-wider" style={{ backgroundColor: "var(--app-bg)", borderColor: "var(--border-color)", color: "var(--text-secondary)" }}>
+        <div className="grid grid-cols-[auto_auto_1fr_auto_auto_auto_auto_auto] gap-4 px-5 py-3 border-b text-xs font-semibold uppercase tracking-wider" style={{ backgroundColor: "var(--app-bg)", borderColor: "var(--border-color)", color: "var(--text-secondary)" }}>
+          <button onClick={toggleAll} className="flex items-center transition-opacity hover:opacity-70" style={{ color: "var(--text-secondary)" }}>
+            {allFilteredSelected ? <CheckSquare className="w-4 h-4" /> : <Square className="w-4 h-4" />}
+          </button>
           <span>Invoice #</span>
           <span>Client</span>
           <span className="hidden sm:block">Amount</span>
@@ -89,8 +158,17 @@ export default function InvoicesListClient({ invoices }: { invoices: Invoice[] }
           ) : filtered.map(inv => (
             <div
               key={inv.id}
-              className="grid grid-cols-[auto_1fr_auto_auto_auto_auto_auto] gap-4 items-center px-5 py-4 hover:bg-black/5 dark:hover:bg-white/5 transition-colors group"
+              className="grid grid-cols-[auto_auto_1fr_auto_auto_auto_auto_auto] gap-4 items-center px-5 py-4 hover:bg-black/5 dark:hover:bg-white/5 transition-colors group"
             >
+              <button
+                onClick={e => { e.stopPropagation(); toggleOne(inv.id) }}
+                className="transition-opacity hover:opacity-70"
+                style={{ color: "var(--text-secondary)" }}
+              >
+                {selected.has(inv.id)
+                  ? <CheckSquare className="w-4 h-4" style={{ color: "#6366F1" }} />
+                  : <Square className="w-4 h-4" />}
+              </button>
               <span className="text-xs font-mono whitespace-nowrap" style={{ color: "var(--text-secondary)" }}>{inv.invoice_number}</span>
               <Link href={`/invoices/${inv.id}`} className="min-w-0">
                 <p className="text-sm font-medium group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors truncate" style={{ color: "var(--text-primary)" }}>{inv.project_title}</p>
@@ -135,6 +213,26 @@ export default function InvoicesListClient({ invoices }: { invoices: Invoice[] }
           {(search || statusFilter !== "All") ? ` (filtered from ${invoices.length})` : ""}
         </div>
       </div>
+
+      {/* Delete confirmation modal */}
+      {confirmDelete && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 dark:bg-black/70">
+          <div className="rounded-[28px] shadow-xl p-6 max-w-sm w-full mx-4" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
+            <h3 className="text-base font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Confirm Delete</h3>
+            <p className="text-sm mb-5" style={{ color: "var(--text-secondary)" }}>
+              Are you sure you want to delete <span className="font-medium" style={{ color: "var(--text-primary)" }}>{selected.size} invoice{selected.size !== 1 ? "s" : ""}</span>? This action cannot be undone.
+            </p>
+            <div className="flex gap-3 justify-end">
+              <Button variant="outline" size="sm" onClick={() => setConfirmDelete(false)}>
+                Cancel
+              </Button>
+              <Button size="sm" onClick={handleBulkDelete} className="bg-red-600 hover:bg-red-700">
+                Delete
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

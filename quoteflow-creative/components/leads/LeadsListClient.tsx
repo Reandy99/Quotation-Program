@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { LeadStatusBadge } from "@/components/leads/StatusBadge"
 import { formatCurrency, formatDateShort } from "@/lib/utils/format"
-import { Search, CheckSquare, Square, ChevronDown, LayoutList, LayoutGrid, MoreHorizontal } from "lucide-react"
+import { Search, CheckSquare, Square, ChevronDown, LayoutList, LayoutGrid, MoreHorizontal, Trash2 } from "lucide-react"
 import { toast } from "@/hooks/use-toast"
-import { updateLeadStatus } from "@/app/(app)/leads/actions"
+import { updateLeadStatus, deleteLeads } from "@/app/(app)/leads/actions"
 import type { Lead, LeadStatus } from "@/types"
 
 interface Props {
@@ -26,6 +26,7 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
   const [selected, setSelected] = useState<Set<string>>(new Set())
   const [bulkMenuOpen, setBulkMenuOpen] = useState(false)
   const [confirmAction, setConfirmAction] = useState<{ status: LeadStatus; ids: string[] } | null>(null)
+  const [confirmDelete, setConfirmDelete] = useState(false)
   const [viewMode, setViewMode] = useState<"list" | "kanban">("list")
   const [isPending, startTransition] = useTransition()
   const [openMenu, setOpenMenu] = useState<string | null>(null)
@@ -111,6 +112,29 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
     })
   }
 
+  async function handleBulkDelete() {
+    const ids = [...selected]
+    startTransition(async () => {
+      try {
+        await deleteLeads(ids)
+        setLeads(prev => prev.filter(l => !ids.includes(l.id)))
+        setSelected(new Set())
+        setConfirmDelete(false)
+        toast({
+          variant: "success",
+          title: "Deleted",
+          description: `${ids.length} lead(s) deleted`,
+        })
+      } catch (error: any) {
+        toast({
+          variant: "destructive",
+          title: "Delete failed",
+          description: error.message,
+        })
+      }
+    })
+  }
+
   const kanbanGroups = KANBAN_COLUMNS.reduce((acc, status) => {
     acc[status] = filtered.filter(l => l.status === status)
     return acc
@@ -174,36 +198,47 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
           <span className="text-sm font-medium text-indigo-700 dark:text-indigo-300">
             {selected.size} selected
           </span>
-          <div className="relative ml-auto">
+          <div className="flex gap-2 ml-auto">
+            <div className="relative">
+              <Button
+                size="sm"
+                variant="outline"
+                onClick={() => setBulkMenuOpen(v => !v)}
+              >
+                Update Status <ChevronDown className="w-3.5 h-3.5 ml-1.5" />
+              </Button>
+              {bulkMenuOpen && (
+                <div className="absolute right-0 top-full mt-1 z-20 rounded-2xl shadow-lg py-1 min-w-[140px]" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
+                  {BULK_STATUSES.map(s => (
+                    <button
+                      key={s}
+                      onClick={() => requestBulkUpdate(s)}
+                      className="w-full text-left px-4 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/5"
+                      style={{ color: "var(--text-primary)" }}
+                    >
+                      {s}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
             <Button
               size="sm"
               variant="outline"
-              onClick={() => setBulkMenuOpen(v => !v)}
+              onClick={() => setConfirmDelete(true)}
+              className="gap-1.5 text-red-600 border-red-200 hover:bg-red-50 dark:border-red-800 dark:hover:bg-red-900/30 dark:text-red-400"
             >
-              Update Status <ChevronDown className="w-3.5 h-3.5 ml-1.5" />
+              <Trash2 className="w-3.5 h-3.5" />
+              Delete
             </Button>
-            {bulkMenuOpen && (
-              <div className="absolute right-0 top-full mt-1 z-20 rounded-2xl shadow-lg py-1 min-w-[140px]" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
-                {BULK_STATUSES.map(s => (
-                  <button
-                    key={s}
-                    onClick={() => requestBulkUpdate(s)}
-                    className="w-full text-left px-4 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/5"
-                    style={{ color: "var(--text-primary)" }}
-                  >
-                    {s}
-                  </button>
-                ))}
-              </div>
-            )}
+            <Button
+              size="sm"
+              variant="ghost"
+              onClick={() => setSelected(new Set())}
+            >
+              Clear
+            </Button>
           </div>
-          <Button
-            size="sm"
-            variant="ghost"
-            onClick={() => setSelected(new Set())}
-          >
-            Clear
-          </Button>
         </div>
       )}
 
@@ -373,6 +408,26 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
               </Button>
               <Button size="sm" onClick={confirmBulkUpdate}>
                 Confirm
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Delete confirmation modal */}
+      {confirmDelete && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 dark:bg-black/70">
+          <div className="rounded-[28px] shadow-xl p-6 max-w-sm w-full mx-4" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
+            <h3 className="text-base font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Confirm Delete</h3>
+            <p className="text-sm mb-5" style={{ color: "var(--text-secondary)" }}>
+              Are you sure you want to delete <span className="font-medium" style={{ color: "var(--text-primary)" }}>{selected.size} lead{selected.size !== 1 ? "s" : ""}</span>? This action cannot be undone.
+            </p>
+            <div className="flex gap-3 justify-end">
+              <Button variant="outline" size="sm" onClick={() => setConfirmDelete(false)}>
+                Cancel
+              </Button>
+              <Button size="sm" onClick={handleBulkDelete} className="bg-red-600 hover:bg-red-700">
+                Delete
               </Button>
             </div>
           </div>

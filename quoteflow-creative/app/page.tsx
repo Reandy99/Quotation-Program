@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Zap, Users, FileText, DollarSign, Bell, BarChart3, Instagram, Linkedin, ArrowRight, CheckCircle2, Sparkles } from 'lucide-react'
+import { Zap, Users, FileText, DollarSign, Bell, BarChart3, Instagram, Linkedin, ArrowRight, CheckCircle2, Sparkles, Hash, Percent, Clock, MessageSquare, Shield } from 'lucide-react'
 
 export default function Home() {
   const features = [
@@ -145,24 +145,30 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Social Proof */}
+        {/* Workflow Features */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>Built for creative workflows</h2>
             <p className="text-lg" style={{ color: "var(--text-secondary)" }}>Everything you need, nothing you don't</p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
             {[
-              "Auto-generated quote numbers (QF-YYYY-NNN)",
-              "Discount & tax calculation",
-              "PDF export with your branding",
-              "Follow-up tracker (overdue/today/upcoming)",
-              "WhatsApp message templates",
-              "Row-level security on all data",
-            ].map((feature) => (
-              <div key={feature} className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ color: "hsl(var(--primary))" }} />
-                <span className="text-sm" style={{ color: "var(--text-secondary)" }}>{feature}</span>
+              { icon: Hash, bg: "#BFEAF3", darkBg: "#164E63", iconColor: "#0E4F63", darkIconColor: "#7DD3FC", title: "Auto-generated quote numbers", desc: "Sequential quote IDs in QF-YYYY-NNN format" },
+              { icon: Percent, bg: "#DDEFCB", darkBg: "#365314", iconColor: "#2D5016", darkIconColor: "#86EFAC", title: "Discount & tax calculation", desc: "Flat or percentage discounts with automatic tax" },
+              { icon: FileText, bg: "#F6E57A", darkBg: "#713F12", iconColor: "#713F12", darkIconColor: "#FDE047", title: "PDF export with branding", desc: "Professional quotes with your logo and colors" },
+              { icon: Clock, bg: "#BFEAF3", darkBg: "#164E63", iconColor: "#0E4F63", darkIconColor: "#7DD3FC", title: "Follow-up tracker", desc: "Track overdue, today, and upcoming follow-ups" },
+              { icon: MessageSquare, bg: "#DDEFCB", darkBg: "#365314", iconColor: "#2D5016", darkIconColor: "#86EFAC", title: "WhatsApp templates", desc: "Pre-built message templates to close deals faster" },
+              { icon: Shield, bg: "#F6E57A", darkBg: "#713F12", iconColor: "#713F12", darkIconColor: "#FDE047", title: "Row-level security", desc: "Your data is isolated and protected by default" },
+            ].map(({ icon: Icon, bg, darkBg, iconColor, darkIconColor, title, desc }) => (
+              <div key={title} className="rounded-2xl p-6 border transition-all hover:scale-[1.02] hover:shadow-lg" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)" }}>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4 dark:hidden" style={{ backgroundColor: bg }}>
+                  <Icon className="w-5 h-5" style={{ color: iconColor }} />
+                </div>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4 hidden dark:flex" style={{ backgroundColor: darkBg }}>
+                  <Icon className="w-5 h-5" style={{ color: darkIconColor }} />
+                </div>
+                <h3 className="text-base font-semibold mb-2" style={{ color: "var(--text-primary)" }}>{title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>{desc}</p>
               </div>
             ))}
           </div>

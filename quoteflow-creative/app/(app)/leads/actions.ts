@@ -156,3 +156,20 @@ export async function deleteLead(id: string) {
     throw new Error(error.message || "Failed to delete lead")
   }
 }
+
+export async function deleteLeads(ids: string[]) {
+  try {
+    const supabase = createClient()
+    const { error } = await supabase.from("leads").delete().in("id", ids)
+
+    if (error) throw new Error(error.message)
+
+    await Promise.all(ids.map(id => logAudit("delete", "lead", id))).catch(err => {
+      console.error("Audit log failed:", err)
+    })
+    revalidatePath("/leads")
+  } catch (error: any) {
+    console.error("Error deleting leads:", error)
+    throw new Error(error.message || "Failed to delete leads")
+  }
+}

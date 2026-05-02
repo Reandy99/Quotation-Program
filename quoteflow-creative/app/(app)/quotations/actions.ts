@@ -230,6 +230,23 @@ export async function updateQuotationStatus(id: string, status: QuotationStatus)
   }
 }
 
+export async function deleteQuotations(ids: string[]) {
+  try {
+    const supabase = createClient()
+    const { error } = await supabase.from("quotations").delete().in("id", ids)
+
+    if (error) throw new Error(error.message)
+
+    await Promise.all(ids.map(id => logAudit("delete", "quotation", id))).catch(err => {
+      console.error("Audit log failed:", err)
+    })
+    revalidatePath("/quotations")
+  } catch (error: any) {
+    console.error("Error deleting quotations:", error)
+    throw new Error(error.message || "Failed to delete quotations")
+  }
+}
+
 export async function createInvoiceFromQuotation(quotationId: string): Promise<string> {
   try {
     const supabase = createClient()
