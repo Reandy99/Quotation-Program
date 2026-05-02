@@ -3,7 +3,7 @@
 import { useState, useTransition } from "react"
 import Link from "next/link"
 import { formatCurrency } from "@/lib/utils/format"
-import { Users, Building2, Mail, Phone, Search, Square, CheckSquare, Trash2 } from "lucide-react"
+import { Users, Building2, Mail, Phone, Search, CheckSquare, Trash2 } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { toast } from "@/hooks/use-toast"
@@ -101,7 +101,7 @@ export default function ClientsListClient({ clients: initial }: Props) {
       {filtered.length > 0 && (
         <div className="flex items-center gap-2 mb-3 px-1">
           <button onClick={toggleAll} className="flex items-center gap-2 text-sm transition-opacity hover:opacity-70" style={{ color: "var(--text-secondary)" }}>
-            {allFilteredSelected ? <CheckSquare className="w-4 h-4" /> : <Square className="w-4 h-4" />}
+            {allFilteredSelected ? <CheckSquare className="w-4 h-4" /> : <div className="w-4 h-4" />}
             <span>Select all</span>
           </button>
         </div>
@@ -113,11 +113,10 @@ export default function ClientsListClient({ clients: initial }: Props) {
             <button
               onClick={e => { e.stopPropagation(); toggleOne(client.id) }}
               className="absolute top-3 left-3 z-10 transition-opacity hover:opacity-70"
-              style={{ color: "var(--text-secondary)" }}
             >
               {selected.has(client.id)
                 ? <CheckSquare className="w-5 h-5" style={{ color: "#6366F1" }} />
-                : <Square className="w-5 h-5" />}
+                : <div className="w-5 h-5" />}
             </button>
             <Link
               href={`/clients/${client.id}`}
