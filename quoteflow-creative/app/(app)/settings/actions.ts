@@ -47,7 +47,7 @@ export async function updateCompanySettings(settings: Partial<CompanySettings>) 
         user_id: user.id,
         ...cleanedSettings,
         updated_at: new Date().toISOString(),
-      })
+      }, { onConflict: "user_id" })
 
     if (error) {
       // If schema cache error for missing columns, retry with core fields only
@@ -67,7 +67,7 @@ export async function updateCompanySettings(settings: Partial<CompanySettings>) 
 
         const { error: retryError } = await supabase
           .from("company_settings")
-          .upsert(coreFields)
+          .upsert(coreFields, { onConflict: "user_id" })
 
         if (retryError) return { error: retryError.message }
 
