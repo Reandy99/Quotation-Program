@@ -18,6 +18,7 @@ import type { CompanySettings } from "@/lib/settings/storage"
 interface Props {
   leads: Lead[]
   followUps: FollowUp[]
+  canCreate?: boolean
 }
 
 function groupFollowUps(leads: Lead[]) {
@@ -243,7 +244,7 @@ function ReviewSection({
   )
 }
 
-export default function FollowUpsClient({ leads: initialLeads, followUps }: Props) {
+export default function FollowUpsClient({ leads: initialLeads, followUps, canCreate = true }: Props) {
   const filteredLeads = initialLeads.filter(l => 
     (l.follow_up_date || l.status === "Follow Up") && l.status !== "Won" && l.status !== "Lost"
   )

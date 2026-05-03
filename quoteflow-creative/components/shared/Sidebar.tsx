@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
-import { LayoutDashboard, Users, FileText, Bell, Settings, Zap, Menu, X, UserCircle, Receipt, Calendar, BarChart3, Loader2 } from "lucide-react"
+import { LayoutDashboard, Users, FileText, Bell, Settings, Zap, Menu, X, UserCircle, Receipt, Calendar, BarChart3, Loader2, CreditCard } from "lucide-react"
 import { cn } from "@/lib/utils/cn"
 import { useState, useEffect, useTransition, memo } from "react"
 import Image from "next/image"
@@ -139,6 +139,29 @@ export default function Sidebar() {
           >
             <Settings className="w-4 h-4 flex-shrink-0" />
             Settings
+            {isPending && <Loader2 className="w-3 h-3 ml-auto animate-spin" />}
+          </Link>
+          <Link
+            href="/settings/billing"
+            prefetch={true}
+            onClick={(e) => {
+              e.preventDefault()
+              setOpen(false)
+              startTransition(() => {
+                router.push("/settings/billing")
+              })
+            }}
+            className={cn(
+              "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all",
+              pathname === "/settings/billing"
+                ? "bg-[#111827] text-white dark:bg-[#1F2937] dark:text-[#F9FAFB]"
+                : "hover:bg-black/5 dark:hover:bg-white/5",
+              isPending && "opacity-60"
+            )}
+            style={pathname === "/settings/billing" ? {} : { color: "var(--text-secondary)" }}
+          >
+            <CreditCard className="w-4 h-4 flex-shrink-0" />
+            Billing
             {isPending && <Loader2 className="w-3 h-3 ml-auto animate-spin" />}
           </Link>
         </div>

@@ -5,21 +5,28 @@ import { EmptyState } from "@/components/shared/EmptyState"
 import { Plus, FileText } from "lucide-react"
 import QuotationsListClient from "@/components/quotations/QuotationsListClient"
 import { getQuotations } from "./actions"
+import { getSubscription } from "@/lib/billing/actions"
+import { canUseFeature } from "@/lib/billing/feature-gate"
+import { UpgradeBanner } from "@/components/billing/UpgradeBanner"
 
 export const dynamic = "force-dynamic"
 
 export default async function QuotationsPage() {
-  const quotations = await getQuotations()
+  const [quotations, subscription] = await Promise.all([getQuotations(), getSubscription()])
+  const canCreate = canUseFeature(subscription?.status, "create_quotation")
 
   return (
     <div>
+      {!canCreate && <UpgradeBanner />}
       <PageHeader
         title="Quotations"
         description="Manage your project quotations"
         action={
-          <Link href="/quotations/templates">
-            <Button><Plus className="w-4 h-4 mr-1.5" />New Quotation</Button>
-          </Link>
+          canCreate ? (
+            <Link href="/quotations/templates">
+              <Button><Plus className="w-4 h-4 mr-1.5" />New Quotation</Button>
+            </Link>
+          ) : null
         }
       />
 
@@ -29,9 +36,11 @@ export default async function QuotationsPage() {
           title="No quotations yet"
           description="Create professional quotations with detailed line items and export to PDF."
           action={
-            <Link href="/quotations/templates">
-              <Button><Plus className="w-4 h-4 mr-1.5" />Create Quotation</Button>
-            </Link>
+            canCreate ? (
+              <Link href="/quotations/templates">
+                <Button><Plus className="w-4 h-4 mr-1.5" />Create Quotation</Button>
+              </Link>
+            ) : undefined
           }
         />
       ) : (

@@ -5,21 +5,28 @@ import { EmptyState } from "@/components/shared/EmptyState"
 import { Plus, Users } from "lucide-react"
 import LeadsListClient from "@/components/leads/LeadsListClient"
 import { getLeads } from "./actions"
+import { getSubscription } from "@/lib/billing/actions"
+import { canUseFeature } from "@/lib/billing/feature-gate"
+import { UpgradeBanner } from "@/components/billing/UpgradeBanner"
 
 export const dynamic = "force-dynamic"
 
 export default async function LeadsPage() {
-  const leads = await getLeads()
+  const [leads, subscription] = await Promise.all([getLeads(), getSubscription()])
+  const canCreate = canUseFeature(subscription?.status, "create_lead")
 
   return (
     <div>
+      {!canCreate && <UpgradeBanner />}
       <PageHeader
         title="Leads"
         description="Manage your potential clients and projects"
         action={
-          <Link href="/leads/new">
-            <Button><Plus className="w-4 h-4 mr-1.5" />New Lead</Button>
-          </Link>
+          canCreate ? (
+            <Link href="/leads/new">
+              <Button><Plus className="w-4 h-4 mr-1.5" />New Lead</Button>
+            </Link>
+          ) : null
         }
       />
 
@@ -29,12 +36,11 @@ export default async function LeadsPage() {
           title="No leads yet"
           description="Add your first lead to start tracking potential clients and projects."
           action={
-            <Link href="/leads/new">
-              <Button size="lg">
-                <Plus className="w-4 h-4 mr-2" />
-                Add Your First Lead
-              </Button>
-            </Link>
+            canCreate ? (
+              <Link href="/leads/new">
+                <Button size="lg"><Plus className="w-4 h-4 mr-2" />Add Your First Lead</Button>
+              </Link>
+            ) : undefined
           }
         />
       ) : (

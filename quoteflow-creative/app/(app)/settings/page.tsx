@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { PageHeader } from "@/components/shared/PageHeader"
-import { Building2, Package, Settings as SettingsIcon, Sliders } from "lucide-react"
+import { Building2, Package, Settings as SettingsIcon, Sliders, CreditCard } from "lucide-react"
 
 export default function SettingsPage() {
   return (
@@ -52,6 +52,22 @@ export default function SettingsPage() {
               </div>
               <p className="text-sm text-gray-500 dark:text-slate-400">
                 Manage service packages and standard pricing for quick quotations
+              </p>
+            </CardContent>
+          </Card>
+        </Link>
+
+        <Link href="/settings/billing">
+          <Card className="hover:shadow-lg transition-shadow cursor-pointer dark:bg-slate-800 dark:border-slate-700">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-lg bg-green-100 dark:bg-green-900/40 flex items-center justify-center">
+                  <CreditCard className="w-5 h-5 text-green-600 dark:text-green-400" />
+                </div>
+                <h3 className="font-semibold text-gray-900 dark:text-slate-100">Billing</h3>
+              </div>
+              <p className="text-sm text-gray-500 dark:text-slate-400">
+                Subscription plan, billing status, and payment history
               </p>
             </CardContent>
           </Card>

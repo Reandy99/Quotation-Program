@@ -173,3 +173,111 @@ create policy "Users can update own logo"
 create policy "Public can view logos"
   on storage.objects for select
   using (bucket_id = 'company-logos');
+
+-- ============================================================
+-- BILLING: PLANS
+-- ============================================================
+create table if not exists public.plans (
+  id text primary key, -- 'free_trial', 'studio', 'pro'
+  name text not null,
+  price_idr numeric(15,2) not null default 0,
+  interval text not null default 'month' check (interval in ('month', 'year')),
+  features jsonb not null default '[]',
+  is_active boolean not null default true,
+  created_at timestamptz default now() not null
+);
+
+insert into public.plans (id, name, price_idr, interval, features) values
+  ('free_trial', 'Free Trial', 0, 'month', '["All features for 14 days", "Unlimited leads", "PDF export", "Follow-up tracker"]'),
+  ('studio', 'Studio', 99000, 'month', '["All core features", "Unlimited leads & quotations", "PDF export", "Follow-up tracker", "Priority support"]'),
+  ('pro', 'Pro', 199000, 'month', '["Everything in Studio", "Advanced reports", "Multiple workspaces", "API access", "Dedicated support"]')
+on conflict (id) do nothing;
+
+-- ============================================================
+-- BILLING: SUBSCRIPTIONS
+-- ============================================================
+create table if not exists public.subscriptions (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users(id) on delete cascade unique,
+  plan_id text not null references public.plans(id),
+  status text not null default 'trialing'
+    check (status in ('trialing', 'active', 'expired', 'cancelled', 'past_due')),
+  trial_end timestamptz,
+  current_period_start timestamptz,
+  current_period_end timestamptz,
+  cancelled_at timestamptz,
+  -- Payment gateway fields (for future Xendit/Midtrans integration)
+  gateway text, -- 'xendit', 'midtrans', 'manual'
+  gateway_subscription_id text,
+  gateway_customer_id text,
+  metadata jsonb default '{}',
+  created_at timestamptz default now() not null,
+  updated_at timestamptz default now() not null
+);
+
+alter table public.subscriptions enable row level security;
+
+create policy "Users can view own subscription"
+  on public.subscriptions for select using (auth.uid() = user_id);
+
+create policy "Service role can manage subscriptions"
+  on public.subscriptions for all using (auth.role() = 'service_role');
+
+create index subscriptions_user_id_idx on public.subscriptions(user_id);
+create index subscriptions_status_idx on public.subscriptions(status);
+
+-- ============================================================
+-- BILLING: PAYMENTS
+-- ============================================================
+create table if not exists public.billing_payments (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users(id) on delete cascade,
+  subscription_id uuid references public.subscriptions(id) on delete set null,
+  plan_id text not null references public.plans(id),
+  amount_idr numeric(15,2) not null,
+  status text not null default 'pending'
+    check (status in ('pending', 'paid', 'failed', 'refunded')),
+  paid_at timestamptz,
+  period_start timestamptz,
+  period_end timestamptz,
+  -- Payment gateway fields
+  gateway text,
+  gateway_payment_id text,
+  gateway_invoice_url text,
+  notes text,
+  metadata jsonb default '{}',
+  created_at timestamptz default now() not null
+);
+
+alter table public.billing_payments enable row level security;
+
+create policy "Users can view own payments"
+  on public.billing_payments for select using (auth.uid() = user_id);
+
+create policy "Service role can manage payments"
+  on public.billing_payments for all using (auth.role() = 'service_role');
+
+create index billing_payments_user_id_idx on public.billing_payments(user_id);
+create index billing_payments_subscription_id_idx on public.billing_payments(subscription_id);
+
+-- ============================================================
+-- AUTO-CREATE TRIAL SUBSCRIPTION ON SIGNUP
+-- ============================================================
+create or replace function public.handle_new_user_subscription()
+returns trigger language plpgsql security definer set search_path = public as $$
+begin
+  insert into public.subscriptions (user_id, plan_id, status, trial_end)
+  values (
+    new.id,
+    'free_trial',
+    'trialing',
+    now() + interval '14 days'
+  );
+  return new;
+end;
+$$;
+
+drop trigger if exists on_auth_user_created_subscription on auth.users;
+create trigger on_auth_user_created_subscription
+  after insert on auth.users
+  for each row execute procedure public.handle_new_user_subscription();

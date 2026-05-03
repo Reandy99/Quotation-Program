@@ -133,6 +133,55 @@ export interface Payment {
   created_at: string
 }
 
+export type SubscriptionStatus = "trialing" | "active" | "expired" | "cancelled" | "past_due"
+
+export interface Plan {
+  id: string
+  name: string
+  price_idr: number
+  interval: "month" | "year"
+  features: string[]
+  is_active: boolean
+  created_at: string
+}
+
+export interface Subscription {
+  id: string
+  user_id: string
+  plan_id: string
+  status: SubscriptionStatus
+  trial_end: string | null
+  current_period_start: string | null
+  current_period_end: string | null
+  cancelled_at: string | null
+  gateway: string | null
+  gateway_subscription_id: string | null
+  gateway_customer_id: string | null
+  metadata: Record<string, unknown>
+  created_at: string
+  updated_at: string
+  plan?: Plan
+}
+
+export interface BillingPayment {
+  id: string
+  user_id: string
+  subscription_id: string | null
+  plan_id: string
+  amount_idr: number
+  status: "pending" | "paid" | "failed" | "refunded"
+  paid_at: string | null
+  period_start: string | null
+  period_end: string | null
+  gateway: string | null
+  gateway_payment_id: string | null
+  gateway_invoice_url: string | null
+  notes: string | null
+  metadata: Record<string, unknown>
+  created_at: string
+  plan?: Plan
+}
+
 export interface FollowUp {
   id: string
   user_id: string

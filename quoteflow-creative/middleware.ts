@@ -40,7 +40,9 @@ export async function middleware(request: NextRequest) {
                     request.nextUrl.pathname.startsWith("/follow-ups") ||
                     request.nextUrl.pathname.startsWith("/settings") ||
                     request.nextUrl.pathname.startsWith("/calendar") ||
-                    request.nextUrl.pathname.startsWith("/reports")
+                    request.nextUrl.pathname.startsWith("/reports") ||
+                    request.nextUrl.pathname.startsWith("/pricing") ||
+                    request.nextUrl.pathname.startsWith("/admin")
 
   if (!user && isAppPage) {
     return NextResponse.redirect(new URL("/login", request.url))

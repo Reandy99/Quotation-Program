@@ -1,0 +1,60 @@
+"use server"
+
+import { createClient } from "@/lib/supabase/server"
+import { revalidatePath } from "next/cache"
+
+export async function getAdminSubscriptions(search?: string) {
+  const supabase = createClient()
+
+  let query = supabase
+    .from("subscriptions")
+    .select("*, plan:plans(*), profile:profiles(email, full_name)")
+    .order("created_at", { ascending: false })
+    .limit(50)
+
+  if (search) {
+    // Search by email via profiles join — filter client-side after fetch for simplicity
+  }
+
+  const { data, error } = await query
+  if (error) return []
+
+  if (search) {
+    const q = search.toLowerCase()
+    return (data ?? []).filter((s: any) =>
+      s.profile?.email?.toLowerCase().includes(q) ||
+      s.profile?.full_name?.toLowerCase().includes(q)
+    )
+  }
+
+  return data ?? []
+}
+
+export async function adminUpdateSubscription(
+  subscriptionId: string,
+  updates: {
+    status?: string
+    plan_id?: string
+    current_period_end?: string | null
+    cancelled_at?: string | null
+  }
+) {
+  const supabase = createClient()
+
+  // Verify caller is admin (check email domain or a flag — for MVP, check a hardcoded admin list via env)
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) throw new Error("Unauthorized")
+
+  const adminEmails = (process.env.ADMIN_EMAILS ?? "").split(",").map(e => e.trim()).filter(Boolean)
+  if (adminEmails.length > 0 && !adminEmails.includes(user.email ?? "")) {
+    throw new Error("Unauthorized")
+  }
+
+  const { error } = await supabase
+    .from("subscriptions")
+    .update({ ...updates, updated_at: new Date().toISOString() })
+    .eq("id", subscriptionId)
+
+  if (error) throw new Error(error.message)
+  revalidatePath("/admin/subscriptions")
+}
