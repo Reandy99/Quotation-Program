@@ -27,6 +27,18 @@ export function createClient() {
 
 export function createAdminClient() {
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
-  if (!serviceRoleKey) throw new Error("SUPABASE_SERVICE_ROLE_KEY not set")
-  return createSupabaseClient(env.NEXT_PUBLIC_SUPABASE_URL, serviceRoleKey)
+  if (!serviceRoleKey) {
+    console.error("[createAdminClient] SUPABASE_SERVICE_ROLE_KEY not set")
+    throw new Error("SUPABASE_SERVICE_ROLE_KEY not set")
+  }
+  
+  const url = env.NEXT_PUBLIC_SUPABASE_URL
+  console.log("[createAdminClient] Creating admin client with URL:", url)
+  
+  return createSupabaseClient(url, serviceRoleKey, {
+    auth: {
+      autoRefreshToken: false,
+      persistSession: false
+    }
+  })
 }

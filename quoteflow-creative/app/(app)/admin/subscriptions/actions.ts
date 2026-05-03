@@ -4,30 +4,38 @@ import { createClient, createAdminClient } from "@/lib/supabase/server"
 import { revalidatePath } from "next/cache"
 
 export async function getAdminSubscriptions(search?: string) {
-  const supabase = createAdminClient()
+  try {
+    const supabase = createAdminClient()
 
-  let query = supabase
-    .from("subscriptions")
-    .select("*, plan:plans(*), profile:profiles(email, full_name)")
-    .order("created_at", { ascending: false })
-    .limit(50)
+    let query = supabase
+      .from("subscriptions")
+      .select("*, plan:plans(*), profile:profiles(email, full_name)")
+      .order("created_at", { ascending: false })
+      .limit(50)
 
-  if (search) {
-    // Search by email via profiles join — filter client-side after fetch for simplicity
+    if (search) {
+      // Search by email via profiles join — filter client-side after fetch for simplicity
+    }
+
+    const { data, error } = await query
+    if (error) {
+      console.error("[getAdminSubscriptions] Query error:", error)
+      return []
+    }
+
+    if (search) {
+      const q = search.toLowerCase()
+      return (data ?? []).filter((s: any) =>
+        s.profile?.email?.toLowerCase().includes(q) ||
+        s.profile?.full_name?.toLowerCase().includes(q)
+      )
+    }
+
+    return data ?? []
+  } catch (err) {
+    console.error("[getAdminSubscriptions] Exception:", err)
+    return []
   }
-
-  const { data, error } = await query
-  if (error) return []
-
-  if (search) {
-    const q = search.toLowerCase()
-    return (data ?? []).filter((s: any) =>
-      s.profile?.email?.toLowerCase().includes(q) ||
-      s.profile?.full_name?.toLowerCase().includes(q)
-    )
-  }
-
-  return data ?? []
 }
 
 export async function adminUpdateSubscription(
