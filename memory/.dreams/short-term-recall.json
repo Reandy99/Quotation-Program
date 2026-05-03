@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-02T10:46:35.218Z",
+  "updatedAt": "2026-05-02T19:00:44.883Z",
   "entries": {
     "memory:memory/2026-04-09.md:1:13": {
       "key": "memory:memory/2026-04-09.md:1:13",
@@ -208124,12 +208124,12 @@
       "source": "memory",
       "snippet": "Memory — 2026-04-26: Reandy minta judul/copy form Tally untuk kebutuhan >14 hari (form `J9VJbY`) diganti dari “WhitePaper Photography — Plan Ahead” menjadi **“WhitePaper Photography — Photography Project Brief”** (judul saja).; Setelah Tally/copy dianggap oke, Reandy bilang: **“O",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:01.704Z",
-      "lastRecalledAt": "2026-05-01T19:00:01.469Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
@@ -208139,7 +208139,8 @@
         "2026-04-30",
         "2026-04-29",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "judul/copy",
@@ -225559,12 +225560,12 @@
       "source": "memory",
       "snippet": "Session Context: Reandy / Whitepaper Production — May 2026 social media schedule overhaul (IG/Threads/LinkedIn, 85 posts)",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:01.184Z",
-      "lastRecalledAt": "2026-05-01T19:00:01.469Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -225572,7 +225573,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "ig/threads/linkedin",
@@ -225593,12 +225595,12 @@
       "source": "memory",
       "snippet": "Copywriting Rules (Owner-Approved): **Softselling style** — bukan hard sell, storytelling yang natural; **No em dash (—)** — jangan pernah pakai di copy manapun; **CTA = \"whitepaper.site\"** — langsung aja, tanpa \"DM/Reply/Comment BRIEF\"; **Bahasa Indonesia** untuk IG/Threads, **E",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:01.184Z",
-      "lastRecalledAt": "2026-05-01T19:00:01.469Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -225606,7 +225608,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "owner-approved",
@@ -225627,12 +225630,12 @@
       "source": "memory",
       "snippet": "Copywriting Rules (Owner-Approved): **Sharp storytelling** — tajam, to the point, bukan kaku",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:01.184Z",
-      "lastRecalledAt": "2026-05-01T19:00:01.469Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -225640,7 +225643,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "owner-approved",
@@ -225661,12 +225665,12 @@
       "source": "memory",
       "snippet": "Photo-First Approach (Critical Learning): **Selalu lihat foto dulu, pahami isinya, baru tulis copy**; Nggak boleh assign foto berdasarkan kategori lalu tulis copy generik; Copy harus spesifik dari isi foto — \"orange liquid mengisi concrete basin\" bukan \"foto industri itu beda\"; S",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:01.184Z",
-      "lastRecalledAt": "2026-05-01T19:00:01.469Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -225674,7 +225678,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "photo-first",
@@ -225695,12 +225700,12 @@
       "source": "memory",
       "snippet": "Copywriting Research Insights: **Show, don't tell** — jangan bilang \"kami foto industri\", tunjukin detailnya; **Specific > generic** — nama mesin, warna, posisi, material lebih kuat dari deskripsi umum; **B2B buyer butuh evidence** — detail spesifik = credibility; **LinkedIn 2026",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:01.184Z",
-      "lastRecalledAt": "2026-05-01T19:00:01.469Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -225708,7 +225713,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "copywriting",
@@ -225729,12 +225735,12 @@
       "source": "memory",
       "snippet": "Copywriting Research Insights: **Threads 2026**: engagement 73.6% higher than X, casual conversational wins",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:01.184Z",
-      "lastRecalledAt": "2026-05-01T19:00:01.469Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -225742,7 +225748,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "73.6",
@@ -225763,12 +225770,12 @@
       "source": "memory",
       "snippet": "Technical Notes: Repliz API: no edit endpoint, must use create new + delete old; Repliz auth: Basic with FULL secret key from credentials file (not truncated env var); Image model: xiaomi/mimo-v2-omni supports vision (xiaomi/mimo-v2.5 does not); Portfolio file missing: `whitepape",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:01.184Z",
-      "lastRecalledAt": "2026-05-01T19:00:01.469Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -225776,7 +225783,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "xiaomi/mimo-v2-omni",
@@ -225797,12 +225805,12 @@
       "source": "memory",
       "snippet": "Pending: Owner wants all 85 May posts rewritten with show-don't-tell approach; Example approved, awaiting go-ahead for full rewrite",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:01.184Z",
-      "lastRecalledAt": "2026-05-01T19:00:01.469Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -225810,7 +225818,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "show-don",
@@ -225831,12 +225840,12 @@
       "source": "memory",
       "snippet": "Copywriting Playbook Integration (22:09 WIB): PDF playbook read and internalized; Rules saved to: MEMORY.md (permanent section), AGENTS.md (reference), WHITEPAPER_COPY_GUIDE.md (full guide), WHITEPAPER_COPY_EXAMPLES.md (approved examples); Flow: PDF → read → summarize → save to M",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:01.184Z",
-      "lastRecalledAt": "2026-05-01T19:00:01.469Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -225844,7 +225853,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "memory.md",
@@ -225865,12 +225875,12 @@
       "source": "memory",
       "snippet": "Copywriting Playbook Integration (22:09 WIB): 85 May 2026 schedules updated with playbook-compliant copy",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:01.184Z",
-      "lastRecalledAt": "2026-05-01T19:00:01.469Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -225878,7 +225888,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "playbook-compliant",
@@ -229564,7 +229575,7 @@
       "startLine": 1,
       "endLine": 10,
       "source": "memory",
-      "snippet": "# Durable Notes — 2026-05-01 - [2026-05-01 03:28 UTC] QuoteFlow Creative (repo: `quoteflow-creative`) — Kiro-cli Phase 1 “Deployable MVP” hardening completed/monitored. - Build status: `npm run build` compiles; expected fail-fast only when Supabase env vars are missing (via env validation), indicating code is deploy-ready once env is set. - Removed demo-only behavior: eliminated remaining `lib/demo/data.ts` dependencies across app routes; replaced `alert()` demo actions with real Supabase DB server actions + toast feedback. - Added DB support for follow-ups: migration `supabase/migrations/003_follow_ups.sql` + server actions. - Repo hygiene: added `.gitignore`; removed placeholder `",
+      "snippet": "# Durable Notes — 2026-05-01 - [2026-05-01 03:28 UTC] QuoteFlow Creative (repo: `quoteflow-creative`) — Kiro-cli Phase 1 “Deployable MVP” hardening completed/monitored. - Build status: `npm run build` compiles; expected fail-fast only when Supabase env vars are missing (via env validation), indicating code is deploy-ready once env is set. - Removed demo-only behavior: eliminated remaining `lib/demo/data.ts` dependencies across app routes; replaced `alert()` demo actions with real Supabase DB server actions + toast feedback. - Added DB support for follow-ups: migration `supabase/migrations/003_follow_ups.sql` + server actions. - Repo hygiene: added `.gitignore`; removed placeholder `.env.local`. - Docs/ops outputs referenced: `DEPLOYMENT_GUIDE.md` (run `supabase/schema.sql` + migrations incl. `001_audit_logs.sql`, `002_clients_invoices.sql`), `PHASE1_COMPLETE.md`. - Key working patterns: Supabase via `@supabase/ssr` with existing `lib/supabase/server.ts` + `lib/supabase/client.ts`; prefer protected `/(app)` routes with middleware session refresh/redirect; use toast components at `/ui/toast.tsx` and `/components/ui/toast`. - Owner preference: “Kamu hanya monitor dari hasil kerjaan Kiro-cli saja” for this workstream.",
       "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
@@ -229592,7 +229603,8 @@
         "demo-only",
         "lib/demo/data.ts",
         "follow-ups"
-      ]
+      ],
+      "promotedAt": "2026-05-02T19:00:44.883Z"
     },
     "memory:memory/2026-05-01.md:9:12": {
       "key": "memory:memory/2026-05-01.md:9:12",
@@ -229612,7 +229624,8 @@
         "014f4f0a27e6"
       ],
       "recallDays": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-01"
       ],
       "conceptTags": [
         "supabase/ssr",
@@ -229815,6 +229828,2118 @@
         "user-id",
         "updated-at",
         "quoteflow-creative/app"
+      ]
+    },
+    "memory:memory/2026-05-02.md:1:1": {
+      "key": "memory:memory/2026-05-02.md:1:1",
+      "path": "memory/2026-05-02.md",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "[2026-05-02 01:06 UTC] QuoteFlow/RND deployment + Kiro workflow notes:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "quoteflow/rnd",
+        "utc",
+        "quoteflow",
+        "rnd",
+        "deployment",
+        "kiro",
+        "workflow"
+      ]
+    },
+    "memory:memory/2026-05-02.md:2:5": {
+      "key": "memory:memory/2026-05-02.md:2:5",
+      "path": "memory/2026-05-02.md",
+      "startLine": 2,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Owner preference reaffirmed: use kiro-cli for code fixes; Exel should monitor, summarize, and commit/push only after confirmation unless owner says push directly.; Kiro CLI login available as Builder ID whitepaperprod@gmail.com; preferred model set/used via `kiro-cli chat --model",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "kiro-cli",
+        "commit/push",
+        "gmail.com",
+        "set/used",
+        "owner",
+        "preference",
+        "reaffirmed",
+        "use"
+      ]
+    },
+    "memory:memory/2026-05-02.md:6:9": {
+      "key": "memory:memory/2026-05-02.md:6:9",
+      "path": "memory/2026-05-02.md",
+      "startLine": 6,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Netlify site: https://rndpro.netlify.app. Production branch changed from `main` to `master`.; Root `netlify.toml` is the intended deployment config with `base = \"quoteflow-creative\"`; `quoteflow-creative/netlify.toml` is an old untracked file and should not be committed unless in",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "rndpro.netlify.app",
+        "netlify.toml",
+        "quoteflow-creative",
+        "quoteflow-creative/netlify.toml",
+        "netlify",
+        "site",
+        "https",
+        "production"
+      ]
+    },
+    "memory:memory/2026-05-02.md:10:12": {
+      "key": "memory:memory/2026-05-02.md:10:12",
+      "path": "memory/2026-05-02.md",
+      "startLine": 10,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Broken gitlinks/submodules `.shared-memory-sync-repo` and `Openclaw-whitepaper` were removed from tracking earlier to unblock Netlify checkout.; Pending local Kiro changes before later push: company logo and signature image changed from URL input to file upload in settings; uploa",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "gitlinks/submodules",
+        "shared-memory-sync-repo",
+        "openclaw-whitepaper",
+        "broken",
+        "gitlinks",
+        "submodules",
+        "shared",
+        "sync"
+      ]
+    },
+    "memory:memory/2026-05-02.md:14:14": {
+      "key": "memory:memory/2026-05-02.md:14:14",
+      "path": "memory/2026-05-02.md",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "[2026-05-02 02:57 UTC] QuoteFlow live audit notes:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "utc",
+        "quoteflow",
+        "live",
+        "audit"
+      ]
+    },
+    "memory:memory/2026-05-02.md:15:18": {
+      "key": "memory:memory/2026-05-02.md:15:18",
+      "path": "memory/2026-05-02.md",
+      "startLine": 15,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Owner provided a temporary test account for live audit of https://rndpro.netlify.app. Treat it as sensitive and do not repeat the password in normal responses or logs.; Kiro CLI successfully logged into the live site using the test account and audited dashboard/functions.; Live s",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "rndpro.netlify.app",
+        "dashboard/functions",
+        "owner",
+        "provided",
+        "temporary",
+        "test",
+        "account",
+        "live"
+      ]
+    },
+    "memory:memory/2026-05-02.md:19:22": {
+      "key": "memory:memory/2026-05-02.md:19:22",
+      "path": "memory/2026-05-02.md",
+      "startLine": 19,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Main live audit issues: lead creation submit fails/does not save, quotation creation submit fails/does not save, invoices New button does not navigate correctly to form, notifications API fails with `Failed to load notifications: TypeError: Failed to fetch`, backend shows indicat",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "fails/does",
+        "live",
+        "audit",
+        "issues",
+        "lead",
+        "creation",
+        "submit",
+        "fails"
+      ]
+    },
+    "memory:memory/2026-05-02.md:24:24": {
+      "key": "memory:memory/2026-05-02.md:24:24",
+      "path": "memory/2026-05-02.md",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "[2026-05-02 02:57 UTC] QuoteFlow live audit fix completed:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "utc",
+        "quoteflow",
+        "live",
+        "audit",
+        "fix",
+        "completed"
+      ]
+    },
+    "memory:memory/2026-05-02.md:25:28": {
+      "key": "memory:memory/2026-05-02.md:25:28",
+      "path": "memory/2026-05-02.md",
+      "startLine": 25,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Owner requested Kiro fix all authenticated live audit issues and push to GitHub.; Kiro CLI fixed lead creation validation/payload cleanup, quotation creation empty lead_id + line item total_price handling, invoice New button links, company logo/signature upload preservation, and",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "validation/payload",
+        "lead-id",
+        "total-price",
+        "logo/signature",
+        "owner",
+        "requested",
+        "kiro",
+        "fix"
+      ]
+    },
+    "memory:memory/2026-05-02.md:29:30": {
+      "key": "memory:memory/2026-05-02.md:29:30",
+      "path": "memory/2026-05-02.md",
+      "startLine": 29,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Commit pushed: `1f05296` (`fix: repair QuoteFlow live dashboard flows`).; Runtime/cache/dream files and unrelated workspace files were not committed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "runtime/cache/dream",
+        "commit",
+        "pushed",
+        "1f05296",
+        "fix",
+        "repair",
+        "quoteflow",
+        "live"
+      ]
+    },
+    "memory:memory/2026-05-02.md:32:32": {
+      "key": "memory:memory/2026-05-02.md:32:32",
+      "path": "memory/2026-05-02.md",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "[2026-05-02 03:16 UTC] QuoteFlow company settings save fix:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "utc",
+        "quoteflow",
+        "company",
+        "settings",
+        "save",
+        "fix"
+      ]
+    },
+    "memory:memory/2026-05-02.md:33:36": {
+      "key": "memory:memory/2026-05-02.md:33:36",
+      "path": "memory/2026-05-02.md",
+      "startLine": 33,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Owner reported production Company Settings save failed with generic Server Components render error digest.; Kiro CLI identified root cause: `updateCompanySettings` server action threw errors directly and did not serialize them cleanly for client handling; optional empty strings a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "owner",
+        "reported",
+        "production",
+        "company",
+        "settings",
+        "save",
+        "failed",
+        "generic"
+      ]
+    },
+    "memory:memory/2026-05-02.md:37:39": {
+      "key": "memory:memory/2026-05-02.md:37:39",
+      "path": "memory/2026-05-02.md",
+      "startLine": 37,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Logo/signature upload behavior preserved.; Build verification passed with `rm -rf .next && npm run build`.; Exel committed and pushed to https://github.com/Reandy99/RND.git master: `94171b9` (`fix: stabilize company settings save`).",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "logo/signature",
+        "github.com/reandy99/rnd.git",
+        "logo",
+        "signature",
+        "upload",
+        "behavior",
+        "preserved",
+        "verification"
+      ]
+    },
+    "memory:memory/2026-05-02.md:41:41": {
+      "key": "memory:memory/2026-05-02.md:41:41",
+      "path": "memory/2026-05-02.md",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "[2026-05-02 03:23 UTC] QuoteFlow company settings schema-cache fix prepared but not pushed:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "schema-cache",
+        "utc",
+        "quoteflow",
+        "company",
+        "settings",
+        "schema",
+        "cache",
+        "fix"
+      ]
+    },
+    "memory:memory/2026-05-02.md:42:45": {
+      "key": "memory:memory/2026-05-02.md:42:45",
+      "path": "memory/2026-05-02.md",
+      "startLine": 42,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Owner reported Company Settings save now errors: `Could not find the 'google_review_url' column of 'company_settings' in the schema cache`.; Owner explicitly requested: fix with Kiro but do not push to GitHub, only inform owner.; Kiro added fallback in `updateCompanySettings`: tr",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "google-review-url",
+        "company-settings",
+        "owner",
+        "reported",
+        "company",
+        "settings",
+        "save",
+        "now"
+      ]
+    },
+    "memory:memory/2026-05-02.md:46:48": {
+      "key": "memory:memory/2026-05-02.md:46:48",
+      "path": "memory/2026-05-02.md",
+      "startLine": 46,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Build verification passed with `rm -rf .next && npm run build`.; Local uncommitted files: `quoteflow-creative/app/(app)/settings/actions.ts`, `quoteflow-creative/app/(app)/settings/company/CompanySettingsClient.tsx`. Do not push until owner approves.; Production Supabase still ne",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "quoteflow-creative/app",
+        "settings/actions.ts",
+        "verification",
+        "passed",
+        "npm",
+        "run",
+        "local",
+        "uncommitted"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: halo [Bootstrap truncation warning] Some workspace bootstrap files were truncated before injection. Treat Project Context as partial and read the relevant files directly if details seem missing. - MEMORY.md: 18948 raw -> 11999 injected (~37% removed; max/file). - If uninten",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "max/file",
+        "halo",
+        "bootstrap",
+        "truncation",
+        "warning",
+        "truncated",
+        "injection"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: [Retry after the previous model attempt failed or timed out] [Sat 2026-05-02 10:13 UTC] halo [Bootstrap truncation warning] Some workspace bootstrap files were truncated before injection. Treat Project Context as partial and read the relevant files directly if details seem",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "retry",
+        "previous",
+        "model",
+        "attempt",
+        "failed",
+        "timed",
+        "out",
+        "sat"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "User: [Retry after the previous model attempt failed or timed out] [Sat 2026-05-02 10:13 UTC] halo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "retry",
+        "previous",
+        "model",
+        "attempt",
+        "failed",
+        "timed",
+        "out",
+        "sat"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: Here's the full audit of all upcoming Whitepaper content in Repliz: --- ## 📊 Whitepaper Upcoming Content Audit **Period:** May 3–31, 2026 | **Total Posts:** 79 ### Platform Breakdown - **Instagram:** 26 posts - **Threads:** 29 posts - **LinkedIn:** 24 posts --- ### ✅",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "here's",
+        "full",
+        "audit",
+        "all",
+        "upcoming",
+        "whitepaper",
+        "content",
+        "repliz"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: berkesan bukan di panggungnya...\" | **11x** | Same hook on TH posts | | \"detail yang nggak semua orang perhatikan...\" (strawberry/glaze) | **7x** | Culinary copy recycled on non-culinary photos | | \"Industrial work has a dignity...\" | **4x** | Same LI caption | | \"Culi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "strawberry/glaze",
+        "non-culinary",
+        "berkesan",
+        "bukan",
+        "panggungnya",
+        "11x",
+        "hook",
+        "posts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: photos 2. **LinkedIn has only ~8 unique captions** for 24 posts — very repetitive for a professional platform 3. **IG \"setiap event\" template** is used 12 times with different photos — followers will notice 4. **Caption-photo mismatch risk** — The \"strawberry\" caption",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "caption-photo",
+        "photos",
+        "linkedin",
+        "has",
+        "only",
+        "unique",
+        "captions",
+        "posts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "User: kamu masih terhubung ke kiro-cli ?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "kiro-cli",
+        "kamu",
+        "masih",
+        "terhubung",
+        "kiro",
+        "cli"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: iya, masih terhubung. Kiro CLI v2.2.0, login via Builder ID (whitepaperprod@gmail.com). Mau pake Kiro buat apa? Rewrite caption Whitepaper?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "v2.2.0",
+        "gmail.com",
+        "iya",
+        "masih",
+        "terhubung",
+        "kiro",
+        "cli",
+        "login"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: cek masih bisa terhubung dengan kiro-cli ?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "kiro-cli",
+        "cek",
+        "masih",
+        "bisa",
+        "terhubung",
+        "dengan",
+        "kiro",
+        "cli"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: ✅ Masih jalan normal: - **Login:** Builder ID (whitepaperprod@gmail.com) - **Session terakhir:** 1 hari yang lalu — Publish quoteflow-creative ke GitHub Koneksi stable. Mau lanjut apa?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "gmail.com",
+        "quoteflow-creative",
+        "masih",
+        "jalan",
+        "normal",
+        "login",
+        "builder",
+        "whitepaperprod"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "User: cek percakapan kiro-cli udah sampe mana ??",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "kiro-cli",
+        "cek",
+        "percakapan",
+        "kiro",
+        "cli",
+        "udah",
+        "sampe",
+        "mana"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: Ini percakapan terakhir Kiro CLI: **Session: Publish QuoteFlow Creative ke GitHub** (aa19b452) 1. **User:** Publish local project quoteflow-creative/ ke GitHub repo https://github.com/Reandy99/RND.git 2. **Assistant:** Eksekusi lengkap — push successful, commit `7ff515",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "quoteflow-creative",
+        "github.com/reandy99/rnd.git",
+        "ini",
+        "percakapan",
+        "terakhir",
+        "kiro",
+        "cli",
+        "publish"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "User: [media attached: /root/.openclaw/media/inbound/file_225---c3031516-1cc0-4ce3-9d1a-c864d5aa3d7e.jpg (image/jpeg) | /root/.openclaw/media/inbound/file_225---c3031516-1cc0-4ce3-9d1a-c864d5aa3d7e.jpg] [Image] User text: [Telegram Reandy (@Reandys) id:514720705 +28s Sat 2026-05-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "openclaw/media/inbound/file-225",
+        "image/jpeg",
+        "2026-05",
+        "media",
+        "attached",
+        "root",
+        "openclaw",
+        "inbound"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: Status saat ini: | Fitur | Detail Page | List View Edit Menu | |-------|-------------|---------------------| | **Leads** | ✅ Ada (Pencil icon, updateLead action) | ❌ Belum ada | | **Quotations** | ✅ Ada (`/quotations/[id]/edit/`) | ❌ Belum ada | | **Invoices** | ❌ **Ti",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "status",
+        "saat",
+        "ini",
+        "fitur",
+        "detail",
+        "page",
+        "list",
+        "view"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "User: ya minta kiro-cli beresin ya",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "kiro-cli",
+        "minta",
+        "kiro",
+        "cli",
+        "beresin"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: Backup mingguan selesai. Semua 5 file (openclaw.json, AGENTS.md, SOUL.md, USER.md, MEMORY.md) berhasil diarsip ke `/root/.openclaw/workspace/backup-config/config-backup-2026-05-02.tar.gz` (15KB). Symlink sudah di-follow jadi konten asli tersimpan. NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "backup",
+        "openclaw.json",
+        "agents.md",
+        "soul.md",
+        "user.md",
+        "memory.md",
+        "di-follow",
+        "no-reply"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: Kiro CLI sudah mulai kerja. Saya monitor hasilnya.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "kiro",
+        "cli",
+        "sudah",
+        "mulai",
+        "kerja",
+        "saya",
+        "monitor",
+        "hasilnya"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: ✅ **Selesai!** Kiro CLI sudah beresin semua. Build clean, 0 errors. **Yang dikerjakan:** 1. **Invoice edit page** — `/invoices/[id]/edit/` dengan form (client name, project title, dates, discount, tax, status) 2. **Invoice edit action** — `updateInvoice()` server actio",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "selesai",
+        "kiro",
+        "cli",
+        "sudah",
+        "beresin",
+        "semua",
+        "clean",
+        "errors"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "User: cek dong, kalo kiro-cli jalanin tasknya auto atau lo harus accept dulu setiap dia jalanin perintahnya",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "kiro-cli",
+        "cek",
+        "dong",
+        "kalo",
+        "kiro",
+        "cli",
+        "jalanin",
+        "tasknya"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: Pakai flag `--no-interactive --trust-all-tools`, jadi **fully auto** — Kiro langsung jalanin semua perintah tanpa minta accept dulu. Kalau mau ada approval step, bisa pakai: - `--trust-tools=fs_read,fs_write` — hanya trust file operations, sisanya minta izin - Tanpa `-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "no-interactive",
+        "trust-all-tools",
+        "trust-tools",
+        "fs-read",
+        "fs-write",
+        "pakai",
+        "flag",
+        "interactive"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "User: Tetap auto saja",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "tetap",
+        "auto",
+        "saja"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: Oke, tetap auto. Saya catat preferensi ini untuk task Kiro CLI selanjutnya. Mau lanjut apa?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "oke",
+        "tetap",
+        "auto",
+        "saya",
+        "catat",
+        "preferensi",
+        "ini",
+        "untuk"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "User: Kalau modelnya menggunakan apa ?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "kalau",
+        "modelnya",
+        "menggunakan",
+        "apa"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: Sekarang pakai **auto** (default) — Kiro yang pilih model sesuai task. Tersedia: - **auto** — model dipilih otomatis (default) - **claude-sonnet-4.5** — 1.30x credits - **claude-sonnet-4** — 1.30x credits - **claude-haiku-4.5** — 0.40x credits - **deepseek-3.2** — 0.25",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "claude-sonnet-4.5",
+        "1.30x",
+        "claude-sonnet-4",
+        "claude-haiku-4.5",
+        "0.40x",
+        "deepseek-3.2",
+        "0.25",
+        "sekarang"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "User: Selalu gunakan model claude-sonnet-4.5 ya",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "claude-sonnet-4.5",
+        "selalu",
+        "gunakan",
+        "model",
+        "claude",
+        "sonnet",
+        "4.5"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: Oke, dicatat. Untuk semua task Kiro CLI selanjutnya, saya pakai `--model claude-sonnet-4.5`. Ringkasan preferensi Kiro CLI: - **Model:** claude-sonnet-4.5 - **Mode:** auto (--no-interactive --trust-all-tools)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "claude-sonnet-4.5",
+        "no-interactive",
+        "trust-all-tools",
+        "oke",
+        "dicatat",
+        "untuk",
+        "semua",
+        "task"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "User: [media attached: /root/.openclaw/media/inbound/file_225---56d842ec-4d6b-4b9a-bfe0-bc65d332a4d4.jpg (image/jpeg) | /root/.openclaw/media/inbound/file_225---56d842ec-4d6b-4b9a-bfe0-bc65d332a4d4.jpg] [Image] User text: [Telegram Reandy (@Reandys) id:514720705 +27s Sat 2026-05-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "openclaw/media/inbound/file-225",
+        "image/jpeg",
+        "2026-05",
+        "media",
+        "attached",
+        "root",
+        "openclaw",
+        "inbound"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "Assistant: Yang ditambahkan Kiro: - **Edit dropdown (⋯)** di **list view** (tabel invoice/quotation/lead) - **Edit page** `/invoices/[id]/edit/` Screenshot yang kamu kirim itu **detail page** — memang tidak ada dropdown edit di sana. Coba cek di **list view** (tabel daftar invoic",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "invoice/quotation/lead",
+        "yang",
+        "ditambahkan",
+        "kiro",
+        "edit",
+        "dropdown",
+        "list",
+        "view"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:44.883Z",
+      "lastRecalledAt": "2026-05-02T19:00:44.883Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
       ]
     }
   }
