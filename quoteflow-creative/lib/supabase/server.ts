@@ -1,6 +1,7 @@
 import { createServerClient } from "@supabase/ssr"
 import { cookies } from "next/headers"
 import { env } from "@/lib/env"
+import { createClient as createSupabaseClient } from "@supabase/supabase-js"
 
 export function createClient() {
   const cookieStore = cookies()
@@ -22,4 +23,10 @@ export function createClient() {
       },
     }
   )
+}
+
+export function createAdminClient() {
+  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+  if (!serviceRoleKey) throw new Error("SUPABASE_SERVICE_ROLE_KEY not set")
+  return createSupabaseClient(env.NEXT_PUBLIC_SUPABASE_URL, serviceRoleKey)
 }

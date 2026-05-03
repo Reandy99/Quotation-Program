@@ -3,7 +3,7 @@
 import { createClient } from "@/lib/supabase/server"
 import { logAudit } from "@/lib/utils/audit"
 import { revalidatePath } from "next/cache"
-import type { Invoice, InvoiceStatus } from "@/types"
+import type { Invoice, InvoiceStatus, Payment, PaymentMethod } from "@/types"
 
 export async function getInvoices(): Promise<Invoice[]> {
   try {
@@ -174,4 +174,52 @@ export async function deleteInvoices(ids: string[]) {
     console.error("Error deleting invoices:", error)
     throw new Error(error.message || "Failed to delete invoices")
   }
+}
+
+export async function createPayment(
+  invoiceId: string,
+  payment: { amount: number; method: PaymentMethod; date: string; notes?: string | null }
+): Promise<Payment> {
+  const supabase = createClient()
+  const { data: { user }, error: authError } = await supabase.auth.getUser()
+  if (authError || !user) throw new Error("Authentication required.")
+
+  const { data, error } = await supabase
+    .from("payments")
+    .insert({ ...payment, invoice_id: invoiceId, user_id: user.id, notes: payment.notes || null })
+    .select()
+    .single()
+
+  if (error) throw new Error(error.message)
+
+  revalidatePath(`/invoices/${invoiceId}`)
+  return data
+}
+
+export async function getPayments(invoiceId: string): Promise<Payment[]> {
+  const supabase = createClient()
+  const { data, error } = await supabase
+    .from("payments")
+    .select("*")
+    .eq("invoice_id", invoiceId)
+    .order("date", { ascending: false })
+
+  if (error) return []
+  return data || []
+}
+
+export async function deletePayment(id: string): Promise<void> {
+  const supabase = createClient()
+  const { data: { user }, error: authError } = await supabase.auth.getUser()
+  if (authError || !user) throw new Error("Authentication required.")
+
+  const { error } = await supabase
+    .from("payments")
+    .delete()
+    .eq("id", id)
+    .eq("user_id", user.id)
+
+  if (error) throw new Error(error.message)
+
+  revalidatePath("/invoices")
 }

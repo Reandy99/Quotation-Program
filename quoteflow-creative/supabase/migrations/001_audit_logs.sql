@@ -16,6 +16,9 @@ alter table public.audit_logs enable row level security;
 create policy "Users can view own audit logs"
   on public.audit_logs for select using (auth.uid() = user_id);
 
+create policy "Users can insert own audit logs"
+  on public.audit_logs for insert with check (auth.uid() = user_id);
+
 create index audit_logs_user_id_idx on public.audit_logs(user_id);
 create index audit_logs_created_at_idx on public.audit_logs(created_at desc);
 create index audit_logs_entity_idx on public.audit_logs(entity_type, entity_id);

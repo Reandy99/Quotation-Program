@@ -125,6 +125,7 @@ export interface Invoice {
 
 export interface Payment {
   id: string
+  user_id?: string
   invoice_id: string
   amount: number
   method: PaymentMethod

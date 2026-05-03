@@ -1,10 +1,10 @@
 "use server"
 
-import { createClient } from "@/lib/supabase/server"
+import { createClient, createAdminClient } from "@/lib/supabase/server"
 import { revalidatePath } from "next/cache"
 
 export async function getAdminSubscriptions(search?: string) {
-  const supabase = createClient()
+  const supabase = createAdminClient()
 
   let query = supabase
     .from("subscriptions")
@@ -50,7 +50,8 @@ export async function adminUpdateSubscription(
     throw new Error("Unauthorized")
   }
 
-  const { error } = await supabase
+  const adminSupabase = createAdminClient()
+  const { error } = await adminSupabase
     .from("subscriptions")
     .update({ ...updates, updated_at: new Date().toISOString() })
     .eq("id", subscriptionId)
