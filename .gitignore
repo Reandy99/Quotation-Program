@@ -14,3 +14,5 @@ tmp_*.jpeg
 tmp_*.webp
 .shared-memory-sync-repo
 .gitmodules
+Openclaw-whitepaper/
+RND/
