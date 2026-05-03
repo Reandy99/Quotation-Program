@@ -19,27 +19,35 @@ export async function GET() {
 
     const supabase = createAdminClient()
 
-    const { data, error } = await supabase
+    // Get subscriptions
+    const { data: subs, error: subError } = await supabase
       .from("subscriptions")
-      .select("*, plan:plans(*), profile:profiles(email, full_name)")
+      .select("*, plan:plans(*)")
       .order("created_at", { ascending: false })
       .limit(50)
 
-    if (error) {
+    if (subError) {
       return NextResponse.json({
-        error: error.message,
-        details: error,
-        env_check: {
-          has_service_role_key: true,
-          admin_emails: process.env.ADMIN_EMAILS || "not set",
-        }
+        error: subError.message,
+        details: subError,
       }, { status: 500 })
     }
 
+    // Get all profiles
+    const { data: profiles } = await supabase
+      .from("profiles")
+      .select("id, email, full_name")
+
+    const profileMap = new Map(profiles?.map((p: any) => [p.id, p]) ?? [])
+    const merged = (subs ?? []).map((sub: any) => ({
+      ...sub,
+      profile: profileMap.get(sub.user_id) ?? null
+    }))
+
     return NextResponse.json({
       success: true,
-      count: data?.length ?? 0,
-      data: data ?? [],
+      count: merged.length,
+      data: merged,
       env_check: {
         has_service_role_key: true,
         admin_emails: process.env.ADMIN_EMAILS || "not set",

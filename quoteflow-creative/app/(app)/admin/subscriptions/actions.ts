@@ -7,15 +7,12 @@ export async function getAdminSubscriptions(search?: string) {
   try {
     const supabase = createAdminClient()
 
+    // Get subscriptions with plan data
     let query = supabase
       .from("subscriptions")
-      .select("*, plan:plans(*), profile:profiles(email, full_name)")
+      .select("*, plan:plans(*)")
       .order("created_at", { ascending: false })
       .limit(50)
-
-    if (search) {
-      // Search by email via profiles join — filter client-side after fetch for simplicity
-    }
 
     const { data, error } = await query
     if (error) {
@@ -23,15 +20,28 @@ export async function getAdminSubscriptions(search?: string) {
       return []
     }
 
+    // Get all profiles to add user info
+    const { data: profiles } = await supabase
+      .from("profiles")
+      .select("id, email, full_name")
+
+    const profileMap = new Map(profiles?.map(p => [p.id, p]) ?? [])
+
+    // Merge profiles into subscription data
+    const merged = (data ?? []).map((sub: any) => ({
+      ...sub,
+      profile: profileMap.get(sub.user_id) ?? null
+    }))
+
     if (search) {
       const q = search.toLowerCase()
-      return (data ?? []).filter((s: any) =>
+      return merged.filter((s: any) =>
         s.profile?.email?.toLowerCase().includes(q) ||
         s.profile?.full_name?.toLowerCase().includes(q)
       )
     }
 
-    return data ?? []
+    return merged
   } catch (err) {
     console.error("[getAdminSubscriptions] Exception:", err)
     return []
