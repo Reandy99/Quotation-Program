@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* App palette – light (warm pastel) */
+    --app-bg: #FAF6EE;
+    --card-bg: #FFFFFF;
+    --pastel-blue: #EDD5F5;
+    --pastel-green: #DEF0A0;
+    --soft-yellow: #FDE98A;
+    --text-primary: #1C1714;
+    --text-secondary: #78736C;
+    --border-color: #EDE8DF;
+    --btn-dark: #1C1714;
+
+    --badge-lavender-bg: #EDD5F5;
+    --badge-lavender-icon: #6B2F8A;
+    --badge-lime-bg: #DEF0A0;
+    --badge-lime-icon: #3A5C10;
+    --badge-amber-bg: #FDE98A;
+    --badge-amber-icon: #7A4D00;
+    --badge-rose-bg: #FCCDD5;
+    --badge-rose-icon: #8A2040;
+
+    --background: 40 60% 97%;
+    --foreground: 20 15% 10%;
+    --primary: 35 95% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 38 30% 94%;
+    --secondary-foreground: 20 15% 10%;
+    --muted: 38 30% 94%;
+    --muted-foreground: 25 12% 45%;
+    --accent: 38 30% 94%;
+    --accent-foreground: 20 15% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 35 95% 55%;
+    --radius: 0.5rem;
+    --card: 0 0% 100%;
+    --card-foreground: 20 15% 10%;
+  }
+
+  .dark {
+    /* App palette – dark (warm) */
+    --app-bg: #120F0C;
+    --card-bg: #1E1916;
+    --pastel-blue: #3D2855;
+    --pastel-green: #2E4010;
+    --soft-yellow: #92620A;
+    --text-primary: #F5F0E8;
+    --text-secondary: #9C9288;
+    --border-color: #2E2822;
+    --btn-dark: #D4A84B;
+
+    --badge-lavender-bg: #3D2855;
+    --badge-lavender-icon: #D8AAEE;
+    --badge-lime-bg: #2E4010;
+    --badge-lime-icon: #AADB6A;
+    --badge-amber-bg: #5C3A00;
+    --badge-amber-icon: #FDD068;
+    --badge-rose-bg: #55192A;
+    --badge-rose-icon: #F5A0B0;
+
+    --background: 20 20% 7%;
+    --foreground: 38 30% 95%;
+    --primary: 35 85% 55%;
+    --primary-foreground: 20 15% 10%;
+    --secondary: 20 15% 15%;
+    --secondary-foreground: 38 30% 95%;
+    --muted: 20 15% 15%;
+    --muted-foreground: 30 12% 60%;
+    --accent: 20 15% 15%;
+    --accent-foreground: 38 30% 95%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 20 15% 18%;
+    --input: 20 15% 18%;
+    --ring: 35 85% 55%;
+    --card: 20 15% 12%;
+    --card-foreground: 38 30% 95%;
+  }
+
+  body {
+    background-color: var(--app-bg);
+    color: var(--text-primary);
+    @apply antialiased;
+  }
+}

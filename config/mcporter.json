@@ -1,7 +1,0 @@
-{
-  "mcpServers": {
-    "n8n": {
-      "baseUrl": "http://localhost:5678/mcp"
-    }
-  }
-}

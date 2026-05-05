@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__fill",
+      "Bash(npx tsc *)",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__emulate",
+      "Bash(curl *)",
+      "mcp__claude_ai_Supabase__execute_sql",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(npm run *)",
+      "Read(//private/tmp/**)",
+      "Bash(brew install *)"
+    ]
+  }
+}
