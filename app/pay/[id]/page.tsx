@@ -31,7 +31,7 @@ export default async function PublicPaymentPage({ params }: Props) {
   }
 
   const isPaid = invoice.status === "Paid"
-  const remaining = Number(invoice.grand_total) - Number(invoice.paid_amount)
+  const remaining = Math.max(0, Number(invoice.grand_total) - Number(invoice.paid_amount))
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-12">
@@ -46,11 +46,11 @@ export default async function PublicPaymentPage({ params }: Props) {
         <div className="px-6 py-6 space-y-4">
           <div>
             <p className="text-xs text-gray-500 uppercase tracking-wide">Klien</p>
-            <p className="text-gray-900 font-semibold mt-0.5">{invoice.client_name}</p>
+            <p className="text-gray-900 font-semibold mt-0.5 truncate">{invoice.client_name}</p>
           </div>
           <div>
             <p className="text-xs text-gray-500 uppercase tracking-wide">Proyek</p>
-            <p className="text-gray-900 mt-0.5">{invoice.project_title}</p>
+            <p className="text-gray-900 mt-0.5 line-clamp-2">{invoice.project_title}</p>
           </div>
           <div>
             <p className="text-xs text-gray-500 uppercase tracking-wide">Jatuh Tempo</p>
@@ -70,7 +70,7 @@ export default async function PublicPaymentPage({ params }: Props) {
               <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
               <p className="text-green-800 font-medium text-sm">Invoice ini sudah lunas. Terima kasih!</p>
             </div>
-          ) : invoice.payment_url ? (
+          ) : invoice.payment_url && /^https?:\/\//.test(invoice.payment_url) ? (
             <a
               href={invoice.payment_url}
               className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-colors"
