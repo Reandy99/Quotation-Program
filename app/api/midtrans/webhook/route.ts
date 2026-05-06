@@ -21,6 +21,10 @@ export async function POST(request: Request) {
       payment_type: string
     }
 
+    if (!order_id || !status_code || !gross_amount || !signature_key || !transaction_status) {
+      return NextResponse.json({ error: "Missing required fields" }, { status: 400 })
+    }
+
     if (!verifyWebhookSignature(order_id, status_code, gross_amount, signature_key)) {
       return NextResponse.json({ error: "Invalid signature" }, { status: 401 })
     }
@@ -51,7 +55,7 @@ export async function POST(request: Request) {
     const method = methodMap[payment_type] ?? "Transfer"
     const remaining = Number(invoice.grand_total) - Number(invoice.paid_amount)
 
-    await Promise.all([
+    const [invoiceUpdate, paymentInsert] = await Promise.all([
       supabase
         .from("invoices")
         .update({
@@ -69,6 +73,15 @@ export async function POST(request: Request) {
         notes: `Dibayar via Midtrans (${payment_type})`,
       }),
     ])
+
+    if (invoiceUpdate.error) {
+      console.error("[Midtrans Webhook] Failed to update invoice:", invoiceUpdate.error)
+      throw new Error(invoiceUpdate.error.message)
+    }
+    if (paymentInsert.error) {
+      console.error("[Midtrans Webhook] Failed to insert payment:", paymentInsert.error)
+      throw new Error(paymentInsert.error.message)
+    }
 
     return NextResponse.json({ received: true })
   } catch (error) {
