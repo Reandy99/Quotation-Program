@@ -30,7 +30,7 @@ export async function getDashboardStats() {
       unpaidInvoices: invoices.filter((i) => i.status !== "Paid").length,
       totalRevenue: invoices.filter((i) => i.status === "Paid").reduce((sum, i) => sum + Number(i.grand_total), 0),
       pendingRevenue: invoices.filter((i) => i.status !== "Paid").reduce((sum, i) => sum + (Number(i.grand_total) - Number(i.paid_amount)), 0),
-      pipelineValue: quotations.filter((q) => !["Cancelled", "Rejected"].includes(q.status)).reduce((sum, q) => sum + Number(q.grand_total), 0),
+      pipelineValue: quotations.filter((q) => ["Draft", "Sent"].includes(q.status)).reduce((sum, q) => sum + Number(q.grand_total), 0),
     }
   } catch (error) {
     console.error("Error fetching dashboard stats:", error)
@@ -74,5 +74,104 @@ export async function getRecentActivity() {
       recentQuotations: [],
       recentInvoices: [],
     }
+  }
+}
+
+export interface SessionReminder {
+  id: string
+  clientName: string
+  phone: string | null
+  projectType: string | null
+  eventDate: string
+}
+
+export interface InvoiceReminder {
+  id: string
+  invoiceNumber: string
+  clientName: string
+  grandTotal: number
+  dueDate: string
+  phone: string | null
+}
+
+export async function getWAReminderData(): Promise<{
+  sessionReminders: SessionReminder[]
+  invoiceReminders: InvoiceReminder[]
+}> {
+  try {
+    const supabase = createClient()
+
+    const today = new Date()
+    const tomorrow = new Date(today)
+    tomorrow.setDate(today.getDate() + 1)
+    const dayAfterTomorrow = new Date(today)
+    dayAfterTomorrow.setDate(today.getDate() + 2)
+
+    const tomorrowStr = tomorrow.toISOString().split("T")[0]
+    const dayAfterTomorrowStr = dayAfterTomorrow.toISOString().split("T")[0]
+
+    const [leadsRes, invoicesRes] = await Promise.all([
+      supabase
+        .from("leads")
+        .select("id, client_name, phone, project_type, event_date")
+        .eq("event_date", tomorrowStr)
+        .neq("status", "Lost"),
+      supabase
+        .from("invoices")
+        .select("id, invoice_number, client_name, grand_total, due_date, quotation_id")
+        .eq("due_date", dayAfterTomorrowStr)
+        .neq("status", "Paid"),
+    ])
+
+    if (leadsRes.error) throw leadsRes.error
+    if (invoicesRes.error) throw invoicesRes.error
+
+    const sessionReminders: SessionReminder[] = (leadsRes.data ?? []).map((l: any) => ({
+      id: l.id,
+      clientName: l.client_name,
+      phone: l.phone ?? null,
+      projectType: l.project_type ?? null,
+      eventDate: l.event_date ?? tomorrowStr,
+    }))
+
+    // Resolve phone via quotation_id → quotation → lead for invoices
+    const invoices = invoicesRes.data ?? []
+    const quotationIds = invoices.map((i: any) => i.quotation_id).filter(Boolean) as string[]
+
+    let phoneByQuotationId: Record<string, string | null> = {}
+    if (quotationIds.length > 0) {
+      const { data: quotations } = await supabase
+        .from("quotations")
+        .select("id, lead_id")
+        .in("id", quotationIds)
+
+      const leadIds = (quotations ?? []).map((q: any) => q.lead_id).filter(Boolean) as string[]
+      if (leadIds.length > 0) {
+        const { data: leads } = await supabase
+          .from("leads")
+          .select("id, phone")
+          .in("id", leadIds)
+
+        const leadPhoneMap: Record<string, string | null> = {}
+        ;(leads ?? []).forEach((l: any) => { leadPhoneMap[l.id] = l.phone ?? null })
+        ;(quotations ?? []).forEach((q: any) => {
+          if (q.lead_id) phoneByQuotationId[q.id] = leadPhoneMap[q.lead_id] ?? null
+        })
+      }
+    }
+
+    const invoiceReminders: InvoiceReminder[] = invoices.map((i: any) => ({
+      id: i.id,
+      invoiceNumber: i.invoice_number,
+      clientName: i.client_name,
+      grandTotal: Number(i.grand_total),
+      dueDate: i.due_date,
+      phone: i.quotation_id ? (phoneByQuotationId[i.quotation_id] ?? null) : null,
+    }))
+
+    return { sessionReminders, invoiceReminders }
+  } catch (error) {
+    console.error("Error fetching WA reminder data:", error)
+    return { sessionReminders: [], invoiceReminders: [] }
   }
 }
