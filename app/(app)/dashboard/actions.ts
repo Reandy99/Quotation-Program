@@ -94,6 +94,11 @@ export interface InvoiceReminder {
   phone: string | null
 }
 
+type LeadReminderRow = { id: string; client_name: string; phone: string | null; project_type: string | null; event_date: string }
+type InvoiceReminderRow = { id: string; invoice_number: string; client_name: string; grand_total: number; due_date: string; quotation_id: string | null }
+type QuotationReminderRow = { id: string; lead_id: string | null }
+type LeadPhoneRow = { id: string; phone: string | null }
+
 export async function getWAReminderData(): Promise<{
   sessionReminders: SessionReminder[]
   invoiceReminders: InvoiceReminder[]
@@ -126,26 +131,26 @@ export async function getWAReminderData(): Promise<{
     if (leadsRes.error) throw leadsRes.error
     if (invoicesRes.error) throw invoicesRes.error
 
-    const sessionReminders: SessionReminder[] = (leadsRes.data ?? []).map((l: any) => ({
+    const sessionReminders: SessionReminder[] = ((leadsRes.data ?? []) as LeadReminderRow[]).map((l) => ({
       id: l.id,
       clientName: l.client_name,
-      phone: l.phone ?? null,
-      projectType: l.project_type ?? null,
-      eventDate: l.event_date ?? tomorrowStr,
+      phone: l.phone,
+      projectType: l.project_type,
+      eventDate: l.event_date,
     }))
 
     // Resolve phone via quotation_id → quotation → lead for invoices
-    const invoices = invoicesRes.data ?? []
-    const quotationIds = invoices.map((i: any) => i.quotation_id).filter(Boolean) as string[]
+    const invoices = (invoicesRes.data ?? []) as InvoiceReminderRow[]
+    const quotationIds = invoices.map((i) => i.quotation_id).filter(Boolean) as string[]
 
-    let phoneByQuotationId: Record<string, string | null> = {}
+    const phoneByQuotationId: Record<string, string | null> = {}
     if (quotationIds.length > 0) {
       const { data: quotations } = await supabase
         .from("quotations")
         .select("id, lead_id")
         .in("id", quotationIds)
 
-      const leadIds = (quotations ?? []).map((q: any) => q.lead_id).filter(Boolean) as string[]
+      const leadIds = ((quotations ?? []) as QuotationReminderRow[]).map((q) => q.lead_id).filter(Boolean) as string[]
       if (leadIds.length > 0) {
         const { data: leads } = await supabase
           .from("leads")
@@ -153,14 +158,14 @@ export async function getWAReminderData(): Promise<{
           .in("id", leadIds)
 
         const leadPhoneMap: Record<string, string | null> = {}
-        ;(leads ?? []).forEach((l: any) => { leadPhoneMap[l.id] = l.phone ?? null })
-        ;(quotations ?? []).forEach((q: any) => {
+        ;((leads ?? []) as LeadPhoneRow[]).forEach((l) => { leadPhoneMap[l.id] = l.phone })
+        ;((quotations ?? []) as QuotationReminderRow[]).forEach((q) => {
           if (q.lead_id) phoneByQuotationId[q.id] = leadPhoneMap[q.lead_id] ?? null
         })
       }
     }
 
-    const invoiceReminders: InvoiceReminder[] = invoices.map((i: any) => ({
+    const invoiceReminders: InvoiceReminder[] = invoices.map((i) => ({
       id: i.id,
       invoiceNumber: i.invoice_number,
       clientName: i.client_name,
