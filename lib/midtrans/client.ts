@@ -11,7 +11,8 @@ const BASE_API_URL =
     : "https://api.sandbox.midtrans.com/v2"
 
 function getAuthHeader(): string {
-  const serverKey = process.env.MIDTRANS_SERVER_KEY ?? ""
+  const serverKey = process.env.MIDTRANS_SERVER_KEY
+  if (!serverKey) throw new Error("MIDTRANS_SERVER_KEY environment variable is not set")
   return "Basic " + Buffer.from(serverKey + ":").toString("base64")
 }
 
@@ -61,7 +62,10 @@ export async function createSnapTransaction(
     throw new Error(`Midtrans Snap error ${res.status}: ${errText}`)
   }
 
-  const data = await res.json()
+  const data = await res.json() as { redirect_url?: string }
+  if (!data.redirect_url) {
+    throw new Error("Midtrans did not return a redirect URL")
+  }
   return { redirectUrl: data.redirect_url }
 }
 
@@ -93,10 +97,14 @@ export function verifyWebhookSignature(
   grossAmount: string,
   signatureKey: string
 ): boolean {
-  const serverKey = process.env.MIDTRANS_SERVER_KEY ?? ""
+  const serverKey = process.env.MIDTRANS_SERVER_KEY
+  if (!serverKey) return false
   const hash = crypto
     .createHash("sha512")
     .update(orderId + statusCode + grossAmount + serverKey)
     .digest("hex")
-  return hash === signatureKey
+  const hashBuffer = Buffer.from(hash, "hex")
+  const keyBuffer = Buffer.from(signatureKey, "hex")
+  if (hashBuffer.length !== keyBuffer.length) return false
+  return crypto.timingSafeEqual(hashBuffer, keyBuffer)
 }
