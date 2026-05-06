@@ -251,11 +251,12 @@ export async function getInvoiceMidtransData(
   invoiceId: string
 ): Promise<{ orderId: string | null; paymentUrl: string | null }> {
   const supabase = createClient()
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("invoices")
     .select("midtrans_order_id, payment_url")
     .eq("id", invoiceId)
     .single()
+  if (error) return { orderId: null, paymentUrl: null }
   const row = data as { midtrans_order_id: string | null; payment_url: string | null } | null
   return {
     orderId: row?.midtrans_order_id ?? null,
@@ -287,11 +288,12 @@ export async function createMidtransTransaction(
     itemName: invoice.project_title,
   })
 
-  await supabase
+  const { error: updateError } = await supabase
     .from("invoices")
     .update({ midtrans_order_id: orderId, payment_url: redirectUrl } as Record<string, unknown>)
     .eq("id", invoiceId)
     .eq("user_id", user.id)
+  if (updateError) throw new Error(`Gagal menyimpan payment link: ${updateError.message}`)
 
   revalidatePath(`/invoices/${invoiceId}`)
   return { paymentUrl: redirectUrl }
