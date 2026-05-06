@@ -1,0 +1,2 @@
+ALTER TABLE invoices ADD COLUMN IF NOT EXISTS midtrans_order_id TEXT;
+ALTER TABLE invoices ADD COLUMN IF NOT EXISTS payment_url TEXT;
