@@ -30,7 +30,8 @@ export async function updateSession(request: NextRequest) {
   const isAuthRoute = request.nextUrl.pathname.startsWith("/login") ||
     request.nextUrl.pathname.startsWith("/signup")
 
-  const isPublicRoute = request.nextUrl.pathname.startsWith("/pay") ||
+  const isPublicRoute = request.nextUrl.pathname === "/" ||
+    request.nextUrl.pathname.startsWith("/pay") ||
     request.nextUrl.pathname.startsWith("/api/midtrans")
 
   if (!user && !isAuthRoute && !isPublicRoute) {
