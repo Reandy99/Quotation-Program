@@ -28,3 +28,32 @@ export function buildWhatsAppUrl(phone?: string | null, text?: string): string |
   const base = `https://wa.me/${normalized}`
   return text ? `${base}?text=${encodeURIComponent(text)}` : base
 }
+
+import { formatCurrency, formatDateShort } from "@/lib/utils/format"
+
+export function buildSessionReminderMessage(params: {
+  clientName: string
+  projectType: string | null
+  eventDate: string
+  businessName: string
+}): string {
+  const { clientName, projectType, eventDate, businessName } = params
+  const dateFormatted = formatDateShort(eventDate)
+  const projectLabel = projectType ?? "foto/video"
+  const suffix = businessName ? ` – ${businessName}` : ""
+  return `Halo ${clientName}! 👋 Mengingatkan bahwa sesi ${projectLabel} kita jadwalkan besok, ${dateFormatted}. Mohon konfirmasi kehadiran ya 🙏${suffix}`
+}
+
+export function buildInvoiceReminderMessage(params: {
+  clientName: string
+  invoiceNumber: string
+  grandTotal: number
+  dueDate: string
+  businessName: string
+}): string {
+  const { clientName, invoiceNumber, grandTotal, dueDate, businessName } = params
+  const dateFormatted = formatDateShort(dueDate)
+  const amountFormatted = formatCurrency(grandTotal)
+  const suffix = businessName ? ` – ${businessName}` : ""
+  return `Halo ${clientName}! 👋 Mengingatkan bahwa invoice ${invoiceNumber} senilai ${amountFormatted} akan jatuh tempo pada ${dateFormatted}. Mohon segera dilunasi ya 🙏${suffix}`
+}
