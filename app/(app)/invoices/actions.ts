@@ -4,6 +4,7 @@ import { createClient } from "@/lib/supabase/server"
 import { logAudit } from "@/lib/utils/audit"
 import { revalidatePath } from "next/cache"
 import type { Invoice, InvoiceStatus, Payment, PaymentMethod } from "@/types"
+import { createSnapTransaction, checkTransactionStatus } from "@/lib/midtrans/client"
 
 export async function getInvoices(): Promise<Invoice[]> {
   try {
@@ -244,4 +245,95 @@ export async function deletePayment(id: string, invoiceId: string): Promise<void
   revalidatePath("/invoices")
   revalidatePath(`/invoices/${invoiceId}`)
   revalidatePath("/dashboard")
+}
+
+export async function getInvoiceMidtransData(
+  invoiceId: string
+): Promise<{ orderId: string | null; paymentUrl: string | null }> {
+  const supabase = createClient()
+  const { data } = await supabase
+    .from("invoices")
+    .select("midtrans_order_id, payment_url")
+    .eq("id", invoiceId)
+    .single()
+  const row = data as { midtrans_order_id: string | null; payment_url: string | null } | null
+  return {
+    orderId: row?.midtrans_order_id ?? null,
+    paymentUrl: row?.payment_url ?? null,
+  }
+}
+
+export async function createMidtransTransaction(
+  invoiceId: string
+): Promise<{ paymentUrl: string }> {
+  const supabase = createClient()
+  const { data: { user }, error: authError } = await supabase.auth.getUser()
+  if (authError || !user) throw new Error("Authentication required.")
+
+  const existing = await getInvoiceMidtransData(invoiceId)
+  if (existing.paymentUrl) return { paymentUrl: existing.paymentUrl }
+
+  const invoice = await getInvoice(invoiceId)
+  if (!invoice) throw new Error("Invoice tidak ditemukan.")
+  if (invoice.status === "Paid") throw new Error("Invoice sudah lunas.")
+
+  const remaining = invoice.grand_total - invoice.paid_amount
+  const orderId = `QF-${invoiceId.slice(0, 8)}-${Date.now()}`
+
+  const { redirectUrl } = await createSnapTransaction({
+    orderId,
+    grossAmount: remaining,
+    customerName: invoice.client_name,
+    itemName: invoice.project_title,
+  })
+
+  await supabase
+    .from("invoices")
+    .update({ midtrans_order_id: orderId, payment_url: redirectUrl } as Record<string, unknown>)
+    .eq("id", invoiceId)
+    .eq("user_id", user.id)
+
+  revalidatePath(`/invoices/${invoiceId}`)
+  return { paymentUrl: redirectUrl }
+}
+
+export async function checkMidtransStatus(
+  invoiceId: string
+): Promise<{ status: string; message: string }> {
+  const supabase = createClient()
+  const { data: { user }, error: authError } = await supabase.auth.getUser()
+  if (authError || !user) throw new Error("Authentication required.")
+
+  const { orderId } = await getInvoiceMidtransData(invoiceId)
+  if (!orderId) return { status: "no_transaction", message: "Belum ada transaksi Midtrans." }
+
+  const { transactionStatus, paymentType } = await checkTransactionStatus(orderId)
+
+  if (transactionStatus === "settlement" || transactionStatus === "capture") {
+    const invoice = await getInvoice(invoiceId)
+    if (invoice && invoice.status !== "Paid") {
+      await updateInvoiceStatus(invoiceId, "Paid")
+      const methodMap: Record<string, PaymentMethod> = {
+        bank_transfer: "Transfer",
+        qris: "QRIS",
+        gopay: "QRIS",
+        shopeepay: "QRIS",
+        credit_card: "Transfer",
+      }
+      const method: PaymentMethod = methodMap[paymentType] ?? "Transfer"
+      await createPayment(invoiceId, {
+        amount: invoice.grand_total - invoice.paid_amount,
+        method,
+        date: new Date().toISOString().split("T")[0],
+        notes: `Dibayar via Midtrans (${paymentType})`,
+      })
+    }
+    return { status: "paid", message: "Pembayaran berhasil dikonfirmasi." }
+  }
+
+  if (transactionStatus === "pending") {
+    return { status: "pending", message: "Menunggu pembayaran dari klien." }
+  }
+
+  return { status: transactionStatus, message: `Status Midtrans: ${transactionStatus}` }
 }
