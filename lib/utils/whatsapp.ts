@@ -1,3 +1,5 @@
+import { formatCurrency, formatDateShort } from "@/lib/utils/format"
+
 export function normalizeWhatsAppNumber(input?: string | null, defaultCountryCode = "62"): string {
   if (!input) return ""
   const digits = input.replace(/\D/g, "")
@@ -20,7 +22,6 @@ export function normalizeWhatsAppNumber(input?: string | null, defaultCountryCod
 export function buildWhatsAppUrl(phone?: string | null, text?: string): string | null {
   const normalized = normalizeWhatsAppNumber(phone)
   if (!normalized && !phone) {
-    // no phone — open WA without number if text provided
     if (!text) return null
     return `https://wa.me/?text=${encodeURIComponent(text)}`
   }
@@ -28,8 +29,6 @@ export function buildWhatsAppUrl(phone?: string | null, text?: string): string |
   const base = `https://wa.me/${normalized}`
   return text ? `${base}?text=${encodeURIComponent(text)}` : base
 }
-
-import { formatCurrency, formatDateShort } from "@/lib/utils/format"
 
 export function buildSessionReminderMessage(params: {
   clientName: string
