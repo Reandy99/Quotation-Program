@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation"
 import InvoiceDetailClient from "@/components/invoices/InvoiceDetailClient"
-import { getInvoice, getPayments } from "../actions"
+import { getInvoice, getPayments, getInvoiceMidtransData } from "../actions"
 import { createClient } from "@/lib/supabase/server"
 import type { CompanySettings } from "@/types"
 
@@ -13,9 +13,10 @@ export default async function InvoiceDetailPage({
   params: { id: string }
   searchParams?: { download?: string }
 }) {
-  const [invoice, payments] = await Promise.all([
+  const [invoice, payments, midtransData] = await Promise.all([
     getInvoice(params.id),
     getPayments(params.id),
+    getInvoiceMidtransData(params.id),
   ])
   if (!invoice) notFound()
 
@@ -53,6 +54,7 @@ export default async function InvoiceDetailPage({
       initialPayments={payments}
       company={company || defaultCompany}
       autoDownloadPdf={searchParams?.download === "pdf"}
+      midtransData={midtransData}
     />
   )
 }
