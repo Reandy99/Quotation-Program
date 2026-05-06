@@ -23,7 +23,6 @@ const t = {
     ctaFooterTitle: "Siap mengembangkan bisnis kreatifmu?",
     ctaFooterDesc: "Bergabung dengan fotografer dan videografer yang menggunakan QuoteFlow untuk memenangkan lebih banyak klien.",
     ctaFooterBtn: "Mulai gratis",
-    signIn: "Masuk",
     getStarted: "Mulai sekarang",
     viewDemo: "Lihat demo →",
     copyright: "© 2026 QuoteFlow Creative",
@@ -61,7 +60,6 @@ const t = {
     ctaFooterTitle: "Ready to grow your creative business?",
     ctaFooterDesc: "Join photographers and videographers who use QuoteFlow to win more clients.",
     ctaFooterBtn: "Get started for free",
-    signIn: "Sign in",
     getStarted: "Get started",
     viewDemo: "View demo →",
     copyright: "© 2026 QuoteFlow Creative",
@@ -110,9 +108,6 @@ export default function Home() {
           </div>
           <div className="flex shrink-0 items-center gap-2 sm:gap-3">
             <LanguageToggle lang={lang} onLangChange={setLang} />
-            <Link href="/login" className="hidden sm:inline-flex text-sm px-4 py-2 rounded-lg transition-all hover:opacity-80 whitespace-nowrap" style={{ color: "var(--text-secondary)" }}>
-              {tx.signIn}
-            </Link>
             <Link href="/signup" className="inline-flex items-center justify-center whitespace-nowrap rounded-xl sm:rounded-lg px-3.5 py-2.5 sm:px-5 sm:py-2 text-sm font-medium transition-all hover:opacity-90 text-white" style={{ backgroundColor: "var(--btn-dark)" }}>
               {tx.getStarted}
             </Link>
