@@ -149,7 +149,7 @@ export default function Home() {
             <a key={label} href="#" style={{ fontSize: 14, fontWeight: 500, color: 'var(--text-secondary)', textDecoration: 'none' }}>{label}</a>
           ))}
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
           <LanguageToggle lang={lang} onLangChange={setLang} />
           <Link href="/signup" style={{
             background: 'var(--text-primary)', color: 'var(--app-bg)',
@@ -186,9 +186,9 @@ export default function Home() {
         {/* Headline */}
         <h1 style={{
           position: 'relative', zIndex: 1,
-          fontSize: 'clamp(32px, 6vw, 58px)', fontWeight: 700, lineHeight: 1.1,
-          letterSpacing: '-1.5px', textAlign: 'center',
-          maxWidth: 780, marginBottom: 22,
+          fontSize: 'clamp(28px, 3.5vw, 44px)', fontWeight: 700, lineHeight: 1.15,
+          letterSpacing: '-1.2px', textAlign: 'center',
+          maxWidth: 900, marginBottom: 22,
         }}>
           {tx.heroTitle}<br />
           <span style={{ background: `linear-gradient(90deg, ${AMBER2}, ${ROSE})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
