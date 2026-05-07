@@ -47,8 +47,31 @@ export async function GET() {
       results.insert.cleaned_up = true
     }
 
-    // Step 4: Check Xendit key
-    results.xendit_key_set = !!process.env.XENDIT_SECRET_KEY
+    // Step 4: Check Xendit key + test API call
+    const xenditKey = process.env.XENDIT_SECRET_KEY
+    results.xendit_key_set = !!xenditKey
+    results.xendit_key_length = xenditKey?.length ?? 0
+    results.xendit_key_has_newline = xenditKey?.includes("\n") ?? false
+
+    if (xenditKey) {
+      const authHeader = "Basic " + Buffer.from(xenditKey.trim() + ":").toString("base64")
+      const testRes = await fetch("https://api.xendit.co/v2/invoices", {
+        method: "POST",
+        headers: { Authorization: authHeader, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          external_id: `debug-test-${Date.now()}`,
+          amount: 10000,
+          description: "Debug test - akan diabaikan",
+          currency: "IDR",
+        }),
+      })
+      const xenditBody = await testRes.json().catch(() => ({}))
+      results.xendit_test = {
+        status: testRes.status,
+        ok: testRes.ok,
+        body: xenditBody,
+      }
+    }
 
   } catch (e: any) {
     results.exception = e.message
