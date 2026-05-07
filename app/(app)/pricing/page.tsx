@@ -30,8 +30,8 @@ const plans = [
   {
     id: "pro",
     name: "Pro",
-    price: 49000,
-    priceLabel: "Rp49.000",
+    price: 99000,
+    priceLabel: "Rp99.000",
     priceSub: "/bulan",
     description: "Semua fitur lengkap untuk fotografer & videografer profesional.",
     highlight: true,

@@ -208,7 +208,7 @@ export async function ensureSubscription(): Promise<void> {
       user_id: user.id,
       plan_id: plan.id,
       status: "trialing",
-      trial_ends_at: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString(),
+      trial_end: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString(),
     })
   } catch {
     // Gagal diam-diam — tidak blokir load dashboard

@@ -44,11 +44,11 @@ export async function getPlans(): Promise<Plan[]> {
   return data ?? []
 }
 
-export async function createSubscriptionPaymentLink(): Promise<{ paymentUrl: string }> {
+export async function createSubscriptionPaymentLink(): Promise<{ paymentUrl?: string; error?: string }> {
   try {
     const supabase = createClient()
     const { data: { user }, error: authError } = await supabase.auth.getUser()
-    if (authError || !user) throw new Error("Authentication required")
+    if (authError || !user) return { error: "Authentication required" }
 
     // Cek apakah sudah active
     const { data: existing } = await supabase
@@ -56,7 +56,7 @@ export async function createSubscriptionPaymentLink(): Promise<{ paymentUrl: str
       .select("status")
       .eq("user_id", user.id)
       .single()
-    if (existing?.status === "active") throw new Error("Kamu sudah berlangganan Pro.")
+    if (existing?.status === "active") return { error: "Kamu sudah berlangganan Pro." }
 
     // Ambil Pro plan
     const { data: plan, error: planError } = await supabase
@@ -64,18 +64,31 @@ export async function createSubscriptionPaymentLink(): Promise<{ paymentUrl: str
       .select("id, price_idr, name")
       .eq("slug", "pro")
       .single()
-    if (planError) throw new Error(`Plan query error: ${planError.message}`)
-    if (!plan) throw new Error("Pro plan tidak ditemukan di database.")
+    if (planError || !plan) return { error: "Pro plan tidak ditemukan di database." }
 
     const externalId = `sub-${user.id.slice(0, 8)}-${Date.now()}`
-    const amount = plan.price_idr ?? 49000
+    const amount = plan.price_idr ?? 99000
     const periodStart = new Date().toISOString()
     const periodEnd = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString()
 
-    // Gunakan adminClient untuk bypass RLS pada billing_payments
     const adminSupabase = createAdminClient()
 
-    const { data: payment, error: insertError } = await adminSupabase
+    // Buat Xendit invoice dulu — baru simpan ke DB kalau berhasil
+    let xenditInvoice
+    try {
+      xenditInvoice = await createXenditInvoice({
+        externalId,
+        amount,
+        payerEmail: user.email,
+        description: `FrameFlow Pro - 1 bulan (${user.email})`,
+      })
+    } catch (xenditError: any) {
+      console.error("[createSubscriptionPaymentLink] Xendit error:", xenditError?.message)
+      return { error: `Gagal menghubungi payment gateway: ${xenditError.message}` }
+    }
+
+    // Xendit berhasil — simpan payment record
+    const { error: insertError } = await adminSupabase
       .from("billing_payments")
       .insert({
         user_id: user.id,
@@ -84,32 +97,21 @@ export async function createSubscriptionPaymentLink(): Promise<{ paymentUrl: str
         status: "pending",
         gateway: "xendit",
         gateway_payment_id: externalId,
+        gateway_invoice_url: xenditInvoice.invoice_url,
         period_start: periodStart,
         period_end: periodEnd,
       })
       .select("id")
       .single()
 
-    if (insertError) throw new Error(`billing_payments insert error: ${insertError.message}`)
-    if (!payment) throw new Error("Payment record tidak terbuat.")
-
-    // Buat Xendit invoice
-    const xenditInvoice = await createXenditInvoice({
-      externalId,
-      amount,
-      payerEmail: user.email,
-      description: `FrameFlow Pro - 1 bulan (${user.email})`,
-    })
-
-    // Update URL di billing_payment
-    await adminSupabase
-      .from("billing_payments")
-      .update({ gateway_invoice_url: xenditInvoice.invoice_url })
-      .eq("id", payment.id)
+    if (insertError) {
+      console.error("[createSubscriptionPaymentLink] Insert error:", insertError.message)
+      return { error: "Gagal menyimpan data pembayaran. Coba lagi." }
+    }
 
     return { paymentUrl: xenditInvoice.invoice_url }
   } catch (error: any) {
     console.error("[createSubscriptionPaymentLink]", error?.message ?? error)
-    throw error
+    return { error: error.message || "Terjadi kesalahan tidak terduga." }
   }
 }

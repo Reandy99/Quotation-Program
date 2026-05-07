@@ -79,7 +79,7 @@ export default async function DashboardPage() {
 
   const heroStats = [
     {
-      label: "Status Update",
+      label: "Nilai Pipeline",
       value: formatCurrency(stats.pipelineValue),
       sub: "Peluang aktif",
       icon: DollarSign,

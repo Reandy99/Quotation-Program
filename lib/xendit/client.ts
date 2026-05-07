@@ -2,7 +2,9 @@ const XENDIT_BASE_URL = "https://api.xendit.co"
 
 function getAuthHeader(): string {
   const secretKey = process.env.XENDIT_SECRET_KEY
-  if (!secretKey) throw new Error("XENDIT_SECRET_KEY tidak dikonfigurasi di .env.local")
+  if (!secretKey || secretKey === "your_xendit_secret_key_here") {
+    throw new Error("XENDIT_SECRET_KEY belum dikonfigurasi. Isi di .env.local dengan API key dari dashboard Xendit.")
+  }
   return "Basic " + Buffer.from(secretKey + ":").toString("base64")
 }
 

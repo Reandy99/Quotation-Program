@@ -16,16 +16,16 @@ export default function UpgradeButton({ label = "Upgrade ke Pro", className, sty
 
   async function handleUpgrade() {
     setLoading(true)
-    try {
-      const { paymentUrl } = await createSubscriptionPaymentLink()
-      window.location.href = paymentUrl
-    } catch (error: any) {
+    const result = await createSubscriptionPaymentLink()
+    if (result.error) {
       toast({
         variant: "destructive",
         title: "Gagal membuat link pembayaran",
-        description: error.message || "Terjadi kesalahan. Coba lagi.",
+        description: result.error,
       })
       setLoading(false)
+    } else if (result.paymentUrl) {
+      window.location.href = result.paymentUrl
     }
   }
 
