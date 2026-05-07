@@ -23,6 +23,42 @@ export async function POST(request: NextRequest) {
 
   const supabase = createAdminClient()
 
+  // Subscription payment (external_id dimulai dengan "sub-")
+  if (external_id.startsWith("sub-")) {
+    const { data: billingPayment } = await supabase
+      .from("billing_payments")
+      .select("id, user_id, plan_id, period_start, period_end, status")
+      .eq("gateway_payment_id", external_id)
+      .single()
+
+    if (!billingPayment || billingPayment.status === "paid") {
+      return NextResponse.json({ received: true, action: "ignored" })
+    }
+
+    const now = new Date().toISOString()
+    const periodEnd = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString()
+
+    await Promise.all([
+      supabase
+        .from("billing_payments")
+        .update({ status: "paid", paid_at: now })
+        .eq("id", billingPayment.id),
+      supabase
+        .from("subscriptions")
+        .update({
+          plan_id: billingPayment.plan_id,
+          status: "active",
+          current_period_start: now,
+          current_period_end: periodEnd,
+          updated_at: now,
+        })
+        .eq("user_id", billingPayment.user_id),
+    ])
+
+    return NextResponse.json({ received: true, action: "subscription_activated" })
+  }
+
+  // Invoice payment (existing logic)
   const { data: invoice, error: fetchError } = await supabase
     .from("invoices")
     .select("id, grand_total, status")

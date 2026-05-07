@@ -1,6 +1,7 @@
 "use server"
 
 import { createClient } from "@/lib/supabase/server"
+import { createXenditInvoice } from "@/lib/xendit/client"
 import type { Subscription, BillingPayment, Plan } from "@/types"
 
 export async function getSubscription(): Promise<Subscription | null> {
@@ -41,4 +42,65 @@ export async function getPlans(): Promise<Plan[]> {
     .order("price_idr", { ascending: true })
 
   return data ?? []
+}
+
+export async function createSubscriptionPaymentLink(): Promise<{ paymentUrl: string }> {
+  const supabase = createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) throw new Error("Authentication required")
+
+  // Cek apakah sudah active
+  const { data: existing } = await supabase
+    .from("subscriptions")
+    .select("status")
+    .eq("user_id", user.id)
+    .single()
+  if (existing?.status === "active") throw new Error("Kamu sudah berlangganan Pro.")
+
+  // Ambil Pro plan
+  const { data: plan } = await supabase
+    .from("plans")
+    .select("id, price_idr, name")
+    .eq("slug", "pro")
+    .single()
+  if (!plan) throw new Error("Pro plan tidak ditemukan.")
+
+  const externalId = `sub-${user.id.slice(0, 8)}-${Date.now()}`
+  const amount = plan.price_idr ?? 49000
+  const periodStart = new Date().toISOString()
+  const periodEnd = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString()
+
+  // Simpan billing_payment dengan status pending
+  const { data: payment, error: insertError } = await supabase
+    .from("billing_payments")
+    .insert({
+      user_id: user.id,
+      plan_id: plan.id,
+      amount_idr: amount,
+      status: "pending",
+      gateway: "xendit",
+      gateway_payment_id: externalId,
+      period_start: periodStart,
+      period_end: periodEnd,
+    })
+    .select("id")
+    .single()
+
+  if (insertError || !payment) throw new Error("Gagal membuat payment record.")
+
+  // Buat Xendit invoice
+  const xenditInvoice = await createXenditInvoice({
+    externalId,
+    amount,
+    payerEmail: user.email,
+    description: `FrameFlow Pro - 1 bulan (${user.email})`,
+  })
+
+  // Update URL di billing_payment
+  await supabase
+    .from("billing_payments")
+    .update({ gateway_invoice_url: xenditInvoice.invoice_url })
+    .eq("id", payment.id)
+
+  return { paymentUrl: xenditInvoice.invoice_url }
 }

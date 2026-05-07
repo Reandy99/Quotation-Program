@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Check, X, Zap } from "lucide-react"
 import { getSubscription } from "@/lib/billing/actions"
+import UpgradeButton from "@/components/billing/UpgradeButton"
 
 const plans = [
   {
@@ -136,15 +137,16 @@ export default async function PricingPage() {
                   >
                     Paket Saat Ini
                   </div>
+                ) : plan.id === "pro" ? (
+                  <UpgradeButton
+                    label={plan.cta}
+                    className="w-full py-2.5 rounded-xl text-center text-sm font-semibold transition-colors text-white bg-blue-500 hover:bg-blue-600"
+                  />
                 ) : (
                   <Link
                     href="/settings/billing"
-                    className={`w-full py-2.5 rounded-xl text-center text-sm font-semibold transition-colors block text-white ${
-                      plan.highlight
-                        ? "bg-blue-500 hover:bg-blue-600"
-                        : "hover:opacity-80"
-                    }`}
-                    style={plan.highlight ? {} : { backgroundColor: "var(--btn-dark)" }}
+                    className="w-full py-2.5 rounded-xl text-center text-sm font-semibold transition-colors block text-white hover:opacity-80"
+                    style={{ backgroundColor: "var(--btn-dark)" }}
                   >
                     {plan.cta}
                   </Link>
