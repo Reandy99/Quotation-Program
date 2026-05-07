@@ -21,11 +21,11 @@ const t = {
     workflowTitle: "Dibuat untuk alur kerja kreatif",
     workflowSubtitle: "Semua yang kamu butuhkan, tanpa yang tidak perlu",
     ctaFooterTitle: "Siap mengembangkan bisnis kreatifmu?",
-    ctaFooterDesc: "Bergabung dengan fotografer dan videografer yang menggunakan QuoteFlow untuk memenangkan lebih banyak klien.",
+    ctaFooterDesc: "Bergabung dengan fotografer dan videografer yang menggunakan FrameFlow untuk memenangkan lebih banyak klien.",
     ctaFooterBtn: "Mulai gratis",
     getStarted: "Mulai sekarang",
     viewDemo: "Lihat demo →",
-    copyright: "© 2026 QuoteFlow Creative",
+    copyright: "© 2026 FrameFlow",
     features: [
       { title: "Manajemen Lead", desc: "Lacak leads dari kontak pertama hingga deal ditutup. Pelacakan status, pengingat follow-up, dan penjadwalan acara." },
       { title: "Penawaran Profesional", desc: "Buat penawaran PDF yang indah dengan item, diskon, perhitungan pajak, dan nomor penawaran otomatis." },
@@ -58,11 +58,11 @@ const t = {
     workflowTitle: "Built for creative workflows",
     workflowSubtitle: "Everything you need, nothing you don't",
     ctaFooterTitle: "Ready to grow your creative business?",
-    ctaFooterDesc: "Join photographers and videographers who use QuoteFlow to win more clients.",
+    ctaFooterDesc: "Join photographers and videographers who use FrameFlow to win more clients.",
     ctaFooterBtn: "Get started for free",
     getStarted: "Get started",
     viewDemo: "View demo →",
-    copyright: "© 2026 QuoteFlow Creative",
+    copyright: "© 2026 FrameFlow",
     features: [
       { title: "Lead Management", desc: "Track leads from first contact to closed deal. Status tracking, follow-up reminders, and event scheduling." },
       { title: "Professional Quotations", desc: "Create beautiful PDF quotes with line items, discounts, tax calculation, and auto-generated quote numbers." },
@@ -101,7 +101,7 @@ export default function Home() {
               <Zap className="h-4 w-4 text-white" />
             </div>
             <span className="font-bold text-sm sm:text-base leading-tight tracking-tight truncate" style={{ color: "var(--text-primary)" }}>
-              QuoteFlow<span className="hidden sm:inline"> Creative</span>
+              FrameFlow<span className="hidden sm:inline"> Creative</span>
             </span>
           </div>
           <div className="flex shrink-0 items-center gap-2">

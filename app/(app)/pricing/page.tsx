@@ -159,7 +159,7 @@ export default async function PricingPage() {
           <p>Semua paket termasuk ekspor data. Upgrade atau batalkan kapan saja.</p>
           <p className="mt-1">
             Ada pertanyaan?{" "}
-            <a href="mailto:hello@quoteflow.id" className="text-blue-500 dark:text-blue-400 hover:underline">
+            <a href="mailto:hello@frameflow.id" className="text-blue-500 dark:text-blue-400 hover:underline">
               Hubungi kami
             </a>
           </p>

@@ -1,6 +1,6 @@
 import type { GeneralSettings as GeneralSettingsType, ServicePackage } from "@/types"
 
-export const SETTINGS_UPDATED_EVENT = "quoteflow:settings-updated"
+export const SETTINGS_UPDATED_EVENT = "frameflow:settings-updated"
 
 export type GeneralSettings = GeneralSettingsType
 
@@ -19,12 +19,12 @@ export interface CompanySettings {
   google_review_url?: string
 }
 
-export const GENERAL_KEY = "quoteflow_general_settings"
-export const COMPANY_KEY = "quoteflow_company_settings"
-export const PACKAGES_KEY = "quoteflow_packages"
+export const GENERAL_KEY = "frameflow_general_settings"
+export const COMPANY_KEY = "frameflow_company_settings"
+export const PACKAGES_KEY = "frameflow_packages"
 
 export const generalDefaults: GeneralSettings = {
-  workspace_name: "QuoteFlow",
+  workspace_name: "FrameFlow",
   timezone: "Asia/Jakarta",
   language: "en",
   date_format: "DD/MM/YYYY",

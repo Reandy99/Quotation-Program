@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 
 export type Lang = "id" | "en"
 
-const STORAGE_KEY = "quoteflow_lang"
+const STORAGE_KEY = "frameflow_lang"
 
 export function useLanguage(): [Lang, (lang: Lang) => void] {
   const [lang, setLangState] = useState<Lang>("id")

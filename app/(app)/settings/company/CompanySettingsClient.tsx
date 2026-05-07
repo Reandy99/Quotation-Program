@@ -169,7 +169,7 @@ export default function CompanySettingsClient({ company }: Props) {
         }
 
         if (typeof window !== "undefined") {
-          localStorage.setItem("quoteflow_company_settings", JSON.stringify(data))
+          localStorage.setItem("frameflow_company_settings", JSON.stringify(data))
           dispatchSettingsUpdated()
         }
 

@@ -25,12 +25,12 @@ export function buildIcsAllDay(input: CalendarEventInput): string {
   const start = input.date.replace(/-/g, '');
   const end = getNextDay(input.date).replace(/-/g, '');
   const now = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-  const uid = `${now}-${Math.random().toString(36).substr(2, 9)}@quoteflow`;
+  const uid = `${now}-${Math.random().toString(36).substr(2, 9)}@frameflow`;
   
   let ics = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//QuoteFlow//Calendar//EN',
+    'PRODID:-//FrameFlow//Calendar//EN',
     'BEGIN:VEVENT',
     `UID:${uid}`,
     `DTSTAMP:${now}`,

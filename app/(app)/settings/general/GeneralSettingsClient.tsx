@@ -29,7 +29,7 @@ const generalSettingsSchema = z.object({
 type GeneralSettingsFormData = z.infer<typeof generalSettingsSchema>
 
 const defaultSettings: GeneralSettingsFormData = {
-  workspace_name: "QuoteFlow Creative",
+  workspace_name: "FrameFlow",
   timezone: "Asia/Jakarta",
   language: "en",
   date_format: "DD/MM/YYYY",

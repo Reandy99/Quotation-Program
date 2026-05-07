@@ -44,7 +44,7 @@ export default function LoginPage() {
           <div className="w-11 h-11 rounded-xl flex items-center justify-center shadow-sm mb-4 bg-gradient-to-br from-amber-500 to-rose-400">
             <Zap className="w-5 h-5 text-white" />
           </div>
-          <h1 className="text-xl font-bold" style={{ color: "var(--text-primary)" }}>Sign in to QuoteFlow</h1>
+          <h1 className="text-xl font-bold" style={{ color: "var(--text-primary)" }}>Sign in to FrameFlow</h1>
           <p className="text-sm mt-1" style={{ color: "var(--text-secondary)" }}>Welcome back</p>
         </div>
 

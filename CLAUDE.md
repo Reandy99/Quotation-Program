@@ -15,7 +15,7 @@ No test suite is configured. Validate changes by running the dev server and test
 
 ## Architecture
 
-**QuoteFlow Creative** is a SaaS for creative vendors (photographers, videographers) to manage leads, quotations, invoices, follow-ups, and billing.
+**FrameFlow** is a SaaS for creative vendors (photographers, videographers) to manage leads, quotations, invoices, follow-ups, and billing.
 
 **Stack:** Next.js 14 App Router · TypeScript · Tailwind CSS · Supabase (Auth + PostgreSQL + Storage) · @react-pdf/renderer
 
@@ -48,9 +48,9 @@ All tables use `user_id = auth.uid()` RLS policies — data is always user-scope
 
 Settings have a two-layer caching design:
 1. **Server source of truth**: `company_settings` table in Supabase (one row per user)
-2. **Client-side cache**: `localStorage` via `lib/settings/storage.ts` (`quoteflow_general_settings`, `quoteflow_company_settings`, `quoteflow_packages`)
+2. **Client-side cache**: `localStorage` via `lib/settings/storage.ts` (`frameflow_general_settings`, `frameflow_company_settings`, `frameflow_packages`)
 
-On each page load, the `(app)` layout fetches settings server-side and passes them to `SettingsHydrator`, which syncs them to `localStorage`. Client components then read from `localStorage` via `lib/settings/useLiveSettings.ts`. After mutations, dispatch `quoteflow:settings-updated` event to sync UI without reload.
+On each page load, the `(app)` layout fetches settings server-side and passes them to `SettingsHydrator`, which syncs them to `localStorage`. Client components then read from `localStorage` via `lib/settings/useLiveSettings.ts`. After mutations, dispatch `frameflow:settings-updated` event to sync UI without reload.
 
 ### Billing / Feature Gating
 

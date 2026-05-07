@@ -45,7 +45,7 @@ export default function SignupPage() {
             <Zap className="w-5 h-5 text-white" />
           </div>
           <h1 className="text-xl font-bold" style={{ color: "var(--text-primary)" }}>Create your account</h1>
-          <p className="text-sm mt-1" style={{ color: "var(--text-secondary)" }}>Start your QuoteFlow workspace</p>
+          <p className="text-sm mt-1" style={{ color: "var(--text-secondary)" }}>Start your FrameFlow workspace</p>
         </div>
 
         <div
