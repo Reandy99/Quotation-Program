@@ -1,6 +1,6 @@
 "use server"
 
-import { createClient } from "@/lib/supabase/server"
+import { createClient, createAdminClient } from "@/lib/supabase/server"
 import { createXenditInvoice } from "@/lib/xendit/client"
 import type { Subscription, BillingPayment, Plan } from "@/types"
 
@@ -72,8 +72,10 @@ export async function createSubscriptionPaymentLink(): Promise<{ paymentUrl: str
     const periodStart = new Date().toISOString()
     const periodEnd = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString()
 
-    // Simpan billing_payment dengan status pending
-    const { data: payment, error: insertError } = await supabase
+    // Gunakan adminClient untuk bypass RLS pada billing_payments
+    const adminSupabase = createAdminClient()
+
+    const { data: payment, error: insertError } = await adminSupabase
       .from("billing_payments")
       .insert({
         user_id: user.id,
@@ -100,7 +102,7 @@ export async function createSubscriptionPaymentLink(): Promise<{ paymentUrl: str
     })
 
     // Update URL di billing_payment
-    await supabase
+    await adminSupabase
       .from("billing_payments")
       .update({ gateway_invoice_url: xenditInvoice.invoice_url })
       .eq("id", payment.id)
