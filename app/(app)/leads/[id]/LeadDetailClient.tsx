@@ -145,7 +145,7 @@ export default function LeadDetailClient({ lead, quotations }: Props) {
               <CardTitle className="text-base dark:text-gray-100">Lead Information</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                 <div><span className="text-gray-500 dark:text-gray-400">Client</span><p className="font-medium mt-0.5 dark:text-gray-100">{lead.client_name}</p></div>
                 <div><span className="text-gray-500 dark:text-gray-400">Company</span><p className="font-medium mt-0.5 dark:text-gray-100">{lead.company_name || "—"}</p></div>
                 <div><span className="text-gray-500 dark:text-gray-400">Email</span><p className="font-medium mt-0.5 dark:text-gray-100">{lead.email || "—"}</p></div>

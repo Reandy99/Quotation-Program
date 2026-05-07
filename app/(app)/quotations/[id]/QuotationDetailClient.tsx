@@ -178,7 +178,7 @@ export default function QuotationDetailClient({ quotation: initial, companyFromD
         <Card className="print:shadow-none print:border-0 dark:bg-gray-900 dark:border-gray-700">
           <CardContent className="p-5 sm:p-8">
             {/* Header */}
-            <div className="flex justify-between items-start mb-8">
+            <div className="flex flex-col sm:flex-row justify-between sm:items-start items-start gap-3 mb-8">
               <div>
                 {company.logo_url && (
                   <Image

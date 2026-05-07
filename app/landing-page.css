@@ -156,9 +156,9 @@
     max-width: none !important;
     flex-shrink: 0;
     align-self: center;
-    transform: scale(0.30);
+    transform: scale(0.36);
     transform-origin: top center;
-    margin-bottom: -364px;
+    margin-bottom: -334px;
     border-radius: 12px 12px 0 0;
   }
 }

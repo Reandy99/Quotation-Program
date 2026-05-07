@@ -217,7 +217,7 @@ export default function Home() {
             {tx.heroBtn1}
           </Link>
           <Link href="/dashboard" style={{
-            background: 'transparent', border: '1px solid var(--border-color)',
+            background: 'transparent', border: '1px solid rgba(128,100,60,0.3)',
             color: 'var(--text-primary)', borderRadius: 12,
             padding: '12px 28px', fontSize: 14, fontWeight: 500, textDecoration: 'none',
             display: 'inline-flex', alignItems: 'center', gap: 8,

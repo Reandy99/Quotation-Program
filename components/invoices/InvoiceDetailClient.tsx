@@ -454,7 +454,7 @@ export default function InvoiceDetailClient({
       <div className="max-w-4xl mx-auto mt-0 print:mt-0">
         <Card className="print:shadow-none print:border-0 dark:bg-gray-900 dark:border-gray-800">
           <CardContent className="p-5 sm:p-8">
-            <div className="flex justify-between items-start mb-8">
+            <div className="flex flex-col sm:flex-row justify-between sm:items-start items-start gap-3 mb-8">
               <div>
                 {company.logo_url && (
                   <Image
@@ -510,7 +510,8 @@ export default function InvoiceDetailClient({
             {/* Line Items */}
             {invoice.items && invoice.items.length > 0 && (
               <div className="mb-8">
-                <table className="w-full text-sm">
+                {/* Desktop table */}
+                <table className="hidden md:table w-full text-sm">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-700">
                       <th className="text-left py-2 text-gray-500 dark:text-gray-400 font-medium">Item</th>
@@ -535,6 +536,29 @@ export default function InvoiceDetailClient({
                     ))}
                   </tbody>
                 </table>
+                {/* Mobile stacked cards */}
+                <div className="md:hidden space-y-3">
+                  {invoice.items.map((item) => (
+                    <div key={item.id} className="border border-gray-100 dark:border-gray-700 rounded-lg p-3">
+                      <div className="font-semibold text-gray-900 dark:text-gray-100 mb-0.5">{item.item_name}</div>
+                      {item.description && <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">{item.description}</div>}
+                      <div className="grid grid-cols-3 gap-1 text-xs text-center">
+                        <div>
+                          <div className="text-gray-400 dark:text-gray-500 uppercase mb-0.5">Qty</div>
+                          <div className="font-medium text-gray-700 dark:text-gray-300">{item.quantity}</div>
+                        </div>
+                        <div>
+                          <div className="text-gray-400 dark:text-gray-500 uppercase mb-0.5">Harga</div>
+                          <div className="font-medium text-gray-700 dark:text-gray-300 tabular-nums">{formatCurrency(item.unit_price)}</div>
+                        </div>
+                        <div>
+                          <div className="text-gray-400 dark:text-gray-500 uppercase mb-0.5">Total</div>
+                          <div className="font-semibold text-gray-900 dark:text-gray-100 tabular-nums">{formatCurrency(item.total_price)}</div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
 
