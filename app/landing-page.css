@@ -152,8 +152,8 @@
 /* Mobile: scale dashboard to fit */
 @media (max-width: 640px) {
   .lp-dash {
-    width: 1080px;
-    max-width: none;
+    width: 1080px !important;
+    max-width: none !important;
     flex-shrink: 0;
     align-self: center;
     transform: scale(0.30);
@@ -161,4 +161,52 @@
     margin-bottom: -364px;
     border-radius: 12px 12px 0 0;
   }
+}
+
+/* ─── Responsive grid layouts ─── */
+.lp-bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.lp-testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.lp-pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  text-align: left;
+}
+
+/* ─── Mobile responsive (≤ 768px) ─── */
+@media (max-width: 768px) {
+  /* Navigation */
+  .lp-nav { padding: 14px 20px !important; }
+
+  /* Hero badge: shrink text on small screens */
+  .lp-hero-badge { font-size: 11px !important; padding: 5px 12px !important; }
+
+  /* Section padding */
+  .lp-section     { padding: 60px 20px !important; }
+  .lp-cta-section { padding: 72px 20px !important; }
+  .lp-logos-bar   { padding: 20px 20px !important; }
+  .lp-footer-wrap { padding: 40px 20px 24px !important; }
+
+  /* Grids stack to single column */
+  .lp-bento       { grid-template-columns: 1fr !important; }
+  .lp-bento > *   { grid-column: span 1 !important; }
+  .lp-testi-grid  { grid-template-columns: 1fr !important; }
+  .lp-pricing-grid { grid-template-columns: 1fr !important; }
+
+  /* Logos bar: tighter gap and font */
+  .lp-logos-cities { gap: 16px !important; }
+}
+
+/* Extra small screens (≤ 480px) */
+@media (max-width: 480px) {
+  /* Navbar CTA: compact button */
+  .lp-nav-cta { padding: 8px 14px !important; font-size: 13px !important; }
 }

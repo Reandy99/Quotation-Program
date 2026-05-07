@@ -24,6 +24,8 @@
     --badge-rose-bg: #FCCDD5;
     --badge-rose-icon: #8A2040;
 
+    --nav-bg: rgba(250,246,238,0.88);
+
     --background: 40 60% 97%;
     --foreground: 20 15% 10%;
     --primary: 35 95% 55%;
@@ -64,6 +66,8 @@
     --badge-amber-icon: #FDD068;
     --badge-rose-bg: #55192A;
     --badge-rose-icon: #F5A0B0;
+
+    --nav-bg: rgba(18,15,12,0.88);
 
     --background: 20 20% 7%;
     --foreground: 38 30% 95%;

@@ -130,11 +130,11 @@ export default function Home() {
     <div style={{ backgroundColor: 'var(--app-bg)', color: 'var(--text-primary)', fontFamily: "'Plus Jakarta Sans', sans-serif", overflowX: 'hidden' }}>
 
       {/* ── NAVBAR ── */}
-      <nav style={{
+      <nav className="lp-nav" style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         padding: '18px 48px',
-        background: 'rgba(18,15,12,0.85)',
+        background: 'var(--nav-bg)',
         backdropFilter: 'blur(20px)',
         borderBottom: '1px solid var(--border-color)',
       }}>
@@ -151,7 +151,7 @@ export default function Home() {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
           <LanguageToggle lang={lang} onLangChange={setLang} />
-          <Link href="/signup" style={{
+          <Link href="/signup" className="lp-nav-cta" style={{
             background: 'var(--text-primary)', color: 'var(--app-bg)',
             border: 'none', borderRadius: 24,
             padding: '10px 22px', fontSize: 14, fontWeight: 700, textDecoration: 'none',
@@ -172,7 +172,7 @@ export default function Home() {
         <div className="lp-blob2" />
 
         {/* Badge */}
-        <div style={{
+        <div className="lp-hero-badge" style={{
           position: 'relative', zIndex: 1,
           display: 'inline-flex', alignItems: 'center', gap: 8,
           background: 'rgba(212,168,75,0.1)', border: '1px solid rgba(212,168,75,0.25)',
@@ -332,7 +332,7 @@ export default function Home() {
       </section>
 
       {/* ── LOGOS BAR ── */}
-      <div style={{
+      <div className="lp-logos-bar" style={{
         background: 'var(--card-bg)',
         borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)',
         padding: '28px 48px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14,
@@ -340,7 +340,7 @@ export default function Home() {
         <div style={{ fontSize: 11, fontWeight: 600, color: 'var(--text-secondary)', letterSpacing: '.1em', textTransform: 'uppercase' }}>
           {tx.logosLabel}
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 40, flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div className="lp-logos-cities" style={{ display: 'flex', alignItems: 'center', gap: 40, flexWrap: 'wrap', justifyContent: 'center' }}>
           {['📷 Jakarta','🎬 Bandung','🖼️ Surabaya','✨ Bali','🎞️ Yogyakarta','🌟 Medan'].map(c => (
             <span key={c} style={{ fontSize: 13, fontWeight: 700, color: 'var(--text-secondary)', opacity: 0.7 }}>{c}</span>
           ))}
@@ -348,7 +348,7 @@ export default function Home() {
       </div>
 
       {/* ── FEATURES ── */}
-      <section style={{ background: 'var(--app-bg)', padding: '96px 48px' }}>
+      <section className="lp-section" style={{ background: 'var(--app-bg)', padding: '96px 48px' }}>
         <div style={{ maxWidth: 1160, margin: '0 auto' }}>
           <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.1em', textTransform: 'uppercase', color: AMBER, marginBottom: 12 }}>{tx.featLabel}</div>
           <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 700, letterSpacing: '-1px', lineHeight: 1.15, maxWidth: 540, marginBottom: 14 }}>{tx.featTitle}</h2>
@@ -381,7 +381,7 @@ export default function Home() {
       </section>
 
       {/* ── TESTIMONIALS ── */}
-      <section style={{ background: 'var(--card-bg)', padding: '96px 48px', borderTop: '1px solid var(--border-color)' }}>
+      <section className="lp-section" style={{ background: 'var(--card-bg)', padding: '96px 48px', borderTop: '1px solid var(--border-color)' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.1em', textTransform: 'uppercase', color: AMBER, marginBottom: 12 }}>{tx.testiLabel}</div>
           <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 700, letterSpacing: '-1px', lineHeight: 1.15, maxWidth: 540, marginBottom: 48 }}>{tx.testiTitle}</h2>
@@ -406,7 +406,7 @@ export default function Home() {
       </section>
 
       {/* ── PRICING ── */}
-      <section style={{ background: 'var(--app-bg)', padding: '96px 48px', borderTop: '1px solid var(--border-color)' }}>
+      <section className="lp-section" style={{ background: 'var(--app-bg)', padding: '96px 48px', borderTop: '1px solid var(--border-color)' }}>
         <div style={{ maxWidth: 860, margin: '0 auto', textAlign: 'center' }}>
           <div style={{ fontSize: 14, fontWeight: 600, letterSpacing: '.1em', textTransform: 'uppercase', color: AMBER, marginBottom: 12 }}>{tx.pricingLabel}</div>
           <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 700, letterSpacing: '-1px', lineHeight: 1.15, marginBottom: 14 }}>{tx.pricingTitle}</h2>
@@ -459,7 +459,7 @@ export default function Home() {
       </section>
 
       {/* ── FINAL CTA ── */}
-      <section style={{ background: 'var(--card-bg)', padding: '112px 48px', textAlign: 'center', position: 'relative', overflow: 'hidden', borderTop: '1px solid var(--border-color)' }}>
+      <section className="lp-cta-section" style={{ background: 'var(--card-bg)', padding: '112px 48px', textAlign: 'center', position: 'relative', overflow: 'hidden', borderTop: '1px solid var(--border-color)' }}>
         <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(212,168,75,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(212,168,75,0.04) 1px, transparent 1px)', backgroundSize: '48px 48px', pointerEvents: 'none' }} />
         <div style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 6, marginBottom: 22, background: 'rgba(170,219,106,0.1)', border: '1px solid rgba(170,219,106,0.25)', borderRadius: 99, padding: '5px 14px', fontSize: 12, fontWeight: 600, color: '#AADB6A' }}>
           {tx.ctaBadge}
@@ -477,7 +477,7 @@ export default function Home() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer style={{ background: 'var(--app-bg)', padding: '52px 48px 28px', borderTop: '1px solid var(--border-color)' }}>
+      <footer className="lp-footer-wrap" style={{ background: 'var(--app-bg)', padding: '52px 48px 28px', borderTop: '1px solid var(--border-color)' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 44, flexWrap: 'wrap', gap: 36 }}>
             <div style={{ maxWidth: 260 }}>
