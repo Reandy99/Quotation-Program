@@ -3,7 +3,16 @@
 import { createClient } from "@/lib/supabase/server"
 import { logAudit } from "@/lib/utils/audit"
 import { revalidatePath } from "next/cache"
-import type { Quotation, QuotationItem, QuotationStatus } from "@/types"
+import type { Quotation, QuotationItem, QuotationStatus, ServicePackage } from "@/types"
+import { generateQuotationItems, type AIQuotationItem } from "@/lib/ai/quotation-generator"
+
+export async function generateQuotationItemsWithAI(
+  brief: string,
+  packages: ServicePackage[]
+): Promise<AIQuotationItem[]> {
+  if (!brief.trim()) throw new Error("Brief tidak boleh kosong")
+  return generateQuotationItems(brief, packages)
+}
 
 export async function getQuotations(): Promise<Quotation[]> {
   try {
@@ -119,11 +128,23 @@ export async function createQuotation(
       user_id: user.id,
     }
 
-    const { data: quotationData, error: quotationError } = await supabase
+    let { data: quotationData, error: quotationError } = await supabase
       .from("quotations")
       .insert(cleanQuotation)
       .select()
       .single()
+
+    // Retry once if quote_number collides (race condition between concurrent submissions)
+    if (quotationError?.code === "23505" && quotationError.message.includes("quote_number")) {
+      const retryNumber = await generateQuoteNumber()
+      const retryResult = await supabase
+        .from("quotations")
+        .insert({ ...cleanQuotation, quote_number: retryNumber })
+        .select()
+        .single()
+      quotationData = retryResult.data
+      quotationError = retryResult.error
+    }
 
     if (quotationError) throw new Error(quotationError.message)
 
@@ -194,6 +215,12 @@ export async function updateQuotation(
 
     if (quotationError) throw new Error(quotationError.message)
 
+    // Fetch existing items before delete so we can restore on failure
+    const { data: oldItems } = await supabase
+      .from("quotation_items")
+      .select("*")
+      .eq("quotation_id", id)
+
     const { error: deleteError } = await supabase
       .from("quotation_items")
       .delete()
@@ -213,7 +240,13 @@ export async function updateQuotation(
         .from("quotation_items")
         .insert(itemsToInsert)
 
-      if (itemsError) throw new Error(itemsError.message)
+      if (itemsError) {
+        // Best-effort restore: re-insert old items to avoid leaving quotation itemless
+        if (oldItems?.length) {
+          await supabase.from("quotation_items").insert(oldItems).catch(() => {})
+        }
+        throw new Error(itemsError.message)
+      }
     }
 
     await logAudit("update", "quotation", id, {}).catch(err => {
@@ -299,6 +332,7 @@ export async function createInvoiceFromQuotation(quotationId: string): Promise<s
       : quotation.discount_value
     const afterDiscount = quotation.subtotal - discount
     const tax = afterDiscount * (quotation.tax_percent / 100)
+    const grand_total = afterDiscount + tax
 
     const { data: invoice, error } = await supabase
       .from("invoices")
@@ -313,7 +347,7 @@ export async function createInvoiceFromQuotation(quotationId: string): Promise<s
         subtotal: quotation.subtotal,
         discount,
         tax,
-        grand_total: quotation.grand_total,
+        grand_total,
         paid_amount: 0,
         status: "Draft",
         notes: quotation.notes,

@@ -14,7 +14,7 @@ import { PageHeader } from "@/components/shared/PageHeader"
 import { formatCurrency, formatDate } from "@/lib/utils/format"
 import { Printer, Plus, Send, X, Trash2, MessageCircle, Pencil, Link2, RefreshCw } from "lucide-react"
 import type { Invoice, Payment, PaymentMethod, InvoiceStatus, CompanySettings, QuotationItem } from "@/types"
-import { createPayment, updateInvoiceStatus, deletePayment, createMidtransTransaction, checkMidtransStatus } from "@/app/(app)/invoices/actions"
+import { createPayment, updateInvoiceStatus, deletePayment, createXenditPaymentLink, checkXenditStatus } from "@/app/(app)/invoices/actions"
 import { loadCompanySettings, SETTINGS_UPDATED_EVENT } from "@/lib/settings/storage"
 import { buildWhatsAppUrl } from "@/lib/utils/whatsapp"
 import { useToast } from "@/hooks/use-toast"
@@ -36,7 +36,7 @@ interface Props {
   initialPayments: Payment[]
   company: CompanySettings
   autoDownloadPdf?: boolean
-  midtransData: { orderId: string | null; paymentUrl: string | null }
+  paymentData: { orderId: string | null; paymentUrl: string | null }
 }
 
 type InvoiceWithRelations = Invoice & {
@@ -60,7 +60,7 @@ export default function InvoiceDetailClient({
   initialPayments,
   company: serverCompany,
   autoDownloadPdf = false,
-  midtransData,
+  paymentData,
 }: Props) {
   const [invoice, setInvoice] = useState(initialInvoice)
   const [payments, setPayments] = useState(initialPayments)
@@ -70,8 +70,8 @@ export default function InvoiceDetailClient({
   const [pdfFile, setPdfFile] = useState<File | null>(null)
   const [preparingPdf, setPreparingPdf] = useState(false)
   const [autoDownloaded, setAutoDownloaded] = useState(false)
-  const [paymentUrl, setPaymentUrl] = useState(midtransData?.paymentUrl ?? null)
-  const [midtransLoading, setMidtransLoading] = useState(false)
+  const [paymentUrl, setPaymentUrl] = useState(paymentData?.paymentUrl ?? null)
+  const [paymentLoading, setPaymentLoading] = useState(false)
   const company = { ...serverCompany, ...localSettings }
   const invoiceData = invoice as InvoiceWithRelations
   const lead = invoiceData.quotation?.lead
@@ -334,9 +334,9 @@ export default function InvoiceDetailClient({
   }
 
   async function handleCreatePaymentLink() {
-    setMidtransLoading(true)
+    setPaymentLoading(true)
     try {
-      const result = await createMidtransTransaction(invoice.id)
+      const result = await createXenditPaymentLink(invoice.id)
       setPaymentUrl(result.paymentUrl)
       const payLink = `${window.location.origin}/pay/${invoice.id}`
       await navigator.clipboard.writeText(payLink)
@@ -345,14 +345,14 @@ export default function InvoiceDetailClient({
       const message = err instanceof Error ? err.message : "Terjadi kesalahan"
       toast({ title: "Gagal", description: message, variant: "destructive" })
     } finally {
-      setMidtransLoading(false)
+      setPaymentLoading(false)
     }
   }
 
   async function handleCheckStatus() {
-    setMidtransLoading(true)
+    setPaymentLoading(true)
     try {
-      const result = await checkMidtransStatus(invoice.id)
+      const result = await checkXenditStatus(invoice.id)
       if (result.status === "paid") {
         setInvoice(prev => ({ ...prev, status: "Paid" as const, paid_amount: prev.grand_total }))
       }
@@ -364,7 +364,7 @@ export default function InvoiceDetailClient({
       const message = err instanceof Error ? err.message : "Terjadi kesalahan"
       toast({ title: "Gagal", description: message, variant: "destructive" })
     } finally {
-      setMidtransLoading(false)
+      setPaymentLoading(false)
     }
   }
 
@@ -414,21 +414,21 @@ export default function InvoiceDetailClient({
                       </button>
                       <button
                         onClick={handleCheckStatus}
-                        disabled={midtransLoading}
+                        disabled={paymentLoading}
                         className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 transition-colors disabled:opacity-50"
                       >
-                        <RefreshCw className={`w-3.5 h-3.5 ${midtransLoading ? "animate-spin" : ""}`} />
+                        <RefreshCw className={`w-3.5 h-3.5 ${paymentLoading ? "animate-spin" : ""}`} />
                         Cek Status
                       </button>
                     </>
                   ) : (
                     <button
                       onClick={handleCreatePaymentLink}
-                      disabled={midtransLoading}
+                      disabled={paymentLoading}
                       className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors disabled:opacity-50"
                     >
                       <Link2 className="w-3.5 h-3.5" />
-                      {midtransLoading ? "Memproses..." : "Buat Payment Link"}
+                      {paymentLoading ? "Memproses..." : "Buat Payment Link"}
                     </button>
                   )}
                 </div>

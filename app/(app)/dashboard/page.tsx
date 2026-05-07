@@ -76,7 +76,7 @@ export default async function DashboardPage() {
 
   const heroStats = [
     {
-      label: "Nilai Pipeline",
+      label: "Status Update",
       value: formatCurrency(stats.pipelineValue),
       sub: "Peluang aktif",
       icon: DollarSign,
@@ -337,7 +337,7 @@ export default async function DashboardPage() {
             <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: "#DDEFCB" }}>
               <BarChart3 className="w-4 h-4" style={{ color: "#2D5016" }} />
             </div>
-            <h2 className="text-base font-semibold" style={{ color: "var(--text-primary)" }}>Pipeline Sales</h2>
+            <h2 className="text-base font-semibold" style={{ color: "var(--text-primary)" }}>Status Update</h2>
           </div>
           <div className="space-y-4">
             {pipelineStages.map((stage, idx) => {

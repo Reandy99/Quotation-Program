@@ -13,7 +13,7 @@ export default async function AdminSubscriptionsPage() {
   if (!user) redirect("/login")
 
   const adminEmails = (process.env.ADMIN_EMAILS ?? "").split(",").map(e => e.trim()).filter(Boolean)
-  if (adminEmails.length > 0 && !adminEmails.includes(user.email ?? "")) {
+  if (!adminEmails.length || !adminEmails.includes(user.email ?? "")) {
     redirect("/dashboard")
   }
 

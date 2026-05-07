@@ -64,7 +64,7 @@ export async function adminUpdateSubscription(
   if (!user) throw new Error("Unauthorized")
 
   const adminEmails = (process.env.ADMIN_EMAILS ?? "").split(",").map(e => e.trim()).filter(Boolean)
-  if (adminEmails.length > 0 && !adminEmails.includes(user.email ?? "")) {
+  if (!adminEmails.length || !adminEmails.includes(user.email ?? "")) {
     throw new Error("Unauthorized")
   }
 

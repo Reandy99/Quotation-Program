@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Check, Zap } from "lucide-react"
+import { Check, X, Zap } from "lucide-react"
 import { getSubscription } from "@/lib/billing/actions"
 
 const plans = [
@@ -7,50 +7,47 @@ const plans = [
     id: "free_trial",
     name: "Free Trial",
     price: null,
-    priceLabel: "14 days free",
-    description: "Try everything, no credit card required.",
-    features: [
-      "All features for 14 days",
-      "Unlimited leads",
-      "Quotation builder + PDF export",
-      "Follow-up tracker",
-      "WhatsApp templates",
-    ],
-    cta: "Current Plan",
+    priceLabel: "Gratis",
+    priceSub: "14 hari",
+    description: "Coba fitur dasar tanpa kartu kredit.",
     highlight: false,
-  },
-  {
-    id: "studio",
-    name: "Studio",
-    price: 99000,
-    priceLabel: "Rp99.000",
-    description: "For solo photographers and videographers.",
     features: [
-      "All core features",
-      "Unlimited leads & quotations",
-      "PDF export",
-      "Follow-up tracker",
-      "Invoice management",
-      "Priority support",
+      { label: "Hingga 3 leads aktif", included: true },
+      { label: "Quotation builder", included: true },
+      { label: "Ekspor PDF (quotation)", included: true },
+      { label: "Follow-up tracker", included: true },
+      { label: "Template WhatsApp (dasar)", included: true },
+      { label: "Invoice management", included: false },
+      { label: "Manajemen klien", included: false },
+      { label: "Kalender & pengingat", included: false },
+      { label: "Laporan & analitik", included: false },
+      { label: "Branding perusahaan", included: false },
+      { label: "Dukungan prioritas", included: false },
     ],
-    cta: "Upgrade to Studio",
-    highlight: false,
+    cta: "Paket Saat Ini",
   },
   {
     id: "pro",
     name: "Pro",
-    price: 199000,
-    priceLabel: "Rp199.000",
-    description: "For growing studios and creative agencies.",
-    features: [
-      "Everything in Studio",
-      "Advanced reports & analytics",
-      "Multiple workspaces",
-      "API access",
-      "Dedicated support",
-    ],
-    cta: "Upgrade to Pro",
+    price: 49000,
+    priceLabel: "Rp49.000",
+    priceSub: "/bulan",
+    description: "Semua fitur lengkap untuk fotografer & videografer profesional.",
     highlight: true,
+    features: [
+      { label: "Leads & klien unlimited", included: true },
+      { label: "Quotation builder", included: true },
+      { label: "Ekspor PDF (quotation & invoice)", included: true },
+      { label: "Follow-up tracker", included: true },
+      { label: "Template WhatsApp", included: true },
+      { label: "Invoice management", included: true },
+      { label: "Manajemen klien", included: true },
+      { label: "Kalender & pengingat", included: true },
+      { label: "Laporan & analitik", included: true },
+      { label: "Branding perusahaan (logo & tanda tangan)", included: true },
+      { label: "Dukungan prioritas", included: true },
+    ],
+    cta: "Upgrade ke Pro",
   },
 ]
 
@@ -60,24 +57,24 @@ export default async function PricingPage() {
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: "var(--app-bg)" }}>
-      <div className="max-w-5xl mx-auto px-4 py-16">
+      <div className="max-w-3xl mx-auto px-4 py-16">
 
         {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-600 dark:text-blue-400 text-xs font-medium mb-4">
             <Zap className="w-3 h-3" />
-            Simple, transparent pricing
+            Harga sederhana, transparan
           </div>
           <h1 className="text-4xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
-            Choose your plan
+            Pilih paket kamu
           </h1>
           <p className="text-lg" style={{ color: "var(--text-secondary)" }}>
-            Start free for 14 days. No credit card required.
+            Mulai gratis 14 hari. Tidak perlu kartu kredit.
           </p>
         </div>
 
         {/* Plans */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {plans.map((plan) => {
             const isCurrent = currentPlanId === plan.id
             return (
@@ -96,11 +93,11 @@ export default async function PricingPage() {
               >
                 {plan.highlight && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-blue-500 rounded-full text-xs font-semibold text-white whitespace-nowrap">
-                    Most Popular
+                    Direkomendasikan
                   </div>
                 )}
 
-                <div className="mb-5">
+                <div className="mb-6">
                   <h2 className="text-lg font-semibold mb-1" style={{ color: "var(--text-primary)" }}>
                     {plan.name}
                   </h2>
@@ -111,19 +108,23 @@ export default async function PricingPage() {
                     <span className="text-3xl font-bold" style={{ color: "var(--text-primary)" }}>
                       {plan.priceLabel}
                     </span>
-                    {plan.price !== null && (
-                      <span className="text-sm" style={{ color: "var(--text-secondary)" }}>
-                        /bulan
-                      </span>
-                    )}
+                    <span className="text-sm" style={{ color: "var(--text-secondary)" }}>
+                      {plan.priceSub}
+                    </span>
                   </div>
                 </div>
 
                 <ul className="space-y-2.5 flex-1 mb-6">
                   {plan.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm" style={{ color: "var(--text-primary)" }}>
-                      <Check className="w-4 h-4 text-green-500 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                      {f}
+                    <li key={f.label} className="flex items-start gap-2 text-sm">
+                      {f.included ? (
+                        <Check className="w-4 h-4 text-green-500 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                      ) : (
+                        <X className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: "var(--text-secondary)" }} />
+                      )}
+                      <span style={{ color: f.included ? "var(--text-primary)" : "var(--text-secondary)" }}>
+                        {f.label}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -133,7 +134,7 @@ export default async function PricingPage() {
                     className="w-full py-2.5 rounded-xl text-center text-sm font-medium cursor-default"
                     style={{ backgroundColor: "var(--border-color)", color: "var(--text-secondary)" }}
                   >
-                    Current Plan
+                    Paket Saat Ini
                   </div>
                 ) : (
                   <Link
@@ -155,11 +156,11 @@ export default async function PricingPage() {
 
         {/* Footer note */}
         <div className="text-center text-sm" style={{ color: "var(--text-secondary)" }}>
-          <p>All plans include data export. Upgrade or cancel anytime.</p>
+          <p>Semua paket termasuk ekspor data. Upgrade atau batalkan kapan saja.</p>
           <p className="mt-1">
-            Questions?{" "}
+            Ada pertanyaan?{" "}
             <a href="mailto:hello@quoteflow.id" className="text-blue-500 dark:text-blue-400 hover:underline">
-              Contact us
+              Hubungi kami
             </a>
           </p>
         </div>

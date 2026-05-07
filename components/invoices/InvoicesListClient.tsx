@@ -137,7 +137,39 @@ export default function InvoicesListClient({ invoices: initial }: { invoices: In
         </div>
       )}
 
-      <div className="rounded-[28px] shadow-sm overflow-hidden" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
+      {/* Mobile cards */}
+      <div className="md:hidden space-y-3">
+        {filtered.length === 0 ? (
+          <div className="py-10 text-center text-sm" style={{ color: "var(--text-secondary)" }}>
+            No invoices match your search.
+          </div>
+        ) : filtered.map(inv => (
+          <Link href={`/invoices/${inv.id}`} key={inv.id} className="block rounded-2xl p-4 border transition-all active:scale-[0.98]" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)" }}>
+            <div className="flex items-start justify-between gap-2 mb-2">
+              <span className="text-xs font-mono" style={{ color: "var(--text-secondary)" }}>{inv.invoice_number}</span>
+              <Badge className={STATUS_CLASSES[inv.status]}>{inv.status}</Badge>
+            </div>
+            <p className="text-sm font-semibold mb-0.5 truncate" style={{ color: "var(--text-primary)" }}>{inv.project_title}</p>
+            <p className="text-xs mb-3 truncate" style={{ color: "var(--text-secondary)" }}>{inv.client_name}</p>
+            <div className="flex items-center justify-between">
+              <div>
+                <span className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{formatCurrency(inv.grand_total)}</span>
+                {inv.paid_amount > 0 && (
+                  <span className="ml-2 text-xs" style={{ color: "var(--text-secondary)" }}>Paid: {formatCurrency(inv.paid_amount)}</span>
+                )}
+              </div>
+              <span className="text-xs" style={{ color: "var(--text-secondary)" }}>Due {formatDateShort(inv.due_date)}</span>
+            </div>
+          </Link>
+        ))}
+        <p className="text-xs text-center py-2" style={{ color: "var(--text-secondary)" }}>
+          {filtered.length} invoice{filtered.length !== 1 ? "s" : ""}
+          {(search || statusFilter !== "All") ? ` (filtered from ${invoices.length})` : ""}
+        </p>
+      </div>
+
+      {/* Desktop table */}
+      <div className="hidden md:block rounded-[28px] shadow-sm overflow-hidden" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
         <div className="overflow-x-auto">
         <div className="min-w-[980px]">
         <div className="grid grid-cols-[32px_160px_minmax(260px,1fr)_150px_110px_140px_120px_40px] gap-4 px-5 py-3 border-b text-xs font-semibold uppercase tracking-wider items-center" style={{ backgroundColor: "var(--app-bg)", borderColor: "var(--border-color)", color: "var(--text-secondary)" }}>

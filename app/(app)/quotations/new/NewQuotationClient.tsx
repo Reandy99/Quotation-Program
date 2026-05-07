@@ -7,7 +7,7 @@ import { QuotationForm } from "@/components/quotations/QuotationForm"
 import { PageHeader } from "@/components/shared/PageHeader"
 import { Button } from "@/components/ui/button"
 import type { QuotationFormData } from "@/lib/validations/quotation"
-import type { Lead } from "@/types"
+import type { Lead, ServicePackage } from "@/types"
 import { getTemplateById } from "@/lib/quotation-templates"
 import { useLiveCompanySettings } from "@/lib/settings/useLiveSettings"
 import { useToast } from "@/hooks/use-toast"
@@ -15,11 +15,12 @@ import { createQuotation, generateQuoteNumber } from "@/app/(app)/quotations/act
 
 interface Props {
   leads: Lead[]
+  servicePackages?: ServicePackage[]
   defaultLeadId?: string
   templateId?: string
 }
 
-export default function NewQuotationClient({ leads, defaultLeadId, templateId }: Props) {
+export default function NewQuotationClient({ leads, servicePackages = [], defaultLeadId, templateId }: Props) {
   const router = useRouter()
   const { toast } = useToast()
   const company = useLiveCompanySettings()
@@ -108,6 +109,7 @@ export default function NewQuotationClient({ leads, defaultLeadId, templateId }:
       />
       <QuotationForm
         leads={leads}
+        servicePackages={servicePackages}
         defaultValues={defaultValues}
         onSubmit={handleSubmit}
         loading={loading}

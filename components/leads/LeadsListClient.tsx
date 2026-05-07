@@ -243,8 +243,38 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
         </div>
       )}
 
-      {/* Table */}
-      <div className="rounded-[28px] shadow-sm overflow-hidden" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
+      {/* Mobile cards */}
+      <div className="md:hidden space-y-3">
+        {filtered.length === 0 ? (
+          <div className="py-10 text-center text-sm" style={{ color: "var(--text-secondary)" }}>
+            No leads match your search.
+          </div>
+        ) : filtered.map(lead => (
+          <Link href={`/leads/${lead.id}`} key={lead.id} className="block rounded-2xl p-4 border transition-all active:scale-[0.98]" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)" }}>
+            <div className="flex items-start justify-between gap-2 mb-2">
+              <LeadStatusBadge status={lead.status} />
+              <span className="text-xs" style={{ color: "var(--text-secondary)" }}>{formatDateShort(lead.created_at)}</span>
+            </div>
+            <p className="text-sm font-semibold mb-0.5" style={{ color: "var(--text-primary)" }}>
+              {lead.client_name}
+              {lead.company_name && <span className="font-normal text-xs ml-1" style={{ color: "var(--text-secondary)" }}>· {lead.company_name}</span>}
+            </p>
+            <p className="text-xs mb-3 truncate" style={{ color: "var(--text-secondary)" }}>
+              {[lead.project_type, lead.event_date && `Event: ${formatDateShort(lead.event_date)}`].filter(Boolean).join(" · ") || "—"}
+            </p>
+            {lead.estimated_budget ? (
+              <p className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{formatCurrency(lead.estimated_budget)}</p>
+            ) : null}
+          </Link>
+        ))}
+        <p className="text-xs text-center py-2" style={{ color: "var(--text-secondary)" }}>
+          {filtered.length} lead{filtered.length !== 1 ? "s" : ""}
+          {(search || statusFilter !== "All") ? ` (filtered from ${leads.length})` : ""}
+        </p>
+      </div>
+
+      {/* Desktop table */}
+      <div className="hidden md:block rounded-[28px] shadow-sm overflow-hidden" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
         <div className="overflow-x-auto">
         <div className="min-w-[760px]">
         <div className="grid grid-cols-[32px_minmax(240px,1fr)_170px_140px_140px_40px] gap-4 px-5 py-3 border-b text-xs font-semibold uppercase tracking-wider items-center" style={{ backgroundColor: "var(--app-bg)", borderColor: "var(--border-color)", color: "var(--text-secondary)" }}>
@@ -336,12 +366,12 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
 
       {/* Kanban View */}
       {viewMode === "kanban" && (
-        <div className="overflow-x-auto pb-2">
-        <div className="grid gap-4" style={{ gridTemplateColumns: "repeat(6, minmax(180px, 1fr))" }}>
+        <div className="pb-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3 md:gap-4">
           {KANBAN_COLUMNS.map(status => {
             const columnLeads = kanbanGroups[status]
             return (
-              <div key={status} className="flex flex-col min-h-[400px]">
+              <div key={status} className="flex flex-col min-h-[200px] md:min-h-[400px]">
                 <div className="flex items-center justify-between mb-3 px-3 py-2 rounded-2xl" style={{ backgroundColor: "var(--app-bg)", border: "1px solid var(--border-color)" }}>
                   <h3 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{status}</h3>
                   <span className="text-xs px-2 py-0.5 rounded-full" style={{ backgroundColor: "var(--card-bg)", color: "var(--text-secondary)" }}>

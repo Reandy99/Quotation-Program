@@ -227,8 +227,39 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
         </div>
       )}
 
-      {/* Table */}
-      <div className="rounded-[28px] shadow-sm overflow-hidden" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
+      {/* Mobile cards */}
+      <div className="md:hidden space-y-3">
+        {filtered.length === 0 ? (
+          <p className="py-8 text-sm text-center" style={{ color: "var(--text-secondary)" }}>
+            No quotations match your search.
+          </p>
+        ) : filtered.map(q => (
+          <Link href={`/quotations/${q.id}`} key={q.id} className="block rounded-2xl p-4 border transition-all active:scale-[0.98]" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)" }}>
+            <div className="flex items-start justify-between gap-2 mb-2">
+              <span className="text-xs font-mono" style={{ color: "var(--text-secondary)" }}>{q.quote_number}</span>
+              <span className="text-xs px-2 py-0.5 rounded-full font-medium text-white" style={{
+                backgroundColor:
+                  q.status === "Accepted" ? "#3f6212" :
+                  q.status === "Rejected" ? "#7f1d1d" :
+                  q.status === "Sent" ? "#1d4ed8" : "#374151",
+              }}>{q.status}</span>
+            </div>
+            <p className="text-sm font-semibold mb-0.5 truncate" style={{ color: "var(--text-primary)" }}>{q.project_title}</p>
+            {q.lead && <p className="text-xs mb-3 truncate" style={{ color: "var(--text-secondary)" }}>{q.lead.client_name}</p>}
+            <div className="flex items-center justify-between">
+              <span className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{formatCurrency(q.grand_total)}</span>
+              <span className="text-xs" style={{ color: "var(--text-secondary)" }}>Valid until {q.valid_until ? formatDateShort(q.valid_until) : "—"}</span>
+            </div>
+          </Link>
+        ))}
+        <p className="text-xs text-center py-2" style={{ color: "var(--text-secondary)" }}>
+          {filtered.length} quotation{filtered.length !== 1 ? "s" : ""}
+          {(search || statusFilter !== "All") ? ` (filtered from ${quotations.length})` : ""}
+        </p>
+      </div>
+
+      {/* Desktop table */}
+      <div className="hidden md:block rounded-[28px] shadow-sm overflow-hidden" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
         <div className="overflow-x-auto">
         <div className="min-w-[760px]">
         <div className="grid grid-cols-[32px_150px_minmax(220px,1fr)_150px_140px_120px_40px] gap-4 px-5 py-3 border-b text-xs font-semibold uppercase tracking-wider items-center" style={{ backgroundColor: "var(--app-bg)", borderColor: "var(--border-color)", color: "var(--text-secondary)" }}>

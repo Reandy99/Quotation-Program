@@ -12,7 +12,10 @@ export async function getClients(): Promise<Client[]> {
     .select("*")
     .order("created_at", { ascending: false })
 
-  if (error) throw new Error(error.message)
+  if (error) {
+    console.error("Error fetching clients:", error)
+    return []
+  }
   return data || []
 }
 
@@ -34,7 +37,9 @@ export async function createClient(client: Omit<Client, "id" | "user_id" | "crea
 
   if (error) throw new Error(error.message)
 
-  await logAudit("create", "client", data.id, { name: client.name })
+  await logAudit("create", "client", data.id, { name: client.name }).catch(err => {
+    console.error("Audit log failed:", err)
+  })
   revalidatePath("/clients")
   return data
 }

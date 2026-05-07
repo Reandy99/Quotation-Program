@@ -31,7 +31,7 @@ const t = {
       { title: "Penawaran Profesional", desc: "Buat penawaran PDF yang indah dengan item, diskon, perhitungan pajak, dan nomor penawaran otomatis." },
       { title: "Manajemen Invoice", desc: "Lacak pembayaran, pembayaran parsial, dan invoice terlambat. Konversi penawaran ke invoice secara instan." },
       { title: "Follow-up Cerdas", desc: "Pengingat otomatis untuk follow-up yang terlambat. Template pesan WhatsApp untuk menutup deal lebih cepat." },
-      { title: "Analitik Dashboard", desc: "Nilai pipeline, tingkat konversi, sesi foto mendatang, dan pelacakan pendapatan sekilas pandang." },
+      { title: "Analitik Dashboard", desc: "Status update lead, tingkat konversi, sesi foto mendatang, dan pelacakan pendapatan sekilas pandang." },
       { title: "Penjadwalan Multi-Platform", desc: "Jadwalkan postingan ke Instagram, LinkedIn, dan Threads via integrasi Repliz. Kelola kehadiran sosialmu." },
     ],
     workflow: [
@@ -68,7 +68,7 @@ const t = {
       { title: "Professional Quotations", desc: "Create beautiful PDF quotes with line items, discounts, tax calculation, and auto-generated quote numbers." },
       { title: "Invoice Management", desc: "Track payments, partial payments, and overdue invoices. Convert quotations to invoices instantly." },
       { title: "Smart Follow-ups", desc: "Automated reminders for overdue follow-ups. WhatsApp message templates to close deals faster." },
-      { title: "Dashboard Analytics", desc: "Pipeline value, conversion rates, upcoming shoots, and revenue tracking at a glance." },
+      { title: "Dashboard Analytics", desc: "Status updates, conversion rates, upcoming shoots, and revenue tracking at a glance." },
       { title: "Multi-Platform Scheduling", desc: "Schedule posts to Instagram, LinkedIn, and Threads via Repliz integration. Manage your social presence." },
     ],
     workflow: [
@@ -95,20 +95,18 @@ export default function Home() {
     <div className="min-h-screen" style={{ backgroundColor: "var(--app-bg)" }}>
       {/* Nav */}
       <header className="sticky top-0 z-50 backdrop-blur-xl border-b" style={{ borderColor: "var(--border-color)", backgroundColor: "var(--app-bg)" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 sm:py-0 sm:h-16 flex items-center justify-between gap-3">
-          <div className="flex min-w-0 items-center gap-2 sm:gap-2.5">
-            <div className="h-9 w-9 sm:h-8 sm:w-8 shrink-0 rounded-xl flex items-center justify-center bg-gradient-to-br from-amber-500 to-rose-400">
-              <Zap className="h-4.5 w-4.5 sm:h-4 sm:w-4 text-white" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between gap-2">
+          <div className="flex min-w-0 items-center gap-2">
+            <div className="h-8 w-8 shrink-0 rounded-xl flex items-center justify-center bg-gradient-to-br from-amber-500 to-rose-400">
+              <Zap className="h-4 w-4 text-white" />
             </div>
-            <span className="min-w-0 text-lg sm:text-base font-bold leading-tight tracking-tight" style={{ color: "var(--text-primary)" }}>
-              <span className="block sm:inline">QuoteFlow</span>
-              <span className="hidden sm:inline"> </span>
-              <span className="block sm:inline">Creative</span>
+            <span className="font-bold text-sm sm:text-base leading-tight tracking-tight truncate" style={{ color: "var(--text-primary)" }}>
+              QuoteFlow<span className="hidden sm:inline"> Creative</span>
             </span>
           </div>
-          <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+          <div className="flex shrink-0 items-center gap-2">
             <LanguageToggle lang={lang} onLangChange={setLang} />
-            <Link href="/signup" className="inline-flex items-center justify-center whitespace-nowrap rounded-xl sm:rounded-lg px-3.5 py-2.5 sm:px-5 sm:py-2 text-sm font-medium transition-all hover:opacity-90 text-white" style={{ backgroundColor: "var(--btn-dark)" }}>
+            <Link href="/signup" className="inline-flex items-center justify-center whitespace-nowrap rounded-xl px-3 py-2 sm:px-5 sm:py-2 text-xs sm:text-sm font-medium transition-all hover:opacity-90 text-white" style={{ backgroundColor: "var(--btn-dark)" }}>
               {tx.getStarted}
             </Link>
           </div>

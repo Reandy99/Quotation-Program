@@ -10,12 +10,16 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select } from "@/components/ui/select"
 import { Card, CardContent } from "@/components/ui/card"
 import { formatCurrency } from "@/lib/utils/format"
-import { Plus, Trash2 } from "lucide-react"
-import type { Lead } from "@/types"
+import { Plus, Trash2, Sparkles, Loader2 } from "lucide-react"
+import type { Lead, ServicePackage } from "@/types"
+import { useState } from "react"
+import { generateQuotationItemsWithAI } from "@/app/(app)/quotations/actions"
+import { toast } from "@/hooks/use-toast"
 
 interface QuotationFormProps {
   defaultValues?: Record<string, any>
   leads: Lead[]
+  servicePackages?: ServicePackage[]
   onSubmit: (data: QuotationFormData) => Promise<void>
   loading?: boolean
 }
@@ -135,7 +139,10 @@ function LineItemRow({ index, register, remove, control }: { index: number; regi
   )
 }
 
-export function QuotationForm({ defaultValues, leads, onSubmit, loading }: QuotationFormProps) {
+export function QuotationForm({ defaultValues, leads, servicePackages = [], onSubmit, loading }: QuotationFormProps) {
+  const [aiBrief, setAiBrief] = useState("")
+  const [aiLoading, setAiLoading] = useState(false)
+
   const { register, handleSubmit, control, formState: { errors } } = useForm<QuotationFormData>({
     resolver: zodResolver(quotationSchema) as Resolver<QuotationFormData>,
     defaultValues: {
@@ -148,7 +155,28 @@ export function QuotationForm({ defaultValues, leads, onSubmit, loading }: Quota
     },
   })
 
-  const { fields, append, remove } = useFieldArray({ control, name: "items" })
+  const { fields, append, remove, replace } = useFieldArray({ control, name: "items" })
+
+  async function handleAIGenerate() {
+    if (!aiBrief.trim()) return
+    setAiLoading(true)
+    try {
+      const items = await generateQuotationItemsWithAI(aiBrief, servicePackages)
+      replace(items.map((item, idx) => ({
+        item_name: item.item_name,
+        description: item.description,
+        quantity: item.quantity,
+        unit_price: item.unit_price,
+        total_price: item.quantity * item.unit_price,
+        sort_order: idx,
+      })))
+      toast({ variant: "success", title: "Item berhasil digenerate", description: `${items.length} item ditambahkan dari AI` })
+    } catch (err: any) {
+      toast({ variant: "destructive", title: "Gagal generate", description: err.message })
+    } finally {
+      setAiLoading(false)
+    }
+  }
 
   const onFormSubmit: SubmitHandler<QuotationFormData> = async (data) => {
     const processedData = {
@@ -232,6 +260,35 @@ export function QuotationForm({ defaultValues, leads, onSubmit, loading }: Quota
                 onClick={() => append({ item_name: "", description: "", quantity: 1, unit_price: 0, total_price: 0, sort_order: fields.length })}
               >
                 <Plus className="w-4 h-4 mr-1.5" />Add Item
+              </Button>
+            </div>
+
+            {/* AI Generator */}
+            <div className="rounded-xl border border-dashed border-indigo-300 dark:border-indigo-700 bg-indigo-50/50 dark:bg-indigo-950/20 p-4 space-y-3">
+              <div className="flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-indigo-500" />
+                <span className="text-sm font-medium text-indigo-700 dark:text-indigo-300">Generate Item dengan AI</span>
+                <span className="text-xs text-indigo-400 dark:text-indigo-500">(akan mengganti item yang ada)</span>
+              </div>
+              <Textarea
+                value={aiBrief}
+                onChange={e => setAiBrief(e.target.value)}
+                placeholder='Contoh: "Wedding photography 2 hari di Bali, budget 15 juta, include pre-wedding dan akad"'
+                rows={2}
+                className="text-sm resize-none bg-white dark:bg-slate-800"
+              />
+              <Button
+                type="button"
+                size="sm"
+                onClick={handleAIGenerate}
+                disabled={aiLoading || !aiBrief.trim()}
+                className="bg-indigo-600 hover:bg-indigo-700 text-white"
+              >
+                {aiLoading ? (
+                  <><Loader2 className="w-3.5 h-3.5 mr-1.5 animate-spin" />Generating...</>
+                ) : (
+                  <><Sparkles className="w-3.5 h-3.5 mr-1.5" />Generate Item</>
+                )}
               </Button>
             </div>
             <div className="space-y-3">

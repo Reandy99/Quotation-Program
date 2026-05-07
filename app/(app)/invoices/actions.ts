@@ -4,7 +4,7 @@ import { createClient } from "@/lib/supabase/server"
 import { logAudit } from "@/lib/utils/audit"
 import { revalidatePath } from "next/cache"
 import type { Invoice, InvoiceStatus, Payment, PaymentMethod } from "@/types"
-import { createSnapTransaction, checkTransactionStatus } from "@/lib/midtrans/client"
+import { createXenditInvoice, getXenditInvoice } from "@/lib/xendit/client"
 
 export async function getInvoices(): Promise<Invoice[]> {
   try {
@@ -247,31 +247,31 @@ export async function deletePayment(id: string, invoiceId: string): Promise<void
   revalidatePath("/dashboard")
 }
 
-export async function getInvoiceMidtransData(
+export async function getInvoicePaymentData(
   invoiceId: string
 ): Promise<{ orderId: string | null; paymentUrl: string | null }> {
   const supabase = createClient()
   const { data, error } = await supabase
     .from("invoices")
-    .select("midtrans_order_id, payment_url")
+    .select("payment_order_id, payment_url")
     .eq("id", invoiceId)
     .single()
   if (error) return { orderId: null, paymentUrl: null }
-  const row = data as { midtrans_order_id: string | null; payment_url: string | null } | null
+  const row = data as { payment_order_id: string | null; payment_url: string | null } | null
   return {
-    orderId: row?.midtrans_order_id ?? null,
+    orderId: row?.payment_order_id ?? null,
     paymentUrl: row?.payment_url ?? null,
   }
 }
 
-export async function createMidtransTransaction(
+export async function createXenditPaymentLink(
   invoiceId: string
 ): Promise<{ paymentUrl: string }> {
   const supabase = createClient()
   const { data: { user }, error: authError } = await supabase.auth.getUser()
   if (authError || !user) throw new Error("Authentication required.")
 
-  const existing = await getInvoiceMidtransData(invoiceId)
+  const existing = await getInvoicePaymentData(invoiceId)
   if (existing.paymentUrl) return { paymentUrl: existing.paymentUrl }
 
   const invoice = await getInvoice(invoiceId)
@@ -279,63 +279,56 @@ export async function createMidtransTransaction(
   if (invoice.status === "Paid") throw new Error("Invoice sudah lunas.")
 
   const remaining = invoice.grand_total - invoice.paid_amount
-  const orderId = `QF-${invoiceId.slice(0, 8)}-${Date.now()}`
+  const externalId = `QF-${invoiceId.slice(0, 8)}-${Date.now()}`
 
-  const { redirectUrl } = await createSnapTransaction({
-    orderId,
-    grossAmount: remaining,
-    customerName: invoice.client_name,
-    itemName: invoice.project_title,
+  const xenditInvoice = await createXenditInvoice({
+    externalId,
+    amount: remaining,
+    payerEmail: null,
+    description: invoice.project_title,
   })
 
   const { error: updateError } = await supabase
     .from("invoices")
-    .update({ midtrans_order_id: orderId, payment_url: redirectUrl } as Record<string, unknown>)
+    .update({ payment_order_id: xenditInvoice.id, payment_url: xenditInvoice.invoice_url } as Record<string, unknown>)
     .eq("id", invoiceId)
     .eq("user_id", user.id)
   if (updateError) throw new Error(`Gagal menyimpan payment link: ${updateError.message}`)
 
   revalidatePath(`/invoices/${invoiceId}`)
-  return { paymentUrl: redirectUrl }
+  return { paymentUrl: xenditInvoice.invoice_url }
 }
 
-export async function checkMidtransStatus(
+export async function checkXenditStatus(
   invoiceId: string
 ): Promise<{ status: string; message: string }> {
   const supabase = createClient()
   const { data: { user }, error: authError } = await supabase.auth.getUser()
   if (authError || !user) throw new Error("Authentication required.")
 
-  const { orderId } = await getInvoiceMidtransData(invoiceId)
-  if (!orderId) return { status: "no_transaction", message: "Belum ada transaksi Midtrans." }
+  const { orderId } = await getInvoicePaymentData(invoiceId)
+  if (!orderId) return { status: "no_transaction", message: "Belum ada payment link." }
 
-  const { transactionStatus, paymentType } = await checkTransactionStatus(orderId)
+  const xenditInvoice = await getXenditInvoice(orderId)
 
-  if (transactionStatus === "settlement" || transactionStatus === "capture") {
+  if (xenditInvoice.status === "PAID" || xenditInvoice.status === "SETTLED") {
     const invoice = await getInvoice(invoiceId)
     if (invoice && invoice.status !== "Paid") {
+      const paidAmount = xenditInvoice.paid_amount ?? (invoice.grand_total - invoice.paid_amount)
       await updateInvoiceStatus(invoiceId, "Paid")
-      const methodMap: Record<string, PaymentMethod> = {
-        bank_transfer: "Transfer",
-        qris: "QRIS",
-        gopay: "QRIS",
-        shopeepay: "QRIS",
-        credit_card: "Transfer",
-      }
-      const method: PaymentMethod = methodMap[paymentType] ?? "Transfer"
       await createPayment(invoiceId, {
-        amount: invoice.grand_total - invoice.paid_amount,
-        method,
+        amount: paidAmount,
+        method: "Transfer",
         date: new Date().toISOString().split("T")[0],
-        notes: `Dibayar via Midtrans (${paymentType})`,
+        notes: "Dibayar via Xendit",
       })
     }
     return { status: "paid", message: "Pembayaran berhasil dikonfirmasi." }
   }
 
-  if (transactionStatus === "pending") {
+  if (xenditInvoice.status === "PENDING") {
     return { status: "pending", message: "Menunggu pembayaran dari klien." }
   }
 
-  return { status: transactionStatus, message: `Status Midtrans: ${transactionStatus}` }
+  return { status: xenditInvoice.status, message: `Status: ${xenditInvoice.status}` }
 }

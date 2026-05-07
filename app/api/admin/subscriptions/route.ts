@@ -1,10 +1,22 @@
-import { createAdminClient } from "@/lib/supabase/server"
+import { createAdminClient, createClient } from "@/lib/supabase/server"
 import { NextResponse } from "next/server"
 
 export const dynamic = "force-dynamic"
 
 export async function GET() {
   try {
+    // Verify caller is an authenticated admin
+    const supabaseUser = createClient()
+    const { data: { user }, error: authError } = await supabaseUser.auth.getUser()
+    if (authError || !user) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
+    }
+
+    const adminEmails = (process.env.ADMIN_EMAILS ?? "").split(",").map(e => e.trim()).filter(Boolean)
+    if (!adminEmails.length || !adminEmails.includes(user.email ?? "")) {
+      return NextResponse.json({ error: "Forbidden" }, { status: 403 })
+    }
+
     // Check if service role key exists
     const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
     if (!serviceRoleKey) {
