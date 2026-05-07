@@ -87,7 +87,7 @@ export default async function PublicPaymentPage({ params }: Props) {
         </div>
 
         <div className="px-6 pb-4 text-center">
-          <p className="text-xs text-gray-400">Pembayaran diproses aman via Midtrans</p>
+          <p className="text-xs text-gray-400">Pembayaran diproses aman via Xendit</p>
         </div>
       </div>
     </div>

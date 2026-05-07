@@ -180,3 +180,37 @@ export async function getWAReminderData(): Promise<{
     return { sessionReminders: [], invoiceReminders: [] }
   }
 }
+
+// Auto-create free_trial subscription jika user belum punya (untuk user lama yang daftar sebelum trigger dibuat)
+export async function ensureSubscription(): Promise<void> {
+  try {
+    const supabase = createClient()
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) return
+
+    const { data: existing } = await supabase
+      .from("subscriptions")
+      .select("id")
+      .eq("user_id", user.id)
+      .single()
+
+    if (existing) return
+
+    const { data: plan } = await supabase
+      .from("plans")
+      .select("id")
+      .eq("slug", "free_trial")
+      .single()
+
+    if (!plan) return
+
+    await supabase.from("subscriptions").insert({
+      user_id: user.id,
+      plan_id: plan.id,
+      status: "trialing",
+      trial_ends_at: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString(),
+    })
+  } catch {
+    // Gagal diam-diam — tidak blokir load dashboard
+  }
+}

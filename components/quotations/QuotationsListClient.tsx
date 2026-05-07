@@ -2,12 +2,13 @@
 
 import { useState, useRef, useEffect, useTransition } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { formatCurrency, formatDateShort } from "@/lib/utils/format"
-import { Search, Copy, ChevronDown, MoreHorizontal, Trash2 } from "lucide-react"
+import { Search, Copy, ChevronDown, MoreHorizontal, Trash2, FileText } from "lucide-react"
 import { toast } from "@/hooks/use-toast"
-import { deleteQuotations, updateQuotationStatus } from "@/app/(app)/quotations/actions"
+import { deleteQuotations, updateQuotationStatus, createInvoiceFromQuotation } from "@/app/(app)/quotations/actions"
 import type { Quotation, QuotationItem, QuotationStatus } from "@/types"
 
 type QuotationWithItems = Quotation & { items: QuotationItem[] }
@@ -23,6 +24,7 @@ function makeId() {
 }
 
 export default function QuotationsListClient({ quotations: initial }: Props) {
+  const router = useRouter()
   const [quotations, setQuotations] = useState(initial)
   const [search, setSearch] = useState("")
   const [statusFilter, setStatusFilter] = useState<QuotationStatus | "All">("All")
@@ -30,6 +32,7 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
   const [bulkStatusOpen, setBulkStatusOpen] = useState(false)
   const [confirmDelete, setConfirmDelete] = useState(false)
   const [openMenu, setOpenMenu] = useState<string | null>(null)
+  const [convertingId, setConvertingId] = useState<string | null>(null)
   const [isPending, startTransition] = useTransition()
   const menuRef = useRef<HTMLDivElement>(null)
 
@@ -121,6 +124,20 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
         })
       }
     })
+  }
+
+  async function handleConvertToInvoice(q: QuotationWithItems) {
+    if (!confirm(`Konversi ${q.quote_number} menjadi invoice?`)) return
+    setConvertingId(q.id)
+    try {
+      const invoiceId = await createInvoiceFromQuotation(q.id)
+      toast({ variant: "success", title: "Invoice berhasil dibuat", description: `Invoice dibuat dari ${q.quote_number}` })
+      router.push(`/invoices/${invoiceId}`)
+    } catch (error: any) {
+      toast({ variant: "destructive", title: "Gagal membuat invoice", description: error.message || "Terjadi kesalahan." })
+    } finally {
+      setConvertingId(null)
+    }
   }
 
   function handleSingleStatusChange(id: string, status: QuotationStatus) {
@@ -352,7 +369,7 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
                     <MoreHorizontal className="w-4 h-4" style={{ color: "var(--text-secondary)" }} />
                   </button>
                   {openMenu === q.id && (
-                    <div className="absolute right-0 top-full mt-1 z-20 rounded-xl shadow-lg py-1 min-w-[120px]" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
+                    <div className="absolute right-0 top-full mt-1 z-20 rounded-xl shadow-lg py-1 min-w-[170px]" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
                       <Link
                         href={`/quotations/${q.id}/edit`}
                         className="flex items-center gap-2 px-3 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
@@ -361,6 +378,17 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
                       >
                         Edit
                       </Link>
+                      {q.status === "Accepted" && (
+                        <button
+                          onClick={() => { setOpenMenu(null); handleConvertToInvoice(q) }}
+                          disabled={convertingId === q.id}
+                          className="w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/5 transition-colors disabled:opacity-50"
+                          style={{ color: "var(--text-primary)" }}
+                        >
+                          <FileText className="w-3.5 h-3.5" />
+                          {convertingId === q.id ? "Membuat..." : "Buat Invoice"}
+                        </button>
+                      )}
                     </div>
                   )}
                 </div>

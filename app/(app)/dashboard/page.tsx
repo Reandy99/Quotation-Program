@@ -4,7 +4,7 @@ import { formatCurrency, formatDateShort } from "@/lib/utils/format"
 import { Users, FileText, DollarSign, Trophy, Bell, ArrowRight, Plus, TrendingUp, Calendar, AlertCircle, BarChart3, Clock, MapPin, MessageCircle } from "lucide-react"
 import Link from "next/link"
 import DashboardHeader from "./DashboardHeader"
-import { getDashboardStats, getRecentActivity, getWAReminderData } from "./actions"
+import { getDashboardStats, getRecentActivity, getWAReminderData, ensureSubscription } from "./actions"
 import type { SessionReminder, InvoiceReminder } from "./actions"
 import { getLeads } from "../leads/actions"
 import { getInvoices } from "../invoices/actions"
@@ -33,6 +33,9 @@ const INVOICE_STATUS_CLASSES: Record<Invoice["status"], string> = {
 export const dynamic = "force-dynamic"
 
 export default async function DashboardPage() {
+  // Pastikan user punya subscription — auto-create free_trial jika belum ada
+  await ensureSubscription()
+
   const [stats, { recentLeads, recentQuotations, recentInvoices }, allLeads, allInvoices, generalSettings, followUps, waReminders, companySettings] = await Promise.all([
     getDashboardStats(),
     getRecentActivity(),

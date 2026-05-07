@@ -2,12 +2,14 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Zap } from "lucide-react"
+import { Zap, Mail } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 import { toast } from "@/hooks/use-toast"
 
 export default function SignupPage() {
   const [loading, setLoading] = useState(false)
+  const [confirming, setConfirming] = useState(false)
+  const [confirmedEmail, setConfirmedEmail] = useState("")
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -18,7 +20,7 @@ export default function SignupPage() {
     const password = formData.get("password") as string
 
     const supabase = createClient()
-    const { error } = await supabase.auth.signUp({ email, password })
+    const { data, error } = await supabase.auth.signUp({ email, password })
 
     if (error) {
       toast({
@@ -27,14 +29,47 @@ export default function SignupPage() {
         description: error.message,
       })
       setLoading(false)
-    } else {
-      toast({
-        variant: "success",
-        title: "Account created!",
-        description: "Redirecting to dashboard...",
-      })
-      window.location.assign("/dashboard")
+      return
     }
+
+    // Jika session null → Supabase butuh konfirmasi email dulu
+    if (!data.session) {
+      setConfirmedEmail(email)
+      setConfirming(true)
+      setLoading(false)
+      return
+    }
+
+    // Session langsung ada → langsung masuk
+    toast({ variant: "success", title: "Akun dibuat!", description: "Mengarahkan ke dashboard..." })
+    window.location.assign("/dashboard")
+  }
+
+  if (confirming) {
+    return (
+      <div className="min-h-screen flex items-center justify-center px-4 py-10" style={{ backgroundColor: "var(--app-bg)" }}>
+        <div className="w-full max-w-sm text-center">
+          <div className="w-14 h-14 rounded-full bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center mx-auto mb-5">
+            <Mail className="w-7 h-7 text-blue-600 dark:text-blue-400" />
+          </div>
+          <h1 className="text-xl font-bold mb-2" style={{ color: "var(--text-primary)" }}>Cek emailmu</h1>
+          <p className="text-sm mb-1" style={{ color: "var(--text-secondary)" }}>
+            Link konfirmasi dikirim ke:
+          </p>
+          <p className="font-medium text-sm mb-5" style={{ color: "var(--text-primary)" }}>{confirmedEmail}</p>
+          <p className="text-xs mb-6" style={{ color: "var(--text-secondary)" }}>
+            Klik link di email tersebut, lalu kembali ke halaman login untuk masuk.
+          </p>
+          <Link
+            href="/login"
+            className="inline-block px-5 py-2.5 rounded-lg text-sm font-medium text-white hover:opacity-90 transition-opacity"
+            style={{ backgroundColor: "var(--btn-dark)" }}
+          >
+            Ke halaman login
+          </Link>
+        </div>
+      </div>
+    )
   }
 
   return (
