@@ -12,11 +12,11 @@ import { UserSection } from "./UserSection"
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/lead-form", label: "Lead Form", icon: ClipboardList },
   { href: "/leads", label: "Leads", icon: Users },
   { href: "/quotations", label: "Quotations", icon: FileText },
   { href: "/follow-ups", label: "Follow-ups", icon: Bell },
   { href: "/automation", label: "Automation", icon: Sparkles },
-  { href: "/lead-form", label: "Lead Form", icon: ClipboardList },
 
   { href: "/clients", label: "Clients", icon: UserRound },
   { href: "/invoices", label: "Invoices", icon: Receipt },
