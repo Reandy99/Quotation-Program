@@ -56,7 +56,7 @@ export function LeadForm({ defaultValues, onSubmit, loading }: LeadFormProps) {
       <Card>
         <CardContent className="p-6 space-y-4">
           <h3 className="font-medium text-gray-900 dark:text-slate-100">Client Information</h3>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div className="space-y-1">
               <Label>Client Name *</Label>
               <Input {...register("client_name")} placeholder="John Doe" />
@@ -82,7 +82,7 @@ export function LeadForm({ defaultValues, onSubmit, loading }: LeadFormProps) {
       <Card>
         <CardContent className="p-6 space-y-4">
           <h3 className="font-medium text-gray-900 dark:text-slate-100">Project Details</h3>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div className="space-y-1">
               <Label>Project Type</Label>
               <Select {...register("project_type")}>
@@ -113,7 +113,7 @@ export function LeadForm({ defaultValues, onSubmit, loading }: LeadFormProps) {
       <Card>
         <CardContent className="p-6 space-y-4">
           <h3 className="font-medium text-gray-900 dark:text-slate-100">Status & Follow-up</h3>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div className="space-y-1">
               <Label>Status</Label>
               <Select {...register("status")}>

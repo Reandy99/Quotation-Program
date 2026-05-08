@@ -8,6 +8,7 @@ import { useState, useEffect, useTransition } from "react"
 import Image from "next/image"
 import ThemeToggle from "./ThemeToggle"
 import NotificationBell from "./NotificationBell"
+import { LanguageToggle } from "./LanguageToggle"
 import { companyDefaults, generalDefaults, loadGeneralSettings, loadCompanySettings, SETTINGS_UPDATED_EVENT } from "@/lib/settings/storage"
 import { UserSection } from "./UserSection"
 import { useLanguage } from "@/hooks/useLanguage"
@@ -35,7 +36,7 @@ interface Props {
 export default function Sidebar({ initialWorkspaceName, initialBusinessName, initialLogoUrl, userEmail }: Props) {
   const pathname = usePathname()
   const router = useRouter()
-  const [lang] = useLanguage()
+  const [lang, setLang] = useLanguage()
   const [isPending, startTransition] = useTransition()
   const [open, setOpen] = useState(false)
   const [workspaceName, setWorkspaceName] = useState(initialWorkspaceName)
@@ -211,6 +212,7 @@ export default function Sidebar({ initialWorkspaceName, initialBusinessName, ini
           <span className="font-semibold text-sm" style={{ color: "var(--text-primary)" }}>{workspaceName}</span>
         </div>
         <div className="flex items-center gap-1">
+          <LanguageToggle lang={lang} onLangChange={setLang} className="scale-90 origin-right" />
           <NotificationBell />
           <ThemeToggle />
         </div>

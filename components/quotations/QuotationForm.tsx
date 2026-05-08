@@ -98,7 +98,7 @@ function LineItemRow({ index, register, remove, control }: { index: number; regi
   const qty = useWatch({ control, name: `items.${index}.quantity` }) ?? 0
   const price = useWatch({ control, name: `items.${index}.unit_price` }) ?? 0
   const total = (Number(qty) || 0) * (Number(price) || 0)
-  const lineInputClassName = "h-11 text-sm text-white dark:text-white placeholder:text-gray-500 dark:placeholder:text-slate-500"
+  const lineInputClassName = "h-11 text-sm text-gray-900 dark:text-slate-100 placeholder:text-gray-400 dark:placeholder:text-slate-500"
 
   return (
     <div className="rounded-xl border border-gray-200 p-4 transition-colors hover:border-indigo-200 hover:bg-gray-50 dark:border-slate-700 dark:hover:border-indigo-700 dark:hover:bg-slate-800/50">
@@ -113,22 +113,22 @@ function LineItemRow({ index, register, remove, control }: { index: number; regi
             <Input {...register(`items.${index}.description`)} placeholder="Description" className={lineInputClassName} />
           </div>
         </div>
-        <div className="grid grid-cols-[88px_minmax(0,1fr)_110px_36px] lg:grid-cols-[110px_minmax(260px,1.3fr)_176px_40px] xl:grid-cols-[120px_minmax(320px,1.45fr)_196px_40px] gap-3 items-end">
+        <div className="grid grid-cols-2 gap-3 items-end sm:grid-cols-[88px_minmax(0,1fr)_120px_36px] lg:grid-cols-[110px_minmax(220px,1.3fr)_150px_40px] xl:grid-cols-[120px_minmax(280px,1.45fr)_176px_40px]">
           <div>
             <span className="mb-1.5 block text-[11px] font-medium text-gray-500 dark:text-slate-500">Qty</span>
             <Input {...register(`items.${index}.quantity`, { valueAsNumber: true })} type="number" min="1" placeholder="1" className={`${lineInputClassName} w-full`} />
           </div>
-          <div>
+          <div className="min-w-0">
             <span className="mb-1.5 block text-[11px] font-medium text-gray-500 dark:text-slate-500">Price</span>
             <Input {...register(`items.${index}.unit_price`, { valueAsNumber: true })} type="number" min="0" placeholder="0" className={lineInputClassName} />
           </div>
-          <div className="min-w-[110px]">
+          <div className="min-w-0">
             <span className="mb-1.5 block text-[11px] font-medium text-gray-500 dark:text-slate-500">Total</span>
-            <div className="flex h-11 items-center justify-end rounded-2xl border border-transparent px-3 text-sm font-medium tabular-nums text-gray-700 dark:text-slate-300">
+            <div className="flex h-11 items-center rounded-2xl border border-transparent px-3 text-sm font-medium tabular-nums text-gray-700 dark:text-slate-300 sm:justify-end">
               {formatCurrency(total)}
             </div>
           </div>
-          <div className="flex h-11 items-center justify-center">
+          <div className="flex h-11 items-center justify-end sm:justify-center">
             <button type="button" onClick={() => remove(index)} className="text-gray-400 dark:text-slate-500 hover:text-red-500 dark:hover:text-red-400 transition-colors p-1">
               <Trash2 className="w-4 h-4" />
             </button>

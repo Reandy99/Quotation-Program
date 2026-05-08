@@ -38,7 +38,7 @@ export default function DashboardHeader({ initialWorkspaceName }: Props) {
         description={description}
         className="mb-0 flex-1"
       />
-      <div className="shrink-0 self-start sm:pt-1">
+      <div className="hidden shrink-0 self-start sm:block sm:pt-1">
         <LanguageToggle lang={lang} onLangChange={setLang} />
       </div>
     </div>
