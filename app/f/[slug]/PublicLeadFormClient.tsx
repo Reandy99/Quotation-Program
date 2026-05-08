@@ -18,6 +18,7 @@ export default function PublicLeadFormClient({ form }: Props) {
   const [isPending, startTransition] = useTransition()
   const [error, setError] = useState("")
   const [successMessage, setSuccessMessage] = useState("")
+  const [eventDate, setEventDate] = useState("")
   const inputStyle = {
     backgroundColor: "#FFFDF8",
     border: "1px solid #E6DCCB",
@@ -36,6 +37,13 @@ export default function PublicLeadFormClient({ form }: Props) {
         setError(result.error || "Unable to submit your inquiry.")
       }
     })
+  }
+
+  function formatDateInput(value: string) {
+    const digits = value.replace(/\D/g, "").slice(0, 8)
+    if (digits.length <= 2) return digits
+    if (digits.length <= 4) return `${digits.slice(0, 2)}/${digits.slice(2)}`
+    return `${digits.slice(0, 2)}/${digits.slice(2, 4)}/${digits.slice(4)}`
   }
 
   if (successMessage) {
@@ -95,7 +103,7 @@ export default function PublicLeadFormClient({ form }: Props) {
               <Input id="event_name" name="event_name" required placeholder="Wedding, pre-wedding, birthday..." className={inputClassName} style={inputStyle} />
             </div>
 
-            <div className="grid grid-cols-[minmax(0,1fr)_120px] gap-3">
+            <div className="grid grid-cols-[minmax(0,1fr)_112px] gap-3 sm:grid-cols-[minmax(0,1fr)_130px]">
               <div className="space-y-2">
                 <Label htmlFor="event_date" className={labelClassName}>Event Date *</Label>
                 <Input
@@ -105,14 +113,27 @@ export default function PublicLeadFormClient({ form }: Props) {
                   required
                   inputMode="numeric"
                   placeholder="DD/MM/YYYY"
+                  value={eventDate}
+                  maxLength={10}
+                  onChange={(event) => setEventDate(formatDateInput(event.target.value))}
                   className={inputClassName}
                   style={inputStyle}
                 />
-                <p className="text-xs text-[#9A9288]">Use Indonesian date format, for example 25/06/2026.</p>
+                <p className="text-xs text-[#9A9288]">Type numbers only. Example: 06102006 becomes 06/10/2006.</p>
               </div>
               <div className="space-y-2">
                 <Label htmlFor="event_time" className={labelClassName}>Time</Label>
-                <Input id="event_time" name="event_time" type="time" className={inputClassName} style={inputStyle} />
+                <Input
+                  id="event_time"
+                  name="event_time"
+                  type="time"
+                  className={`${inputClassName} px-3 text-center`}
+                  style={{
+                    ...inputStyle,
+                    minWidth: 0,
+                    WebkitAppearance: "none",
+                  }}
+                />
               </div>
             </div>
 
