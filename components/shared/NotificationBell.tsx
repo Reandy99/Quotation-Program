@@ -12,7 +12,7 @@ interface Notification {
   message: string
   date: string
   read: boolean
-  type: "follow-up" | "quote-expiring" | "invoice-overdue"
+  type: "follow-up" | "quote-expiring" | "invoice-overdue" | "public-lead"
   link?: string
 }
 
@@ -23,12 +23,33 @@ export default function NotificationBell() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    function notifyNewPublicLeads(data: Notification[]) {
+      if (typeof window === "undefined" || !("Notification" in window)) return
+      if (window.Notification.permission !== "granted") return
+
+      const notified = new Set(JSON.parse(localStorage.getItem("frameflow:notified-notifications") || "[]") as string[])
+      const nextNotified = new Set(notified)
+
+      data
+        .filter((notif) => notif.type === "public-lead" && !notified.has(notif.id))
+        .forEach((notif) => {
+          new window.Notification(notif.title, {
+            body: notif.message,
+            tag: notif.id,
+          })
+          nextNotified.add(notif.id)
+        })
+
+      localStorage.setItem("frameflow:notified-notifications", JSON.stringify(Array.from(nextNotified).slice(-50)))
+    }
+
     async function loadNotifications() {
       try {
         const res = await fetch("/api/notifications")
         if (res.ok) {
           const data = await res.json()
           setNotifications(data)
+          notifyNewPublicLeads(data)
         }
       } catch (err) {
         console.error("Failed to load notifications:", err)
@@ -36,7 +57,10 @@ export default function NotificationBell() {
         setLoading(false)
       }
     }
+
     loadNotifications()
+    const interval = window.setInterval(loadNotifications, 30000)
+    return () => window.clearInterval(interval)
   }, [])
 
   const unreadCount = notifications.filter(n => !n.read).length
@@ -60,7 +84,12 @@ export default function NotificationBell() {
   return (
     <div className="relative">
       <button
-        onClick={() => setOpen(!open)}
+        onClick={() => {
+          if (typeof window !== "undefined" && "Notification" in window && window.Notification.permission === "default") {
+            window.Notification.requestPermission().catch(() => {})
+          }
+          setOpen(!open)
+        }}
         className="relative p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors"
         aria-label="Notifications"
       >

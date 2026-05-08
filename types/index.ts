@@ -75,12 +75,30 @@ export interface Lead {
   email: string | null
   phone: string | null
   project_type: string | null
+  event_name?: string | null
   event_date: string | null
+  event_time?: string | null
   location: string | null
   estimated_budget: number | null
   notes: string | null
   status: LeadStatus
   follow_up_date: string | null
+  lead_source?: string | null
+  source_detail?: string | null
+  lead_form_id?: string | null
+  created_at: string
+  updated_at: string
+}
+
+export interface LeadForm {
+  id: string
+  user_id: string
+  slug: string
+  title: string
+  description: string | null
+  button_text: string
+  thank_you_message: string | null
+  is_active: boolean
   created_at: string
   updated_at: string
 }

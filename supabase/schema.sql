@@ -72,6 +72,31 @@ create policy "Users can manage own company settings"
   on public.company_settings for all using (auth.uid() = user_id);
 
 -- ============================================================
+-- PUBLIC LEAD FORMS
+-- ============================================================
+create table if not exists public.lead_forms (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users(id) on delete cascade,
+  slug text not null unique,
+  title text not null default 'Request Event Documentation',
+  description text,
+  button_text text not null default 'Submit Inquiry',
+  thank_you_message text default 'Thank you! Your inquiry has been received.',
+  is_active boolean not null default true,
+  created_at timestamptz default now() not null,
+  updated_at timestamptz default now() not null,
+  unique(user_id)
+);
+
+alter table public.lead_forms enable row level security;
+
+create policy "Users can manage own lead forms"
+  on public.lead_forms for all using (auth.uid() = user_id);
+
+create index lead_forms_user_id_idx on public.lead_forms(user_id);
+create index lead_forms_slug_idx on public.lead_forms(slug);
+
+-- ============================================================
 -- LEADS
 -- ============================================================
 create table if not exists public.leads (
@@ -82,13 +107,18 @@ create table if not exists public.leads (
   email text,
   phone text,
   project_type text,
+  event_name text,
   event_date date,
+  event_time text,
   location text,
   estimated_budget numeric(15,2),
   notes text,
   status text not null default 'New'
     check (status in ('New', 'Contacted', 'Quoted', 'Follow Up', 'Won', 'Lost')),
   follow_up_date date,
+  lead_source text default 'Manual',
+  source_detail text,
+  lead_form_id uuid references public.lead_forms(id),
   created_at timestamptz default now() not null,
   updated_at timestamptz default now() not null
 );
@@ -101,6 +131,8 @@ create policy "Users can manage own leads"
 create index leads_user_id_idx on public.leads(user_id);
 create index leads_status_idx on public.leads(status);
 create index leads_follow_up_date_idx on public.leads(follow_up_date);
+create index leads_lead_form_id_idx on public.leads(lead_form_id);
+create index leads_lead_source_idx on public.leads(lead_source);
 
 -- ============================================================
 -- QUOTATIONS

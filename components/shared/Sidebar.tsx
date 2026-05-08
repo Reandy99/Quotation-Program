@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
-import { LayoutDashboard, Users, FileText, Bell, Settings, Zap, Menu, X, Receipt, Calendar, BarChart3, Loader2, CreditCard, UserRound, Sparkles } from "lucide-react"
+import { LayoutDashboard, Users, FileText, Bell, Settings, Zap, Menu, X, Receipt, Calendar, BarChart3, Loader2, CreditCard, UserRound, Sparkles, ClipboardList } from "lucide-react"
 import { cn } from "@/lib/utils/cn"
 import { useState, useEffect, useTransition } from "react"
 import Image from "next/image"
@@ -16,6 +16,7 @@ const navItems = [
   { href: "/quotations", label: "Quotations", icon: FileText },
   { href: "/follow-ups", label: "Follow-ups", icon: Bell },
   { href: "/automation", label: "Automation", icon: Sparkles },
+  { href: "/lead-form", label: "Lead Form", icon: ClipboardList },
 
   { href: "/clients", label: "Clients", icon: UserRound },
   { href: "/invoices", label: "Invoices", icon: Receipt },

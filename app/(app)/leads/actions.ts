@@ -17,11 +17,16 @@ function normalizeLeadUpdates(updates: Partial<Lead>) {
     "email",
     "phone",
     "project_type",
+    "event_name",
     "event_date",
+    "event_time",
     "location",
     "estimated_budget",
     "notes",
     "follow_up_date",
+    "lead_source",
+    "source_detail",
+    "lead_form_id",
   ]
 
   for (const field of nullableFields) {
@@ -81,12 +86,17 @@ export async function createLead(lead: Partial<Omit<Lead, "id" | "user_id" | "cr
       email: lead.email === "" || lead.email === undefined ? null : lead.email,
       phone: lead.phone === "" || lead.phone === undefined ? null : lead.phone,
       project_type: lead.project_type === "" || lead.project_type === undefined ? null : lead.project_type,
+      event_name: lead.event_name === "" || lead.event_name === undefined ? null : lead.event_name,
       event_date: lead.event_date === "" || lead.event_date === undefined ? null : lead.event_date,
+      event_time: lead.event_time === "" || lead.event_time === undefined ? null : lead.event_time,
       location: lead.location === "" || lead.location === undefined ? null : lead.location,
       estimated_budget: lead.estimated_budget === undefined ? null : lead.estimated_budget,
       notes: lead.notes === "" || lead.notes === undefined ? null : lead.notes,
       status: lead.status,
       follow_up_date: lead.follow_up_date === "" || lead.follow_up_date === undefined ? null : lead.follow_up_date,
+      lead_source: lead.lead_source === "" || lead.lead_source === undefined ? "Manual" : lead.lead_source,
+      source_detail: lead.source_detail === "" || lead.source_detail === undefined ? null : lead.source_detail,
+      lead_form_id: lead.lead_form_id === "" || lead.lead_form_id === undefined ? null : lead.lead_form_id,
       user_id: user.id,
     }
 

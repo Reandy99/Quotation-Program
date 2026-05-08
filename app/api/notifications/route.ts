@@ -15,6 +15,7 @@ export async function GET() {
 
     const now = new Date().toISOString()
     const twoDaysFromNow = new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString()
+    const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
 
     // Get overdue invoices
     const { data: overdueInvoices } = await supabase
@@ -47,6 +48,15 @@ export async function GET() {
       .gte("scheduled_date", now.split("T")[0])
       .lte("scheduled_date", twoDaysFromNow.split("T")[0])
       .order("scheduled_date", { ascending: true })
+      .limit(5)
+
+    const { data: publicLeads } = await supabase
+      .from("leads")
+      .select("id,client_name,event_name,project_type,created_at")
+      .eq("user_id", user.id)
+      .eq("lead_source", "Public Form")
+      .gte("created_at", sevenDaysAgo)
+      .order("created_at", { ascending: false })
       .limit(5)
 
     const notifications: any[] = []
@@ -97,6 +107,20 @@ export async function GET() {
           read: false,
           type: "follow-up",
           link: `/leads/${followUp.lead.id}`,
+        })
+      })
+    }
+
+    if (publicLeads) {
+      ;(publicLeads as Array<{ id: string; client_name: string; event_name: string | null; project_type: string | null; created_at: string }>).forEach((lead) => {
+        notifications.push({
+          id: `public-lead-${lead.id}`,
+          title: "New Public Lead",
+          message: `${lead.client_name}${lead.event_name || lead.project_type ? ` - ${lead.event_name || lead.project_type}` : ""}`,
+          date: lead.created_at,
+          read: false,
+          type: "public-lead",
+          link: `/leads/${lead.id}`,
         })
       })
     }
