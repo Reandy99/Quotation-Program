@@ -105,7 +105,6 @@ export default function PublicLeadFormClient({ form }: Props) {
                   required
                   inputMode="numeric"
                   placeholder="DD/MM/YYYY"
-                  pattern="\\d{1,2}/\\d{1,2}/\\d{4}"
                   className={inputClassName}
                   style={inputStyle}
                 />
