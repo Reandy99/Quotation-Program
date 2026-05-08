@@ -18,6 +18,12 @@ export default function PublicLeadFormClient({ form }: Props) {
   const [isPending, startTransition] = useTransition()
   const [error, setError] = useState("")
   const [successMessage, setSuccessMessage] = useState("")
+  const inputStyle = {
+    backgroundColor: "#FFFDF8",
+    border: "1px solid #E6DCCB",
+    color: "#1C1714",
+  }
+  const inputClassName = "h-12 rounded-2xl placeholder:text-[#9A9288] focus-visible:ring-[#D4A84B] focus-visible:ring-offset-0"
 
   function handleSubmit(formData: FormData) {
     setError("")
@@ -66,26 +72,26 @@ export default function PublicLeadFormClient({ form }: Props) {
               <Label htmlFor="name">Name *</Label>
               <div className="relative">
                 <UserRound className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#9A9288]" />
-                <Input id="name" name="name" required placeholder="Your name" className="pl-10" />
+                <Input id="name" name="name" required placeholder="Your name" className={`pl-10 ${inputClassName}`} style={inputStyle} />
               </div>
             </div>
 
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" name="email" type="email" placeholder="you@example.com" />
+              <Input id="email" name="email" type="email" placeholder="you@example.com" className={inputClassName} style={inputStyle} />
             </div>
 
             <div className="space-y-2">
               <Label htmlFor="phone">Phone Number *</Label>
               <div className="relative">
                 <Phone className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#9A9288]" />
-                <Input id="phone" name="phone" required placeholder="08xxxxxxxxxx" className="pl-10" />
+                <Input id="phone" name="phone" required placeholder="08xxxxxxxxxx" className={`pl-10 ${inputClassName}`} style={inputStyle} />
               </div>
             </div>
 
             <div className="space-y-2">
               <Label htmlFor="event_name">Event Name *</Label>
-              <Input id="event_name" name="event_name" required placeholder="Wedding, pre-wedding, birthday..." />
+              <Input id="event_name" name="event_name" required placeholder="Wedding, pre-wedding, birthday..." className={inputClassName} style={inputStyle} />
             </div>
 
             <div className="grid grid-cols-[1fr_120px] gap-3">
@@ -99,12 +105,14 @@ export default function PublicLeadFormClient({ form }: Props) {
                   inputMode="numeric"
                   placeholder="DD/MM/YYYY"
                   pattern="\\d{1,2}/\\d{1,2}/\\d{4}"
+                  className={inputClassName}
+                  style={inputStyle}
                 />
                 <p className="text-xs text-[#9A9288]">Use Indonesian date format, for example 25/06/2026.</p>
               </div>
               <div className="space-y-2">
                 <Label htmlFor="event_time">Time</Label>
-                <Input id="event_time" name="event_time" type="time" />
+                <Input id="event_time" name="event_time" type="time" className={inputClassName} style={inputStyle} />
               </div>
             </div>
 
@@ -112,7 +120,7 @@ export default function PublicLeadFormClient({ form }: Props) {
               <Label htmlFor="location">Location *</Label>
               <div className="relative">
                 <MapPin className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#9A9288]" />
-                <Input id="location" name="location" required placeholder="Venue or city" className="pl-10" />
+                <Input id="location" name="location" required placeholder="Venue or city" className={`pl-10 ${inputClassName}`} style={inputStyle} />
               </div>
             </div>
           </div>
