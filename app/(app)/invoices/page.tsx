@@ -23,8 +23,8 @@ export default async function InvoicesPage() {
         description="Manage invoices and track payments"
         action={
           canCreate ? (
-            <Link href="/invoices/new">
-              <Button><Plus className="w-4 h-4 mr-1.5" />New Invoice</Button>
+            <Link href="/invoices/new" className="block w-full sm:w-auto">
+              <Button className="w-full sm:w-auto"><Plus className="w-4 h-4 mr-1.5" />New Invoice</Button>
             </Link>
           ) : null
         }

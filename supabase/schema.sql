@@ -138,6 +138,48 @@ create index quotations_user_id_idx on public.quotations(user_id);
 create index quotations_lead_id_idx on public.quotations(lead_id);
 
 -- ============================================================
+-- CALENDAR EVENTS
+-- ============================================================
+create table if not exists public.calendar_events (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users(id) on delete cascade,
+  title text not null,
+  event_type text not null
+    check (event_type in ('shoot', 'meeting', 'reminder', 'personal')),
+  date date not null,
+  location text,
+  notes text,
+  created_at timestamptz default now() not null,
+  updated_at timestamptz default now() not null
+);
+
+alter table public.calendar_events enable row level security;
+
+create policy "Users can manage own calendar events"
+  on public.calendar_events for all using (auth.uid() = user_id);
+
+create index calendar_events_user_id_idx on public.calendar_events(user_id);
+create index calendar_events_date_idx on public.calendar_events(date);
+
+-- ============================================================
+-- AUTOMATION DISMISSALS
+-- ============================================================
+create table if not exists public.automation_dismissals (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users(id) on delete cascade,
+  suggestion_key text not null,
+  dismissed_at timestamptz default now() not null,
+  unique(user_id, suggestion_key)
+);
+
+alter table public.automation_dismissals enable row level security;
+
+create policy "Users can manage own automation dismissals"
+  on public.automation_dismissals for all using (auth.uid() = user_id);
+
+create index automation_dismissals_user_id_idx on public.automation_dismissals(user_id);
+
+-- ============================================================
 -- QUOTATION ITEMS
 -- ============================================================
 create table if not exists public.quotation_items (

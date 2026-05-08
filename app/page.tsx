@@ -1,7 +1,7 @@
 "use client"
 
 import Link from 'next/link'
-import { Zap, ArrowRight } from 'lucide-react'
+import { Zap, ArrowRight, Bell, Calendar, AlertCircle, BarChart3, DollarSign, Trophy, FileText, TrendingUp, Moon, LayoutDashboard, Users, Receipt, Settings, UserRound } from 'lucide-react'
 import { useLanguage } from '@/hooks/useLanguage'
 import { LanguageToggle } from '@/components/shared/LanguageToggle'
 import './landing-page.css'
@@ -122,6 +122,59 @@ const featureIconBgs = [
   '#55192A',
 ]
 
+const previewHeroStats = [
+  { icon: DollarSign, bg: '#BFEAF3', iconColor: '#0E4F63', value: 'Rp 8,4jt', label: 'Pipeline Value', sub: 'Active opportunities' },
+  { icon: Trophy, bg: '#DDEFCB', iconColor: '#2D5016', value: '5', label: 'Won Deals', sub: '62% conversion rate' },
+  { icon: AlertCircle, bg: '#FEF9C3', iconColor: '#713F12', value: 'Rp 2,1jt', label: 'Unpaid Invoices', sub: '2 overdue' },
+]
+
+const previewMetricStats = [
+  { icon: Zap, value: '12', label: 'Total Leads' },
+  { icon: FileText, value: '7', label: 'Quotations' },
+  { icon: Bell, value: '3', label: 'Follow-ups Today' },
+  { icon: Calendar, value: '2', label: 'Shoots This Week' },
+  { icon: TrendingUp, value: '62%', label: 'Conversion Rate' },
+  { icon: AlertCircle, value: '2', label: 'Overdue' },
+]
+
+const previewPipelineStages = [
+  { stage: 'New', count: 3, width: 60, color: '#CBD5E1' },
+  { stage: 'Contacted', count: 4, width: 80, color: '#BFEAF3' },
+  { stage: 'Quoted', count: 2, width: 40, color: '#93C5FD' },
+  { stage: 'Follow Up', count: 3, width: 60, color: '#F6E57A' },
+  { stage: 'Won', count: 5, width: 100, color: '#DDEFCB' },
+]
+
+const previewLeads = [
+  { name: 'Sarah', meta: 'Pre-wedding · 12 May', status: 'Quoted', tone: 'lav' },
+  { name: 'Budi & Ani', meta: 'Wedding · 16 May', status: 'Won', tone: 'lime' },
+  { name: 'PT Maju', meta: 'Product Shoot · 18 May', status: 'Follow-up', tone: 'amb' },
+]
+
+const previewQuotes = [
+  { title: 'Wedding Full Day', meta: 'QF-2026-012 · Rp 7,8jt', status: 'Draft', tone: 'slate' },
+  { title: 'Corporate Profile', meta: 'QF-2026-011 · Rp 4,2jt', status: 'Accepted', tone: 'lime' },
+  { title: 'Engagement Session', meta: 'QF-2026-010 · Rp 2,6jt', status: 'Sent', tone: 'amb' },
+]
+
+const previewInvoices = [
+  { title: 'Wedding Full Day', meta: 'INV-2026-021 · Rp 3,9jt', status: 'Sent', tone: 'blue' },
+  { title: 'Corporate Profile', meta: 'INV-2026-020 · Rp 4,2jt', status: 'Paid', tone: 'lime' },
+  { title: 'Engagement Session', meta: 'INV-2026-019 · Rp 1,3jt', status: 'Overdue', tone: 'rose' },
+]
+
+const previewSidebarItems = [
+  { label: 'Dashboard', icon: LayoutDashboard, active: true },
+  { label: 'Leads', icon: Users },
+  { label: 'Quotations', icon: FileText },
+  { label: 'Follow-ups', icon: Bell },
+  { label: 'Clients', icon: UserRound },
+  { label: 'Invoices', icon: Receipt },
+  { label: 'Calendar', icon: Calendar },
+  { label: 'Reports', icon: BarChart3 },
+  { label: 'Settings', icon: Settings },
+]
+
 export default function Home() {
   const [lang, setLang] = useLanguage()
   const tx = t[lang]
@@ -132,33 +185,37 @@ export default function Home() {
       {/* ── NAVBAR ── */}
       <nav className="lp-nav" style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        padding: '18px 48px',
         background: 'var(--nav-bg)',
         backdropFilter: 'blur(20px)',
         borderBottom: '1px solid var(--border-color)',
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 15, fontWeight: 700, letterSpacing: '-0.2px' }}>
-          <div style={{ width: 32, height: 32, borderRadius: 10, background: `linear-gradient(135deg, ${AMBER2}, ${ROSE})`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <Zap size={14} color="#fff" />
+        <div className="lp-nav-inner" style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+          padding: '18px 48px', maxWidth: 1280, margin: '0 auto', gap: 24,
+        }}>
+          <div className="lp-nav-brand" style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 15, fontWeight: 700, letterSpacing: '-0.2px' }}>
+            <div style={{ width: 32, height: 32, borderRadius: 10, background: `linear-gradient(135deg, ${AMBER2}, ${ROSE})`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Zap size={14} color="#fff" />
+            </div>
+            FrameFlow
           </div>
-          FrameFlow
-        </div>
-        <div className="hidden md:flex" style={{ gap: 32 }}>
-          {[tx.navFeatures, tx.navPricing, tx.navAbout, tx.navBlog].map(label => (
-            <a key={label} href="#" style={{ fontSize: 14, fontWeight: 500, color: 'var(--text-secondary)', textDecoration: 'none' }}>{label}</a>
-          ))}
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
-          <LanguageToggle lang={lang} onLangChange={setLang} />
-          <Link href="/signup" className="lp-nav-cta" style={{
-            background: 'var(--text-primary)', color: 'var(--app-bg)',
-            border: 'none', borderRadius: 24,
-            padding: '10px 22px', fontSize: 14, fontWeight: 700, textDecoration: 'none',
-            whiteSpace: 'nowrap',
-          }}>
-            {tx.navCta}
-          </Link>
+          <div className="lp-nav-links hidden md:flex" style={{ gap: 32 }}>
+            {[tx.navFeatures, tx.navPricing, tx.navAbout, tx.navBlog].map(label => (
+              <a key={label} href="#" style={{ fontSize: 14, fontWeight: 500, color: 'var(--text-secondary)', textDecoration: 'none' }}>{label}</a>
+            ))}
+          </div>
+          <div className="lp-nav-actions" style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
+            <LanguageToggle lang={lang} onLangChange={setLang} />
+            <Link href="/signup" className="lp-nav-cta" style={{
+              background: 'var(--text-primary)', color: 'var(--app-bg)',
+              border: 'none', borderRadius: 24,
+              padding: '10px 22px', fontSize: 14, fontWeight: 700, textDecoration: 'none',
+              whiteSpace: 'nowrap',
+            }}>
+              <span className="lp-nav-cta-full">{tx.navCta}</span>
+              <span className="lp-nav-cta-short">{lang === 'id' ? 'Coba Gratis' : 'Get Started'}</span>
+            </Link>
+          </div>
         </div>
       </nav>
 
@@ -227,6 +284,7 @@ export default function Home() {
         </div>
 
         {/* Dashboard mockup */}
+        <div className="lp-dash-wrap" style={{ position: 'relative', zIndex: 1, width: '100%', maxWidth: 1080 }}>
         <div className="lp-dash" style={{ position: 'relative', zIndex: 1, width: '100%', maxWidth: 1080 }}>
           <div className="lp-dm-bar">
             <span className="lp-dot lp-dot-r" /><span className="lp-dot lp-dot-y" /><span className="lp-dot lp-dot-g" />
@@ -239,9 +297,10 @@ export default function Home() {
                 <div className="lp-sb-brand-ico">⚡</div>
                 <div><div className="lp-sb-brand-name">Frameflow</div><div className="lp-sb-brand-sub">Creative Studio</div></div>
               </div>
-              {['Dashboard','Leads','Quotations','Follow-ups','Invoices','Calendar','Reports','Settings'].map((item, i) => (
-                <div key={item} className={`lp-sb-item${i === 0 ? ' on' : ''}`}>
-                  <div className="lp-sb-icon" />{item}
+              {previewSidebarItems.map(({ label, icon: Icon, active }) => (
+                <div key={label} className={`lp-sb-item${active ? ' on' : ''}`}>
+                  <Icon className="lp-sb-icon" size={12} strokeWidth={2} />
+                  {label}
                 </div>
               ))}
               <div className="lp-sb-spacer" />
@@ -259,75 +318,104 @@ export default function Home() {
                   <div className="lp-dm-sub">Welcome back to FrameFlow. Here&apos;s your business summary.</div>
                 </div>
                 <div className="lp-dm-topbar-right">
-                  <div className="lp-dm-icon-btn">🌙</div>
-                  <div className="lp-dm-icon-btn">🔔</div>
+                  <div className="lp-dm-icon-btn"><Moon size={11} strokeWidth={2} /></div>
+                  <div className="lp-dm-icon-btn"><Bell size={11} strokeWidth={2} /></div>
                   <div className="lp-dm-lang"><span className="on">ID</span><span className="off">EN</span></div>
                 </div>
               </div>
 
               <div className="lp-qa-row">
-                <div className="lp-qa dk">+ Lead Baru</div>
-                <div className="lp-qa lav">+ Penawaran Baru</div>
-                <div className="lp-qa lime">+ Invoice Baru</div>
+                <div className="lp-qa dk">+ New Lead</div>
+                <div className="lp-qa lav">+ New Quote</div>
+                <div className="lp-qa lime">+ New Invoice</div>
                 <div className="lp-qa amb">Follow-up</div>
-                <div className="lp-qa gray">Kalender</div>
-                <div className="lp-qa gray">Laporan</div>
+                <div className="lp-qa gray">Calendar</div>
+                <div className="lp-qa gray">Reports</div>
               </div>
 
               <div className="lp-stats">
-                {[
-                  { ico: '💰', bg: '#BFEAF3', val: 'Rp 8,4jt', lbl: 'Status Update', sub: 'Peluang aktif' },
-                  { ico: '🏆', bg: '#DDEFCB', val: '5', lbl: 'Deals Menang', sub: '62% tingkat konversi' },
-                  { ico: '⏰', bg: '#FEF9C3', val: 'Rp 2,1jt', lbl: 'Invoice Belum Lunas', sub: '2 jatuh tempo' },
-                ].map(c => (
-                  <div key={c.lbl} className="lp-sc">
-                    <div className="lp-sc-ico" style={{ background: c.bg }}>{c.ico}</div>
-                    <div className="lp-sc-val">{c.val}</div>
-                    <div className="lp-sc-lbl">{c.lbl}</div>
-                    <div className="lp-sc-sub">{c.sub}</div>
+                {previewHeroStats.map(({ icon: Icon, bg, iconColor, value, label, sub }) => (
+                  <div key={label} className="lp-sc">
+                    <div className="lp-sc-ico" style={{ background: bg }}>
+                      <Icon size={15} strokeWidth={2} style={{ color: iconColor }} />
+                    </div>
+                    <div className="lp-sc-val">{value}</div>
+                    <div className="lp-sc-lbl">{label}</div>
+                    <div className="lp-sc-sub">{sub}</div>
                   </div>
                 ))}
               </div>
 
               <div className="lp-metrics">
-                {[
-                  { ico: '👥', val: '12', lbl: 'Total Leads' },
-                  { ico: '📄', val: '7',  lbl: 'Penawaran' },
-                  { ico: '🔔', val: '3',  lbl: 'Follow-up Hari Ini' },
-                  { ico: '📅', val: '2',  lbl: 'Sesi Minggu Ini' },
-                  { ico: '📈', val: '62%',lbl: 'Tingkat Konversi' },
-                  { ico: '⚠️', val: '2',  lbl: 'Jatuh Tempo' },
-                ].map(m => (
-                  <div key={m.lbl} className="lp-mc">
-                    <div className="lp-mc-ico">{m.ico}</div>
-                    <div className="lp-mc-val">{m.val}</div>
-                    <div className="lp-mc-lbl">{m.lbl}</div>
+                {previewMetricStats.map(({ icon: Icon, value, label }) => (
+                  <div key={label} className="lp-mc">
+                    <div className="lp-mc-ico"><Icon size={11} strokeWidth={2} /></div>
+                    <div className="lp-mc-val">{value}</div>
+                    <div className="lp-mc-lbl">{label}</div>
                   </div>
                 ))}
               </div>
 
-              <div className="lp-bcols">
+              <div className="lp-dashboard-grid">
                 <div className="lp-bc">
-                  <div className="lp-bc-hdr"><div className="lp-bc-title">Status Update</div></div>
-                  {[['Baru','3'],['Dihubungi','4'],['Penawaran','2'],['Follow Up','3'],['Deals','5']].map(([l,v]) => (
-                    <div key={l} className="lp-pi"><span className="lp-pi-lbl">{l}</span><span className="lp-pi-val">{v}</span></div>
+                  <div className="lp-bc-hdr">
+                    <div className="lp-bc-title">Pipeline</div>
+                    <div className="lp-bc-icon"><BarChart3 size={10} strokeWidth={2} /></div>
+                  </div>
+                  <div className="lp-stage-list">
+                    {previewPipelineStages.map((stage) => (
+                      <div key={stage.stage} className="lp-stage-item">
+                        <div className="lp-stage-head">
+                          <span className="lp-pi-lbl">{stage.stage}</span>
+                          <span className="lp-pi-val">{stage.count}</span>
+                        </div>
+                        <div className="lp-stage-track">
+                          <div className="lp-stage-fill" style={{ width: `${stage.width}%`, backgroundColor: stage.color }} />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="lp-bc">
+                  <div className="lp-bc-hdr"><div className="lp-bc-title">Recent Leads</div><div className="lp-bc-link">View all →</div></div>
+                  {previewLeads.map((item) => (
+                    <div key={item.name} className="lp-preview-row">
+                      <div>
+                        <div className="lp-preview-title">{item.name}</div>
+                        <div className="lp-preview-meta">{item.meta}</div>
+                      </div>
+                      <span className={`lp-tag lp-tag-${item.tone}`}>{item.status}</span>
+                    </div>
                   ))}
                 </div>
                 <div className="lp-bc">
-                  <div className="lp-bc-hdr"><div className="lp-bc-title">Lead Terbaru</div><div className="lp-bc-link">Lihat semua →</div></div>
-                  <div className="lp-pi"><span className="lp-pi-lbl">Sarah — Pre-wedding</span><span className="lp-tag lp-tag-lav">Penawaran</span></div>
-                  <div className="lp-pi"><span className="lp-pi-lbl">Budi &amp; Ani — Wedding</span><span className="lp-tag lp-tag-lime">Deal ✓</span></div>
-                  <div className="lp-pi"><span className="lp-pi-lbl">PT Maju — Product</span><span className="lp-tag lp-tag-amb">Follow-up</span></div>
+                  <div className="lp-bc-hdr"><div className="lp-bc-title">Recent Quotations</div><div className="lp-bc-link">View all →</div></div>
+                  {previewQuotes.map((item) => (
+                    <div key={item.title} className="lp-preview-row">
+                      <div>
+                        <div className="lp-preview-title">{item.title}</div>
+                        <div className="lp-preview-meta">{item.meta}</div>
+                      </div>
+                      <span className={`lp-tag lp-tag-${item.tone}`}>{item.status}</span>
+                    </div>
+                  ))}
                 </div>
                 <div className="lp-bc">
-                  <div className="lp-bc-hdr"><div className="lp-bc-title">Penawaran Terbaru</div><div className="lp-bc-link">Lihat semua →</div></div>
-                  <div className="lp-pi"><span className="lp-pi-lbl">QF-2026-012</span><span className="lp-tag lp-tag-lav">Draft</span></div>
-                  <div className="lp-pi"><span className="lp-pi-lbl">QF-2026-011</span><span className="lp-tag lp-tag-lime">Accepted</span></div>
-                  <div className="lp-pi"><span className="lp-pi-lbl">QF-2026-010</span><span className="lp-tag lp-tag-amb">Sent</span></div>
+                  <div className="lp-bc-hdr"><div className="lp-bc-title">Recent Invoices</div><div className="lp-bc-link">View all →</div></div>
+                  {previewInvoices.map((item) => (
+                    <div key={item.title} className="lp-preview-row">
+                      <div>
+                        <div className="lp-preview-title">{item.title}</div>
+                        <div className="lp-preview-meta">{item.meta}</div>
+                      </div>
+                      <span className={`lp-tag lp-tag-${item.tone}`}>{item.status}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -356,7 +444,7 @@ export default function Home() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 14 }} className="lp-bento">
             {tx.features.map((f, i) => (
-              <div key={f.title} style={{
+              <div key={f.title} className="lp-feature-card" style={{
                 background: 'var(--card-bg)',
                 border: `1px solid ${featureBorderColors[i]}`,
                 borderRadius: 18, padding: 26, position: 'relative', overflow: 'hidden',
@@ -500,9 +588,8 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: 22, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10 }}>
-            <p style={{ fontSize: 12, color: 'var(--text-secondary)' }}>{tx.footerCopyright}</p>
-            <span style={{ fontSize: 12, color: 'var(--text-secondary)', opacity: 0.6 }}>{tx.footerLove}</span>
+          <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: 22, display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: 10 }}>
+            <p style={{ fontSize: 12, color: 'var(--text-secondary)', textAlign: 'center' }}>{tx.footerCopyright}</p>
           </div>
         </div>
       </footer>

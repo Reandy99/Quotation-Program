@@ -17,8 +17,8 @@ export default async function ClientsPage() {
         title="Clients"
         description="Manage your client database"
         action={
-          <Link href="/clients/new">
-            <Button><Plus className="w-4 h-4 mr-1.5" />New Client</Button>
+          <Link href="/clients/new" className="block w-full sm:w-auto">
+            <Button className="w-full sm:w-auto"><Plus className="w-4 h-4 mr-1.5" />New Client</Button>
           </Link>
         }
       />

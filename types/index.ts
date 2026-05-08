@@ -4,6 +4,7 @@ export type DiscountType = "flat" | "percent"
 export type InvoiceStatus = "Draft" | "Sent" | "Partial" | "Paid" | "Overdue"
 export type PaymentMethod = "Transfer" | "Cash" | "QRIS"
 export type FollowUpType = "call" | "email" | "meeting" | "whatsapp" | "other"
+export type CalendarEventType = "shoot" | "meeting" | "reminder" | "personal"
 
 export interface Profile {
   id: string
@@ -229,4 +230,16 @@ export interface FollowUp {
   created_at: string
   updated_at: string
   lead?: Lead | null
+}
+
+export interface CalendarEvent {
+  id: string
+  user_id: string
+  title: string
+  event_type: CalendarEventType
+  date: string
+  location: string | null
+  notes: string | null
+  created_at: string
+  updated_at: string
 }

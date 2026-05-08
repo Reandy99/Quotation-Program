@@ -19,13 +19,14 @@ export function LanguageToggle({ className = "", lang: langProp, onLangChange }:
         <button
           key={l}
           onClick={() => setLang(l)}
-          className="px-2.5 py-1.5 transition-colors"
+          className="px-2 py-1 sm:px-2.5 sm:py-1.5 transition-colors"
           style={{
             backgroundColor: lang === l ? "var(--btn-dark)" : "var(--card-bg)",
             color: lang === l ? "#ffffff" : "var(--text-secondary)",
           }}
         >
-          {l === "id" ? "🇮🇩 ID" : "🇬🇧 EN"}
+          <span className="hidden sm:inline">{l === "id" ? "🇮🇩 " : "🇬🇧 "}</span>
+          {l === "id" ? "ID" : "EN"}
         </button>
       ))}
     </div>

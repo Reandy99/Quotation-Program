@@ -90,7 +90,7 @@ function LeadRow({
   const waUrl = buildWhatsAppUrl(lead.phone, waMessage)
 
   return (
-    <div className="flex items-center justify-between p-3 rounded-2xl hover:bg-black/5 dark:hover:bg-white/5 transition-colors gap-3">
+    <div className="flex flex-col items-stretch justify-between p-3 rounded-2xl hover:bg-black/5 dark:hover:bg-white/5 transition-colors gap-3 sm:flex-row sm:items-center">
       <Link href={`/leads/${lead.id}`} className="min-w-0 flex-1 group">
         <p className="text-sm font-medium group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors truncate" style={{ color: "var(--text-primary)" }}>
           {lead.client_name}
@@ -99,7 +99,7 @@ function LeadRow({
           {lead.project_type || "—"} · Follow-up: {formatDate(followUp.scheduled_date)}
         </p>
       </Link>
-      <div className="flex items-center gap-1.5 shrink-0">
+      <div className="flex flex-wrap items-center gap-1.5 shrink-0">
         <LeadStatusBadge status={lead.status} />
         {waUrl && (
           <a href={waUrl} target="_blank" rel="noopener noreferrer">
@@ -142,7 +142,7 @@ function ReviewRow({ lead, company }: { lead: Lead; company: CompanySettings }) 
   const waUrl = hasReviewUrl ? buildWhatsAppUrl(lead.phone, waMessage) : null
 
   return (
-    <div className="flex items-center justify-between p-3 rounded-2xl hover:bg-black/5 dark:hover:bg-white/5 transition-colors gap-3">
+    <div className="flex flex-col items-stretch justify-between p-3 rounded-2xl hover:bg-black/5 dark:hover:bg-white/5 transition-colors gap-3 sm:flex-row sm:items-center">
       <Link href={`/leads/${lead.id}`} className="min-w-0 flex-1 group">
         <p className="text-sm font-medium group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors truncate" style={{ color: "var(--text-primary)" }}>
           {lead.client_name}
@@ -151,7 +151,7 @@ function ReviewRow({ lead, company }: { lead: Lead; company: CompanySettings }) 
           {lead.project_type || "—"} · Event: {formatDate(lead.event_date)} · Review due: {formatDate(computeReviewDate(lead.event_date!))}
         </p>
       </Link>
-      <div className="flex items-center gap-1.5 shrink-0">
+      <div className="flex flex-wrap items-center gap-1.5 shrink-0">
         {waUrl ? (
           <a href={waUrl} target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="sm" className="h-7 gap-1.5 px-2 text-green-600 border-green-200 hover:bg-green-50 dark:border-green-800 dark:hover:bg-green-900/30 dark:text-green-400 text-xs">

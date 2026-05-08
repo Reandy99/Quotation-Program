@@ -23,8 +23,8 @@ export default async function LeadsPage() {
         description="Manage your potential clients and projects"
         action={
           canCreate ? (
-            <Link href="/leads/new">
-              <Button><Plus className="w-4 h-4 mr-1.5" />New Lead</Button>
+            <Link href="/leads/new" className="block w-full sm:w-auto">
+              <Button className="w-full sm:w-auto"><Plus className="w-4 h-4 mr-1.5" />New Lead</Button>
             </Link>
           ) : null
         }

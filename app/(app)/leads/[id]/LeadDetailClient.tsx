@@ -122,15 +122,16 @@ export default function LeadDetailClient({ lead, quotations }: Props) {
     <div>
       <PageHeader
         title={lead.client_name}
+        actionClassName="sm:justify-end"
         action={
-          <div className="flex gap-2">
-            <Link href={`/quotations/new?lead_id=${lead.id}`}>
-              <Button variant="outline" size="sm"><Plus className="w-4 h-4 mr-1" />New Quote</Button>
+          <div className="flex flex-col sm:flex-row gap-2">
+            <Link href={`/quotations/new?lead_id=${lead.id}`} className="w-full sm:w-auto">
+              <Button variant="outline" size="sm" className="w-full sm:w-auto"><Plus className="w-4 h-4 mr-1" />New Quote</Button>
             </Link>
-            <Button variant="outline" size="sm" onClick={() => setEditing(true)}>
+            <Button variant="outline" size="sm" onClick={() => setEditing(true)} className="w-full sm:w-auto">
               <Pencil className="w-4 h-4 mr-1" />Edit
             </Button>
-            <Button variant="destructive" size="sm" onClick={handleDelete}>
+            <Button variant="destructive" size="sm" onClick={handleDelete} className="w-full sm:w-auto">
               <Trash2 className="w-4 h-4 mr-1" />Delete
             </Button>
           </div>
@@ -146,16 +147,16 @@ export default function LeadDetailClient({ lead, quotations }: Props) {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-                <div><span className="text-gray-500 dark:text-gray-400">Client</span><p className="font-medium mt-0.5 dark:text-gray-100">{lead.client_name}</p></div>
-                <div><span className="text-gray-500 dark:text-gray-400">Company</span><p className="font-medium mt-0.5 dark:text-gray-100">{lead.company_name || "—"}</p></div>
-                <div><span className="text-gray-500 dark:text-gray-400">Email</span><p className="font-medium mt-0.5 dark:text-gray-100">{lead.email || "—"}</p></div>
-                <div><span className="text-gray-500 dark:text-gray-400">Phone</span><p className="font-medium mt-0.5 dark:text-gray-100">{lead.phone || "—"}</p></div>
-                <div><span className="text-gray-500 dark:text-gray-400">Project Type</span><p className="font-medium mt-0.5 dark:text-gray-100">{lead.project_type || "—"}</p></div>
-                <div><span className="text-gray-500 dark:text-gray-400">Est. Budget</span><p className="font-medium mt-0.5 dark:text-gray-100">{lead.estimated_budget ? formatCurrency(lead.estimated_budget) : "—"}</p></div>
-                <div><span className="text-gray-500 dark:text-gray-400">Event Date</span><p className="font-medium mt-0.5 dark:text-gray-100">{lead.event_date ? formatDate(lead.event_date) : "—"}</p></div>
-                <div><span className="text-gray-500 dark:text-gray-400">Location</span><p className="font-medium mt-0.5 dark:text-gray-100">{lead.location || "—"}</p></div>
-                <div><span className="text-gray-500 dark:text-gray-400">Follow-up Date</span><p className="font-medium mt-0.5 dark:text-gray-100">{followUpDate ? formatDate(followUpDate) : "—"}</p></div>
-                <div><span className="text-gray-500 dark:text-gray-400">Status</span><div className="mt-0.5"><LeadStatusBadge status={currentStatus} /></div></div>
+                <div className="min-w-0"><span className="text-gray-500 dark:text-gray-400">Client</span><p className="font-medium mt-0.5 break-words dark:text-gray-100">{lead.client_name}</p></div>
+                <div className="min-w-0"><span className="text-gray-500 dark:text-gray-400">Company</span><p className="font-medium mt-0.5 break-words dark:text-gray-100">{lead.company_name || "—"}</p></div>
+                <div className="min-w-0"><span className="text-gray-500 dark:text-gray-400">Email</span><p className="font-medium mt-0.5 break-all dark:text-gray-100">{lead.email || "—"}</p></div>
+                <div className="min-w-0"><span className="text-gray-500 dark:text-gray-400">Phone</span><p className="font-medium mt-0.5 break-words dark:text-gray-100">{lead.phone || "—"}</p></div>
+                <div className="min-w-0"><span className="text-gray-500 dark:text-gray-400">Project Type</span><p className="font-medium mt-0.5 break-words dark:text-gray-100">{lead.project_type || "—"}</p></div>
+                <div className="min-w-0"><span className="text-gray-500 dark:text-gray-400">Est. Budget</span><p className="font-medium mt-0.5 break-words dark:text-gray-100">{lead.estimated_budget ? formatCurrency(lead.estimated_budget) : "—"}</p></div>
+                <div className="min-w-0"><span className="text-gray-500 dark:text-gray-400">Event Date</span><p className="font-medium mt-0.5 break-words dark:text-gray-100">{lead.event_date ? formatDate(lead.event_date) : "—"}</p></div>
+                <div className="min-w-0"><span className="text-gray-500 dark:text-gray-400">Location</span><p className="font-medium mt-0.5 break-words dark:text-gray-100">{lead.location || "—"}</p></div>
+                <div className="min-w-0"><span className="text-gray-500 dark:text-gray-400">Follow-up Date</span><p className="font-medium mt-0.5 break-words dark:text-gray-100">{followUpDate ? formatDate(followUpDate) : "—"}</p></div>
+                <div className="min-w-0"><span className="text-gray-500 dark:text-gray-400">Status</span><div className="mt-0.5"><LeadStatusBadge status={currentStatus} /></div></div>
               </div>
               {lead.notes && (
                 <div className="mt-4 pt-4 border-t dark:border-gray-700">
@@ -194,11 +195,11 @@ export default function LeadDetailClient({ lead, quotations }: Props) {
           {/* Activity Log */}
           <Card className="dark:bg-gray-900 dark:border-gray-700">
             <CardHeader>
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <CardTitle className="text-base flex items-center gap-2 dark:text-gray-100">
                   <MessageSquare className="w-4 h-4" />Activity & Notes
                 </CardTitle>
-                <Button size="sm" variant="outline" onClick={handleAddNote} className="dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700">
+                <Button size="sm" variant="outline" onClick={handleAddNote} className="w-full sm:w-auto dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700">
                   <Plus className="w-4 h-4 mr-1" />Add Note
                 </Button>
               </div>
@@ -251,8 +252,8 @@ export default function LeadDetailClient({ lead, quotations }: Props) {
                 <div className="space-y-2">
                   {quotations.map(q => (
                     <Link key={q.id} href={`/quotations/${q.id}`} className="block p-3 rounded-lg border dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                      <div className="flex items-center justify-between">
-                        <span className="text-sm font-medium dark:text-gray-200">{q.quote_number}</span>
+                      <div className="flex items-start justify-between gap-3">
+                        <span className="text-sm font-medium break-words dark:text-gray-200">{q.quote_number}</span>
                         <QuoteStatusBadge status={q.status} />
                       </div>
                       <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{formatCurrency(q.grand_total)}</p>

@@ -32,12 +32,13 @@ export default function DashboardHeader({ initialWorkspaceName }: Props) {
     : `Welcome back to ${workspaceName}. Here's your business summary.`
 
   return (
-    <div className="flex items-start justify-between gap-4">
+    <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
       <PageHeader
         title="Dashboard"
         description={description}
+        className="mb-0 flex-1"
       />
-      <div className="shrink-0 pt-1">
+      <div className="shrink-0 self-start sm:pt-1">
         <LanguageToggle lang={lang} onLangChange={setLang} />
       </div>
     </div>

@@ -194,11 +194,11 @@ export default function QuotationsListClient({ quotations: initial }: Props) {
 
       {/* Bulk action bar */}
       {selectedCount > 0 && (
-        <div className="flex items-center gap-3 mb-4 px-4 py-2.5 rounded-2xl text-sm" style={{ backgroundColor: "#E0E7FF", border: "1px solid #C7D2FE" }}>
+        <div className="flex flex-col items-stretch gap-3 mb-4 px-4 py-3 rounded-2xl text-sm sm:flex-row sm:items-center" style={{ backgroundColor: "#E0E7FF", border: "1px solid #C7D2FE" }}>
           <span className="text-indigo-700 dark:text-indigo-300 font-medium">
             {selectedCount} selected
           </span>
-          <div className="flex gap-2 ml-auto">
+          <div className="flex flex-wrap gap-2 sm:ml-auto">
             <Button size="sm" variant="outline" onClick={bulkDuplicate} className="gap-1.5">
               <Copy className="w-3.5 h-3.5" />
               Duplicate

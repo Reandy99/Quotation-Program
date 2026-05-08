@@ -42,12 +42,13 @@ export default function ClientDetailClient({ initial }: { initial: Client | null
     <div>
       <PageHeader
         title={client.name}
+        actionClassName="sm:justify-end"
         action={
-          <div className="flex gap-2">
-            <Button variant="outline" size="sm" onClick={() => setEditOpen(true)}>
+          <div className="flex flex-col sm:flex-row gap-2">
+            <Button variant="outline" size="sm" onClick={() => setEditOpen(true)} className="w-full sm:w-auto">
               <Pencil className="w-4 h-4 mr-1" />Edit
             </Button>
-            <Button variant="destructive" size="sm" onClick={archive}>
+            <Button variant="destructive" size="sm" onClick={archive} className="w-full sm:w-auto">
               <Archive className="w-4 h-4 mr-1" />Archive
             </Button>
           </div>
@@ -61,17 +62,17 @@ export default function ClientDetailClient({ initial }: { initial: Client | null
               <CardTitle className="text-base dark:text-slate-100">Client Information</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                 <div>
                   <span className="text-gray-500 dark:text-slate-400">Name</span>
-                  <p className="font-medium mt-0.5 dark:text-slate-100">{client.name}</p>
+                  <p className="font-medium mt-0.5 break-words dark:text-slate-100">{client.name}</p>
                 </div>
                 {client.company && (
                   <div>
                     <span className="text-gray-500 flex items-center gap-1 dark:text-slate-400">
                       <Building2 className="w-3 h-3" />Company
                     </span>
-                    <p className="font-medium mt-0.5 dark:text-slate-100">{client.company}</p>
+                    <p className="font-medium mt-0.5 break-words dark:text-slate-100">{client.company}</p>
                   </div>
                 )}
                 {client.email && (
@@ -79,7 +80,7 @@ export default function ClientDetailClient({ initial }: { initial: Client | null
                     <span className="text-gray-500 flex items-center gap-1 dark:text-slate-400">
                       <Mail className="w-3 h-3" />Email
                     </span>
-                    <p className="font-medium mt-0.5 dark:text-slate-100">{client.email}</p>
+                    <p className="font-medium mt-0.5 break-all dark:text-slate-100">{client.email}</p>
                   </div>
                 )}
                 {client.phone && (
@@ -87,15 +88,15 @@ export default function ClientDetailClient({ initial }: { initial: Client | null
                     <span className="text-gray-500 flex items-center gap-1 dark:text-slate-400">
                       <Phone className="w-3 h-3" />Phone
                     </span>
-                    <p className="font-medium mt-0.5 dark:text-slate-100">{client.phone}</p>
+                    <p className="font-medium mt-0.5 break-words dark:text-slate-100">{client.phone}</p>
                   </div>
                 )}
                 {client.address && (
-                  <div className="col-span-2">
+                  <div className="sm:col-span-2">
                     <span className="text-gray-500 flex items-center gap-1 dark:text-slate-400">
                       <MapPin className="w-3 h-3" />Address
                     </span>
-                    <p className="font-medium mt-0.5 dark:text-slate-100">{client.address}</p>
+                    <p className="font-medium mt-0.5 break-words dark:text-slate-100">{client.address}</p>
                   </div>
                 )}
               </div>

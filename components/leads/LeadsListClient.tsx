@@ -195,11 +195,11 @@ export default function LeadsListClient({ leads: initialLeads }: Props) {
 
       {/* Bulk action bar */}
       {selected.size > 0 && (
-        <div className="flex items-center gap-3 mb-4 px-4 py-2.5 rounded-2xl" style={{ backgroundColor: "#E0E7FF", border: "1px solid #C7D2FE" }}>
+        <div className="flex flex-col items-stretch gap-3 mb-4 px-4 py-3 rounded-2xl sm:flex-row sm:items-center" style={{ backgroundColor: "#E0E7FF", border: "1px solid #C7D2FE" }}>
           <span className="text-sm font-medium text-indigo-700 dark:text-indigo-300">
             {selected.size} selected
           </span>
-          <div className="flex gap-2 ml-auto">
+          <div className="flex flex-wrap gap-2 sm:ml-auto">
             <div className="relative">
               <Button
                 size="sm"

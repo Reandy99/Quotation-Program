@@ -23,8 +23,8 @@ export default async function QuotationsPage() {
         description="Manage your project quotations"
         action={
           canCreate ? (
-            <Link href="/quotations/templates">
-              <Button><Plus className="w-4 h-4 mr-1.5" />New Quotation</Button>
+            <Link href="/quotations/templates" className="block w-full sm:w-auto">
+              <Button className="w-full sm:w-auto"><Plus className="w-4 h-4 mr-1.5" />New Quotation</Button>
             </Link>
           ) : null
         }
