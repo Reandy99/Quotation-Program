@@ -10,17 +10,17 @@ const plans = [
     price: null,
     priceLabel: "Gratis",
     priceSub: "14 hari",
-    description: "Coba fitur dasar tanpa kartu kredit.",
+    description: "Coba workflow inti FrameFlow sebelum upgrade.",
     highlight: false,
     features: [
-      { label: "Hingga 3 leads aktif", included: true },
-      { label: "Quotation builder", included: true },
-      { label: "Ekspor PDF (quotation)", included: true },
+      { label: "Hingga 10 leads aktif", included: true },
+      { label: "1 public lead form link", included: true },
+      { label: "Quotation builder dasar", included: true },
+      { label: "Invoice management dasar", included: true },
       { label: "Follow-up tracker", included: true },
-      { label: "Template WhatsApp (dasar)", included: true },
-      { label: "Invoice management", included: false },
-      { label: "Manajemen klien", included: false },
-      { label: "Kalender & pengingat", included: false },
+      { label: "Kalender & event manual", included: true },
+      { label: "Automation Center", included: false },
+      { label: "Mobile/browser push notification", included: false },
       { label: "Laporan & analitik", included: false },
       { label: "Branding perusahaan", included: false },
       { label: "Dukungan prioritas", included: false },
@@ -33,17 +33,18 @@ const plans = [
     price: 99000,
     priceLabel: "Rp99.000",
     priceSub: "/bulan",
-    description: "Semua fitur lengkap untuk fotografer & videografer profesional.",
+    description: "Semua fitur lengkap untuk kelola inquiry, proposal, invoice, dan follow-up.",
     highlight: true,
     features: [
       { label: "Leads & klien unlimited", included: true },
-      { label: "Quotation builder", included: true },
+      { label: "Public lead form untuk bio Instagram", included: true },
+      { label: "Quotation builder lengkap", included: true },
       { label: "Ekspor PDF (quotation & invoice)", included: true },
-      { label: "Follow-up tracker", included: true },
-      { label: "Template WhatsApp", included: true },
+      { label: "Automation Center untuk follow-up & invoice", included: true },
+      { label: "Mobile/browser push notification untuk lead baru", included: true },
       { label: "Invoice management", included: true },
       { label: "Manajemen klien", included: true },
-      { label: "Kalender & pengingat", included: true },
+      { label: "Kalender, event, dan pengingat", included: true },
       { label: "Laporan & analitik", included: true },
       { label: "Branding perusahaan (logo & tanda tangan)", included: true },
       { label: "Dukungan prioritas", included: true },
@@ -70,7 +71,7 @@ export default async function PricingPage() {
             Pilih paket kamu
           </h1>
           <p className="text-lg" style={{ color: "var(--text-secondary)" }}>
-            Mulai gratis 14 hari. Tidak perlu kartu kredit.
+            Public lead form, automation, invoice, calendar, dan notification dalam satu workflow.
           </p>
         </div>
 
@@ -158,7 +159,7 @@ export default async function PricingPage() {
 
         {/* Footer note */}
         <div className="text-center text-sm" style={{ color: "var(--text-secondary)" }}>
-          <p>Semua paket termasuk ekspor data. Upgrade atau batalkan kapan saja.</p>
+          <p>Semua paket termasuk penyimpanan data lead yang aman. Upgrade atau batalkan kapan saja.</p>
           <p className="mt-1">
             Ada pertanyaan?{" "}
             <a href="mailto:hello@frameflow.id" className="text-blue-500 dark:text-blue-400 hover:underline">

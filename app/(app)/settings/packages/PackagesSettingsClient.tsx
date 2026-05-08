@@ -92,7 +92,13 @@ export default function PackagesSettingsClient({ initialPackages }: Props) {
   }
 
   function addItemToForm() {
-    if (!newItem.name.trim() || newItem.price <= 0) return
+    if (!newItem.name.trim() || newItem.price <= 0) {
+      toast({
+        title: "Item is not ready",
+        description: "Enter an item name and price before adding it to the package.",
+      })
+      return
+    }
     setFormData(prev => ({
       ...prev,
       items: [...prev.items, { id: `item-${Date.now()}`, ...newItem }],
@@ -105,6 +111,7 @@ export default function PackagesSettingsClient({ initialPackages }: Props) {
   }
 
   const isEditing = editingId !== null || showNewForm
+  const canAddItem = newItem.name.trim().length > 0 && newItem.price > 0
 
   return (
     <div>
@@ -130,7 +137,7 @@ export default function PackagesSettingsClient({ initialPackages }: Props) {
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid gap-4 md:grid-cols-2">
               <div className="space-y-1">
                 <Label>Package Name *</Label>
                 <Input
@@ -155,7 +162,10 @@ export default function PackagesSettingsClient({ initialPackages }: Props) {
               <h4 className="text-sm font-medium text-gray-900 dark:text-slate-100 mb-3">Package Items</h4>
               
               {/* Add Item Form */}
-              <div className="grid grid-cols-[2fr_3fr_1fr_auto] gap-2 mb-3">
+              <p className="text-xs mb-3 text-gray-500 dark:text-slate-400">
+                Fill the item name and price first, then press plus to add it into this package.
+              </p>
+              <div className="grid gap-2 mb-3 sm:grid-cols-[2fr_3fr_1fr_auto]">
                 <Input
                   placeholder="Item name"
                   value={newItem.name}
@@ -175,8 +185,16 @@ export default function PackagesSettingsClient({ initialPackages }: Props) {
                   onChange={e => setNewItem(prev => ({ ...prev, price: parseFloat(e.target.value) || 0 }))}
                   className="dark:bg-slate-900 dark:border-slate-700 dark:text-slate-100"
                 />
-                <Button size="sm" onClick={addItemToForm} variant="outline" className="dark:border-slate-700">
+                <Button
+                  size="sm"
+                  onClick={addItemToForm}
+                  variant="outline"
+                  disabled={!canAddItem}
+                  title={canAddItem ? "Add item" : "Enter item name and price first"}
+                  className="dark:border-slate-700"
+                >
                   <Plus className="w-4 h-4" />
+                  <span className="sm:hidden">Add Item</span>
                 </Button>
               </div>
 

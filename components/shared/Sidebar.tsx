@@ -7,21 +7,22 @@ import { cn } from "@/lib/utils/cn"
 import { useState, useEffect, useTransition } from "react"
 import Image from "next/image"
 import ThemeToggle from "./ThemeToggle"
+import NotificationBell from "./NotificationBell"
 import { companyDefaults, generalDefaults, loadGeneralSettings, loadCompanySettings, SETTINGS_UPDATED_EVENT } from "@/lib/settings/storage"
 import { UserSection } from "./UserSection"
+import { useLanguage } from "@/hooks/useLanguage"
 
 const navItems = [
-  { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/lead-form", label: "Lead Form", icon: ClipboardList },
-  { href: "/leads", label: "Leads", icon: Users },
-  { href: "/quotations", label: "Quotations", icon: FileText },
-  { href: "/follow-ups", label: "Follow-ups", icon: Bell },
-  { href: "/automation", label: "Automation", icon: Sparkles },
-
-  { href: "/clients", label: "Clients", icon: UserRound },
-  { href: "/invoices", label: "Invoices", icon: Receipt },
-  { href: "/calendar", label: "Calendar", icon: Calendar },
-  { href: "/reports", label: "Reports", icon: BarChart3 },
+  { href: "/dashboard", label: { id: "Dashboard", en: "Dashboard" }, icon: LayoutDashboard },
+  { href: "/lead-form", label: { id: "Form Lead", en: "Lead Form" }, icon: ClipboardList },
+  { href: "/leads", label: { id: "Leads", en: "Leads" }, icon: Users },
+  { href: "/quotations", label: { id: "Penawaran", en: "Quotations" }, icon: FileText },
+  { href: "/follow-ups", label: { id: "Follow-up", en: "Follow-ups" }, icon: Bell },
+  { href: "/automation", label: { id: "Otomatisasi", en: "Automation" }, icon: Sparkles },
+  { href: "/clients", label: { id: "Klien", en: "Clients" }, icon: UserRound },
+  { href: "/invoices", label: { id: "Invoice", en: "Invoices" }, icon: Receipt },
+  { href: "/calendar", label: { id: "Kalender", en: "Calendar" }, icon: Calendar },
+  { href: "/reports", label: { id: "Laporan", en: "Reports" }, icon: BarChart3 },
 ]
 
 interface Props {
@@ -34,6 +35,7 @@ interface Props {
 export default function Sidebar({ initialWorkspaceName, initialBusinessName, initialLogoUrl, userEmail }: Props) {
   const pathname = usePathname()
   const router = useRouter()
+  const [lang] = useLanguage()
   const [isPending, startTransition] = useTransition()
   const [open, setOpen] = useState(false)
   const [workspaceName, setWorkspaceName] = useState(initialWorkspaceName)
@@ -110,7 +112,7 @@ export default function Sidebar({ initialWorkspaceName, initialBusinessName, ini
               style={active ? {} : { color: "var(--text-secondary)" }}
             >
               <Icon className="w-4 h-4 flex-shrink-0" />
-              {label}
+              {label[lang]}
               {isPending && <Loader2 className="w-3 h-3 ml-auto animate-spin" />}
             </Link>
           )
@@ -137,7 +139,7 @@ export default function Sidebar({ initialWorkspaceName, initialBusinessName, ini
             style={pathname.startsWith("/settings") ? {} : { color: "var(--text-secondary)" }}
           >
             <Settings className="w-4 h-4 flex-shrink-0" />
-            Settings
+            {lang === "id" ? "Pengaturan" : "Settings"}
             {isPending && <Loader2 className="w-3 h-3 ml-auto animate-spin" />}
           </Link>
           <Link
@@ -160,7 +162,7 @@ export default function Sidebar({ initialWorkspaceName, initialBusinessName, ini
             style={pathname === "/settings/billing" ? {} : { color: "var(--text-secondary)" }}
           >
             <CreditCard className="w-4 h-4 flex-shrink-0" />
-            Upgrade
+            {lang === "id" ? "Upgrade" : "Upgrade"}
             {isPending && <Loader2 className="w-3 h-3 ml-auto animate-spin" />}
           </Link>
         </div>
@@ -208,7 +210,10 @@ export default function Sidebar({ initialWorkspaceName, initialBusinessName, ini
           </div>
           <span className="font-semibold text-sm" style={{ color: "var(--text-primary)" }}>{workspaceName}</span>
         </div>
-        <ThemeToggle />
+        <div className="flex items-center gap-1">
+          <NotificationBell />
+          <ThemeToggle />
+        </div>
       </div>
 
       {/* Backdrop */}

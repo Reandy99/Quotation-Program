@@ -37,14 +37,14 @@ const t = {
       { text: '"Bikin penawaran yang tadinya ribet banget, sekarang 5 menit sudah jadi PDF rapi dan langsung bisa dikirim. Klienku langsung notice perbedaannya."', name: 'Dina Sari', role: 'Videografer · Bandung', initials: 'DS' },
       { text: '"Senang banget ada platform yang memang dibikin buat fotografer Indonesia. Terasa beda dibanding pakai tools luar yang kurang relevan sama cara kerja kita."', name: 'Rico Kurniawan', role: 'Fotografer & Content Creator · Bali', initials: 'RK' },
     ],
-    pricingLabel: 'Harga', pricingTitle: 'Harga yang jujur, fitur yang berguna',
-    pricingSub: 'Mulai gratis selama kamu explore. Upgrade ke Pro kalau bisnis sudah mulai serius. Tidak ada kontrak.',
-    starterName: 'Starter', starterPrice: 'Gratis', starterPeriod: 'Selamanya · tidak perlu kartu kredit',
-    starterFeatures: ['Hingga 10 leads aktif', 'Penawaran & invoice dasar', '1 profil bisnis', 'Follow-up via WhatsApp'],
-    starterFeaturesOff: ['PDF branding kustom', 'Analitik & laporan bisnis'],
+    pricingLabel: 'Harga', pricingTitle: 'Harga yang jujur, sesuai cara kerja kreator',
+    pricingSub: 'Mulai gratis untuk setup workflow. Upgrade ke Pro saat kamu ingin kelola inquiry, follow-up, dan pembayaran dengan lebih otomatis.',
+    starterName: 'Starter', starterPrice: 'Gratis', starterPeriod: '14 hari · tidak perlu kartu kredit',
+    starterFeatures: ['Hingga 10 leads aktif', '1 public lead form link', 'Penawaran & invoice dasar', 'Calendar & follow-up tracker'],
+    starterFeaturesOff: ['Automation Center', 'Mobile/browser push notification', 'PDF branding kustom', 'Laporan & analitik bisnis'],
     starterBtn: 'Mulai Gratis →',
     proName: 'Pro', proPrice: 'Rp 99.000', proPeriod: '/bulan · tanpa kontrak panjang',
-    proFeatures: ['Leads & klien tak terbatas', 'PDF berbranding kustom', 'Tanda tangan digital', 'Analitik & laporan bisnis lengkap', 'Database klien penuh', 'Prioritas support'],
+    proFeatures: ['Leads & klien tak terbatas', 'Public lead form untuk bio Instagram', 'Automation Center untuk follow-up & invoice', 'Mobile/browser push notification untuk lead baru', 'PDF berbranding + tanda tangan digital', 'Kalender, invoice, pembayaran, dan laporan bisnis'],
     proBtn: 'Coba Gratis 14 Hari →', proBadge: '✦ PALING POPULER',
     ctaBadge: '✦ Gratis 14 hari · tanpa kartu kredit',
     ctaTitle: 'Bisnis kamu layak dikelola', ctaTitleHl: 'dengan lebih baik.',
@@ -84,14 +84,14 @@ const t = {
       { text: '"Proposals that used to take forever are now a clean PDF in 5 minutes, ready to send. My clients immediately noticed the difference."', name: 'Dina Sari', role: 'Videographer · Bandung', initials: 'DS' },
       { text: "\"So glad there's a platform actually built for Indonesian photographers. It feels completely different from foreign tools that don't fit how we work.\"", name: 'Rico Kurniawan', role: 'Photographer & Content Creator · Bali', initials: 'RK' },
     ],
-    pricingLabel: 'Pricing', pricingTitle: "Honest pricing, features you'll actually use",
-    pricingSub: 'Start free while you explore. Upgrade to Pro when your business gets serious. No contracts.',
-    starterName: 'Starter', starterPrice: 'Free', starterPeriod: 'Forever · no credit card needed',
-    starterFeatures: ['Up to 10 active leads', 'Basic proposals & invoices', '1 business profile', 'WhatsApp follow-ups'],
-    starterFeaturesOff: ['Custom branded PDF', 'Analytics & business reports'],
+    pricingLabel: 'Pricing', pricingTitle: 'Honest pricing for a real creative workflow',
+    pricingSub: 'Start free while you set up your workflow. Upgrade to Pro when you want inquiries, follow-ups, and payments handled more automatically.',
+    starterName: 'Starter', starterPrice: 'Free', starterPeriod: '14 days · no credit card needed',
+    starterFeatures: ['Up to 10 active leads', '1 public lead form link', 'Basic proposals & invoices', 'Calendar & follow-up tracker'],
+    starterFeaturesOff: ['Automation Center', 'Mobile/browser push notifications', 'Custom branded PDF', 'Business reports & analytics'],
     starterBtn: 'Start Free →',
     proName: 'Pro', proPrice: 'Rp 99.000', proPeriod: '/month · no long-term contract',
-    proFeatures: ['Unlimited leads & clients', 'Custom branded PDFs', 'Digital signature', 'Full analytics & business reports', 'Full client database', 'Priority support'],
+    proFeatures: ['Unlimited leads & clients', 'Public lead form for your Instagram bio', 'Automation Center for follow-ups & invoices', 'Mobile/browser push notifications for new leads', 'Branded PDFs + digital signature', 'Calendar, invoices, payments, and business reports'],
     proBtn: 'Try Free for 14 Days →', proBadge: '✦ MOST POPULAR',
     ctaBadge: '✦ Free 14 days · no credit card',
     ctaTitle: 'Your business deserves to be run', ctaTitleHl: 'properly.',
@@ -182,7 +182,7 @@ export default function Home() {
     { label: tx.navFeatures, href: '#features' },
     { label: tx.navPricing, href: '#pricing' },
     { label: tx.navAbout, href: '#about' },
-    { label: tx.navBlog, href: '#resources' },
+    { label: tx.navBlog, href: '/blog' },
   ]
 
   return (
@@ -582,9 +582,9 @@ export default function Home() {
               <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.6 }}>{tx.footerTagline}</p>
             </div>
             {[
-              { title: tx.footerProduct, links: [[tx.linkFeatures,'#features'],[tx.linkPricing,'#pricing'],[tx.linkChangelog,'#resources']] },
-              { title: tx.footerCompany, links: [[tx.linkAbout,'#about'],[tx.linkBlog,'#resources'],[tx.linkCareer,'#resources']] },
-              { title: tx.footerLegal,   links: [[tx.linkPrivacy,'#'],[tx.linkTerms,'#']] },
+              { title: tx.footerProduct, links: [[tx.linkFeatures,'#features'],[tx.linkPricing,'#pricing'],[tx.linkChangelog,'/changelog']] },
+              { title: tx.footerCompany, links: [[tx.linkAbout,'#about'],[tx.linkBlog,'/blog']] },
+              { title: tx.footerLegal,   links: [[tx.linkPrivacy,'/privacy'],[tx.linkTerms,'/terms']] },
             ].map(col => (
               <div key={col.title}>
                 <h4 style={{ fontSize: 11, fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '.09em', marginBottom: 14 }}>{col.title}</h4>

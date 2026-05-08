@@ -28,10 +28,21 @@ export async function updateSession(request: NextRequest) {
   const { data: { user } } = await supabase.auth.getUser()
 
   const isAuthRoute = request.nextUrl.pathname.startsWith("/login") ||
-    request.nextUrl.pathname.startsWith("/signup")
+    request.nextUrl.pathname.startsWith("/signup") ||
+    request.nextUrl.pathname.startsWith("/forgot-password") ||
+    request.nextUrl.pathname.startsWith("/reset-password")
 
   const isPublicRoute = request.nextUrl.pathname === "/" ||
+    request.nextUrl.pathname.startsWith("/blog") ||
+    request.nextUrl.pathname.startsWith("/changelog") ||
+    request.nextUrl.pathname.startsWith("/privacy") ||
+    request.nextUrl.pathname.startsWith("/terms") ||
     request.nextUrl.pathname.startsWith("/pay") ||
+    request.nextUrl.pathname.startsWith("/f/") ||
+    request.nextUrl.pathname === "/sw.js" ||
+    request.nextUrl.pathname === "/manifest.json" ||
+    request.nextUrl.pathname === "/manifest-icon.svg" ||
+    request.nextUrl.pathname === "/api/push-subscriptions/public-key" ||
     request.nextUrl.pathname.startsWith("/api/xendit") ||
     request.nextUrl.pathname.startsWith("/api/debug")
 
@@ -41,7 +52,7 @@ export async function updateSession(request: NextRequest) {
     return NextResponse.redirect(url)
   }
 
-  if (user && isAuthRoute) {
+  if (user && isAuthRoute && !request.nextUrl.pathname.startsWith("/reset-password")) {
     const url = request.nextUrl.clone()
     url.pathname = "/dashboard"
     return NextResponse.redirect(url)

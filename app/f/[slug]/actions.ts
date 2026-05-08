@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache"
 import { createAdminClient } from "@/lib/supabase/server"
 import { sendNewPublicLeadEmail } from "@/lib/lead-forms/notifications"
 import { publicLeadInquirySchema, sanitizeSlug } from "@/lib/lead-forms/validation"
+import { sendWebPushPing, type StoredPushSubscription } from "@/lib/push/web-push"
 
 function tomorrowDateString() {
   const date = new Date()
@@ -118,6 +119,22 @@ export async function submitPublicLeadForm(slug: string, formData: FormData) {
     location: lead.location,
     leadUrl: `${appOrigin()}/leads/${lead.id}`,
   })
+
+  const { data: pushSubscriptions } = await supabase
+    .from("push_subscriptions")
+    .select("id,endpoint")
+    .eq("user_id", leadForm.user_id)
+
+  if (pushSubscriptions?.length) {
+    await Promise.all(
+      (pushSubscriptions as StoredPushSubscription[]).map(async (subscription) => {
+        const result = await sendWebPushPing(subscription)
+        if (result.status === 404 || result.status === 410) {
+          await supabase.from("push_subscriptions").delete().eq("id", subscription.id)
+        }
+      })
+    )
+  }
 
   revalidatePath("/leads")
   revalidatePath("/dashboard")

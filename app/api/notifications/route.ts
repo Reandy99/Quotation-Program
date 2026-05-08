@@ -4,6 +4,15 @@ import type { FollowUp, Invoice, Quotation } from "@/types"
 
 export const dynamic = "force-dynamic"
 
+function formatNotificationTime(value: string) {
+  return new Intl.DateTimeFormat("en", {
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(new Date(value))
+}
+
 export async function GET() {
   try {
     const supabase = createClient()
@@ -113,10 +122,11 @@ export async function GET() {
 
     if (publicLeads) {
       ;(publicLeads as Array<{ id: string; client_name: string; event_name: string | null; project_type: string | null; created_at: string }>).forEach((lead) => {
+        const eventLabel = lead.event_name || lead.project_type
         notifications.push({
           id: `public-lead-${lead.id}`,
           title: "New Public Lead",
-          message: `${lead.client_name}${lead.event_name || lead.project_type ? ` - ${lead.event_name || lead.project_type}` : ""}`,
+          message: `${lead.client_name}${eventLabel ? ` - ${eventLabel}` : ""} · ${formatNotificationTime(lead.created_at)}`,
           date: lead.created_at,
           read: false,
           type: "public-lead",

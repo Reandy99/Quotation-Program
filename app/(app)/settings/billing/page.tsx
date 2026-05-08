@@ -38,6 +38,8 @@ export default async function BillingPage() {
   const trialEnd = subscription?.trial_end ?? null
   const periodEnd = subscription?.current_period_end ?? null
   const isActive = status === "trialing" || status === "active"
+  const pendingPayments = payments.filter((p) => p.status === "pending")
+  const paymentHistory = payments.filter((p) => p.status !== "pending")
 
   return (
     <div>
@@ -116,17 +118,59 @@ export default async function BillingPage() {
           </div>
         </div>
 
+        {pendingPayments.length > 0 && (
+          <div
+            className="rounded-[20px] p-6"
+            style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}
+          >
+            <h3 className="font-semibold mb-2" style={{ color: "var(--text-primary)" }}>Pending Payment</h3>
+            <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>
+              We keep pending payment links separate from payment history so the history only shows completed transactions.
+            </p>
+            <div className="space-y-3">
+              {pendingPayments.slice(0, 3).map((p) => (
+                <div
+                  key={p.id}
+                  className="flex flex-col gap-3 py-3 border-b last:border-0 sm:flex-row sm:items-center sm:justify-between"
+                  style={{ borderColor: "var(--border-color)" }}
+                >
+                  <div>
+                    <p className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
+                      {p.plan?.name ?? p.plan_id}
+                    </p>
+                    <p className="text-xs" style={{ color: "var(--text-secondary)" }}>
+                      Created {formatDate(p.created_at)} · {formatIDR(p.amount_idr)}
+                    </p>
+                  </div>
+                  {p.gateway_invoice_url ? (
+                    <Link
+                      href={p.gateway_invoice_url}
+                      target="_blank"
+                      className="inline-flex items-center justify-center rounded-xl px-3 py-2 text-xs font-medium text-white hover:opacity-90"
+                      style={{ backgroundColor: "var(--btn-dark)" }}
+                    >
+                      Continue Payment
+                    </Link>
+                  ) : (
+                    <span className="text-xs" style={{ color: "var(--text-secondary)" }}>Waiting for payment link</span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Payment History */}
         <div
           className="rounded-[20px] p-6"
           style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}
         >
           <h3 className="font-semibold mb-4" style={{ color: "var(--text-primary)" }}>Payment History</h3>
-          {payments.length === 0 ? (
-            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>No payments yet.</p>
+          {paymentHistory.length === 0 ? (
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>No completed payments yet.</p>
           ) : (
             <div className="space-y-3">
-              {payments.map((p) => (
+              {paymentHistory.map((p) => (
                 <div
                   key={p.id}
                   className="flex items-center justify-between py-2 border-b last:border-0"

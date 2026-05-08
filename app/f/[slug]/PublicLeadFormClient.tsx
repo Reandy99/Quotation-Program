@@ -91,7 +91,16 @@ export default function PublicLeadFormClient({ form }: Props) {
             <div className="grid grid-cols-[1fr_120px] gap-3">
               <div className="space-y-2">
                 <Label htmlFor="event_date">Event Date *</Label>
-                <Input id="event_date" name="event_date" type="date" required />
+                <Input
+                  id="event_date"
+                  name="event_date"
+                  type="text"
+                  required
+                  inputMode="numeric"
+                  placeholder="DD/MM/YYYY"
+                  pattern="\\d{1,2}/\\d{1,2}/\\d{4}"
+                />
+                <p className="text-xs text-[#9A9288]">Use Indonesian date format, for example 25/06/2026.</p>
               </div>
               <div className="space-y-2">
                 <Label htmlFor="event_time">Time</Label>

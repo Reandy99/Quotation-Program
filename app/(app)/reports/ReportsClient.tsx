@@ -2,18 +2,127 @@
 
 import { useState } from "react"
 import { formatCurrency } from "@/lib/utils/format"
-import { Users, FileText, DollarSign, Trophy, Bell, CheckCircle, AlertCircle, TrendingUp, BarChart3 } from "lucide-react"
+import { Users, FileText, DollarSign, Trophy, Bell, CheckCircle, BarChart3 } from "lucide-react"
+import { PageHeader } from "@/components/shared/PageHeader"
+import { useLanguage, type Lang } from "@/hooks/useLanguage"
 import type { ReportData, PeriodStats } from "./actions"
 
 interface Props {
   data: ReportData
 }
 
-function PeriodMetrics({ stats, period }: { stats: PeriodStats; period: "weekly" | "monthly" }) {
-  const label = period === "weekly" ? "7 hari terakhir" : "bulan ini"
+const text = {
+  id: {
+    title: "Laporan",
+    description: "Pantau performa bisnis kamu secara mingguan dan bulanan.",
+    weekly: "Minggu Ini",
+    monthly: "Bulan Ini",
+    last7Days: "7 hari terakhir",
+    thisMonth: "bulan ini",
+    newLeads: "Lead Baru",
+    quotationsCreated: "Penawaran Dibuat",
+    invoicesPaid: "Invoice Terbayar",
+    revenue: "Pendapatan",
+    followUpCompletion: "Penyelesaian Follow-up",
+    completed: "selesai",
+    pending: "tertunda",
+    allTimeRevenue: "Total Pendapatan (Semua Waktu)",
+    paidInvoiceSub: "Dari invoice yang sudah lunas",
+    totalLead: "Total Lead",
+    wonDeals: "Deals Menang",
+    conversion: "Konversi",
+    unpaid: "Belum Terbayar",
+    statusUpdate: "Status Update",
+    leadStatusSub: "Status seluruh lead",
+    invoiceStatus: "Status Invoice",
+    invoiceStatusSub: "Semua invoice",
+    noInvoices: "Belum ada invoice",
+    topProjects: "Jenis Proyek Terlaris",
+    topProjectsSub: "Berdasarkan jumlah lead",
+    noData: "Belum ada data",
+    other: "Lainnya",
+    pipeline: {
+      Baru: "Baru",
+      Dihubungi: "Dihubungi",
+      Penawaran: "Penawaran",
+      "Follow Up": "Follow Up",
+      Deals: "Deals",
+      Gagal: "Gagal",
+    },
+    invoices: {
+      Lunas: "Lunas",
+      Terkirim: "Terkirim",
+      Sebagian: "Sebagian",
+      "Jatuh Tempo": "Jatuh Tempo",
+      Draft: "Draft",
+    },
+  },
+  en: {
+    title: "Reports",
+    description: "Track your business performance weekly and monthly.",
+    weekly: "This Week",
+    monthly: "This Month",
+    last7Days: "last 7 days",
+    thisMonth: "this month",
+    newLeads: "New Leads",
+    quotationsCreated: "Quotations Created",
+    invoicesPaid: "Invoices Paid",
+    revenue: "Revenue",
+    followUpCompletion: "Follow-up Completion",
+    completed: "completed",
+    pending: "pending",
+    allTimeRevenue: "Total Revenue (All Time)",
+    paidInvoiceSub: "From paid invoices",
+    totalLead: "Total Leads",
+    wonDeals: "Won Deals",
+    conversion: "Conversion",
+    unpaid: "Unpaid",
+    statusUpdate: "Status Update",
+    leadStatusSub: "All lead statuses",
+    invoiceStatus: "Invoice Status",
+    invoiceStatusSub: "All invoices",
+    noInvoices: "No invoices yet",
+    topProjects: "Top Project Types",
+    topProjectsSub: "Based on lead count",
+    noData: "No data yet",
+    other: "Other",
+    pipeline: {
+      Baru: "New",
+      Dihubungi: "Contacted",
+      Penawaran: "Quoted",
+      "Follow Up": "Follow Up",
+      Deals: "Won",
+      Gagal: "Lost",
+    },
+    invoices: {
+      Lunas: "Paid",
+      Terkirim: "Sent",
+      Sebagian: "Partial",
+      "Jatuh Tempo": "Overdue",
+      Draft: "Draft",
+    },
+  },
+} satisfies Record<Lang, Record<string, unknown>>
+
+type ReportsText = typeof text.id
+
+function translatePipelineLabel(label: string, tx: ReportsText) {
+  return tx.pipeline[label as keyof ReportsText["pipeline"]] ?? label
+}
+
+function translateInvoiceLabel(label: string, tx: ReportsText) {
+  return tx.invoices[label as keyof ReportsText["invoices"]] ?? label
+}
+
+function translateProjectType(type: string, tx: ReportsText) {
+  return type === "Lainnya" ? tx.other : type
+}
+
+function PeriodMetrics({ stats, period, tx }: { stats: PeriodStats; period: "weekly" | "monthly"; tx: ReportsText }) {
+  const label = period === "weekly" ? tx.last7Days : tx.thisMonth
   const cards = [
     {
-      label: "Lead Baru",
+      label: tx.newLeads,
       value: stats.newLeads.toString(),
       sub: label,
       icon: Users,
@@ -21,7 +130,7 @@ function PeriodMetrics({ stats, period }: { stats: PeriodStats; period: "weekly"
       iconColor: "#0E4F63",
     },
     {
-      label: "Penawaran Dibuat",
+      label: tx.quotationsCreated,
       value: stats.quotationsCreated.toString(),
       sub: label,
       icon: FileText,
@@ -29,7 +138,7 @@ function PeriodMetrics({ stats, period }: { stats: PeriodStats; period: "weekly"
       iconColor: "#334155",
     },
     {
-      label: "Invoice Terbayar",
+      label: tx.invoicesPaid,
       value: stats.invoicesPaid.toString(),
       sub: label,
       icon: CheckCircle,
@@ -37,7 +146,7 @@ function PeriodMetrics({ stats, period }: { stats: PeriodStats; period: "weekly"
       iconColor: "#2D5016",
     },
     {
-      label: "Pendapatan",
+      label: tx.revenue,
       value: formatCurrency(stats.revenuePaid),
       sub: label,
       icon: DollarSign,
@@ -70,7 +179,6 @@ function PeriodMetrics({ stats, period }: { stats: PeriodStats; period: "weekly"
         ))}
       </div>
 
-      {/* Follow-up completion */}
       <div
         className="rounded-[24px] p-5 mb-5"
         style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}
@@ -78,7 +186,7 @@ function PeriodMetrics({ stats, period }: { stats: PeriodStats; period: "weekly"
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
             <Bell className="w-4 h-4" style={{ color: "var(--text-secondary)" }} />
-            <span className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>Penyelesaian Follow-up</span>
+            <span className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>{tx.followUpCompletion}</span>
           </div>
           <span className="text-sm font-semibold tabular-nums" style={{ color: "var(--text-primary)" }}>{completionRate}%</span>
         </div>
@@ -89,8 +197,8 @@ function PeriodMetrics({ stats, period }: { stats: PeriodStats; period: "weekly"
           />
         </div>
         <div className="flex gap-4 mt-2.5 text-xs" style={{ color: "var(--text-secondary)" }}>
-          <span>{stats.followUpsCompleted} selesai</span>
-          <span>{stats.followUpsPending} tertunda</span>
+          <span>{stats.followUpsCompleted} {tx.completed}</span>
+          <span>{stats.followUpsPending} {tx.pending}</span>
         </div>
       </div>
     </>
@@ -98,6 +206,8 @@ function PeriodMetrics({ stats, period }: { stats: PeriodStats; period: "weekly"
 }
 
 export default function ReportsClient({ data }: Props) {
+  const [lang] = useLanguage()
+  const tx = text[lang]
   const [period, setPeriod] = useState<"weekly" | "monthly">("weekly")
   const stats = period === "weekly" ? data.weekly : data.monthly
   const maxPipeline = Math.max(...data.pipeline.map(p => p.count), 1)
@@ -106,7 +216,8 @@ export default function ReportsClient({ data }: Props) {
 
   return (
     <>
-      {/* Period toggle */}
+      <PageHeader title={tx.title} description={tx.description} />
+
       <div className="flex gap-2 mb-6">
         {(["weekly", "monthly"] as const).map((p) => (
           <button
@@ -115,34 +226,32 @@ export default function ReportsClient({ data }: Props) {
             className="px-4 py-2 rounded-full text-sm font-medium transition-all"
             style={
               period === p
-                ? { backgroundColor: "var(--btn-dark)", color: "var(--text-inverse)" }
+                ? { backgroundColor: "var(--btn-dark)", color: "#ffffff" }
                 : { backgroundColor: "var(--border-color)", color: "var(--text-secondary)" }
             }
           >
-            {p === "weekly" ? "Minggu Ini" : "Bulan Ini"}
+            {p === "weekly" ? tx.weekly : tx.monthly}
           </button>
         ))}
       </div>
 
-      {/* Period metrics */}
-      <PeriodMetrics stats={stats} period={period} />
+      <PeriodMetrics stats={stats} period={period} tx={tx} />
 
-      {/* All-time overview */}
       <div
         className="rounded-[30px] p-6 md:p-7 mb-5"
         style={{ background: "linear-gradient(135deg, #DDEFCB 0%, #BFEAF3 100%)", border: "1px solid rgba(17,24,39,0.08)" }}
       >
-        <p className="text-sm font-medium text-[#35524A] mb-1">Total Pendapatan (Semua Waktu)</p>
+        <p className="text-sm font-medium text-[#35524A] mb-1">{tx.allTimeRevenue}</p>
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-[#14281D]">
           {formatCurrency(data.allTime.totalRevenue)}
         </h2>
-        <p className="text-sm text-[#35524A] mt-1 mb-5">Dari invoice yang sudah lunas</p>
+        <p className="text-sm text-[#35524A] mt-1 mb-5">{tx.paidInvoiceSub}</p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
-            { label: "Total Lead", value: data.allTime.totalLeads.toString() },
-            { label: "Deals Menang", value: data.allTime.wonLeads.toString() },
-            { label: "Konversi", value: `${data.allTime.conversionRate}%` },
-            { label: "Belum Terbayar", value: formatCurrency(data.allTime.pendingRevenue) },
+            { label: tx.totalLead, value: data.allTime.totalLeads.toString() },
+            { label: tx.wonDeals, value: data.allTime.wonLeads.toString() },
+            { label: tx.conversion, value: `${data.allTime.conversionRate}%` },
+            { label: tx.unpaid, value: formatCurrency(data.allTime.pendingRevenue) },
           ].map(({ label, value }) => (
             <div key={label} className="rounded-2xl px-4 py-3 bg-white/65">
               <div className="text-xs uppercase tracking-wide text-[#4B5563]">{label}</div>
@@ -153,7 +262,6 @@ export default function ReportsClient({ data }: Props) {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-5">
-        {/* Pipeline */}
         <div
           className="rounded-[28px] p-6 lg:col-span-1"
           style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}
@@ -163,8 +271,8 @@ export default function ReportsClient({ data }: Props) {
               <BarChart3 className="w-4 h-4" style={{ color: "#2D5016" }} />
             </div>
             <div>
-              <h2 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>Status Update</h2>
-              <p className="text-xs" style={{ color: "var(--text-secondary)" }}>Status seluruh lead</p>
+              <h2 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{tx.statusUpdate}</h2>
+              <p className="text-xs" style={{ color: "var(--text-secondary)" }}>{tx.leadStatusSub}</p>
             </div>
           </div>
           <div className="space-y-3">
@@ -175,7 +283,7 @@ export default function ReportsClient({ data }: Props) {
                   <div className="flex items-center justify-between mb-1">
                     <div className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: item.color }} />
-                      <span className="text-sm" style={{ color: "var(--text-primary)" }}>{item.label}</span>
+                      <span className="text-sm" style={{ color: "var(--text-primary)" }}>{translatePipelineLabel(item.label, tx)}</span>
                     </div>
                     <span className="text-sm tabular-nums font-medium" style={{ color: "var(--text-secondary)" }}>{item.count}</span>
                   </div>
@@ -188,7 +296,6 @@ export default function ReportsClient({ data }: Props) {
           </div>
         </div>
 
-        {/* Invoice breakdown */}
         <div
           className="rounded-[28px] p-6 lg:col-span-1"
           style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}
@@ -198,8 +305,8 @@ export default function ReportsClient({ data }: Props) {
               <FileText className="w-4 h-4" style={{ color: "#0E4F63" }} />
             </div>
             <div>
-              <h2 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>Status Invoice</h2>
-              <p className="text-xs" style={{ color: "var(--text-secondary)" }}>Semua invoice</p>
+              <h2 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{tx.invoiceStatus}</h2>
+              <p className="text-xs" style={{ color: "var(--text-secondary)" }}>{tx.invoiceStatusSub}</p>
             </div>
           </div>
           <div className="space-y-3">
@@ -210,7 +317,7 @@ export default function ReportsClient({ data }: Props) {
                   <div className="flex items-center justify-between mb-1">
                     <div className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: item.color }} />
-                      <span className="text-sm" style={{ color: "var(--text-primary)" }}>{item.label}</span>
+                      <span className="text-sm" style={{ color: "var(--text-primary)" }}>{translateInvoiceLabel(item.label, tx)}</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="text-xs tabular-nums" style={{ color: "var(--text-secondary)" }}>{item.count}</span>
@@ -224,12 +331,11 @@ export default function ReportsClient({ data }: Props) {
               )
             })}
             {data.invoiceBreakdown.every(i => i.count === 0) && (
-              <p className="text-sm py-4 text-center" style={{ color: "var(--text-secondary)" }}>Belum ada invoice</p>
+              <p className="text-sm py-4 text-center" style={{ color: "var(--text-secondary)" }}>{tx.noInvoices}</p>
             )}
           </div>
         </div>
 
-        {/* Top project types */}
         <div
           className="rounded-[28px] p-6 lg:col-span-1"
           style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}
@@ -239,12 +345,12 @@ export default function ReportsClient({ data }: Props) {
               <Trophy className="w-4 h-4" style={{ color: "#6B21A8" }} />
             </div>
             <div>
-              <h2 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>Jenis Proyek Terlaris</h2>
-              <p className="text-xs" style={{ color: "var(--text-secondary)" }}>Berdasarkan jumlah lead</p>
+              <h2 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>{tx.topProjects}</h2>
+              <p className="text-xs" style={{ color: "var(--text-secondary)" }}>{tx.topProjectsSub}</p>
             </div>
           </div>
           {data.topProjectTypes.length === 0 ? (
-            <p className="text-sm py-4 text-center" style={{ color: "var(--text-secondary)" }}>Belum ada data</p>
+            <p className="text-sm py-4 text-center" style={{ color: "var(--text-secondary)" }}>{tx.noData}</p>
           ) : (
             <div className="space-y-3">
               {data.topProjectTypes.map((item, idx) => {
@@ -252,9 +358,9 @@ export default function ReportsClient({ data }: Props) {
                 return (
                   <div key={item.type}>
                     <div className="flex items-center justify-between mb-1">
-                      <div className="flex items-center gap-2">
-                        <span className="text-xs font-mono w-4 tabular-nums" style={{ color: "var(--text-secondary)" }}>{idx + 1}</span>
-                        <span className="text-sm truncate" style={{ color: "var(--text-primary)" }}>{item.type}</span>
+                      <div className="flex items-center gap-2 min-w-0">
+                        <span className="text-xs font-mono w-4 tabular-nums flex-shrink-0" style={{ color: "var(--text-secondary)" }}>{idx + 1}</span>
+                        <span className="text-sm truncate" style={{ color: "var(--text-primary)" }}>{translateProjectType(item.type, tx)}</span>
                       </div>
                       <span className="text-sm tabular-nums font-medium" style={{ color: "var(--text-secondary)" }}>{item.count}</span>
                     </div>

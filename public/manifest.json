@@ -1,0 +1,17 @@
+{
+  "name": "FrameFlow",
+  "short_name": "FrameFlow",
+  "description": "Manage leads, quotations, invoices, and public inquiries.",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#FAF6EE",
+  "theme_color": "#1C1714",
+  "icons": [
+    {
+      "src": "/manifest-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

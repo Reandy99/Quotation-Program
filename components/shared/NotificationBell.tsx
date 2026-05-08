@@ -65,6 +65,41 @@ export default function NotificationBell() {
 
   const unreadCount = notifications.filter(n => !n.read).length
 
+  function urlBase64ToUint8Array(base64String: string) {
+    const padding = "=".repeat((4 - base64String.length % 4) % 4)
+    const base64 = `${base64String}${padding}`.replace(/-/g, "+").replace(/_/g, "/")
+    const rawData = window.atob(base64)
+    return Uint8Array.from([...rawData].map((char) => char.charCodeAt(0)))
+  }
+
+  async function enablePushNotifications() {
+    if (typeof window === "undefined") return
+    if (!("Notification" in window) || !("serviceWorker" in navigator) || !("PushManager" in window)) return
+
+    const permission = window.Notification.permission === "default"
+      ? await window.Notification.requestPermission()
+      : window.Notification.permission
+
+    if (permission !== "granted") return
+
+    const keyResponse = await fetch("/api/push-subscriptions/public-key")
+    const keyData = await keyResponse.json()
+    if (!keyData.enabled || !keyData.publicKey) return
+
+    const registration = await navigator.serviceWorker.register("/sw.js")
+    const existing = await registration.pushManager.getSubscription()
+    const subscription = existing || await registration.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: urlBase64ToUint8Array(keyData.publicKey),
+    })
+
+    await fetch("/api/push-subscriptions", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(subscription.toJSON()),
+    })
+  }
+
   function markAllRead() {
     setNotifications(notifications.map(n => ({ ...n, read: true })))
   }
@@ -85,9 +120,9 @@ export default function NotificationBell() {
     <div className="relative">
       <button
         onClick={() => {
-          if (typeof window !== "undefined" && "Notification" in window && window.Notification.permission === "default") {
-            window.Notification.requestPermission().catch(() => {})
-          }
+          enablePushNotifications().catch((error) => {
+            console.error("Failed to enable push notifications:", error)
+          })
           setOpen(!open)
         }}
         className="relative p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors"

@@ -18,6 +18,17 @@ export default function SignupPage() {
     const formData = new FormData(e.currentTarget)
     const email = formData.get("email") as string
     const password = formData.get("password") as string
+    const confirmPassword = formData.get("confirm_password") as string
+
+    if (password !== confirmPassword) {
+      toast({
+        variant: "destructive",
+        title: "Password mismatch",
+        description: "Please make sure both password fields match.",
+      })
+      setLoading(false)
+      return
+    }
 
     const supabase = createClient()
     const { data, error } = await supabase.auth.signUp({ email, password })
@@ -117,6 +128,27 @@ export default function SignupPage() {
                 disabled={loading}
                 minLength={8}
                 placeholder="Min. 8 characters"
+                className="w-full px-3.5 py-2.5 border rounded-lg text-sm placeholder:opacity-70 focus:outline-none focus:ring-2 focus:border-transparent transition-shadow disabled:opacity-50"
+                style={{
+                  borderColor: "var(--border-color)",
+                  backgroundColor: "var(--app-bg)",
+                  color: "var(--text-primary)",
+                  boxShadow: "none",
+                }}
+              />
+              <p className="text-xs mt-1.5" style={{ color: "var(--text-secondary)" }}>
+                Use at least 8 characters. A mix of letters, numbers, and symbols is recommended.
+              </p>
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1.5" style={{ color: "var(--text-primary)" }}>Confirm password</label>
+              <input
+                type="password"
+                name="confirm_password"
+                required
+                disabled={loading}
+                minLength={8}
+                placeholder="Repeat your password"
                 className="w-full px-3.5 py-2.5 border rounded-lg text-sm placeholder:opacity-70 focus:outline-none focus:ring-2 focus:border-transparent transition-shadow disabled:opacity-50"
                 style={{
                   borderColor: "var(--border-color)",

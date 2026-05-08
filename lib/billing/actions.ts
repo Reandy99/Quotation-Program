@@ -58,6 +58,22 @@ export async function createSubscriptionPaymentLink(): Promise<{ paymentUrl?: st
       .single()
     if (existing?.status === "active") return { error: "Kamu sudah berlangganan Pro." }
 
+    const pendingSince = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString()
+    const { data: pendingPayment } = await supabase
+      .from("billing_payments")
+      .select("gateway_invoice_url")
+      .eq("user_id", user.id)
+      .eq("status", "pending")
+      .not("gateway_invoice_url", "is", null)
+      .gte("created_at", pendingSince)
+      .order("created_at", { ascending: false })
+      .limit(1)
+      .maybeSingle()
+
+    if (pendingPayment?.gateway_invoice_url) {
+      return { paymentUrl: pendingPayment.gateway_invoice_url }
+    }
+
     // Ambil Pro plan
     const { data: plan, error: planError } = await supabase
       .from("plans")
