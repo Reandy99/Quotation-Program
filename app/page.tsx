@@ -178,6 +178,12 @@ const previewSidebarItems = [
 export default function Home() {
   const [lang, setLang] = useLanguage()
   const tx = t[lang]
+  const navLinks = [
+    { label: tx.navFeatures, href: '#features' },
+    { label: tx.navPricing, href: '#pricing' },
+    { label: tx.navAbout, href: '#about' },
+    { label: tx.navBlog, href: '#resources' },
+  ]
 
   return (
     <div style={{ backgroundColor: 'var(--app-bg)', color: 'var(--text-primary)', fontFamily: "'Plus Jakarta Sans', sans-serif", overflowX: 'hidden' }}>
@@ -199,9 +205,9 @@ export default function Home() {
             </div>
             FrameFlow
           </div>
-          <div className="lp-nav-links hidden md:flex" style={{ gap: 32 }}>
-            {[tx.navFeatures, tx.navPricing, tx.navAbout, tx.navBlog].map(label => (
-              <a key={label} href="#" style={{ fontSize: 14, fontWeight: 500, color: 'var(--text-secondary)', textDecoration: 'none' }}>{label}</a>
+          <div className="lp-nav-links" style={{ gap: 32 }}>
+            {navLinks.map(({ label, href }) => (
+              <a key={label} href={href} style={{ fontSize: 14, fontWeight: 500, color: 'var(--text-secondary)', textDecoration: 'none' }}>{label}</a>
             ))}
           </div>
           <div className="lp-nav-actions" style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
@@ -436,7 +442,7 @@ export default function Home() {
       </div>
 
       {/* ── FEATURES ── */}
-      <section className="lp-section" style={{ background: 'var(--app-bg)', padding: '96px 48px' }}>
+      <section id="features" className="lp-section" style={{ background: 'var(--app-bg)', padding: '96px 48px' }}>
         <div style={{ maxWidth: 1160, margin: '0 auto' }}>
           <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.1em', textTransform: 'uppercase', color: AMBER, marginBottom: 12 }}>{tx.featLabel}</div>
           <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 700, letterSpacing: '-1px', lineHeight: 1.15, maxWidth: 540, marginBottom: 14 }}>{tx.featTitle}</h2>
@@ -469,7 +475,7 @@ export default function Home() {
       </section>
 
       {/* ── TESTIMONIALS ── */}
-      <section className="lp-section" style={{ background: 'var(--card-bg)', padding: '96px 48px', borderTop: '1px solid var(--border-color)' }}>
+      <section id="about" className="lp-section" style={{ background: 'var(--card-bg)', padding: '96px 48px', borderTop: '1px solid var(--border-color)' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.1em', textTransform: 'uppercase', color: AMBER, marginBottom: 12 }}>{tx.testiLabel}</div>
           <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 700, letterSpacing: '-1px', lineHeight: 1.15, maxWidth: 540, marginBottom: 48 }}>{tx.testiTitle}</h2>
@@ -494,7 +500,7 @@ export default function Home() {
       </section>
 
       {/* ── PRICING ── */}
-      <section className="lp-section" style={{ background: 'var(--app-bg)', padding: '96px 48px', borderTop: '1px solid var(--border-color)' }}>
+      <section id="pricing" className="lp-section" style={{ background: 'var(--app-bg)', padding: '96px 48px', borderTop: '1px solid var(--border-color)' }}>
         <div style={{ maxWidth: 860, margin: '0 auto', textAlign: 'center' }}>
           <div style={{ fontSize: 14, fontWeight: 600, letterSpacing: '.1em', textTransform: 'uppercase', color: AMBER, marginBottom: 12 }}>{tx.pricingLabel}</div>
           <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 700, letterSpacing: '-1px', lineHeight: 1.15, marginBottom: 14 }}>{tx.pricingTitle}</h2>
@@ -565,7 +571,7 @@ export default function Home() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer className="lp-footer-wrap" style={{ background: 'var(--app-bg)', padding: '52px 48px 28px', borderTop: '1px solid var(--border-color)' }}>
+      <footer id="resources" className="lp-footer-wrap" style={{ background: 'var(--app-bg)', padding: '52px 48px 28px', borderTop: '1px solid var(--border-color)' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 44, flexWrap: 'wrap', gap: 36 }}>
             <div style={{ maxWidth: 260 }}>
@@ -576,8 +582,8 @@ export default function Home() {
               <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.6 }}>{tx.footerTagline}</p>
             </div>
             {[
-              { title: tx.footerProduct, links: [[tx.linkFeatures,'#'],[tx.linkPricing,'#'],[tx.linkChangelog,'#']] },
-              { title: tx.footerCompany, links: [[tx.linkAbout,'#'],[tx.linkBlog,'#'],[tx.linkCareer,'#']] },
+              { title: tx.footerProduct, links: [[tx.linkFeatures,'#features'],[tx.linkPricing,'#pricing'],[tx.linkChangelog,'#resources']] },
+              { title: tx.footerCompany, links: [[tx.linkAbout,'#about'],[tx.linkBlog,'#resources'],[tx.linkCareer,'#resources']] },
               { title: tx.footerLegal,   links: [[tx.linkPrivacy,'#'],[tx.linkTerms,'#']] },
             ].map(col => (
               <div key={col.title}>
