@@ -25,6 +25,9 @@ export default function LeadFormBuilderClient({ form }: Props) {
     slug: form.slug,
     title: form.title,
     description: form.description ?? "",
+    studio_intro: form.studio_intro ?? "",
+    portfolio_items: (form.portfolio_items ?? []).join("\n"),
+    highlight_items: (form.highlight_items ?? []).join("\n"),
     button_text: form.button_text,
     thank_you_message: form.thank_you_message ?? "",
     is_active: form.is_active,
@@ -64,15 +67,15 @@ export default function LeadFormBuilderClient({ form }: Props) {
   return (
     <div className="space-y-6">
       <PageHeader
-        title="Lead Form"
-        description="Create a public inquiry link for your Instagram bio and turn submissions into leads automatically."
+        title="Public Booking Page"
+        description="Create a mini portfolio and booking link for your Instagram bio. Submissions become leads automatically."
       />
 
       <Card className="rounded-[28px]">
         <CardHeader>
           <CardTitle className="flex items-center gap-2 text-base">
             <Link2 className="w-4 h-4" />
-            Public link
+            Public booking link
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -96,7 +99,7 @@ export default function LeadFormBuilderClient({ form }: Props) {
 
       <Card className="rounded-[28px]">
         <CardHeader>
-          <CardTitle className="text-base">Form settings</CardTitle>
+            <CardTitle className="text-base">Page content</CardTitle>
         </CardHeader>
         <CardContent className="space-y-5">
           <div className="flex items-start gap-3 rounded-2xl p-4" style={{ backgroundColor: "var(--app-bg)", border: "1px solid var(--border-color)" }}>
@@ -134,6 +137,41 @@ export default function LeadFormBuilderClient({ form }: Props) {
           <div className="space-y-2">
             <Label htmlFor="description">Description</Label>
             <Textarea id="description" value={state.description} onChange={(event) => setField("description", event.target.value)} />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="studio_intro">Studio intro</Label>
+            <Textarea
+              id="studio_intro"
+              value={state.studio_intro}
+              onChange={(event) => setField("studio_intro", event.target.value)}
+              placeholder="Tell visitors what kind of photo/video services you offer."
+            />
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-2">
+            <div className="space-y-2">
+              <Label htmlFor="highlight_items">Highlights</Label>
+              <Textarea
+                id="highlight_items"
+                value={state.highlight_items}
+                onChange={(event) => setField("highlight_items", event.target.value)}
+                placeholder={"Fast response\nProfessional quotation\nFlexible packages"}
+                rows={5}
+              />
+              <p className="text-xs" style={{ color: "var(--text-secondary)" }}>One highlight per line.</p>
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="portfolio_items">Portfolio examples</Label>
+              <Textarea
+                id="portfolio_items"
+                value={state.portfolio_items}
+                onChange={(event) => setField("portfolio_items", event.target.value)}
+                placeholder={"Wedding Documentation - Jakarta\nCorporate Event - Bandung\nProduct Photoshoot - Bali"}
+                rows={5}
+              />
+              <p className="text-xs" style={{ color: "var(--text-secondary)" }}>One portfolio item per line.</p>
+            </div>
           </div>
 
           <div className="space-y-2">

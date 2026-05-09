@@ -8,6 +8,9 @@ import type { LeadForm } from "@/types"
 const DEFAULT_FORM = {
   title: "Request Event Documentation",
   description: "Tell us about your event and we will get back to you soon.",
+  studio_intro: "Professional photo and video documentation for weddings, events, brands, and special moments.",
+  portfolio_items: [],
+  highlight_items: ["Fast response", "Professional quotation", "Flexible packages"],
   button_text: "Submit Inquiry",
   thank_you_message: "Thank you! Your inquiry has been received.",
   is_active: true,

@@ -36,10 +36,25 @@ export function normalizePublicEventDate(value: string) {
   return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`
 }
 
+function splitLines(value?: string | string[] | null) {
+  if (Array.isArray(value)) {
+    return value.map((item) => item.trim()).filter(Boolean).slice(0, 12)
+  }
+
+  return (value || "")
+    .split(/\r?\n/)
+    .map((item) => item.trim())
+    .filter(Boolean)
+    .slice(0, 12)
+}
+
 export const leadFormSettingsSchema = z.object({
   slug: z.string().min(3, "Slug must be at least 3 characters").max(64),
   title: z.string().min(1, "Title is required").max(120),
   description: z.string().max(500).optional(),
+  studio_intro: z.string().max(700).optional(),
+  portfolio_items: z.union([z.string(), z.array(z.string())]).optional(),
+  highlight_items: z.union([z.string(), z.array(z.string())]).optional(),
   button_text: z.string().min(1, "Button text is required").max(60),
   thank_you_message: z.string().max(300).optional(),
   is_active: z.boolean(),
@@ -47,6 +62,9 @@ export const leadFormSettingsSchema = z.object({
   ...value,
   slug: sanitizeSlug(value.slug),
   description: value.description?.trim() || null,
+  studio_intro: value.studio_intro?.trim() || null,
+  portfolio_items: splitLines(value.portfolio_items),
+  highlight_items: splitLines(value.highlight_items),
   thank_you_message: value.thank_you_message?.trim() || null,
 }))
 

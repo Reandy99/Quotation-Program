@@ -96,6 +96,9 @@ export interface LeadForm {
   slug: string
   title: string
   description: string | null
+  studio_intro?: string | null
+  portfolio_items?: string[] | null
+  highlight_items?: string[] | null
   button_text: string
   thank_you_message: string | null
   is_active: boolean
